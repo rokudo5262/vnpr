@@ -1,0 +1,63 @@
+/*!
+ * @version    $Id$
+ * @package   WordPress User Document
+ * @author     ZuFusion
+ * @copyright  (C) 2020  ZuFusion All Rights Reserved.
+ * @license    GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html
+ */
+.notice, div.error, div.updated {
+  margin: 15px 16px 0 0; }
+
+.wp-admin select {
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  line-height: 1.5; }
+
+.wud-settings-roles .tab-content {
+  padding-top: 10px; }
+
+.wud-settings-themes {
+  padding-top: 10px; }
+  .wud-settings-themes .tab-content {
+    padding-top: 10px; }
+
+.radio-wrapper {
+  display: inline-block;
+  margin-right: 10px; }
+
+.wud-admin-options input[type=number] {
+  height: calc(1.5em + .75rem + 2px);
+  line-height: 1.5; }
+.wud-admin-options .nav-item {
+  margin-right: 6px; }
+.wud-admin-options .nav-link {
+  background: none repeat scroll 0 0 #e4e4e4;
+  color: #555;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 6px 10px;
+  text-decoration: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+.wud-admin-options .tab-content {
+  padding-top: 10px; }
+  .wud-admin-options .tab-content h2 {
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+    cursor: default;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    padding: 8px 12px; }
+  .wud-admin-options .tab-content .wud-postbox {
+    position: relative;
+    min-width: 255px;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 0;
+    line-height: 1; }
+  .wud-admin-options .tab-content .postbox-wrapper {
+    padding: 15px; }

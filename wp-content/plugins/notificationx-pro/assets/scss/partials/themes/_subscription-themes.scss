@@ -1,0 +1,13 @@
+.notificationx-shortcode-wrapper > .nx-notification.nx-email_subscription, .nx-notification.nx-email_subscription,
+.notificationx-shortcode-wrapper > .nx-notification.nx-custom, .nx-notification.nx-custom {
+    & .nx-notification-theme-one, & .nx-notification-theme-two, & .nx-notification-theme-three {
+        & .notificationx-content {
+            & .nx-first-row {
+                color: #252525;
+            }
+            & .nx-second-row {
+                color: #7253ec;
+            }
+        }
+    }
+}

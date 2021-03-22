@@ -1,0 +1,7 @@
+{
+  "require": {
+    "php": ">=5.6",
+    "twbs/bootstrap":"4.3.1",
+    "fortawesome/font-awesome": "5.11.2"
+  }
+}

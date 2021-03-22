@@ -1,0 +1,13 @@
+Tạo bài đăng đặt biệt và ghim ở đầu các thành viên comment hằng ngày sẽ được cộng điểm
+phần quyền approve cho user ở các site hoặc giới hạn quyền ở các site
+layout riêng cho trạng thái sự kiện
++sắp diễn ra, đang diễn ra(landing page)
++đã diễn ra 
+
+123456Aa@	
+hildemar11
+
+
+Admin Happy Lader
+happyleader
+admin2021

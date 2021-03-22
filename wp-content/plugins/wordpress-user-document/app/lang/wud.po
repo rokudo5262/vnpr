@@ -1,0 +1,2700 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress User Document\n"
+"POT-Creation-Date: 2020-04-21 16:42+0700\n"
+"PO-Revision-Date: 2020-04-21 16:43+0700\n"
+"Last-Translator: \n"
+"Language-Team: ZuFusion\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-WPHeader: wordpress-user-document.php\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+"X-Poedit-SearchPathExcluded-2: core\n"
+
+#: app/admin/controllers/doc.php:30 app/admin/controllers/doc.php:64
+#: app/admin/controllers/doc.php:92
+msgid "You don't have the permission"
+msgstr "You don't have the permission"
+
+#: app/admin/controllers/doc.php:125
+#: app/admin/views/layout/metabox_privacy.php:120
+#: app/templates/my-account/form-document.php:387
+msgid "Not set"
+msgstr "Not set"
+
+#: app/admin/controllers/doc.php:165
+msgid "You was blocked"
+msgstr "You was blocked"
+
+#: app/admin/controllers/doc.php:172
+msgid "Action is not permitted"
+msgstr "Action is not permitted"
+
+#: app/admin/controllers/doc.php:180
+msgid "Can not preview/download"
+msgstr "Can not preview/download"
+
+#: app/admin/controllers/doc.php:188 app/site/controllers/doc.php:311
+msgid "Not permitted"
+msgstr "Not permitted"
+
+#: app/admin/controllers/doc.php:194
+msgid "Token is empty"
+msgstr "Token is empty"
+
+#: app/admin/controllers/doc.php:204
+msgid "Token is expired"
+msgstr "Token is expired"
+
+#: app/admin/controllers/doc.php:235
+msgid "The document doesn't exist"
+msgstr "The document doesn't exist"
+
+#: app/admin/controllers/license.php:63
+msgid "You don't have permission to edit"
+msgstr "You don't have permission to edit"
+
+#: app/admin/controllers/license.php:69 app/admin/controllers/license.php:127
+msgid "Enter license name"
+msgstr "Enter license name"
+
+#: app/admin/controllers/license.php:74 app/admin/controllers/license.php:132
+msgid "Select license icon"
+msgstr "Select license icon"
+
+#: app/admin/controllers/license.php:79 app/admin/controllers/license.php:137
+msgid "Enter reference link"
+msgstr "Enter reference link"
+
+#: app/admin/controllers/license.php:94 app/admin/controllers/license.php:153
+msgid " can\\'t be saved to database"
+msgstr " can\\'t be saved to database"
+
+#: app/admin/controllers/license.php:121
+msgid "You don't have permission to create"
+msgstr "You don't have permission to create"
+
+#: app/admin/controllers/licenses.php:35
+msgid "You don't have permission to delete"
+msgstr "You don't have permission to delete"
+
+#: app/admin/start.php:77
+#, php-format
+msgid "Document updated. <a href=\"%s\">View Document</a>"
+msgstr "Document updated. <a href=\"%s\">View Document</a>"
+
+#: app/admin/start.php:82
+msgid "Custom field updated."
+msgstr "Custom field updated."
+
+#: app/admin/start.php:83
+msgid "Custom field deleted."
+msgstr "Custom field deleted."
+
+#: app/admin/start.php:84
+msgid "Document updated."
+msgstr "Document updated."
+
+#: app/admin/start.php:85
+msgid "Revision restored."
+msgstr "Revision restored."
+
+#: app/admin/start.php:87
+#, php-format
+msgid "Document published. <a href=\"%s\">View Document</a>"
+msgstr "Document published. <a href=\"%s\">View Document</a>"
+
+#: app/admin/start.php:88
+msgid "Document saved."
+msgstr "Document saved."
+
+#: app/admin/start.php:90
+#, php-format
+msgid ""
+"Document submitted. <a target=\"_blank\" href=\"%s\">Preview document</a>"
+msgstr ""
+"Document submitted. <a target=\"_blank\" href=\"%s\">Preview document</a>"
+
+#: app/admin/start.php:93
+#, php-format
+msgid ""
+"Document scheduled for: %1$s. <a target=\"_blank\" href=\"%2$s\">Preview "
+"document</a>"
+msgstr ""
+"Document scheduled for: %1$s. <a target=\"_blank\" href=\"%2$s\">Preview "
+"document</a>"
+
+#: app/admin/start.php:97
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: app/admin/start.php:101
+#, php-format
+msgid ""
+"Document draft updated. <a target=\"_blank\" href=\"%s\">Preview document</a>"
+msgstr ""
+"Document draft updated. <a target=\"_blank\" href=\"%s\">Preview document</a>"
+
+#: app/admin/start.php:119
+#, php-format
+msgid "%s document updated."
+msgid_plural "%s documents updated."
+msgstr[0] "%s document updated."
+msgstr[1] "%s documents updated."
+
+#: app/admin/start.php:121
+#, php-format
+msgid "%s document not updated, somebody is editing it."
+msgid_plural "%s documents not updated, somebody is editing them."
+msgstr[0] "%s document not updated, somebody is editing it."
+msgstr[1] "%s documents not updated, somebody is editing them."
+
+#: app/admin/start.php:123
+#, php-format
+msgid "%s document permanently deleted."
+msgid_plural "%s documents permanently deleted."
+msgstr[0] "%s document permanently deleted."
+msgstr[1] "%s documents permanently deleted."
+
+#: app/admin/start.php:125
+#, php-format
+msgid "%s document moved to the Trash."
+msgid_plural "%s documents moved to the Trash."
+msgstr[0] "%s document moved to the Trash."
+msgstr[1] "%s documents moved to the Trash."
+
+#: app/admin/start.php:127
+#, php-format
+msgid "%s document restored from the Trash."
+msgid_plural "%s documents restored from the Trash."
+msgstr[0] "%s document restored from the Trash."
+msgstr[1] "%s documents restored from the Trash."
+
+#: app/admin/start.php:154 app/templates/my-account/form-document.php:237
+msgid "Document file"
+msgstr "Document file"
+
+#: app/admin/start.php:162 app/templates/my-account/form-document.php:322
+msgid "Privacy"
+msgstr "Privacy"
+
+#: app/admin/start.php:170 app/includes/core.php:391
+msgid "License"
+msgstr "License"
+
+#: app/admin/start.php:389 app/site/controllers/doc.php:110
+msgid "Can't delete selected file, please try again"
+msgstr "Can't delete selected file, please try again"
+
+#: app/admin/start.php:405
+#, php-format
+msgid ""
+" is not uploaded because file size is larger %d MB. You can config maximum "
+"file size to be uploaded in the settings page"
+msgstr ""
+" is not uploaded because file size is larger %d MB. You can config maximum "
+"file size to be uploaded in the settings page"
+
+#: app/admin/start.php:415
+msgid ""
+" this type of file is not allowed to be uploaded. You can config file types "
+"in the settings page"
+msgstr ""
+" this type of file is not allowed to be uploaded. You can config file types "
+"in the settings page"
+
+#: app/admin/start.php:427 app/site/controllers/doc.php:158
+msgid " can't be uploaded file"
+msgstr " can't be uploaded file"
+
+#: app/admin/start.php:443
+msgid " error while uploading"
+msgstr " error while uploading"
+
+#: app/admin/start.php:499 app/admin/views/licenses.php:33
+#: app/includes/core.php:390
+msgid "Manage Licenses"
+msgstr "Manage Licenses"
+
+#: app/admin/start.php:500
+msgid "Add License"
+msgstr "Add License"
+
+#: app/admin/start.php:501
+msgid "Settings"
+msgstr "Settings"
+
+#: app/admin/start.php:553 app/site/start.php:190
+#, php-format
+msgid "This file should not be larger than %s MB"
+msgstr "This file should not be larger than %s MB"
+
+#: app/admin/start.php:573
+msgid "You Like:"
+msgstr "You Like:"
+
+#: app/admin/start.php:601
+msgid "You do not like anything yet."
+msgstr "You do not like anything yet."
+
+#: app/admin/views/layout/metabox_file.php:15
+#: app/templates/my-account/form-document.php:241
+msgid "Select file"
+msgstr "Select file"
+
+#: app/admin/views/layout/metabox_file.php:25
+#: app/includes/widgets/documents.php:118
+#: app/templates/my-account/form-document.php:252
+msgid "Date"
+msgstr "Date"
+
+#: app/admin/views/layout/metabox_file.php:26
+#: app/templates/loop/loop-start.php:34
+#: app/templates/my-account/form-document.php:253
+msgid "Size"
+msgstr "Size"
+
+#: app/admin/views/layout/metabox_file.php:27
+#: app/templates/my-account/form-document.php:254
+msgid "File type"
+msgstr "File type"
+
+#: app/admin/views/layout/metabox_file.php:28
+#: app/templates/my-account/form-document.php:255
+msgid "Selected"
+msgstr "Selected"
+
+#: app/admin/views/layout/metabox_file.php:29
+#: app/templates/my-account/form-document.php:256
+msgid "Delete ?"
+msgstr "Delete ?"
+
+#: app/admin/views/layout/metabox_file.php:63
+#: app/templates/my-account/form-document.php:292
+#, php-format
+msgid ""
+"Add a document file with file type is : %s, maximum upload file size: %s."
+msgstr ""
+"Add a document file with file type is : %s, maximum upload file size: %s."
+
+#: app/admin/views/layout/metabox_file.php:69
+#: app/templates/loop/loop-start.php:36
+#: app/templates/my-account/form-document.php:301
+#: app/templates/single/single.php:68
+msgid "Version"
+msgstr "Version"
+
+#: app/admin/views/layout/metabox_license.php:4
+#: app/templates/my-account/form-document.php:218
+msgid "No license"
+msgstr "No license"
+
+#: app/admin/views/layout/metabox_license.php:18
+#: app/templates/my-account/form-document.php:228
+msgid "Select license"
+msgstr "Select license"
+
+#: app/admin/views/layout/metabox_privacy.php:7
+#: app/includes/list-tables/docs-table-list.php:210
+#: app/includes/list-tables/docs-table-list.php:288
+#: app/templates/my-account/nav.php:9
+msgid "Approved"
+msgstr "Approved"
+
+#: app/admin/views/layout/metabox_privacy.php:8 app/includes/functions.php:1776
+#: app/templates/my-account/nav.php:8
+msgid "Pending"
+msgstr "Pending"
+
+#: app/admin/views/layout/metabox_privacy.php:9
+msgid "Reject"
+msgstr "Reject"
+
+#: app/admin/views/layout/metabox_privacy.php:11
+msgid "Approved status"
+msgstr "Approved status"
+
+#: app/admin/views/layout/metabox_privacy.php:13
+msgid "When you set reject then the document will be moved to trash"
+msgstr "When you set reject then the document will be moved to trash"
+
+#: app/admin/views/layout/metabox_privacy.php:25
+msgid "Reject message"
+msgstr "Reject message"
+
+#: app/admin/views/layout/metabox_privacy.php:27
+msgid ""
+"Send to author some reasons to reject, you can use theses tags in message box"
+msgstr ""
+"Send to author some reasons to reject, you can use theses tags in message box"
+
+#: app/admin/views/layout/metabox_privacy.php:44
+#: app/admin/views/layout/metabox_privacy.php:58
+#: app/admin/views/layout/metabox_privacy.php:73
+#: app/admin/views/settings/tab-document.php:141
+#: app/admin/views/settings/tab-document.php:206
+#: app/admin/views/settings/tab-document.php:236
+#: app/admin/views/settings/tab-document.php:294
+#: app/admin/views/settings/tab-document.php:483
+#: app/admin/views/settings/tab-home.php:23
+#: app/admin/views/settings/tab-home.php:52
+#: app/admin/views/settings/tab-home.php:141
+#: app/admin/views/settings/tab-notification.php:23
+#: app/admin/views/settings/tab-notification.php:140
+#: app/includes/list-tables/docs-table-list.php:321
+#: app/includes/list-tables/docs-table-list.php:337
+#: app/includes/list-tables/docs-table-list.php:360
+#: app/templates/my-account/form-document.php:329
+#: app/templates/my-account/form-document.php:344
+msgid "Yes"
+msgstr "Yes"
+
+#: app/admin/views/layout/metabox_privacy.php:45
+#: app/admin/views/layout/metabox_privacy.php:59
+#: app/admin/views/layout/metabox_privacy.php:74
+#: app/admin/views/settings/tab-document.php:142
+#: app/admin/views/settings/tab-document.php:207
+#: app/admin/views/settings/tab-document.php:237
+#: app/admin/views/settings/tab-document.php:295
+#: app/admin/views/settings/tab-document.php:484
+#: app/admin/views/settings/tab-home.php:24
+#: app/admin/views/settings/tab-home.php:53
+#: app/admin/views/settings/tab-home.php:142
+#: app/admin/views/settings/tab-notification.php:24
+#: app/admin/views/settings/tab-notification.php:141
+#: app/includes/list-tables/docs-table-list.php:323
+#: app/includes/list-tables/docs-table-list.php:339
+#: app/includes/list-tables/docs-table-list.php:362
+#: app/templates/my-account/form-document.php:330
+#: app/templates/my-account/form-document.php:345
+msgid "No"
+msgstr "No"
+
+#: app/admin/views/layout/metabox_privacy.php:47
+#: app/includes/functions.php:1778 app/includes/functions.php:1890
+#: app/includes/list-tables/docs-table-list.php:289
+#: app/includes/widgets/documents.php:93
+msgid "Featured"
+msgstr "Featured"
+
+#: app/admin/views/layout/metabox_privacy.php:61
+#: app/includes/list-tables/docs-table-list.php:290
+#: app/templates/my-account/form-document.php:332
+msgid "Allow download"
+msgstr "Allow download"
+
+#: app/admin/views/layout/metabox_privacy.php:63
+#: app/templates/my-account/form-document.php:334
+msgid "allow other users to download the document"
+msgstr "allow other users to download the document"
+
+#: app/admin/views/layout/metabox_privacy.php:76
+#: app/templates/my-account/form-document.php:347
+msgid "Email attachment"
+msgstr "Email attachment"
+
+#: app/admin/views/layout/metabox_privacy.php:78
+#: app/templates/my-account/form-document.php:349
+msgid ""
+"allow other users to share or attach the document into their personal emails"
+msgstr ""
+"allow other users to share or attach the document into their personal emails"
+
+#: app/admin/views/layout/metabox_privacy.php:88
+#: app/templates/my-account/form-document.php:358
+msgid "Group"
+msgstr "Group"
+
+#: app/admin/views/layout/metabox_privacy.php:101
+#: app/templates/my-account/form-document.php:371
+msgid "(Optional) Set BuddyPress group for the document"
+msgstr "(Optional) Set BuddyPress group for the document"
+
+#: app/admin/views/layout/metabox_privacy.php:128
+#: app/templates/my-account/form-document.php:395
+msgid "Visibility by"
+msgstr "Visibility by"
+
+#: app/admin/views/layout/metabox_privacy.php:132
+#: app/templates/my-account/form-document.php:399
+msgid "who can see the document"
+msgstr "who can see the document"
+
+#: app/admin/views/layout/metabox_privacy.php:144
+#: app/templates/my-account/form-document.php:410
+msgid "Edit by"
+msgstr "Edit by"
+
+#: app/admin/views/layout/metabox_privacy.php:148
+#: app/templates/my-account/form-document.php:414
+msgid "who can edit the document, if not set only author can edit"
+msgstr "who can edit the document, if not set only author can edit"
+
+#: app/admin/views/layout/metabox_privacy.php:160
+#: app/templates/my-account/form-document.php:425
+msgid "Comment by"
+msgstr "Comment by"
+
+#: app/admin/views/layout/metabox_privacy.php:164
+#: app/templates/my-account/form-document.php:429
+msgid "who can see the comment"
+msgstr "who can see the comment"
+
+#: app/admin/views/license.php:16
+msgid "Edit License"
+msgstr "Edit License"
+
+#: app/admin/views/license.php:16
+msgid "Add New License"
+msgstr "Add New License"
+
+#: app/admin/views/license.php:40 app/admin/views/licenses.php:69
+#: app/templates/loop/loop-start.php:32
+msgid "Name"
+msgstr "Name"
+
+#: app/admin/views/license.php:45 app/admin/views/licenses.php:70
+msgid "License icon"
+msgstr "License icon"
+
+#: app/admin/views/license.php:51
+msgid "Add Media"
+msgstr "Add Media"
+
+#: app/admin/views/license.php:52
+msgid "Upload image"
+msgstr "Upload image"
+
+#: app/admin/views/license.php:58 app/admin/views/licenses.php:71
+msgid "Reference link"
+msgstr "Reference link"
+
+#: app/admin/views/license.php:70
+#: app/templates/my-account/form-document.php:470
+msgid "Submit"
+msgstr "Submit"
+
+#: app/admin/views/licenses.php:42
+#, php-format
+msgid "Search results for &#8220;%s&#8221;"
+msgstr "Search results for &#8220;%s&#8221;"
+
+#: app/admin/views/licenses.php:67
+msgid "Select All"
+msgstr "Select All"
+
+#: app/admin/views/licenses.php:72
+msgid "Created"
+msgstr "Created"
+
+#: app/admin/views/licenses.php:73
+msgid "Manage"
+msgstr "Manage"
+
+#: app/admin/views/licenses.php:90
+#: app/includes/list-tables/docs-table-list.php:242
+#: app/templates/single/single.php:78
+#: app/templates/single/table-document.php:50
+msgid "Edit"
+msgstr "Edit"
+
+#: app/admin/views/licenses.php:104
+msgid "Select bulk action"
+msgstr "Select bulk action"
+
+#: app/admin/views/licenses.php:106
+msgid "Bulk Actions"
+msgstr "Bulk Actions"
+
+#: app/admin/views/licenses.php:108
+#: app/templates/my-account/form-document.php:484
+msgid "Delete"
+msgstr "Delete"
+
+#: app/admin/views/licenses.php:111
+msgid "Apply"
+msgstr "Apply"
+
+#: app/admin/views/settings.php:16
+msgid "General"
+msgstr "General"
+
+#: app/admin/views/settings.php:17 app/includes/core.php:248
+msgid "Document"
+msgstr "Document"
+
+#: app/admin/views/settings.php:18
+msgid "Roles"
+msgstr "Roles"
+
+#: app/admin/views/settings.php:19
+msgid "Notification"
+msgstr "Notification"
+
+#: app/admin/views/settings.php:67
+msgid "Save Changes"
+msgstr "Save Changes"
+
+#: app/admin/views/settings/tab-document.php:8
+#: app/admin/views/settings/tab-document.php:13
+msgid "Document page"
+msgstr "Document page"
+
+#: app/admin/views/settings/tab-document.php:22
+#: app/admin/views/settings/tab-document.php:53
+msgid "Select a page"
+msgstr "Select a page"
+
+#: app/admin/views/settings/tab-document.php:32
+msgid ""
+"Set page to display list documents, or you can use [wud_documents] shortcode "
+"to display list documents"
+msgstr ""
+"Set page to display list documents, or you can use [wud_documents] shortcode "
+"to display list documents"
+
+#: app/admin/views/settings/tab-document.php:39
+#: app/admin/views/settings/tab-document.php:44
+msgid "My account page"
+msgstr "My account page"
+
+#: app/admin/views/settings/tab-document.php:63
+msgid "Page content: [wud_my_account]"
+msgstr "Page content: [wud_my_account]"
+
+#: app/admin/views/settings/tab-document.php:71
+msgid "New document criteria"
+msgstr "New document criteria"
+
+#: app/admin/views/settings/tab-document.php:76
+msgid "new_document_days"
+msgstr "new_document_days"
+
+#: app/admin/views/settings/tab-document.php:86
+msgid ""
+"The uploaded documents will be set as new within this number of days from "
+"the creation date"
+msgstr ""
+"The uploaded documents will be set as new within this number of days from "
+"the creation date"
+
+#: app/admin/views/settings/tab-document.php:98
+msgid "Terms and agreement URL"
+msgstr "Terms and agreement URL"
+
+#: app/admin/views/settings/tab-document.php:104
+msgid "terms_and_agreement_url"
+msgstr "terms_and_agreement_url"
+
+#: app/admin/views/settings/tab-document.php:114
+msgid ""
+"Enter the url of the terms and agreement of submission form before "
+"submitting a new document. Leave blank to hide"
+msgstr ""
+"Enter the url of the terms and agreement of submission form before "
+"submitting a new document. Leave blank to hide"
+
+#: app/admin/views/settings/tab-document.php:126
+#: app/admin/views/settings/tab-document.php:132
+msgid "Allow media uploads"
+msgstr "Allow media uploads"
+
+#: app/admin/views/settings/tab-document.php:146
+msgid ""
+"Set Yes if you want logged in users to upload allowed media files to document"
+msgstr ""
+"Set Yes if you want logged in users to upload allowed media files to document"
+
+#: app/admin/views/settings/tab-document.php:155
+#: app/admin/views/settings/tab-document.php:160
+msgid "Auto approve"
+msgstr "Auto approve"
+
+#: app/admin/views/settings/tab-document.php:167
+msgid "Disable"
+msgstr "Disable"
+
+#: app/admin/views/settings/tab-document.php:182
+msgid ""
+"Allow automatically approve the document created by role, default is disable"
+msgstr ""
+"Allow automatically approve the document created by role, default is disable"
+
+#: app/admin/views/settings/tab-document.php:191
+#: app/admin/views/settings/tab-document.php:197
+msgid "Users can edit document"
+msgstr "Users can edit document"
+
+#: app/admin/views/settings/tab-document.php:211
+msgid "Users will be able to edit their own documents"
+msgstr "Users will be able to edit their own documents"
+
+#: app/admin/views/settings/tab-document.php:221
+#: app/admin/views/settings/tab-document.php:227
+msgid "Users can delete document"
+msgstr "Users can delete document"
+
+#: app/admin/views/settings/tab-document.php:241
+msgid "Users will be able to delete their own documents"
+msgstr "Users will be able to delete their own documents"
+
+#: app/admin/views/settings/tab-document.php:250
+#: app/admin/views/settings/tab-document.php:256
+msgid "Image mode"
+msgstr "Image mode"
+
+#: app/admin/views/settings/tab-document.php:265
+msgid "Resize"
+msgstr "Resize"
+
+#: app/admin/views/settings/tab-document.php:266
+msgid "Crop"
+msgstr "Crop"
+
+#: app/admin/views/settings/tab-document.php:270
+msgid ""
+"Resize or crop image of document, if you change this option you must "
+"regenerate thumbnails with the plugin such as : Regenerate Thumbnails"
+msgstr ""
+"Resize or crop image of document, if you change this option you must "
+"regenerate thumbnails with the plugin such as : Regenerate Thumbnails"
+
+#: app/admin/views/settings/tab-document.php:279
+#: app/admin/views/settings/tab-document.php:285
+msgid "Require Login to download"
+msgstr "Require Login to download"
+
+#: app/admin/views/settings/tab-document.php:299
+msgid ""
+"Require users Login to download if the documents are visibility by Anyone"
+msgstr ""
+"Require users Login to download if the documents are visibility by Anyone"
+
+#: app/admin/views/settings/tab-document.php:309
+#: app/admin/views/settings/tab-document.php:314
+msgid "IP Block"
+msgstr "IP Block"
+
+#: app/admin/views/settings/tab-document.php:323
+msgid "Enter one address on each line to block download document"
+msgstr "Enter one address on each line to block download document"
+
+#: app/admin/views/settings/tab-document.php:336
+msgid "Layout"
+msgstr "Layout"
+
+#: app/admin/views/settings/tab-document.php:343
+#: app/admin/views/settings/tab-document.php:349
+msgid "Template type"
+msgstr "Template type"
+
+#: app/admin/views/settings/tab-document.php:358
+msgid "Theme"
+msgstr "Theme"
+
+#: app/admin/views/settings/tab-document.php:359
+msgid "Plugin"
+msgstr "Plugin"
+
+#: app/admin/views/settings/tab-document.php:363
+msgid ""
+"Load template of plugin or your theme, if you use theme so you need to set "
+"overwrite sidebar below"
+msgstr ""
+"Load template of plugin or your theme, if you use theme so you need to set "
+"overwrite sidebar below"
+
+#: app/admin/views/settings/tab-document.php:373
+#: app/admin/views/settings/tab-document.php:379
+msgid "Overwrite sidebar"
+msgstr "Overwrite sidebar"
+
+#: app/admin/views/settings/tab-document.php:382
+msgid "Select a sidebar"
+msgstr "Select a sidebar"
+
+#: app/admin/views/settings/tab-document.php:398
+msgid ""
+"Select a sidebar of your theme to overwrite sidebar with document sidebar"
+msgstr ""
+"Select a sidebar of your theme to overwrite sidebar with document sidebar"
+
+#: app/admin/views/settings/tab-document.php:408
+#: app/admin/views/settings/tab-document.php:414
+msgid "Main layout sidebar"
+msgstr "Main layout sidebar"
+
+#: app/admin/views/settings/tab-document.php:423
+#: app/admin/views/settings/tab-document.php:453
+msgid "Right"
+msgstr "Right"
+
+#: app/admin/views/settings/tab-document.php:424
+#: app/admin/views/settings/tab-document.php:454
+msgid "Left"
+msgstr "Left"
+
+#: app/admin/views/settings/tab-document.php:425
+#: app/admin/views/settings/tab-document.php:455
+msgid "No sidebar"
+msgstr "No sidebar"
+
+#: app/admin/views/settings/tab-document.php:429
+msgid "Select sidebar type for list documents page"
+msgstr "Select sidebar type for list documents page"
+
+#: app/admin/views/settings/tab-document.php:438
+#: app/admin/views/settings/tab-document.php:443
+msgid "Single sidebar"
+msgstr "Single sidebar"
+
+#: app/admin/views/settings/tab-document.php:459
+msgid "Select sidebar type for single document page"
+msgstr "Select sidebar type for single document page"
+
+#: app/admin/views/settings/tab-document.php:468
+#: app/admin/views/settings/tab-document.php:473
+msgid "Show header"
+msgstr "Show header"
+
+#: app/admin/views/settings/tab-document.php:488
+msgid "Show document header"
+msgstr "Show document header"
+
+#: app/admin/views/settings/tab-document.php:499
+#: app/admin/views/settings/tab-document.php:504
+msgid "Default sort by"
+msgstr "Default sort by"
+
+#: app/admin/views/settings/tab-document.php:515
+msgid "Set default sort by for list documents"
+msgstr "Set default sort by for list documents"
+
+#: app/admin/views/settings/tab-document.php:527
+#: app/admin/views/settings/tab-document.php:532
+msgid "Default range date"
+msgstr "Default range date"
+
+#: app/admin/views/settings/tab-document.php:543
+msgid "Set default filter by range date for list documents"
+msgstr "Set default filter by range date for list documents"
+
+#: app/admin/views/settings/tab-document.php:554
+#: app/admin/views/settings/tab-document.php:559
+msgid "Rows per page"
+msgstr "Rows per page"
+
+#: app/admin/views/settings/tab-document.php:569
+msgid "the number of rows per page on the document pagination."
+msgstr "the number of rows per page on the document pagination."
+
+#: app/admin/views/settings/tab-document.php:582
+#: app/admin/views/settings/tab-document.php:587
+msgid "Columns per page"
+msgstr "Columns per page"
+
+#: app/admin/views/settings/tab-document.php:597
+msgid "the number of columns per page on the document pagination."
+msgstr "the number of columns per page on the document pagination."
+
+#: app/admin/views/settings/tab-document.php:610
+msgid "SEO-Friendly Urls"
+msgstr "SEO-Friendly Urls"
+
+#: app/admin/views/settings/tab-document.php:617
+#: app/admin/views/settings/tab-document.php:622
+msgid "URL Base"
+msgstr "URL Base"
+
+#: app/admin/views/settings/tab-document.php:631
+msgid "Enter a custom base to use. A base must be set to your URL."
+msgstr "Enter a custom base to use. A base must be set to your URL."
+
+#: app/admin/views/settings/tab-document.php:643
+#: app/admin/views/settings/tab-document.php:648
+msgid "Category base"
+msgstr "Category base"
+
+#: app/admin/views/settings/tab-document.php:658
+msgid "Enter a custom base to rewrite the url  of document category."
+msgstr "Enter a custom base to rewrite the url  of document category."
+
+#: app/admin/views/settings/tab-document.php:671
+#: app/admin/views/settings/tab-document.php:676
+msgid "Tag base"
+msgstr "Tag base"
+
+#: app/admin/views/settings/tab-document.php:685
+msgid "Enter a custom base to rewrite the url  of document tag."
+msgstr "Enter a custom base to rewrite the url  of document tag."
+
+#: app/admin/views/settings/tab-home.php:8
+#: app/admin/views/settings/tab-home.php:13
+msgid "Load  Font Awesome"
+msgstr "Load  Font Awesome"
+
+#: app/admin/views/settings/tab-home.php:28
+msgid ""
+"Set Yes to load, set no if you know that it was loaded before by another the "
+"plugins/themes"
+msgstr ""
+"Set Yes to load, set no if you know that it was loaded before by another the "
+"plugins/themes"
+
+#: app/admin/views/settings/tab-home.php:37
+#: app/admin/views/settings/tab-home.php:42
+msgid "Load  Bootstrap Grid"
+msgstr "Load  Bootstrap Grid"
+
+#: app/admin/views/settings/tab-home.php:57
+msgid ""
+"Set Yes to load, set no if you know that Bootstrap was loaded before by "
+"another the plugins/themes"
+msgstr ""
+"Set Yes to load, set no if you know that Bootstrap was loaded before by "
+"another the plugins/themes"
+
+#: app/admin/views/settings/tab-home.php:67
+#: app/admin/views/settings/tab-home.php:72
+msgid "Allowed file type"
+msgstr "Allowed file type"
+
+#: app/admin/views/settings/tab-home.php:82
+msgid "File type allowed to be uploaded"
+msgstr "File type allowed to be uploaded"
+
+#: app/admin/views/settings/tab-home.php:95
+#: app/admin/views/settings/tab-home.php:101
+msgid "Maximum upload file size (MB)"
+msgstr "Maximum upload file size (MB)"
+
+#: app/admin/views/settings/tab-home.php:107
+msgid "Currently, Max file size the server is "
+msgstr "Currently, Max file size the server is "
+
+#: app/admin/views/settings/tab-home.php:115
+msgid ""
+"You can set this value with upload_max_filesize and post_max_size in your "
+"php.ini "
+msgstr ""
+"You can set this value with upload_max_filesize and post_max_size in your "
+"php.ini "
+
+#: app/admin/views/settings/tab-home.php:126
+#: app/admin/views/settings/tab-home.php:131
+msgid "Use previewer"
+msgstr "Use previewer"
+
+#: app/admin/views/settings/tab-home.php:146
+msgid "Set Yes to preview files or set No to use image of document"
+msgstr "Set Yes to preview files or set No to use image of document"
+
+#: app/admin/views/settings/tab-home.php:155
+#: app/admin/views/settings/tab-home.php:160
+msgid "Preview by"
+msgstr "Preview by"
+
+#: app/admin/views/settings/tab-home.php:170
+msgid "Google Viewer"
+msgstr "Google Viewer"
+
+#: app/admin/views/settings/tab-home.php:171
+msgid "Browser"
+msgstr "Browser"
+
+#: app/admin/views/settings/tab-home.php:175
+msgid ""
+"Use Google Viewer is free so sometimes it does not work, use Browser only "
+"can preview with file type is pdf"
+msgstr ""
+"Use Google Viewer is free so sometimes it does not work, use Browser only "
+"can preview with file type is pdf"
+
+#: app/admin/views/settings/tab-home.php:185
+#: app/admin/views/settings/tab-home.php:191
+msgid "Extensions to preview"
+msgstr "Extensions to preview"
+
+#: app/admin/views/settings/tab-home.php:200
+msgid "Allow file type to be previewed."
+msgstr "Allow file type to be previewed."
+
+#: app/admin/views/settings/tab-home.php:212
+#: app/admin/views/settings/tab-home.php:217
+msgid "Submission Message"
+msgstr "Submission Message"
+
+#: app/admin/views/settings/tab-home.php:230
+msgid ""
+"Message displayed after successful document submission. Leave blank to use "
+"default"
+msgstr ""
+"Message displayed after successful document submission. Leave blank to use "
+"default"
+
+#: app/admin/views/settings/tab-home.php:241
+#: app/admin/views/settings/tab-home.php:246
+msgid "Login Message"
+msgstr "Login Message"
+
+#: app/admin/views/settings/tab-home.php:259
+msgid ""
+"Message to be displayed if the user is not logged in. Leave blank to use "
+"default"
+msgstr ""
+"Message to be displayed if the user is not logged in. Leave blank to use "
+"default"
+
+#: app/admin/views/settings/tab-home.php:271
+#: app/admin/views/settings/tab-home.php:276
+msgid "Login Link Text"
+msgstr "Login Link Text"
+
+#: app/admin/views/settings/tab-home.php:286
+msgid ""
+"Text to be shown in login link if the user is not logged in. Leave blank to "
+"use default"
+msgstr ""
+"Text to be shown in login link if the user is not logged in. Leave blank to "
+"use default"
+
+#: app/admin/views/settings/tab-notification.php:2
+msgid "New Document Notification"
+msgstr "New Document Notification"
+
+#: app/admin/views/settings/tab-notification.php:8
+#: app/admin/views/settings/tab-notification.php:14
+#: app/admin/views/settings/tab-notification.php:125
+#: app/admin/views/settings/tab-notification.php:131
+msgid "Enable Notification"
+msgstr "Enable Notification"
+
+#: app/admin/views/settings/tab-notification.php:28
+msgid ""
+"Set yes if you want admin to recieve notification email after submitting of "
+"a new document."
+msgstr ""
+"Set yes if you want admin to recieve notification email after submitting of "
+"a new document."
+
+#: app/admin/views/settings/tab-notification.php:38
+#: app/admin/views/settings/tab-notification.php:43
+#: app/admin/views/settings/tab-notification.php:155
+#: app/admin/views/settings/tab-notification.php:160
+msgid "To"
+msgstr "To"
+
+#: app/admin/views/settings/tab-notification.php:64
+#: app/admin/views/settings/tab-notification.php:69
+#: app/admin/views/settings/tab-notification.php:181
+#: app/admin/views/settings/tab-notification.php:186
+#: app/admin/views/settings/tab-notification.php:243
+#: app/admin/views/settings/tab-notification.php:248
+#: app/admin/views/settings/tab-notification.php:305
+#: app/admin/views/settings/tab-notification.php:310
+msgid "Subject"
+msgstr "Subject"
+
+#: app/admin/views/settings/tab-notification.php:75
+msgid "A new document has been submitted"
+msgstr "A new document has been submitted"
+
+#: app/admin/views/settings/tab-notification.php:89
+#: app/admin/views/settings/tab-notification.php:94
+#: app/admin/views/settings/tab-notification.php:206
+#: app/admin/views/settings/tab-notification.php:211
+#: app/admin/views/settings/tab-notification.php:267
+#: app/admin/views/settings/tab-notification.php:272
+#: app/admin/views/settings/tab-notification.php:329
+#: app/admin/views/settings/tab-notification.php:334
+msgid "Message"
+msgstr "Message"
+
+#: app/admin/views/settings/tab-notification.php:105
+#: app/admin/views/settings/tab-notification.php:222
+#: app/admin/views/settings/tab-notification.php:283
+#: app/admin/views/settings/tab-notification.php:345
+msgid "You may use in to, subject & message:"
+msgstr "You may use in to, subject & message:"
+
+#: app/admin/views/settings/tab-notification.php:119
+msgid "Update Document Notification"
+msgstr "Update Document Notification"
+
+#: app/admin/views/settings/tab-notification.php:145
+msgid ""
+"Set yes if you want admin to recieve notification email after a new document "
+"has beed updated."
+msgstr ""
+"Set yes if you want admin to recieve notification email after a new document "
+"has beed updated."
+
+#: app/admin/views/settings/tab-notification.php:192
+#: app/includes/classes/email.php:180
+msgid "The document has been updated"
+msgstr "The document has been updated"
+
+#: app/admin/views/settings/tab-notification.php:236
+msgid "Default Approved Document Notification"
+msgstr "Default Approved Document Notification"
+
+#: app/admin/views/settings/tab-notification.php:254
+#: app/includes/classes/email.php:57
+msgid "The document has been approved"
+msgstr "The document has been approved"
+
+#: app/admin/views/settings/tab-notification.php:298
+msgid "Default Reject Document Notification"
+msgstr "Default Reject Document Notification"
+
+#: app/admin/views/settings/tab-notification.php:316
+#: app/includes/classes/email.php:27
+msgid "The document has been rejected"
+msgstr "The document has been rejected"
+
+#: app/includes/classes/email.php:140
+msgid "New Document Submission"
+msgstr "New Document Submission"
+
+#: app/includes/classes/template.php:393 app/includes/functions.php:796
+#, php-format
+msgid "Search results: &ldquo;%s&rdquo;"
+msgstr "Search results: &ldquo;%s&rdquo;"
+
+#: app/includes/classes/template.php:402
+#, php-format
+msgid "Page %d"
+msgstr "Page %d"
+
+#: app/includes/core.php:209
+msgid "Document sidebar"
+msgstr "Document sidebar"
+
+#: app/includes/core.php:210
+msgid "Main sidebar that appears on the left/right"
+msgstr "Main sidebar that appears on the left/right"
+
+#: app/includes/core.php:247 app/includes/core.php:258
+msgid "Manage Documents"
+msgstr "Manage Documents"
+
+#: app/includes/core.php:249
+msgid "Add New"
+msgstr "Add New"
+
+#: app/includes/core.php:250 app/includes/core.php:252
+msgid "Add New Document"
+msgstr "Add New Document"
+
+#: app/includes/core.php:251
+msgid "Edit Document"
+msgstr "Edit Document"
+
+#: app/includes/core.php:253 app/includes/widgets/documents.php:92
+msgid "All Documents"
+msgstr "All Documents"
+
+#: app/includes/core.php:254
+msgid "View Document"
+msgstr "View Document"
+
+#: app/includes/core.php:255
+msgid "Documents Search"
+msgstr "Documents Search"
+
+#: app/includes/core.php:256
+msgid "No Documents Found"
+msgstr "No Documents Found"
+
+#: app/includes/core.php:257
+msgid "No Documents found in trash"
+msgstr "No Documents found in trash"
+
+#: app/includes/core.php:289
+msgid "Document Categories"
+msgstr "Document Categories"
+
+#: app/includes/core.php:290
+msgid "Document Category"
+msgstr "Document Category"
+
+#: app/includes/core.php:291 app/includes/widgets/categories.php:26
+#: app/includes/widgets/categories.php:89 app/templates/single/single.php:89
+msgid "Categories"
+msgstr "Categories"
+
+#: app/includes/core.php:292
+msgid "Add New Category"
+msgstr "Add New Category"
+
+#: app/includes/core.php:293
+msgid "New Category Name"
+msgstr "New Category Name"
+
+#: app/includes/core.php:294
+msgid "All Categories"
+msgstr "All Categories"
+
+#: app/includes/core.php:295
+msgid "Edit Category"
+msgstr "Edit Category"
+
+#: app/includes/core.php:296
+msgid "Update Category"
+msgstr "Update Category"
+
+#: app/includes/core.php:297
+msgid "Parent Category"
+msgstr "Parent Category"
+
+#: app/includes/core.php:298
+msgid "Parent Category:"
+msgstr "Parent Category:"
+
+#: app/includes/core.php:299
+msgid "Search Categories"
+msgstr "Search Categories"
+
+#: app/includes/core.php:300
+msgid "Popular Categories"
+msgstr "Popular Categories"
+
+#: app/includes/core.php:301
+msgid "Separate categories with commas"
+msgstr "Separate categories with commas"
+
+#: app/includes/core.php:302
+msgid "Add or remove categories"
+msgstr "Add or remove categories"
+
+#: app/includes/core.php:320
+msgctxt "taxonomy general name"
+msgid "Document Tags"
+msgstr "Document Tags"
+
+#: app/includes/core.php:321
+msgctxt "taxonomy singular name"
+msgid "Document Tag"
+msgstr "Document Tag"
+
+#: app/includes/core.php:322
+msgid "Search Document Tags"
+msgstr "Search Document Tags"
+
+#: app/includes/core.php:323
+msgid "Popular Document Tags"
+msgstr "Popular Document Tags"
+
+#: app/includes/core.php:324
+msgid "All Document Tags"
+msgstr "All Document Tags"
+
+#: app/includes/core.php:327
+msgid "Edit Tag"
+msgstr "Edit Tag"
+
+#: app/includes/core.php:328
+msgid "Update Tag"
+msgstr "Update Tag"
+
+#: app/includes/core.php:329
+msgid "Add New Tag"
+msgstr "Add New Tag"
+
+#: app/includes/core.php:330
+msgid "New Tag Name"
+msgstr "New Tag Name"
+
+#: app/includes/core.php:331
+msgid "Separate tags with commas"
+msgstr "Separate tags with commas"
+
+#: app/includes/core.php:332
+msgid "Add or remove tags"
+msgstr "Add or remove tags"
+
+#: app/includes/core.php:333
+msgid "Choose from the most used tags"
+msgstr "Choose from the most used tags"
+
+#: app/includes/core.php:334
+msgid "No tags found."
+msgstr "No tags found."
+
+#: app/includes/core.php:335 app/includes/widgets/tags.php:34
+#: app/templates/my-account/form-document.php:208
+#: app/templates/single/single.php:98
+msgid "Tags"
+msgstr "Tags"
+
+#: app/includes/core.php:354
+msgid "Associated Items"
+msgstr "Associated Items"
+
+#: app/includes/core.php:355
+msgid "Associated Item"
+msgstr "Associated Item"
+
+#: app/includes/functions.php:492
+#, php-format
+msgid "%s has been successfully added"
+msgstr "%s has been successfully added"
+
+#: app/includes/functions.php:494
+#, php-format
+msgid "%s has failed to be added"
+msgstr "%s has failed to be added"
+
+#: app/includes/functions.php:498
+#, php-format
+msgid "%s has been successfully updated"
+msgstr "%s has been successfully updated"
+
+#: app/includes/functions.php:500
+#, php-format
+msgid "%s has failed to be updated"
+msgstr "%s has failed to be updated"
+
+#: app/includes/functions.php:504
+#, php-format
+msgid "%s has been successfully deleted"
+msgstr "%s has been successfully deleted"
+
+#: app/includes/functions.php:506
+#, php-format
+msgid "%s has failed to be deleted"
+msgstr "%s has failed to be deleted"
+
+#: app/includes/functions.php:510
+#, php-format
+msgid "%s has been successfully imported"
+msgstr "%s has been successfully imported"
+
+#: app/includes/functions.php:512
+#, php-format
+msgid "%s has failed to be imported"
+msgstr "%s has failed to be imported"
+
+#: app/includes/functions.php:516
+#, php-format
+msgid "%s has been successfully trashed"
+msgstr "%s has been successfully trashed"
+
+#: app/includes/functions.php:518
+#, php-format
+msgid "%s has failed to be trashed"
+msgstr "%s has failed to be trashed"
+
+#: app/includes/functions.php:522
+#, php-format
+msgid "%s has been successfully rejected"
+msgstr "%s has been successfully rejected"
+
+#: app/includes/functions.php:524
+#, php-format
+msgid "%s has failed to be rejected"
+msgstr "%s has failed to be rejected"
+
+#: app/includes/functions.php:528
+#, php-format
+msgid "%s has been successfully approved"
+msgstr "%s has been successfully approved"
+
+#: app/includes/functions.php:530
+#, php-format
+msgid "%s has failed to be approved"
+msgstr "%s has failed to be approved"
+
+#: app/includes/functions.php:593
+#, php-format
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s item"
+msgstr[1] "%s items"
+
+#: app/includes/functions.php:633
+msgid "First page"
+msgstr "First page"
+
+#: app/includes/functions.php:644
+msgid "Previous page"
+msgstr "Previous page"
+
+#: app/includes/functions.php:651
+msgid "Current Page"
+msgstr "Current Page"
+
+#: app/includes/functions.php:659
+#, php-format
+msgctxt "paging"
+msgid "%1$s of %2$s"
+msgstr "%1$s of %2$s"
+
+#: app/includes/functions.php:670
+msgid "Next page"
+msgstr "Next page"
+
+#: app/includes/functions.php:681
+msgid "Last page"
+msgstr "Last page"
+
+#: app/includes/functions.php:800
+#, php-format
+msgid "&nbsp;&ndash; Page %s"
+msgstr "&nbsp;&ndash; Page %s"
+
+#: app/includes/functions.php:803
+msgid "Category : "
+msgstr "Category : "
+
+#: app/includes/functions.php:805
+msgid "Author : "
+msgstr "Author : "
+
+#: app/includes/functions.php:1644 app/site/start.php:183
+msgid "Like"
+msgstr "Like"
+
+#: app/includes/functions.php:1677
+#, php-format
+msgid "Documents by %s"
+msgstr "Documents by %s"
+
+#: app/includes/functions.php:1777
+msgid "New"
+msgstr "New"
+
+#: app/includes/functions.php:1888
+msgid "Latest"
+msgstr "Latest"
+
+#: app/includes/functions.php:1889
+msgid "Oldest"
+msgstr "Oldest"
+
+#: app/includes/functions.php:1891
+msgid "Most Viewed"
+msgstr "Most Viewed"
+
+#: app/includes/functions.php:1892
+msgid "Most Discussed"
+msgstr "Most Discussed"
+
+#: app/includes/functions.php:1893
+msgid "Most Liked"
+msgstr "Most Liked"
+
+#: app/includes/functions.php:1905
+msgid "All Time"
+msgstr "All Time"
+
+#: app/includes/functions.php:1906
+msgid "This Month"
+msgstr "This Month"
+
+#: app/includes/functions.php:1907
+msgid "This Week"
+msgstr "This Week"
+
+#: app/includes/functions.php:1908
+msgid "To Day"
+msgstr "To Day"
+
+#: app/includes/functions.php:2129
+msgid "None"
+msgstr "None"
+
+#: app/includes/functions.php:2338 app/includes/functions.php:2355
+msgid "Anyone"
+msgstr "Anyone"
+
+#: app/includes/functions.php:2356
+msgid "Logged-in"
+msgstr "Logged-in"
+
+#: app/includes/functions.php:2357
+msgid "Members of group"
+msgstr "Members of group"
+
+#: app/includes/functions.php:2358
+msgid "Admins and Mods of group"
+msgstr "Admins and Mods of group"
+
+#: app/includes/functions.php:2359
+msgid "Author only"
+msgstr "Author only"
+
+#: app/includes/list-tables/docs-table-list.php:178
+#: app/includes/widgets/documents.php:55
+#: app/includes/widgets/mostdiscussed.php:53
+#: app/includes/widgets/mostliked.php:49
+#: app/includes/widgets/topdownload.php:52
+#: app/includes/widgets/topviewed.php:52
+#: app/templates/my-account/form-document.php:179
+#: app/templates/widgets/categories.php:16
+msgid "Select a category"
+msgstr "Select a category"
+
+#: app/includes/list-tables/docs-table-list.php:197
+msgid "Filter by author"
+msgstr "Filter by author"
+
+#: app/includes/list-tables/docs-table-list.php:211
+msgid "UnApproved"
+msgstr "UnApproved"
+
+#: app/includes/list-tables/docs-table-list.php:213
+msgid "Filter by approved status"
+msgstr "Filter by approved status"
+
+#: app/includes/list-tables/docs-table-list.php:240
+msgid "Restore"
+msgstr "Restore"
+
+#: app/includes/list-tables/docs-table-list.php:248
+msgid "Delete Permanently"
+msgstr "Delete Permanently"
+
+#: app/includes/list-tables/docs-table-list.php:250
+msgid "Move to Trash"
+msgstr "Move to Trash"
+
+#: app/includes/list-tables/docs-table-list.php:287
+#: app/templates/loop/loop-start.php:35 app/templates/widgets/statistics.php:4
+msgid "Views"
+msgstr "Views"
+
+#: app/includes/list-tables/docs-table-list.php:319
+msgid "Toggle approved"
+msgstr "Toggle approved"
+
+#: app/includes/list-tables/docs-table-list.php:335
+msgid "Toggle featured"
+msgstr "Toggle featured"
+
+#: app/includes/list-tables/docs-table-list.php:358
+msgid "Toggle allow download"
+msgstr "Toggle allow download"
+
+#: app/includes/widgets/categories.php:16
+msgid "A list or dropdown of categories."
+msgstr "A list or dropdown of categories."
+
+#: app/includes/widgets/categories.php:19
+msgid "WUD - Document Categories"
+msgstr "WUD - Document Categories"
+
+#: app/includes/widgets/categories.php:37 app/includes/widgets/documents.php:49
+#: app/includes/widgets/documents.php:120
+#: app/includes/widgets/mostdiscussed.php:47
+#: app/includes/widgets/mostliked.php:43 app/includes/widgets/statistics.php:45
+#: app/includes/widgets/topdownload.php:46
+#: app/includes/widgets/topviewed.php:46
+msgid "Title"
+msgstr "Title"
+
+#: app/includes/widgets/categories.php:44
+msgid "Display as dropdown"
+msgstr "Display as dropdown"
+
+#: app/includes/widgets/categories.php:48
+msgid "Show post counts"
+msgstr "Show post counts"
+
+#: app/includes/widgets/categories.php:52
+msgid "Show hierarchy"
+msgstr "Show hierarchy"
+
+#: app/includes/widgets/categories.php:56
+msgid "Hide empty categories"
+msgstr "Hide empty categories"
+
+#: app/includes/widgets/documents.php:22
+msgid "A list of Documents"
+msgstr "A list of Documents"
+
+#: app/includes/widgets/documents.php:25
+msgid "WUD - Documents"
+msgstr "WUD - Documents"
+
+#: app/includes/widgets/documents.php:37
+#: app/templates/widgets/statistics.php:12
+msgid "Documents"
+msgstr "Documents"
+
+#: app/includes/widgets/documents.php:61
+#: app/includes/widgets/mostdiscussed.php:60
+#: app/includes/widgets/mostliked.php:56
+#: app/includes/widgets/topdownload.php:59
+#: app/includes/widgets/topviewed.php:59
+msgid "All"
+msgstr "All"
+
+#: app/includes/widgets/documents.php:87
+msgid "Show by"
+msgstr "Show by"
+
+#: app/includes/widgets/documents.php:113
+msgid "Order by"
+msgstr "Order by"
+
+#: app/includes/widgets/documents.php:119
+msgid "Random"
+msgstr "Random"
+
+#: app/includes/widgets/documents.php:139
+msgid "Order"
+msgstr "Order"
+
+#: app/includes/widgets/documents.php:144
+msgid "Asc"
+msgstr "Asc"
+
+#: app/includes/widgets/documents.php:145
+msgid "Desc"
+msgstr "Desc"
+
+#: app/includes/widgets/documents.php:166
+#: app/includes/widgets/mostdiscussed.php:85
+#: app/includes/widgets/mostliked.php:81
+#: app/includes/widgets/topdownload.php:84
+#: app/includes/widgets/topviewed.php:84
+msgid "Limit count"
+msgstr "Limit count"
+
+#: app/includes/widgets/documents.php:172
+#: app/includes/widgets/topdownload.php:90
+msgid "Number of documents."
+msgstr "Number of documents."
+
+#: app/includes/widgets/mostdiscussed.php:23
+msgid "Display Most Discussed Documents"
+msgstr "Display Most Discussed Documents"
+
+#: app/includes/widgets/mostdiscussed.php:26
+msgid "WUD - Most Discussed Documents"
+msgstr "WUD - Most Discussed Documents"
+
+#: app/includes/widgets/mostdiscussed.php:38
+msgid "Most Discussed Documents"
+msgstr "Most Discussed Documents"
+
+#: app/includes/widgets/mostdiscussed.php:91
+msgid "Number of most discussed documents."
+msgstr "Number of most discussed documents."
+
+#: app/includes/widgets/mostliked.php:19
+msgid "Display Most Liked Documents"
+msgstr "Display Most Liked Documents"
+
+#: app/includes/widgets/mostliked.php:22
+msgid "WUD - Most Liked Documents"
+msgstr "WUD - Most Liked Documents"
+
+#: app/includes/widgets/mostliked.php:34
+msgid "Most Liked Documents"
+msgstr "Most Liked Documents"
+
+#: app/includes/widgets/mostliked.php:87
+msgid "Number of most liked documents."
+msgstr "Number of most liked documents."
+
+#: app/includes/widgets/search.php:19
+msgid "A search form to search documents"
+msgstr "A search form to search documents"
+
+#: app/includes/widgets/search.php:22
+msgid "WUD - Document Search"
+msgstr "WUD - Document Search"
+
+#: app/includes/widgets/search.php:31
+msgid "Document Search"
+msgstr "Document Search"
+
+#: app/includes/widgets/search.php:71 app/includes/widgets/tags.php:93
+msgid "Title:"
+msgstr "Title:"
+
+#: app/includes/widgets/statistics.php:23
+msgid ""
+"Report the numbers of total documents created, the numbers of total views in "
+"Document , the numbers of total likes in Document of current list documents "
+"page "
+msgstr ""
+"Report the numbers of total documents created, the numbers of total views in "
+"Document , the numbers of total likes in Document of current list documents "
+"page "
+
+#: app/includes/widgets/statistics.php:26
+msgid "WUD - Statistics"
+msgstr "WUD - Statistics"
+
+#: app/includes/widgets/statistics.php:38
+msgid "Statistics"
+msgstr "Statistics"
+
+#: app/includes/widgets/tags.php:22
+msgid "A cloud of your most used tags."
+msgstr "A cloud of your most used tags."
+
+#: app/includes/widgets/tags.php:25
+msgid "WUD - Document Tag Cloud"
+msgstr "WUD - Document Tag Cloud"
+
+#: app/includes/widgets/tags.php:102
+msgid "Show tag counts"
+msgstr "Show tag counts"
+
+#: app/includes/widgets/topdownload.php:22
+msgid "Display Top Download Documents"
+msgstr "Display Top Download Documents"
+
+#: app/includes/widgets/topdownload.php:25
+msgid "WUD - Top Download Documents"
+msgstr "WUD - Top Download Documents"
+
+#: app/includes/widgets/topdownload.php:37
+msgid "Top Download Documents"
+msgstr "Top Download Documents"
+
+#: app/includes/widgets/topviewed.php:22
+msgid "Display Top Viewed Documents"
+msgstr "Display Top Viewed Documents"
+
+#: app/includes/widgets/topviewed.php:25
+msgid "WUD - Top Viewed Documents"
+msgstr "WUD - Top Viewed Documents"
+
+#: app/includes/widgets/topviewed.php:37
+msgid "Top Viewed Documents"
+msgstr "Top Viewed Documents"
+
+#: app/includes/widgets/topviewed.php:90
+msgid "Number of top viewed documents."
+msgstr "Number of top viewed documents."
+
+#: app/site/controllers/doc.php:27
+msgid "The file is too large"
+msgstr "The file is too large"
+
+#: app/site/controllers/doc.php:83 app/site/controllers/doc.php:285
+#: app/templates/my-account/form-document.php:17
+msgid "You don't have permission to edit the document"
+msgstr "You don't have permission to edit the document"
+
+#: app/site/controllers/doc.php:123
+msgid " The uploaded file is not a valid image. Please try again."
+msgstr " The uploaded file is not a valid image. Please try again."
+
+#: app/site/controllers/doc.php:136
+#, php-format
+msgid " is not uploaded because file size is larger %d MB."
+msgstr " is not uploaded because file size is larger %d MB."
+
+#: app/site/controllers/doc.php:146
+msgid ""
+" this type of file is not allowed to be uploaded. you can only upload file "
+"with type of file is: "
+msgstr ""
+" this type of file is not allowed to be uploaded. you can only upload file "
+"with type of file is: "
+
+#: app/site/controllers/doc.php:184 app/site/controllers/doc.php:190
+msgid "Please select a document file to upload"
+msgstr "Please select a document file to upload"
+
+#: app/site/controllers/doc.php:239
+msgid ""
+"Document has been successfully submitted, the admin needs to review the "
+"document, and the publish (if approved), or reject (if not approved)."
+msgstr ""
+"Document has been successfully submitted, the admin needs to review the "
+"document, and the publish (if approved), or reject (if not approved)."
+
+#: app/site/controllers/docs.php:35
+msgid "The delete action was disabled by administrator"
+msgstr "The delete action was disabled by administrator"
+
+#: app/site/controllers/docs.php:49
+msgid "Please select documents to delete"
+msgstr "Please select documents to delete"
+
+#: app/site/controllers/email.php:69
+msgid "Sent email successfully"
+msgstr "Sent email successfully"
+
+#: app/site/start.php:79
+msgid "Category"
+msgstr "Category"
+
+#: app/site/start.php:184
+msgid "Unlike"
+msgstr "Unlike"
+
+#: app/site/start.php:187
+msgid "Are you sure to delete selected documents"
+msgstr "Are you sure to delete selected documents"
+
+#: app/site/start.php:188
+msgid "Are you sure"
+msgstr "Are you sure"
+
+#: app/site/start.php:189
+msgid "Incorrect response"
+msgstr "Incorrect response"
+
+#: app/site/start.php:191
+msgid "The extension doesn't match the required"
+msgstr "The extension doesn't match the required"
+
+#: app/site/start.php:192
+msgid "Sending"
+msgstr "Sending"
+
+#: app/site/start.php:205
+msgid "Processing, please wait…"
+msgstr "Processing, please wait…"
+
+#: app/site/views/email/attach.php:7
+msgid "Email address :"
+msgstr "Email address :"
+
+#: app/site/views/email/attach.php:10
+msgid "Separate multiple emails with a comma."
+msgstr "Separate multiple emails with a comma."
+
+#: app/site/views/email/attach.php:13
+msgid "Subject :"
+msgstr "Subject :"
+
+#: app/site/views/email/attach.php:15
+msgid "Check out: "
+msgstr "Check out: "
+
+#: app/site/views/email/attach.php:18
+msgid "Message :"
+msgstr "Message :"
+
+#: app/site/views/email/attach.php:29
+msgid "Attachment :"
+msgstr "Attachment :"
+
+#: app/site/views/email/attach.php:35
+msgid "Attachment is not available, you can still send to emails"
+msgstr "Attachment is not available, you can still send to emails"
+
+#: app/site/views/email/attach.php:39
+msgid "Send"
+msgstr "Send"
+
+#: app/templates/loop/loop-start.php:31
+msgid "Image"
+msgstr "Image"
+
+#: app/templates/loop/loop-start.php:33
+msgid "Description"
+msgstr "Description"
+
+#: app/templates/loop/loop-start.php:37
+msgid "Uploaded date"
+msgstr "Uploaded date"
+
+#: app/templates/loop/loop-start.php:38
+msgid "Modified date"
+msgstr "Modified date"
+
+#: app/templates/loop/loop-start.php:39
+msgid "Actions"
+msgstr "Actions"
+
+#: app/templates/loop/pagination.php:24
+msgid "&laquo; Previous"
+msgstr "&laquo; Previous"
+
+#: app/templates/loop/pagination.php:25
+msgid "Next &raquo;"
+msgstr "Next &raquo;"
+
+#: app/templates/my-account/form-document.php:23
+msgid "Document is not exist "
+msgstr "Document is not exist "
+
+#: app/templates/my-account/form-document.php:55
+msgid "View"
+msgstr "View"
+
+#: app/templates/my-account/form-document.php:58
+#: app/templates/single/content-none.php:4
+msgid "Back"
+msgstr "Back"
+
+#: app/templates/my-account/form-document.php:68
+msgid "Document title"
+msgstr "Document title"
+
+#: app/templates/my-account/form-document.php:80
+msgid "Document content"
+msgstr "Document content"
+
+#: app/templates/my-account/form-document.php:110
+msgid "Document excerpt"
+msgstr "Document excerpt"
+
+#: app/templates/my-account/form-document.php:120
+msgid "Document Image"
+msgstr "Document Image"
+
+#: app/templates/my-account/form-document.php:126
+#, php-format
+msgid "Add a document image, maximum upload image size: %s."
+msgstr "Add a document image, maximum upload image size: %s."
+
+#: app/templates/my-account/form-document.php:133
+msgid "Remove image"
+msgstr "Remove image"
+
+#: app/templates/my-account/form-document.php:193
+msgid "Select category"
+msgstr "Select category"
+
+#: app/templates/my-account/form-document.php:284
+msgid "There are no document files to be uploaded."
+msgstr "There are no document files to be uploaded."
+
+#: app/templates/my-account/form-document.php:440
+msgid "Captcha"
+msgstr "Captcha"
+
+#: app/templates/my-account/form-document.php:461
+#, php-format
+msgid ""
+"I agree to the <a href=\"%s\" target=\"_blank\">terms and agreement of this "
+"form</a>"
+msgstr ""
+"I agree to the <a href=\"%s\" target=\"_blank\">terms and agreement of this "
+"form</a>"
+
+#: app/templates/my-account/form-document.php:470
+msgid "Update"
+msgstr "Update"
+
+#: app/templates/my-account/form-document.php:472
+msgid "Cancel"
+msgstr "Cancel"
+
+#: app/templates/my-account/home.php:30
+msgid "You need to login to view documents"
+msgstr "You need to login to view documents"
+
+#: app/templates/my-account/nav.php:7
+msgid "All documents"
+msgstr "All documents"
+
+#: app/templates/my-account/no-documents.php:3
+msgid "There are no documents."
+msgstr "There are no documents."
+
+#: app/templates/my-account/required-login.php:5
+msgid "Please login to view this page"
+msgstr "Please login to view this page"
+
+#: app/templates/my-account/required-login.php:6
+msgid "Click here"
+msgstr "Click here"
+
+#: app/templates/single/content-document.php:35
+#: app/templates/widgets/layout/default.php:30
+#: app/templates/widgets/mostdiscussed.php:35
+msgid "By"
+msgstr "By"
+
+#: app/templates/single/content-document.php:38
+#: app/templates/widgets/layout/default.php:32
+#, php-format
+msgid "%s Views | %s Likes"
+msgstr "%s Views | %s Likes"
+
+#: app/templates/single/content-none.php:2
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+msgstr ""
+"Sorry, but nothing matched your search terms. Please try again with "
+"different keywords."
+
+#: app/templates/single/single.php:38
+msgid "This document is licensed under"
+msgstr "This document is licensed under"
+
+#: app/templates/single/single.php:40
+msgid "No licensing information is associated"
+msgstr "No licensing information is associated"
+
+#: app/templates/single/single.php:51
+msgid "Email as Attachment"
+msgstr "Email as Attachment"
+
+#: app/templates/single/single.php:55
+#: app/templates/single/table-document.php:45
+msgid "Download"
+msgstr "Download"
+
+#: app/templates/toolbar/main.php:42
+#, php-format
+msgid "Hello %1$s (<a href=\"%2$s\">Log out</a>)"
+msgstr "Hello %1$s (<a href=\"%2$s\">Log out</a>)"
+
+#: app/templates/toolbar/main.php:53
+msgid "Search documents"
+msgstr "Search documents"
+
+#: app/templates/toolbar/main.php:72
+msgid "Delete selected"
+msgstr "Delete selected"
+
+#: app/templates/toolbar/main.php:76
+msgid "Create document"
+msgstr "Create document"
+
+#: app/templates/toolbar/main.php:84
+msgid "Results"
+msgstr "Results"
+
+#: app/templates/toolbar/main.php:85
+msgid "Showing"
+msgstr "Showing"
+
+#: app/templates/widgets/mostdiscussed.php:37
+#, php-format
+msgid "%s Comments"
+msgstr "%s Comments"
+
+#: app/templates/widgets/search.php:7
+msgid "Search Documents"
+msgstr "Search Documents"
+
+#: app/templates/widgets/search.php:8
+msgid "Search"
+msgstr "Search"
+
+#: app/templates/widgets/statistics.php:8
+msgid "Likes"
+msgstr "Likes"
+
+#. Plugin Name of the plugin/theme
+msgid "WordPress User Document"
+msgstr "WordPress User Document"
+
+#. Plugin URI of the plugin/theme
+msgid "https://codecanyon.net/item/wordpress-user-document/26016953"
+msgstr "https://codecanyon.net/item/wordpress-user-document/26016953"
+
+#. Description of the plugin/theme
+msgid ""
+"WordPress User Document plugin includes many features that help users manage "
+"their documents easily"
+msgstr ""
+"WordPress User Document plugin includes many features that help users manage "
+"their documents easily"
+
+#. Author of the plugin/theme
+msgid "ZuFusion"
+msgstr "ZuFusion"
+
+#. Author URI of the plugin/theme
+msgid "http://zufusion.com"
+msgstr "http://zufusion.com"
+
+#~ msgid ""
+#~ "Use Google viewer is free so sometimes it does not work, use Browser only "
+#~ "can preview with file type is pdf"
+#~ msgstr ""
+#~ "Use Google viewer is free so sometimes it does not work, use Browser only "
+#~ "can preview with file type is pdf"
+
+#~ msgid ""
+#~ "Set Yes to preview files use google viewer or set No to use image of "
+#~ "document"
+#~ msgstr ""
+#~ "Set Yes to preview files use google viewer or set No to use image of "
+#~ "document"
+
+#~ msgid "Share this document"
+#~ msgstr "Share this document"
+
+#~ msgid "Resize or crop image of document"
+#~ msgstr "Resize or crop image of document"
+
+#~ msgid "Set page to display list documents"
+#~ msgstr "Set page to display list documents"
+
+#~ msgid "Sidebar"
+#~ msgstr "Sidebar"
+
+#~ msgid "Visibility by role"
+#~ msgstr "Visibility by role"
+
+#~ msgid "Comment by role"
+#~ msgstr "Comment by role"
+
+#~ msgid "who can comment on the document"
+#~ msgstr "who can comment on the document"
+
+#~ msgid "You are not author of the document"
+#~ msgstr "You are not author of the document"
+
+#~ msgid "Click the image to edit or update"
+#~ msgstr "Click the image to edit or update"
+
+#~ msgid "Choose"
+#~ msgstr "Choose"
+
+#~ msgid "&hellip;"
+#~ msgstr "&hellip;"
+
+#~ msgid "Maximum upload file size: %s."
+#~ msgstr "Maximum upload file size: %s."
+
+#~ msgid "Attachment is not available, you can't attach file to emails"
+#~ msgstr "Attachment is not available, you can't attach file to emails"
+
+#~ msgid "You don't have permission to download"
+#~ msgstr "You don't have permission to download"
+
+#~ msgid "Alert"
+#~ msgstr "Alert"
+
+#~ msgid "You don't have the permission to upload file"
+#~ msgstr "You don't have the permission to upload file"
+
+#~ msgid "Errors"
+#~ msgstr "Errors"
+
+#~ msgid "Enter the url to transfer file"
+#~ msgstr "Enter the url to transfer file"
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+#~ msgid " can't be saved to database"
+#~ msgstr " can't be saved to database"
+
+#~ msgid "Well Done"
+#~ msgstr "Well Done"
+
+#~ msgid " uploaded successfully"
+#~ msgstr " uploaded successfully"
+
+#~ msgid ""
+#~ "You do not have permission to delete because you are not the owner of "
+#~ "this file"
+#~ msgstr ""
+#~ "You do not have permission to delete because you are not the owner of "
+#~ "this file"
+
+#~ msgid "You don't have the permission to delete file"
+#~ msgstr "You don't have the permission to delete file"
+
+#~ msgid ""
+#~ " is limited maximum file size to be uploaded. You can config in the "
+#~ "settings page"
+#~ msgstr ""
+#~ " is limited maximum file size to be uploaded. You can config in the "
+#~ "settings page"
+
+#~ msgid "Deleted successfully"
+#~ msgstr "Deleted successfully"
+
+#~ msgid "Restore successfully"
+#~ msgstr "Restore successfully"
+
+#~ msgid "Error while restoring verion"
+#~ msgstr "Error while restoring verion"
+
+#~ msgid ""
+#~ "You do not have permission to edit because you are not the owner of this "
+#~ "file"
+#~ msgstr ""
+#~ "You do not have permission to edit because you are not the owner of this "
+#~ "file"
+
+#~ msgid "You don't have the permission to edit file"
+#~ msgstr "You don't have the permission to edit file"
+
+#~ msgid "Saving successfully"
+#~ msgstr "Saving successfully"
+
+#~ msgid "Error while saving"
+#~ msgstr "Error while saving"
+
+#~ msgid "File Manager"
+#~ msgstr "File Manager"
+
+#~ msgid "Recycle Bin"
+#~ msgstr "Recycle Bin"
+
+#~ msgid ""
+#~ "You do not have permission to delete because you are not the owner of "
+#~ "this folder"
+#~ msgstr ""
+#~ "You do not have permission to delete because you are not the owner of "
+#~ "this folder"
+
+#~ msgid "You don't have the permission to delete folder"
+#~ msgstr "You don't have the permission to delete folder"
+
+#~ msgid "Trashed successfully"
+#~ msgstr "Trashed successfully"
+
+#~ msgid "Restored successfully"
+#~ msgstr "Restored successfully"
+
+#~ msgid "Folder name"
+#~ msgstr "Folder name"
+
+#~ msgid ""
+#~ "You do not have permission to edit because you are not the owner of this "
+#~ "folder"
+#~ msgstr ""
+#~ "You do not have permission to edit because you are not the owner of this "
+#~ "folder"
+
+#~ msgid "You don't have the permission to edit folder"
+#~ msgstr "You don't have the permission to edit folder"
+
+#~ msgid "You don't have the permission to create folder"
+#~ msgstr "You don't have the permission to create folder"
+
+#~ msgid "Can't be saved folder to database"
+#~ msgstr "Can't be saved folder to database"
+
+#~ msgid "Saved successfully"
+#~ msgstr "Saved successfully"
+
+#~ msgid "--- Root ---"
+#~ msgstr "--- Root ---"
+
+#~ msgid "Select folder"
+#~ msgstr "Select folder"
+
+#~ msgid "Moved successfully"
+#~ msgstr "Moved successfully"
+
+#~ msgid "Copied successfully"
+#~ msgstr "Copied successfully"
+
+#~ msgid "Warning"
+#~ msgstr "Warning"
+
+#~ msgid "Root folder"
+#~ msgstr "Root folder"
+
+#~ msgid "Search results"
+#~ msgstr "Search results"
+
+#~ msgid "Files Manager"
+#~ msgstr "Files Manager"
+
+#~ msgid "Manage Files"
+#~ msgstr "Manage Files"
+
+#~ msgid "Are you sure you want to delete this file forever?"
+#~ msgstr "Are you sure you want to delete this file forever?"
+
+#~ msgid ""
+#~ "Are you sure you want to permanently delete this folder, all files in "
+#~ "this folder will be deleted forever?"
+#~ msgstr ""
+#~ "Are you sure you want to permanently delete this folder, all files in "
+#~ "this folder will be deleted forever?"
+
+#~ msgid "Are you sure you want to move this file to the Recycle Bin?"
+#~ msgstr "Are you sure you want to move this file to the Recycle Bin?"
+
+#~ msgid "Are you sure you want to move this folder to the Recycle Bin?"
+#~ msgstr "Are you sure you want to move this folder to the Recycle Bin?"
+
+#~ msgid "Please, select items to process"
+#~ msgstr "Please, select items to process"
+
+#~ msgid "Are you sure you want to move selected items to the Recycle Bin?"
+#~ msgstr "Are you sure you want to move selected items to the Recycle Bin?"
+
+#~ msgid ""
+#~ "Are you sure you want to permanently delete selected items, all folders/"
+#~ "files will be deleted forever?"
+#~ msgstr ""
+#~ "Are you sure you want to permanently delete selected items, all folders/"
+#~ "files will be deleted forever?"
+
+#~ msgid "Are you sure you want to restore this version?"
+#~ msgstr "Are you sure you want to restore this version?"
+
+#~ msgid "Are you sure you want to remove this version?"
+#~ msgstr "Are you sure you want to remove this version?"
+
+#~ msgid "Search files"
+#~ msgstr "Search files"
+
+#~ msgid "Advanced search"
+#~ msgstr "Advanced search"
+
+#~ msgid "Upload"
+#~ msgstr "Upload"
+
+#~ msgid "selected"
+#~ msgstr "selected"
+
+#~ msgid "Grid View"
+#~ msgstr "Grid View"
+
+#~ msgid "List View"
+#~ msgstr "List View"
+
+#~ msgid "Sort By:"
+#~ msgstr "Sort By:"
+
+#~ msgid "Filename ASC"
+#~ msgstr "Filename ASC"
+
+#~ msgid "Filename DESC"
+#~ msgstr "Filename DESC"
+
+#~ msgid "Uploaded Date ASC"
+#~ msgstr "Uploaded Date ASC"
+
+#~ msgid "Uploaded Date DESC"
+#~ msgstr "Uploaded Date DESC"
+
+#~ msgid "Downloads ASC"
+#~ msgstr "Downloads ASC"
+
+#~ msgid "Downloads DESC"
+#~ msgstr "Downloads DESC"
+
+#~ msgid "Filesize ASC"
+#~ msgstr "Filesize ASC"
+
+#~ msgid "Filesize DESC"
+#~ msgstr "Filesize DESC"
+
+#~ msgid "Per Page:"
+#~ msgstr "Per Page:"
+
+#~ msgid "Current folder"
+#~ msgstr "Current folder"
+
+#~ msgid "All folders"
+#~ msgstr "All folders"
+
+#~ msgid "Folders"
+#~ msgstr "Folders"
+
+#~ msgid "Close"
+#~ msgstr "Close"
+
+#~ msgid "Reset"
+#~ msgstr "Reset"
+
+#~ msgid "There are no files or folders in this folder"
+#~ msgstr "There are no files or folders in this folder"
+
+#~ msgid "Upload files"
+#~ msgstr "Upload files"
+
+#~ msgid "Add folder"
+#~ msgstr "Add folder"
+
+#~ msgid "Add sub folder"
+#~ msgstr "Add sub folder"
+
+#~ msgid "Move to Recycle Bin"
+#~ msgstr "Move to Recycle Bin"
+
+#~ msgid "Download as zip"
+#~ msgstr "Download as zip"
+
+#~ msgid "Copy shortcode"
+#~ msgstr "Copy shortcode"
+
+#~ msgid "Copy to folder"
+#~ msgstr "Copy to folder"
+
+#~ msgid "Move to folder"
+#~ msgstr "Move to folder"
+
+#~ msgid "Edit Folder: "
+#~ msgstr "Edit Folder: "
+
+#~ msgid "Add Folder: "
+#~ msgstr "Add Folder: "
+
+#~ msgid "Parent folder"
+#~ msgstr "Parent folder"
+
+#~ msgid "Downloads"
+#~ msgstr "Downloads"
+
+#~ msgid "Modified Date"
+#~ msgstr "Modified Date"
+
+#~ msgid "Ordering"
+#~ msgstr "Ordering"
+
+#~ msgid "Sorting order"
+#~ msgstr "Sorting order"
+
+#~ msgid "Public"
+#~ msgstr "Public"
+
+#~ msgid "Private"
+#~ msgstr "Private"
+
+#~ msgid "Visibility"
+#~ msgstr "Visibility"
+
+#~ msgid "Default"
+#~ msgstr "Default"
+
+#~ msgid "Table"
+#~ msgstr "Table"
+
+#~ msgid "Edit Folder"
+#~ msgstr "Edit Folder"
+
+#~ msgid "Add Folder"
+#~ msgstr "Add Folder"
+
+#~ msgid "Edit File: "
+#~ msgstr "Edit File: "
+
+#~ msgid "Versions"
+#~ msgstr "Versions"
+
+#~ msgid "Publish"
+#~ msgstr "Publish"
+
+#~ msgid "Publish date"
+#~ msgstr "Publish date"
+
+#~ msgid "Remove"
+#~ msgstr "Remove"
+
+#~ msgid "Drag and Drop files here or click to add files"
+#~ msgstr "Drag and Drop files here or click to add files"
+
+#~ msgid "Add files"
+#~ msgstr "Add files"
+
+#~ msgid "Edit File"
+#~ msgstr "Edit File"
+
+#~ msgid "Upload file"
+#~ msgstr "Upload file"
+
+#~ msgid "Remote Upload"
+#~ msgstr "Remote Upload"
+
+#~ msgid "Enter the url to transfer file to server"
+#~ msgstr "Enter the url to transfer file to server"
+
+#~ msgid "Transfer file"
+#~ msgstr "Transfer file"
+
+#~ msgid "Transferring file"
+#~ msgstr "Transferring file"
+
+#~ msgid "Process"
+#~ msgstr "Process"
+
+#~ msgid "Themes"
+#~ msgstr "Themes"
+
+#~ msgid "Color style"
+#~ msgstr "Color style"
+
+#~ msgid "Color style for file manager"
+#~ msgstr "Color style for file manager"
+
+#~ msgid "Sort by"
+#~ msgstr "Sort by"
+
+#~ msgid "Set default sort folders/files for folder"
+#~ msgstr "Set default sort folders/files for folder"
+
+#~ msgid "Per page"
+#~ msgstr "Per page"
+
+#~ msgid "Set default folders/files per page for folder"
+#~ msgstr "Set default folders/files per page for folder"
+
+#~ msgid "Open with lightbox"
+#~ msgstr "Open with lightbox"
+
+#~ msgid "Open with new tab"
+#~ msgstr "Open with new tab"
+
+#~ msgid "Preview files use google viewer"
+#~ msgstr "Preview files use google viewer"
+
+#~ msgid "Google Analytics"
+#~ msgstr "Google Analytics"
+
+#~ msgid ""
+#~ "Track download using Google Analytics. Analytics tracking code must be "
+#~ "already loaded in WordPress"
+#~ msgstr ""
+#~ "Track download using Google Analytics. Analytics tracking code must be "
+#~ "already loaded in WordPress"
+
+#~ msgid "Enter one address on each line"
+#~ msgstr "Enter one address on each line"
+
+#~ msgid "Set count files per page"
+#~ msgstr "Set count files per page"
+
+#~ msgid "Show download link"
+#~ msgstr "Show download link"
+
+#~ msgid "Show sub folders"
+#~ msgstr "Show sub folders"
+
+#~ msgid "Show description"
+#~ msgstr "Show description"
+
+#~ msgid "Show size"
+#~ msgstr "Show size"
+
+#~ msgid "Show downloads"
+#~ msgstr "Show downloads"
+
+#~ msgid "Show version"
+#~ msgstr "Show version"
+
+#~ msgid "Show uploaded date"
+#~ msgstr "Show uploaded date"
+
+#~ msgid "Show modified date"
+#~ msgstr "Show modified date"
+
+#~ msgid "Shortcode"
+#~ msgstr "Shortcode"
+
+#~ msgid "You can use this shortcode to display search on anywhere"
+#~ msgstr "You can use this shortcode to display search on anywhere"
+
+#~ msgid "Set count files on per page"
+#~ msgstr "Set count files on per page"
+
+#~ msgid "Filter with folder"
+#~ msgstr "Filter with folder"
+
+#~ msgid "Filter with sort by"
+#~ msgstr "Filter with sort by"
+
+#~ msgid "Filter with tags"
+#~ msgstr "Filter with tags"
+
+#~ msgid "Filter with uploaded date"
+#~ msgstr "Filter with uploaded date"
+
+#~ msgid "Filter with modified date"
+#~ msgstr "Filter with modified date"
+
+#~ msgid "Date range"
+#~ msgstr "Date range"
+
+#~ msgid "Last 30 days"
+#~ msgstr "Last 30 days"
+
+#~ msgid "Last 7 days"
+#~ msgstr "Last 7 days"
+
+#~ msgid "Last 1 day"
+#~ msgstr "Last 1 day"
+
+#~ msgid "Select a date"
+#~ msgstr "Select a date"
+
+#~ msgid "Logs"
+#~ msgstr "Logs"
+
+#~ msgid "User"
+#~ msgstr "User"
+
+#~ msgid "Action"
+#~ msgstr "Action"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Filename/Folder"
+#~ msgstr "Filename/Folder"
+
+#~ msgid "Add"
+#~ msgstr "Add"
+
+#~ msgid "File"
+#~ msgstr "File"
+
+#~ msgid "Create folder"
+#~ msgstr "Create folder"
+
+#~ msgid "Edit folder"
+#~ msgstr "Edit folder"
+
+#~ msgid "Edit own folder"
+#~ msgstr "Edit own folder"
+
+#~ msgid "Delete folder"
+#~ msgstr "Delete folder"
+
+#~ msgid "Delete own folder"
+#~ msgstr "Delete own folder"
+
+#~ msgid "Edit file"
+#~ msgstr "Edit file"
+
+#~ msgid "Edit own file"
+#~ msgstr "Edit own file"
+
+#~ msgid "Delete file"
+#~ msgstr "Delete file"
+
+#~ msgid "Delete own file"
+#~ msgstr "Delete own file"
+
+#~ msgid "Wordpress File Download"
+#~ msgstr "Wordpress File Download"
+
+#~ msgctxt "taxonomy general name"
+#~ msgid "Tags"
+#~ msgstr "Tags"
+
+#~ msgctxt "taxonomy singular name"
+#~ msgid "Tag"
+#~ msgstr "Tag"
+
+#~ msgid "Search Tags"
+#~ msgstr "Search Tags"
+
+#~ msgid "Popular Tags"
+#~ msgstr "Popular Tags"
+
+#~ msgid "All Tags"
+#~ msgstr "All Tags"
+
+#~ msgid "Display top downloads"
+#~ msgstr "Display top downloads"
+
+#~ msgid "WUD - Top downloads"
+#~ msgstr "WUD - Top downloads"
+
+#~ msgid "Top downloads"
+#~ msgstr "Top downloads"
+
+#~ msgid "Number of top downloads."
+#~ msgstr "Number of top downloads."
+
+#~ msgid "Display New files"
+#~ msgstr "Display New files"
+
+#~ msgid "WUD - New files"
+#~ msgstr "WUD - New files"
+
+#~ msgid "New files"
+#~ msgstr "New files"
+
+#~ msgid "Number of new files."
+#~ msgstr "Number of new files."
+
+#~ msgid "There are no files in this folder"
+#~ msgstr "There are no files in this folder"
+
+#~ msgid "There are no files"
+#~ msgstr "There are no files"
+
+#~ msgid "The file doesn't existing"
+#~ msgstr "The file doesn't existing"
+
+#~ msgid "The folder doesn't existing"
+#~ msgstr "The folder doesn't existing"
+
+#~ msgid "Home"
+#~ msgstr "Home"
+
+#~ msgid "Preview"
+#~ msgstr "Preview"
+
+#~ msgid "Download files"
+#~ msgstr "Download files"
+
+#~ msgid "Type Keywords"
+#~ msgstr "Type Keywords"
+
+#~ msgid "Select"
+#~ msgstr "Select"
+
+#~ msgid "Start date"
+#~ msgstr "Start date"
+
+#~ msgid "End date"
+#~ msgstr "End date"
+
+#~ msgid "RESET"
+#~ msgstr "RESET"
+
+#~ msgid "SEARCH"
+#~ msgstr "SEARCH"
+
+#~ msgid "Icon"
+#~ msgstr "Icon"
+
+#~ msgid ""
+#~ "WordPress User Document lets you manage files and download file at "
+#~ "frontend"
+#~ msgstr ""
+#~ "WordPress User Document lets you manage files and download file at "
+#~ "frontend"
+
+#~ msgid "Move"
+#~ msgstr "Move"
+
+#~ msgid "Logo"
+#~ msgstr "Logo"
+
+#~ msgid "Insert a logo to use (200x42 pixel). leave blank using default"
+#~ msgstr "Insert a logo to use (200x42 pixel). leave blank using default"
+
+#~ msgid "WordPress User Document lets you manage files, download file."
+#~ msgstr "WordPress User Document lets you manage files, download file."
+
+#~ msgid "Link"
+#~ msgstr "Link"
+
+#~ msgid "Show sub folder"
+#~ msgstr "Show sub folder"
+
+#~ msgid ""
+#~ "Are you sure you want to delete this folder, all files in this folder "
+#~ "will be deleted forever?"
+#~ msgstr ""
+#~ "Are you sure you want to delete this folder, all files in this folder "
+#~ "will be deleted forever?"
+
+#~ msgid "Gallery View"
+#~ msgstr "Gallery View"
+
+#~ msgid "Display type"
+#~ msgstr "Display type"

@@ -1,0 +1,37 @@
+/* ShortCode CSS */
+.notificationx-shortcode-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    & .nx-shortcode-notice {
+        color: #ff838e;
+    }
+    & .nx-notification {
+        position: absolute;
+        // display: none;
+        left: 0px;
+        transition: display 0.3s ease 0s;
+        & .notificationx-close {
+            display: none;
+        }
+        &.nx-animate {
+            display: block;
+        }
+        & a {
+            text-decoration: none;
+            border: none;
+        }
+        &>.notificationx-inner {
+            position: relative;
+        }
+        &.nx-comments,
+        &.nx-conversions {
+            & .nx-notification-theme-five {
+                bottom: auto;
+            }
+        }
+    }
+}

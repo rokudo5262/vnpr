@@ -1,0 +1,13 @@
+{
+    "require": {
+        "uuur86/wasp": "^2.1",
+        "uuur86/strobj": "^0.3.0",
+        "uuur86/wpoauth": "^0.11.0",
+        "liliumdev/icalendar": "^0.1.0"
+    },
+	"autoload": {
+		"psr-4": {
+				"WPEventsImporter\\": "src/"
+		}
+	}
+}

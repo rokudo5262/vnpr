@@ -1,0 +1,132 @@
+.admin-footer-text {
+	font-size: 100%;
+	color:#9e362f;
+}
+
+.tabs-grid {
+	display: flex;
+	flex-wrap: nowrap;
+	border-bottom: 1px solid #aaaaaa;
+	margin-top: 10px;
+}
+
+.tabs-grid > .tab-button {
+	padding: 8px 20px;
+	border: 1px solid;
+	-webkit-border-radius: 3px 3px 0 0;
+	-moz-border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0 0;
+	border-bottom: 0;
+	margin: 3px 3px 0;
+	position: relative;
+	background: #e1e1e1;
+	border-color:#aaaaaa;
+}
+
+.tabs-grid > .tab-button > a {
+	text-decoration: none;
+	color: #888888;
+	font-weight: bold;
+}
+
+.tabs-grid > .tab-button.active > a {
+	color:#3d3d3d;
+}
+
+.tabs-grid > .tab-button.active {
+	bottom: -1px;
+	background: #f1f1f1;
+}
+
+.content-box {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding: 15px;
+	background: #fff;
+	border-color: #dedede;
+	margin: 20px auto;
+	border-style: solid;
+	border-width: 1pt;
+}
+
+fieldset > span {
+	display: inline-block;
+	margin: 10px 20px;
+	width: 30%;
+}
+
+fieldset > span > label {
+	float: left;
+	padding-right: 10px;
+}
+
+.gt-step-nav {
+	display: flex;
+}
+
+.gt-step-nav a {
+	display: inline-block;
+	padding: 10px;
+	margin: auto 10px;
+	float: left;
+	background: #ececec;
+	color: black;
+	text-decoration: none;
+	width: auto;
+}
+
+.gt-step-nav a.active {
+	background: green;
+	color: white;
+}
+
+.gt-step-nav a.disable {
+	background: grey;
+	color: white;
+}
+
+.gt-progressbar {
+	width: 100%;
+	display: inline-flex;
+	height: 30px;
+}
+
+.gt-progressbar {
+	width: 100%;
+	display: inline-flex;
+	height: 30px;
+}
+
+.gt-progressbar-container {
+	margin: 10px 0px;
+	border: 1px solid #e1e1e1;
+	padding: 10px;
+}
+
+.gt-progressbar-container .title {
+	padding: 0px 10px;
+	font-size: 130%;
+	font-weight: 300;
+	color: #555;
+}
+
+.gt-progressbar-container h2 {
+	font-size: 200%;
+	color:green;
+}
+
+.gt-progressbar div {
+	display: block;
+	float: left;
+	height: 20px;
+	margin: 5px;
+	background: #6699FF;
+	text-align: right;
+	color:white;
+	font-size: 16px;
+	line-height: 18px;
+	padding-right: 5px;
+	border-radius: 5px;
+	transition: width 1s ease-out;
+}

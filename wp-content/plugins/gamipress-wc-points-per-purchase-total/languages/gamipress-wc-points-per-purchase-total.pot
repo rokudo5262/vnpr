@@ -1,0 +1,67 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GamiPress WooCommerce Points Per Purchase Total\n"
+"Report-Msgid-Bugs-To: https://gamipress.com/\n"
+"POT-Creation-Date: 2020-06-23 15:34+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: GamiPress (https://gamipress.com/)\n"
+"Language-Team: GamiPress <contact@gamipress.com>\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c\n"
+"Language: en_US\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: libraries\n"
+
+#: gamipress-wc-points-per-purchase-total.php:139
+#, php-format
+msgid "GamiPress - WooCommerce Points Per Order Total requires %s and %s in order to work. Please install and activate it."
+msgstr ""
+
+#: includes/admin.php:23
+msgid "Points per purchase total"
+msgstr ""
+
+#: includes/admin.php:27
+msgid "Award points to users per purchase total?"
+msgstr ""
+
+#: includes/admin.php:33
+msgid "Percent to award"
+msgstr ""
+
+#: includes/admin.php:34
+msgid "Set the amount's percent to award."
+msgstr ""
+
+#: includes/admin.php:35
+msgid "A 100% will award the same purchase total as points (e.g. $40 = 40 points)."
+msgstr ""
+
+#: includes/admin.php:36
+msgid "A 200% will award the double of the purchase total as points (e.g. $40 = 80 points)."
+msgstr ""
+
+#: includes/admin.php:37
+msgid "A 50% will award the half of the purchase total as points (e.g. $40 = 20 points)."
+msgstr ""
+
+#: includes/admin.php:46
+msgid "Register amount awarded on user earnings?"
+msgstr ""
+
+#: includes/admin.php:69
+msgid "WooCommerce Points Per Order Total"
+msgstr ""
+
+#: includes/filters.php:87
+#, php-format
+msgid "%s for made a purchase of %s"
+msgstr ""

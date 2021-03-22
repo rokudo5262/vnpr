@@ -1,0 +1,158 @@
+[
+    {
+        "name": "liliumdev/icalendar",
+        "version": "0.1.0",
+        "version_normalized": "0.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/liliumdev/icalendar.git",
+            "reference": "0a6bc33fcc6b3f5ddb6a9bd45fe61d1aeef6ba44"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/liliumdev/icalendar/zipball/0a6bc33fcc6b3f5ddb6a9bd45fe61d1aeef6ba44",
+            "reference": "0a6bc33fcc6b3f5ddb6a9bd45fe61d1aeef6ba44",
+            "shasum": ""
+        },
+        "time": "2017-10-31T16:51:44+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Liliumdev\\ICalendar\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0"
+        ],
+        "authors": [
+            {
+                "name": "ZContent",
+                "email": "ahmed.popovic@gmail.com"
+            }
+        ],
+        "description": "A Composer package for creating icalendar files (ZContent/icalendar)",
+        "keywords": [
+            "iCalendar",
+            "liliumdev"
+        ]
+    },
+    {
+        "name": "uuur86/strobj",
+        "version": "v0.3",
+        "version_normalized": "0.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/uuur86/strobj.git",
+            "reference": "9183c3c2819bfcee67844fd6de5101c4f49a3f28"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/uuur86/strobj/zipball/9183c3c2819bfcee67844fd6de5101c4f49a3f28",
+            "reference": "9183c3c2819bfcee67844fd6de5101c4f49a3f28",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "time": "2019-06-30T00:23:13+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "strobj\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Uğur Biçer",
+                "email": "info@ugurbicer.com.tr",
+                "role": "lead"
+            }
+        ],
+        "description": "PHP String to Objects Referrer. "
+    },
+    {
+        "name": "uuur86/wasp",
+        "version": "2.1.6",
+        "version_normalized": "2.1.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/uuur86/wasp.git",
+            "reference": "53bab05889aae46c361b5562b6613767a43ce942"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/uuur86/wasp/zipball/53bab05889aae46c361b5562b6613767a43ce942",
+            "reference": "53bab05889aae46c361b5562b6613767a43ce942",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "time": "2019-08-23T00:56:49+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "WaspCreators\\": "src/WaspCreators/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-3.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Uğur Biçer",
+                "role": "lead",
+                "email": "info@ugurbicer.com.tr"
+            }
+        ],
+        "description": "WP Admin Settings Page"
+    },
+    {
+        "name": "uuur86/wpoauth",
+        "version": "0.11",
+        "version_normalized": "0.11.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/uuur86/wpoauth.git",
+            "reference": "390dc9a21b421c82c50a4f46776c06242f1dd1c5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/uuur86/wpoauth/zipball/390dc9a21b421c82c50a4f46776c06242f1dd1c5",
+            "reference": "390dc9a21b421c82c50a4f46776c06242f1dd1c5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.0"
+        },
+        "time": "2019-07-01T02:21:59+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "WPOauth\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Uğur Biçer",
+                "email": "info@ugurbicer.com.tr",
+                "role": "lead"
+            }
+        ],
+        "description": "OAuth API connector for WordPress"
+    }
+]

@@ -1,0 +1,117 @@
+.wud-switch {
+
+}
+
+.form-field-wrapper {
+  margin-bottom: 5px;
+
+  textarea {
+    width: 100%;
+  }
+
+  .field-label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .radio-wrapper,
+  .checkbox-wrapper {
+    display: inline-block;
+    margin-right: 8px;
+  }
+
+  .field-text {
+    width: 13%;
+    float: left;
+  }
+
+  .field-wrapper {
+    width: 87%;
+    float: right;
+  }
+
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+    width: 100%;
+  }
+}
+
+.radio-wrapper .radio-label,
+.checkbox-wrapper .checkbox-label {
+  vertical-align: bottom;
+}
+
+.admin-options .field-textarea textarea {
+  width: 100%;
+}
+
+.wp-list-table {
+  .column-views {
+    width: 100px;
+    text-align: left;
+  }
+
+  .column-approved,
+  .column-featured {
+    width: 65px;
+    text-align: center;
+  }
+
+  .column-allow_download {
+    width: 100px;
+    text-align: center;
+  }
+}
+
+#wud_forms_doc_file {
+  .form-field-wrapper {
+    margin-bottom: 15px;
+  }
+}
+
+#forms_field_reject_notify {
+  display: none;
+}
+
+.wud-show {
+  display: block !important;
+}
+
+// validate
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  color: #B94A48;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}

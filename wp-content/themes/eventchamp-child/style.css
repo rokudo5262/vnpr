@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+/*
+	Theme Name: Eventchamp Child Theme
+	Theme URI: https://themeforest.net/user/gloriathemes
+	Description: Eventchamp Child Theme
+	Author: Gloria Themes
+	Author URI: https://gloriathemes.com/
+	Template: eventchamp
+	License: GNU General Public License v2 or later
+	License URI: https://www.gnu.org/licenses/gpl-2.0.html
+	Text Domain: eventchamp-child
+	Version: 1.0.2
+*/
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  src: url(fonts/SVN-Poppins-Light.otf);
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  src: url(fonts/SVN-Poppins-Regular.otf);
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url(fonts/SVN-Poppins-Regular.otf);
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url(fonts/SVN-Poppins-Medium.otf);
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url(fonts/SVN-Poppins-SemiBold.otf);
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url(fonts/SVN-Poppins-SemiBold.otf);
+}
+
+#sitewide-notice, #youzer div textarea, .widget.buddypress, .widget_bp_core_members_widget .item-options a, .widget_bp_core_sitewide_messages .bp-site-wide-message button, .widget_bp_groups_widget .item-options a, .youzer a, .youzer a.button, .youzer input, .youzer p, .youzer select, .youzer textarea, .youzer-dialog, .youzer-dialog-desc, .yz-items-list-widget, .yz-modal-actions a, .yz-modal-actions button, .yz-my-account-widget, .yz-tool-btn .yz-tool-name, .yz-tooltip:after, .yz-wp-widget, [data-yztooltip]:after,
+body #youzer input, body .youzer, body .youzer button, body .youzer h3, body .youzer input {
+	font-family: 'Poppins' !important;
+}
+.lb-data .lb-caption, .lb-data .lb-number, .pagination .page-numbers, .youzer .yz-link-content p, .youzer_msg span, .yz-aboutme-description, .yz-aboutme-name, .yz-box-404 h2, .yz-box-404 p, .yz-box-head .yz-box-title, .yz-form .youzer-form-message p, .yz-info-msg p, .yz-info-msg p strong, .yz-infos-content ul li p, .yz-infos-content ul li strong, .yz-item-title, .yz-post-content .yz-post-title a, .yz-post-plus4imgs .yz-post-imgs-nbr, .yz-post-type, .yz-profile-login, .yz-profile-navmenu .yz-navbar-item a, .yz-project-content .yz-project-title, .yz-project-type, .yz-quote-content blockquote, .yz-quote-owner, .yz-recent-posts .yz-post-head .yz-post-title a, .yz-recent-posts .yz-post-meta ul li, .yz-skill-bar-percent, .yz-skillbar-title, .yz-tab-comment .yz-comment-excerpt p, .yz-tab-comment .yz-comment-fullname, .yz-tab-comment .yz-comment-title, .yz-tab-post .yz-post-meta ul li, .yz-tab-post .yz-post-text p, .yz-tab-post .yz-post-title a, .yz-video-head .yz-video-desc, .yz-video-head .yz-video-title, .yz-wg-networks.yz-icons-full-width li a, .yz-widget .yz-widget-title{
+	font-family: 'Poppins' !important;
+}
+
+
+
+small.nx-branding{
+	color:white!important;
+	display: none!important;
+}
+
+
+
+li.single_cat.cat_18{
+	display:none!important
+}
+li.single_cat.cat_20{
+	display:none!important
+}
+
+
+.gt-event-ticket.gt-style-4 .gt-ticket-inner .gt-ticket-features p{
+	font-size:13px!important;
+}
+
+div.textwidget{
+	height:70px;
+}
+
+
+/*Giảm margin heading */
+div.gt-text{
+	margin-top:35px!important
+}
+div.gt-separate{
+	margin-top:35px!important
+}
+div.gt-event-search-tool.gt-white.gt-style-1{
+	padding: 35px 0!important;
+}
+
+
+/*giảm padding footer*/
+div.gt-footer-content{
+	padding-top:35px!important
+}
+/*font-size content
+ */
+
+.gt-text{
+	font-size:16px !important;
+}
+.gt-excerpt{
+	font-size:16px !important; 
+}
+.gt-bottom li{
+	font-size:16px !important;
+}
+
+.gt-footer-content{
+	padding-bottom:90px!important;
+}
+/*Ẩn WPML trang profile*/
+.user-language-wrap th h3 a{
+	display:none !important;
+}
+/*kich thước youzer*/
+.gt-header.gt-style-3 .gt-navbar .gt-menu>li>a, .gt-header.gt-style-3 .gt-navbar .gt-menu>li>a:visited{
+	font-weight:500;
+}
+
+.gt-event-style-1 .gt-date, .gt-event-style-1 .gt-location, .gt-event-style-1 .gt-stock, .gt-event-style-1 .gt-time, .gt-event-style-1 .gt-venue{
+	font-size:13px;
+}
+.gt-heading.gt-size2 .gt-title {
+	font-size:20px;
+}
+.gt-post-style-3 .gt-information{
+	font-size:13px
+}
+.gt-post-style-1 .gt-title{
+	font-size:20px;
+}
+.gt-event-style-1 .gt-title{
+	font-size:20px;
+}
+.gt-post-style-3 .gt-title{
+	font-size:16px;
+}
+.gt-heading .gt-title{
+	font-size:40px;
+}
+
+
+.yz-wall-new-post .yz-post-title a{
+	font-size:20px;
+}
+.yz-wall-new-post .yz-post-excerpt p{
+	font-size:16px;
+}
+#yz-wall-form .yz-wall-options .yz-wall-opts-item label span{
+	font-size:13px;
+}
+#yz-wall-form #whats-new-post-in-box label{
+	font-size:13px;
+}
+.youzer .activity-header p, #youzer .activity-meta a{
+	font-size:16px;
+}
+.youzer .activity-inner p{
+	font-size:16px;
+}
+.youzer .activity-header .activity-head p a, .yz-shared-wrapper a.yz-post-author{
+	font-size:16px;
+}
+.youzer .activity-header .time-since, .youzer .activity-header a.activity-time-since span{
+	font-size:13px;
+}
+
+.gt-content-detail-box>ul>li>.gt-content>.gt-title{
+	font-size:13px
+}
+.gt-content-detail-box>ul>li>.gt-content>.gt-inner{
+	font-size:13px
+}
+.gt-event-ticket.gt-style-1 .gt-ticket-inner>.gt-ticket-features p{
+	font-size:13px
+}
+
+
+.yz-widget .yz-widget-title{
+	font-size:16px
+}
+.yz-items-list-widget .yz-list-item a.yz-item-name{
+	font-size:14px;
+}
+.yz-items-list-widget .yz-list-item .yz-item-meta .yz-meta-item{
+	font-size:12px
+}
+.yz-recent-posts .yz-post-head .yz-post-title a{
+	font-size:14px;
+}
+.yz-recent-posts .yz-post-meta ul li{
+	font-size:13px
+}
+
+
+/*Thay đổi màu content youzer*/
+.post-edit-link,.vc_inline-link{
+	display: none !important
+}
+.nice-select.open{
+	width:250px !important;
+}
+/*fix table calandar group*/
+table.calendar-view{
+	margin-left:0px!important;
+}
+.bp-widget{
+	margin-top: 0px!important;
+}
+/**/
+.vc_row.wpb_row.vc_inner.vc_row-fluid{
+	margin-bottom:35px !important;
+}
+.yz-settings-menu{
+	width:220px!important;
+}
+/*font size banner trang chủ*/
+.gt-countdown-slider.gt-style-2>.gt-slider-content>.gt-title .gt-title-inner{
+	font-size:60px !important;
+}
+/*css tạo blog*/
+.nsl-container-buttons {
+	align-items:center !important;
+}
+form#bf_loginform {
+    text-align: center !important;
+	padding-left: 25% !important;
+	padding-right: 25% !important;
+}

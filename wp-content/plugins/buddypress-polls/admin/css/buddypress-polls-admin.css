@@ -1,0 +1,128 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+  /*----------  Active tab design  ----------*/
+ .nav-tab.active {
+  background: #f1f1f1;
+  color: #000;
+ }
+
+ /*----------  Support tab css  ----------*/
+.bpolls-support-setting{
+  float: left;
+  width: 90%;
+}
+.bpolls-faq-row{
+  border-top: 1px solid #ddd;
+  clear: both;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+.bpolls-admin-col-12 {
+  float: left;
+  padding: 10px 0;
+  width: 100%;
+}
+button.bpolls-accordion {
+  background-color: hsl(0, 0%, 87%);
+  border: medium none;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  color: hsl(0, 0%, 27%);
+  cursor: pointer;
+  font-size: 15px;
+  margin: 0 5%;
+  outline: medium none;
+  padding: 15px 20px;
+  text-align: left;
+  transition: all 0.4s ease 0s;
+  width: 90%;
+}
+button.bpolls-accordion.active, button.bpolls-accordion:hover {
+  background-color: hsl(207, 90%, 54%);
+  color:white;
+}
+div.bpolls-panel {
+  background-color: white;
+  margin:0px 5%;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 18px;
+  transition: max-height 0.2s ease-out;
+}
+button.bpolls-accordion::after {
+  color: hsl(0, 0%, 47%);
+  content: "+";
+  float: right;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+button.bpolls-accordion::after:hover {
+  color: white;
+}
+button.bpolls-accordion.active::after {
+  content: "−";
+  color:white;
+}
+/* check box design */
+.bpolls-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.bpolls-switch input {display:none;}
+
+.bpolls-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.bpolls-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .bpolls-slider {
+    background-color: #2196F3;
+}
+
+input:focus + .bpolls-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .bpolls-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.bpolls-slider.bpolls-round {
+    border-radius: 34px;
+}
+
+.bpolls_excluding_member{
+    width:70%;
+}
+.bpolls-slider.bpolls-round:before {
+    border-radius: 50%;
+}
