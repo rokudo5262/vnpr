@@ -10,6 +10,7 @@ if( !function_exists( 'eventchamp_child_theme_setup' ) ) {
 
 		wp_enqueue_style( 'eventchamp', get_template_directory_uri() . '/style.css' );
 		wp_enqueue_style( 'eventchamp-child-style', get_stylesheet_directory_uri() . '/style.css' );
+        wp_enqueue_script( 'eventchamp-child-script', get_stylesheet_directory_uri() . '/custom.js', array(), '1.0.0', true );
 
 	}
 	add_action( 'wp_enqueue_scripts', 'eventchamp_child_theme_setup' );
@@ -156,3 +157,245 @@ function redirect_to_cart_when_buying_tickets() {
 	$cart_url = wc_get_cart_url();
 	return $cart_url;
 }
+
+/*======
+*
+* Event Sidebar Buttons Box
+*
+======*/
+if( !function_exists( 'eventchamp_event_sidebar_buttons_box' ) ) {
+
+    function eventchamp_event_sidebar_buttons_box( $id = "" ) {
+  
+      $output = "";
+      $sidebar_buttons = ot_get_option( 'event-sidebar-buttons' );
+      $buttons = get_post_meta( esc_attr( $id ), 'event_extra_buttons', true );
+  
+      if( !empty( $sidebar_buttons ) or !empty( $buttons ) ) {
+  
+        $output .= '<div class="gt-widget gt-transparent-widget gt-detail-widget">';
+          $output .= '<div class="gt-widget-content">';
+            $output .= '<div class="gt-event-buttons">';
+              $output .= '<ul>';
+              if( !empty( $sidebar_buttons ) ) {
+  
+                  foreach( $sidebar_buttons as $sidebar_button ) {
+  
+                    if( !empty( $sidebar_button ) ) {
+  
+                      if( !empty( $sidebar_button["title"] ) and !empty( $sidebar_button["event_extra_buttons_link"] ) ) {
+  
+                        if( empty( $sidebar_button["event_extra_buttons_target"] ) ) {
+  
+                          $sidebar_button["event_extra_buttons_target"] = "_self";
+  
+                        }
+  
+                        $output .= '<li>';
+                          $output .= '<a href="' . esc_url( $sidebar_button["event_extra_buttons_link"] ) . '" target="' . esc_attr( $sidebar_button["event_extra_buttons_target"] ) . '">' . esc_attr( $sidebar_button["title"] ) . '</a>';
+                        $output .= '</li>';
+  
+                      }
+  
+                    }
+  
+                  }
+                }
+                if( !empty( $buttons ) ) {
+                  foreach( $buttons as $button ) {
+                    if( !empty( $button ) ) {
+                      if( !empty( $button["title"] ) and !empty( $button["event_extra_buttons_link"] ) ) {
+                        if( empty( $button["event_extra_buttons_target"] ) ) {
+  
+                          $button["event_extra_buttons_target"] = "_self";
+                        }
+                        $output .= '<li>';
+                          $output .= '<a href="' . esc_url( $button["event_extra_buttons_link"] ) . '" target="' . esc_attr( $button["event_extra_buttons_target"] ) . '">' . esc_attr( $button["title"] ) . '</a>';
+                        $output .= '</li>';
+                      }
+                    }
+                  }
+                }
+              $output .= '</ul>';
+            $output .= '</div>';
+          $output .= '</div>';
+        $output .= '</div>';
+      }
+      return $output;
+    }
+  }
+  
+  if ( ! function_exists( 'ot_get_option' ) ) {
+      function ot_get_option( $option_id, $default = '' ) {
+      global $hardcode_options;
+      if (isset($hardcode_options[$option_id])) {
+        return $hardcode_options[$option_id];
+      }
+          // Get the saved options.
+          $options = get_option( ot_options_id() );
+          // Look for the saved value.
+          if ( isset( $options[ $option_id ] ) && '' !== $options[ $option_id ] ) {
+  
+              return ot_wpml_filter( $options, $option_id );
+          }
+          return $default;
+      }
+  }
+  
+  
+  if( !function_exists( 'eventchamp_footer_style_1' ) ) {
+    function eventchamp_footer_style_1() {
+      global $hardcode_options;
+      $output = "";
+      $footer_gap = "";
+      $footer_page = ot_get_option( 'page_footer_style_1' );
+      if ( is_page() or is_single() ) {
+        if (isset($hardcode_options['footer_gap'])) {
+          $footer_gap = $hardcode_options['footer_gap'];
+        } else {
+          $footer_gap = get_post_meta( get_the_ID(), 'footer_gap', true );
+        }  
+      }
+  
+      if( !empty( $footer_page ) ) {
+        if( $footer_gap == "on" or empty( $footer_gap ) ) {
+          $output .= '<footer class="gt-footer gt-style-1">';
+        } else {
+          $output .= '<footer class="gt-footer gt-style-1 gt-remove-gap">';
+        }
+          $output .= '<div class="container">';
+            $args = array(
+              'p' => $footer_page,
+              'ignore_sticky_posts' => true,
+              'post_type' => 'page',
+              'post_status' => 'publish'
+            );
+            $wp_query = new WP_Query( $args );
+            while ( $wp_query->have_posts() ) {
+              if ( $wp_query->have_posts() ) {
+                $wp_query->the_post();
+                $output .= '<div class="gt-footer-content">';
+                  $output .= do_shortcode( get_the_content( get_the_ID() ) );
+                $output .= '</div>';
+              }
+            }
+            wp_reset_postdata();
+          $output .= '</div>';
+          $output .= eventchamp_copyright();
+        $output .= '</footer>';
+      }
+      return $output;
+    }
+  }
+  
+  //Layout Chi tiet su kien;
+  if( !function_exists( 'eventchamp_content_area_before' ) ) {
+  
+      function eventchamp_content_area_before() {
+          $output = "";
+  
+          if ( is_post_type_archive( 'event' ) or is_tax( 'event_tags' ) or is_tax( 'eventcat' ) or is_tax( 'organizer' ) ) {
+  
+              $sidebar_position = ot_get_option( 'event_sidebar_position', 'right' );
+  
+          } elseif ( is_post_type_archive( 'venue' ) or is_tax( 'venue_tags' ) or is_tax( 'venuecat' ) ) {
+  
+              $sidebar_position = ot_get_option( 'venue_sidebar_position', 'right' );
+  
+          } elseif ( is_post_type_archive( 'speaker' ) or is_tax( 'speaker-tags' ) or is_tax( 'speaker-category' ) ) {
+  
+              $sidebar_position = ot_get_option( 'speaker_sidebar_position', 'right' );
+  
+          } elseif( is_category() ) {
+  
+              $sidebar_position = ot_get_option( 'category_sidebar_position', 'right' );
+  
+          } elseif( is_tag() ) {
+  
+              $sidebar_position = ot_get_option( 'tag_sidebar_position', 'right' );
+  
+          } elseif( is_author() ) {
+  
+              $sidebar_position = ot_get_option( 'author_sidebar_position', 'right' );
+  
+          } elseif( is_search() ) {
+  
+              $sidebar_position = ot_get_option( 'search_sidebar_position', 'right' );
+  
+          } elseif( is_archive() ) {
+  
+              $sidebar_position = ot_get_option( 'archive_sidebar_position', 'right' );
+  
+          } elseif( is_attachment() ) {
+  
+              $sidebar_position = ot_get_option( 'attachment_sidebar_position', 'nosidebar' );
+  
+          } elseif( is_singular( 'event' ) or is_singular( 'venue' ) or is_singular( 'speaker' ) ) {
+        
+        if(is_singular( 'event' )){
+  
+          $event_start_date = get_post_meta( get_the_ID(), 'event_start_date', true );
+          $event_start_time = get_post_meta( get_the_ID(), 'event_start_time', true );
+  
+          $date_now = date( 'Y-m-d H:i' );
+          $event_start_date_last = "";
+          
+          if( !empty( $event_start_date ) && !empty( $event_start_time ) ) {
+            $event_start_date_last = date_format( date_create( $event_start_date . $event_start_time ), 'Y-m-d H:i' );
+          }
+  
+          if(!empty( $event_start_date ) && !empty( $event_start_time ) && $event_start_date_last >= $date_now ){ 
+            $sidebar_position == 'nosidebar';
+          }else{
+          $sidebar_position = "right";
+          } 
+  
+        }else{
+          $sidebar_position = "right";
+        }
+  
+          } elseif( is_single() ) {
+  
+              $sidebar_position = get_post_meta( get_the_ID(), 'sidebar_position', true );
+  
+              if( empty( $sidebar_position ) or $sidebar_position == "default" ) {
+  
+                  $sidebar_position = ot_get_option( 'post_sidebar_position', 'right' );
+  
+              }
+  
+          } elseif( is_page() ) {
+  
+              $sidebar_position = get_post_meta( get_the_ID(), 'sidebar_position', true );
+  
+              if( empty( $sidebar_position ) or $sidebar_position == "default" ) {
+  
+                  $sidebar_position = ot_get_option( 'page_sidebar_position', 'nosidebar' );
+  
+              }
+  
+          } else {
+  
+              $sidebar_position = ot_get_option( 'sidebar_position', 'right' );
+  
+          }
+  
+          if( $sidebar_position == 'nosidebar' ) {
+  
+              $output = '<div class="col-md-12 col-sm-12 col-xs-12 gt-site-left gt-full-width-site">';
+  
+          } elseif( $sidebar_position == 'left' ) {
+  
+              $output = '<div class="col-md-8 col-sm-12 col-xs-12 gt-site-left gt-fixed-sidebar">';
+  
+          } elseif( $sidebar_position == 'right' ) {
+  
+              $output = '<div class="col-md-8 col-sm-12 col-xs-12 gt-site-left gt-fixed-sidebar">';
+  
+          }
+  
+          return $output;
+  
+      }
+  
+  }
