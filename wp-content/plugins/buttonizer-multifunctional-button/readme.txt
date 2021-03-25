@@ -3,8 +3,8 @@ Contributors: Buttonizer, freemius
 Buy plugin: https://buttonizer.pro
 Tags: Conversion, action button, call, marketing, Social Sharing
 Requires at least: 4.7
-Tested up to: 5.6
-Stable tag: 2.3.0
+Tested up to: 5.7
+Stable tag: 2.3.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -173,6 +173,25 @@ Yes, you can choose for each button if you want to display the button on mobile,
 
 
 == Changelog ==
+= 2.3.2 =
+Release date: 16 Mar 2021
+
+**Changelog:**
+- Fixed issue with button hover colors
+
+If you experience bugs, problems or you just have some feedback, let us know on our [Buttonizer community](https://community.buttonizer.pro/)!
+
+== Changelog ==
+= 2.3.1 =
+Release date: 12 Mar 2021
+
+**Changelog:**
+- Fixed bug in admin dashboard that closes the group when clicking the edit button
+- Fixed bug in icon selector
+- Multiple small bug fixes
+
+If you experience bugs, problems or you just have some feedback, let us know on our [Buttonizer community](https://community.buttonizer.pro/)!
+
 = 2.3.0 =
 Release date: 4 Feb 2021
 

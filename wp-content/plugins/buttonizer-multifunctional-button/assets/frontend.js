@@ -335,7 +335,7 @@ module.exports = keysIn;
 /***/ 124:
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(49);
+var root = __webpack_require__(50);
 
 /** Built-in value references. */
 var Symbol = root.Symbol;
@@ -387,7 +387,7 @@ module.exports = function(originalModule) {
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(79),
-    isObject = __webpack_require__(48);
+    isObject = __webpack_require__(49);
 
 /** `Object#toString` result references. */
 var asyncTag = '[object AsyncFunction]',
@@ -500,7 +500,7 @@ module.exports = function(module) {
 /***/ 141:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(49),
+/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(50),
     stubFalse = __webpack_require__(340);
 
 /** Detect free variable `exports`. */
@@ -733,7 +733,7 @@ module.exports = Stack;
 /***/ (function(module, exports, __webpack_require__) {
 
 var getNative = __webpack_require__(91),
-    root = __webpack_require__(49);
+    root = __webpack_require__(50);
 
 /* Built-in method references that are verified to be native. */
 var Map = getNative(root, 'Map');
@@ -785,7 +785,7 @@ module.exports = isPrototype;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseIsArguments = __webpack_require__(338),
-    isObjectLike = __webpack_require__(54);
+    isObjectLike = __webpack_require__(55);
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -2579,7 +2579,7 @@ function camelCase() {
 "use strict";
 
 // EXTERNAL MODULE: ./node_modules/is-in-browser/dist/module.js
-var dist_module = __webpack_require__(63);
+var dist_module = __webpack_require__(64);
 
 // EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js + 2 modules
 var toConsumableArray = __webpack_require__(76);
@@ -3241,12 +3241,12 @@ function jssVendorPrefixer() {
 /* unused harmony export sheets */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return toCssValue; });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var is_in_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(63);
-/* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(52);
+/* harmony import */ var is_in_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(64);
+/* harmony import */ var tiny_warning__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(53);
 /* harmony import */ var _babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(100);
 /* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(37);
-/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(53);
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(46);
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(54);
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(47);
 
 
 
@@ -5842,7 +5842,7 @@ module.exports = baseFor;
 /***/ 237:
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(49);
+/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(50);
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
@@ -5908,7 +5908,7 @@ module.exports = cloneTypedArray;
 /***/ 239:
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(49);
+var root = __webpack_require__(50);
 
 /** Built-in value references. */
 var Uint8Array = root.Uint8Array;
@@ -5997,7 +5997,7 @@ module.exports = overArg;
 
 var baseGetTag = __webpack_require__(79),
     getPrototype = __webpack_require__(169),
-    isObjectLike = __webpack_require__(54);
+    isObjectLike = __webpack_require__(55);
 
 /** `Object#toString` result references. */
 var objectTag = '[object Object]';
@@ -6101,7 +6101,7 @@ module.exports = assignValue;
 
 var baseTimes = __webpack_require__(343),
     isArguments = __webpack_require__(171),
-    isArray = __webpack_require__(55),
+    isArray = __webpack_require__(56),
     isBuffer = __webpack_require__(141),
     isIndex = __webpack_require__(174),
     isTypedArray = __webpack_require__(173);
@@ -6182,7 +6182,7 @@ module.exports = baseRest;
 var eq = __webpack_require__(90),
     isArrayLike = __webpack_require__(103),
     isIndex = __webpack_require__(174),
-    isObject = __webpack_require__(48);
+    isObject = __webpack_require__(49);
 
 /**
  * Checks if the given arguments are from an iteratee call.
@@ -7234,7 +7234,7 @@ var Stack = __webpack_require__(167),
     assignMergeValue = __webpack_require__(201),
     baseFor = __webpack_require__(236),
     baseMergeDeep = __webpack_require__(336),
-    isObject = __webpack_require__(48),
+    isObject = __webpack_require__(49),
     keysIn = __webpack_require__(116),
     safeGet = __webpack_require__(206);
 
@@ -7555,7 +7555,7 @@ module.exports = stackSet;
 
 var isFunction = __webpack_require__(138),
     isMasked = __webpack_require__(320),
-    isObject = __webpack_require__(48),
+    isObject = __webpack_require__(49),
     toSource = __webpack_require__(235);
 
 /**
@@ -7762,7 +7762,7 @@ module.exports = isMasked;
 /***/ 321:
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(49);
+var root = __webpack_require__(50);
 
 /** Used to detect overreaching core-js shims. */
 var coreJsData = root['__core-js_shared__'];
@@ -8524,11 +8524,11 @@ var assignMergeValue = __webpack_require__(201),
     copyArray = __webpack_require__(240),
     initCloneObject = __webpack_require__(241),
     isArguments = __webpack_require__(171),
-    isArray = __webpack_require__(55),
+    isArray = __webpack_require__(56),
     isArrayLikeObject = __webpack_require__(339),
     isBuffer = __webpack_require__(141),
     isFunction = __webpack_require__(138),
-    isObject = __webpack_require__(48),
+    isObject = __webpack_require__(49),
     isPlainObject = __webpack_require__(243),
     isTypedArray = __webpack_require__(173),
     safeGet = __webpack_require__(206),
@@ -8619,7 +8619,7 @@ module.exports = baseMergeDeep;
 /***/ 337:
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(48);
+var isObject = __webpack_require__(49);
 
 /** Built-in value references. */
 var objectCreate = Object.create;
@@ -8657,7 +8657,7 @@ module.exports = baseCreate;
 /***/ (function(module, exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(79),
-    isObjectLike = __webpack_require__(54);
+    isObjectLike = __webpack_require__(55);
 
 /** `Object#toString` result references. */
 var argsTag = '[object Arguments]';
@@ -8682,7 +8682,7 @@ module.exports = baseIsArguments;
 /***/ (function(module, exports, __webpack_require__) {
 
 var isArrayLike = __webpack_require__(103),
-    isObjectLike = __webpack_require__(54);
+    isObjectLike = __webpack_require__(55);
 
 /**
  * This method is like `_.isArrayLike` except that it also checks if `value`
@@ -8748,7 +8748,7 @@ module.exports = stubFalse;
 
 var baseGetTag = __webpack_require__(79),
     isLength = __webpack_require__(172),
-    isObjectLike = __webpack_require__(54);
+    isObjectLike = __webpack_require__(55);
 
 /** `Object#toString` result references. */
 var argsTag = '[object Arguments]',
@@ -8879,7 +8879,7 @@ module.exports = baseTimes;
 /***/ 344:
 /***/ (function(module, exports, __webpack_require__) {
 
-var isObject = __webpack_require__(48),
+var isObject = __webpack_require__(49),
     isPrototype = __webpack_require__(170),
     nativeKeysIn = __webpack_require__(345);
 
@@ -9875,7 +9875,158 @@ module.exports = {
 
 /***/ }),
 
-/***/ 46:
+/***/ 42:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getPreview; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return rgbToRgba; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getColorType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getPaletteAngle; });
+/* unused harmony export colorValues */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getFirstColor; });
+/* harmony import */ var react_linear_gradient_picker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(223);
+/* harmony import */ var react_linear_gradient_picker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_linear_gradient_picker__WEBPACK_IMPORTED_MODULE_0__);
+/* global require */
+
+
+var gradientParser = __webpack_require__(373);
+
+var rgbToRgba = function rgbToRgba(rgb) {
+  var a = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
+  return /rgba/.test(rgb) ? rgb : rgb.replace("rgb(", "rgba(").replace(")", ", ".concat(a, ")"));
+};
+
+var getRadialGradientPreview = function getRadialGradientPreview(palette) {
+  var background = "radial-gradient(".concat(palette.map(function (_ref) {
+    var color = _ref.color,
+        offset = _ref.offset,
+        opacity = _ref.opacity;
+    return "".concat(rgbToRgba(color, opacity), " ").concat(offset * 100, "%");
+  }).join(", "), ")");
+  return {
+    background: background
+  };
+};
+
+var getPreview = function getPreview(palette, angle, type) {
+  switch (type) {
+    case "solid":
+      return getSolidPreview(palette);
+
+    case "radial":
+      return getRadialGradientPreview(palette);
+
+    case "linear":
+      return Object(react_linear_gradient_picker__WEBPACK_IMPORTED_MODULE_0__["getGradientPreview"])(palette, angle);
+  }
+};
+
+var getSolidPreview = function getSolidPreview(palette) {
+  if (typeof palette !== "string") return {
+    background: rgbToRgba(palette[0].color, palette[0].opacity)
+  };
+  return {
+    background: palette
+  };
+};
+
+var getColorType = function getColorType(value) {
+  if (value == null) return "solid";
+  if (/radial/.test(value)) return "radial";
+  if (/linear/.test(value)) return "linear";
+  return "solid";
+};
+
+var getPaletteAngle = function getPaletteAngle(value) {
+  if (value == null) return {
+    palette: null,
+    angle: 90
+  };
+  var type = getColorType(value);
+  if (type === "solid") return {
+    palette: value,
+    angle: 90
+  };
+
+  if (type === "linear" || type === "radial") {
+    var stop = gradientParser.parse(value)[0].colorStops[0];
+    return {
+      palette: "".concat(stop.type, "(").concat(stop.value.join(", "), ")"),
+      angle: 90
+    };
+  }
+};
+
+var getFirstColor = function getFirstColor(color) {
+  var type = getColorType(color);
+  if (type === "solid") return color;
+  var result = gradientParser.parse(color)[0];
+  var stop = result.colorStops[0];
+  if (stop.type === "hex") return "#".concat(stop.value); // hex
+
+  return "".concat(stop.type, "(").concat(stop.value.join(", "), ")"); // rgb(a) or hsl
+};
+
+function colorValues(color) {
+  if (!color) return;
+  if (color.toLowerCase() === "transparent") return {
+    r: 0,
+    g: 0,
+    b: 0,
+    a: 0
+  };
+
+  if (color[0] === "#") {
+    if (color.length < 7) {
+      // convert #RGB and #RGBA to #RRGGBB and #RRGGBBAA
+      color = "#" + color[1] + color[1] + color[2] + color[2] + color[3] + color[3] + (color.length > 4 ? color[4] + color[4] : "");
+    }
+
+    return {
+      r: parseInt(color.substr(1, 2), 16),
+      g: parseInt(color.substr(3, 2), 16),
+      b: parseInt(color.substr(5, 2), 16),
+      a: color.length > 7 ? parseInt(color.substr(7, 2), 16) / 255 : 1
+    };
+  }
+
+  if (color.indexOf("rgb") === -1) {
+    // convert named colors
+    var temp_elem = document.body.appendChild(document.createElement("fictum")); // intentionally use unknown tag to lower chances of css rule override with !important
+
+    var flag = "rgb(1, 2, 3)"; // this flag tested on chrome 59, ff 53, ie9, ie10, ie11, edge 14
+
+    temp_elem.style.color = flag;
+    if (temp_elem.style.color !== flag) return; // color set failed - some monstrous css rule is probably taking over the color of our object
+
+    temp_elem.style.color = color;
+    if (temp_elem.style.color === flag || temp_elem.style.color === "") return; // color parse failed
+
+    color = getComputedStyle(temp_elem).color;
+    document.body.removeChild(temp_elem);
+  }
+
+  if (color.indexOf("rgb") === 0) {
+    if (color.indexOf("rgba") === -1) color += ",1"; // convert 'rgb(R,G,B)' to 'rgb(R,G,B)A' which looks awful but will pass the regxep below
+
+    var newColor = color.match(/[\.\d]+/g).map(function (a) {
+      return +a;
+    });
+    return {
+      r: newColor[0],
+      g: newColor[1],
+      b: newColor[2],
+      a: newColor[3]
+    };
+  }
+}
+
+
+
+/***/ }),
+
+/***/ 47:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9897,7 +10048,7 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 
 /***/ }),
 
-/***/ 47:
+/***/ 48:
 /***/ (function(module, exports, __webpack_require__) {
 
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
@@ -9977,7 +10128,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ 48:
+/***/ 49:
 /***/ (function(module, exports) {
 
 /**
@@ -10011,22 +10162,6 @@ function isObject(value) {
 }
 
 module.exports = isObject;
-
-
-/***/ }),
-
-/***/ 49:
-/***/ (function(module, exports, __webpack_require__) {
-
-var freeGlobal = __webpack_require__(199);
-
-/** Detect free variable `self`. */
-var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
-
-/** Used as a reference to the global object. */
-var root = freeGlobal || freeSelf || Function('return this')();
-
-module.exports = root;
 
 
 /***/ }),
@@ -10210,6 +10345,22 @@ var formats = {
 
 /***/ }),
 
+/***/ 50:
+/***/ (function(module, exports, __webpack_require__) {
+
+var freeGlobal = __webpack_require__(199);
+
+/** Detect free variable `self`. */
+var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
+
+/** Used as a reference to the global object. */
+var root = freeGlobal || freeSelf || Function('return this')();
+
+module.exports = root;
+
+
+/***/ }),
+
 /***/ 504:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10244,7 +10395,7 @@ module.exports = util.assign(
 
 /***/ }),
 
-/***/ 52:
+/***/ 53:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10269,21 +10420,6 @@ function warning(condition, message) {
 
 /* harmony default export */ __webpack_exports__["a"] = (warning);
 
-
-/***/ }),
-
-/***/ 53:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _assertThisInitialized; });
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
 
 /***/ }),
 
@@ -10344,6 +10480,21 @@ module.exports = function increaseSpecificity(userOptions) {
 /***/ }),
 
 /***/ 54:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _assertThisInitialized; });
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+/***/ }),
+
+/***/ 55:
 /***/ (function(module, exports) {
 
 /**
@@ -10379,7 +10530,7 @@ module.exports = isObjectLike;
 
 /***/ }),
 
-/***/ 55:
+/***/ 56:
 /***/ (function(module, exports) {
 
 /**
@@ -10412,7 +10563,7 @@ module.exports = isArray;
 
 /***/ }),
 
-/***/ 60:
+/***/ 61:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10437,7 +10588,7 @@ function setCookie(cname, value) {
 
 /***/ }),
 
-/***/ 63:
+/***/ 64:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10447,157 +10598,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 var isBrowser = (typeof window === "undefined" ? "undefined" : _typeof(window)) === "object" && (typeof document === "undefined" ? "undefined" : _typeof(document)) === 'object' && document.nodeType === 9;
 
 /* harmony default export */ __webpack_exports__["a"] = (isBrowser);
-
-
-/***/ }),
-
-/***/ 65:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return getPreview; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return rgbToRgba; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return getColorType; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return getPaletteAngle; });
-/* unused harmony export colorValues */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return getFirstColor; });
-/* harmony import */ var react_linear_gradient_picker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(223);
-/* harmony import */ var react_linear_gradient_picker__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_linear_gradient_picker__WEBPACK_IMPORTED_MODULE_0__);
-/* global require */
-
-
-var gradientParser = __webpack_require__(373);
-
-var rgbToRgba = function rgbToRgba(rgb) {
-  var a = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 1;
-  return /rgba/.test(rgb) ? rgb : rgb.replace("rgb(", "rgba(").replace(")", ", ".concat(a, ")"));
-};
-
-var getRadialGradientPreview = function getRadialGradientPreview(palette) {
-  var background = "radial-gradient(".concat(palette.map(function (_ref) {
-    var color = _ref.color,
-        offset = _ref.offset,
-        opacity = _ref.opacity;
-    return "".concat(rgbToRgba(color, opacity), " ").concat(offset * 100, "%");
-  }).join(", "), ")");
-  return {
-    background: background
-  };
-};
-
-var getPreview = function getPreview(palette, angle, type) {
-  switch (type) {
-    case "solid":
-      return getSolidPreview(palette);
-
-    case "radial":
-      return getRadialGradientPreview(palette);
-
-    case "linear":
-      return Object(react_linear_gradient_picker__WEBPACK_IMPORTED_MODULE_0__["getGradientPreview"])(palette, angle);
-  }
-};
-
-var getSolidPreview = function getSolidPreview(palette) {
-  if (typeof palette !== "string") return {
-    background: rgbToRgba(palette[0].color, palette[0].opacity)
-  };
-  return {
-    background: palette
-  };
-};
-
-var getColorType = function getColorType(value) {
-  if (value == null) return "solid";
-  if (/radial/.test(value)) return "radial";
-  if (/linear/.test(value)) return "linear";
-  return "solid";
-};
-
-var getPaletteAngle = function getPaletteAngle(value) {
-  if (value == null) return {
-    palette: null,
-    angle: 90
-  };
-  var type = getColorType(value);
-  if (type === "solid") return {
-    palette: value,
-    angle: 90
-  };
-
-  if (type === "linear" || type === "radial") {
-    var stop = gradientParser.parse(value)[0].colorStops[0];
-    return {
-      palette: "".concat(stop.type, "(").concat(stop.value.join(", "), ")"),
-      angle: 90
-    };
-  }
-};
-
-var getFirstColor = function getFirstColor(color) {
-  var type = getColorType(color);
-  if (type === "solid") return color;
-  var result = gradientParser.parse(color)[0];
-  var stop = result.colorStops[0];
-  if (stop.type === "hex") return "#".concat(stop.value); // hex
-
-  return "".concat(stop.type, "(").concat(stop.value.join(", "), ")"); // rgb(a) or hsl
-};
-
-function colorValues(color) {
-  if (!color) return;
-  if (color.toLowerCase() === "transparent") return {
-    r: 0,
-    g: 0,
-    b: 0,
-    a: 0
-  };
-
-  if (color[0] === "#") {
-    if (color.length < 7) {
-      // convert #RGB and #RGBA to #RRGGBB and #RRGGBBAA
-      color = "#" + color[1] + color[1] + color[2] + color[2] + color[3] + color[3] + (color.length > 4 ? color[4] + color[4] : "");
-    }
-
-    return {
-      r: parseInt(color.substr(1, 2), 16),
-      g: parseInt(color.substr(3, 2), 16),
-      b: parseInt(color.substr(5, 2), 16),
-      a: color.length > 7 ? parseInt(color.substr(7, 2), 16) / 255 : 1
-    };
-  }
-
-  if (color.indexOf("rgb") === -1) {
-    // convert named colors
-    var temp_elem = document.body.appendChild(document.createElement("fictum")); // intentionally use unknown tag to lower chances of css rule override with !important
-
-    var flag = "rgb(1, 2, 3)"; // this flag tested on chrome 59, ff 53, ie9, ie10, ie11, edge 14
-
-    temp_elem.style.color = flag;
-    if (temp_elem.style.color !== flag) return; // color set failed - some monstrous css rule is probably taking over the color of our object
-
-    temp_elem.style.color = color;
-    if (temp_elem.style.color === flag || temp_elem.style.color === "") return; // color parse failed
-
-    color = getComputedStyle(temp_elem).color;
-    document.body.removeChild(temp_elem);
-  }
-
-  if (color.indexOf("rgb") === 0) {
-    if (color.indexOf("rgba") === -1) color += ",1"; // convert 'rgb(R,G,B)' to 'rgb(R,G,B)A' which looks awful but will pass the regxep below
-
-    var newColor = color.match(/[\.\d]+/g).map(function (a) {
-      return +a;
-    });
-    return {
-      r: newColor[0],
-      g: newColor[1],
-      b: newColor[2],
-      a: newColor[3]
-    };
-  }
-}
-
 
 
 /***/ }),
@@ -11304,7 +11304,7 @@ function Stylesheets_button() {
       height: "42px",
       maxWidth: "none !important",
       color: "#fff",
-      background: "#48A4DC",
+      "background-color": "#48A4DC",
       "box-shadow": "0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)",
       textAlign: "center",
       textDecoration: "none",
@@ -11330,7 +11330,7 @@ function Stylesheets_button() {
         "background-repeat": "no-repeat",
         "background-position": "center center"
       },
-      background: "#F08419",
+      "background-color": "#F08419",
       "box-shadow": "0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15)",
       "background-size": "cover",
       "background-repeat": "no-repeat",
@@ -11403,7 +11403,7 @@ function Stylesheets_group() {
 var clsx_m = __webpack_require__(4);
 
 // EXTERNAL MODULE: ./utils/buttonizer-defaults/index.js
-var buttonizer_defaults = __webpack_require__(47);
+var buttonizer_defaults = __webpack_require__(48);
 
 // CONCATENATED MODULE: ./src/js/frontend/Group.js
 function Group_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -11781,7 +11781,10 @@ var CloseOnClickInside_CloseOnClickInside = /*#__PURE__*/function (_Extension) {
       var mainButton = group.buttons[dlv_umd_default()(group, "menuButton", null)];
       Object.values(group.buttons).forEach(function (button) {
         if (mainButton.data.id === button.data.id) return;
-        button.element.addEventListener("click", function () {
+        button.element.addEventListener("click", function (event) {
+          // Don't close if edit button was clicked
+          if (event.target.className.includes("buttonizer-edit-action") || event.target.parentElement.className.includes("buttonizer-edit-action")) return;
+
           _this2.notify(mainButton);
         });
       });
@@ -12579,6 +12582,24 @@ var GoBackPage = /*#__PURE__*/function (_Action) {
 }(Action);
 
 
+// CONCATENATED MODULE: ./src/js/frontend/Utils/messageAdminEditor.js
+/**
+ * Feature to message the admin buttonizer editor
+ *
+ * @param message
+ */
+function messageButtonizerAdminEditor(type, message) {
+  try {
+    window.parent.postMessage({
+      eventType: "buttonizer",
+      messageType: type,
+      message: message
+    }, document.location.origin);
+  } catch (e) {
+    console.error("Buttonizer tried to warn you in the front-end editor. But the message didn't came through. Well. Doesn't matter, it's just an extra function. It's nice to have.");
+    console.error(e);
+  }
+}
 // CONCATENATED MODULE: ./src/js/frontend/Actions/ButtonActions/JavaScriptPro.js
 function JavaScriptPro_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { JavaScriptPro_typeof = function _typeof(obj) { return typeof obj; }; } else { JavaScriptPro_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return JavaScriptPro_typeof(obj); }
 
@@ -12604,7 +12625,8 @@ function JavaScriptPro_getPrototypeOf(o) { JavaScriptPro_getPrototypeOf = Object
 
 
 
-var JavaScriptPro = /*#__PURE__*/function (_Action) {
+
+var JavaScriptPro_JavaScriptPro = /*#__PURE__*/function (_Action) {
   JavaScriptPro_inherits(JavaScriptPro, _Action);
 
   var _super = JavaScriptPro_createSuper(JavaScriptPro);
@@ -12622,7 +12644,7 @@ var JavaScriptPro = /*#__PURE__*/function (_Action) {
         Function('"use strict";console.log("BZ - Run");' + decodeURIComponent(this.data.action) + ';console.log("BZ - Finish");')();
       } catch (e) {
         console.error("Buttonizer error: " + e.message);
-        window.Buttonizer.messageButtonizerAdminEditor("javascript_error", e.message);
+        messageButtonizerAdminEditor("javascript_error", e.message);
       }
     }
   }]);
@@ -13760,7 +13782,7 @@ function buttonizerInPreview_inPreview() {
   return buttonizer_ajax.in_preview === "1";
 }
 // EXTERNAL MODULE: ./utils/cookies.js
-var cookies = __webpack_require__(60);
+var cookies = __webpack_require__(61);
 
 // CONCATENATED MODULE: ./src/js/frontend/Utils/groupOpened.js
 
@@ -14236,7 +14258,7 @@ var SignalGroupChat = /*#__PURE__*/function (_Action) {
   backtotop: BackToTop_BackToTop,
   gotobottom: GoToBottom_GoToBottom,
   gobackpage: GoBackPage,
-  javascript_pro: JavaScriptPro,
+  javascript_pro: JavaScriptPro_JavaScriptPro,
   sms: Sms_Sms,
   messenger_chat: MessengerChat,
   messenger: MessengerLink,
@@ -14264,7 +14286,7 @@ var SignalGroupChat = /*#__PURE__*/function (_Action) {
   signal_group: SignalGroupChat
 });
 // EXTERNAL MODULE: ./utils/color-helpers.js
-var color_helpers = __webpack_require__(65);
+var color_helpers = __webpack_require__(42);
 
 // CONCATENATED MODULE: ./src/js/frontend/FloatingContent/Button.js
 function Button_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
@@ -14485,17 +14507,22 @@ var Button_Button = /*#__PURE__*/function () {
     value: function background() {
       var normal_hover = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
       var bgColor = this.data.background_color[normal_hover];
+
+      if (normal_hover === 1) {
+        bgColor = dlv_umd_default()(this.data.background_color, "1", this.data.background_color[0]);
+      }
+
       if (bgColor == null) return {};
 
       if (bgColor.includes("gradient")) {
         return {
-          background: Object(color_helpers["b" /* getFirstColor */])(bgColor)
+          "background-color": Object(color_helpers["b" /* getFirstColor */])(bgColor)
         };
       }
 
       return {
         "background-image": "none",
-        background: bgColor
+        "background-color": bgColor
       };
     }
   }, {
@@ -15916,24 +15943,6 @@ var MessengerChatWidget = /*#__PURE__*/function (_Generator) {
 // EXTERNAL MODULE: ./utils/utils/index.js + 2 modules
 var utils = __webpack_require__(26);
 
-// CONCATENATED MODULE: ./src/js/frontend/Utils/messageAdminEditor.js
-/**
- * Feature to message the admin buttonizer editor
- *
- * @param message
- */
-function messageButtonizerAdminEditor(type, message) {
-  try {
-    window.parent.postMessage({
-      eventType: "buttonizer",
-      messageType: type,
-      message: message
-    }, document.location.origin);
-  } catch (e) {
-    console.error("Buttonizer tried to warn you in the front-end editor. But the message didn't came through. Well. Doesn't matter, it's just an extra function. It's nice to have.");
-    console.error(e);
-  }
-}
 // CONCATENATED MODULE: ./src/js/frontend/Generators/EditButton.js
 function EditButton_typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { EditButton_typeof = function _typeof(obj) { return typeof obj; }; } else { EditButton_typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return EditButton_typeof(obj); }
 
