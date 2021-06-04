@@ -429,18 +429,18 @@ get_header(); ?>
         border-bottom: 0!important;
         border-right: 0!important;
     }
-    #VC-custom-bangk .slick-slide,
+    #VC-custom-thongtinbaotri .slick-slide,
     #VC-custom-ntt .slick-slide {
         margin: 25px;
         display: flex !important;
         flex-direction: column;
         justify-content: center;
     }
-    #VC-custom-bangk .slick-track,
+    #VC-custom-thongtinbaotri .slick-track,
     #VC-custom-ntt .slick-track{
         height: 250px;
     }
-    #VC-custom-bangk .slick-prev,
+    #VC-custom-thongtinbaotri .slick-prev,
     #VC-custom-ntt .slick-prev{
         width: 40px !important;
         height: 40px !important;
@@ -449,13 +449,13 @@ get_header(); ?>
         outline: none !important;
         border: none !important;
     }
-    #VC-custom-bangk .slick-prev:before,
+    #VC-custom-thongtinbaotri .slick-prev:before,
     #VC-custom-ntt .slick-prev:before{
         content: "\f053";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
     }
-    #VC-custom-bangk .slick-next,
+    #VC-custom-thongtinbaotri .slick-next,
     #VC-custom-ntt .slick-next {
         width: 40px !important;
         height: 40px !important;
@@ -464,15 +464,15 @@ get_header(); ?>
         outline: none !important;
         border: none !important;
     }
-    #VC-custom-bangk .slick-next:before,
+    #VC-custom-thongtinbaotri .slick-next:before,
     #VC-custom-ntt .slick-next:before {
         content: "\f054";
         font-family: "Font Awesome 5 Free";
         font-weight: 900;
     }
-    #VC-custom-bangk .slick-prev:hover,
+    #VC-custom-thongtinbaotri .slick-prev:hover,
     #VC-custom-ntt .slick-prev:hover,
-    #VC-custom-bangk .slick-next:hover,
+    #VC-custom-thongtinbaotri .slick-next:hover,
     #VC-custom-ntt .slick-next:hover {
         border-radius: 0 !important;
         background-size: 50% 100% !important;
