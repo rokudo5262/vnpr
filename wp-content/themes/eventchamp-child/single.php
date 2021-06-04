@@ -119,7 +119,7 @@ get_header(); ?>
                         <!-- Phần Hiển Thị Ban Giám Khảo -->
                         <div class="container-fluid py-5 px-0" id="VC-custom-bangk">
                             <?php
-                            $image = get_field("gallery");
+                            $image = acf_photo_gallery("gallery");
                             ?>
                             <div class="row mx-auto my-auto" style="display: flex;flex-wrap: nowrap;">
                                 <div id="backgroundleft-bgk"></div>
