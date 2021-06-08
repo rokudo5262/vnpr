@@ -104,7 +104,8 @@ get_header(); ?>
 
                     <?php }else{
                         $check = true?>
-                        
+                        <!-- header -->
+                        <img class="header-kienthuc" src="<?php echo home_url().'/wp-content/uploads/2021/05/3-scaled.jpg' ?>" style="padding-bottom: 30px;height: 812px;">
                         <!-- Phần Hiển Thị Thứ 1 -->
                         <div class="container">
                             <?php echo get_field('textarea1')?>
@@ -299,6 +300,10 @@ get_header(); ?>
     #VC-custom-bangk .col-md-4{
         padding: 0 !important;
     }
+
+    .gt-page-title-bar .gt-background {
+
+    }
     #VC-custom-bangk #backgroundleft-bgk{
         width: 16.5% !important;
         background: rgba(164, 31, 34, 0.3);
@@ -484,6 +489,10 @@ get_header(); ?>
     #Carouselhinhanhduthi .slick-slide img {
         width: 880px;
     }
+    #recipeCarouselntt .slick-slide img {
+        width: 80%;
+        height: auto;
+    }
     #Carouselhinhanhduthi .slick-slide {
         text-align: center;
         text-align: -webkit-center;
@@ -585,6 +594,7 @@ get_header(); ?>
     }
     #VC-custom-dangky .ladi-container #GROUP760 {
         margin-top: 183px;
+        z-index: 10;
     }
     #VC-custom-dangky .ladi-container #GROUP760 .ladi-group {
         position: relative;
@@ -658,7 +668,7 @@ get_header(); ?>
         -webkit-animation-duration: 1s;
         animation-iteration-count: 1;
         -webkit-animation-iteration-count: 1;
-        z-index: 29;
+        z-index: 5;
         position: absolute;
     }
     #VC-custom-dangky .ladi-container #IMAGE401 .ladi-image .ladi-image-background {
