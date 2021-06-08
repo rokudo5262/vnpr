@@ -265,3 +265,14 @@ form#bf_loginform {
     -webkit-transform: scale(1.03);
 	transition: all 150ms linear 0s;
 }
+.gt-header.gt-style-3.gt-style-4 {
+	position: relative !important;
+	color: black ;
+	background: none !important;
+}
+.gt-header.gt-style-3.gt-style-4 .gt-navbar .gt-menu>li>a {
+	color: black !important;
+}
+.gt-header.gt-style-3.gt-style-4 .gt-navbar .gt-menu > li > a:hover, .gt-header.gt-style-3.gt-style-4 .gt-navbar .gt-menu > li > a:focus, .gt-header.gt-style-3.gt-style-4 .gt-navbar .gt-menu > li:hover > a, .gt-header.gt-style-3.gt-style-4 .gt-navbar .gt-menu > li:hover > a:visited {
+    color: #a51d21 !important;
+}
