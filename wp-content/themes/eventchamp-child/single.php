@@ -12868,8 +12868,13 @@ get_header(); ?>
             }
         </style>
 	<?php echo eventchamp_sub_content_before(); ?>
-
-		<?php echo eventchamp_page_title_bar(); ?>
+   
+        <?php 
+        global $post;
+        if($post->ID !== 5878 ){
+            echo eventchamp_page_title_bar(); 
+        }
+        ?>
 
 		<?php while ( have_posts() ) { ?>
 
@@ -12892,7 +12897,7 @@ get_header(); ?>
                     global $post;
                     $postcat = get_the_category( $post->ID );
                     
-                    if($postcat[0]->slug != 'kien-thuc'){?>
+                    if($post->ID !== 5878 ){?>
 
                         <?php echo eventchamp_container_before(); ?>
 
