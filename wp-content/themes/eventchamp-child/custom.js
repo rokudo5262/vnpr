@@ -134,7 +134,7 @@ jQuery(function($) {
 });
 
 jQuery(function($) {
-    var owl = $('.owl-carousel.ladi-carousel');
+    var owl = $('.owl-carousel.RA-bgk-carousel');
     owl.owlCarousel({
         items:3,
         loop:true,

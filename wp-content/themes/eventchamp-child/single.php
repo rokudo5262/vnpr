@@ -8783,6 +8783,7 @@ get_header(); ?>
                     top: 183px;
                     left: 0px;
                 }
+
                 #SECTION250 {
                     height: 826.67px;
                 }
@@ -13562,74 +13563,10 @@ get_header(); ?>
                         </div>
                     </div>
                     <div id="BOX220" class="ladi-element"><div class="ladi-box"></div></div>
-                    <!-- <div id="CAROUSEL231" class="ladi-element">
-                        <div class="ladi-carousel">
-                            <div class="ladi-carousel-content">
-                                <div id="GROUP270" class="ladi-element">
-                                    <div class="ladi-group">
-                                        <div id="GROUP222" class="ladi-element">
-                                            <div class="ladi-group">
-                                                <div id="BOX32" class="ladi-element"><div class="ladi-box"></div></div>
-                                                <div id="HEADLINE218" class="ladi-element"><h3 class="ladi-headline">Ông Nguyễn Khoa Kỳ</h3></div>
-                                                <div id="HEADLINE219" class="ladi-element"><h3 class="ladi-headline">Chủ tịch VNPR</h3></div>
-                                            </div>
-                                        </div>
-                                        <div id="FRAME268" class="ladi-element">
-                                            <div class="ladi-frame">
-                                                <div class="ladi-frame-background"></div>
-                                                <div id="IMAGE269" class="ladi-element">
-                                                    <div class="ladi-image ladi-transition"><div class="ladi-image-background"></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="GROUP271" class="ladi-element">
-                                    <div class="ladi-group">
-                                        <div id="GROUP272" class="ladi-element">
-                                            <div class="ladi-group">
-                                                <div id="BOX273" class="ladi-element"><div class="ladi-box"></div></div>
-                                                <div id="HEADLINE274" class="ladi-element"><h3 class="ladi-headline">Mã Thanh Danh</h3></div>
-                                                <div id="HEADLINE275" class="ladi-element"><h3 class="ladi-headline">Phó GĐ tập đoàn KIDO</h3></div>
-                                            </div>
-                                        </div>
-                                        <div id="FRAME276" class="ladi-element">
-                                            <div class="ladi-frame">
-                                                <div class="ladi-frame-background"></div>
-                                                <div id="IMAGE277" class="ladi-element">
-                                                    <div class="ladi-image ladi-transition"><div class="ladi-image-background"></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="GROUP285" class="ladi-element">
-                                    <div class="ladi-group">
-                                        <div id="GROUP286" class="ladi-element">
-                                            <div class="ladi-group">
-                                                <div id="BOX287" class="ladi-element"><div class="ladi-box"></div></div>
-                                                <div id="HEADLINE288" class="ladi-element"><h3 class="ladi-headline">Bà Lê Mai Anh</h3></div>
-                                                <div id="HEADLINE289" class="ladi-element"><h3 class="ladi-headline">Giám đốc điều hànhPRNewswire</h3></div>
-                                            </div>
-                                        </div>
-                                        <div id="FRAME290" class="ladi-element">
-                                            <div class="ladi-frame">
-                                                <div class="ladi-frame-background"></div>
-                                                <div id="IMAGE291" class="ladi-element">
-                                                    <div class="ladi-image ladi-transition"><div class="ladi-image-background"></div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="ladi-carousel-arrow ladi-carousel-arrow-left"></div>
-                            <div class="ladi-carousel-arrow ladi-carousel-arrow-right"></div>
-                        </div>
-                    </div> -->
-                    <div id="CAROUSEL231" class="RA_Section_BanGiamKhao ladi-element">
-                        <div class="container owl-carousel owl-theme owl-loaded owl-drag ladi-carousel">
-                            <div class="owl-stage-outer ladi-carousel-content">
+                  
+                    <div id="CAROUSEL_RA_BGK" class="RA_Section_BanGiamKhao RA-element">
+                        <div class="container owl-carousel owl-theme owl-loaded owl-drag bgk-carousel RA-bgk-carousel">
+                            <div class="owl-stage-outer RA-bgk-carousel-content">
                                 <div class="owl-stage" style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
                                 <?php foreach ($resultBanGiamKhao as $key => $value) { ?>
                                     <div class="owl-item active" style="">

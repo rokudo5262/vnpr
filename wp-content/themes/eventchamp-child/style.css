@@ -570,3 +570,30 @@ form#bf_loginform {
 	}	
 }
 /*end Carousel */
+
+#CAROUSEL_RA_BGK {
+    width: 900px !important;
+    height: 400px !important;
+    top: 115px !important;
+    left: -15px !IMPORTANT;
+    position: absolute;
+}
+
+.RA-element {
+    position: absolute;
+}
+
+.RA-bgk-carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.RA-bgk-carousel .RA-bgk-carousel-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: left 350ms ease-in-out;
+}
