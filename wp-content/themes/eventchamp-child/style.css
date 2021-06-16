@@ -1420,6 +1420,40 @@ form#bf_loginform {
         left: 39.104px !important;
     }
 
+    #GROUP190 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 570px !important;
+    }
+
+    #BOX191 {
+        width: 198px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #HEADLINE192 {
+        width: 198px !important;
+        top: 73.611px;
+        left: 0px !important;
+        padding: 0px 38px !important;
+    }
+
+    #HEADLINE192 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px;
+        line-height: 1.4;
+    }
+
+    #LINE193 {
+        width: 48px;
+        top: 37.792px;
+        left: 39.1344px !important;
+    }
+
     #SECTION152 {
         height: 780px !important;
     }
