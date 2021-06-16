@@ -924,4 +924,54 @@ form#bf_loginform {
         width:0% !important;
         height: 100%;
     }
+
+    #GALLERY1762 {
+        width: 880px !important;
+        height: 750.703px !important;
+        top: 190.861px !important;
+        left: 75px !important;
+    }
+
+    #GROUP314 {
+        width: 430px !important;
+        height: 104.611px !important;
+        top: 40.344px !important;
+        left: 305px !important;
+    }
+
+    #HEADLINE465 {
+        width: 1024px !important;
+        top: 477.008px !important;
+        left: 0px !important;
+        padding: 0px 70px !important;
+    }
+
+    #HEADLINE525 {
+        width: 1024px !important;
+        top: 614.008px !important;
+        left: 0px !important;
+        padding: 0px 70px !important;
+    }
+
+    #HEADLINE526 {
+        width: 1024px !important;
+        top: 565.008px !important;
+        left: 0px !important;
+    }
+
+    #GROUP760 {
+        padding: 0px 190px !important;
+        width: 1024px !important;
+        height: 246px !important;
+        top: 189.346px !important;
+        left: 0px !important;
+    }
+
+    #IMAGE401 {
+        width: 1024px !important;
+        height: 364.497px !important;
+        top: -157.585px !important;
+        left: 0px !important;
+        padding: 0px 205px !important;
+    }
 }
