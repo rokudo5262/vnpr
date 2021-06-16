@@ -3061,10 +3061,10 @@ get_header(); ?>
                     line-height: 1.6;
                 }
                 #BOX220 {
-                    width: 359px;
+                    width: 457px;
                     height: 400px;
                     top: 115px;
-                    left: -359px;
+                    left: -457px;
                 }
                 #BOX220 > .ladi-box {
                     background: rgba(164, 31, 34, 0.3);
