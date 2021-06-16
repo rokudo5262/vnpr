@@ -856,4 +856,38 @@ form#bf_loginform {
         top: 750px !important;
         left: 152px !important;
     }
+
+    #BOX38 {
+        width: 154px !important;
+        height: 400px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #GROUP37 {
+        width: 154px !important;
+        height: 400px;
+        top: 115px;
+        left: 870px;
+        z-index: 20;
+    }
+
+    #HEADLINE39 {
+        width: 100px !important;
+        top: 73.611px !important;
+        left: 39.1039px !important;
+    }
+
+    #HEADLINE47 {
+        width: 900px !important;
+        top: 685.514px !important;
+        left: 60px !important;
+    }
+
+    #BOX48 {
+        width: 1024px !important;
+        height: 402.996px !important;
+        top: 625.014px !important;
+        left: 0px !important;
+    }
 }
