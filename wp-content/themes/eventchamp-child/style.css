@@ -1444,7 +1444,7 @@ form#bf_loginform {
     #HEADLINE192 > .ladi-headline {
         font-family: "Oswald", sans-serif;
         color: rgb(164, 30, 32);
-        font-size: 26px;
+        font-size: 26px !important;
         line-height: 1.4;
     }
 
