@@ -890,4 +890,38 @@ form#bf_loginform {
         top: 625.014px !important;
         left: 0px !important;
     }
+
+    #IMAGE43 {
+        width: 1162.04px !important;
+        height: 411.422px !important;
+        top: 289.592px !important;
+        left: -75px !important;
+        transform: scale(0.7,0.7) !important;
+    }
+
+    #IMAGE42 {
+        width: 262.086px !important;
+        height: 300.221px !important;
+        top: 54.3774px !important;
+        left: 388.957px !important;
+    }
+
+    #LINE208 {
+        width: 675px !important;
+        top: 943.514px !important;
+        left: 60px !important;
+    }
+
+    #BUTTON50 {
+        width: 189px !important;
+        height: 52px !important;
+        top: 926.014px !important;
+        left: 772px !important;
+    }
+
+    .ladi-group {
+        position: absolute;
+        width:0% !important;
+        height: 100%;
+    }
 }
