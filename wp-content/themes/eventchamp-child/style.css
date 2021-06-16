@@ -619,30 +619,30 @@ form#bf_loginform {
     }
 
     #BOX4 {
-        width: 260px;
+        width: 260px !important;
         height: 230px;
         top: 0px;
-        left: 0px;
+        left: 0px !important;
     }
 
     #BOX59 {
-        width: 260px;
+        width: 260px !important;
         height: 230px;
         top: 0px;
-        left: -40px;
+        left: -40px !important;
     }
 
     #BOX63 {
-        width: 260px;
+        width: 260px !important;
         height: 230px;
         top: 0px;
-        left: -70px;
+        left: -70px !important;
     }
 
     #BOX67 {
-        width: 260px;
+        width: 260px !important;
         height: 230px;
         top: 0px;
-        left: -100px;
+        left: -100px !important;
     }
 }
