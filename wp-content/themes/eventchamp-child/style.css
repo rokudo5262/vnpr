@@ -1066,7 +1066,7 @@ form#bf_loginform {
     }
 
     #GROUP58 {
-        width: 200px !important;
+        width: 190px !important;
         height: 230px;
         top: 0px;
         left: 190px !important;
@@ -1093,35 +1093,38 @@ form#bf_loginform {
     }
 
     #BOX63 {
-        width: 200px !important;
+        width: 190px !important;
         height: 230px;
         top: 0px;
-        left: -200px !important;
-    }
-
-    #BOX67 {
-        width: 260px !important;
-        height: 230px;
-        top: 0px;
-        left: -138px !important;
-    }
-
-    #HEADLINE60 {
-        width: 130px !important;
-        top: 73.611px !important;
         left: 0px !important;
     }
 
+    #BOX67 {
+        width: 198px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px !important;
+    }
+
+    #HEADLINE60 {
+        width: 190px !important;
+        top: 73.611px !important;
+        left: 0px !important;
+        padding: 0px 40px !important;
+    }
+
     #LINE61 {
-        width: 48px;
+        width: 190px !important;
         top: 37.792px;
-        left: -60px !important;
+        left: 0px !important;
+        padding: 0px 100px 0px 40px !important;
     }
 
     #HEADLINE64 {
-        width: 110px !important;
+        width: 190px !important;
         top: 73.611px;
-        left: -160px !important;
+        left: 0px !important;
+        padding: 0px 35px;
     }
 
     #HEADLINE64 > .ladi-headline {
@@ -1132,21 +1135,38 @@ form#bf_loginform {
     }
 
     #LINE65 {
-        width: 48px;
+        width: 190px !important;
         top: 37.792px;
-        left: -160px !important;
+        left: 0px !important;
+        padding: 0px 110px 0px 35px !important;
+    }
+
+    #GROUP66 {
+        width: 198px !important;
+        height: 230px;
+        top: 0px;
+        left: 570px !important;
     }
 
     #HEADLINE68 {
-        width: 248px;
+        width: 198px !important;
         top: 73.611px;
-        left: -90px !important;
+        left: 0px !important;
+        padding: 0px 40px !important;
+    }
+
+    #HEADLINE68 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px !important;
+        line-height: 1.4;
     }
 
     #LINE69 {
-        width: 48px;
+        width: 198px !important;
         top: 37.792px;
-        left: -90px !important;
+        left: 0px !important;
+        padding: 0px 110px 0px 40px !important;
     }
 
     #GROUP475 {
@@ -1154,6 +1174,13 @@ form#bf_loginform {
         height: 27px;
         top: 506.6px;
         left: 0px;
+    }
+
+    #GROUP62 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 380px !important;
     }
 
     #BOX472 {
@@ -1164,15 +1191,15 @@ form#bf_loginform {
     }
 
     #HEADLINE474 {
-        width: 398px;
+        width: 768px !important;
         top: 3.5px;
-        left: 310px !important;
+        left: 0px !important;
     }
 
     #BOX26 {
-        width: 250px !important;
+        width: 295px !important;
         height: 460px !important;
-        top: 0px;
+        /* top: 229px; */
         left: 0px;
     }
 
@@ -1207,11 +1234,22 @@ form#bf_loginform {
         left: 40.6559px !important;
     }
 
+    #SECTION30 {
+        height: 620px !important;
+    }
+
     #GROUP524 {
-        width: 250px !important;
+        width: 190px !important;
         height: 441px;
-        top: -230px;
+        top: 0px !important ;
         left: 0px;
+    }
+
+    #SHAPE116 {
+        width: 22px;
+        height: 22px;
+        top: 415px !important;
+        left: 138.5px;
     }
 
     #BOX89 {
