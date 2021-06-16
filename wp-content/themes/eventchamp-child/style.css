@@ -385,7 +385,7 @@ form#bf_loginform {
     position: relative;
     float: left;
     left: -30px;
-    top: -200px;
+    top: -90px;
 	}
 	
 	.RA_Section_Thongtinbaochi button.owl-next {
@@ -394,7 +394,7 @@ form#bf_loginform {
     position: relative;
     float: right;
     right: -30px;
-    top: -200px;
+    top: -90px;
 	}
 }
 
@@ -512,7 +512,7 @@ form#bf_loginform {
     position: relative;
     float: left;
     left: -30px;
-    top: -200px;
+    top: -90px;
 	}
 	
 	.RA_Section_Nhataitro button.owl-next {
@@ -521,7 +521,7 @@ form#bf_loginform {
     position: relative;
     float: right;
     right: -30px;
-    top: -200px;
+    top: -90px;
 	}
 }
 
@@ -978,5 +978,23 @@ form#bf_loginform {
     .gt-footer iframe {
         transform: scale(0.8);
         width: 330px !important;
+    }
+
+    #LINE57 {
+        width: 73px;
+        top: 85.611px;
+        left: 184.5px !important;
+    }
+
+    #LINE845 {
+        width: 73px;
+        top: 125px;
+        left: 485.5px !important;
+    }
+
+    #HEADLINE844 {
+        width: 1024px !important;
+        top: 36.344px !important;
+        left: 0px !important;
     }
 }
