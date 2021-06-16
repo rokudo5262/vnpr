@@ -712,7 +712,7 @@ form#bf_loginform {
     #GROUP523 {
         width: 249px !important;
         height: 174.447px;
-        top: 203.553px;
+        top: 185.553px !important;
         left: 0px;
     }
 
@@ -745,5 +745,115 @@ form#bf_loginform {
         height: 441px;
         top: -230px;
         left: 0px;
+    }
+
+    #BOX89 {
+        width: 254px !important;
+        height: 600px !important;
+        top: 0px;
+        left: 0px;
+    }
+
+    #SECTION87 {
+        height: 360px !important;
+    }
+
+    #HEADLINE98 {
+        width: 200px !important;
+        top: 0px;
+        left: 41.656px;
+    }
+
+    #HEADLINE104 {
+        width: 39px;
+        top: 50px !important;
+        left: 0px;
+    }
+
+    #HEADLINE105 {
+        width: 200px !important;
+        top: 47px !important;
+        left: 41.656px;
+    }
+
+    #GROUP106 {
+        width: 250px !important;
+        height: 560px !important;
+        top: -230px !important;
+        left: 250px !important;
+    }
+
+    #SHAPE117 {
+        width: 24px;
+        height: 24px;
+        top: 327.6px !important;
+        left: 365px !important;
+    }
+
+    #GROUP463 {
+        width: 322px !important;
+        height: 678.6px !important;
+        top: 0px;
+        left: 702px !important;
+    }
+
+    #BOX154 {
+        width: 322px !important;
+        height: 781.6px !important;
+        top: 0px;
+        left: 0px;
+    }
+
+    #HEADLINE159 {
+        width: 250px !important;
+        top: -15px !important;
+        left: 41.656px !important;
+    }
+
+    #LIST_PARAGRAPH209 {
+        width: 270px !important;
+        top: 40.389px !important;
+        left: 39.104px !important;
+    }
+
+    #SECTION152 {
+        height: 550px !important;
+    }
+
+    #HEADLINE213 {
+        width: 39px !important;
+        top: 58.5px !important;
+        left: 0px !important;
+    }
+
+    #HEADLINE214 {
+        width: 240px !important;
+        top: 45px !important;
+        left: 41.656px;
+    }
+
+    #LIST_PARAGRAPH215 {
+        width: 270px !important;
+        top: 100px !important;
+        left: 39.104px !important;
+    }
+
+    #HEADLINE460 {
+        width: 39px !important;
+        top: 110px !important;
+        left: 0px !important;
+    }
+
+    #HEADLINE461 {
+        width: 270px !important;
+        top: 100px !important;
+        left: 41.656px !important;
+    }
+
+    #SHAPE181 {
+        width: 24px;
+        height: 24px;
+        top: 750px !important;
+        left: 152px !important;
     }
 }
