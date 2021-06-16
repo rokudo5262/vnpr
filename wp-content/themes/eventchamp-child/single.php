@@ -434,7 +434,7 @@ get_header(); ?>
                 width: 30px;
                 height: 36px;
                 top: calc(50% - 18px);
-                background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(255, 255, 255, 0.2) no-repeat;
+                background: url(https://w.ladicdn.com/v2/source/ladi-icons.svg) rgba(0, 0, 0, 0.4) no-repeat;
                 cursor: pointer;
                 z-index: 90000040;
             }
@@ -1659,11 +1659,12 @@ get_header(); ?>
                     width: 100%;
                     padding: 8px 0px;
                 }
-                #GROUP37 {
+                #GROUP37  {
                     width: 786px;
                     height: 400px;
                     top: 115px;
-                    left: 900px;
+                    left: 870px;
+                    z-index: 20;
                 }
                 #GROUP37.ladi-animation > .ladi-group {
                     animation-name: fadeInRight;
@@ -5721,7 +5722,7 @@ get_header(); ?>
                 }
                 #LINE845 {
                     width: 73px;
-                    top: 149.955px;
+                    top: 125px;
                     left: 563.5px;
                 }
                 #LINE845 > .ladi-line > .ladi-line-container {
@@ -5793,7 +5794,7 @@ get_header(); ?>
                     left: 0px;
                 }
                 #SECTION842 {
-                    height: 451.4px;
+                    height: 200px;
                 }
                 #SECTION842 > .ladi-section-background {
                     background-color: rgb(250, 250, 250);
@@ -12893,11 +12894,17 @@ get_header(); ?>
 
 					} else {
 				?>
-                    <?php 
+                    <?php
                     global $post;
                     $postcat = get_the_category( $post->ID );
-                    
-                    if($post->ID !== 5878 ){?>
+                    $checkCat = false;
+                    foreach ($postcat as $key => $value) {
+                        if($value->parent==286){
+                            $checkCat = true;
+                        }
+                    }
+                  
+                    if(!$checkCat ){?>
 
                         <?php echo eventchamp_container_before(); ?>
 
@@ -12971,6 +12978,24 @@ get_header(); ?>
                     <?php }else{
                         $check = true?>
                         <!-- header -->
+                        <?php
+                            global $wpdb;    
+                            $id_contest = get_field('id_contest');
+                            $queryCacAnhDuThi = 'SELECT wp_postmeta.post_id,wp_posts.post_title,wp_posts.post_content,wp_photo_contest_list.contest_name,wp_postmeta.meta_key,wp_postmeta.meta_value FROM wp_photo_contest_list JOIN wp_postmeta ON wp_photo_contest_list.id = wp_postmeta.meta_value JOIN wp_posts ON wp_posts.ID = wp_postmeta.post_id WHERE wp_postmeta.meta_key LIKE "photo-related-to-contest" AND wp_postmeta.meta_value = ' . $id_contest;
+                            $resultCacAnhDuThi = $wpdb->get_results( $queryCacAnhDuThi );
+                            $queryThongTinChienDich = 'SELECT * FROM wp_photo_contest_list WHERE wp_photo_contest_list.id = ' . $id_contest;
+                            $resultThongTinChienDich = $wpdb->get_results( $queryThongTinChienDich );
+                            //print_r($resultThongTinChienDich[0]->contest_condition);exit;
+                            $queryThongTinTacGia = 'SELECT * FROM wp_postmeta WHERE wp_postmeta.meta_key LIKE "contest-user-name" AND wp_postmeta.post_id = ';
+                            $thongtinbaochi = get_field('thongtinbaochi');
+                            $resultThongTinBaoChi = explode(",",$thongtinbaochi);
+
+                            $nhataitro = get_field('nhataitro');
+                            $resultNhaTaiTro = explode(",",$nhataitro);
+
+                            $bangiamkhao = get_field('bangiamkhao');
+                            $resultBanGiamKhao = explode(",",$bangiamkhao);
+                        ?>
                         <div class="ladi-wraper">
             <div id="SECTION1776" class="ladi-section">
                 <div class="ladi-section-background"></div>
@@ -13000,12 +13025,7 @@ get_header(); ?>
                     </div>
                     <div id="HEADLINE47" class="ladi-element">
                         <h3 class="ladi-headline">
-                            Mạng lưới Quan hệ Công chúng Việt Nam (VNPR) phát động cuộc thi ảnh “Kiên Cường Việt Nam - Resilient Vietnam” với mục đích lan tỏa những hình ảnh ấn tượng về dân tộc Việt Nam kiên cường trong cuộc chiến phòng,
-                            chống đại dịch COVID-19. Cuộc thi không chỉ đề cao nghệ thuật nhiếp ảnh, mà quan trọng hơn là sử dụng nhiếp ảnh để kể những câu chuyện về Việt Nam kiên cường một cách sinh động, tràn đầy sự trân trọng và lòng
-                            biết ơn. Cuộc thi dành cho tất cả mọi người - dù là nhiếp ảnh gia chuyên nghiệp hay nghiệp dư, với 2 hạng mục giải thưởng: Ảnh chụp bằng máy ảnh chuyên nghiệp và Ảnh chụp bằng điện thoại.<br />
-                            <br />
-                            Những tác phẩm thắng cuộc cũng sẽ có cơ hội xuất hiện trong những bài viết, ấn phẩm của VNPR truyền thông trên báo chí trong nước và báo chí quốc tế nhằm tạo cảm hứng về sức mạnh Việt Nam đến bạn bè năm châu.
-                            <br />
+                            <?=get_field('textarea1');?>
                         </h3>
                     </div>
                     <div id="IMAGE43" class="ladi-element">
@@ -13033,13 +13053,7 @@ get_header(); ?>
                 <div class="ladi-container">
                     <div id="HEADLINE17" class="ladi-element">
                         <h3 class="ladi-headline">
-                            <span style="font-weight: bold; color: rgb(164, 31, 33);">Đối tượng tham gia:<br /></span>Tất cả người Việt Nam và người nước ngoài đang sinh sống ở Việt Nam, không hạn chế độ tuổi.<br />
-                            <br />
-                            <span style="font-weight: bold; color: rgb(164, 31, 33);">Hạng mục dự thi:<br /></span>Hạng mục dành cho ảnh chụp bằng máy ảnh chuyên nghiệp<br />
-                            Hạng mục dành cho ảnh chụp bằng điện thoại<br />
-                            <br />
-                            <span style="color: rgb(164, 31, 33); font-weight: bold;">Thời gian cuộc thi:<br /></span>Thời gian cuộc thi diễn ra từ ngày 24/8/2020 đến 30/9/2020.<br />
-                            Lễ công bố và trao giải dự kiến tổ chức ngày 10/10/2020 qua hình thức sự kiện trực tuyến và livestream trên Fanpage của VNPR.<br />
+                            <?=$resultThongTinChienDich[0]->contest_condition;?>
                         </h3>
                     </div>
                     <div id="GROUP251" class="ladi-element">
@@ -13548,7 +13562,7 @@ get_header(); ?>
                         </div>
                     </div>
                     <div id="BOX220" class="ladi-element"><div class="ladi-box"></div></div>
-                    <div id="CAROUSEL231" class="ladi-element">
+                    <!-- <div id="CAROUSEL231" class="ladi-element">
                         <div class="ladi-carousel">
                             <div class="ladi-carousel-content">
                                 <div id="GROUP270" class="ladi-element">
@@ -13612,113 +13626,69 @@ get_header(); ?>
                             <div class="ladi-carousel-arrow ladi-carousel-arrow-left"></div>
                             <div class="ladi-carousel-arrow ladi-carousel-arrow-right"></div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div id="SECTION230" class="ladi-section">
-                <div class="ladi-section-background"></div>
-                <div class="ladi-container">
-                    <div id="GROUP252" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="HEADLINE253" class="ladi-element"><h3 class="ladi-headline">Nhà tài trợ</h3></div>
-                            <div id="LINE254" class="ladi-element">
-                                <div class="ladi-line"><div class="ladi-line-container"></div></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="CAROUSEL307" class="ladi-element">
-                        <div class="ladi-carousel">
-                            <div class="ladi-carousel-content">
-                                <div id="IMAGE300" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </div>
-                                <div id="IMAGE301" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </div>
-                                <div id="IMAGE302" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </div>
-                                <div id="IMAGE303" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </div>
-                                <div id="IMAGE304" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </div>
-                                <div id="IMAGE306" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </div>
-                                <div id="IMAGE305" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
+                    </div> -->
+                    <div id="CAROUSEL231" class="RA_Section_BanGiamKhao ladi-element">
+                        <div class="container owl-carousel owl-theme owl-loaded owl-drag ladi-carousel">
+                            <div class="owl-stage-outer ladi-carousel-content">
+                                <div class="owl-stage" style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+                                <?php foreach ($resultBanGiamKhao as $key => $value) { ?>
+                                    <div class="owl-item active" style="">
+                                        <img class="item" style="" src="<?=wp_get_attachment_url((int)$value);?>">
+                                    </div>
+                                <?php } ?>
                                 </div>
                             </div>
-                            <div class="ladi-carousel-arrow ladi-carousel-arrow-left"></div>
-                            <div class="ladi-carousel-arrow ladi-carousel-arrow-right"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div id="SECTION842" class="ladi-section">
-                <div class="ladi-section-background"></div>
-                <div class="ladi-container">
-                    <div id="CAROUSEL846" class="ladi-element">
-                        <div class="ladi-carousel">
-                            <div class="ladi-carousel-content">
-                                <a href="https://theleader.vn/phat-dong-cuoc-thi-anh-kien-cuong-viet-nam-1598324884392.htm" target="_blank" id="IMAGE847" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <a
-                                    href="https://phunuvietnam.vn/cuoc-thi-anh-lan-toa-tinh-than-viet-nam-kien-cuong-mua-covid-19-20200824152652755.htm?gidzl=Ll7_8riD015SxFWZKHi25r3iyY9AHWuMI-lpA1j0N4qMxgrw6aLGIXYxhIb9GrGO6UtvUpOqpya7K0i04W"
-                                    target="_blank"
-                                    id="IMAGE848"
-                                    class="ladi-element"
-                                >
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <a href="https://ngaynay.vn/van-hoa/vnpr-phat-dong-cuoc-thi-anh-kien-cuong-viet-nam-resilient-vietnam-179242.html" target="_blank" id="IMAGE849" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <a
-                                    href="https://doanhnghiepvn.vn/tin-tuc/xa-hoi/vnpr-phat-dong-cuoc-thi-anh-kien-cuong-viet-nam-resilient-vietnam-lan-toa-nhung-hinh-anh-an-tuong-trong-cuoc-chien-chong-covid-19/20200824094957784"
-                                    target="_blank"
-                                    id="IMAGE850"
-                                    class="ladi-element"
-                                >
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <a href="https://giadinhvietnam.com/kien-cuong-viet-nam--cuoc-thi-anh-lan-toa-tinh-than-viet-nam-kien-cuong-chien-thang-covid-19-d160699.html" target="_blank" id="IMAGE854" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <a href="https://thethaovanhoa.vn/van-hoa/phat-dong-cuoc-thi-anh-kien-cuong-viet-nam-resilient-vietnam-n20200825193724963.htm" target="_blank" id="IMAGE855" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <a href="http://hoinhabaovietnam.vn/Phat-dong-cuoc-thi-anh-Kien-cuong-Viet-Nam-Lan-toa-tinh-than-chien-thang-dai-dich_n67504.html" target="_blank" id="IMAGE856" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <a href="https://congluan.vn/phat-dong-cuoc-thi-anh-kien-cuong-viet-nam-lan-toa-tinh-than-chien-thang-dai-dich-post92981.html" target="_blank" id="IMAGE857" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <a href="http://xuctiendoanhnghiep.vn/chuong-trinh/su-kien/vnpr-phat-dong-cuoc-thi-anh-kien-cuong-viet-nam-resilient-vi.html" target="_blank" id="IMAGE1005" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <a href="http://congnghevadoisong.vn/kien-cuong-viet-nam---cuoc-thi-anh-lan-toa-tinh-than-nguoi-viet-d33599.html" target="_blank" id="IMAGE1006" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </a>
-                                <div id="IMAGE1768" class="ladi-element">
-                                    <div class="ladi-image"><div class="ladi-image-background"></div></div>
-                                </div>
+
+            <div class="RA_Section_Nhataitro">
+                <div id="SECTION842" class="ladi-section"><div class="ladi-container"><div id="HEADLINE860" class="ladi-element"></div><div id="HEADLINE844" class="ladi-element"><h3 class="ladi-headline">Nhà tài trợ</h3></div><div id="LINE845" class="ladi-element"><div class="ladi-line"><div class="ladi-line-container"></div></div></div></div></div>
+                <div class="container owl-carousel owl-theme owl-loaded owl-drag owl-same">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+                        <?php foreach ($resultNhaTaiTro as $key => $value) { ?>
+                            <div class="owl-item active" style="">
+                                <img class="item" style="margin: 5px auto !important;" src="<?=wp_get_attachment_url((int)$value);?>">
                             </div>
-                            <div class="ladi-carousel-arrow ladi-carousel-arrow-left"></div>
-                            <div class="ladi-carousel-arrow ladi-carousel-arrow-right"></div>
+                        <?php } ?>
                         </div>
-                    </div>
-                    <div id="HEADLINE860" class="ladi-element"><h3 class="ladi-headline">Click vào từng mục để xem chi tiết</h3></div>
-                    <div id="HEADLINE844" class="ladi-element"><h3 class="ladi-headline">Thông tin Báo chí</h3></div>
-                    <div id="LINE845" class="ladi-element">
-                        <div class="ladi-line"><div class="ladi-line-container"></div></div>
                     </div>
                 </div>
             </div>
+            
+            <div class="RA_Section_Thongtinbaochi">
+                <div id="SECTION842" class="ladi-section"><div class="ladi-container"><div id="HEADLINE860" class="ladi-element"></div><div id="HEADLINE844" class="ladi-element"><h3 class="ladi-headline">Thông tin Báo chí</h3></div><div id="LINE845" class="ladi-element"><div class="ladi-line"><div class="ladi-line-container"></div></div></div></div></div>
+                <div class="container owl-carousel owl-theme owl-loaded owl-drag owl-same">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+                        <?php foreach ($resultThongTinBaoChi as $key => $value) { ?>
+                            <div class="owl-item active" style="">
+                                <img class="item" style="margin: 5px auto !important;" src="<?=wp_get_attachment_url((int)$value);?>">
+                            </div>
+                        <?php } ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
             <div id="SECTION313" class="ladi-section">
+                <style>
+                    <?php 
+                        $stt_img=0;
+                        foreach ($resultCacAnhDuThi as $key => $value) {
+                        $src_img=wp_get_attachment_url( (int)$value->post_id );
+                    ?>
+                            #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="<?=$stt_img?>"] {
+                            background-image: url("<?=$src_img;?>");
+                        }
+                    
+                    <?php 
+                    $stt_img++;
+                    } ?>         
+                </style>
                 <div class="ladi-section-background"></div>
                 <div class="ladi-container">
                     <div id="GROUP314" class="ladi-element">
@@ -13734,123 +13704,33 @@ get_header(); ?>
                             <div class="ladi-gallery-view">
                                 <div class="ladi-gallery-view-arrow ladi-gallery-view-arrow-left"></div>
                                 <div class="ladi-gallery-view-arrow ladi-gallery-view-arrow-right"></div>
-                                <div class="ladi-gallery-view-item selected" data-index="0"></div>
-                                <div class="ladi-gallery-view-item" data-index="1"></div>
-                                <div class="ladi-gallery-view-item" data-index="2"></div>
-                                <div class="ladi-gallery-view-item" data-index="3"></div>
-                                <div class="ladi-gallery-view-item" data-index="4"></div>
-                                <div class="ladi-gallery-view-item" data-index="5"></div>
-                                <div class="ladi-gallery-view-item" data-index="6"></div>
-                                <div class="ladi-gallery-view-item" data-index="7"></div>
-                                <div class="ladi-gallery-view-item" data-index="8"></div>
-                                <div class="ladi-gallery-view-item" data-index="9"></div>
-                                <div class="ladi-gallery-view-item" data-index="10"></div>
-                                <div class="ladi-gallery-view-item" data-index="11"></div>
-                                <div class="ladi-gallery-view-item" data-index="12"></div>
-                                <div class="ladi-gallery-view-item" data-index="13"></div>
-                                <div class="ladi-gallery-view-item" data-index="14"></div>
-                                <div class="ladi-gallery-view-item" data-index="15"></div>
-                                <div class="ladi-gallery-view-item" data-index="16"></div>
-                                <div class="ladi-gallery-view-item" data-index="17"></div>
-                                <div class="ladi-gallery-view-item" data-index="18"></div>
-                                <div class="ladi-gallery-view-item" data-index="19"></div>
-                                <div class="ladi-gallery-view-item" data-index="20"></div>
-                                <div class="ladi-gallery-view-item" data-index="21"></div>
-                                <div class="ladi-gallery-view-item" data-index="22"></div>
-                                <div class="ladi-gallery-view-item" data-index="23"></div>
-                                <div class="ladi-gallery-view-item" data-index="24"></div>
-                                <div class="ladi-gallery-view-item" data-index="25"></div>
-                                <div class="ladi-gallery-view-item" data-index="26"></div>
-                                <div class="ladi-gallery-view-item" data-index="27"></div>
-                                <div class="ladi-gallery-view-item" data-index="28"></div>
-                                <div class="ladi-gallery-view-item" data-index="29"></div>
-                                <div class="ladi-gallery-view-item" data-index="30"></div>
-                                <div class="ladi-gallery-view-item" data-index="31"></div>
-                                <div class="ladi-gallery-view-item" data-index="32"></div>
-                                <div class="ladi-gallery-view-item" data-index="33"></div>
-                                <div class="ladi-gallery-view-item" data-index="34"></div>
-                                <div class="ladi-gallery-view-item" data-index="35"></div>
-                                <div class="ladi-gallery-view-item" data-index="36"></div>
-                                <div class="ladi-gallery-view-item" data-index="37"></div>
-                                <div class="ladi-gallery-view-item" data-index="38"></div>
-                                <div class="ladi-gallery-view-item" data-index="39"></div>
-                                <div class="ladi-gallery-view-item" data-index="40"></div>
-                                <div class="ladi-gallery-view-item" data-index="41"></div>
-                                <div class="ladi-gallery-view-item" data-index="42"></div>
-                                <div class="ladi-gallery-view-item" data-index="43"></div>
-                                <div class="ladi-gallery-view-item" data-index="44"></div>
-                                <div class="ladi-gallery-view-item" data-index="45"></div>
-                                <div class="ladi-gallery-view-item" data-index="46"></div>
-                                <div class="ladi-gallery-view-item" data-index="47"></div>
-                                <div class="ladi-gallery-view-item" data-index="48"></div>
-                                <div class="ladi-gallery-view-item" data-index="49"></div>
-                                <div class="ladi-gallery-view-item" data-index="50"></div>
-                                <div class="ladi-gallery-view-item" data-index="51"></div>
-                                <div class="ladi-gallery-view-item" data-index="52"></div>
-                                <div class="ladi-gallery-view-item" data-index="53"></div>
-                                <div class="ladi-gallery-view-item" data-index="54"></div>
-                                <div class="ladi-gallery-view-item" data-index="55"></div>
-                                <div class="ladi-gallery-view-item" data-index="56"></div>
+                                <?php 
+                                    $stt_img=0;
+                                    foreach ($resultCacAnhDuThi as $key => $value) {
+                                    $resultThongTinTacGia = $wpdb->get_results( $queryThongTinTacGia . $value->post_id );
+                                ?>
+                                    <div class="ladi-gallery-view-item <?=$stt_img==0?'selected':''?>" data-index="<?=$stt_img?>">
+                                    <div class="RA-description-item-contest-area">
+                                        <h3 class="RA-title-item-contest"><?=$value->post_title;?></h3>
+                                        <p class="RA-description-item-contest"><?=$value->post_content;?></p>
+                                        <strong class="RA-item-author"><?=$resultThongTinTacGia[0]->meta_value;?></strong>
+                                    </div>
+                                    </div>
+                                    
+                                <?php 
+                                $stt_img++;
+                                } ?>
                             </div>
                             <div class="ladi-gallery-control">
                                 <div class="ladi-gallery-control-box">
-                                    <div class="ladi-gallery-control-item selected" data-index="0"></div>
-                                    <div class="ladi-gallery-control-item" data-index="1"></div>
-                                    <div class="ladi-gallery-control-item" data-index="2"></div>
-                                    <div class="ladi-gallery-control-item" data-index="3"></div>
-                                    <div class="ladi-gallery-control-item" data-index="4"></div>
-                                    <div class="ladi-gallery-control-item" data-index="5"></div>
-                                    <div class="ladi-gallery-control-item" data-index="6"></div>
-                                    <div class="ladi-gallery-control-item" data-index="7"></div>
-                                    <div class="ladi-gallery-control-item" data-index="8"></div>
-                                    <div class="ladi-gallery-control-item" data-index="9"></div>
-                                    <div class="ladi-gallery-control-item" data-index="10"></div>
-                                    <div class="ladi-gallery-control-item" data-index="11"></div>
-                                    <div class="ladi-gallery-control-item" data-index="12"></div>
-                                    <div class="ladi-gallery-control-item" data-index="13"></div>
-                                    <div class="ladi-gallery-control-item" data-index="14"></div>
-                                    <div class="ladi-gallery-control-item" data-index="15"></div>
-                                    <div class="ladi-gallery-control-item" data-index="16"></div>
-                                    <div class="ladi-gallery-control-item" data-index="17"></div>
-                                    <div class="ladi-gallery-control-item" data-index="18"></div>
-                                    <div class="ladi-gallery-control-item" data-index="19"></div>
-                                    <div class="ladi-gallery-control-item" data-index="20"></div>
-                                    <div class="ladi-gallery-control-item" data-index="21"></div>
-                                    <div class="ladi-gallery-control-item" data-index="22"></div>
-                                    <div class="ladi-gallery-control-item" data-index="23"></div>
-                                    <div class="ladi-gallery-control-item" data-index="24"></div>
-                                    <div class="ladi-gallery-control-item" data-index="25"></div>
-                                    <div class="ladi-gallery-control-item" data-index="26"></div>
-                                    <div class="ladi-gallery-control-item" data-index="27"></div>
-                                    <div class="ladi-gallery-control-item" data-index="28"></div>
-                                    <div class="ladi-gallery-control-item" data-index="29"></div>
-                                    <div class="ladi-gallery-control-item" data-index="30"></div>
-                                    <div class="ladi-gallery-control-item" data-index="31"></div>
-                                    <div class="ladi-gallery-control-item" data-index="32"></div>
-                                    <div class="ladi-gallery-control-item" data-index="33"></div>
-                                    <div class="ladi-gallery-control-item" data-index="34"></div>
-                                    <div class="ladi-gallery-control-item" data-index="35"></div>
-                                    <div class="ladi-gallery-control-item" data-index="36"></div>
-                                    <div class="ladi-gallery-control-item" data-index="37"></div>
-                                    <div class="ladi-gallery-control-item" data-index="38"></div>
-                                    <div class="ladi-gallery-control-item" data-index="39"></div>
-                                    <div class="ladi-gallery-control-item" data-index="40"></div>
-                                    <div class="ladi-gallery-control-item" data-index="41"></div>
-                                    <div class="ladi-gallery-control-item" data-index="42"></div>
-                                    <div class="ladi-gallery-control-item" data-index="43"></div>
-                                    <div class="ladi-gallery-control-item" data-index="44"></div>
-                                    <div class="ladi-gallery-control-item" data-index="45"></div>
-                                    <div class="ladi-gallery-control-item" data-index="46"></div>
-                                    <div class="ladi-gallery-control-item" data-index="47"></div>
-                                    <div class="ladi-gallery-control-item" data-index="48"></div>
-                                    <div class="ladi-gallery-control-item" data-index="49"></div>
-                                    <div class="ladi-gallery-control-item" data-index="50"></div>
-                                    <div class="ladi-gallery-control-item" data-index="51"></div>
-                                    <div class="ladi-gallery-control-item" data-index="52"></div>
-                                    <div class="ladi-gallery-control-item" data-index="53"></div>
-                                    <div class="ladi-gallery-control-item" data-index="54"></div>
-                                    <div class="ladi-gallery-control-item" data-index="55"></div>
-                                    <div class="ladi-gallery-control-item" data-index="56"></div>
+                                <?php 
+                                    $stt_img=0;
+                                    foreach ($resultCacAnhDuThi as $key => $value) {
+                                ?>
+                                    <div class="ladi-gallery-control-item <?=$stt_img==0?'selected':''?>" data-index="<?=$stt_img?>"></div>
+                                <?php 
+                                $stt_img++;
+                                } ?>
                                 </div>
                                 <div class="ladi-gallery-control-arrow ladi-gallery-control-arrow-left"></div>
                                 <div class="ladi-gallery-control-arrow ladi-gallery-control-arrow-right"></div>

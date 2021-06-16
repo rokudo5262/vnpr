@@ -9,9 +9,12 @@ if( !function_exists( 'eventchamp_child_theme_setup' ) ) {
 	function eventchamp_child_theme_setup() {
 
 		wp_enqueue_style( 'eventchamp', get_template_directory_uri() . '/style.css' );
-		wp_enqueue_style( 'eventchamp-child-style', get_stylesheet_directory_uri() . '/style.css' );
-        wp_enqueue_script( 'eventchamp-child-script', get_stylesheet_directory_uri() . '/custom.js', array(), '1.0.0', true );
+		wp_enqueue_style( 'eventchamp-child-style', get_stylesheet_directory_uri() . '/style.css', array(), '1.0.0' );
+    wp_enqueue_script( 'eventchamp-child-script', get_stylesheet_directory_uri() . '/custom.js', array(), '1.0.0', true );
 
+    wp_enqueue_style( 'owl-carousel-min-style', get_stylesheet_directory_uri() . '/asset/owlcarousel/owl.carousel.min.css' );
+    wp_enqueue_style( 'owl-theme-default-min-style', get_stylesheet_directory_uri() . '/asset/owlcarousel/owl.theme.default.min.css' );
+    wp_enqueue_script( 'owl-carousel-script', get_stylesheet_directory_uri() . '/asset/owlcarousel/owl.carousel.js');
 	}
 	add_action( 'wp_enqueue_scripts', 'eventchamp_child_theme_setup' );
 
@@ -399,3 +402,90 @@ if( !function_exists( 'eventchamp_event_sidebar_buttons_box' ) ) {
       }
   
   }
+// Hide element
+remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
+add_action('admin_footer-profile.php', 'remove_profile_fields');
+function remove_profile_fields(){
+  $user = wp_get_current_user();
+  if(!in_array( 'administrator', (array) $user->roles )){ 
+    ?>
+<script type="text/javascript">
+jQuery(function($) {
+    $(document).ready(function() {
+        $("h2:contains('Personal Options')").next('.form-table').remove();
+        $("h2:contains('Personal Options')").remove();
+        $(".user-profile-picture p.description").remove();
+    });
+});
+</script>
+<?php 
+  }
+}
+
+function CustomCssHide() {
+  $user = wp_get_current_user();
+  if(!in_array( 'administrator', (array) $user->roles )){
+  ?>
+<style>
+.editor-post-excerpt a.components-external-link,
+.editor-post-link p,
+h3.edit-post-post-link__preview-label,
+a.components-external-link.edit-post-post-link__link,
+button.components-button.edit-post-sidebar__panel-tab[data-label=Block],
+.block-editor-block-list__empty-block-inserter,
+.components-dropdown.components-dropdown-menu.edit-post-more-menu,
+.edit-post-header-toolbar .composer-switch,
+button.components-button.block-editor-inserter__toggle.has-icon,
+.edit-post-header__settings .components-dropdown.block-editor-post-preview__dropdown,
+div#slider_revolution_metabox,
+.components-panel__body.block-editor-block-inspector__advanced,
+.edit-post-header__toolbar button.components-button.edit-post-header-toolbar__inserter-toggle.is-primary {
+    display: none !important;
+}
+
+.block-editor__container div#post_settings {
+    display: none;
+}
+
+.components-modal__screen-overlay {
+    display: none;
+}
+
+#wpcontent .edit-post-layout.is-mode-visual.is-sidebar-opened.has-metaboxes.interface-interface-skeleton {
+    top: 35px !important;
+    left: 202px !important;
+}
+
+.acf-gallery-backdrop {
+    display: none !important;
+}
+</style>
+<?php
+  }
+}
+add_action( 'admin_head', 'CustomCssHide' );
+
+function Hide_index() {
+  $user = wp_get_current_user();
+  if(!in_array( 'administrator', (array) $user->roles )){
+  ?>
+<script type="text/javascript">
+jQuery(function($) {
+    $(document).ready(function() {
+        $("h2:contains('Multilingual Content Setup')").parent().next('.inside').remove();
+        $("h2:contains('Multilingual Content Setup')").parent().remove();
+        $("h2:contains('Language')").next('.handle-actions.hide-if-no-js').remove();
+        $("h2:contains('Language')").remove();
+        $('#icl_document_language_dropdown').parent().css('display', 'none');
+        $("h2:contains('Attach a BuddyForm')").parent().next('.inside').remove();
+        $("h2:contains('Attach a BuddyForm')").parent().remove();
+        $('label .title:contains("Template")').next('select[name=page_template]').remove();
+        $('label .title:contains("Template")').remove();
+        $('#wpseo_meta .postbox-header h2.hndle.ui-sortable-handle').text('SEO');
+    });
+});
+</script>
+<?php
+  }
+}
+add_action('admin_footer', 'Hide_index');
