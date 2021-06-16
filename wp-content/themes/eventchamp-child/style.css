@@ -614,6 +614,35 @@ form#bf_loginform {
         width: 1024px !important;
         height: 104.611px !important;
         top: 58.986px !important;
-        left: 300px !important;
+        left: 0px !important;
+        padding-left: 300px !important;
+    }
+
+    #BOX4 {
+        width: 260px;
+        height: 230px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #BOX59 {
+        width: 260px;
+        height: 230px;
+        top: 0px;
+        left: -40px;
+    }
+
+    #BOX63 {
+        width: 260px;
+        height: 230px;
+        top: 0px;
+        left: -70px;
+    }
+
+    #BOX67 {
+        width: 260px;
+        height: 230px;
+        top: 0px;
+        left: -100px;
     }
 }
