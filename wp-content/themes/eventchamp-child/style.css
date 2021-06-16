@@ -1322,14 +1322,83 @@ form#bf_loginform {
     }
 
     #SECTION107 {
-        height: 635px !important;
+        height: 870px !important;
+    }
+
+    #GROUP182 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #BOX183 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px;
+    }
+    
+    #LINE185 {
+        width: 48px;
+        top: 37.792px;
+        left: 25.5866px !important;
+    }
+
+    #HEADLINE184 {
+        width: 190px !important;
+        top: 73.611px;
+        left: 0px !important;
+        padding: 0px 25px;
+    }
+
+    #HEADLINE184 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px !important;
+        line-height: 1.4;
+    }
+
+    #GROUP186 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 190px !important;
+    }
+
+    #BOX187 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #HEADLINE188 {
+        width: 190px !important;
+        top: 73.611px;
+        left: 0px !important;
+        padding: 0px 40px !important;
+    }
+
+    #HEADLINE188 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px !important;
+        line-height: 1.4;
+    }
+
+    #GROUP312 {
+        width: 499px;
+        height: 866.6px;
+        top: 230px !important;
+        left: 70px !important;
     }
 
     #GROUP463 {
-        width: 322px !important;
+        width: 198px !important;
         height: 678.6px !important;
-        top: 0px;
-        left: 702px !important;
+        top: 230px !IMPORTANT;
+        left: 446px !important;
     }
 
     #BOX154 {
@@ -1352,7 +1421,116 @@ form#bf_loginform {
     }
 
     #SECTION152 {
-        height: 550px !important;
+        height: 780px !important;
+    }
+
+    #GROUP467 {
+        width: 768px !important;
+        height: 678.6px;
+        top: -230px;
+        left: 0px;
+    }
+
+    #GROUP195 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #BOX196 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #HEADLINE197 {
+        width: 190px !important;
+        top: 73.611px;
+        left: 0px;
+        padding: 0px 25px !important;
+    }
+
+    #HEADLINE197 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px !important;
+        line-height: 1.4;
+    }
+
+    #LINE198 {
+        width: 48px;
+        top: 37.792px;
+        left: 25.4576px !important;
+    }
+
+    #GROUP199 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 190px !important;
+    }
+
+    #BOX200 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #HEADLINE201 {
+        width: 190px !important;
+        top: 73.611px;
+        left: 0px !important;
+        padding: 0px 40px !important;
+    }
+
+    #LINE202 {
+        width: 48px;
+        top: 37.792px;
+        left: 40px;
+    }
+
+    #HEADLINE201 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px !important;
+        line-height: 1.4;
+    }
+
+    #GROUP203 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 380px !important;
+    }
+
+    #BOX204 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #HEADLINE205 {
+        width: 190px !important;
+        top: 73.611px;
+        left: 0px !important;
+        padding: 0px 35px !important;
+    }
+
+    #HEADLINE205 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px !important;
+        line-height: 1.4;
+    }
+
+    #LINE206 {
+        width: 48px;
+        top: 37.792px;
+        left: 35.4576px !important;
     }
 
     #HEADLINE213 {
