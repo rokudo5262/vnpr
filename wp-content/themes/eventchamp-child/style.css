@@ -974,4 +974,9 @@ form#bf_loginform {
         left: 0px !important;
         padding: 0px 205px !important;
     }
+
+    .gt-footer iframe {
+        transform: scale(0.8);
+        width: 330px !important;
+    }
 }
