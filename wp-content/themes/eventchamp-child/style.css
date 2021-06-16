@@ -1482,7 +1482,7 @@ form#bf_loginform {
     #HEADLINE197 {
         width: 190px !important;
         top: 73.611px;
-        left: 0px;
+        left: 0px !important;
         padding: 0px 25px !important;
     }
 
