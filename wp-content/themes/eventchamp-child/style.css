@@ -1454,6 +1454,12 @@ form#bf_loginform {
         left: 39.1344px !important;
     }
 
+    #LINE189 {
+        width: 48px;
+        top: 37.792px;
+        left: 40.5866px !important;
+    }
+
     #SECTION152 {
         height: 780px !important;
     }
@@ -1523,7 +1529,7 @@ form#bf_loginform {
     #LINE202 {
         width: 48px;
         top: 37.792px;
-        left: 40px;
+        left: 40px !important;
     }
 
     #HEADLINE201 > .ladi-headline {
