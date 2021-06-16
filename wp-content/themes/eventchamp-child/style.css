@@ -1026,6 +1026,7 @@ form#bf_loginform {
         top: 182.6px;
         left: 0px !important;
         margin: auto !important;
+        padding: 0px 70px !important;
     }
 
     #GROUP251 {
@@ -1037,24 +1038,65 @@ form#bf_loginform {
     }
     /*Cách thức tham gia, Chủ đề cuộc thi, Ảnh dự thi hợp lệ, Giải thưởng*/
     #BOX4 {
-        width: 256px !important;
+        width: 190px !important;
         height: 230px;
         top: 0px;
         left: 0px !important;
     }
 
-    #BOX59 {
-        width: 256px !important;
+    #HEADLINE11 {
+        width: 190px !important;
+        top: 73.611px;
+        left: 0px !important;
+        padding: 0px 25px;
+    }
+
+    #HEADLINE11 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px !important;
+        line-height: 1.4;
+    }
+
+    #LINE12 {
+        width: 190px !important;
+        top: 37.792px;
+        left: 0px !important;
+        padding: 0px 115px 0px 25px !important;
+    }
+
+    #GROUP58 {
+        width: 200px !important;
         height: 230px;
         top: 0px;
-        left: -53px !important;
+        left: 190px !important;
+    }
+
+    #BOX59 {
+        width: 190px !important;
+        height: 230px;
+        top: 0px;
+        left: 0px !important;
+    }
+
+    #HEADLINE60 {
+        width: 110px !important;
+        top: 73.611px !important;
+        left: -60px !important;
+    }
+
+    #HEADLINE60 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px !important;
+        line-height: 1.4;
     }
 
     #BOX63 {
-        width: 256px !important;
+        width: 200px !important;
         height: 230px;
         top: 0px;
-        left: -96px !important;
+        left: -200px !important;
     }
 
     #BOX67 {
@@ -1073,19 +1115,26 @@ form#bf_loginform {
     #LINE61 {
         width: 48px;
         top: 37.792px;
-        left: 0px !important;
+        left: -60px !important;
     }
 
     #HEADLINE64 {
-        width: 153px;
+        width: 110px !important;
         top: 73.611px;
-        left: -45px !important;
+        left: -160px !important;
+    }
+
+    #HEADLINE64 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 26px !important;
+        line-height: 1.4;
     }
 
     #LINE65 {
         width: 48px;
         top: 37.792px;
-        left: -45px !important;
+        left: -160px !important;
     }
 
     #HEADLINE68 {
@@ -1297,9 +1346,10 @@ form#bf_loginform {
     }
 
     #HEADLINE47 {
-        width: 900px !important;
+        width: 768px !important;
         top: 685.514px !important;
-        left: 60px !important;
+        left: 0px !important;
+        padding: 0px 70px !important;
     }
 
     #BOX48 {
@@ -1310,18 +1360,18 @@ form#bf_loginform {
     }
 
     #IMAGE43 {
-        width: 1162.04px !important;
+        width: 1161.04px !important;
         height: 411.422px !important;
-        top: 289.592px !important;
-        left: -75px !important;
-        transform: scale(0.7,0.7) !important;
+        top: 308px !important;
+        left: -215px !important;
+        transform: scale(0.6,0.6) !important;
     }
 
     #IMAGE42 {
         width: 262.086px !important;
         height: 300.221px !important;
-        top: 54.3774px !important;
-        left: 388.957px !important;
+        top: 51.3774px !important;
+        left: 260px !important;
     }
 
     #LINE208 {
@@ -1401,7 +1451,7 @@ form#bf_loginform {
     #LINE57 {
         width: 73px;
         top: 85.611px;
-        left: 184.5px !important;
+        left: 40px !important;
     }
 
     #LINE845 {
@@ -1419,7 +1469,21 @@ form#bf_loginform {
     #IMAGE299 {
         width: 200px;
         height: 104.245px;
-        top: 54.3774px;
-        left: 25px !important;
+        top: 41.3774px !important;
+        left: 15px !important;
+        transform: scale(0.8) !important;
+    }
+
+    #HEADLINE51 {
+        width: 310px !important;
+        top: 0px !important;
+        left: -75px !important;
+    }
+
+    #GROUP24 {
+        width: 190px !important;
+        height: 230px !important;
+        top: 0px;
+        left: 0px;
     }
 }
