@@ -597,3 +597,23 @@ form#bf_loginform {
     left: 0;
     transition: left 350ms ease-in-out;
 }
+
+@media only screen and (max-width: 1024px) and (min-width:769px){
+    .ladi-section .ladi-container {
+        width: 1024px !important;
+    }
+
+    #HEADLINE17 {
+        width: 1024px !important;
+        top: 182.6px;
+        left: 0px !important;
+        margin: auto !important;
+    }
+
+    #GROUP251 {
+        width: 1024px !important;
+        height: 104.611px !important;
+        top: 58.986px !important;
+        left: 300px !important;
+    }
+}
