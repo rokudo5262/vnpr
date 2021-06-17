@@ -1611,17 +1611,17 @@ form#bf_loginform {
     }
 
     #BOX38 {
-        width: 154px !important;
+        width: 85px !important;
         height: 400px;
         top: 0px;
         left: 0px;
     }
 
     #GROUP37 {
-        width: 154px !important;
+        width: 85px !important;
         height: 400px;
         top: 115px;
-        left: 615px !important;
+        left: 634px !important;
         z-index: 20;
     }
     
@@ -1774,10 +1774,14 @@ form#bf_loginform {
     }
 
     #CAROUSEL_RA_BGK {
-        width: 768px !important;
+        width: 646px !important;
         height: 400px !important;
         top: 115px !important;
         left: -15px !IMPORTANT;
         position: absolute;
+    }
+
+    .container.owl-carousel.owl-theme.owl-loaded.owl-drag.bgk-carousel.RA-bgk-carousel {
+        width: 644px !important;
     }
 }
