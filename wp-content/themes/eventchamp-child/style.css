@@ -1774,9 +1774,9 @@ form#bf_loginform {
     }
 
     #HEADLINE315 {
-        width: 768px;
-        top: 0px;
-        left: 0px;
+        width: 768px !important;
+        top: 0px !important;
+        left: 0px !important;
     }
 
     #HEADLINE51 {
