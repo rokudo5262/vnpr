@@ -2568,6 +2568,27 @@ form#bf_loginform {
         top: 3.5px;
         left: 0px !important;
     }
+
+    #SHAPE417 {
+        width: 28.0002px;
+        height: 28.0002px;
+        top: 723.881px;
+        left: 355px !important;
+    }
+
+    #GROUP475 {
+        width: 390px !important;
+        height: 27px;
+        top: 545.611px;
+        left: 0px;
+    }
+
+    #BOX472 {
+        width: 390px !important;
+        height: 27px;
+        top: 0px;
+        left: 0px;
+    }
 }
 
 @media only screen and (max-width: 375px) and (min-width:321px){
