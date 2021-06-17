@@ -1647,9 +1647,13 @@ form#bf_loginform {
 
     #BOX48 {
         width: 768px !important;
-        height: 402.996px !important;
+        height: 470.996px !important;
         top: 625.014px !important;
         left: 0px !important;
+    }
+
+    #SECTION41 {
+        height: 1096.01px !important;
     }
 
     #IMAGE43 {
@@ -1668,16 +1672,16 @@ form#bf_loginform {
     }
 
     #LINE208 {
-        width: 675px !important;
-        top: 943.514px !important;
-        left: 60px !important;
+        width: 400px !important;
+        top: 1050.514px !important;
+        left: 75px !important;
     }
 
     #BUTTON50 {
         width: 189px !important;
         height: 52px !important;
-        top: 926.014px !important;
-        left: 772px !important;
+        top: 1030.014px !important;
+        left: 509px !important;
     }
 
     .ladi-group {
