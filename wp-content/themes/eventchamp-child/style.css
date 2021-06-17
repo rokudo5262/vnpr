@@ -2461,7 +2461,7 @@ form#bf_loginform {
 
     #HEADLINE146 {
         width: 330px !important;
-        top: 15px;
+        top: 15px !important;
         left: 47.56px;
     }
 
