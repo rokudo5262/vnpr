@@ -2242,6 +2242,27 @@ form#bf_loginform {
     .gt-footer iframe {
         transform: scale(0.9) !important;
     }
+
+    #GROUP524 {
+        width: 390px !important;
+        height: 328px;
+        top: 14px;
+        left: 0px;
+    }
+
+    #BOX26 {
+        width: 390px !important;
+        height: 328px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #GROUP523 {
+        width: 390px !important;
+        height: 127px;
+        top: 141.553px;
+        left: 0px;
+    }
 }
 
 @media only screen and (max-width: 375px) and (min-width:321px){
