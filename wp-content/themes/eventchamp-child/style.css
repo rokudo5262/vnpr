@@ -1611,24 +1611,31 @@ form#bf_loginform {
     }
 
     #BOX38 {
-        width: 85px !important;
+        width: 152px !important;
         height: 400px;
         top: 0px;
         left: 0px;
     }
 
     #GROUP37 {
-        width: 85px !important;
+        width: 152px !important;
         height: 400px;
         top: 115px;
-        left: 634px !important;
+        left: 615px !important;
         z-index: 20;
     }
     
     #HEADLINE39 {
-        width: 100px !important;
+        width: 70px !important;
         top: 73.611px !important;
         left: 39.1039px !important;
+    }
+
+    #HEADLINE39 > .ladi-headline {
+        font-family: "Oswald", sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 26px !important;
+        line-height: 1.4;
     }
 
     #HEADLINE47 {
