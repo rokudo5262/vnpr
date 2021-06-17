@@ -415,7 +415,7 @@ form#bf_loginform {
     position: relative;
     float: left;
     left: -25px;
-    top: -205px;
+    top: -90px;
 	}
 	
 	.RA_Section_Thongtinbaochi button.owl-next {
@@ -424,7 +424,7 @@ form#bf_loginform {
     position: relative;
     float: right;
     right: -25px;
-    top: -205px;
+    top: -90px;
 	}
 	
 }
@@ -537,21 +537,21 @@ form#bf_loginform {
 
 @media only screen and (max-width: 768px) and (min-width:429px){
 	.RA_Section_Nhataitro button.owl-prev {
-    font-size: 50px !important;
-    padding: 20px;
-    position: relative;
-    float: left;
-    left: -25px;
-    top: -205px;
-	}
-	
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: left;
+        left: -25px;
+        top: -90px;
+    }
+
 	.RA_Section_Nhataitro button.owl-next {
     font-size: 50px !important;
     padding: 20px;
     position: relative;
     float: right;
     right: -25px;
-    top: -205px;
+    top: -90px;
 	}
 	
 }
@@ -1687,17 +1687,17 @@ form#bf_loginform {
     }
 
     #GALLERY1762 {
-        width: 880px !important;
+        width: 625px !important;
         height: 750.703px !important;
-        top: 190.861px !important;
+        top: 180.861px !important;
         left: 75px !important;
     }
 
     #GROUP314 {
-        width: 430px !important;
+        width: 768px !important;
         height: 104.611px !important;
         top: 40.344px !important;
-        left: 305px !important;
+        left: 0px !important;
     }
 
     #HEADLINE465 {
@@ -1750,7 +1750,13 @@ form#bf_loginform {
     #LINE845 {
         width: 73px;
         top: 125px;
-        left: 485.5px !important;
+        left: 355px !important;
+    }
+
+    #LINE316 {
+        width: 73px;
+        top: 85.611px;
+        left: 355px !important;
     }
 
     #HEADLINE844 {
@@ -1765,6 +1771,12 @@ form#bf_loginform {
         top: 41.3774px !important;
         left: 15px !important;
         transform: scale(0.8) !important;
+    }
+
+    #HEADLINE315 {
+        width: 768px;
+        top: 0px;
+        left: 0px;
     }
 
     #HEADLINE51 {
