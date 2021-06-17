@@ -1943,7 +1943,7 @@ form#bf_loginform {
     }	
 }
 
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 414px) and (min-width:391px){
     #LINE208 {
     width: 99px;
     top: 1140px !important;
@@ -2042,4 +2042,13 @@ form#bf_loginform {
         right: -20px;
         top: -85px !important;
     }	
+}
+
+@media only screen and (max-width: 390px) and (min-width:375px){
+    #GALLERY1762 {
+        width: 390px !important;
+        height: 358.29px;
+        top: 132.08px;
+        left: 0px;
+    }
 }
