@@ -1990,14 +1990,6 @@ form#bf_loginform {
         position: absolute;
     }
 
-    #CAROUSEL_RA_BGK {
-        width: 900px !important;
-        height: 600px !important;
-        top: 115px !important;
-        left: -15px !IMPORTANT;
-        position: absolute;
-    }
-
     .RA_Section_Nhataitro {
         background: #fafafa !important;
         margin-top: 235px !important;
@@ -2113,6 +2105,13 @@ form#bf_loginform {
         left: 0px;
     }
 
+    #GROUP37 {
+        width: 390px !important;
+        height: 184px;
+        top: -1px;
+        left: 0px;
+    }
+
     #BUTTON50 {
         width: 160px !important;
         height: 48px !important;
@@ -2145,4 +2144,49 @@ form#bf_loginform {
         top: 97.931px;
         left: 35.5px !important;
     }
+
+    .RA_Section_Nhataitro {
+        background: #fafafa !important;
+        margin-top: 235px !important;
+    }
+
+    #SECTION842 {
+        height: 130px !important;
+    }
+
+    .RA_Section_Nhataitro button.owl-prev {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: left;
+        left: -20px;
+        top: -85px !important;
+    }
+
+    .RA_Section_Nhataitro button.owl-next {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: right;
+        right: -20px;
+        top: -85px !important;
+    }
+
+    .RA_Section_Thongtinbaochi button.owl-prev {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: left;
+        left: -20px;
+        top: -85px !important;
+    }
+
+    .RA_Section_Thongtinbaochi button.owl-next {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: right;
+        right: -20px;
+        top: -85px !important;
+    }	
 }
