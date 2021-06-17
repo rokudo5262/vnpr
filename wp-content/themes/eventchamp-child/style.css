@@ -2044,11 +2044,98 @@ form#bf_loginform {
     }	
 }
 
-@media only screen and (max-width: 390px) and (min-width:375px){
+@media only screen and (max-width: 390px) and (min-width:376px){
     #GALLERY1762 {
         width: 390px !important;
         height: 358.29px;
         top: 132.08px;
         left: 0px;
+    }
+
+    #HEADLINE465 {
+        width: 330px !important;
+        top: 355px !important;
+        left: 24.229px !important;
+    }
+
+    #HEADLINE526 {
+        width: 335px !important;
+        top: 540px !important;
+        left: 24.229px !important;
+    }
+
+    #HEADLINE526 {
+        width: 335px !important;
+        top: 540px !important;
+        left: 24.229px;
+    }
+
+    #SECTION250 {
+        height: 860px !important;
+    }
+
+    #HEADLINE465 {
+        width: 330px !important;
+        top: 355px !important;
+        left: 24.229px !important;
+    }
+
+    .ladi-section .ladi-container {
+        width: 390px !important;
+    }
+
+    #IMAGE401 {
+        width: 314.968px !important;
+        height: 186.497px !important;
+        top: -80px !important;
+        left: 29.516px !important;
+    }
+
+    #IMAGE308 {
+        width: 366px !important;
+        height: 216.713px !important;
+        top: 427.672px !important;
+        left: 10px !important;
+        transform: scale(0.9) !important;
+    }
+
+    #BOX48 {
+        width: 340px !important;
+        height: 608.443px !important;
+        top: 624.095px !important;
+        left: 24px !important;
+    }
+
+    #BOX48 {
+        width: 340px !important;
+        height: 608.443px !important;
+        top: 624.095px !important;
+        left: 24px !important;
+    }
+
+    #BUTTON50 {
+        width: 160px !important;
+        height: 48px !important;
+        top: 1172.95px !important;
+        left: 165px !important;
+    }
+
+    #HEADLINE47 {
+        width: 265px !important;
+        top: 656.946px !important;
+        left: 59.5px !important;
+    }
+
+    #HEADLINE17 {
+        width: 345px !important;
+        top: 147.611px !important;
+        left: 24px !important;
+    }
+
+    #HEADLINE17 > .ladi-headline {
+        color: rgb(84, 84, 84);
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: center !important;
     }
 }
