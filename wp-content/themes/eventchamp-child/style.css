@@ -2470,6 +2470,25 @@ form#bf_loginform {
         top: 15px !important;
         left: 47.56px;
     }
+
+    #GROUP309 {
+        width: 390px !important;
+        height: 70px;
+        top: 773px;
+        left: 0px !important;
+    }
+
+    #HEADLINE311 {
+        width: 330px !important;
+        top: 15px !important;
+        left: 48.0611px;
+    }
+
+    #HEADLINE310 {
+        width: 48px;
+        top: 25px !important;
+        left: 0px;
+    }
 }
 
 @media only screen and (max-width: 375px) and (min-width:321px){
