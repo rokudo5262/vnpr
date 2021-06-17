@@ -1942,3 +1942,104 @@ form#bf_loginform {
         top: -85px !important;
     }	
 }
+
+@media only screen and (max-width: 414px){
+    #LINE208 {
+    width: 99px;
+    top: 1140px !important;
+    left: 60px !important;
+    }
+
+    #BUTTON50 {
+        width: 180px;
+        height: 48px;
+        top: 1125px !important;
+        left: 178.5px !important;
+    }
+
+    #GROUP37 {
+        width: 428px !important;
+        height: 215px !important;
+        top: 0px;
+        left: 0px;
+    }
+
+    #BOX38 {
+        width: 424px !important;
+        height: 216px !important; 
+        top: 0px;
+        left: 0px;
+    }
+
+    .container.owl-carousel.owl-theme.owl-loaded.owl-drag.bgk-carousel.RA-bgk-carousel {
+        margin-top: 100px !important;
+        /* margin-bottom: 100px !important; */
+    }
+
+    .owl-carousel.RA-bgk-carousel .owl-item img {
+        display: block;
+        transform: scale(1,1);
+        width: 50% !important;
+    }
+
+    #CAROUSEL_RA_BGK {
+        width: 900px !important;
+        height: 600px !important;
+        top: 115px !important;
+        left: -15px !IMPORTANT;
+        position: absolute;
+    }
+
+    #CAROUSEL_RA_BGK {
+        width: 900px !important;
+        height: 600px !important;
+        top: 115px !important;
+        left: -15px !IMPORTANT;
+        position: absolute;
+    }
+
+    .RA_Section_Nhataitro {
+        background: #fafafa !important;
+        margin-top: 235px !important;
+    }
+
+    #SECTION842 {
+        height: 130px !important;
+    }
+
+    .RA_Section_Nhataitro button.owl-prev {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: left;
+        left: -20px;
+        top: -85px !important;
+    }
+
+    .RA_Section_Nhataitro button.owl-next {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: right;
+        right: -20px;
+        top: -85px !important;
+    }
+
+    .RA_Section_Thongtinbaochi button.owl-prev {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: left;
+        left: -20px;
+        top: -85px !important;
+    }
+
+    .RA_Section_Thongtinbaochi button.owl-next {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: right;
+        right: -20px;
+        top: -85px !important;
+    }	
+}
