@@ -2189,4 +2189,21 @@ form#bf_loginform {
         right: -20px;
         top: -85px !important;
     }	
+
+    #CAROUSEL_RA_BGK {
+        width: 900px !important;
+        height: 400px !important;
+        top: 182px !important;
+        left: -15px !IMPORTANT;
+        position: absolute;
+    }
+
+    .owl-carousel.RA-bgk-carousel .owl-item img {
+        display: block;
+        width: 389px !important;
+    }
+
+    #SECTION31 {
+        height: 670px !important;
+    }
 }
