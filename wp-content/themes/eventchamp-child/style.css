@@ -2191,8 +2191,8 @@ form#bf_loginform {
     }	
 
     #CAROUSEL_RA_BGK {
-        width: 900px !important;
-        height: 400px !important;
+        width: 420px !important;
+        height: 565px !important;
         top: 182px !important;
         left: -15px !IMPORTANT;
         position: absolute;
@@ -2205,5 +2205,62 @@ form#bf_loginform {
 
     #SECTION31 {
         height: 670px !important;
+    }
+
+    #HEADLINE51 {
+        width: 390px !important;
+        top: 0px;
+        left: 0px;
+    }
+
+    #LINE57 {
+        width: 73px;
+        top: 64.611px;
+        left: 159.5px !important;
+    }
+
+    #GROUP251 {
+        width: 390px !important;
+        height: 83.611px;
+        top: 40px;
+        left: 0px !important;
+    }
+
+    #HEADLINE860 {
+        width: 390px !important;
+        top: 63px;
+        left: 0px !important;
+    }
+
+    #HEADLINE525 {
+        width: 375px !important;
+        top: 596.931px !important;
+        left: 0px !important;
+        padding: 0px 20px !important;
+    }
+
+    .gt-footer iframe {
+        transform: scale(0.9) !important;
+    }
+}
+
+@media only screen and (max-width: 375px) and (min-width:321px){
+    #HEADLINE51 {
+        width: 375px !important;
+        top: 0px;
+        left: 0px;
+    }
+
+    #LINE57 {
+        width: 73px;
+        top: 64.611px;
+        left: 159.5px !important;
+    }
+
+    #GROUP251 {
+        width: 375px !important;
+        height: 83.611px;
+        top: 40px;
+        left: 0px !important;
     }
 }
