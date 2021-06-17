@@ -2398,6 +2398,24 @@ form#bf_loginform {
         top: 154.553px;
         left: 0px;
     }
+
+    #HEADLINE113 {
+        width: 330px !important;
+        top: -8px !important;
+        left: 47.0612px;
+    }
+
+    #HEADLINE123 {
+        width: 330px !important;
+        top: -8px !important;
+        left: 48.0611px;
+    }
+
+    #HEADLINE126 {
+        width: 330px !important;
+        top: -8px !important;
+        left: 48.0611px;
+    }
 }
 
 @media only screen and (max-width: 375px) and (min-width:321px){
