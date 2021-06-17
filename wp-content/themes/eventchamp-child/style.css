@@ -1842,3 +1842,29 @@ form#bf_loginform {
         left: 80px !important;
     }
 }
+@media only screen and (max-width: 428px) and (min-width:415px){
+    #LINE208 {
+    width: 99px;
+    top: 1140px !important;
+    left: 60px !important;
+    }
+
+    #BUTTON50 {
+        width: 180px;
+        height: 48px;
+        top: 1125px !important;
+        left: 178.5px !important;
+    }
+
+    #GROUP37 {
+        width: 428px !important;
+        height: 215px !important;
+        top: 0px;
+        left: 0px;
+    }
+
+    .container.owl-carousel.owl-theme.owl-loaded.owl-drag.bgk-carousel.RA-bgk-carousel {
+        margin-top: 100px !important;
+        /* margin-bottom: 100px !important; */
+    }
+}
