@@ -1874,4 +1874,31 @@ form#bf_loginform {
         margin-top: 100px !important;
         /* margin-bottom: 100px !important; */
     }
+
+    .owl-carousel.RA-bgk-carousel .owl-item img {
+        display: block;
+        transform: scale(1,1);
+        width: 50% !important;
+    }
+
+    #CAROUSEL_RA_BGK {
+        width: 900px !important;
+        height: 600px !important;
+        top: 115px !important;
+        left: -15px !IMPORTANT;
+        position: absolute;
+    }
+
+    #CAROUSEL_RA_BGK {
+        width: 900px !important;
+        height: 600px !important;
+        top: 115px !important;
+        left: -15px !IMPORTANT;
+        position: absolute;
+    }
+
+    .RA_Section_Nhataitro {
+        background: #fafafa !important;
+        margin-top: 235px !important;
+    }
 }
