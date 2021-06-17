@@ -2416,6 +2416,60 @@ form#bf_loginform {
         top: -8px !important;
         left: 48.0611px;
     }
+
+    #HEADLINE129 {
+        width: 330px !important;
+        top: -8px !important;
+        left: 47.56px;
+    }
+
+    #HEADLINE140 {
+        width: 330px !important;
+        top: 15px !important;
+        left: 47.56px;
+    }
+
+    #HEADLINE139 {
+        width: 48px;
+        top: 25px !important;
+        left: 0px;
+    }
+
+    #HEADLINE142 {
+        width: 48px;
+        top: 25px !important;
+        left: 0px;
+    }
+
+    #HEADLINE145 {
+        width: 48px;
+        top: 25px !important;
+        left: 0px;
+    }
+
+    #HEADLINE148 {
+        width: 48px;
+        top: 25px !important;
+        left: 0px;
+    }
+
+    #HEADLINE143 {
+        width: 330px !important;
+        top: 15px !important;
+        left: 47.56px;
+    }
+
+    #HEADLINE146 {
+        width: 330px !important;
+        top: 15px;
+        left: 47.56px;
+    }
+
+    #HEADLINE149 {
+        width: 330px !important;
+        top: 15px !important;
+        left: 47.56px;
+    }
 }
 
 @media only screen and (max-width: 375px) and (min-width:321px){
