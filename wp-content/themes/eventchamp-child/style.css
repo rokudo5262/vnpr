@@ -1863,6 +1863,13 @@ form#bf_loginform {
         left: 0px;
     }
 
+    #BOX38 {
+        width: 424px !important;
+        height: 216px !important; 
+        top: 0px;
+        left: 0px;
+    }
+
     .container.owl-carousel.owl-theme.owl-loaded.owl-drag.bgk-carousel.RA-bgk-carousel {
         margin-top: 100px !important;
         /* margin-bottom: 100px !important; */
