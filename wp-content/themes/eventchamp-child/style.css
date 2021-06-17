@@ -1901,4 +1901,26 @@ form#bf_loginform {
         background: #fafafa !important;
         margin-top: 235px !important;
     }
+
+    #SECTION842 {
+        height: 130px !important;
+    }
+
+    .RA_Section_Nhataitro button.owl-prev {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: left;
+        left: -20px;
+        top: -85px !important;
+    }
+
+    .RA_Section_Nhataitro button.owl-next {
+        font-size: 50px !important;
+        padding: 20px;
+        position: relative;
+        float: right;
+        right: -20px;
+        top: -85px !important;
+    }
 }
