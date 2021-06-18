@@ -3229,21 +3229,32 @@ form#bf_loginform {
 
     #BOX154 {
         width: 375px !important;
-        height: 736.6px;
+        height: 770px !important;
         top: 0px;
         left: 0.3408px;
     }
 
     #HEADLINE159 {
-        width: 330px !important;
+        width: 290px !important;
         top: 0px;
         left: 47.402px;
     }
 
     #LIST_PARAGRAPH209 {
-        width: 330px !important;
+        width: 300px !important;
         top: 58.389px;
         left: 45.402px;
+    }
+
+    #LIST_PARAGRAPH209>.ladi-list-paragraph {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        text-align: justify !important;
+        line-height: 1.6;
+    }
+
+    #SECTION152 {
+        height: 770px !important;
     }
 
     #GROUP211 {
