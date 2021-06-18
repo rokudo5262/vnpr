@@ -2926,9 +2926,14 @@ form#bf_loginform {
 
     #GROUP106 {
         width: 375px !important;
-        height: 423px;
+        height: 450px !important;
         top: 13px;
         left: 0px;
+    }
+
+    #SECTION87 {
+        height: 450px !important;
+        display: none !important;
     }
 
     #BOX89 {
@@ -2939,9 +2944,16 @@ form#bf_loginform {
     }
 
     #HEADLINE98 {
-        width: 320px !important;
+        width: 285px !important;
         top: 0px;
         left: 49.3184px;
+    }
+
+    #HEADLINE98>.ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: justify !important;
     }
 
     #HEADLINE105 {
