@@ -2200,7 +2200,8 @@ form#bf_loginform {
 
     .owl-carousel.RA-bgk-carousel .owl-item img {
         display: block;
-        width: 405px !important;
+        width: 390px !important;
+        margin-left: 15px !important;
     }
 
     #SECTION31 {
