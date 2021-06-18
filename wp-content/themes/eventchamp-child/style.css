@@ -2596,6 +2596,12 @@ form#bf_loginform {
         top: 144.553px;
         left: 0.3408px;
     }
+
+    #LINE208 {
+        width: 75px !important;
+        top: 1185px !important;
+        left: 58px !important;
+    }
 }
 
 @media only screen and (max-width: 375px) and (min-width:321px){
