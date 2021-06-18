@@ -2612,7 +2612,7 @@ form#bf_loginform {
         margin-left: auto;
     }
 
-    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-]:hover {
+    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-prev]:hover {
         background: rgba(0,0,0,.4) !important;
         color: #FFF;
         text-decoration: none;
@@ -2621,6 +2621,17 @@ form#bf_loginform {
         padding: 17px !important;
         top: -115px !important;
         left: -5px !important;
+    }
+
+    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-next]:hover {
+        background: rgba(0,0,0,.4) !important;
+        color: #FFF;
+        text-decoration: none;
+        width: 45px !important;
+        height: 45px !important;
+        padding: 17px !important;
+        top: -115px !important;
+        left: 5px !important;
     }
 }
 
