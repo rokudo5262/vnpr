@@ -2604,12 +2604,20 @@ form#bf_loginform {
         left: 58px !important;
     }
 
-    .container.owl-carousel {
+    .container {
         width: 100%;
         padding-right: 0px !important;
         padding-left: 0px !important;
         margin-right: auto;
         margin-left: auto;
+    }
+
+    .gt-mobile-header .gt-menu-icon {
+        margin-right: 15px !important;
+    }
+
+    .gt-mobile-header .gt-logo {
+        margin-left: 15px !important;
     }
 
     .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-prev]:hover , .RA_Section_Thongtinbaochi .owl-theme .owl-nav [class*=owl-prev]:hover {
