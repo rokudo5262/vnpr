@@ -3188,6 +3188,13 @@ form#bf_loginform {
         left: 0px;
     }
 
+    #SECTION107 .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: justify !important;
+    }
+
     #GROUP467 {
         width: 375px !important;
         height: 736.6px;
