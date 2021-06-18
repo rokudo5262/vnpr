@@ -96,7 +96,10 @@ jQuery(function($) {
         autoplayHoverPause:true,
         nav:true,
         responsive:{
-            375:{
+            320:{
+                items:1,
+                nav:true
+            },375:{
                 items:1,
                 nav:true
             },390:{
@@ -144,7 +147,10 @@ jQuery(function($) {
         autoplayHoverPause:true,
         nav:true,
         responsive:{
-            375:{
+            320:{
+                items:1,
+                nav:true
+            },375:{
                 items:1,
                 nav:true
             },390:{
