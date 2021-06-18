@@ -3084,6 +3084,24 @@ form#bf_loginform {
         left: 0px;
     }
 
+    #HEADLINE112 {
+        width: 48px;
+        top: -11px !important;
+        left: 0px;
+    }
+
+    #HEADLINE122 {
+        width: 48px;
+        top: -15px !important;
+        left: 0px;
+    }
+
+    #HEADLINE125 {
+        width: 48px;
+        top: -16px !important;
+        left: 0px;
+    }
+
    #HEADLINE113 {
     width: 300px !important;
     top: -8px !important;
@@ -3110,7 +3128,7 @@ form#bf_loginform {
 
     #HEADLINE128 {
         width: 48px;
-        top: 25px !important;
+        top: 8px !important;
         left: 0px;
     }
 
@@ -3129,19 +3147,19 @@ form#bf_loginform {
 
     #HEADLINE139 {
         width: 48px;
-        top: 50px !important;
+        top: 32px !important;
         left: 0px;
     }
 
     #HEADLINE142 {
         width: 48px;
-        top: 50px !important;
+        top: 38px !important;
         left: 0px;
     }
 
     #HEADLINE145 {
         width: 48px;
-        top: 25px !important;
+        top: 60px !important;
         left: 0px;
     }
 
@@ -3153,13 +3171,13 @@ form#bf_loginform {
 
     #HEADLINE143 {
         width: 300px !important;
-        top: 40px !important;
+        top: 45px !important;
         left: 47.56px;
     }
 
     #HEADLINE146 {
         width: 300px !important;
-        top: 40px !important;
+        top: 65px !important;
         left: 47.56px;
     }
 
