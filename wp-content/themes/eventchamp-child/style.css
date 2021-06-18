@@ -2938,8 +2938,14 @@ form#bf_loginform {
 
     #BOX89 {
         width: 375px !important;
-        height: 423px;
+        height: 440px !important;
         top: 0px;
+        left: 0px;
+    }
+
+    #HEADLINE104 {
+        width: 46px;
+        top: 25px !important;
         left: 0px;
     }
 
@@ -2957,9 +2963,23 @@ form#bf_loginform {
     }
 
     #HEADLINE105 {
-        width: 320px !important;
-        top: 0px;
+        width: 285px !important;
+        top: 20px !important;
         left: 49.3184px;
+    }
+
+    #SHAPE117 {
+        width: 24px;
+        height: 24px;
+        top: 420px !important;
+        left: 175px !important;
+    }
+
+    #HEADLINE105>.ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        text-align: justify !important; 
     }
 
     #GROUP118 {
