@@ -3229,7 +3229,7 @@ form#bf_loginform {
 
     #BOX154 {
         width: 375px !important;
-        height: 770px !important;
+        height: 800px !important;
         top: 0px;
         left: 0.3408px;
     }
@@ -3254,7 +3254,19 @@ form#bf_loginform {
     }
 
     #SECTION152 {
-        height: 770px !important;
+        height: 815px !important;
+    }
+
+    #HEADLINE214 {
+        width: 280px !important;
+        top: 21px !important;
+        left: 48.0612px;
+    }
+
+    #HEADLINE460 {
+        width: 48px !important;
+        top: 50px !important;
+        left: 0px !important;
     }
 
     #GROUP211 {
@@ -3286,10 +3298,10 @@ form#bf_loginform {
 
     #HEADLINE461 {
         width: 300px !important;
-        top: 0px;
+        top: 50px !important;
         left: 47.402px;
     }
-
+    
     #HEADLINE213 {
         width: 48px !important;
         top: 37.5px !important;
