@@ -2851,7 +2851,7 @@ form#bf_loginform {
     #LINE57 {
         width: 73px;
         top: 64.611px;
-        left: 159.5px !important;
+        left: 156px !important;
     }
 
     #GROUP251 {
@@ -3306,5 +3306,11 @@ form#bf_loginform {
 
     #LINE845 {
         left: 155px !important;
+    }
+
+    #LINE316 {
+        width: 73px;
+        top: 61.8055px;
+        left: 82.5px !important;
     }
 }
