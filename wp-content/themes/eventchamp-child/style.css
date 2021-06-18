@@ -3272,8 +3272,8 @@ form#bf_loginform {
     }
 
     #LIST_PARAGRAPH215 {
-        width: 330px !important;
-        top: 36.389px;
+        width: 300px !important;
+        top: 81.389px !important;
         left: 47.0612px;
     }
 
@@ -3285,16 +3285,22 @@ form#bf_loginform {
     }
 
     #HEADLINE461 {
-        width: 330px !important;
+        width: 300px !important;
         top: 0px;
         left: 47.402px;
+    }
+
+    #HEADLINE213 {
+        width: 48px !important;
+        top: 37.5px !important;
+        left: 0px !important;
     }
 
     #SHAPE181 {
         width: 25.2004px;
         height: 24px;
-        top: 698.2px;
-        left: 180.741px !important;
+        top: 720.2px;
+        left: 175.741px !important;
     }
 
     #HEADLINE474 {
