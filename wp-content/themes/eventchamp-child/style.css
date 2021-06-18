@@ -3110,13 +3110,13 @@ form#bf_loginform {
 
     #HEADLINE128 {
         width: 48px;
-        top: 25px;
+        top: 25px !important;
         left: 0px;
     }
 
     #HEADLINE140 {
         width: 310px !important;
-        top: 15px !important;
+        top: 40px !important;
         left: 47.56px;
     }
 
@@ -3129,13 +3129,13 @@ form#bf_loginform {
 
     #HEADLINE139 {
         width: 48px;
-        top: 25px !important;
+        top: 50px !important;
         left: 0px;
     }
 
     #HEADLINE142 {
         width: 48px;
-        top: 25px !important;
+        top: 50px !important;
         left: 0px;
     }
 
@@ -3153,7 +3153,7 @@ form#bf_loginform {
 
     #HEADLINE143 {
         width: 330px !important;
-        top: 15px !important;
+        top: 40px !important;
         left: 47.56px;
     }
 
