@@ -3104,14 +3104,27 @@ form#bf_loginform {
 
     #HEADLINE129 {
         width: 310px !important;
-        top: -8px !important;
+        top: 15px !important;
         left: 47.56px;
+    }
+
+    #HEADLINE128 {
+        width: 48px;
+        top: 25px;
+        left: 0px;
     }
 
     #HEADLINE140 {
         width: 310px !important;
         top: 15px !important;
         left: 47.56px;
+    }
+
+    #SHAPE150 {
+        width: 22.2004px !important;
+        height: 24px !important;
+        top: 910.2px !important;
+        left: 180.9px !important;
     }
 
     #HEADLINE139 {
