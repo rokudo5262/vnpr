@@ -3560,7 +3560,7 @@ form#bf_loginform {
 
     #HEADLINE17 > .ladi-headline {
         color: rgb(84, 84, 84);
-        font-size: 15px;
+        font-size: 14px !important;
         line-height: 1.6;
         text-align: center !important;
     }
@@ -4216,12 +4216,19 @@ form#bf_loginform {
     }
 
     #LINE845 {
-        left: 155px !important;
+        left: 125px !important;
+        top: 80px !important;
     }
 
     #LINE316 {
         width: 73px;
         top: 61.8055px;
-        left: 82.5px !important;
+        left: 50.5px !important;
+    }
+
+    #HEADLINE315 {
+        width: 320px !important;
+        top: 0px !important;
+        left: -60px !important;
     }
 }
