@@ -3501,14 +3501,18 @@ form#bf_loginform {
     #IMAGE308 {
         width: 366px !important;
         height: 216.713px !important;
-        top: 427.672px !important;
-        left: 5px !important;
-        transform: scale(0.9) !important;
+        top: 446.672px !important;
+        left: -20px !important;
+        transform: scale(0.7) !important;
+    }
+
+    #SECTION41 {
+        height: 1356px !important;
     }
 
     #BOX48 {
-        width: 325px !important;
-        height: 620px !important;
+        width: 274px !important;
+        height: 710px !important;
         top: 624.095px !important;
         left: 24px !important;
     }
@@ -3528,23 +3532,23 @@ form#bf_loginform {
     }
 
     #BUTTON50 {
-        width: 135px !important;
-        height: 48px !important;
-        top: 1177.95px !important;
-        left: 180px !important;
+        width: 100px !important;
+        height: 36px !important;
+        top: 1282.95px !important;
+        left: 170px !important;
     }
 
     #BUTTON_TEXT50>.ladi-headline {
         color: rgb(255, 235, 0);
-        font-size: 15px !important;
+        font-size: 11px !important;
         text-align: center;
         line-height: 1.6;
     }
 
     #HEADLINE47 {
-        width: 255px !important;
+        width: 220px !important;
         top: 656.946px !important;
-        left: 59.5px !important;
+        left: 50px !important;
     }
 
     #HEADLINE17 {
@@ -4139,9 +4143,9 @@ form#bf_loginform {
     }
 
     #LINE208 {
-        width: 90px !important;
-        top: 1193px !important;
-        left: 58px !important;
+        width: 100px !important;
+        top: 1293px !important;
+        left: 50px !important;
     }
 
     .container {
@@ -4185,16 +4189,17 @@ form#bf_loginform {
     #IMAGE42 {
         width: 230.933px;
         height: 264px;
-        top: 129.946px;
-        left: 75px !important;
+        top: 122px !important;
+        left: 50px !important;
+        transform: scale(0.9) !important;
     }
 
     #IMAGE299 {
         width: 153.955px;
         height: 80.2453px;
         top: 17.701px;
-        left: 10px !important;
-        transform: scale(0.85) !important;
+        left: 0px !important;
+        transform: scale(0.7) !important;
     }
 
     #HEADLINE39>.ladi-headline {
