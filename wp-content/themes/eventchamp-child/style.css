@@ -2604,7 +2604,7 @@ form#bf_loginform {
         left: 58px !important;
     }
 
-    .container {
+    .container.owl-carousel {
         width: 100%;
         padding-right: 0px !important;
         padding-left: 0px !important;
