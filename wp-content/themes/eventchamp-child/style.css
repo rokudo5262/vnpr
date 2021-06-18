@@ -2919,9 +2919,16 @@ form#bf_loginform {
     }
 
     #HEADLINE510 {
-        width: 330px !important;
+        width: 285px !important;
         top: 87px;
         left: 39px;
+    }
+
+    #HEADLINE510>.ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.4;
+        text-align: justify !important;
     }
 
     #GROUP106 {
@@ -2968,11 +2975,22 @@ form#bf_loginform {
         left: 49.3184px;
     }
 
+    #SHAPE116 {
+        width: 24px !important;
+        height: 24px !important;
+        top: 290px !important;
+        left: 175px !important;
+    }
+
     #SHAPE117 {
         width: 24px;
         height: 24px;
         top: 420px !important;
         left: 175px !important;
+    }
+
+    #SECTION107 {
+        height: 965px !important;
     }
 
     #HEADLINE105>.ladi-headline {
@@ -3005,11 +3023,11 @@ form#bf_loginform {
 
     #BOX109 {
         width: 375px !important;
-        height: 889.6px;
+        height: 950px !important;
         top: 0px;
         left: 0px;
     }
-
+    
     #GROUP120 {
         width: 375px !important;
         height: 47px;
