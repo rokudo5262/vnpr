@@ -2159,8 +2159,8 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: left;
-        left: -20px;
-        top: -85px !important;
+        left: -10px;
+        top: -95px !important;
     }
 
     .RA_Section_Nhataitro button.owl-next {
@@ -2168,8 +2168,8 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: right;
-        right: -20px;
-        top: -85px !important;
+        right: -10px;
+        top: -95px !important;
     }
 
     .RA_Section_Thongtinbaochi button.owl-prev {
@@ -2177,8 +2177,8 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: left;
-        left: -20px;
-        top: -85px !important;
+        left: -10px;
+        top: -95px !important;
     }
 
     .RA_Section_Thongtinbaochi button.owl-next {
@@ -2186,8 +2186,8 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: right;
-        right: -20px;
-        top: -85px !important;
+        right: -10px;
+        top: -95px !important;
     }	
 
     #CAROUSEL_RA_BGK {
