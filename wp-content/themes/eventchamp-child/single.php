@@ -16327,7 +16327,7 @@ body {
                     <div id="HEADLINE403" class="ladi-element">
                         <h3 class="ladi-headline">Nộp bài dự thi</h3>
                     </div>
-                    <a href="mailto:admin@vnpr.vn" id="BUTTON738" class="ladi-element">
+                    <a href="<?=get_field('url_contest')?>" id="BUTTON738" class="ladi-element">
                         <div class="ladi-button ladi-transition">
                             <div class="ladi-button-background"></div>
                             <div id="BUTTON_TEXT738" class="ladi-element">
