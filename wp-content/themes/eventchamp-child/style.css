@@ -540,7 +540,7 @@ form#bf_loginform {
 }
 
 @media only screen and (max-width: 768px) and (min-width:429px){
-	.RA_Section_Nhataitro button.owl-prev {
+	.RA_Section_Nhataitro button.owl-prev,.RA_Section_Thongtinbaochi button.owl-prev {
         font-size: 50px !important;
         padding: 20px;
         position: relative;
@@ -549,7 +549,7 @@ form#bf_loginform {
         top: -180px;
     }
 
-	.RA_Section_Nhataitro button.owl-next {
+	.RA_Section_Nhataitro button.owl-next,.RA_Section_Thongtinbaochi button.owl-next {
     font-size: 50px !important;
     padding: 20px;
     position: relative;
@@ -558,14 +558,14 @@ form#bf_loginform {
     top: -180px;
 	}
 
-    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-]:hover {
+    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-]:hover,.RA_Section_Thongtinbaochi .owl-theme .owl-nav [class*=owl-]:hover {
         background: rgba(0,0,0,.4) !important;
         color: #FFF;
         text-decoration: none;
         width: 45px !important;
         height: 45px !important;
         padding: 17px !important;
-        top: -170px !important;
+        top: -200px !important;
     }
 }
 
