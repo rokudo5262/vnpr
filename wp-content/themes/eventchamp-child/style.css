@@ -389,7 +389,7 @@ form#bf_loginform {
     position: relative;
     float: left;
     left: -30px;
-    top: -90px;
+    top: -165px;
 	}
 	
 	.RA_Section_Thongtinbaochi button.owl-next {
@@ -398,7 +398,7 @@ form#bf_loginform {
     position: relative;
     float: right;
     right: -30px;
-    top: -90px;
+    top: -165px;
 	}
 
     .RA_Section_Thongtinbaochi .owl-theme .owl-nav [class*=owl-]:hover {
@@ -408,7 +408,7 @@ form#bf_loginform {
         width: 45px !important;
         height: 45px !important;
         padding: 17px 15px !important;
-        top: -100px !important;
+        top: -170px !important;
     }
 }
 
