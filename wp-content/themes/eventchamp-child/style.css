@@ -526,7 +526,7 @@ form#bf_loginform {
     position: relative;
     float: left;
     left: -30px;
-    top: -90px;
+    top: -165px;
 	}
 	
 	.RA_Section_Nhataitro button.owl-next {
@@ -535,7 +535,7 @@ form#bf_loginform {
     position: relative;
     float: right;
     right: -30px;
-    top: -90px;
+    top: -165px;
 	}
 }
 
