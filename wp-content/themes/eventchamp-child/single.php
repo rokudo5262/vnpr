@@ -16325,20 +16325,20 @@ body {
                         <div class="ladi-box"></div>
                     </div>
                     <div id="HEADLINE403" class="ladi-element">
-                        <h3 class="ladi-headline">Đăng ký dự thi ngay</h3>
+                        <h3 class="ladi-headline">Nộp bài dự thi</h3>
                     </div>
                     <a href="mailto:admin@vnpr.vn" id="BUTTON738" class="ladi-element">
                         <div class="ladi-button ladi-transition">
                             <div class="ladi-button-background"></div>
                             <div id="BUTTON_TEXT738" class="ladi-element">
-                                <p class="ladi-headline">Gửi qua Email</p>
+                                <p class="ladi-headline">Tham Gia Ngay</p>
                             </div>
                         </div>
                     </a>
-                    <div id="HEADLINE759" class="ladi-element">
+                    <!-- <div id="HEADLINE759" class="ladi-element">
                         <h3 class="ladi-headline">(Tiêu đề email: Bài dự thi_Tên tác giả_Cuộc thi ảnh “Kiên cường Việt
                             Nam - Resilient Vietnam”)</h3>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <div id="IMAGE401" class="ladi-element">
