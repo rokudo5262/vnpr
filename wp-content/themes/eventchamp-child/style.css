@@ -388,7 +388,7 @@ form#bf_loginform {
     padding: 20px;
     position: relative;
     float: left;
-    left: -30px;
+    left: -20px;
     top: -165px;
 	}
 	
@@ -397,18 +397,30 @@ form#bf_loginform {
     padding: 20px;
     position: relative;
     float: right;
-    right: -30px;
+    right: -20px;
     top: -165px;
 	}
 
-    .RA_Section_Thongtinbaochi .owl-theme .owl-nav [class*=owl-]:hover {
+    .RA_Section_Thongtinbaochi .owl-theme .owl-nav [class*=owl-prev]:hover {
         background: rgba(0,0,0,.4) !important;
         color: #FFF;
         text-decoration: none;
         width: 45px !important;
         height: 45px !important;
         padding: 17px 15px !important;
-        top: -170px !important;
+        top: -185px !important;
+        left: -20px;
+    }
+
+    .RA_Section_Thongtinbaochi .owl-theme .owl-nav [class*=owl-next]:hover {
+        background: rgba(0,0,0,.4) !important;
+        color: #FFF;
+        text-decoration: none;
+        width: 45px !important;
+        height: 45px !important;
+        padding: 17px 15px !important;
+        top: -185px !important;
+        right: -20px !important;
     }
 
     .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-prev]:hover {
