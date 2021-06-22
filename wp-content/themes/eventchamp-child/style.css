@@ -1944,10 +1944,6 @@ form#bf_loginform {
         margin-top: 235px !important;
     }
 
-    .RA_Section_Plus_BaoChi{
-        margin-top: 35px !important;
-    }
-
     #SECTION842 {
         height: 130px !important;
     }
@@ -2059,6 +2055,10 @@ form#bf_loginform {
     .RA_Section_Nhataitro {
         background: #fafafa !important;
         margin-top: 235px !important;
+    }
+
+    .RA_Section_Plus_BaoChi{
+        margin-top: 35px !important;
     }
 
     #SECTION842 {
