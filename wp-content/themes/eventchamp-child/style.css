@@ -484,10 +484,6 @@ form#bf_loginform {
    	right: -20px;
     top: -200px;
 	}
-    
-    .RA_Section_Nhataitro .owl-item {
-        margin-left: -2px !important;
-    }
 }
 /*end Carousel */
 
@@ -1946,6 +1942,10 @@ form#bf_loginform {
     .RA_Section_Nhataitro {
         background: #fafafa !important;
         margin-top: 235px !important;
+    }
+
+    .RA_Section_Nhataitro.RA_Section_Plus_BaoChi{
+        margin-top: 0px !important;
     }
 
     #SECTION842 {
