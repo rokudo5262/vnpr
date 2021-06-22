@@ -463,8 +463,7 @@ form#bf_loginform {
     float: right;
     right: -25px;
     top: -90px;
-	}
-	
+	}	
 }
 
 @media only screen and (max-width: 428px){
@@ -4338,3 +4337,31 @@ form#bf_loginform {
     top: -35px !important;
     left: -457px;
 } */
+
+.owl-item [class*=RA-BGK-description-] {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background: rgba(251, 251, 251, 0.8); 
+    text-align: center;
+    padding: 50% 0%;
+    transition: transform .5s ease;
+    display: none;
+}
+
+[class*=RA-BGK-description-] p.RA-BGK-title{
+    font-family: "Oswald", sans-serif;
+    color: rgb(122, 19, 21);
+    font-size: 23px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+[class*=RA-BGK-description-] span.RA-BGK-caption {
+    color: rgb(84, 84, 84);
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.6;
+}

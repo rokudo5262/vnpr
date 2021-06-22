@@ -15430,14 +15430,14 @@ body {
                             $resultThongTinChienDich = $wpdb->get_results( $queryThongTinChienDich );
                             //print_r($resultThongTinChienDich[0]->contest_condition);exit;
                             $queryThongTinTacGia = 'SELECT * FROM wp_postmeta WHERE wp_postmeta.meta_key LIKE "contest-user-name" AND wp_postmeta.post_id = ';
-                            $thongtinbaochi = get_field('thongtinbaochi');
-                            $resultThongTinBaoChi = explode(",",$thongtinbaochi);
-
+                            
+                            $resultThongTinBaoChi=acf_photo_gallery('thongtinbaochi',$post->ID);
+                            //print_r($resultThongTinBaoChi);exit;
                             $nhataitro = get_field('nhataitro');
                             $resultNhaTaiTro = explode(",",$nhataitro);
 
-                            $bangiamkhao = get_field('bangiamkhao');
-                            $resultBanGiamKhao = explode(",",$bangiamkhao);
+                            
+                            $resultBanGiamKhao = acf_photo_gallery('bangiamkhao',$post->ID);
                         ?>
 <div class="ladi-wraper">
     <div id="SECTION1776" class="ladi-section">
@@ -16216,9 +16216,14 @@ body {
                     <div class="owl-stage-outer RA-bgk-carousel-content">
                         <div class="owl-stage"
                             style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
-                            <?php foreach ($resultBanGiamKhao as $key => $value) { ?>
-                            <div class="owl-item active" style="">
-                                <img class="item" style="" src="<?=wp_get_attachment_url((int)$value);?>">
+                            <?php
+                            foreach ($resultBanGiamKhao as $key => $value) { ?>
+                            <div class="owl-item RA-BGK-<?=$value['id']?> active" style="">
+                                <img class="item" style="" src="<?=wp_get_attachment_url((int)$value['id']);?>">
+                                <div class="RA-BGK-description-<?=$value['id']?>">
+                                    <p class="RA-BGK-title"><?=$value['title']?></p>
+                                    <span class="RA-BGK-caption"><?=$value['caption']?></span>
+                                </div>
                             </div>
                             <?php } ?>
                         </div>
@@ -16227,6 +16232,15 @@ body {
             </div>
         </div>
     </div>
+    
+    <?php
+    foreach ($resultBanGiamKhao as $key => $value) { ?>
+        <style>
+            .RA-BGK-<?=$value['id']?>:hover .RA-BGK-description-<?=$value['id']?>{
+                display:block !important;
+            }
+        </style>
+    <?php } ?>
 
     <div class="RA_Section_Nhataitro">
         <div id="SECTION842" class="ladi-section">
@@ -16277,8 +16291,10 @@ body {
                     style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
                     <?php foreach ($resultThongTinBaoChi as $key => $value) { ?>
                     <div class="owl-item active" style="">
+                        <a href="<?=$value['url']?>">
                         <img class="item" style="margin: 5px auto !important;"
-                            src="<?=wp_get_attachment_url((int)$value);?>">
+                            src="<?=wp_get_attachment_url((int)$value['id']);?>">
+                        </a>
                     </div>
                     <?php } ?>
                 </div>
