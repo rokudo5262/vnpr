@@ -2075,7 +2075,7 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: left;
-        left: -20px;
+        left: -8px;
         top: -180px !important;
     }
 
@@ -2084,7 +2084,7 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: right;
-        right: -20px;
+        right: -8px;
         top: -180px !important;
     }
 
@@ -2093,7 +2093,7 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: left;
-        left: -20px;
+        left: -8px;
         top: -180px !important;
     }
 
@@ -2102,7 +2102,7 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: right;
-        right: -20px;
+        right: -8px;
         top: -180px !important;
     }
     
@@ -2127,6 +2127,7 @@ form#bf_loginform {
         top: -210px !important;
         right: -5px !important;
     }
+    
 }
 
 @media only screen and (max-width: 390px) and (min-width:376px){
