@@ -4213,27 +4213,6 @@ form#bf_loginform {
         margin-left: 15px !important;
     }
 
-    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-prev]:hover , .RA_Section_Thongtinbaochi .owl-theme .owl-nav [class*=owl-prev]:hover {
-        background: rgba(0,0,0,.4) !important;
-        color: #FFF;
-        text-decoration: none;
-        width: 45px !important;
-        height: 45px !important;
-        padding: 17px !important;
-        top: -115px !important;
-        left: -5px !important;
-    }
-
-    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-next]:hover , .RA_Section_Thongtinbaochi .owl-theme .owl-nav [class*=owl-next]:hover {
-        background: rgba(0,0,0,.4) !important;
-        color: #FFF;
-        text-decoration: none;
-        width: 45px !important;
-        height: 45px !important;
-        padding: 17px !important;
-        top: -115px !important;
-        left: 5px !important;
-    }
 
     #IMAGE42 {
         width: 230.933px;
