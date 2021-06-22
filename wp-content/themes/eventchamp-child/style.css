@@ -2003,6 +2003,26 @@ form#bf_loginform {
         padding: 17px !important;
         top: -195px !important;
     }
+
+    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-]:hover {
+        background: rgba(0,0,0,.4) !important;
+        color: #FFF;
+        text-decoration: none;
+        width: 45px !important;
+        height: 45px !important;
+        padding: 17px !important;
+        top: -185px !important;
+    }
+
+    .RA_Section_Thongtinbaochi .owl-theme .owl-nav [class*=owl-]:hover {
+        background: rgba(0,0,0,.4) !important;
+        color: #FFF;
+        text-decoration: none;
+        width: 45px !important;
+        height: 45px !important;
+        padding: 17px !important;
+        top: -170px !important;
+    }
 }
 
 @media only screen and (max-width: 414px) and (min-width:391px){
@@ -2071,7 +2091,7 @@ form#bf_loginform {
         position: relative;
         float: left;
         left: -20px;
-        top: -85px !important;
+        top: -180px !important;
     }
 
     .RA_Section_Nhataitro button.owl-next {
@@ -2080,7 +2100,7 @@ form#bf_loginform {
         position: relative;
         float: right;
         right: -20px;
-        top: -85px !important;
+        top: -180px !important;
     }
 
     .RA_Section_Thongtinbaochi button.owl-prev {
@@ -2089,7 +2109,7 @@ form#bf_loginform {
         position: relative;
         float: left;
         left: -20px;
-        top: -85px !important;
+        top: -180px !important;
     }
 
     .RA_Section_Thongtinbaochi button.owl-next {
@@ -2098,7 +2118,7 @@ form#bf_loginform {
         position: relative;
         float: right;
         right: -20px;
-        top: -85px !important;
+        top: -180px !important;
     }	
 }
 
