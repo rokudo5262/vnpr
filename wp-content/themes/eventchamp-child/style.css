@@ -483,7 +483,11 @@ form#bf_loginform {
     float: right;
    	right: -20px;
     top: -200px;
-	}	
+	}
+    
+    .RA_Section_Nhataitro .owl-item {
+        margin-left: -2px !important;
+    }
 }
 /*end Carousel */
 
