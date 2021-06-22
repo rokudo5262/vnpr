@@ -3630,8 +3630,8 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: left;
-        left: -10px;
-        top: -95px !important;
+        left: -8px;
+        top: -180px !important;
     }
 
     .RA_Section_Nhataitro button.owl-next {
@@ -3639,26 +3639,31 @@ form#bf_loginform {
         padding: 20px;
         position: relative;
         float: right;
-        right: -10px;
-        top: -95px !important;
+        right: -8px;
+        top: -180px !important;
     }
 
-    .RA_Section_Thongtinbaochi button.owl-prev {
-        font-size: 50px !important;
-        padding: 20px;
-        position: relative;
-        float: left;
-        left: -10px;
-        top: -95px !important;
+    
+    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-prev]:hover {
+        background: rgba(0,0,0,.4) !important;
+        color: #FFF;
+        text-decoration: none;
+        width: 45px !important;
+        height: 45px !important;
+        padding: 17px !important;
+        top: -210px !important;
+        left: -5px !important;
     }
 
-    .RA_Section_Thongtinbaochi button.owl-next {
-        font-size: 50px !important;
-        padding: 20px;
-        position: relative;
-        float: right;
-        right: -10px;
-        top: -95px !important;
+    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-next]:hover {
+        background: rgba(0,0,0,.4) !important;
+        color: #FFF;
+        text-decoration: none;
+        width: 45px !important;
+        height: 45px !important;
+        padding: 17px !important;
+        top: -210px !important;
+        right: -5px !important;
     }	
 
     #CAROUSEL_RA_BGK {
