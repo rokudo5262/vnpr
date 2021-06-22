@@ -90,7 +90,7 @@ jQuery(function($) {
     owl.owlCarousel({
         items:4,
         loop:true,
-        margin:10,
+        margin:0,
         autoplay:true,
         autoplayTimeout:5000,
         autoplayHoverPause:true,
