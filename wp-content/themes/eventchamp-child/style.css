@@ -410,6 +410,28 @@ form#bf_loginform {
         padding: 17px 15px !important;
         top: -170px !important;
     }
+
+    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-prev]:hover {
+        background: rgba(0,0,0,.4) !important;
+        color: #FFF;
+        text-decoration: none;
+        width: 45px !important;
+        height: 45px !important;
+        padding: 17px !important;
+        top: -185px !important;
+        left: -20px;
+    }
+
+    .RA_Section_Nhataitro .owl-theme .owl-nav [class*=owl-next]:hover {
+        background: rgba(0,0,0,.4) !important;
+        color: #FFF;
+        text-decoration: none;
+        width: 45px !important;
+        height: 45px !important;
+        padding: 17px !important;
+        top: -185px !important;
+        right: -20px;
+    }
 }
 
 @media only screen and (max-width: 768px) and (min-width:429px){
