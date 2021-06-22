@@ -16291,10 +16291,17 @@ body {
                     style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
                     <?php foreach ($resultThongTinBaoChi as $key => $value) { ?>
                     <div class="owl-item active" style="">
-                        <a href="<?=$value['url']?>">
-                        <img class="item" style="margin: 5px auto !important;"
-                            src="<?=wp_get_attachment_url((int)$value['id']);?>">
-                        </a>
+                        <?php if($value['url']=='' || $value['url']=='#') {?>
+                           
+                            <img class="item" style="margin: 5px auto !important;"
+                                src="<?=wp_get_attachment_url((int)$value['id']);?>">
+                          
+                        <?php } else { ?>
+                            <a href="<?=$value['url']?>">
+                            <img class="item" style="margin: 5px auto !important;"
+                                src="<?=wp_get_attachment_url((int)$value['id']);?>">
+                            </a>
+                        <?php } ?>
                     </div>
                     <?php } ?>
                 </div>
