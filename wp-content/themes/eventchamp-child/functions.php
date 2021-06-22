@@ -9,7 +9,7 @@ if( !function_exists( 'eventchamp_child_theme_setup' ) ) {
 	function eventchamp_child_theme_setup() {
 
 		wp_enqueue_style( 'eventchamp', get_template_directory_uri() . '/style.css' );
-		wp_enqueue_style( 'eventchamp-child-style', get_stylesheet_directory_uri() . '/style.css', array(), '1.0.6' );
+		wp_enqueue_style( 'eventchamp-child-style', get_stylesheet_directory_uri() . '/style.css', array(), '1.0.7' );
     wp_enqueue_script( 'eventchamp-child-script', get_stylesheet_directory_uri() . '/custom.js', array(), '1.0.2', true );
 
     wp_enqueue_style( 'owl-carousel-min-style', get_stylesheet_directory_uri() . '/asset/owlcarousel/owl.carousel.min.css' );
