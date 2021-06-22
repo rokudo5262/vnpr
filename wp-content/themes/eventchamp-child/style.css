@@ -467,6 +467,11 @@ form#bf_loginform {
 }
 
 @media only screen and (max-width: 428px){
+    .container.owl-carousel.owl-theme.owl-loaded.owl-drag.owl-same {
+        margin-top: -100px;
+        padding: 0px !important;
+    }
+
 	.RA_Section_Thongtinbaochi button.owl-prev {
     font-size: 50px !important;
     padding: 20px;
