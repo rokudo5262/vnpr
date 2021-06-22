@@ -15313,7 +15313,15 @@ body {
 
 <?php 
         global $post;
-        if($post->ID !== 5878 ){
+        $postcat = get_the_category( $post->ID );
+        $checkCat = false;
+        foreach ($postcat as $key => $value) {
+            if($value->parent==286){
+                $checkCat = true;
+                $chiendich_child_id = $value->term_id;
+            }
+        }
+        if( !$checkCat ){
             echo eventchamp_page_title_bar(); 
         }
         ?>
@@ -15337,14 +15345,6 @@ body {
 				?>
 <?php
                     global $post;
-                    $postcat = get_the_category( $post->ID );
-                    $checkCat = false;
-                    foreach ($postcat as $key => $value) {
-                        if($value->parent==286){
-                            $checkCat = true;
-                        }
-                    }
-                  
                     if(!$checkCat ){?>
 
 <?php echo eventchamp_container_before(); ?>
@@ -15417,7 +15417,9 @@ body {
 <?php echo eventchamp_container_after(); ?>
 
 <?php }else{
-                        $check = true?>
+                        $check = true;
+                        if($chiendich_child_id == 287){
+                        ?>
 <!-- header -->
 <?php
                             global $wpdb;    
@@ -15519,6 +15521,7 @@ body {
                     </div>
                 </div>
             </div>
+           
             <div id="GROUP416" class="ladi-element">
                 <div class="ladi-group">
                     <div id="GROUP24" class="ladi-element">
@@ -16121,6 +16124,66 @@ body {
             </div>
         </div>
     </div>
+
+    <?php if ( $post->ID != 5878 ){ ?>
+        <div class="RA-container-contest-info row">
+            <div class="col-6 col-lg-6 row RA-container-contest-info-element">
+                <div class="col-1 col-lg-1 RA-container-contest-info-icon"><i class="fas fa-book"></i></div>
+                <div class="col-11 col-lg-11 RA-container-contest-info-area">
+                    <h2 class="RA-container-contest-info-heading">Cách Thức Tham Gia</h2>
+                    <p class="RA-container-contest-info-description">
+                    Tác giả gửi bài dự thi thông qua Website vnpr.vn/kiencuongvietnamadmin@vnpr.vn<br>
+                    Hoặc qua email:(Tiêu đề email: Bài dự thi_Tên tác giả_Cuộc thi ảnh “Kiên cường Việt Nam - Resilient Vietnam”)
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-6 row RA-container-contest-info-element">
+                <div class="col-1 col-lg-1 RA-container-contest-info-icon"><i class="fas fa-tree"></i></div>
+                <div class="col-11 col-lg-11 RA-container-contest-info-area">
+                    <h2 class="RA-container-contest-info-heading">Chủ Đề Cuộc Thi</h2>
+                    <p class="RA-container-contest-info-description">
+                    Thực trạng mùa dịch, những nỗ lực của người dân, các cấp chính quyền, các bộ ngành, các tổ chức xã hội, các doanh nghiệp … trong hoạt động phòng, chống dịch COVID-19 và cùng nhau vượt qua những khó khăn trong đời sống do dịch bệnh gây ra.
+                    <br>Phẩm chất kiên cường Việt Nam thông qua các bức ảnh, thái độ người Việt Nam vượt qua đại dịch.
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-6 row RA-container-contest-info-element">
+                <div class="col-1 col-lg-1 RA-container-contest-info-icon"><i class="fas fa-camera"></i></div>
+                <div class="col-11 col-lg-11 RA-container-contest-info-area">
+                    <h2 class="RA-container-contest-info-heading">Ảnh Dự Thi Hợp Lệ</h2>
+                    <p class="RA-container-contest-info-description">
+                    Ảnh dự thi phải phù hợp và đúng theo chủ đề của cuộc thi.<br>
+                    Ảnh được chụp tại Việt Nam từ ngày 23/01/2020 tới ngày 30/09/2020.<br>
+                    Ảnh có độ phân giải full HD (1920 x 1080) trở lên đối với ảnh tham gia hạng mục Ảnh chụp bằng điện thoại.<br>
+                    Và ảnh có độ phân giải trên 3.000 pixels đối với ảnh tham gia hạng mục Ảnh chụp bằng máy ảnh chuyên nghiệp.<br>
+                    Ảnh phải kèm theo thông tin về tác giả, nội dung bức ảnh, thời gian và địa điểm chụp. Khuyến khích các bức ảnh gửi kèm bối cảnh và lời bình.<br>
+                    Ảnh dự thi phải là tác phẩm của người đăng ký dự thi, không bị tranh chấp tác quyền, quyền nhân thân, quyền riêng tư và quyền sở hữu trí tuệ với bất kỳ ai.<br>
+                    Ảnh dự thi có hình ảnh của người khác thì phải có sự đồng ý của nhân vật trước khi dự thi.<br>
+                    Mỗi thí sinh có thể nộp một hoặc nhiều ảnh, tối đa 5 ảnh.<br>
+                    Ảnh dự thi là ảnh chưa từng đoạt giải bất kỳ cuộc thi ảnh nào.<br>
+                    Ảnh dự thi cần ghi rõ tham gia hạng mục ảnh chụp bằng máy ảnh chuyên nghiệp hay ảnh chụp bằng điện thoại.<br>
+                    </p>
+                </div>
+            </div>
+            <div class="col-6 col-lg-6 row RA-container-contest-info-element">
+                <div class="col-1 col-lg-1 RA-container-contest-info-icon"><i class="fas fa-award"></i></div>
+                <div class="col-11 col-lg-11 RA-container-contest-info-area">
+                    <h2 class="RA-container-contest-info-heading">Giải Thưởng</h2>
+                    <p class="RA-container-contest-info-description">
+                    <span class="RA-container-contest-info-description-heading">Hạng mục dành cho ảnh chụp bằng máy ảnh chuyên nghiệp</span><br>
+                    Giải Vàng: 01 máy ảnh Canon EOS M6 Mark II (trị giá 28,050,000VND) + 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
+                    Giải Bạc: 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
+                    Giải Đồng: 1 điện thoại VSmart Live 4 + Giấy chứng nhận giải.<br>
+                    <span class="RA-container-contest-info-description-heading">Hạng mục dành cho ảnh chụp bằng điện thoại</span><br>
+                    Giải Vàng: 01 máy ảnh Canon EOS M200 (trị giá 15,950,000VND) + 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
+                    Giải Bạc: 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
+                    Giải Đồng: 1 điện thoại VSmart Live 4 + Giấy chứng nhận giải.<br>
+                    <span class="RA-container-contest-info-description-heading">Giải thưởng truyền cảm hứng:</span> 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    <?php } ?>
     <div id="SECTION31" class="ladi-section">
         <div class="ladi-section-background"></div>
         <div class="ladi-container">
@@ -17868,6 +17931,40 @@ footer {
 }
 </style>
 <?php } ?>
+<!-- 287 id cate -->
+<?php } //else if($chiendich_child_id==288) {?>
+    <?php 
+    // global $hardcode_options;
+    // $hardcode_options['header_layout_select'] = 'header-style-4';
+    // $hardcode_options['default_footer_style'] = 'footer-style-1';
+    // $hardcode_options['footer_gap'] = 'off';
+
+    // $id_contest = get_field('id_contest_2');
+    
+    // $queryThongTinChienDich = 'SELECT * FROM wp_photo_contest_list WHERE wp_photo_contest_list.id = ' . $id_contest;
+    // $resultThongTinChienDich = $wpdb->get_results( $queryThongTinChienDich );
+    // $contest_name_RA            =   $resultThongTinChienDich[0]->contest_name;
+    // $contest_start_RA           =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_start)); echo $contest_start_RA;
+    // $contest_end_RA             =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_end));
+    // $contest_vote_start_RA      =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_vote_start));
+    // $contest_register_end_RA    =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_register_end));
+    // $now_RA                     =   date("Y/m/d");
+    // if( $now_RA < $contest_start_RA ){
+    //     $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="" bgtext="" addressdate="Chiến dịch chưa diễn ra" excerpt="" detaillink="url:%23About|title:Chi%20ti%E1%BA%BFt" detaillinkicon="" ticketlink="url:%23Tickets|title:%C4%90%C4%83ng%20k%C3%BD" ticketlinkicon="" eventdate="'.$contest_start_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="4566" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
+    // }else if( $now_RA >= $contest_start_RA && $now_RA < $contest_vote_start_RA ){
+    //     $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="'.$contest_name_RA.'" bgtext="" addressdate="Chiến dịch đang diễn ra và chưa mở vote" excerpt="" detaillink="url:%23About|title:Chi%20ti%E1%BA%BFt" detaillinkicon="" ticketlink="url:%23Tickets|title:%C4%90%C4%83ng%20k%C3%BD" ticketlinkicon="" eventdate="'.$contest_vote_start_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="4566" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
+    // }else if ( $now_RA >= $contest_vote_start_RA && $now_RA < $contest_end_RA ){
+    //     $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="'.$contest_name_RA.'" bgtext="" addressdate="Chiến dịch đang diễn ra và đang mở vote" excerpt="" detaillink="url:%23About|title:Chi%20ti%E1%BA%BFt" detaillinkicon="" ticketlink="url:%23Tickets|title:%C4%90%C4%83ng%20k%C3%BD" ticketlinkicon="" eventdate="'.$contest_end_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="4566" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
+    // }else{
+    //     $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="'.$contest_name_RA.'" bgtext="" addressdate="Chiến dịch đã kết thúc" excerpt="" detaillink="" detaillinkicon="" ticketlink="" ticketlinkicon="" eventdate="'.$contest_end_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="4566" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
+    // }
+
+    // echo do_shortcode($section_banner);
+    ?>
+
+    
+<?php //} ?>
+<!-- layout 2 RA -->
 <?php }?>
 
 <?php } ?>
