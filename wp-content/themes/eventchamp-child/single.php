@@ -15501,6 +15501,7 @@ body {
             </div>
         </div>
     </div>
+    <?php if ( $post->ID == 5878 ){ ?>
     <div id="SECTION3" class="ladi-section">
         <div class="ladi-section-background"></div>
         <div class="ladi-container">
@@ -16124,7 +16125,7 @@ body {
             </div>
         </div>
     </div>
-
+    <?php } ?>
     <?php if ( $post->ID != 5878 ){ ?>
         <div class="RA-container-contest-info row">
             <div class="col-6 col-lg-6 row RA-container-contest-info-element">

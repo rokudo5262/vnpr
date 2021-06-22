@@ -4245,3 +4245,62 @@ form#bf_loginform {
         left: -60px !important;
     }
 }
+
+.RA-container-contest-info.row {
+    width: 100% !important;
+    margin: 0px auto 0px auto;
+    padding: 5% 10%;
+    background: linear-gradient(
+180deg
+, rgba(164, 31, 35, 0.9), rgba(124, 20, 22, 1));
+}
+
+.RA-container-contest-info-area .RA-container-contest-info-heading {
+    font-family: "Oswald", sans-serif;
+    color: #FFF;
+    font-size: 36px;
+    line-height: 1.4;
+}
+
+.RA-container-contest-info-icon i {
+    font-size: 30px;
+    padding: 12px 0px;
+    color: rgb(255, 236, 0);
+}
+
+.RA-container-contest-info-area .RA-container-contest-info-description{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.RA-container-contest-info-description-heading{
+    color: rgb(255, 236, 0);
+    font-size: 15px;
+    font-weight: bolder;
+    line-height: 1.6;
+}
+
+/* #SECTION3 {
+    height: 555px !important;
+} */
+
+.RA-container-contest-info-element{
+    margin-bottom: 35px;
+}
+
+/* #GROUP37 {
+    width: 786px;
+    height: 400px;
+    top: -35px !important;
+    left: 870px;
+    z-index: 20;
+}
+
+#BOX220 {
+    width: 457px;
+    height: 400px;
+    top: -35px !important;
+    left: -457px;
+} */
