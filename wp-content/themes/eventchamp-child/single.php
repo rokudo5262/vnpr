@@ -2,7 +2,76 @@
 /**
 	* The template for displaying single
 */
-get_header();?>
+get_header();
+
+function hex2rgba( $color, $opacity = false ) {
+ 
+	$default = 'rgb( 0, 0, 0 )';
+ 
+	/**
+	 * Return default if no color provided
+	 */
+	if( empty( $color ) ) {
+ 
+        return $default; 
+	
+	}
+ 
+	/**
+	 * Sanitize $color if "#" is provided
+	 */
+    if ( $color[0] == '#' ) {
+ 
+    	$color = substr( $color, 1 );
+ 
+    }
+ 
+    /**
+     * Check if color has 6 or 3 characters and get values
+     */
+    if ( strlen($color) == 6 ) {
+ 
+        $hex = array( $color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5] );
+ 
+    } elseif ( strlen( $color ) == 3 ) {
+ 
+        $hex = array( $color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2] );
+ 
+    } else {
+ 
+        return $default;
+ 
+    }
+ 
+    /**
+     * [$rgb description]
+     * @var array
+     */
+    $rgb =  array_map( 'hexdec', $hex );
+ 
+    /**
+     * Check if opacity is set(rgba or rgb)
+     */
+    if( $opacity ) {
+ 
+    	if( abs( $opacity ) > 1 )
+ 
+    	$opacity = 1.0;
+ 
+    	$output = 'rgba( ' . implode( "," ,$rgb ) . ',' . $opacity . ' )';
+ 
+    } else {
+ 
+    	$output = 'rgb( ' . implode( "," , $rgb ) . ' )';
+    	
+    }
+ 
+    /**
+     * Return rgb(a) color string
+     */
+    return $output;
+}
+?>
 <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -1875,9 +1944,9 @@ body {
     }
 
     #BOX38>.ladi-box>.ladi-overlay {
-        background: rgba(164, 31, 35, 0.9);
-        background: -webkit-linear-gradient(180deg, rgba(164, 31, 35, 0.9), rgba(124, 20, 22, 1));
-        background: linear-gradient(180deg, rgba(164, 31, 35, 0.9), rgba(124, 20, 22, 1));
+        background: <?=hex2rgba(get_field('color_BGK'));?>;
+        /* background: -webkit-linear-gradient(180deg, rgba(164, 31, 35, 0.9), rgba(124, 20, 22, 1));
+        background: linear-gradient(180deg, rgba(164, 31, 35, 0.9), rgba(124, 20, 22, 1)); */
     }
 
     #BOX38>.ladi-box {
