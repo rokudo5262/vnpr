@@ -1944,7 +1944,7 @@ body {
     }
 
     #BOX38>.ladi-box>.ladi-overlay {
-        background: <?=hex2rgba(get_field('color_BGK'));?>;
+        background: <?=hex2rgba(get_field('color_BGK'),0.9);?>;
         /* background: -webkit-linear-gradient(180deg, rgba(164, 31, 35, 0.9), rgba(124, 20, 22, 1));
         background: linear-gradient(180deg, rgba(164, 31, 35, 0.9), rgba(124, 20, 22, 1)); */
     }
