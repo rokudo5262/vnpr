@@ -1884,7 +1884,7 @@ body {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s1100x750/5c7362c6c417ab07e5196b05/cv19_261s-20200823132902.jpg");
+        background-image: url("<?=wp_get_attachment_url((int)get_field('background_bangiamkhao'));?>");
         background-position: center center;
         background-repeat: repeat;
     }
