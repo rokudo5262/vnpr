@@ -3611,7 +3611,7 @@ body {
         background-size: cover;
         background-attachment: scroll;
         background-origin: content-box;
-        background-image: url("https://w.ladicdn.com/s350x1050/5c7362c6c417ab07e5196b05/untitled-2-20200822125029.png");
+        background-image: url("<?=wp_get_attachment_url((int)get_field('background_nopbai'));?>");
         background-position: center top;
         background-repeat: repeat;
         mix-blend-mode: multiply;
