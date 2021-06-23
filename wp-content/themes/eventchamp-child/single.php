@@ -1817,9 +1817,9 @@ body {
     }
 
     #LINE28>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -1913,9 +1913,9 @@ body {
     }
 
     #LINE40>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -2328,7 +2328,7 @@ body {
     #HEADLINE73>.ladi-headline {
         text-decoration-line: underline;
         -webkit-text-decoration-line: underline;
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         line-height: 1.6;
     }
@@ -2381,9 +2381,9 @@ body {
     }
 
     #LINE91>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -2527,9 +2527,9 @@ body {
     }
 
     #LINE111>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -2949,9 +2949,9 @@ body {
     }
 
     #LINE156>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -2985,7 +2985,7 @@ body {
     }
 
     #HEADLINE159>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         font-weight: bold;
         line-height: 1.6;
@@ -3495,7 +3495,7 @@ body {
     }
 
     #HEADLINE214>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         font-weight: bold;
         line-height: 1.6;
@@ -4329,7 +4329,7 @@ body {
     }
 
     #HEADLINE461>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         font-weight: bold;
         line-height: 1.6;
@@ -4540,7 +4540,7 @@ body {
     #HEADLINE506>.ladi-headline {
         text-decoration-line: underline;
         -webkit-text-decoration-line: underline;
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         line-height: 1.6;
     }
@@ -4611,7 +4611,7 @@ body {
 
     #HEADLINE526>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 23px;
         text-align: center;
         line-height: 1.6;
@@ -5527,7 +5527,7 @@ body {
     }
 
     #BUTTON_TEXT738>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 18px;
         font-weight: bold;
         text-align: center;
@@ -5612,7 +5612,7 @@ body {
     }
 
     #BUTTON_TEXT756>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 18px;
         font-weight: bold;
         text-align: center;
@@ -8621,9 +8621,9 @@ body {
     }
 
     #LINE28>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -8717,9 +8717,9 @@ body {
     }
 
     #LINE40>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -9121,7 +9121,7 @@ body {
     #HEADLINE73>.ladi-headline {
         text-decoration-line: underline;
         -webkit-text-decoration-line: underline;
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         line-height: 1.6;
     }
@@ -9174,9 +9174,9 @@ body {
     }
 
     #LINE91>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -9320,9 +9320,9 @@ body {
     }
 
     #LINE111>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -9742,9 +9742,9 @@ body {
     }
 
     #LINE156>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 236, 0);
-        border-right: 3px solid rgb(255, 236, 0);
-        border-bottom: 3px solid rgb(255, 236, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -9778,7 +9778,7 @@ body {
     }
 
     #HEADLINE159>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         font-weight: bold;
         line-height: 1.6;
@@ -10294,7 +10294,7 @@ body {
     }
 
     #HEADLINE214>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         font-weight: bold;
         line-height: 1.6;
@@ -11142,7 +11142,7 @@ body {
     }
 
     #HEADLINE461>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         font-weight: bold;
         line-height: 1.6;
@@ -11353,7 +11353,7 @@ body {
     #HEADLINE506>.ladi-headline {
         text-decoration-line: underline;
         -webkit-text-decoration-line: underline;
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 15px;
         line-height: 1.6;
     }
@@ -11424,7 +11424,7 @@ body {
 
     #HEADLINE526>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 23px;
         text-align: center;
         line-height: 1.6;
@@ -12340,7 +12340,7 @@ body {
     }
 
     #BUTTON_TEXT738>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 16px;
         font-weight: bold;
         text-align: center;
@@ -12425,7 +12425,7 @@ body {
     }
 
     #BUTTON_TEXT756>.ladi-headline {
-        color: rgb(255, 236, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 16px;
         font-weight: bold;
         text-align: center;
@@ -15849,8 +15849,8 @@ body {
                                     </div>
                                     <div id="HEADLINE123" class="ladi-element">
                                         <h3 class="ladi-headline">Ảnh được chụp tại Việt Nam từ ngày <span
-                                                style="color: rgb(255, 236, 0);">23/01/2020</span> tới ngày <span
-                                                style="color: rgb(255, 236, 0);">30/09/2020</span>.</h3>
+                                                style="color: <?=get_field('secondary_color')?>;">23/01/2020</span> tới ngày <span
+                                                style="color: <?=get_field('secondary_color')?>;">30/09/2020</span>.</h3>
                                     </div>
                                 </div>
                             </div>
@@ -15861,10 +15861,10 @@ body {
                                     </div>
                                     <div id="HEADLINE126" class="ladi-element">
                                         <h3 class="ladi-headline">
-                                            Ảnh có độ phân giải <span style="color: rgb(255, 236, 0);">full HD (1920 x
+                                            Ảnh có độ phân giải <span style="color: <?=get_field('secondary_color')?>;">full HD (1920 x
                                                 1080)</span> trở lên đối với ảnh tham gia hạng mục Ảnh chụp bằng điện
                                             thoại. Và ảnh có độ phân giải trên
-                                            <span style="color: rgb(255, 236, 0);">3.000 pixels</span> đối với ảnh tham
+                                            <span style="color: <?=get_field('secondary_color')?>;">3.000 pixels</span> đối với ảnh tham
                                             gia hạng mục Ảnh chụp bằng máy ảnh chuyên nghiệp.
                                         </h3>
                                     </div>
@@ -16387,7 +16387,7 @@ body {
         <div class="ladi-container">
             <div id="HEADLINE465" class="ladi-element">
                 <h3 class="ladi-headline">
-                    <span style="font-weight: bold; color: rgb(255, 236, 0);">Quyền sử dụng ảnh:</span> Ban Tổ chức có
+                    <span style="font-weight: bold; color: <?=get_field('secondary_color')?>;">Quyền sử dụng ảnh:</span> Ban Tổ chức có
                     quyền xuất bản và sử dụng các bức ảnh dự thi cho mục đích quảng bá cuộc thi mà không phải trả bất kỳ
                     khoản chi
                     phí phát sinh nào. Việc lựa chọn ảnh đăng cho mục đích quảng bá của cuộc thi không đồng nghĩa với
@@ -18138,9 +18138,9 @@ footer {
 }
 
 #VC-custom-bangk #backgroundright-bgk #LINE40>.ladi-line>.ladi-line-container {
-    border-top: 3px solid rgb(255, 236, 0);
-    border-right: 3px solid rgb(255, 236, 0);
-    border-bottom: 3px solid rgb(255, 236, 0);
+    border-top: 3px solid <?=get_field('secondary_color')?>;
+    border-right: 3px solid <?=get_field('secondary_color')?>;
+    border-bottom: 3px solid <?=get_field('secondary_color')?>;
     border-left: 0px;
     border-bottom: 0;
     border-right: 0;
@@ -18374,7 +18374,7 @@ footer {
 
 #VC-custom-dangky .ladi-container #HEADLINE465 h3 span {
     font-weight: bold;
-    color: rgb(255, 236, 0);
+    color: <?=get_field('secondary_color')?>;
     font-family: Muli, sans-serif;
 }
 
@@ -18390,7 +18390,7 @@ footer {
 
 #VC-custom-dangky .ladi-container #HEADLINE526 h3 {
     font-family: "Oswald", sans-serif;
-    color: rgb(255, 236, 0);
+    color: <?=get_field('secondary_color')?>;
     font-size: 23px;
     text-align: center;
     line-height: 1.6;
@@ -18454,7 +18454,7 @@ footer {
     background-color: <?=get_field('primary_color')?>;
     border-color: rgb(255, 235, 0);
     border-width: 2px;
-    color: rgb(255, 236, 0);
+    color: <?=get_field('secondary_color')?>;
     font-size: 18px;
     font-weight: 500;
     text-align: center;
