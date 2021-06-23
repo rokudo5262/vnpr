@@ -2035,7 +2035,7 @@ body {
     }
 
     #BUTTON50>.ladi-button>.ladi-button-background {
-        background-color: rgb(164, 31, 33);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #BUTTON50>.ladi-button {
@@ -3619,7 +3619,7 @@ body {
     }
 
     #SECTION250>.ladi-section-background {
-        background-color: rgb(164, 31, 33);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #GROUP251 {
@@ -4177,7 +4177,7 @@ body {
     }
 
     #HEADLINE412>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -4742,7 +4742,7 @@ body {
     }
 
     #HEADLINE643>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -4905,7 +4905,7 @@ body {
     }
 
     #HEADLINE656>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -5068,7 +5068,7 @@ body {
     }
 
     #HEADLINE669>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -5231,7 +5231,7 @@ body {
     }
 
     #HEADLINE682>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -5394,7 +5394,7 @@ body {
     }
 
     #HEADLINE695>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -5514,7 +5514,7 @@ body {
 
     #HEADLINE403>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         text-align: center;
         line-height: 1.6;
@@ -5542,7 +5542,7 @@ body {
     }
 
     #BUTTON738>.ladi-button>.ladi-button-background {
-        background-color: rgb(164, 31, 33);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #BUTTON738>.ladi-button {
@@ -5599,7 +5599,7 @@ body {
 
     #HEADLINE753>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         text-align: center;
         line-height: 1.6;
@@ -5627,7 +5627,7 @@ body {
     }
 
     #BUTTON756>.ladi-button>.ladi-button-background {
-        background-color: rgb(164, 31, 33);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #BUTTON756>.ladi-button {
@@ -5768,7 +5768,7 @@ body {
     }
 
     #HEADLINE766>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -5931,7 +5931,7 @@ body {
     }
 
     #HEADLINE779>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -6094,7 +6094,7 @@ body {
     }
 
     #HEADLINE792>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -6257,7 +6257,7 @@ body {
     }
 
     #HEADLINE805>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -6420,7 +6420,7 @@ body {
     }
 
     #HEADLINE818>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -6583,7 +6583,7 @@ body {
     }
 
     #HEADLINE831>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -6949,7 +6949,7 @@ body {
     }
 
     #HEADLINE895>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -7112,7 +7112,7 @@ body {
     }
 
     #HEADLINE908>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -7275,7 +7275,7 @@ body {
     }
 
     #HEADLINE921>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -7438,7 +7438,7 @@ body {
     }
 
     #HEADLINE934>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -7601,7 +7601,7 @@ body {
     }
 
     #HEADLINE947>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -7764,7 +7764,7 @@ body {
     }
 
     #HEADLINE960>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -8828,7 +8828,7 @@ body {
     }
 
     #BUTTON50>.ladi-button>.ladi-button-background {
-        background-color: rgb(164, 31, 33);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #BUTTON50>.ladi-button {
@@ -10419,7 +10419,7 @@ body {
     }
 
     #SECTION250>.ladi-section-background {
-        background-color: rgb(164, 31, 33);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #GROUP251 {
@@ -10978,7 +10978,7 @@ body {
     }
 
     #HEADLINE412>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -11555,7 +11555,7 @@ body {
     }
 
     #HEADLINE643>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -11718,7 +11718,7 @@ body {
     }
 
     #HEADLINE656>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -11881,7 +11881,7 @@ body {
     }
 
     #HEADLINE669>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -12044,7 +12044,7 @@ body {
     }
 
     #HEADLINE682>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -12207,7 +12207,7 @@ body {
     }
 
     #HEADLINE695>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -12327,7 +12327,7 @@ body {
 
     #HEADLINE403>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 28px;
         text-align: center;
         line-height: 1.6;
@@ -12355,7 +12355,7 @@ body {
     }
 
     #BUTTON738>.ladi-button>.ladi-button-background {
-        background-color: rgb(164, 31, 33);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #BUTTON738>.ladi-button {
@@ -12412,7 +12412,7 @@ body {
 
     #HEADLINE753>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 28px;
         text-align: center;
         line-height: 1.6;
@@ -12440,7 +12440,7 @@ body {
     }
 
     #BUTTON756>.ladi-button>.ladi-button-background {
-        background-color: rgb(164, 31, 33);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #BUTTON756>.ladi-button {
@@ -12581,7 +12581,7 @@ body {
     }
 
     #HEADLINE766>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -12744,7 +12744,7 @@ body {
     }
 
     #HEADLINE779>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -12907,7 +12907,7 @@ body {
     }
 
     #HEADLINE792>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -13070,7 +13070,7 @@ body {
     }
 
     #HEADLINE805>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -13233,7 +13233,7 @@ body {
     }
 
     #HEADLINE818>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -13396,7 +13396,7 @@ body {
     }
 
     #HEADLINE831>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -13762,7 +13762,7 @@ body {
     }
 
     #HEADLINE895>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -13925,7 +13925,7 @@ body {
     }
 
     #HEADLINE908>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -14088,7 +14088,7 @@ body {
     }
 
     #HEADLINE921>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -14251,7 +14251,7 @@ body {
     }
 
     #HEADLINE934>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -14414,7 +14414,7 @@ body {
     }
 
     #HEADLINE947>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -14577,7 +14577,7 @@ body {
     }
 
     #HEADLINE960>.ladi-headline {
-        color: rgb(164, 31, 33);
+        color: <?=get_field('primary_color')?>;
         font-size: 15px;
         font-style: italic;
         line-height: 1.6;
@@ -18346,7 +18346,7 @@ footer {
 }
 
 #VC-custom-dangky .ladi-section-background {
-    background-color: rgb(164, 31, 33);
+    background-color: <?=get_field('primary_color')?>;
     position: absolute;
     width: 100%;
     height: inherit;
@@ -18432,7 +18432,7 @@ footer {
 
 #VC-custom-dangky .ladi-container #GROUP760 .ladi-group #HEADLINE403 .ladi-headline {
     font-family: "Oswald", sans-serif;
-    color: rgb(164, 31, 33);
+    color: <?=get_field('primary_color')?>;
     font-size: 26px;
     text-align: center;
     line-height: 1.6;
@@ -18451,7 +18451,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(164, 31, 33);
+    background-color: <?=get_field('primary_color')?>;
     border-color: rgb(255, 235, 0);
     border-width: 2px;
     color: rgb(255, 236, 0);
