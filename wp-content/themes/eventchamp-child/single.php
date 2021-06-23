@@ -2040,7 +2040,7 @@ body {
 
     #BUTTON50>.ladi-button {
         border-style: solid;
-        border-color: rgb(255, 235, 0);
+        border-color: <?=get_field('secondary_color')?>;
         border-width: 2px;
     }
 
@@ -2056,7 +2056,7 @@ body {
     }
 
     #BUTTON_TEXT50>.ladi-headline {
-        color: rgb(255, 235, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 18px;
         text-align: center;
         line-height: 1.6;
@@ -2083,9 +2083,9 @@ body {
     }
 
     #LINE57>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -2141,9 +2141,9 @@ body {
     }
 
     #LINE61>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -2206,9 +2206,9 @@ body {
     }
 
     #LINE65>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -2271,9 +2271,9 @@ body {
     }
 
     #LINE69>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -3076,9 +3076,9 @@ body {
     }
 
     #LINE185>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -3141,9 +3141,9 @@ body {
     }
 
     #LINE189>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -3206,9 +3206,9 @@ body {
     }
 
     #LINE193>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -3271,9 +3271,9 @@ body {
     }
 
     #LINE198>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -3336,9 +3336,9 @@ body {
     }
 
     #LINE202>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -3401,9 +3401,9 @@ body {
     }
 
     #LINE206>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -3650,9 +3650,9 @@ body {
     }
 
     #LINE254>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -5546,7 +5546,7 @@ body {
     }
 
     #BUTTON738>.ladi-button {
-        border-color: rgb(255, 235, 0);
+        border-color: <?=get_field('secondary_color')?>;
         border-width: 2px;
     }
 
@@ -5631,7 +5631,7 @@ body {
     }
 
     #BUTTON756>.ladi-button {
-        border-color: rgb(255, 235, 0);
+        border-color: <?=get_field('secondary_color')?>;
         border-width: 2px;
     }
 
@@ -6735,9 +6735,9 @@ body {
     }
 
     #LINE845>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -7928,9 +7928,9 @@ body {
     }
 
     #LINE316>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -8833,7 +8833,7 @@ body {
 
     #BUTTON50>.ladi-button {
         border-style: solid;
-        border-color: rgb(255, 235, 0);
+        border-color: <?=get_field('secondary_color')?>;
         border-width: 2px;
     }
 
@@ -8849,7 +8849,7 @@ body {
     }
 
     #BUTTON_TEXT50>.ladi-headline {
-        color: rgb(255, 235, 0);
+        color: <?=get_field('secondary_color')?>;
         font-size: 18px;
         text-align: center;
         line-height: 1.6;
@@ -8876,9 +8876,9 @@ body {
     }
 
     #LINE57>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -8934,9 +8934,9 @@ body {
     }
 
     #LINE61>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -8999,9 +8999,9 @@ body {
     }
 
     #LINE65>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -9064,9 +9064,9 @@ body {
     }
 
     #LINE69>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -9869,9 +9869,9 @@ body {
     }
 
     #LINE185>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -9935,9 +9935,9 @@ body {
     }
 
     #LINE189>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -10001,9 +10001,9 @@ body {
     }
 
     #LINE193>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -10067,9 +10067,9 @@ body {
     }
 
     #LINE198>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -10133,9 +10133,9 @@ body {
     }
 
     #LINE202>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -10199,9 +10199,9 @@ body {
     }
 
     #LINE206>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -10450,9 +10450,9 @@ body {
     }
 
     #LINE254>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -12359,7 +12359,7 @@ body {
     }
 
     #BUTTON738>.ladi-button {
-        border-color: rgb(255, 235, 0);
+        border-color: <?=get_field('secondary_color')?>;
         border-width: 2px;
     }
 
@@ -12444,7 +12444,7 @@ body {
     }
 
     #BUTTON756>.ladi-button {
-        border-color: rgb(255, 235, 0);
+        border-color: <?=get_field('secondary_color')?>;
         border-width: 2px;
     }
 
@@ -13548,9 +13548,9 @@ body {
     }
 
     #LINE845>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -14741,9 +14741,9 @@ body {
     }
 
     #LINE316>.ladi-line>.ladi-line-container {
-        border-top: 3px solid rgb(255, 235, 0);
-        border-right: 3px solid rgb(255, 235, 0);
-        border-bottom: 3px solid rgb(255, 235, 0);
+        border-top: 3px solid <?=get_field('secondary_color')?>;
+        border-right: 3px solid <?=get_field('secondary_color')?>;
+        border-bottom: 3px solid <?=get_field('secondary_color')?>;
         border-left: 0px !important;
     }
 
@@ -18220,9 +18220,9 @@ footer {
 .linentt {
     margin-top: 20px;
     width: 73px;
-    border-top: 3px solid rgb(255, 235, 0);
-    border-right: 3px solid rgb(255, 235, 0);
-    border-bottom: 3px solid rgb(255, 235, 0);
+    border-top: 3px solid <?=get_field('secondary_color')?>;
+    border-right: 3px solid <?=get_field('secondary_color')?>;
+    border-bottom: 3px solid <?=get_field('secondary_color')?>;
     border-left: 0px !important;
     border-bottom: 0 !important;
     border-right: 0 !important;
@@ -18452,7 +18452,7 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: <?=get_field('primary_color')?>;
-    border-color: rgb(255, 235, 0);
+    border-color: <?=get_field('secondary_color')?>;
     border-width: 2px;
     color: <?=get_field('secondary_color')?>;
     font-size: 18px;
