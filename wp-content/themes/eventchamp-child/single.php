@@ -2,7 +2,7 @@
 /**
 	* The template for displaying single
 */
-get_header(); ?>
+get_header();?>
 <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
@@ -1721,7 +1721,7 @@ body {
 
     #HEADLINE11>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -1948,7 +1948,7 @@ body {
     }
 
     #SECTION41>.ladi-section-background {
-        background-color: rgb(164, 30, 32);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #IMAGE42 {
@@ -2124,7 +2124,7 @@ body {
 
     #HEADLINE60>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -2189,7 +2189,7 @@ body {
 
     #HEADLINE64>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -2254,7 +2254,7 @@ body {
 
     #HEADLINE68>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -3059,7 +3059,7 @@ body {
 
     #HEADLINE184>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -3124,7 +3124,7 @@ body {
 
     #HEADLINE188>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -3189,7 +3189,7 @@ body {
 
     #HEADLINE192>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -3254,7 +3254,7 @@ body {
 
     #HEADLINE197>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -3319,7 +3319,7 @@ body {
 
     #HEADLINE201>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -3384,7 +3384,7 @@ body {
 
     #HEADLINE205>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -8525,7 +8525,7 @@ body {
 
     #HEADLINE11>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 28px;
         line-height: 1.4;
     }
@@ -8740,7 +8740,7 @@ body {
     }
 
     #SECTION41>.ladi-section-background {
-        background-color: rgb(164, 30, 32);
+        background-color: <?=get_field('primary_color')?>;
     }
 
     #IMAGE42 {
@@ -8917,7 +8917,7 @@ body {
 
     #HEADLINE60>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 28px;
         line-height: 1.4;
     }
@@ -8982,7 +8982,7 @@ body {
 
     #HEADLINE64>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 28px;
         line-height: 1.4;
     }
@@ -9047,7 +9047,7 @@ body {
 
     #HEADLINE68>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 28px;
         line-height: 1.4;
     }
@@ -9852,7 +9852,7 @@ body {
 
     #HEADLINE184>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -9918,7 +9918,7 @@ body {
 
     #HEADLINE188>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -9984,7 +9984,7 @@ body {
 
     #HEADLINE192>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -10050,7 +10050,7 @@ body {
 
     #HEADLINE197>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -10116,7 +10116,7 @@ body {
 
     #HEADLINE201>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
@@ -10182,7 +10182,7 @@ body {
 
     #HEADLINE205>.ladi-headline {
         font-family: "Oswald", sans-serif;
-        color: rgb(164, 30, 32);
+        color: <?=get_field('primary_color')?>;
         font-size: 36px;
         line-height: 1.4;
     }
