@@ -1944,7 +1944,7 @@ body {
     }
 
     #BOX38>.ladi-box>.ladi-overlay {
-        background: <?=hex2rgba(get_field('color_BGK'),0.9);?>;
+        background: <?=hex2rgba(get_field('primary_color'),0.9);?>;
         /* background: -webkit-linear-gradient(180deg, rgba(164, 31, 35, 0.9), rgba(124, 20, 22, 1));
         background: linear-gradient(180deg, rgba(164, 31, 35, 0.9), rgba(124, 20, 22, 1)); */
     }
@@ -3645,9 +3645,9 @@ body {
     }
 
     #BOX220>.ladi-box {
-        background: rgba(164, 31, 34, 0.3);
-        background: -webkit-linear-gradient(90deg, rgba(164, 31, 34, 0.3), rgba(164, 31, 33, 1));
-        background: linear-gradient(90deg, rgba(164, 31, 34, 0.3), rgba(164, 31, 33, 1));
+        background: <?=hex2rgba(get_field('primary_color'),0.9);?>;
+        /* background: -webkit-linear-gradient(90deg, rgba(164, 31, 34, 0.3), rgba(164, 31, 33, 1));
+        background: linear-gradient(90deg, rgba(164, 31, 34, 0.3), rgba(164, 31, 33, 1)); */
     }
 
     #GROUP222 {
