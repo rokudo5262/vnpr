@@ -16382,7 +16382,7 @@ body {
         }
     }
 
-    @media only screen and (max-width: 428px) and (min-width:415px){
+    @media only screen and (max-width: 428px){
         .RA-col-nha-tai-tro {
             -ms-flex: 0 0 <?=100/2?>%;
             flex: 0 0 <?=100/2?>%;
@@ -16466,7 +16466,7 @@ body {
             }
         }
 
-        @media only screen and (max-width: 428px) and (min-width:415px){
+        @media only screen and (max-width: 428px){
             .RA-col-thong-tin-bao-chi {
                 -ms-flex: 0 0 <?=100/2;?>%;
                 flex: 0 0 <?=100/2;?>%;
