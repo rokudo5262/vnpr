@@ -16372,6 +16372,24 @@ body {
     .RA_Section_Nhataitro_Gallery .RA-col-nha-tai-tro img.RA-col-nha-tai-tro-item {
         box-shadow: 0px 0px 2px 0px;
     }
+
+    @media only screen and (max-width: 768px) and (min-width:429px){
+        .RA-col-nha-tai-tro {
+            -ms-flex: 0 0 <?=100/3?>%;
+            flex: 0 0 <?=100/3?>%;
+            max-width: <?=100/3?>%;
+            padding: <?=get_field('col_space_nha_tai_tro');?>px <?=get_field('col_space_nha_tai_tro');?>px;
+        }
+    }
+
+    @media only screen and (max-width: 428px) and (min-width:415px){
+        .RA-col-nha-tai-tro {
+            -ms-flex: 0 0 <?=100/2?>%;
+            flex: 0 0 <?=100/2?>%;
+            max-width: <?=100/2?>%;
+            padding: <?=get_field('col_space_nha_tai_tro');?>px <?=get_field('col_space_nha_tai_tro');?>px;
+        }
+    }
     </style>
     <div class="RA_Section_Nhataitro_Gallery row">
         <?php foreach ($resultNhaTaiTro as $key => $value) { ?>
@@ -16437,6 +16455,24 @@ body {
 
         .RA_Section_Thongtinbaochi_Gallery .RA-col-thong-tin-bao-chi img.RA-col-thong-tin-bao-chi-item {
             box-shadow: 0px 0px 2px 0px;
+        }
+
+        @media only screen and (max-width: 768px) and (min-width:429px){
+            .RA-col-thong-tin-bao-chi {
+                -ms-flex: 0 0 <?=100/3;?>%;
+                flex: 0 0 <?=100/3;?>%;
+                max-width: <?=100/3;?>%;
+                padding: <?=get_field('col_space_thong_tin_bao_chi');?>px <?=get_field('col_space_thong_tin_bao_chi');?>px;
+            }
+        }
+
+        @media only screen and (max-width: 428px) and (min-width:415px){
+            .RA-col-thong-tin-bao-chi {
+                -ms-flex: 0 0 <?=100/2;?>%;
+                flex: 0 0 <?=100/2;?>%;
+                max-width: <?=100/2;?>%;
+                padding: <?=get_field('col_space_thong_tin_bao_chi');?>px <?=get_field('col_space_thong_tin_bao_chi');?>px;
+            }
         }
         </style>
          <div class="RA_Section_Nhataitro RA_Section_Plus_BaoChi">
