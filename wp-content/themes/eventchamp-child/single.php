@@ -2013,11 +2013,11 @@ body {
     }
 
     #SECTION41 {
-        height: 1028.01px;
+        height: 450px;
     }
 
     #SECTION41>.ladi-section-background {
-        background-color: <?=get_field('primary_color')?>;
+        background-color: rgb(243, 243, 243);
     }
 
     #IMAGE42 {
@@ -2073,9 +2073,11 @@ body {
     }
 
     #HEADLINE47 {
-        width: 1200px;
-        top: 685.514px;
-        left: 0px;
+    width: 1200px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 55px 50px;
     }
 
     #HEADLINE47>.ladi-headline {
@@ -2099,8 +2101,8 @@ body {
     #BUTTON50 {
         width: 189px;
         height: 52px;
-        top: 926.014px;
-        left: 1011px;
+        top: 335px;
+        right: 65px;
     }
 
     #BUTTON50>.ladi-button>.ladi-button-background {
@@ -3489,9 +3491,9 @@ body {
     }
 
     #LINE208 {
-        width: 970px;
-        top: 943.514px;
-        left: 0px;
+        width: 850px;
+        top: 353px;
+        left: 50px;
     }
 
     #LINE208>.ladi-line>.ladi-line-container {
@@ -10288,9 +10290,9 @@ body {
     }
 
     #LINE208 {
-        width: 99px;
-        top: 705.445px;
-        left: -236.5px;
+        width: 850px;
+        top: 353px;
+        left: 50px;
     }
 
     #LINE208>.ladi-line>.ladi-line-container {
@@ -14871,462 +14873,6 @@ body {
         margin-right: 0px;
     }
 
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="0"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/mat-phuc-bat-nguoi-vuot-bien-trai-phep-cua-khau-qt-cau-treo-ha-tinh-20200921071755.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="0"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/mat-phuc-bat-nguoi-vuot-bien-trai-phep-cua-khau-qt-cau-treo-ha-tinh-20200921071755.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="1"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/nhan-vien-y-te-tre-trong-trang-phuc-bao-ho-nghi-met-ben-cau-thang-sau-khi-di-bo-nam-tang-lau-de-do-than-nhiet-cho-nguoi-duoc-cach-ly-o-ktx-khu-a-dhqg-tphcm-20200914103846.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="1"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/nhan-vien-y-te-tre-trong-trang-phuc-bao-ho-nghi-met-ben-cau-thang-sau-khi-di-bo-nam-tang-lau-de-do-than-nhiet-cho-nguoi-duoc-cach-ly-o-ktx-khu-a-dhqg-tphcm-20200914103846.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="2"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/tang-khau-trang-cho-tre-em-ngheo-vung-cao-20200924023204.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="2"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/tang-khau-trang-cho-tre-em-ngheo-vung-cao-20200924023204.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="3"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/dem-chong-dich-ben-dong-song-se-pon-20200924023525.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="3"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/dem-chong-dich-ben-dong-song-se-pon-20200924023525.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="4"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/tam-biet-covid-19-20200924024146.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="4"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/tam-biet-covid-19-20200924024146.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="5"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/hoang-thi-xuan-20200923082209.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="5"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/hoang-thi-xuan-20200923082209.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="6"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/ben-xe-buyt-nhung-ngay-gian-cach-20200907093802.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="6"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/ben-xe-buyt-nhung-ngay-gian-cach-20200907093802.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="7"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/phia-truoc-la-bau-troi-20200908031123.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="7"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/phia-truoc-la-bau-troi-20200908031123.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="8"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/huong-dan-rua-tay-phong-dich-covid-19-20200907093701.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="8"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/huong-dan-rua-tay-phong-dich-covid-19-20200907093701.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="9"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/huong-dan-deo-khau-trang-phong-dich-20200908030710.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="9"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/huong-dan-deo-khau-trang-phong-dich-20200908030710.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="10"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/chot-phong-dich-covid-19-vung-bien-gioi-20200907093742.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="10"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/chot-phong-dich-covid-19-vung-bien-gioi-20200907093742.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="11"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/tham-du-thanh-le-online-20200911033603.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="11"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/tham-du-thanh-le-online-20200911033603.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="12"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/covid-mua-02-2020-20200925045631.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="12"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/covid-mua-02-2020-20200925045631.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="13"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/chung-tay-day-lui-covid-19-20200908034009.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="13"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/chung-tay-day-lui-covid-19-20200908034009.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="14"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/hoang-hon-mua-covid-20200908031358.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="14"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/hoang-hon-mua-covid-20200908031358.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="15"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/nhip-song-dan-tro-lai-hau-covid-19--20200908045540.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="15"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/nhip-song-dan-tro-lai-hau-covid-19--20200908045540.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="16"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/tinh-nguyen-vien-tiep-suc-mua-thi-tai-truong-thpt-thai-phien-ngo-quyen-hai-phong-20200907093619.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="16"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/tinh-nguyen-vien-tiep-suc-mua-thi-tai-truong-thpt-thai-phien-ngo-quyen-hai-phong-20200907093619.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="17"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/bo-doi-phong-hoa-phun-khu-khuan-tren-cac-tuyen-pho-20200907093016.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="17"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/bo-doi-phong-hoa-phun-khu-khuan-tren-cac-tuyen-pho-20200907093016.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="18"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/tinh-yeu-tu-tam-dich-20200907092758.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="18"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/tinh-yeu-tu-tam-dich-20200907092758.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="19"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/bua-com-trong-khu-cach-ly-20200908032720.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="19"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/bua-com-trong-khu-cach-ly-20200908032720.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="20"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/tranh-thu-20200908032703.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="20"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/tranh-thu-20200908032703.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="21"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/oan-minh-chong-dich-giua-dai-ngan-truong-son-20200908032622.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="21"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/oan-minh-chong-dich-giua-dai-ngan-truong-son-20200908032622.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="22"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/xoa-deu-dung-dich-20201012025804.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="22"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/xoa-deu-dung-dich-20201012025804.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="23"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/1-mot-to-chot-cua-don-bien-phong-a-pa-chai-bo-chi-huy-bo-doi-bien-phong-tinh-dien-bien-tuan-tra-kiem-soat-duong-mon-loi-mo-doc-tuyen-bien-gioi-viet-trung-20200911070842.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="23"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/1-mot-to-chot-cua-don-bien-phong-a-pa-chai-bo-chi-huy-bo-doi-bien-phong-tinh-dien-bien-tuan-tra-kiem-soat-duong-mon-loi-mo-doc-tuyen-bien-gioi-viet-trung-20200911070842.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="24"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/2-kiem-tra-than-nhiet-cua-cac-lai-xe-truoc-khi-lam-thu-tuc-nhap-canh-tai-mot-chot-kiem-dich-cua-khau-quoc-te-tay-trang-tinh-dien-bien-20200911070936.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="24"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/2-kiem-tra-than-nhiet-cua-cac-lai-xe-truoc-khi-lam-thu-tuc-nhap-canh-tai-mot-chot-kiem-dich-cua-khau-quoc-te-tay-trang-tinh-dien-bien-20200911070936.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="25"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/trien-khai-xet-nghiem-nhanh-covid-19-tai-cho-dau-moi-nong-san-lon-nhat-ha-noi-20200909074929.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="25"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/trien-khai-xet-nghiem-nhanh-covid-19-tai-cho-dau-moi-nong-san-lon-nhat-ha-noi-20200909074929.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="26"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/hon-200-hanh-khach-mac-ket-tai-da-nang--20200908034818.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="26"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/hon-200-hanh-khach-mac-ket-tai-da-nang--20200908034818.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="27"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/chuyen-bay-dau-tien-dua-hanh-khach-mac-ket-tai-da-nang-20200908034842.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="27"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/chuyen-bay-dau-tien-dua-hanh-khach-mac-ket-tai-da-nang-20200908034842.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="28"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/nguoi-hung-giau-mat-truy-tim-virut-corona-20200908041531.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="28"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/nguoi-hung-giau-mat-truy-tim-virut-corona-20200908041531.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="29"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/niem-tin-quyet-thang-20200908041810.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="29"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/niem-tin-quyet-thang-20200908041810.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="30"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/nhung-anh-nuoi-khu-phong-toa-mua-covid-19-20200908041840.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="30"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/nhung-anh-nuoi-khu-phong-toa-mua-covid-19-20200908041840.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="31"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/mau-ao-thanh-nien-xung-phong-trong-chien-dich-phong-chong-covid-19-20200908041903.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="31"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/mau-ao-thanh-nien-xung-phong-trong-chien-dich-phong-chong-covid-19-20200908041903.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="32"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/tuyen-truyen-luu-dong-phong-chong-dich-covid-19-20200908041949.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="32"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/tuyen-truyen-luu-dong-phong-chong-dich-covid-19-20200908041949.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="33"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/chot-da-chien-cua-khau-huu-nghi-lang-son-20200908043838.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="33"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/chot-da-chien-cua-khau-huu-nghi-lang-son-20200908043838.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="34"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/cac-co-quan-doan-the-tuyen-truyen-chong-dich-covid-19-tai-cua-khau-quoc-te-huu-nghi-lang-son-20200908043913.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="34"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/cac-co-quan-doan-the-tuyen-truyen-chong-dich-covid-19-tai-cua-khau-quoc-te-huu-nghi-lang-son-20200908043913.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="35"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/thanh-nien-tinh-nguyen-tiep-suc-mua-thi-2020-tai-thi-tran-dong-dang-cao-loc-lang-son-20200908044026.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="35"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/thanh-nien-tinh-nguyen-tiep-suc-mua-thi-2020-tai-thi-tran-dong-dang-cao-loc-lang-son-20200908044026.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="36"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/doan-thanh-nien-thi-tran-dong-dang-cao-loc-lang-son-trong-mua-chong-dich-2020-20200908044045.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="36"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/doan-thanh-nien-thi-tran-dong-dang-cao-loc-lang-son-trong-mua-chong-dich-2020-20200908044045.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="37"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/da-day-lui-dich-covid-19-20200908044105.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="37"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/da-day-lui-dich-covid-19-20200908044105.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="38"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/bau-oi-thuong-lay-bi-cung-20200908045019.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="38"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/bau-oi-thuong-lay-bi-cung-20200908045019.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="39"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/mot-nhan-vien-y-te-truc-chot-di-dong-phong-dich-covid-19-o-da-nang-dang-co-chong-lai-con-buon-ngu-sau-ca-truc-dai-day-cang-thang-va-met-moi--20200911040033.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="39"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/mot-nhan-vien-y-te-truc-chot-di-dong-phong-dich-covid-19-o-da-nang-dang-co-chong-lai-con-buon-ngu-sau-ca-truc-dai-day-cang-thang-va-met-moi--20200911040033.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="40"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/nhan-vien-y-te-tien-hanh-lay-mau-xet-nghiem-covid-19-cho-nguoi-nuoc-ngoai-20200911040245.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="40"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/nhan-vien-y-te-tien-hanh-lay-mau-xet-nghiem-covid-19-cho-nguoi-nuoc-ngoai-20200911040245.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="41"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/nhan-vien-y-te-tinh-nguyen-den-tu-cac-tinh-thanh-chuan-bi-trang-phuc-bao-ho-truoc-gio-buoc-vao-tran-chien-chong-covid-19-o-da-nang-20200911040623.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="41"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/nhan-vien-y-te-tinh-nguyen-den-tu-cac-tinh-thanh-chuan-bi-trang-phuc-bao-ho-truoc-gio-buoc-vao-tran-chien-chong-covid-19-o-da-nang-20200911040623.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="42"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/mot-can-bo-dan-phong-quan-son-tra-20200911041250.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="42"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/mot-can-bo-dan-phong-quan-son-tra-20200911041250.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="43"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/nhan-vien-y-te-da-nang-cang-minh-chay-dua-voi-thoi-gian-de-luon-co-mat-trong-moi-tinh-huong-khi-dot-dich-covid-19-lan-thu-hai-bung-phat-o-da-nang-20200911042107.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="43"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/nhan-vien-y-te-da-nang-cang-minh-chay-dua-voi-thoi-gian-de-luon-co-mat-trong-moi-tinh-huong-khi-dot-dich-covid-19-lan-thu-hai-bung-phat-o-da-nang-20200911042107.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="44"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/niem-vui-cua-phi-cong-chuyen-bay-vn7160-dua-207-hanh-khach-mac-ket-o-da-nang-ve-ha-noi-20200911071717.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="44"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/niem-vui-cua-phi-cong-chuyen-bay-vn7160-dua-207-hanh-khach-mac-ket-o-da-nang-ve-ha-noi-20200911071717.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="45"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/nu-hon-thoi-covid-20200911072108.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="45"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/nu-hon-thoi-covid-20200911072108.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="46"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/cac-cong-dan-tro-ve-tu-guinea-xich-dao-the-hien-su-biet-on-toi-dang-nha-nuoc-da-quan-tam-ho-tro-trong-luc-kho-khan-do-dich-covid-19-20200911073007.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="46"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/cac-cong-dan-tro-ve-tu-guinea-xich-dao-the-hien-su-biet-on-toi-dang-nha-nuoc-da-quan-tam-ho-tro-trong-luc-kho-khan-do-dich-covid-19-20200911073007.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="47"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/cong-dan-hoan-thanh-thoi-gian-cach-ly-cam-on-su-giup-do-cua-cac-can-bo-chien-sy-trung-doan-814-20200917035238.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="47"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/cong-dan-hoan-thanh-thoi-gian-cach-ly-cam-on-su-giup-do-cua-cac-can-bo-chien-sy-trung-doan-814-20200917035238.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="48"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/cu-ba-va-can-bo-y-te-tai-khu-cach-ly-tap-trung-quyen-luyen-truoc-khi-chia-tay-20200917035942.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="48"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/cu-ba-va-can-bo-y-te-tai-khu-cach-ly-tap-trung-quyen-luyen-truoc-khi-chia-tay-20200917035942.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="49"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/dong-chi-dai-ta-vu-hai-ninh-pho-chi-huy-truong-bo-chi-huy-quan-su-tinh-hoa-binh-trao-giay-chung-nhan-cho-cong-dan-hoan-thanh-thoi-gian-cach-ly-tap-trung-20200917035724.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="49"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/dong-chi-dai-ta-vu-hai-ninh-pho-chi-huy-truong-bo-chi-huy-quan-su-tinh-hoa-binh-trao-giay-chung-nhan-cho-cong-dan-hoan-thanh-thoi-gian-cach-ly-tap-trung-20200917035724.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="50"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/chot-chan-cong-tinh-20200911082349.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="50"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/chot-chan-cong-tinh-20200911082349.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="51"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/thuc-canh-bien-gioi-20200911083027.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="51"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/thuc-canh-bien-gioi-20200911083027.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="52"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/truoc-gio-don-chuyen-bay-tro-ve-tu-vung-dich-20200911083049.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="52"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/truoc-gio-don-chuyen-bay-tro-ve-tu-vung-dich-20200911083049.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="53"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/khoang-cach-2m-20200911083104.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="53"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/khoang-cach-2m-20200911083104.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="54"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/kien-cuong-bam-chot-noi-bien-thuy-20200911085347.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="54"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/kien-cuong-bam-chot-noi-bien-thuy-20200911085347.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="55"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/y-thuc-chong-dich-20200911090132.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="55"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/y-thuc-chong-dich-20200911090132.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-view-item[data-index="56"] {
-        background-image: url("https://w.ladicdn.com/s750x700/5c7362c6c417ab07e5196b05/nhung-chien-binh-covid-19-20200918033214.jpg");
-    }
-
-    #GALLERY1762 .ladi-gallery .ladi-gallery-control-item[data-index="56"] {
-        background-image: url("https://w.ladicdn.com/s400x400/5c7362c6c417ab07e5196b05/nhung-chien-binh-covid-19-20200918033214.jpg");
-    }
-
     #IMAGE1768 {
         width: 134.195px;
         height: 38.7465px;
@@ -15497,11 +15043,11 @@ body {
                             $resultCacAnhDuThi = $wpdb->get_results( $queryCacAnhDuThi );
                             $queryThongTinChienDich = 'SELECT * FROM wp_photo_contest_list WHERE wp_photo_contest_list.id = ' . $id_contest;
                             $resultThongTinChienDich = $wpdb->get_results( $queryThongTinChienDich );
-                            //print_r($resultThongTinChienDich[0]->contest_condition);exit;
+                            
                             $queryThongTinTacGia = 'SELECT * FROM wp_postmeta WHERE wp_postmeta.meta_key LIKE "contest-user-name" AND wp_postmeta.post_id = ';
                             
                             $resultThongTinBaoChi=acf_photo_gallery('thongtinbaochi',$post->ID);
-                            //print_r($resultThongTinBaoChi);exit;
+                          
                             $nhataitro = get_field('nhataitro');
                             $resultNhaTaiTro = explode(",",$nhataitro);
 
@@ -15522,27 +15068,42 @@ body {
             </div>
         </div>
     </div>
+    <?php 
+    global $hardcode_options;
+    $hardcode_options['header_layout_select'] = 'header-style-4';
+    $hardcode_options['default_footer_style'] = 'footer-style-1';
+    $hardcode_options['footer_gap'] = 'off';
+
+    $queryThongTinChienDich = 'SELECT * FROM wp_photo_contest_list WHERE wp_photo_contest_list.id = ' . $id_contest;
+    $resultThongTinChienDich = $wpdb->get_results( $queryThongTinChienDich );
+    $contest_name_RA            =   $resultThongTinChienDich[0]->contest_name;
+    $contest_start_RA           =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_start));
+    $contest_end_RA             =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_end));
+    $contest_vote_start_RA      =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_vote_start));
+    $contest_register_end_RA    =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_register_end));
+    $now_RA                     =   date("Y/m/d");
+    if( $now_RA < $contest_start_RA ){
+        $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="" bgtext="" addressdate="Chiến dịch chưa diễn ra" excerpt="" detaillink="url:|title:" detaillinkicon="" ticketlink="|" ticketlinkicon="" eventdate="'.$contest_start_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="'.get_field('banner_chiendich').'" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
+    }else if( $now_RA >= $contest_start_RA && $now_RA < $contest_vote_start_RA ){
+        $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="'.$contest_name_RA.'" bgtext="" addressdate="Chiến dịch đang diễn ra và chưa mở vote" excerpt="" detaillink="url:|title:" detaillinkicon="" ticketlink="|" ticketlinkicon="" eventdate="'.$contest_vote_start_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="'.get_field('banner_chiendich').'" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
+    }else if ( $now_RA >= $contest_vote_start_RA && $now_RA < $contest_end_RA ){
+        $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="'.$contest_name_RA.'" bgtext="" addressdate="Chiến dịch đang diễn ra và đang mở vote" excerpt="" detaillink="url:|title:" detaillinkicon="" ticketlink="url:|title:" ticketlinkicon="" eventdate="'.$contest_end_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="'.get_field('banner_chiendich').'" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
+    }else{
+        $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="'.$contest_name_RA.'" bgtext="" addressdate="Chiến dịch đã kết thúc" excerpt="" detaillink="url:|title:" detaillinkicon="" ticketlink="url:|title:" ticketlinkicon="" eventdate="'.$contest_end_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="'.get_field('banner_chiendich').'" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
+    }
+
+    echo do_shortcode($section_banner);
+    ?>
     <div id="SECTION41" class="ladi-section">
         <div class="ladi-section-background"></div>
         <div class="ladi-container">
-            <div id="BOX48" class="ladi-element">
-                <div class="ladi-box"></div>
-            </div>
-            <div id="IMAGE42" class="ladi-element">
-                <div class="ladi-image">
-                    <div class="ladi-image-background"></div>
-                </div>
-            </div>
+         
             <div id="HEADLINE47" class="ladi-element">
                 <h3 class="ladi-headline">
                     <?=get_field('textarea1');?>
                 </h3>
             </div>
-            <div id="IMAGE43" class="ladi-element">
-                <div class="ladi-image">
-                    <div class="ladi-image-background"></div>
-                </div>
-            </div>
+        
             <a href="<?=get_field('url_contest')?>">
                 <div data-action="true" id="BUTTON50" class="ladi-element">
                     <div class="ladi-button ladi-transition">
@@ -15558,16 +15119,7 @@ body {
                     <div class="ladi-line-container"></div>
                 </div>
             </div>
-            <div id="IMAGE299" class="ladi-element">
-                <div class="ladi-image">
-                    <div class="ladi-image-background"></div>
-                </div>
-            </div>
-            <div id="IMAGE308" class="ladi-element">
-                <div class="ladi-image">
-                    <div class="ladi-image-background"></div>
-                </div>
-            </div>
+          
         </div>
     </div>
     
@@ -18070,39 +17622,8 @@ footer {
 </style>
 <?php } ?>
 <!-- 287 id cate -->
-<?php } //else if($chiendich_child_id==288) {?>
-    <?php 
-    // global $hardcode_options;
-    // $hardcode_options['header_layout_select'] = 'header-style-4';
-    // $hardcode_options['default_footer_style'] = 'footer-style-1';
-    // $hardcode_options['footer_gap'] = 'off';
-
-    // $id_contest = get_field('id_contest_2');
+<?php } ?>
     
-    // $queryThongTinChienDich = 'SELECT * FROM wp_photo_contest_list WHERE wp_photo_contest_list.id = ' . $id_contest;
-    // $resultThongTinChienDich = $wpdb->get_results( $queryThongTinChienDich );
-    // $contest_name_RA            =   $resultThongTinChienDich[0]->contest_name;
-    // $contest_start_RA           =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_start)); echo $contest_start_RA;
-    // $contest_end_RA             =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_end));
-    // $contest_vote_start_RA      =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_vote_start));
-    // $contest_register_end_RA    =   date("Y/m/d",strtotime($resultThongTinChienDich[0]->contest_register_end));
-    // $now_RA                     =   date("Y/m/d");
-    // if( $now_RA < $contest_start_RA ){
-    //     $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="" bgtext="" addressdate="Chiến dịch chưa diễn ra" excerpt="" detaillink="url:%23About|title:Chi%20ti%E1%BA%BFt" detaillinkicon="" ticketlink="url:%23Tickets|title:%C4%90%C4%83ng%20k%C3%BD" ticketlinkicon="" eventdate="'.$contest_start_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="4566" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
-    // }else if( $now_RA >= $contest_start_RA && $now_RA < $contest_vote_start_RA ){
-    //     $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="'.$contest_name_RA.'" bgtext="" addressdate="Chiến dịch đang diễn ra và chưa mở vote" excerpt="" detaillink="url:%23About|title:Chi%20ti%E1%BA%BFt" detaillinkicon="" ticketlink="url:%23Tickets|title:%C4%90%C4%83ng%20k%C3%BD" ticketlinkicon="" eventdate="'.$contest_vote_start_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="4566" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
-    // }else if ( $now_RA >= $contest_vote_start_RA && $now_RA < $contest_end_RA ){
-    //     $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="'.$contest_name_RA.'" bgtext="" addressdate="Chiến dịch đang diễn ra và đang mở vote" excerpt="" detaillink="url:%23About|title:Chi%20ti%E1%BA%BFt" detaillinkicon="" ticketlink="url:%23Tickets|title:%C4%90%C4%83ng%20k%C3%BD" ticketlinkicon="" eventdate="'.$contest_end_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="4566" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
-    // }else{
-    //     $section_banner = '[eventchamp_event_counter_slider detail-button-status="true" ticket-button-status="true" style="style-1" separator="False" opacity="true" opacity-value="0.4" slider-column="1" slider-space="0" autoplay="true" loopstatus="true" slider-centered-slides="false" slider-direction="horizontal" slider-effect="fade" slider-free-mode="false" navbuttons="false" navigation-style="style-1" dots="false" titleone="Chiến Dịch" titletwo="'.$contest_name_RA.'" bgtext="" addressdate="Chiến dịch đã kết thúc" excerpt="" detaillink="" detaillinkicon="" ticketlink="" ticketlinkicon="" eventdate="'.$contest_end_RA.'" datebgtext="" day-text="" hour-text="" minute-text="" second-text="" bgimages="4566" separator-color="#ffffff" sliderheight="" opacity-color="" slider-autoplay-delay="" slider-slide-speed="" detail-button-svg-icon="" ticket-button-svg-icon=""]';
-    // }
-
-    // echo do_shortcode($section_banner);
-    ?>
-
-    
-<?php //} ?>
-<!-- layout 2 RA -->
 <?php }?>
 
 <?php } ?>
