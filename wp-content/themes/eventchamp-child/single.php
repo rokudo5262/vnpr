@@ -16368,6 +16368,10 @@ body {
         max-width: <?=100/(int)get_field('col_nha_tai_tro');?>%;
         padding: <?=get_field('col_space_nha_tai_tro');?>px <?=get_field('col_space_nha_tai_tro');?>px;
     }
+
+    .RA_Section_Nhataitro_Gallery .RA-col-nha-tai-tro img.RA-col-nha-tai-tro-item {
+        box-shadow: 0px 0px 2px 0px;
+    }
     </style>
     <div class="RA_Section_Nhataitro_Gallery row">
         <?php foreach ($resultNhaTaiTro as $key => $value) { ?>
@@ -16430,6 +16434,10 @@ body {
             max-width: <?=100/(int)get_field('col_thong_tin_bao_chi');?>%;
             padding: <?=get_field('col_space_thong_tin_bao_chi');?>px <?=get_field('col_space_thong_tin_bao_chi');?>px;
         }
+
+        .RA_Section_Thongtinbaochi_Gallery .RA-col-thong-tin-bao-chi img.RA-col-thong-tin-bao-chi-item {
+            box-shadow: 0px 0px 2px 0px;
+        }
         </style>
          <div class="RA_Section_Nhataitro RA_Section_Plus_BaoChi">
             <div id="SECTION842" class="ladi-section">
@@ -16451,12 +16459,12 @@ body {
                 <div class="RA-col-thong-tin-bao-chi" style="">
                     <?php if($value['url']=='' || $value['url']=='#') {?>
                         
-                        <img class="item" style="margin: 5px auto !important;"
+                        <img class="RA-col-thong-tin-bao-chi-item" style="margin: 5px auto !important;"
                             src="<?=wp_get_attachment_url((int)$value['id']);?>">
                         
                     <?php } else { ?>
                         <a href="<?=$value['url']?>">
-                        <img class="item" style="margin: 5px auto !important;"
+                        <img class="RA-col-thong-tin-bao-chi-item" style="margin: 5px auto !important;"
                             src="<?=wp_get_attachment_url((int)$value['id']);?>">
                         </a>
                     <?php } ?>
