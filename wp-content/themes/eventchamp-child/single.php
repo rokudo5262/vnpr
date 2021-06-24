@@ -2550,7 +2550,7 @@ body {
 
     #BOX109 {
         width: 499px;
-        height: 866.6px;
+        height: 900px;
         top: 0px;
         left: 0px;
     }
@@ -2638,7 +2638,7 @@ body {
     }
 
     #SECTION107 {
-        height: 636.6px;
+        height: 685px;
         display: none !important;
     }
 
@@ -2962,7 +2962,7 @@ body {
     #SHAPE150 {
         width: 24px;
         height: 24px;
-        top: 826.2px;
+        top: 865px;
         left: 237.5px;
     }
 
@@ -4098,7 +4098,7 @@ body {
 
     #GROUP312 {
         width: 499px;
-        height: 866.6px;
+        height: 900px;
         top: 0px;
         left: 500.5px;
     }
@@ -9343,7 +9343,7 @@ body {
 
     #BOX109 {
         width: 420px;
-        height: 889.6px;
+        height: 900px;
         top: 0px;
         left: 0px;
     }
@@ -10898,7 +10898,7 @@ body {
 
     #GROUP312 {
         width: 420px;
-        height: 889.6px;
+        height: 900px;
         top: 0px;
         left: 500.5px;
     }
@@ -15570,7 +15570,14 @@ body {
             </div>
         </div>
     </div>
-  
+    
+    <?php 
+        $textarea_cachthucthamgia = get_field('textarea_cachthucthamgia'); 
+        $textarea_chudecuocthi = get_field('textarea_chudecuocthi');
+        $textarea_anhduthihople = get_field('textarea_anhduthihople');
+        $textarea_giaithuong = get_field('textarea_giaithuong');
+        //echo strlen($textarea_cachthucthamgia) .'a'. strlen($textarea_chudecuocthi) .'a'. strlen($textarea_anhduthihople) .'a'. strlen($textarea_giaithuong);exit;
+    ?>
     <div id="SECTION3" class="ladi-section">
         <div class="ladi-section-background"></div>
         <div class="ladi-container">
@@ -15591,7 +15598,8 @@ body {
                     </div>
                 </div>
             </div>
-            <?php if ( $post->ID == 5878 ){ ?>
+
+            <?php if ( strlen($textarea_cachthucthamgia) <= 250  && strlen($textarea_chudecuocthi) <= 500 && strlen($textarea_anhduthihople) <= 1450 && strlen($textarea_giaithuong) <= 1200) { ?>
             <div id="GROUP416" class="ladi-element">
                 <div class="ladi-group">
                     <div id="GROUP24" class="ladi-element">
@@ -15696,7 +15704,41 @@ body {
             <?php } ?>
         </div>
     </div>
-    <?php if ( $post->ID == 5878 ){ ?>
+    
+    <?php if ( strlen($textarea_cachthucthamgia) <= 250  && strlen($textarea_chudecuocthi) <= 500 && strlen($textarea_anhduthihople) <= 1450 && strlen($textarea_giaithuong) <= 1200) { ?>
+    <style>
+        .RA-cachthucthamgia {
+            text-align: left;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            line-height: 1.6;
+            padding: 0px 0px 0px 40px;
+        }
+
+        .RA-chudecuocthi {
+            text-align: left;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            line-height: 1.6;
+            padding: 0px 0px 0px 40px;
+        }
+
+        .RA-anhduthihople {
+            text-align: left;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            line-height: 1.6;
+            padding: 0px 0px 0px 40px;
+        }
+
+        .RA-giaithuong {
+            text-align: left;
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            line-height: 1.6;
+            padding: 0px 0px 0px 40px;
+        }
+    </style>
     <div id="SECTION30" class="ladi-section">
         <div class="ladi-section-background"></div>
         <div class="ladi-container">
@@ -15735,29 +15777,11 @@ body {
                     </div>
                     <div id="GROUP523" class="ladi-element">
                         <div class="ladi-group">
-                            <div id="HEADLINE71" class="ladi-element">
-                                <h3 class="ladi-headline">01</h3>
+                           
+                            <div class="RA-cachthucthamgia">    
+                               <?=get_field('textarea_cachthucthamgia');?>
                             </div>
-                            <div id="HEADLINE72" class="ladi-element">
-                                <h3 class="ladi-headline">Tác giả gửi bài dự thi thông qua Website&nbsp;</h3>
-                            </div>
-                            <a href="vnpr.vn/kiencuongvietnam" target="_blank" id="HEADLINE73" class="ladi-element">
-                                <h3 class="ladi-headline">vnpr.vn/kiencuongvietnam</h3>
-                            </a>
-                            <div id="GROUP508" class="ladi-element">
-                                <div class="ladi-group">
-                                    <a href="mailto: admin@vnpr.vn" id="HEADLINE506" class="ladi-element">
-                                        <h3 class="ladi-headline">admin@vnpr.vn</h3>
-                                    </a>
-                                    <div id="HEADLINE507" class="ladi-element">
-                                        <h3 class="ladi-headline">Hoặc qua email:</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="HEADLINE510" class="ladi-element">
-                                <h3 class="ladi-headline">(Tiêu đề email: Bài dự thi_Tên tác giả_Cuộc thi ảnh “Kiên
-                                    cường Việt Nam - Resilient Vietnam”)</h3>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -15784,27 +15808,8 @@ body {
                     </div>
                     <div id="GROUP118" class="ladi-element">
                         <div class="ladi-group">
-                            <div id="HEADLINE97" class="ladi-element">
-                                <h3 class="ladi-headline">01</h3>
-                            </div>
-                            <div id="HEADLINE98" class="ladi-element">
-                                <h3 class="ladi-headline">
-                                    Thực trạng mùa dịch, những nỗ lực của người dân, các cấp chính quyền, các bộ ngành,
-                                    các tổ chức xã hội, các doanh nghiệp … trong hoạt động phòng, chống dịch COVID-19 và
-                                    cùng nhau vượt qua những
-                                    khó khăn trong đời sống do dịch bệnh gây ra.
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP119" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="HEADLINE104" class="ladi-element">
-                                <h3 class="ladi-headline">02</h3>
-                            </div>
-                            <div id="HEADLINE105" class="ladi-element">
-                                <h3 class="ladi-headline">Phẩm chất kiên cường Việt Nam thông qua các bức ảnh, thái độ
-                                    người Việt Nam vượt qua đại dịch.</h3>
+                            <div class="RA-cachthucthamgia">    
+                               <?=get_field('textarea_chudecuocthi');?>
                             </div>
                         </div>
                     </div>
@@ -15902,97 +15907,8 @@ body {
                             </div>
                             <div id="GROUP120" class="ladi-element">
                                 <div class="ladi-group">
-                                    <div id="HEADLINE112" class="ladi-element">
-                                        <h3 class="ladi-headline">01</h3>
-                                    </div>
-                                    <div id="HEADLINE113" class="ladi-element">
-                                        <h3 class="ladi-headline">Ảnh dự thi phải phù hợp và đúng theo chủ đề của cuộc
-                                            thi.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP121" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="HEADLINE122" class="ladi-element">
-                                        <h3 class="ladi-headline">02</h3>
-                                    </div>
-                                    <div id="HEADLINE123" class="ladi-element">
-                                        <h3 class="ladi-headline">Ảnh được chụp tại Việt Nam từ ngày <span
-                                                style="color: <?=get_field('secondary_color')?>;">23/01/2020</span> tới ngày <span
-                                                style="color: <?=get_field('secondary_color')?>;">30/09/2020</span>.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP124" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="HEADLINE125" class="ladi-element">
-                                        <h3 class="ladi-headline">03</h3>
-                                    </div>
-                                    <div id="HEADLINE126" class="ladi-element">
-                                        <h3 class="ladi-headline">
-                                            Ảnh có độ phân giải <span style="color: <?=get_field('secondary_color')?>;">full HD (1920 x
-                                                1080)</span> trở lên đối với ảnh tham gia hạng mục Ảnh chụp bằng điện
-                                            thoại. Và ảnh có độ phân giải trên
-                                            <span style="color: <?=get_field('secondary_color')?>;">3.000 pixels</span> đối với ảnh tham
-                                            gia hạng mục Ảnh chụp bằng máy ảnh chuyên nghiệp.
-                                        </h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP127" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="HEADLINE128" class="ladi-element">
-                                        <h3 class="ladi-headline">04</h3>
-                                    </div>
-                                    <div id="HEADLINE129" class="ladi-element">
-                                        <h3 class="ladi-headline">Ảnh phải kèm theo thông tin về tác giả, nội dung bức
-                                            ảnh, thời gian và địa điểm chụp. Khuyến khích các bức ảnh gửi kèm bối cảnh
-                                            và lời bình.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP138" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="HEADLINE139" class="ladi-element">
-                                        <h3 class="ladi-headline">05</h3>
-                                    </div>
-                                    <div id="HEADLINE140" class="ladi-element">
-                                        <h3 class="ladi-headline">Ảnh dự thi phải là tác phẩm của người đăng ký dự thi,
-                                            không bị tranh chấp tác quyền, quyền nhân thân, quyền riêng tư và quyền sở
-                                            hữu trí tuệ với bất kỳ ai.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP141" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="HEADLINE142" class="ladi-element">
-                                        <h3 class="ladi-headline">06</h3>
-                                    </div>
-                                    <div id="HEADLINE143" class="ladi-element">
-                                        <h3 class="ladi-headline">Ảnh dự thi có hình ảnh của người khác thì phải có sự
-                                            đồng ý của nhân vật trước khi dự thi.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP144" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="HEADLINE145" class="ladi-element">
-                                        <h3 class="ladi-headline">07</h3>
-                                    </div>
-                                    <div id="HEADLINE146" class="ladi-element">
-                                        <h3 class="ladi-headline">Mỗi thí sinh có thể nộp một hoặc nhiều ảnh, tối đa 5
-                                            ảnh.</h3>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="GROUP147" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="HEADLINE148" class="ladi-element">
-                                        <h3 class="ladi-headline">08</h3>
-                                    </div>
-                                    <div id="HEADLINE149" class="ladi-element">
-                                        <h3 class="ladi-headline">Ảnh dự thi là ảnh chưa từng đoạt giải bất kỳ cuộc thi
-                                            ảnh nào.</h3>
+                                    <div class="RA-anhduthihople">    
+                                        <?=get_field('textarea_anhduthihople');?>
                                     </div>
                                 </div>
                             </div>
@@ -16013,17 +15929,6 @@ body {
                                             d="M94.579,48.627c-0.313-0.452-6.681-9.562-16.815-17.251l-3.43,3.43c7.618,5.674,13.157,12.4,15.29,15.182  C85.702,55.088,69.54,74.416,50,74.416c-4.146,0-8.394-0.876-12.687-2.59l-3.634,3.635C39.161,77.93,44.63,79.209,50,79.209  c25.068,0,43.795-26.721,44.58-27.859C95.141,50.537,95.141,49.444,94.579,48.627z">
                                         </path>
                                     </svg>
-                                </div>
-                            </div>
-                            <div id="GROUP309" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="HEADLINE310" class="ladi-element">
-                                        <h3 class="ladi-headline">09</h3>
-                                    </div>
-                                    <div id="HEADLINE311" class="ladi-element">
-                                        <h3 class="ladi-headline">Ảnh dự thi cần ghi rõ tham gia hạng mục ảnh chụp bằng
-                                            máy ảnh chuyên nghiệp hay ảnh chụp bằng điện thoại.</h3>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -16095,18 +16000,7 @@ body {
                                     <div class="ladi-overlay"></div>
                                 </div>
                             </div>
-                            <div id="GROUP459" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="HEADLINE460" class="ladi-element">
-                                        <h3 class="ladi-headline">03</h3>
-                                    </div>
-                                    <div id="HEADLINE461" class="ladi-element">
-                                        <h3 class="ladi-headline">Giải thưởng truyền cảm hứng: <span
-                                                style="color: rgb(255, 255, 255); font-weight: 400;">1 điện thoại VSmart
-                                                Aris + Giấy chứng nhận giải</span></h3>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div id="HEADLINE155" class="ladi-element">
                                 <h3 class="ladi-headline ladi-transition">Giải thưởng</h3>
                             </div>
@@ -16136,68 +16030,19 @@ body {
                             </div>
                             <div id="GROUP210" class="ladi-element">
                                 <div class="ladi-group">
-                                    <div id="GROUP157" class="ladi-element">
-                                        <div class="ladi-group">
-                                            <div id="HEADLINE158" class="ladi-element">
-                                                <h3 class="ladi-headline">01</h3>
-                                            </div>
-                                            <div id="HEADLINE159" class="ladi-element">
-                                                <h3 class="ladi-headline">Hạng mục dành cho ảnh chụp bằng máy ảnh chuyên
-                                                    nghiệp</h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="LIST_PARAGRAPH209" class="ladi-element">
-                                        <div class="ladi-list-paragraph">
-                                            <ul>
-                                                <li><span style="font-weight: bold;">Giải Vàng: </span>01 máy ảnh Canon
-                                                    EOS M6 Mark II (trị giá 28,050,000VND) + 1 điện thoại VSmart Aris +
-                                                    Giấy chứng nhận giải</li>
-                                                <li><span style="font-weight: bold;">Giải Bạc:</span>&nbsp;1 điện thoại
-                                                    VSmart Aris + Giấy chứng nhận giải</li>
-                                                <li><span style="font-weight: bold;">Giải Đồng:</span>&nbsp;1 điện thoại
-                                                    VSmart Live 4 + Giấy chứng nhận giải</li>
-                                            </ul>
-                                        </div>
+                                    <div class="RA-giaithuong">    
+                                        <?=get_field('textarea_giaithuong');?>
                                     </div>
                                 </div>
                             </div>
-                            <div id="GROUP211" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div id="GROUP212" class="ladi-element">
-                                        <div class="ladi-group">
-                                            <div id="HEADLINE213" class="ladi-element">
-                                                <h3 class="ladi-headline">02</h3>
-                                            </div>
-                                            <div id="HEADLINE214" class="ladi-element">
-                                                <h3 class="ladi-headline">Hạng mục dành cho ảnh chụp bằng điện thoại
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="LIST_PARAGRAPH215" class="ladi-element">
-                                        <div class="ladi-list-paragraph">
-                                            <ul>
-                                                <li><span style="font-weight: 700;">Giải Vàng: </span>01 máy ảnh Canon
-                                                    EOS M200 (trị giá 15,950,000VND) + 1 điện thoại VSmart Aris + Giấy
-                                                    chứng nhận giải</li>
-                                                <li><span style="font-weight: 700;">Giải Bạc: </span>1 điện thoại VSmart
-                                                    Aris + Giấy chứng nhận giải</li>
-                                                <li><span style="font-weight: 700;">Giải Đồng: </span>1 điện thoại
-                                                    VSmart Live 4 + Giấy chứng nhận giải</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <?php } ?>
-    <?php if ( $post->ID != 5878 ){ ?>
+    <?php } else { ?>
         <style>
         
         .RA-container-contest-info.row {
@@ -16290,55 +16135,36 @@ body {
                 <div class="col-1 col-lg-1 RA-container-contest-info-icon"><i class="fas fa-book"></i></div>
                 <div class="col-11 col-lg-11 RA-container-contest-info-area">
                     <h2 class="RA-container-contest-info-heading">Cách Thức Tham Gia</h2>
-                    <p class="RA-container-contest-info-description">
-                    Tác giả gửi bài dự thi thông qua Website vnpr.vn/kiencuongvietnamadmin@vnpr.vn<br>
-                    Hoặc qua email:(Tiêu đề email: Bài dự thi_Tên tác giả_Cuộc thi ảnh “Kiên cường Việt Nam - Resilient Vietnam”)
-                    </p>
+                    <div class="RA-container-contest-info-description">
+                        <?=get_field('textarea_cachthucthamgia');?>
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-lg-6 row RA-container-contest-info-element">
                 <div class="col-1 col-lg-1 RA-container-contest-info-icon"><i class="fas fa-tree"></i></div>
                 <div class="col-11 col-lg-11 RA-container-contest-info-area">
                     <h2 class="RA-container-contest-info-heading">Chủ Đề Cuộc Thi</h2>
-                    <p class="RA-container-contest-info-description">
-                    Thực trạng mùa dịch, những nỗ lực của người dân, các cấp chính quyền, các bộ ngành, các tổ chức xã hội, các doanh nghiệp … trong hoạt động phòng, chống dịch COVID-19 và cùng nhau vượt qua những khó khăn trong đời sống do dịch bệnh gây ra.
-                    <br>Phẩm chất kiên cường Việt Nam thông qua các bức ảnh, thái độ người Việt Nam vượt qua đại dịch.
-                    </p>
+                    <div class="RA-container-contest-info-description">
+                        <?=get_field('textarea_chudecuocthi');?> 
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-lg-6 row RA-container-contest-info-element">
                 <div class="col-1 col-lg-1 RA-container-contest-info-icon"><i class="fas fa-camera"></i></div>
                 <div class="col-11 col-lg-11 RA-container-contest-info-area">
                     <h2 class="RA-container-contest-info-heading">Ảnh Dự Thi Hợp Lệ</h2>
-                    <p class="RA-container-contest-info-description">
-                    Ảnh dự thi phải phù hợp và đúng theo chủ đề của cuộc thi.<br>
-                    Ảnh được chụp tại Việt Nam từ ngày 23/01/2020 tới ngày 30/09/2020.<br>
-                    Ảnh có độ phân giải full HD (1920 x 1080) trở lên đối với ảnh tham gia hạng mục Ảnh chụp bằng điện thoại.<br>
-                    Và ảnh có độ phân giải trên 3.000 pixels đối với ảnh tham gia hạng mục Ảnh chụp bằng máy ảnh chuyên nghiệp.<br>
-                    Ảnh phải kèm theo thông tin về tác giả, nội dung bức ảnh, thời gian và địa điểm chụp. Khuyến khích các bức ảnh gửi kèm bối cảnh và lời bình.<br>
-                    Ảnh dự thi phải là tác phẩm của người đăng ký dự thi, không bị tranh chấp tác quyền, quyền nhân thân, quyền riêng tư và quyền sở hữu trí tuệ với bất kỳ ai.<br>
-                    Ảnh dự thi có hình ảnh của người khác thì phải có sự đồng ý của nhân vật trước khi dự thi.<br>
-                    Mỗi thí sinh có thể nộp một hoặc nhiều ảnh, tối đa 5 ảnh.<br>
-                    Ảnh dự thi là ảnh chưa từng đoạt giải bất kỳ cuộc thi ảnh nào.<br>
-                    Ảnh dự thi cần ghi rõ tham gia hạng mục ảnh chụp bằng máy ảnh chuyên nghiệp hay ảnh chụp bằng điện thoại.<br>
-                    </p>
+                    <div class="RA-container-contest-info-description">
+                        <?=get_field('textarea_anhduthihople');?>
+                    </div>
                 </div>
             </div>
             <div class="col-6 col-lg-6 row RA-container-contest-info-element">
                 <div class="col-1 col-lg-1 RA-container-contest-info-icon"><i class="fas fa-award"></i></div>
                 <div class="col-11 col-lg-11 RA-container-contest-info-area">
                     <h2 class="RA-container-contest-info-heading">Giải Thưởng</h2>
-                    <p class="RA-container-contest-info-description">
-                    <span class="RA-container-contest-info-description-heading">Hạng mục dành cho ảnh chụp bằng máy ảnh chuyên nghiệp</span><br>
-                    Giải Vàng: 01 máy ảnh Canon EOS M6 Mark II (trị giá 28,050,000VND) + 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
-                    Giải Bạc: 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
-                    Giải Đồng: 1 điện thoại VSmart Live 4 + Giấy chứng nhận giải.<br>
-                    <span class="RA-container-contest-info-description-heading">Hạng mục dành cho ảnh chụp bằng điện thoại</span><br>
-                    Giải Vàng: 01 máy ảnh Canon EOS M200 (trị giá 15,950,000VND) + 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
-                    Giải Bạc: 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
-                    Giải Đồng: 1 điện thoại VSmart Live 4 + Giấy chứng nhận giải.<br>
-                    <span class="RA-container-contest-info-description-heading">Giải thưởng truyền cảm hứng:</span> 1 điện thoại VSmart Aris + Giấy chứng nhận giải.<br>
-                    </p>
+                    <div class="RA-container-contest-info-description">
+                        <?=get_field('textarea_giaithuong');?>
+                    </div>
                 </div>
             </div>
         </div>
