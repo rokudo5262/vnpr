@@ -16311,35 +16311,76 @@ body {
         </style>
     <?php } ?>
 
-    <div class="RA_Section_Nhataitro">
-        <div id="SECTION842" class="ladi-section">
-            <div class="ladi-container">
-                <div id="HEADLINE860" class="ladi-element"></div>
-                <div id="HEADLINE844" class="ladi-element">
-                    <h3 class="ladi-headline">Nhà tài trợ</h3>
+    <?php $layout_ntt =  get_field('layout_nha_tai_tro'); ?>
+    <?php if ( $layout_ntt == 'Carousel' ){ ?>
+        <div class="RA_Section_Nhataitro">
+            <div id="SECTION842" class="ladi-section">
+                <div class="ladi-container">
+                    <div id="HEADLINE860" class="ladi-element"></div>
+                    <div id="HEADLINE844" class="ladi-element">
+                        <h3 class="ladi-headline">Nhà tài trợ</h3>
+                    </div>
+                    <div id="LINE845" class="ladi-element">
+                        <div class="ladi-line">
+                            <div class="ladi-line-container"></div>
+                        </div>
+                    </div>
                 </div>
-                <div id="LINE845" class="ladi-element">
-                    <div class="ladi-line">
-                        <div class="ladi-line-container"></div>
+            </div>
+            <div class="container owl-carousel owl-theme owl-loaded owl-drag owl-same">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage"
+                        style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
+                        <?php foreach ($resultNhaTaiTro as $key => $value) { ?>
+                        <div class="owl-item active" style="">
+                            <img class="item" style="margin: 5px auto !important;"
+                                src="<?=wp_get_attachment_url((int)$value);?>">
+                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container owl-carousel owl-theme owl-loaded owl-drag owl-same">
-            <div class="owl-stage-outer">
-                <div class="owl-stage"
-                    style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
-                    <?php foreach ($resultNhaTaiTro as $key => $value) { ?>
-                    <div class="owl-item active" style="">
-                        <img class="item" style="margin: 5px auto !important;"
-                            src="<?=wp_get_attachment_url((int)$value);?>">
+   <?php } else { ?>
+        <div class="RA_Section_Nhataitro">
+            <div id="SECTION842" class="ladi-section">
+                <div class="ladi-container">
+                    <div id="HEADLINE860" class="ladi-element"></div>
+                    <div id="HEADLINE844" class="ladi-element">
+                        <h3 class="ladi-headline">Nhà tài trợ</h3>
                     </div>
-                    <?php } ?>
+                    <div id="LINE845" class="ladi-element">
+                        <div class="ladi-line">
+                            <div class="ladi-line-container"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    <style>
+    .RA_Section_Nhataitro_Gallery{
+        max-width: 1300px;
+        margin: auto;
+    }
+    .RA-col-nha-tai-tro {
+        -ms-flex: 0 0 <?=100/(int)get_field('col_nha_tai_tro');?>%;
+        flex: 0 0 <?=100/(int)get_field('col_nha_tai_tro');?>%;
+        max-width: <?=100/(int)get_field('col_nha_tai_tro');?>%;
+        padding: <?=get_field('col_space_nha_tai_tro');?>px <?=get_field('col_space_nha_tai_tro');?>px;
+    }
+    </style>
+    <div class="RA_Section_Nhataitro_Gallery row">
+        <?php foreach ($resultNhaTaiTro as $key => $value) { ?>
+            <div class="RA-col-nha-tai-tro" style="">
+                <img class="RA-col-nha-tai-tro-item" style="margin: 5px auto;"
+                    src="<?=wp_get_attachment_url((int)$value);?>">
+            </div>
+        <?php } ?>
     </div>
-
+   <?php } ?>
+  
+    <?php $layout_ttbc =  get_field('layout_thongtinbaochi'); ?>
+    <?php if ( $layout_ttbc == 'Carousel' ){ ?>
     <div class="RA_Section_Nhataitro RA_Section_Plus_BaoChi">
         <div id="SECTION842" class="ladi-section">
             <div class="ladi-container">
@@ -16360,7 +16401,7 @@ body {
                     style="transform: translate3d(-1527px, 0px, 0px); transition: all 0.25s ease 0s; width: 3334px;">
                     <?php foreach ($resultThongTinBaoChi as $key => $value) { ?>
                     <div class="owl-item active" style="">
-                        <?php if($value['url']=='' || $value['url']=='#') {?>
+                        <?php if($value['url'] == '' || $value['url'] == '#') {?>
                            
                             <img class="item" style="margin: 5px auto !important;"
                                 src="<?=wp_get_attachment_url((int)$value['id']);?>">
@@ -16377,7 +16418,52 @@ body {
             </div>
         </div>
     </div>
-
+    <?php } else { ?>
+        <style>
+        .RA_Section_Thongtinbaochi_Gallery{
+            max-width: 1300px;
+            margin: auto;
+        }
+        .RA-col-thong-tin-bao-chi {
+            -ms-flex: 0 0 <?=100/(int)get_field('col_thong_tin_bao_chi');?>%;
+            flex: 0 0 <?=100/(int)get_field('col_thong_tin_bao_chi');?>%;
+            max-width: <?=100/(int)get_field('col_thong_tin_bao_chi');?>%;
+            padding: <?=get_field('col_space_thong_tin_bao_chi');?>px <?=get_field('col_space_thong_tin_bao_chi');?>px;
+        }
+        </style>
+         <div class="RA_Section_Nhataitro RA_Section_Plus_BaoChi">
+            <div id="SECTION842" class="ladi-section">
+                <div class="ladi-container">
+                    <div id="HEADLINE860" class="ladi-element"></div>
+                    <div id="HEADLINE844" class="ladi-element">
+                        <h3 class="ladi-headline">Thông tin Báo chí</h3>
+                    </div>
+                    <div id="LINE845" class="ladi-element">
+                        <div class="ladi-line">
+                            <div class="ladi-line-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="RA_Section_Thongtinbaochi_Gallery row">
+            <?php foreach ($resultThongTinBaoChi as $key => $value) { ?>
+                <div class="RA-col-thong-tin-bao-chi" style="">
+                    <?php if($value['url']=='' || $value['url']=='#') {?>
+                        
+                        <img class="item" style="margin: 5px auto !important;"
+                            src="<?=wp_get_attachment_url((int)$value['id']);?>">
+                        
+                    <?php } else { ?>
+                        <a href="<?=$value['url']?>">
+                        <img class="item" style="margin: 5px auto !important;"
+                            src="<?=wp_get_attachment_url((int)$value['id']);?>">
+                        </a>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+        </div>
+    <?php } ?>
 
     <div id="SECTION313" class="ladi-section">
         <style>
