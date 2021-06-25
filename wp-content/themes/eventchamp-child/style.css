@@ -3762,6 +3762,10 @@ form#bf_loginform {
 }
 
 @media only screen and (max-width: 320px){
+    #SECTION41>.ladi-section-background {
+        background-color: rgb(243, 243, 243) !important;
+    }
+
     .RA-anhduthihople {
         text-align: justify !important;
         color: rgb(255, 255, 255);
@@ -3887,7 +3891,7 @@ form#bf_loginform {
     #BUTTON50 {
         width: 100px !important;
         height: 36px !important;
-        top: 1282.95px !important;
+        top: 685px !important;
         left: 170px !important;
     }
 
@@ -3900,7 +3904,7 @@ form#bf_loginform {
 
     #HEADLINE47 {
         width: 220px !important;
-        top: 656.946px !important;
+        top: 40px !important;
         left: 50px !important;
     }
 
@@ -4502,7 +4506,7 @@ form#bf_loginform {
 
     #LINE208 {
         width: 100px !important;
-        top: 1293px !important;
+        top: 695px !important;
         left: 50px !important;
     }
 
