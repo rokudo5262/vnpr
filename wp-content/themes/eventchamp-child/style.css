@@ -2849,8 +2849,7 @@ form#bf_loginform {
         color: rgb(255, 255, 255);
         font-size: 15px;
         line-height: 1.6;
-        padding: 0px 0px 0px 40px;
-        width: 375px !important;
+        padding: 0px 40px 0px 40px !important;
     }
 
     .RA-anhduthihople {
@@ -2858,8 +2857,8 @@ form#bf_loginform {
         color: rgb(255, 255, 255);
         font-size: 15px;
         line-height: 1.6;
-        padding: 0px 0px 0px 40px;
-        width: 355px !important;
+        padding: 0px 40px 0px 40px !important;
+        
     }
 
     .RA-giaithuong {
@@ -2867,8 +2866,8 @@ form#bf_loginform {
         color: rgb(255, 255, 255);
         font-size: 15px;
         line-height: 1.6;
-        padding: 0px 0px 0px 45px !important;
-        width: 345px !important;
+        padding: 0px 40px 0px 45px !important;
+       
     }
 
     .RA_Section_Nhataitro.RA_Section_Plus_BaoChi {
@@ -2962,6 +2961,30 @@ form#bf_loginform {
         height: 1150px !important;
         top: 0px;
         left: 500.5px;
+    }
+
+    .RA-anhduthihople {
+        text-align: justify !important;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 40px 0px 40px !important;
+    }
+
+    .RA-cachthucthamgia {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 40px 0px 40px !important;
+    }
+
+    .RA-giaithuong {
+        text-align: justify !important;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 40px 0px 45px !important;
+       
     }
 
     #SHAPE150 {
