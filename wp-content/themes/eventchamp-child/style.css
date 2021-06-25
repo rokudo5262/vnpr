@@ -3774,19 +3774,20 @@ form#bf_loginform {
     }
 
     #HEADLINE526 {
-        width: 335px !important;
-        top: 540px !important;
-        left: 24.229px;
+        width: 320px !important;
+        top: 567px !important;
+        left: 0px !important;
     }
 
     #SECTION250 {
-        height: 860px !important;
+        height: 975px !important;
     }
 
     #HEADLINE465 {
-        width: 330px !important;
+        width: 320px !important;
         top: 355px !important;
-        left: 24.229px !important;
+        left: 0px !important;
+        padding: 0px 20px !important;
     }
 
     .ladi-section .ladi-container {
@@ -3796,8 +3797,9 @@ form#bf_loginform {
     #IMAGE401 {
         width: 314.968px !important;
         height: 186.497px !important;
-        top: -80px !important;
-        left: 29.516px !important;
+        top: -62px !important;
+        left: 3.516px !important;
+        transform: scale(0.8);
     }
 
     #IMAGE308 {
@@ -3973,7 +3975,7 @@ form#bf_loginform {
 
     #HEADLINE525 {
         width: 320px !important;
-        top: 596.931px !important;
+        top: 660.931px !important;
         left: 0px !important;
         padding: 0px 20px !important;
     }
@@ -4521,5 +4523,25 @@ form#bf_loginform {
         padding: 50% 0%;
         transition: transform .5s ease;
         display: none;
+    }
+
+    #HEADLINE403 {
+        width: 237px !important;
+        top: 55.566px !important;
+        left: 3.5px !important;
+    }
+
+    #BOX744 {
+        width: 250px !important;
+        height: 229px;
+        top: 0px;
+        left: 0px;
+    }
+
+    #BUTTON738 {
+        width: 210px;
+        height: 48px;
+        top: 125.654px !important;
+        left: 18px !important;
     }
 }
