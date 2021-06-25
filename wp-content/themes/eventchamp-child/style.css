@@ -2158,6 +2158,14 @@ form#bf_loginform {
         height: 1000px !important;
     }
 
+    #SECTION41>.ladi-section-background {
+        background-color: rgb(243, 243, 243) !important;
+    }
+
+    #SECTION41 {
+        height: 580px !important;
+    }
+
     #GROUP469 {
         width: 1121px;
         height: 1000px !important;
@@ -2196,15 +2204,15 @@ form#bf_loginform {
     }
 
     #LINE208 {
-        width: 155px !important;
-        top: 505px !important;
+        width: 90px !important;
+        top: 516px !important;
         left: 60px !important;
     }
 
     #BUTTON50 {
-        width: 180px;
+        width: 180px !important;
         height: 48px;
-        top: 1125px !important;
+        top: 500px !important;
         left: 178.5px !important;
     }
 
