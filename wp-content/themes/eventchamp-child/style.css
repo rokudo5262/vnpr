@@ -3762,6 +3762,30 @@ form#bf_loginform {
 }
 
 @media only screen and (max-width: 320px){
+    .RA-anhduthihople {
+        text-align: justify !important;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 40px 0px 40px !important;
+    }
+
+    .RA-cachthucthamgia {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 40px 0px 40px !important;
+    }
+
+    .RA-giaithuong {
+        text-align: justify !important;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 40px 0px 45px !important;
+       
+    }
+
     #HEADLINE51 {
         width: 320px !important;
         top: 0px;
