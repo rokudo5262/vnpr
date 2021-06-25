@@ -2108,6 +2108,47 @@ form#bf_loginform {
         display: none;
     }
 
+    #SECTION107 {
+        height: 1000px !important;
+    }
+
+    #GROUP469 {
+        width: 1121px;
+        height: 1000px !important;
+        top: 16px;
+        left: -500.5px;
+    }
+
+    #GROUP312 {
+        width: 420px;
+        height: 1000px !important;
+        top: 0px;
+        left: 500.5px;
+    }
+
+    #BOX109 {
+        width: 420px;
+        height: 1000px !important;
+        top: 0px;
+        left: 0px;
+    }
+
+    .RA-anhduthihople {
+        text-align: left;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 0px 0px 40px;
+        width: 395px !important;
+    }
+
+    #SHAPE150 {
+        width: 22.2004px;
+        height: 24px;
+        top: 950.2px !important;
+        left: 198.9px;
+    }
+
     #LINE208 {
     width: 99px;
     top: 1140px !important;
