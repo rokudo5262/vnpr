@@ -15654,33 +15654,6 @@ body {
             left: -457px;
         } */
 
-        .owl-item [class*=RA-BGK-description-] {
-            position: absolute;
-            top:0px;
-            left: 0px;
-            height: 100%;
-            width: 100%;
-            background: rgba(251, 251, 251, 0.8); 
-            text-align: center;
-            padding: 50% 0%;
-            transition: transform .5s ease;
-            display: none;
-        }
-
-        [class*=RA-BGK-description-] p.RA-BGK-title{
-            font-family: "Oswald", sans-serif;
-            color: rgb(122, 19, 21);
-            font-size: 26px;
-            text-align: center;
-            line-height: 1.6;
-        }
-
-        [class*=RA-BGK-description-] span.RA-BGK-caption {
-            color: rgb(84, 84, 84);
-            font-size: 16px;
-            text-align: center;
-            line-height: 1.6;
-        }
         </style>
         <div class="RA-container-contest-info row">
             <div class="col-6 col-lg-6 row RA-container-contest-info-element">
@@ -15744,7 +15717,35 @@ body {
             <div id="BOX220" class="ladi-element">
                 <div class="ladi-box"></div>
             </div>
+            <style>
+                  .owl-item [class*=RA-BGK-description-] {
+                    position: absolute;
+                    top:0px;
+                    left: 0px;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(251, 251, 251, 0.8); 
+                    text-align: center;
+                    padding: 50% 0%;
+                    transition: transform .5s ease;
+                    display: none;
+                }
 
+                [class*=RA-BGK-description-] p.RA-BGK-title{
+                    font-family: "Oswald", sans-serif;
+                    color: rgb(122, 19, 21);
+                    font-size: 26px;
+                    text-align: center;
+                    line-height: 1.6;
+                }
+
+                [class*=RA-BGK-description-] span.RA-BGK-caption {
+                    color: rgb(84, 84, 84);
+                    font-size: 16px;
+                    text-align: center;
+                    line-height: 1.6;
+                }
+            </style>
             <div id="CAROUSEL_RA_BGK" class="RA_Section_BanGiamKhao RA-element">
                 <div class="container owl-carousel owl-theme owl-loaded owl-drag bgk-carousel RA-bgk-carousel">
                     <div class="owl-stage-outer RA-bgk-carousel-content">
