@@ -1917,17 +1917,50 @@ form#bf_loginform {
     }
 }
 @media only screen and (max-width: 428px) and (min-width:415px){
+    #HEADLINE47 {
+        width: 428px !important;
+        top: 0px !important;
+        left: 0px !important;
+        padding: 55px 58px;
+    }
+
+    #SECTION41 {
+        height: 570px !important;
+    }
+
+    #SECTION41>.ladi-section-background {
+        background-color: rgb(243, 243, 243) !important;
+    }
+
     #LINE208 {
-    width: 99px;
-    top: 1140px !important;
-    left: 60px !important;
+        width: 120px !important;
+        top: 505px !important;
+        left: 57px !important;
+    }
+
+    #GROUP469 {
+        width: 1121px;
+        height: 980px !important;
+        top: 16px;
+        left: -500.5px;
+    }
+
+    #BOX109 {
+        width: 420px;
+        height: 980px !important;
+        top: 0px;
+        left: 0px;
+    }
+
+    #SECTION107 {
+        height: 980px !important;
     }
 
     #BUTTON50 {
-        width: 180px;
+        width: 170px !important;
         height: 48px;
-        top: 1125px !important;
-        left: 178.5px !important;
+        top: 490px !important;
+        left: 200px !important;
     }
 
     #GROUP37 {
