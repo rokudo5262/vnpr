@@ -2386,14 +2386,13 @@ form#bf_loginform {
     }
 
     #SECTION41 {
-        height: 580px !important;
+        height: 650px !important;
     }
-
 
     #BUTTON50 {
         width: 160px !important;
         height: 48px !important;
-        top: 550px !important;
+        top: 575px !important;
         left: 165px !important;
     }
 
@@ -2842,7 +2841,7 @@ form#bf_loginform {
 
     #LINE208 {
         width: 75px !important;
-        top: 1185px !important;
+        top: 590px !important;
         left: 58px !important;
     }
 
