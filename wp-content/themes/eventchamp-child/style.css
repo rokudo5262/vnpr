@@ -2381,16 +2381,25 @@ form#bf_loginform {
         left: 0px;
     }
 
+    #SECTION41>.ladi-section-background {
+        background-color: rgb(243, 243, 243) !important;
+    }
+
+    #SECTION41 {
+        height: 580px !important;
+    }
+
+
     #BUTTON50 {
         width: 160px !important;
         height: 48px !important;
-        top: 1172.95px !important;
+        top: 550px !important;
         left: 165px !important;
     }
 
     #HEADLINE47 {
         width: 265px !important;
-        top: 656.946px !important;
+        top: 50px !important;
         left: 59.5px !important;
     }
 
