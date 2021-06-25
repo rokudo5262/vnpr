@@ -2148,6 +2148,12 @@ form#bf_loginform {
         display: none;
     }
 
+    #HEADLINE47 {
+        width: 299px;
+        top: 40px !important;
+        left: 59.5px;
+    }
+
     #SECTION107 {
         height: 1000px !important;
     }
@@ -2190,9 +2196,9 @@ form#bf_loginform {
     }
 
     #LINE208 {
-    width: 99px;
-    top: 1140px !important;
-    left: 60px !important;
+        width: 155px !important;
+        top: 505px !important;
+        left: 60px !important;
     }
 
     #BUTTON50 {
