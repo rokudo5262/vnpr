@@ -682,6 +682,20 @@ form#bf_loginform {
         width: 290px !IMPORTANT;
         text-align: justify !important;
     }
+
+    .owl-item [class*=RA-BGK-description-] {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: rgba(251, 251, 251, 0.8);
+        text-align: center;
+        padding: 63% 0% !important;
+        transition: transform .5s ease;
+        display: none;
+    }
+
     .ladi-section .ladi-container {
         width: 1024px !important;
     }
