@@ -1102,6 +1102,15 @@ form#bf_loginform {
         width: 475px;
     }
 
+    .RA-giaithuong {
+        text-align: left;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        width: 300px;
+        padding: 0px 0px 0px 40px;
+    }
+
     #BOX4 {
         width: 190px !important;
         height: 230px;
@@ -1387,7 +1396,7 @@ form#bf_loginform {
     }
 
     #SECTION107 {
-        height: 870px !important;
+        height: 900px !important;
     }
 
     #GROUP182 {
@@ -1458,7 +1467,7 @@ form#bf_loginform {
         top: 230px !important;
         left: 70px !important;
     }
-    
+
     #GROUP463 {
         width: 198px !important;
         height: 678.6px !important;
