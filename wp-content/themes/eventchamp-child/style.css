@@ -656,6 +656,32 @@ form#bf_loginform {
 }
 
 @media only screen and (max-width: 1024px) and (min-width:769px){
+    .RA-cachthucthamgia {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        width: 230px !important;
+        padding: 0px 0px 0px 40px;
+        text-align: justify !important; 
+    }
+
+    .RA-anhduthihople {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 0px 0px 40px;
+        width: 470px !important;
+        text-align: justify !important; 
+    }
+
+    .RA-giaithuong {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 0px 0px 40px;
+        width: 290px !IMPORTANT;
+        text-align: justify !important;
+    }
     .ladi-section .ladi-container {
         width: 1024px !important;
     }
@@ -937,7 +963,7 @@ form#bf_loginform {
 
     #HEADLINE47 {
         width: 900px !important;
-        top: 685.514px !important;
+        top: 15px !important;
         left: 60px !important;
     }
 
@@ -964,16 +990,16 @@ form#bf_loginform {
     }
 
     #LINE208 {
-        width: 675px !important;
-        top: 943.514px !important;
-        left: 60px !important;
+        width: 565px !important;
+        top: 385px !important;
+        left: 110px !important;
     }
 
     #BUTTON50 {
-        width: 189px !important;
+        width: 185px !important;
         height: 52px !important;
-        top: 926.014px !important;
-        left: 772px !important;
+        top: 365px !important;
+        left: 725px !important;
     }
 
     .ladi-group {
