@@ -1956,11 +1956,31 @@ form#bf_loginform {
         height: 980px !important;
     }
 
+    #SHAPE150 {
+        width: 22.2004px;
+        height: 24px;
+        top: 926.2px !important;
+        left: 198.9px;
+    }
+
     #BUTTON50 {
         width: 170px !important;
         height: 48px;
         top: 490px !important;
         left: 200px !important;
+    }
+
+    .owl-item [class*=RA-BGK-description-] {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: auto;
+        width: 428px !important;
+        background: rgba(251, 251, 251, 0.8);
+        text-align: center;
+        padding: 32% 0%;
+        transition: transform .5s ease;
+        display: none;
     }
 
     #GROUP37 {
@@ -2071,6 +2091,19 @@ form#bf_loginform {
 }
 
 @media only screen and (max-width: 414px) and (min-width:391px){
+    .owl-item [class*=RA-BGK-description-] {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: auto;
+        width: 414px !important;
+        background: rgba(251, 251, 251, 0.8);
+        text-align: center;
+        padding: 32% 0%;
+        transition: transform .5s ease;
+        display: none;
+    }
+
     #LINE208 {
     width: 99px;
     top: 1140px !important;
