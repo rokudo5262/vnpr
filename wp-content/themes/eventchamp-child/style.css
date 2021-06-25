@@ -3864,7 +3864,11 @@ form#bf_loginform {
     }
 
     #SECTION41 {
-        height: 1356px !important;
+        height: 755px !important;
+    }
+
+    #SECTION30 {
+        height: 365px !important;
     }
 
     #BOX48 {
@@ -4035,14 +4039,14 @@ form#bf_loginform {
 
     #GROUP524 {
         width: 320px !important;
-        height: 328px;
+        height: 365px !important;
         top: 14px;
         left: 0px;
     }
 
     #BOX26 {
         width: 320px !important;
-        height: 328px;
+        height: 365px !important;
         top: 0px;
         left: 0px;
     }
@@ -4133,8 +4137,8 @@ form#bf_loginform {
     #SHAPE116 {
         width: 24px !important;
         height: 24px !important;
-        top: 290px !important;
-        left: 175px !important;
+        top: 315px !important;
+        left: 150px !important;
     }
 
     #SHAPE117 {
