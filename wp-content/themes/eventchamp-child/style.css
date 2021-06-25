@@ -2871,6 +2871,10 @@ form#bf_loginform {
         width: 345px !important;
     }
 
+    .RA_Section_Nhataitro.RA_Section_Plus_BaoChi {
+        margin-top: 35px !important;
+    }
+
     #SECTION107 {
         height: 1050px !important;
     }
@@ -2949,6 +2953,24 @@ form#bf_loginform {
 }
 
 @media only screen and (max-width: 375px) and (min-width:321px){
+    #SECTION107 {
+        height: 1150px !important;
+    }
+
+    #GROUP312 {
+        width: 420px;
+        height: 1150px !important;
+        top: 0px;
+        left: 500.5px;
+    }
+
+    #SHAPE150 {
+        width: 22.2004px;
+        height: 24px;
+        top: 1050px !important;
+        left: 185.9px !important;
+    }
+
     #HEADLINE51 {
         width: 375px !important;
         top: 0px;
