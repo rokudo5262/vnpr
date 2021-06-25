@@ -2580,7 +2580,7 @@ form#bf_loginform {
 
     #BOX109 {
         width: 390px !important;
-        height: 889.6px;
+        height: 1000px !important;
         top: 0px;
         left: 0px;
     }
@@ -2843,6 +2843,34 @@ form#bf_loginform {
         width: 75px !important;
         top: 590px !important;
         left: 58px !important;
+    }
+
+    .RA-cachthucthamgia {
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 0px 0px 40px;
+        width: 375px !important;
+    }
+
+    .RA-anhduthihople {
+        text-align: justify !important;
+        color: rgb(255, 255, 255);
+        font-size: 15px;
+        line-height: 1.6;
+        padding: 0px 0px 0px 40px;
+        width: 355px !important;
+    }
+
+    #SECTION107 {
+        height: 1000px !important;
+    }
+
+    #GROUP312 {
+        width: 420px;
+        height: 1000px !important;
+        top: 0px;
+        left: 500.5px;
     }
 
     .container {
