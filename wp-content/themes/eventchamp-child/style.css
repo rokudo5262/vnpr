@@ -1978,7 +1978,7 @@ form#bf_loginform {
         width: 428px !important;
         background: rgba(251, 251, 251, 0.8);
         text-align: center;
-        padding: 32% 0%;
+        padding: 32% 0% !important;
         transition: transform .5s ease;
         display: none;
     }
@@ -2027,6 +2027,10 @@ form#bf_loginform {
     .RA_Section_Nhataitro {
         background: #fafafa !important;
         margin-top: 235px !important;
+    }
+
+    .RA_Section_Nhataitro.RA_Section_Plus_BaoChi {
+        margin-top: 35px !important;
     }
 
     #SECTION842 {
@@ -2099,7 +2103,7 @@ form#bf_loginform {
         width: 414px !important;
         background: rgba(251, 251, 251, 0.8);
         text-align: center;
-        padding: 32% 0%;
+        padding: 32% 0% !important;
         transition: transform .5s ease;
         display: none;
     }
