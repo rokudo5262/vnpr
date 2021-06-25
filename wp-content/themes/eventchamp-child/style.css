@@ -907,12 +907,6 @@ form#bf_loginform {
         left: 41.656px !important;
     }
 
-    #LIST_PARAGRAPH209 {
-        width: 270px !important;
-        top: 40.389px !important;
-        left: 39.104px !important;
-    }
-
     #SECTION152 {
         height: 550px !important;
     }
@@ -927,12 +921,6 @@ form#bf_loginform {
         width: 240px !important;
         top: 45px !important;
         left: 41.656px;
-    }
-
-    #LIST_PARAGRAPH215 {
-        width: 270px !important;
-        top: 100px !important;
-        left: 39.104px !important;
     }
 
     #HEADLINE460 {
@@ -1528,12 +1516,6 @@ form#bf_loginform {
         left: 41.656px !important;
     }
 
-    #LIST_PARAGRAPH209 {
-        width: 270px !important;
-        top: 40.389px !important;
-        left: 39.104px !important;
-    }
-
     #GROUP190 {
         width: 190px !important;
         height: 230px;
@@ -1697,12 +1679,6 @@ form#bf_loginform {
         width: 240px !important;
         top: 45px !important;
         left: 41.656px;
-    }
-
-    #LIST_PARAGRAPH215 {
-        width: 270px !important;
-        top: 100px !important;
-        left: 39.104px !important;
     }
 
     #HEADLINE460 {
@@ -2759,12 +2735,6 @@ form#bf_loginform {
         left: 47.402px;
     }
 
-    #LIST_PARAGRAPH209 {
-        width: 330px !important;
-        top: 58.389px;
-        left: 45.402px;
-    }
-
     #GROUP211 {
         width: 390px !important;
         height: 215.389px;
@@ -2777,12 +2747,6 @@ form#bf_loginform {
         height: 41.5px;
         top: 0px;
         left: 0px;
-    }
-
-    #LIST_PARAGRAPH215 {
-        width: 330px !important;
-        top: 36.389px;
-        left: 47.0612px;
     }
 
     #GROUP459 {
@@ -3591,19 +3555,6 @@ form#bf_loginform {
         left: 47.402px;
     }
 
-    #LIST_PARAGRAPH209 {
-        width: 300px !important;
-        top: 58.389px;
-        left: 45.402px;
-    }
-
-    #LIST_PARAGRAPH209>.ladi-list-paragraph {
-        color: rgb(255, 255, 255);
-        font-size: 15px;
-        text-align: justify !important;
-        line-height: 1.6;
-    }
-
     #SECTION152 {
         height: 815px !important;
     }
@@ -3632,12 +3583,6 @@ form#bf_loginform {
         height: 41.5px;
         top: 0px;
         left: 0px;
-    }
-
-    #LIST_PARAGRAPH215 {
-        width: 300px !important;
-        top: 81.389px !important;
-        left: 47.0612px;
     }
 
     #GROUP459 {
@@ -4399,19 +4344,6 @@ form#bf_loginform {
         left: 47.402px;
     }
 
-    #LIST_PARAGRAPH209 {
-        width: 300px !important;
-        top: 58.389px;
-        left: 45.402px;
-    }
-
-    #LIST_PARAGRAPH209>.ladi-list-paragraph {
-        color: rgb(255, 255, 255);
-        font-size: 15px;
-        text-align: justify !important;
-        line-height: 1.6;
-    }
-
     #SECTION152 {
         height: 815px !important;
     }
@@ -4440,12 +4372,6 @@ form#bf_loginform {
         height: 41.5px;
         top: 0px;
         left: 0px;
-    }
-
-    #LIST_PARAGRAPH215 {
-        width: 300px !important;
-        top: 81.389px !important;
-        left: 47.0612px;
     }
 
     #GROUP459 {
@@ -4575,5 +4501,18 @@ form#bf_loginform {
         width: 320px !important;
         top: 0px !important;
         left: -60px !important;
+    }
+
+    .owl-item [class*=RA-BGK-description-] {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 335px !important;
+        background: rgba(251, 251, 251, 0.8);
+        text-align: center;
+        padding: 50% 0%;
+        transition: transform .5s ease;
+        display: none;
     }
 }

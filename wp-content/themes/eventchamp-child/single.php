@@ -10378,32 +10378,6 @@ body {
         left: 0px;
     }
 
-    #LIST_PARAGRAPH215 {
-        width: 358px;
-        top: 36.389px;
-        left: 47.0612px;
-    }
-
-    #LIST_PARAGRAPH215>.ladi-list-paragraph {
-        color: rgb(255, 255, 255);
-        font-size: 15px;
-        text-align: left;
-        line-height: 1.6;
-    }
-
-    #LIST_PARAGRAPH215 ul li {
-        padding-bottom: 8px;
-        padding-left: 25px;
-    }
-
-    #LIST_PARAGRAPH215 ul li:before {
-        content: "";
-        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20version%3D%221.1%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20100%20100%22%20enable-background%3D%22new%200%200%20100%20100%22%20xml%3Aspace%3D%22preserve%22%20%20width%3D%22100%25%22%20height%3D%22100%25%22%20class%3D%22%22%20fill%3D%22rgba(255%2C%20235%2C%200%2C%201)%22%3E%3Cpath%20d%3D%22M50.1%2C10c22.1%2C0%2C40%2C17.9%2C40%2C40s-17.9%2C40-40%2C40s-40-17.9-40-40S28%2C10%2C50.1%2C10%20M50.1%2C5c-24.9%2C0-45%2C20.1-45%2C45s20.1%2C45%2C45%2C45%20%20s45-20.1%2C45-45S74.9%2C5%2C50.1%2C5L50.1%2C5z%22%3E%3C%2Fpath%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M73.6%2C38.9L73.6%2C38.9L46.9%2C66.2l0%2C0c-0.6%2C0.6-1.5%2C1-2.5%2C1c-1%2C0-1.8-0.4-2.5-1l0%2C0%20%20L26.8%2C50.8l0%2C0c-0.6-0.6-1-1.5-1-2.5c0-2%2C1.6-3.6%2C3.5-3.6c1%2C0%2C1.8%2C0.4%2C2.5%2C1l0%2C0l12.6%2C12.9l24.3-24.8l0%2C0c0.6-0.6%2C1.5-1%2C2.5-1%20%20c1.9%2C0%2C3.5%2C1.6%2C3.5%2C3.6C74.6%2C37.4%2C74.2%2C38.3%2C73.6%2C38.9z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
-        width: 20px;
-        height: 20px;
-        top: 3px;
-    }
-
     #GROUP211 {
         width: 405.061px;
         height: 215.389px;
