@@ -4094,7 +4094,14 @@ form#bf_loginform {
     }
 
     #SECTION107 {
-        height: 965px !important;
+        height: 1200px !important;
+    }
+
+    #GROUP312 {
+        width: 420px;
+        height: 1200px !important;
+        top: 0px;
+        left: 500.5px;
     }
 
     #HEADLINE105>.ladi-headline {
@@ -4127,7 +4134,7 @@ form#bf_loginform {
 
     #BOX109 {
         width: 320px !important;
-        height: 950px !important;
+        height: 1200px !important;
         top: 0px;
         left: 0px;
     }
@@ -4245,8 +4252,8 @@ form#bf_loginform {
     #SHAPE150 {
         width: 22.2004px !important;
         height: 24px !important;
-        top: 917.2px !important;
-        left: 175.9px !important;
+        top: 1145px !important;
+        left: 150.9px !important;
     }
 
     #HEADLINE139 {
@@ -4345,7 +4352,7 @@ form#bf_loginform {
     }
 
     #SECTION152 {
-        height: 815px !important;
+        height: 860px !important;
     }
 
     #HEADLINE214 {
