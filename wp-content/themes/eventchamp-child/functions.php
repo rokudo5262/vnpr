@@ -459,6 +459,10 @@ div#slider_revolution_metabox,
 .acf-gallery-backdrop {
     display: none !important;
 }
+
+#myCRED-wrap a.page-title-action {
+    display: none;
+}
 </style>
 <?php
   }
