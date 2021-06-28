@@ -15737,7 +15737,7 @@ body {
                 <div class="img-wrapper">
                     <div class="img-area">
                         <img src="https://w.ladicdn.com/s500x450/5c7362c6c417ab07e5196b05/cv19_108-copy-20200822123953.jpg" alt"">
-                        <h2>Cách Thức Tham Gia</h2>
+                        <h2>Cách thức tham gia</h2>
                     </div>
                     <div class="img-text">
                         <h2>Cách Thức Tham Gia</h2>
