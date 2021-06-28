@@ -1167,7 +1167,7 @@ form#bf_loginform {
     .img-text.RA-giaithuong {
         width: 384px !important;
         position: relative !important;
-        left: -194px !important;
+        left: -192px !important;
         text-align: justify !important;
     }
 
@@ -2029,6 +2029,11 @@ form#bf_loginform {
         padding: 32% 0% !important;
         transition: transform .5s ease;
         display: none;
+    }
+
+    .RA-container-contest-info.row {
+        width: 428px !important;
+        margin: -195px auto 0px auto !important;
     }
 
     #GROUP37 {
