@@ -1157,6 +1157,13 @@ form#bf_loginform {
         padding: 25% 25% 10% 10% !important;
     }
 
+    .img-text.RA-adthl {
+        width: 384px !important;
+        text-align: justify !important;
+        left: 0px !important;
+        position: relative !important;
+    }
+
     #BOX4 {
         width: 190px !important;
         height: 230px;
