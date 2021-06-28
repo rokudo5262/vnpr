@@ -15044,9 +15044,8 @@ body {
     </div>
     <style>
     .single-post .gt-counter:before {
-        background: #<?=hex2rgba(get_field('primary_color'),1);?> !important;
+        background: <?=hex2rgba(get_field('primary_color'),1);?> !important;
     }
-    
     </style>
     <?php 
     global $hardcode_options;
