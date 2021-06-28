@@ -3181,6 +3181,10 @@ form#bf_loginform {
         left: 0px;
     }
 
+    #SECTION41 {
+        height: 635px !important;
+    }
+
     #GROUP37 {
         width: 375px !important;
         height: 184px;
@@ -3191,7 +3195,7 @@ form#bf_loginform {
     #BUTTON50 {
         width: 135px !important;
         height: 48px !important;
-        top: 1177.95px !important;
+        top: 560px !important;
         left: 180px !important;
     }
 
@@ -3787,7 +3791,7 @@ form#bf_loginform {
 
     #LINE208 {
         width: 90px !important;
-        top: 1193px !important;
+        top: 575px !important;
         left: 58px !important;
     }
 
