@@ -3203,9 +3203,13 @@ form#bf_loginform {
     }
 
     #HEADLINE47 {
-        width: 255px !important;
-        top: 656.946px !important;
+        width: 260px !important;
+        top: 45px !important;
         left: 59.5px !important;
+    }
+
+    #SECTION41>.ladi-section-background {
+        background-color: rgb(243, 243, 243) !important;
     }
 
     #HEADLINE17 {
