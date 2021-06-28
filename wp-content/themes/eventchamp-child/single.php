@@ -15733,7 +15733,7 @@ body {
             }
         </style>
          <div class="RA-container-contest-info row">
-            <div class="wrapper col-lg-3 col-3">
+            <div class="wrapper col-12 	col-sm-12	col-md-2    col-lg-3    col-xl-3">
                 <div class="img-wrapper">
                     <div class="img-area">
                         <img src="https://w.ladicdn.com/s500x450/5c7362c6c417ab07e5196b05/cv19_108-copy-20200822123953.jpg" alt"">
@@ -15748,7 +15748,7 @@ body {
                 </div>
             </div>
 
-            <div class="wrapper col-lg-3 col-3">
+            <div class="wrapper col-12	col-sm-12	col-md-2    col-lg-3    col-xl-3">
                 <div class="img-wrapper">
                     <div class="img-area">
                         <img src="https://w.ladicdn.com/s650x550/5c7362c6c417ab07e5196b05/cv19_242-copy-20200822123953.jpg" alt"">
@@ -15763,7 +15763,7 @@ body {
                 </div>
             </div>
 
-            <div class="wrapper col-lg-3 col-3">
+            <div class="wrapper col-12 	col-sm-12	col-md-2    col-lg-3    col-xl-3">
                 <div class="img-wrapper">
                     <div class="img-area">
                         <img src="https://w.ladicdn.com/s650x550/5c7362c6c417ab07e5196b05/cv19_248-copy-20200822123953.jpg" alt"">
