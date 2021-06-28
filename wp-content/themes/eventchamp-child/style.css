@@ -1164,6 +1164,13 @@ form#bf_loginform {
         position: relative !important;
     }
 
+    .img-text.RA-giaithuong {
+        width: 384px !important;
+        position: relative !important;
+        left: -194px !important;
+        text-align: justify !important;
+    }
+
     #BOX4 {
         width: 190px !important;
         height: 230px;
