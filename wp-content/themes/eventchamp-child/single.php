@@ -15102,6 +15102,7 @@ body {
         $textarea_chudecuocthi = get_field('textarea_chudecuocthi');
         $textarea_anhduthihople = get_field('textarea_anhduthihople');
         $textarea_giaithuong = get_field('textarea_giaithuong');
+        $layout_tlcl = get_field('layout_tlct');//echo $layout_tlcl;exit;
         //echo strlen($textarea_cachthucthamgia) .'a'. strlen($textarea_chudecuocthi) .'a'. strlen($textarea_anhduthihople) .'a'. strlen($textarea_giaithuong);exit;
     ?>
     <div id="SECTION3" class="ladi-section">
@@ -15125,7 +15126,7 @@ body {
                 </div>
             </div>
 
-            <?php if ( strlen($textarea_cachthucthamgia) <= 250  && strlen($textarea_chudecuocthi) <= 500 && strlen($textarea_anhduthihople) <= 1450 && strlen($textarea_giaithuong) <= 1200) { ?>
+            <?php if ( $layout_tlcl != 2 && strlen($textarea_cachthucthamgia) <= 250  && strlen($textarea_chudecuocthi) <= 500 && strlen($textarea_anhduthihople) <= 1450 && strlen($textarea_giaithuong) <= 1200) { ?>
             <div id="GROUP416" class="ladi-element">
                 <div class="ladi-group">
                     <div id="GROUP24" class="ladi-element">
@@ -15230,7 +15231,7 @@ body {
             <?php } ?>
         </div>
     </div>
-    
+    <?php if( $layout_tlcl != 2 ) { ?>
     <?php if ( strlen($textarea_cachthucthamgia) <= 250  && strlen($textarea_chudecuocthi) <= 500 && strlen($textarea_anhduthihople) <= 1450 && strlen($textarea_giaithuong) <= 1200) { ?>
     <style>
         .RA-cachthucthamgia {
@@ -15667,6 +15668,148 @@ body {
                 </div>
             </div>
         </div>
+    <?php } ?>
+    <?php } else{ ?>
+        <style>
+            .img-wrapper{
+               width:100%;
+               height:auto;
+               box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+            }
+
+            .img-area img{
+                width:100%;
+                height:200px;
+            }
+
+            .img-text{
+                display:none;
+                color:#fff;
+                text-align:left;
+                background: <?=hex2rgba(get_field('primary_color'),0.9);?>;
+                padding:20px 10px;
+            }
+
+            .img-text h2{
+                font-family: "Oswald", sans-serif;
+                color: #fff;
+                font-size: 28px;
+                line-height: 1.4;
+                padding: 10px 10px 20px 10px;
+            }
+
+            .RA-textarea-contest{
+                font-family: "Oswald", sans-serif;
+                color: #fff;
+                font-size: 18px;
+                line-height: 1.4;
+                padding: 10px 10px 20px 10px;
+            }
+
+            .img-text p{
+                font-size:16px;
+            }
+
+            .RA-container-contest-info.row {
+                width: 1200px !important;
+                margin: -305px auto 0px auto;
+            }
+
+            .img-area h2 {
+                position: absolute;
+                top: 0px;
+                width: 100%;
+                background: rgba(255,255,255,0.7);
+                height: 200px; 
+                font-family: "Oswald", sans-serif;
+                color: rgb(164, 30, 32);
+                font-size: 36px;
+                line-height: 1.4;
+                padding: 15% 40% 10% 10%;
+            }
+
+            .wrapper.col-lg-3.col-3 {
+                padding: 0px !important;
+            }
+        </style>
+         <div class="RA-container-contest-info row">
+            <div class="wrapper col-lg-3 col-3">
+                <div class="img-wrapper">
+                    <div class="img-area">
+                        <img src="https://w.ladicdn.com/s500x450/5c7362c6c417ab07e5196b05/cv19_108-copy-20200822123953.jpg" alt"">
+                        <h2>Cách Thức Tham Gia</h2>
+                    </div>
+                    <div class="img-text">
+                        <h2>Cách Thức Tham Gia</h2>
+                        <div class="RA-textarea-contest">
+                            <?= $textarea_cachthucthamgia ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper col-lg-3 col-3">
+                <div class="img-wrapper">
+                    <div class="img-area">
+                        <img src="https://w.ladicdn.com/s650x550/5c7362c6c417ab07e5196b05/cv19_242-copy-20200822123953.jpg" alt"">
+                        <h2>Chủ đề cuộc thi</h2>
+                    </div>
+                    <div class="img-text">
+                        <h2>Chủ đề cuộc thi</h2>
+                        <div class="RA-textarea-contest">
+                            <?= $textarea_chudecuocthi ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper col-lg-3 col-3">
+                <div class="img-wrapper">
+                    <div class="img-area">
+                        <img src="https://w.ladicdn.com/s650x550/5c7362c6c417ab07e5196b05/cv19_248-copy-20200822123953.jpg" alt"">
+                        <h2>Ảnh dự thi hợp lệ</h2>
+                    </div>
+                    <div class="img-text">
+                        <h2>Ảnh dự thi hợp lệ</h2>
+                        <div class="RA-textarea-contest">
+                            <?= $textarea_anhduthihople ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wrapper col-lg-3 col-3">
+                <div class="img-wrapper">
+                    <div class="img-area">
+                        <img src="https://w.ladicdn.com/s650x550/5c7362c6c417ab07e5196b05/cv19_79-copy-20200822123953.jpg" alt"">
+                        <h2>Giải thưởng</h2>
+                    </div>
+                    <div class="img-text">
+                        <h2>Giải thưởng</h2>
+                        <div class="RA-textarea-contest">
+                            <?= $textarea_giaithuong ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+           jQuery( function($) {
+                $('.img-wrapper').hover(function(){
+                    $(this).find('.img-text').slideDown(300);
+                },function(){
+                    $(this).find('.img-text').slideDown(300);
+                });
+
+                $('.img-wrapper').mouseleave(function(){
+                    $(this).find('.img-text').slideUp(200);
+                },function(){
+                    $(this).find('.img-text').slideUp(200);
+                });
+            });
+        </script>
+
     <?php } ?>
     <div id="SECTION31" class="ladi-section">
         <div class="ladi-section-background"></div>
@@ -17596,7 +17739,7 @@ footer {
 }
 </style>
 <?php } ?>
-<!-- 287 id cate -->
+
 <?php } ?>
     
 <?php }?>
