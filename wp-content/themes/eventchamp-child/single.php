@@ -15803,11 +15803,11 @@ body {
                     $(this).find('.img-text').slideDown(300);
                 });
 
-                $('.img-wrapper').on('click',function(){
-                    $(this).find('.img-text').slideUp(200);
-                },function(){
-                    $(this).find('.img-text').slideUp(200);
-                });
+                // $('.img-wrapper').on('click',function(){
+                //     $(this).find('.img-text').slideUp(200);
+                // },function(){
+                //     $(this).find('.img-text').slideUp(200);
+                // });
             });
         </script>
 
