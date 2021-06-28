@@ -15102,8 +15102,7 @@ body {
         $textarea_chudecuocthi = get_field('textarea_chudecuocthi');
         $textarea_anhduthihople = get_field('textarea_anhduthihople');
         $textarea_giaithuong = get_field('textarea_giaithuong');
-        $layout_tlcl = get_field('layout_tlct');//echo $layout_tlcl;exit;
-        //echo strlen($textarea_cachthucthamgia) .'a'. strlen($textarea_chudecuocthi) .'a'. strlen($textarea_anhduthihople) .'a'. strlen($textarea_giaithuong);exit;
+        $layout_tlcl = get_field('layout_tlct');
     ?>
     <div id="SECTION3" class="ladi-section">
         <div class="ladi-section-background"></div>
@@ -15125,511 +15124,50 @@ body {
                     </div>
                 </div>
             </div>
-
-            <?php if ( $layout_tlcl != 2 && strlen($textarea_cachthucthamgia) <= 250  && strlen($textarea_chudecuocthi) <= 500 && strlen($textarea_anhduthihople) <= 1450 && strlen($textarea_giaithuong) <= 1200) { ?>
-            <div id="GROUP416" class="ladi-element">
-                <div class="ladi-group">
-                    <div id="GROUP24" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX4" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE11" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Cách thức tham gia</h3>
-                            </div>
-                            <div id="LINE12" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP58" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX59" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE60" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Chủ đề cuộc thi</h3>
-                            </div>
-                            <div id="LINE61" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP62" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX63" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE64" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Ảnh dự thi hợp lệ</h3>
-                            </div>
-                            <div id="LINE65" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP66" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX67" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE68" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Giải thưởng</h3>
-                            </div>
-                            <div id="LINE69" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="SHAPE417" class="ladi-element">
-                <div class="ladi-shape">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"
-                        preserveAspectRatio="none" width="100%" height="100%" class="" fill="rgba(180, 180, 180, 1.0)">
-                        <g>
-                            <path
-                                d="M58,85c-12.131,0-22-9.869-22-22V22c0-3.86,3.14-7,7-7s7,3.14,7,7v17.676C50.91,39.243,51.927,39,53,39   c2.801,0,5.223,1.653,6.341,4.035C60.406,42.378,61.659,42,63,42c2.801,0,5.223,1.653,6.341,4.035C70.406,45.378,71.659,45,73,45   c3.859,0,7,3.14,7,7v11C80,75.131,70.131,85,58,85z M43,19c-1.654,0-3,1.346-3,3v41c0,9.925,8.075,18,18,18c9.925,0,18-8.075,18-18   V52c0-1.654-1.346-3-3-3s-3,1.346-3,3c0,1.104-0.896,2-2,2s-2-0.896-2-2v-3c0-1.654-1.346-3-3-3s-3,1.346-3,3c0,1.104-0.896,2-2,2   s-2-0.896-2-2v-3c0-1.654-1.346-3-3-3s-3,1.346-3,3c0,1.104-0.896,2-2,2s-2-0.896-2-2V22C46,20.346,44.654,19,43,19z">
-                            </path>
-                            <path
-                                d="M65.41,23.41l-5,5C60.02,28.8,59.51,29,59,29s-1.02-0.2-1.41-0.59c-0.79-0.78-0.79-2.04,0-2.82L59.18,24H55   c-1.1,0-2-0.9-2-2s0.9-2,2-2h4.18l-1.59-1.59c-0.79-0.78-0.79-2.04,0-2.82c0.78-0.79,2.04-0.79,2.82,0l5,5   C66.2,21.37,66.2,22.63,65.41,23.41z">
-                            </path>
-                            <path
-                                d="M33,22c0,1.1-0.9,2-2,2h-4.18l1.59,1.59c0.79,0.78,0.79,2.04,0,2.82C28.02,28.8,27.51,29,27,29s-1.02-0.2-1.41-0.59l-5-5   c-0.79-0.78-0.79-2.04,0-2.82l5-5c0.78-0.79,2.04-0.79,2.82,0c0.79,0.78,0.79,2.04,0,2.82L26.82,20H31C32.1,20,33,20.9,33,22z">
-                            </path>
-                        </g>
-                    </svg>
-                </div>
-            </div>
-            <div id="GROUP475" class="ladi-element">
-                <div class="ladi-group">
-                    <div id="BOX472" class="ladi-element">
-                        <div class="ladi-box"></div>
-                    </div>
-                    <div id="HEADLINE474" class="ladi-element">
-                        <h3 class="ladi-headline">Click vào từng mục để xem chi tiết</h3>
-                    </div>
-                </div>
-            </div>
-            <?php } ?>
         </div>
     </div>
-    <?php if( $layout_tlcl != 2 ) { ?>
-    <?php if ( strlen($textarea_cachthucthamgia) <= 250  && strlen($textarea_chudecuocthi) <= 500 && strlen($textarea_anhduthihople) <= 1450 && strlen($textarea_giaithuong) <= 1200) { ?>
+    <?php if( $layout_tlcl == 1 ) { ?>
+    
     <style>
-        .RA-cachthucthamgia {
-            text-align: left;
-            color: rgb(255, 255, 255);
-            font-size: 15px;
-            line-height: 1.6;
-            padding: 0px 0px 0px 40px;
-        }
+    .RA-container-contest-info.row {
+        width: 100% !important;
+        margin: 0px auto 0px auto;
+        padding: 5% 10%;
+        background: <?=hex2rgba(get_field('primary_color'),0.9);?>;
+    }
 
-        .RA-chudecuocthi {
-            text-align: left;
-            color: rgb(255, 255, 255);
-            font-size: 15px;
-            line-height: 1.6;
-            padding: 0px 0px 0px 40px;
-        }
+    .RA-container-contest-info-area .RA-container-contest-info-heading {
+        font-family: "Oswald", sans-serif;
+        color: #FFF;
+        font-size: 36px;
+        line-height: 1.4;
+    }
 
-        .RA-anhduthihople {
-            text-align: left;
-            color: rgb(255, 255, 255);
-            font-size: 15px;
-            line-height: 1.6;
-            padding: 0px 0px 0px 40px;
-        }
+    .RA-container-contest-info-icon i {
+        font-size: 30px;
+        padding: 12px 0px;
+        color: rgb(255, 236, 0);
+    }
 
-        .RA-giaithuong {
-            text-align: left;
-            color: rgb(255, 255, 255);
-            font-size: 15px;
-            line-height: 1.6;
-            padding: 0px 0px 0px 40px;
-        }
+    .RA-container-contest-info-area .RA-container-contest-info-description{
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    .RA-container-contest-info-description-heading{
+        color: rgb(255, 236, 0);
+        font-size: 15px;
+        font-weight: bolder;
+        line-height: 1.6;
+    }
+
+    .RA-container-contest-info-element{
+        margin-bottom: 35px;
+    }
+
     </style>
-    <div id="SECTION30" class="ladi-section">
-        <div class="ladi-section-background"></div>
-        <div class="ladi-container">
-            <div id="GROUP524" class="ladi-element">
-                <div class="ladi-group">
-                    <div id="BOX26" class="ladi-element">
-                        <div class="ladi-box">
-                            <div class="ladi-overlay"></div>
-                        </div>
-                    </div>
-                    <div data-action="true" id="SHAPE116" class="ladi-element">
-                        <div class="ladi-shape">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100"
-                                xml:space="preserve" preserveAspectRatio="none" width="100%" height="100%" class=""
-                                fill="rgba(244, 184, 156, 1.0)">
-                                <path
-                                    d="M40.315,63.066c0.005-0.004,0.008-0.01,0.011-0.015l46.875-46.873c0.933-0.935,0.933-2.455-0.001-3.391  c-0.905-0.904-2.484-0.905-3.39,0.001L70.173,26.427C63.402,22.687,56.625,20.77,50,20.77c-25.085,0-43.795,26.722-44.58,27.859  c-0.561,0.814-0.561,1.907,0,2.721C5.764,51.848,13.473,62.927,25.599,71l-12.8,12.801c-0.933,0.936-0.933,2.454,0.001,3.391  c0.453,0.451,1.056,0.701,1.694,0.701c0.641,0,1.242-0.25,1.695-0.703L40.3,63.079C40.305,63.075,40.31,63.072,40.315,63.066z   M29.065,67.534c-9.358-6.024-16.25-14.361-18.688-17.543c3.922-5.1,20.087-24.428,39.623-24.428c5.417,0,11.003,1.482,16.643,4.396  l-5.384,5.383c-3.218-2.484-7.132-3.845-11.259-3.845c-10.196,0-18.493,8.296-18.493,18.492c0,4.131,1.361,8.044,3.844,11.259  L29.065,67.534z M36.3,49.989c0-7.553,6.146-13.699,13.699-13.699c2.845,0,5.553,0.872,7.836,2.474L38.772,57.826  C37.172,55.544,36.3,52.837,36.3,49.989z">
-                                </path>
-                                <path
-                                    d="M50,63.688c-1.363,0-2.692-0.205-3.96-0.588l-3.704,3.703c2.376,1.09,4.972,1.68,7.664,1.68  c10.195,0,18.493-8.297,18.493-18.493c0-2.692-0.589-5.289-1.679-7.664l-3.705,3.705c0.385,1.267,0.59,2.596,0.59,3.959  C63.699,57.543,57.553,63.688,50,63.688z">
-                                </path>
-                                <path
-                                    d="M94.579,48.627c-0.313-0.452-6.681-9.562-16.815-17.251l-3.43,3.43c7.618,5.674,13.157,12.4,15.29,15.182  C85.702,55.088,69.54,74.416,50,74.416c-4.146,0-8.394-0.876-12.687-2.59l-3.634,3.635C39.161,77.93,44.63,79.209,50,79.209  c25.068,0,43.795-26.721,44.58-27.859C95.141,50.537,95.141,49.444,94.579,48.627z">
-                                </path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div id="HEADLINE27" class="ladi-element">
-                        <h3 class="ladi-headline ladi-transition">Cách thức tham gia</h3>
-                    </div>
-                    <div id="LINE28" class="ladi-element">
-                        <div class="ladi-line">
-                            <div class="ladi-line-container"></div>
-                        </div>
-                    </div>
-                    <div id="GROUP523" class="ladi-element">
-                        <div class="ladi-group">
-                           
-                            <div class="RA-cachthucthamgia">    
-                               <?=get_field('textarea_cachthucthamgia');?>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="SECTION87" class="ladi-section">
-        <div class="ladi-section-background"></div>
-        <div class="ladi-container">
-            <div id="GROUP106" class="ladi-element">
-                <div class="ladi-group">
-                    <div id="BOX89" class="ladi-element">
-                        <div class="ladi-box">
-                            <div class="ladi-overlay"></div>
-                        </div>
-                    </div>
-                    <div id="HEADLINE90" class="ladi-element">
-                        <h3 class="ladi-headline ladi-transition">Chủ đề cuộc thi</h3>
-                    </div>
-                    <div id="LINE91" class="ladi-element">
-                        <div class="ladi-line">
-                            <div class="ladi-line-container"></div>
-                        </div>
-                    </div>
-                    <div id="GROUP118" class="ladi-element">
-                        <div class="ladi-group">
-                            <div class="RA-cachthucthamgia">    
-                               <?=get_field('textarea_chudecuocthi');?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div data-action="true" id="SHAPE117" class="ladi-element">
-                <div class="ladi-shape">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
-                        x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"
-                        preserveAspectRatio="none" width="100%" height="100%" class="" fill="rgba(244, 184, 156, 1.0)">
-                        <path
-                            d="M40.315,63.066c0.005-0.004,0.008-0.01,0.011-0.015l46.875-46.873c0.933-0.935,0.933-2.455-0.001-3.391  c-0.905-0.904-2.484-0.905-3.39,0.001L70.173,26.427C63.402,22.687,56.625,20.77,50,20.77c-25.085,0-43.795,26.722-44.58,27.859  c-0.561,0.814-0.561,1.907,0,2.721C5.764,51.848,13.473,62.927,25.599,71l-12.8,12.801c-0.933,0.936-0.933,2.454,0.001,3.391  c0.453,0.451,1.056,0.701,1.694,0.701c0.641,0,1.242-0.25,1.695-0.703L40.3,63.079C40.305,63.075,40.31,63.072,40.315,63.066z   M29.065,67.534c-9.358-6.024-16.25-14.361-18.688-17.543c3.922-5.1,20.087-24.428,39.623-24.428c5.417,0,11.003,1.482,16.643,4.396  l-5.384,5.383c-3.218-2.484-7.132-3.845-11.259-3.845c-10.196,0-18.493,8.296-18.493,18.492c0,4.131,1.361,8.044,3.844,11.259  L29.065,67.534z M36.3,49.989c0-7.553,6.146-13.699,13.699-13.699c2.845,0,5.553,0.872,7.836,2.474L38.772,57.826  C37.172,55.544,36.3,52.837,36.3,49.989z">
-                        </path>
-                        <path
-                            d="M50,63.688c-1.363,0-2.692-0.205-3.96-0.588l-3.704,3.703c2.376,1.09,4.972,1.68,7.664,1.68  c10.195,0,18.493-8.297,18.493-18.493c0-2.692-0.589-5.289-1.679-7.664l-3.705,3.705c0.385,1.267,0.59,2.596,0.59,3.959  C63.699,57.543,57.553,63.688,50,63.688z">
-                        </path>
-                        <path
-                            d="M94.579,48.627c-0.313-0.452-6.681-9.562-16.815-17.251l-3.43,3.43c7.618,5.674,13.157,12.4,15.29,15.182  C85.702,55.088,69.54,74.416,50,74.416c-4.146,0-8.394-0.876-12.687-2.59l-3.634,3.635C39.161,77.93,44.63,79.209,50,79.209  c25.068,0,43.795-26.721,44.58-27.859C95.141,50.537,95.141,49.444,94.579,48.627z">
-                        </path>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="SECTION107" class="ladi-section">
-        <div class="ladi-section-background"></div>
-        <div class="ladi-container">
-            <div id="GROUP469" class="ladi-element">
-                <div class="ladi-group">
-                    <div id="GROUP182" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX183" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE184" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Cách thức tham gia</h3>
-                            </div>
-                            <div id="LINE185" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP186" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX187" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE188" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Chủ đề cuộc thi</h3>
-                            </div>
-                            <div id="LINE189" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP190" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX191" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE192" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Giải thưởng</h3>
-                            </div>
-                            <div id="LINE193" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP312" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX109" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div id="HEADLINE110" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Ảnh dự thi hợp lệ</h3>
-                            </div>
-                            <div id="LINE111" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                            <div id="GROUP120" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div class="RA-anhduthihople">    
-                                        <?=get_field('textarea_anhduthihople');?>
-                                    </div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="SHAPE150" class="ladi-element">
-                                <div class="ladi-shape">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" x="0px" y="0px" viewBox="0 0 100 100"
-                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                        fill="rgba(244, 184, 156, 1.0)">
-                                        <path
-                                            d="M40.315,63.066c0.005-0.004,0.008-0.01,0.011-0.015l46.875-46.873c0.933-0.935,0.933-2.455-0.001-3.391  c-0.905-0.904-2.484-0.905-3.39,0.001L70.173,26.427C63.402,22.687,56.625,20.77,50,20.77c-25.085,0-43.795,26.722-44.58,27.859  c-0.561,0.814-0.561,1.907,0,2.721C5.764,51.848,13.473,62.927,25.599,71l-12.8,12.801c-0.933,0.936-0.933,2.454,0.001,3.391  c0.453,0.451,1.056,0.701,1.694,0.701c0.641,0,1.242-0.25,1.695-0.703L40.3,63.079C40.305,63.075,40.31,63.072,40.315,63.066z   M29.065,67.534c-9.358-6.024-16.25-14.361-18.688-17.543c3.922-5.1,20.087-24.428,39.623-24.428c5.417,0,11.003,1.482,16.643,4.396  l-5.384,5.383c-3.218-2.484-7.132-3.845-11.259-3.845c-10.196,0-18.493,8.296-18.493,18.492c0,4.131,1.361,8.044,3.844,11.259  L29.065,67.534z M36.3,49.989c0-7.553,6.146-13.699,13.699-13.699c2.845,0,5.553,0.872,7.836,2.474L38.772,57.826  C37.172,55.544,36.3,52.837,36.3,49.989z">
-                                        </path>
-                                        <path
-                                            d="M50,63.688c-1.363,0-2.692-0.205-3.96-0.588l-3.704,3.703c2.376,1.09,4.972,1.68,7.664,1.68  c10.195,0,18.493-8.297,18.493-18.493c0-2.692-0.589-5.289-1.679-7.664l-3.705,3.705c0.385,1.267,0.59,2.596,0.59,3.959  C63.699,57.543,57.553,63.688,50,63.688z">
-                                        </path>
-                                        <path
-                                            d="M94.579,48.627c-0.313-0.452-6.681-9.562-16.815-17.251l-3.43,3.43c7.618,5.674,13.157,12.4,15.29,15.182  C85.702,55.088,69.54,74.416,50,74.416c-4.146,0-8.394-0.876-12.687-2.59l-3.634,3.635C39.161,77.93,44.63,79.209,50,79.209  c25.068,0,43.795-26.721,44.58-27.859C95.141,50.537,95.141,49.444,94.579,48.627z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="SECTION152" class="ladi-section">
-        <div class="ladi-section-background"></div>
-        <div class="ladi-container">
-            <div id="GROUP467" class="ladi-element">
-                <div class="ladi-group">
-                    <div id="GROUP195" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX196" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE197" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Cách thức tham gia</h3>
-                            </div>
-                            <div id="LINE198" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP199" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX200" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE201" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Chủ đề cuộc thi</h3>
-                            </div>
-                            <div id="LINE202" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP203" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX204" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="HEADLINE205" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Ảnh dự thi hợp lệ</h3>
-                            </div>
-                            <div id="LINE206" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="GROUP463" class="ladi-element">
-                        <div class="ladi-group">
-                            <div id="BOX154" class="ladi-element">
-                                <div class="ladi-box">
-                                    <div class="ladi-overlay"></div>
-                                </div>
-                            </div>
-                            
-                            <div id="HEADLINE155" class="ladi-element">
-                                <h3 class="ladi-headline ladi-transition">Giải thưởng</h3>
-                            </div>
-                            <div id="LINE156" class="ladi-element">
-                                <div class="ladi-line">
-                                    <div class="ladi-line-container"></div>
-                                </div>
-                            </div>
-                            <div data-action="true" id="SHAPE181" class="ladi-element">
-                                <div class="ladi-shape">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                        version="1.1" x="0px" y="0px" viewBox="0 0 100 100"
-                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                        preserveAspectRatio="none" width="100%" height="100%" class=""
-                                        fill="rgba(244, 184, 156, 1.0)">
-                                        <path
-                                            d="M40.315,63.066c0.005-0.004,0.008-0.01,0.011-0.015l46.875-46.873c0.933-0.935,0.933-2.455-0.001-3.391  c-0.905-0.904-2.484-0.905-3.39,0.001L70.173,26.427C63.402,22.687,56.625,20.77,50,20.77c-25.085,0-43.795,26.722-44.58,27.859  c-0.561,0.814-0.561,1.907,0,2.721C5.764,51.848,13.473,62.927,25.599,71l-12.8,12.801c-0.933,0.936-0.933,2.454,0.001,3.391  c0.453,0.451,1.056,0.701,1.694,0.701c0.641,0,1.242-0.25,1.695-0.703L40.3,63.079C40.305,63.075,40.31,63.072,40.315,63.066z   M29.065,67.534c-9.358-6.024-16.25-14.361-18.688-17.543c3.922-5.1,20.087-24.428,39.623-24.428c5.417,0,11.003,1.482,16.643,4.396  l-5.384,5.383c-3.218-2.484-7.132-3.845-11.259-3.845c-10.196,0-18.493,8.296-18.493,18.492c0,4.131,1.361,8.044,3.844,11.259  L29.065,67.534z M36.3,49.989c0-7.553,6.146-13.699,13.699-13.699c2.845,0,5.553,0.872,7.836,2.474L38.772,57.826  C37.172,55.544,36.3,52.837,36.3,49.989z">
-                                        </path>
-                                        <path
-                                            d="M50,63.688c-1.363,0-2.692-0.205-3.96-0.588l-3.704,3.703c2.376,1.09,4.972,1.68,7.664,1.68  c10.195,0,18.493-8.297,18.493-18.493c0-2.692-0.589-5.289-1.679-7.664l-3.705,3.705c0.385,1.267,0.59,2.596,0.59,3.959  C63.699,57.543,57.553,63.688,50,63.688z">
-                                        </path>
-                                        <path
-                                            d="M94.579,48.627c-0.313-0.452-6.681-9.562-16.815-17.251l-3.43,3.43c7.618,5.674,13.157,12.4,15.29,15.182  C85.702,55.088,69.54,74.416,50,74.416c-4.146,0-8.394-0.876-12.687-2.59l-3.634,3.635C39.161,77.93,44.63,79.209,50,79.209  c25.068,0,43.795-26.721,44.58-27.859C95.141,50.537,95.141,49.444,94.579,48.627z">
-                                        </path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div id="GROUP210" class="ladi-element">
-                                <div class="ladi-group">
-                                    <div class="RA-giaithuong">    
-                                        <?=get_field('textarea_giaithuong');?>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <?php } else { ?>
-        <style>
-        
-        .RA-container-contest-info.row {
-            width: 100% !important;
-            margin: 0px auto 0px auto;
-            padding: 5% 10%;
-            background: <?=hex2rgba(get_field('primary_color'),0.9);?>;
-        }
-
-        .RA-container-contest-info-area .RA-container-contest-info-heading {
-            font-family: "Oswald", sans-serif;
-            color: #FFF;
-            font-size: 36px;
-            line-height: 1.4;
-        }
-
-        .RA-container-contest-info-icon i {
-            font-size: 30px;
-            padding: 12px 0px;
-            color: rgb(255, 236, 0);
-        }
-
-        .RA-container-contest-info-area .RA-container-contest-info-description{
-            color: rgb(255, 255, 255);
-            font-size: 16px;
-            text-align: left;
-            line-height: 1.6;
-        }
-
-        .RA-container-contest-info-description-heading{
-            color: rgb(255, 236, 0);
-            font-size: 15px;
-            font-weight: bolder;
-            line-height: 1.6;
-        }
-
-        /* #SECTION3 {
-            height: 555px !important;
-        } */
-
-        .RA-container-contest-info-element{
-            margin-bottom: 35px;
-        }
-
-        /* #GROUP37 {
-            width: 786px;
-            height: 400px;
-            top: -35px !important;
-            left: 870px;
-            z-index: 20;
-        }
-
-        #BOX220 {
-            width: 457px;
-            height: 400px;
-            top: -35px !important;
-            left: -457px;
-        } */
-
-        </style>
         <div class="RA-container-contest-info row">
             <div class="col-6 col-lg-6 row RA-container-contest-info-element">
                 <div class="col-1 col-lg-1 RA-container-contest-info-icon"><i class="fas fa-book"></i></div>
@@ -15668,13 +15206,14 @@ body {
                 </div>
             </div>
         </div>
-    <?php } ?>
-    <?php } else{ ?>
+
+    <?php } else if ( $layout_tlcl == 2 ){ ?>
         <style>
             .img-wrapper{
                width:100%;
                height:auto;
                box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+               cursor: pointer;
             }
 
             .img-area img{
@@ -15696,6 +15235,15 @@ body {
                 font-size: 28px;
                 line-height: 1.4;
                 padding: 10px 10px 20px 10px;
+            }
+
+            .img-text h2:hover{ 
+                color: #<?=hex2rgba(get_field('primary_color'),1);?>;
+            }
+
+            .RA-huongdanclick {
+                text-align: center;
+                padding: 10px 0px;
             }
 
             .RA-textarea-contest{
@@ -15733,6 +15281,11 @@ body {
             }
         </style>
          <div class="RA-container-contest-info row">
+           
+            <div class="RA-huongdanclick col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h3>Click vào từng mục để xem chi tiết</h3>
+            </div>
+        
             <div class="wrapper col-12 	col-sm-12	col-md-3    col-lg-3    col-xl-3">
                 <div class="img-wrapper">
                     <div class="img-area">
