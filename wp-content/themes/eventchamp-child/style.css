@@ -1964,7 +1964,7 @@ form#bf_loginform {
         left: 80px !important;
     }
 }
-@media only screen and (max-width: 428px) and (min-width:415px){
+@media only screen and (max-width: 428px) and (min-width:415px) and (-webkit-min-device-pixel-ratio: 3){
     #HEADLINE47 {
         width: 428px !important;
         top: 0px !important;
@@ -2168,7 +2168,7 @@ form#bf_loginform {
     }
 }
 
-@media only screen and (max-width: 414px) and (min-width:391px){
+@media only screen and (max-width: 414px) and (min-width:391px) and (-webkit-min-device-pixel-ratio: 3){
     .RA-container-contest-info.row {
         width: 414px !important;
         margin: -195px auto 75px auto !important;
@@ -2365,7 +2365,7 @@ form#bf_loginform {
     
 }
 
-@media only screen and (max-width: 390px) and (min-width:376px){
+@media only screen and (max-width: 390px) and (min-width:376px) and (-webkit-min-device-pixel-ratio: 2){
     .RA-container-contest-info.row {
         width: 390px !important;
         margin: -195px auto 75px auto !important;
@@ -3025,7 +3025,7 @@ form#bf_loginform {
 
 }
 
-@media only screen and (max-width: 375px) and (min-width:321px){
+@media only screen and (max-width: 375px) and (min-width:321px) and (-webkit-min-device-pixel-ratio: 2){
     .RA-container-contest-info.row {
         width: 375px !important;
         margin: -195px auto 75px auto !important;
@@ -3846,7 +3846,7 @@ form#bf_loginform {
     }
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2){
     #SECTION41>.ladi-section-background {
         background-color: rgb(243, 243, 243) !important;
     }
