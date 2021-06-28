@@ -15686,7 +15686,7 @@ body {
                 display:none;
                 color:#fff;
                 text-align:left;
-                background: <?=hex2rgba(get_field('primary_color'),0.9);?>;
+                background: <?=hex2rgba(get_field('primary_color'),1);?>;
                 padding:20px 10px;
             }
 
