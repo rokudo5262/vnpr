@@ -15739,7 +15739,7 @@ body {
                         <img src="https://w.ladicdn.com/s500x450/5c7362c6c417ab07e5196b05/cv19_108-copy-20200822123953.jpg" alt"">
                         <h2>Cách thức tham gia</h2>
                     </div>
-                    <div class="img-text">
+                    <div class="img-text RA-cttg">
                         <h2>Cách Thức Tham Gia</h2>
                         <div class="RA-textarea-contest">
                             <?= $textarea_cachthucthamgia ?>
@@ -15754,7 +15754,7 @@ body {
                         <img src="https://w.ladicdn.com/s650x550/5c7362c6c417ab07e5196b05/cv19_242-copy-20200822123953.jpg" alt"">
                         <h2>Chủ đề cuộc thi</h2>
                     </div>
-                    <div class="img-text">
+                    <div class="img-text RA-cdct">
                         <h2>Chủ đề cuộc thi</h2>
                         <div class="RA-textarea-contest">
                             <?= $textarea_chudecuocthi ?>
@@ -15769,7 +15769,7 @@ body {
                         <img src="https://w.ladicdn.com/s650x550/5c7362c6c417ab07e5196b05/cv19_248-copy-20200822123953.jpg" alt"">
                         <h2>Ảnh dự thi hợp lệ</h2>
                     </div>
-                    <div class="img-text">
+                    <div class="img-text RA-adthl">
                         <h2>Ảnh dự thi hợp lệ</h2>
                         <div class="RA-textarea-contest">
                             <?= $textarea_anhduthihople ?>
@@ -15784,7 +15784,7 @@ body {
                         <img src="https://w.ladicdn.com/s650x550/5c7362c6c417ab07e5196b05/cv19_79-copy-20200822123953.jpg" alt"">
                         <h2>Giải thưởng</h2>
                     </div>
-                    <div class="img-text">
+                    <div class="img-text RA-giaithuong">
                         <h2>Giải thưởng</h2>
                         <div class="RA-textarea-contest">
                             <?= $textarea_giaithuong ?>
