@@ -15796,17 +15796,17 @@ body {
 
         <script>
            jQuery( function($) {
-                $('.img-wrapper').hover(function(){
+                $('.img-wrapper').on('click',function(){
                     $(this).find('.img-text').slideDown(300);
                 },function(){
                     $(this).find('.img-text').slideDown(300);
                 });
 
-                $('.img-wrapper').mouseleave(function(){
-                    $(this).find('.img-text').slideUp(200);
-                },function(){
-                    $(this).find('.img-text').slideUp(200);
-                });
+                // $('.img-wrapper').mouseleave(function(){
+                //     $(this).find('.img-text').slideUp(200);
+                // },function(){
+                //     $(this).find('.img-text').slideUp(200);
+                // });
             });
         </script>
 
