@@ -3036,7 +3036,7 @@ form#bf_loginform {
         color: #fff;
         text-align: justify !important;
         background: rgba( 164,30,32,1 );
-        padding: 20px 35px 20px 35px !important;
+        padding: 20px 35px 20px 30px !important;
     }
 
     .img-area h2 {
@@ -3894,7 +3894,7 @@ form#bf_loginform {
         color: rgb(164, 30, 32);
         font-size: 36px;
         line-height: 1.4;
-        padding: 11% 55% 11% 10% !important;
+        padding: 15% 40% 11% 10% !important;
     }
 
     #HEADLINE51 {
