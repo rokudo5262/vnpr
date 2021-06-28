@@ -1141,7 +1141,7 @@ form#bf_loginform {
 
     .RA-container-contest-info.row {
         width: 768px !important;
-        margin: -240px auto 0px auto;
+        margin: -240px auto 0px auto !important;
     }
 
     .img-area h2 {
@@ -1152,9 +1152,9 @@ form#bf_loginform {
         height: 200px;
         font-family: "Oswald", sans-serif;
         color: rgb(164, 30, 32);
-        font-size: 30px;
+        font-size: 30px !important;
         line-height: 1.4;
-        padding: 25% 25% 10% 10%;
+        padding: 25% 25% 10% 10% !important;
     }
 
     #BOX4 {
