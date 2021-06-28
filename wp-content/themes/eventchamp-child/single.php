@@ -15042,6 +15042,12 @@ body {
             </div>
         </div>
     </div>
+    <style>
+    .single-post .gt-counter:before {
+        background: #<?=hex2rgba(get_field('primary_color'),1);?> !important;
+    }
+    
+    </style>
     <?php 
     global $hardcode_options;
     $hardcode_options['header_layout_select'] = 'header-style-4';
