@@ -15728,7 +15728,7 @@ body {
                 padding: 15% 40% 10% 10%;
             }
 
-            .wrapper.col-lg-3.col-3 {
+            .wrapper {
                 padding: 0px !important;
             }
         </style>
