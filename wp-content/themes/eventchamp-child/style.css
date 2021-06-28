@@ -2033,7 +2033,28 @@ form#bf_loginform {
 
     .RA-container-contest-info.row {
         width: 428px !important;
-        margin: -195px auto 0px auto !important;
+        margin: -195px auto 75px auto !important;
+    }
+
+    .img-text {
+        display: none;
+        color: #fff;
+        text-align: justify !important;
+        background: rgba( 164,30,32,1 );
+        padding: 20px 35px 20px 35px !important;
+    }
+
+    .img-area h2 {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        background: rgba(255,255,255,0.7);
+        height: 200px;
+        font-family: "Oswald", sans-serif;
+        color: rgb(164, 30, 32);
+        font-size: 36px;
+        line-height: 1.4;
+        padding: 11% 55% 11% 10% !important;
     }
 
     #GROUP37 {
