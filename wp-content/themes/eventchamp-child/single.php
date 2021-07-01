@@ -15007,7 +15007,7 @@ body {
 
 <?php }else{
                         $check = true;
-                        if($chiendich_child_id == 287){
+                        if( $checkCat ){
                         ?>
 <!-- header -->
 <?php
