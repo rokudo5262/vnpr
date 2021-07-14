@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,400,700);
+.photo-contest,  
+.photo-contest li, 
+.photo-contest a, 
+.photo-contest input, 
+.photo-contest select, 
+.photo-contest textarea,
+.photo-contest label, 
+ul.pcmenu,
+ul.pcmenu li, 
+ul.pcmenu a{
+	font-family: 'Oswald',arial,serif !important;
+}

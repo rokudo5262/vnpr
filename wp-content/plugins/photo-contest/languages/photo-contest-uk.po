@@ -1,0 +1,3501 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-30 07:06+0100\n"
+"PO-Revision-Date: 2020-11-30 07:06+0100\n"
+"Last-Translator: Zbyněk Hovorka <info@proeshopy.cz>\n"
+"Language-Team: Simple <info@themes4all.com>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-photo-contest-admin.php:160 ../class-photo-contest-admin.php:167
+#: ../views/admin.php:1480
+msgid "General Settings"
+msgstr "Загальні налаштування"
+
+#: ../class-photo-contest-admin.php:161 ../includes/pc-seo.php:33
+msgid "Photo Contest"
+msgstr "Фотоконкурс"
+
+#: ../class-photo-contest-admin.php:170 ../class-photo-contest-admin.php:171
+#: ../views/contests.php:75
+msgid "Contests"
+msgstr "Конкурси"
+
+#: ../class-photo-contest-admin.php:178 ../class-photo-contest-admin.php:179
+#: ../views/photos.php:540 ../views/photos.php:543
+msgid "Photos"
+msgstr "Фотографії"
+
+#: ../class-photo-contest-admin.php:186 ../class-photo-contest-admin.php:187
+msgid "Vote Log"
+msgstr "Журнал голосування"
+
+#: ../class-photo-contest-admin.php:194 ../class-photo-contest-admin.php:195
+#: ../views/categories.php:17 ../views/categories.php:85
+msgid "Categories"
+msgstr "Категорії"
+
+#: ../class-photo-contest-admin.php:202 ../class-photo-contest-admin.php:203
+msgid "Juries"
+msgstr "Журі"
+
+#: ../class-photo-contest-admin.php:210 ../class-photo-contest-admin.php:211
+#: ../includes/admin/pc-tools.php:102 ../views/photos.php:573
+#: ../views/photos.php:596 ../views/photos.php:901 ../views/votes.php:313
+msgid "Tools"
+msgstr "Інструменти"
+
+#: ../class-photo-contest-admin.php:218 ../class-photo-contest-admin.php:219
+#: ../views/info.php:16
+msgid "Info & Help"
+msgstr "Інформація і допомога"
+
+#: ../class-photo-contest-admin.php:325 ../views/jury.php:169
+#: ../views/jury.php:179 ../views/jury.php:216 ../views/jury.php:217
+msgid "Settings"
+msgstr "Налаштування"
+
+#: ../includes/admin/pc-add-images.php:122
+msgid "Bulk image upload"
+msgstr "Масове завантаження зображень"
+
+#: ../includes/admin/pc-add-images.php:124
+msgid ""
+"Titles of images are taken from the WordPress Media Library. You can change "
+"them or not"
+msgstr ""
+"Заголовки зображень взяті з WordPress Media Library. Ви можете змінювати їх "
+"або ні"
+
+#: ../includes/admin/pc-add-images.php:126
+msgid "Selected item(s) will be added to the contest:"
+msgstr "Вибрані елементи будуть додані до конкурсу:"
+
+#: ../includes/admin/pc-add-images.php:152
+#: ../includes/admin/pc-add-images.php:154
+#: ../shortcodes/contest-profile.php:253
+msgid "Title"
+msgstr "Заголовок"
+
+#: ../includes/admin/pc-add-images.php:160
+#: ../includes/admin/pc-add-images.php:209 ../views/photos.php:569
+#: ../views/photos.php:592 ../views/photos.php:774 ../views/votes.php:382
+#: ../views/votes.php:405 ../views/votes.php:533
+msgid "Category"
+msgstr "Категорія"
+
+#: ../includes/admin/pc-add-images.php:160
+#: ../includes/admin/pc-add-images.php:181
+#: ../includes/admin/pc-add-images.php:209
+#: ../includes/admin/pc-add-images.php:229
+msgid "Optional"
+msgstr "Додатково"
+
+#: ../includes/admin/pc-add-images.php:164 ../views/votes.php:253
+#: ../views/votes.php:259
+msgid "Select a Category"
+msgstr "Вибрати категорію"
+
+#: ../includes/admin/pc-add-images.php:181
+#: ../includes/admin/pc-add-images.php:229
+#: ../shortcodes/contest-profile.php:307 ../views/contests.php:1279
+msgid "Description"
+msgstr "Опис"
+
+#: ../includes/admin/pc-add-images.php:189
+msgid "Min width or height for the contest is 350px!"
+msgstr "Мінімальна ширина або висота для конкурсу становить 350 пікселів!"
+
+#: ../includes/admin/pc-add-images.php:191
+msgid "This image already is in the some contest"
+msgstr "Це зображення вже знаходиться у якомусь конкурсі"
+
+#: ../includes/admin/pc-add-images.php:229
+msgid "This image will be not added to the contest!"
+msgstr "Це зображення не може бути додане до конкурсу!"
+
+#: ../includes/admin/pc-add-images.php:241
+msgid "Submit all photos to the contest!"
+msgstr "Надіслати усі фотографії на конкурс!"
+
+#: ../includes/admin/pc-admin-functions.php:99
+#: ../includes/admin/pc-admin-functions.php:103
+msgid "Add Photo Contest Shorcode"
+msgstr "Додати короткий код фотоконкурсу"
+
+#: ../includes/admin/pc-admin-functions.php:99
+#: ../includes/admin/pc-admin-functions.php:103
+msgid "Add Photo Contest"
+msgstr "Додати фотоконкурс"
+
+#: ../includes/admin/pc-edit-user.php:34 ../views/contests.php:1133
+msgid "Date of birth"
+msgstr "Дата народження"
+
+#: ../includes/admin/pc-edit-user.php:34 ../views/contests.php:302
+#: ../views/contests.php:308 ../views/contests.php:314
+#: ../views/contests.php:320
+msgid "(Format: MM/DD/YYYY)"
+msgstr "(Формат: MM/DD/YYYY)"
+
+#: ../includes/admin/pc-edit-user.php:38
+#, fuzzy
+#| msgid "Blog/Gallery/Website:"
+msgid "Blog/Gallery/Website"
+msgstr "Блог / Галерея / Веб-сайт:"
+
+#: ../includes/admin/pc-edit-user.php:42 ../views/contests.php:1140
+msgid "Address"
+msgstr "Адреса"
+
+#: ../includes/admin/pc-edit-user.php:46 ../views/contests.php:1147
+msgid "City"
+msgstr "Місто"
+
+#: ../includes/admin/pc-edit-user.php:50 ../views/contests.php:1161
+msgid "State"
+msgstr "Область"
+
+#: ../includes/admin/pc-edit-user.php:58 ../views/contests.php:1168
+#: ../views/votes.php:384 ../views/votes.php:407 ../views/votes.php:535
+msgid "Country"
+msgstr "Країна"
+
+#: ../includes/admin/pc-edit-user.php:66
+msgid "Zip"
+msgstr ""
+
+#: ../includes/admin/pc-edit-user.php:70
+msgid "Phone"
+msgstr ""
+
+#: ../includes/admin/pc-edit-user.php:75 ../includes/admin/pc-edit-user.php:93
+#, fuzzy
+#| msgid "Gender:"
+msgid "Gender"
+msgstr "Стать:"
+
+#: ../includes/admin/pc-edit-user.php:75
+#, fuzzy
+#| msgid "(Optional)"
+msgid "(two options)"
+msgstr "(Додатково)"
+
+#: ../includes/admin/pc-edit-user.php:93
+msgid "(three options)"
+msgstr ""
+
+#: ../includes/admin/pc-edit-user.php:115 ../views/contests.php:1203
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../includes/admin/pc-edit-user.php:119 ../views/contests.php:1210
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../includes/admin/pc-edit-user.php:123 ../views/contests.php:1217
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../includes/admin/pc-edit-user.php:134
+msgid "User agreed with GDPR on date:"
+msgstr ""
+
+#: ../includes/admin/pc-edit-user.php:134
+msgid "at the time:"
+msgstr ""
+
+#: ../includes/admin/pc-edit-user.php:136
+msgid "User did not agreed with GDPR conditions yet!"
+msgstr ""
+
+#: ../includes/admin/pc-edit-user.php:180
+#, fuzzy
+#| msgid "Custom registration form fields"
+msgid "Custom optional form field"
+msgstr "Поля для заповнення форм реєстрації"
+
+#: ../includes/admin/pc-edit-user.php:183
+#, fuzzy
+#| msgid "Custom registration form fields"
+msgid "Custom required form field"
+msgstr "Поля для заповнення форм реєстрації"
+
+#: ../includes/admin/pc-edit-user.php:211
+#, fuzzy
+#| msgid "Submit all photos to the contest!"
+msgid "Total submitted photos in the contest"
+msgstr "Надіслати усі фотографії на конкурс!"
+
+#: ../includes/admin/pc-export-data.php:59
+msgid "No Data"
+msgstr "Немає даних"
+
+#: ../includes/admin/pc-export-data.php:77
+#: ../includes/admin/pc-export-data.php:262 ../views/photos.php:486
+#: ../views/votes.php:499
+msgid "Uncategorized"
+msgstr "Без категорії"
+
+#: ../includes/admin/pc-export-data.php:148
+#: ../includes/admin/pc-export-data.php:152 ../views/photos.php:643
+#: ../views/photos.php:645
+msgid "Male"
+msgstr "Чоловік"
+
+#: ../includes/admin/pc-export-data.php:149
+#: ../includes/admin/pc-export-data.php:153 ../views/photos.php:644
+#: ../views/photos.php:646
+msgid "Female"
+msgstr "Жінка"
+
+#: ../includes/admin/pc-export-data.php:154 ../views/photos.php:647
+msgid "Other"
+msgstr "Інші"
+
+#: ../includes/admin/pc-export-data.php:242 ../views/votes.php:439
+msgid "Guest"
+msgstr "Гість"
+
+#: ../includes/admin/pc-export-data.php:253 ../views/votes.php:491
+msgid "Contest was deleted"
+msgstr "Конкурс був видалений"
+
+#: ../includes/admin/pc-export-data.php:268
+#: ../includes/admin/pc-export-data.php:272
+#: ../includes/admin/pc-export-data.php:283 ../views/votes.php:474
+#: ../views/votes.php:483
+msgid "No data"
+msgstr "Немає даних"
+
+#: ../includes/admin/pc-tools.php:9
+msgid "There are no contests at this time!"
+msgstr ""
+
+#: ../includes/admin/pc-tools.php:10 ../views/categories.php:20
+msgid "Create contest first!"
+msgstr "Спочатку створіть конурс!"
+
+#: ../includes/admin/pc-tools.php:20 ../includes/admin/pc-tools.php:107
+#, fuzzy
+#| msgid "Edit Category"
+msgid "Edit User"
+msgstr "Редагувати категорію"
+
+#: ../includes/admin/pc-tools.php:24 ../views/categories.php:89
+#: ../views/categories.php:93 ../views/contests.php:63 ../views/contests.php:66
+msgid "Success:"
+msgstr "Успіх:"
+
+#: ../includes/admin/pc-tools.php:24
+msgid "User data was saved!"
+msgstr ""
+
+#: ../includes/admin/pc-tools.php:28
+msgid "WordPress data"
+msgstr ""
+
+#: ../includes/admin/pc-tools.php:30
+msgid ""
+"Every contest user is a WordPress user. If you wanna change basic data like "
+"Nickname, email or password you must use basic WordPress user editor. Edit:"
+msgstr ""
+
+#: ../includes/admin/pc-tools.php:37
+#, fuzzy
+#| msgid "Personal details:"
+msgid "Contest Personal data"
+msgstr "Особисті дані:"
+
+#: ../includes/admin/pc-tools.php:40 ../includes/admin/pc-tools.php:89
+#: ../includes/menu/pc-menu-v1.php:116 ../includes/menu/pc-menu-v2.php:115
+#: ../shortcodes/contest-gallery-detail.php:334
+#: ../shortcodes/contest-profile.php:341 ../shortcodes/contest-profile.php:434
+#: ../views/categories.php:209 ../views/categories.php:218
+#: ../views/categories.php:232 ../views/contests.php:86
+#: ../views/contests.php:100 ../views/contests.php:132 ../views/photos.php:902
+msgid "Edit"
+msgstr "Редагувати"
+
+#: ../includes/admin/pc-tools.php:47
+#, fuzzy
+#| msgid "Contest Start"
+msgid "Contest data"
+msgstr "Конкурс почався"
+
+#: ../includes/admin/pc-tools.php:52 ../includes/admin/pc-tools.php:131
+#: ../includes/admin/pc-tools.php:135 ../includes/admin/pc-tools.php:162
+#: ../includes/admin/pc-tools.php:251
+msgid "Select the Contest"
+msgstr "Вибрати конкурс"
+
+#: ../includes/admin/pc-tools.php:69 ../views/photos.php:688
+#: ../views/votes.php:517
+msgid "Select"
+msgstr "Вибрати"
+
+#: ../includes/admin/pc-tools.php:83
+#, fuzzy
+#| msgid "Edit Contest"
+msgid "Edit user contest data"
+msgstr "Редагувати конкурс"
+
+#: ../includes/admin/pc-tools.php:110 ../includes/admin/pc-tools.php:228
+#: ../views/admin.php:1612 ../views/admin.php:1776 ../views/jury.php:160
+#: ../views/jury.php:257 ../views/photos.php:547 ../views/votes.php:361
+msgid "Notice:"
+msgstr "Примітка:"
+
+#: ../includes/admin/pc-tools.php:110
+msgid "User was not found!"
+msgstr ""
+
+#: ../includes/admin/pc-tools.php:116
+msgid "This tool will help you find and edit user by ID, Username or Email"
+msgstr ""
+
+#: ../includes/admin/pc-tools.php:117
+msgid "State user ID, Username or Email"
+msgstr ""
+
+#: ../includes/admin/pc-tools.php:120 ../views/photos.php:498
+msgid "Search"
+msgstr "Пошук"
+
+#: ../includes/admin/pc-tools.php:125
+msgid "Add images to the contest (Bulk upload)"
+msgstr "Додати зображення до конкурсу (масове завантаження)"
+
+#: ../includes/admin/pc-tools.php:148
+msgid "Select images to upload"
+msgstr "Вибрати зображення для завантаження"
+
+#: ../includes/admin/pc-tools.php:150
+msgid "For choosing more images at once hold CTRL or Shift key"
+msgstr "Щоб вибрати більше зображень відразу, утримуйте клавішу CTRL або Shift"
+
+#: ../includes/admin/pc-tools.php:151
+msgid "Recommended maximum for bulk upload is 20 images at once"
+msgstr ""
+"Рекомендований максимум для масового завантаження - 20 зображень одночасно"
+
+#: ../includes/admin/pc-tools.php:161
+msgid "Export Users Data"
+msgstr "Експортувати дані користувачів"
+
+#: ../includes/admin/pc-tools.php:182
+msgid "Export"
+msgstr "Експортувати"
+
+#: ../includes/admin/pc-tools.php:200
+msgid "Email filter"
+msgstr "Фільтр електронної пошти"
+
+#: ../includes/admin/pc-tools.php:204
+msgid "Allow email filter"
+msgstr "Дозволити фільтр електронної пошти"
+
+#: ../includes/admin/pc-tools.php:211
+msgid ""
+"This filter allows you to control registration in your contest and protect "
+"vote confirmation against disposable email services. The filter contains "
+"several thousands domains and it is developed by the community on Github. "
+"Full list of domains you can find here:"
+msgstr ""
+"Цей фільтр дозволяє контролювати реєстрацію у вашому конкурсі та захищати "
+"підтвердження голосування від одноразових служб електронної пошти. Фільтр "
+"містить кілька тисяч доменів, і розроблений спільнотою на Github. Повний "
+"список доменів ви можете знайти тут:"
+
+#: ../includes/admin/pc-tools.php:219 ../views/jury.php:326
+msgid "Save"
+msgstr "Зберегти"
+
+#: ../includes/admin/pc-tools.php:226
+msgid "Reset the Contest"
+msgstr "Скинути конкурс"
+
+#: ../includes/admin/pc-tools.php:228
+msgid ""
+"After you select the option \"Reset the Contest\" the action cannot be taken "
+"back."
+msgstr ""
+"Після вибору опції «Скинути конкурс» дію не можна буде повернути назад."
+
+#: ../includes/admin/pc-tools.php:231
+msgid "Set reset mode"
+msgstr "Встановити режим скидання"
+
+#: ../includes/admin/pc-tools.php:237
+msgid "Only votes and views count"
+msgstr "Рахуються тільки голоси і перегляди"
+
+#: ../includes/admin/pc-tools.php:244
+msgid "Everything (Images, data, votes, views count)"
+msgstr "Все (зображення, дані, голоси, кількість переглядів)"
+
+#: ../includes/admin/pc-tools.php:273
+msgid "Are you sure that you want to reset those data?!!!!"
+msgstr "Ви впевнені, що хочете скинути ці дані?!!!!"
+
+#: ../includes/admin/pc-tools.php:273
+msgid "Reset"
+msgstr "Скинути"
+
+#: ../includes/menu/pc-menu-v1.php:125 ../includes/menu/pc-menu-v2.php:124
+msgid "Log in"
+msgstr "Увійти"
+
+#: ../includes/menu/pc-menu-v1.php:127 ../includes/menu/pc-menu-v2.php:126
+#: ../shortcodes/contest-gallery-detail.php:376
+msgid "Log out"
+msgstr "Вийти"
+
+#: ../includes/pc-BuddyPress.php:27
+#, php-format
+msgid ""
+"added a new <a href=\"%s\">comment</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"додав новий <a href=\"%s\">коментар</a> у <a href=\"%s\">Фотоконкурсі</a>"
+
+#: ../includes/pc-BuddyPress.php:54
+#, php-format
+msgid ""
+"added a new <a href=\"%s\">photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"додала нову <a href=\"%s\">фотографію </a> в <a href=\"%s\">Фотоконкурс</a>"
+
+#: ../includes/pc-BuddyPress.php:79
+#, fuzzy, php-format
+#| msgid ""
+#| "voted for <a href=\"%s\">photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgid "rated <a href=\"%s\">a photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"проголосували за <a href=\"%s\">фото</a> у <a href=\"%s\"> Фотоконкурсі</a>"
+
+#: ../includes/pc-BuddyPress.php:104
+#, php-format
+msgid "voted for <a href=\"%s\">photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"проголосували за <a href=\"%s\">фото</a> у <a href=\"%s\"> Фотоконкурсі</a>"
+
+#: ../includes/pc-basic-functions.php:117
+#: ../includes/pc-basic-functions.php:131
+#: ../includes/votes/pc-rate-function.php:327
+#: ../includes/votes/pc-rate-function.php:329
+#: ../shortcodes/contest-gallery.php:486 ../shortcodes/contest-gallery.php:494
+#: ../shortcodes/contest-profile.php:391 ../shortcodes/contest-profile.php:398
+#, fuzzy
+#| msgid "Voting"
+msgid "Rating:"
+msgstr "Голосування"
+
+#: ../includes/pc-basic-functions.php:117
+#: ../includes/votes/pc-rate-function.php:327
+msgid "Not rated yet!"
+msgstr ""
+
+#: ../includes/pc-basic-functions.php:161
+#: ../includes/votes/pc-rate-function.php:359
+msgid "rated"
+msgstr ""
+
+#: ../includes/pc-basic-vote.php:30 ../includes/votes/pc-basic-vote-code.php:30
+#: ../includes/votes/pc-jury-rate-code.php:40
+#: ../includes/votes/pc-jury-vote-code.php:46
+#: ../includes/votes/pc-rate-code.php:31 ../shortcodes/contest-share.php:348
+msgid "Contest is finished!"
+msgstr "Конкурс закінчений!"
+
+#: ../includes/pc-basic-vote.php:40 ../includes/votes/pc-basic-vote-code.php:40
+#: ../includes/votes/pc-jury-rate-code.php:51
+#: ../includes/votes/pc-jury-vote-code.php:58
+#: ../includes/votes/pc-rate-code.php:41
+msgid "day"
+msgstr "день"
+
+#: ../includes/pc-basic-vote.php:42 ../includes/votes/pc-basic-vote-code.php:42
+#: ../includes/votes/pc-jury-rate-code.php:53
+#: ../includes/votes/pc-jury-vote-code.php:60
+#: ../includes/votes/pc-rate-code.php:43
+msgid "days"
+msgstr "дні"
+
+#: ../includes/pc-basic-vote.php:45 ../includes/votes/pc-basic-vote-code.php:45
+#: ../includes/votes/pc-jury-rate-code.php:56
+#: ../includes/votes/pc-jury-vote-code.php:63
+#: ../includes/votes/pc-rate-code.php:46
+msgid "hour"
+msgstr "година"
+
+#: ../includes/pc-basic-vote.php:47 ../includes/votes/pc-basic-vote-code.php:47
+#: ../includes/votes/pc-jury-rate-code.php:58
+#: ../includes/votes/pc-jury-vote-code.php:65
+#: ../includes/votes/pc-rate-code.php:48
+msgid "hours"
+msgstr "години"
+
+#: ../includes/pc-basic-vote.php:52 ../includes/pc-gallery-functions.php:34
+#: ../includes/votes/pc-basic-vote-code.php:52
+#: ../includes/votes/pc-rate-code.php:53
+msgid "You must be logged in to vote!"
+msgstr "Ви маєте бути зареєстровані, щоб проголосувати!"
+
+#: ../includes/pc-basic-vote.php:57 ../includes/votes/pc-basic-vote-code.php:57
+#: ../includes/votes/pc-jury-rate-code.php:61
+#: ../includes/votes/pc-jury-vote-code.php:68
+#: ../includes/votes/pc-rate-code.php:58
+msgid "Voting starts in:"
+msgstr "Голосування починається о:"
+
+#: ../includes/pc-basic-vote.php:61 ../includes/votes/pc-basic-vote-code.php:61
+#: ../includes/votes/pc-jury-vote-code.php:73
+msgid "You can't vote for your image!"
+msgstr "Ви не можете голосувати за своє зображення!"
+
+#: ../includes/pc-basic-vote.php:83 ../includes/votes/pc-basic-vote-code.php:83
+msgid "The image has not been approved yet!"
+msgstr "Зображення ще не схвалено!"
+
+#: ../includes/pc-basic-vote.php:110
+#: ../includes/votes/pc-basic-vote-code.php:110
+#: ../shortcodes/contest-gallery.php:383 ../views/admin.php:1361
+msgid "Vote for this photo!"
+msgstr "Проголосувати за це фото!"
+
+#: ../includes/pc-basic-vote.php:112
+#: ../includes/votes/pc-basic-vote-code.php:112
+#: ../includes/votes/pc-jury-vote-code.php:103
+#: ../shortcodes/contest-gallery.php:385 ../views/admin.php:1369
+msgid "Vote!"
+msgstr "Голосувати!"
+
+#: ../includes/pc-basic-vote.php:114
+#: ../includes/votes/pc-basic-vote-code.php:114
+#: ../shortcodes/contest-gallery.php:387 ../views/admin.php:1378
+msgid "Vote Now!"
+msgstr "Голосувати зараз!"
+
+#: ../includes/pc-basic-vote.php:120
+#: ../includes/votes/pc-basic-vote-code.php:120
+#: ../shortcodes/contest-gallery.php:393 ../views/admin.php:1414
+msgid "Thank you for vote!"
+msgstr "Дякуємо за ваш голос!"
+
+#: ../includes/pc-basic-vote.php:122
+#: ../includes/votes/pc-basic-vote-code.php:122
+#: ../shortcodes/contest-gallery.php:395 ../views/admin.php:1422
+msgid "Thank You!"
+msgstr "Дякуємо!"
+
+#: ../includes/pc-basic-vote.php:172
+#: ../includes/votes/pc-basic-vote-code.php:172
+#: ../includes/votes/pc-rate-code.php:151 ../shortcodes/contest-share.php:324
+#, fuzzy
+#| msgid "You have already uploaded"
+msgid "You have voted already"
+msgstr "Ви вже завантажили"
+
+#: ../includes/pc-basic-vote.php:176
+#: ../includes/votes/pc-basic-vote-code.php:176
+#: ../includes/votes/pc-rate-code.php:155 ../shortcodes/contest-share.php:327
+msgid "Someone has already voted out of this IP address:"
+msgstr ""
+
+#: ../includes/pc-basic-vote.php:180
+#: ../includes/votes/pc-basic-vote-code.php:180
+#: ../includes/votes/pc-rate-code.php:159 ../shortcodes/contest-share.php:333
+msgid "Someone voted out on this computer already!"
+msgstr ""
+
+#: ../includes/pc-basic-vote.php:184
+#: ../includes/votes/pc-basic-vote-code.php:184
+#, fuzzy
+#| msgid "You cannot vote anymore!"
+msgid "You can vote only once!"
+msgstr "Ви вже не можете голосувати!"
+
+#: ../includes/pc-create-contest.php:188 ../includes/pc-create-contest.php:240
+#: ../includes/pc-create-contest.php:365 ../views/info.php:25
+msgid "Create a Contest"
+msgstr "Створити конкурс"
+
+#: ../includes/pc-create-contest.php:199 ../includes/pc-create-contest.php:201
+#: ../includes/pc-create-contest.php:270 ../includes/pc-create-contest.php:272
+msgid "Contest Name:"
+msgstr "Назва конкурсу:"
+
+#: ../includes/pc-create-contest.php:207 ../includes/pc-create-contest.php:306
+msgid "Contest Start:"
+msgstr "Початок конкурсу:"
+
+#: ../includes/pc-create-contest.php:209 ../includes/pc-create-contest.php:217
+#: ../includes/pc-create-contest.php:225 ../includes/pc-create-contest.php:233
+#: ../includes/pc-create-contest.php:308 ../includes/pc-create-contest.php:316
+#: ../includes/pc-create-contest.php:324 ../includes/pc-create-contest.php:332
+msgid "MM/DD/YYYY"
+msgstr "MM/DD/YYYY"
+
+#: ../includes/pc-create-contest.php:215 ../includes/pc-create-contest.php:314
+msgid "Contest End:"
+msgstr "Закінчення конкурсу:"
+
+#: ../includes/pc-create-contest.php:223 ../includes/pc-create-contest.php:322
+msgid "Vote begins:"
+msgstr "Голосування починається:"
+
+#: ../includes/pc-create-contest.php:223 ../includes/pc-create-contest.php:322
+msgid ""
+"From this day can users vote. The date must be between \"Contest Start\" and "
+"\"Contest End\"."
+msgstr ""
+"З цього дня користувачі можуть голосувати. Дата повинна бути між \"Початок "
+"конкурсу\" і \"Кінець конкурсу\"."
+
+#: ../includes/pc-create-contest.php:231 ../includes/pc-create-contest.php:330
+msgid "End of registration to the contest:"
+msgstr "Закінчення реєстрації на конкурс:"
+
+#: ../includes/pc-create-contest.php:231 ../includes/pc-create-contest.php:330
+msgid "After this day users can not upload photos to the contest."
+msgstr ""
+"Після цього дня користувачі не зможуть завантажити фотографії до конкурсу."
+
+#: ../includes/pc-create-contest.php:252 ../includes/pc-create-contest.php:253
+#: ../includes/pc-create-contest.php:372
+msgid "Notice"
+msgstr "Замітка"
+
+#: ../includes/pc-create-contest.php:253 ../includes/pc-create-contest.php:372
+#, php-format
+msgid ""
+"Contest is not set up correctly. Please do visit <a href=\"%s\">General "
+"Settings</a> and set and save settings first. Thank You!"
+msgstr ""
+"Конкурс налаштовано неправильно. Будь ласка, відвідайте <a href=\"%s\"> "
+"Загальні налаштування </a> і спочатку встановіть та збережіть налаштування. "
+"Дякую!"
+
+#: ../includes/pc-create-contest.php:279 ../views/contests.php:326
+#: ../views/contests.php:355 ../views/contests.php:384
+msgid "Contest page"
+msgstr "Сторінка конкурсу"
+
+#: ../includes/pc-create-contest.php:279
+msgid "Select a page where where will be the contest"
+msgstr "Виберіть сторінку, де буде проводитися конкурс"
+
+#: ../includes/pc-create-contest.php:288
+msgid "NEW PAGE"
+msgstr "НОВА СТОРІНКА"
+
+#: ../includes/pc-create-contest.php:289
+msgid "Create a new page"
+msgstr "Створити нову сторінку"
+
+#: ../includes/pc-create-contest.php:292
+msgid "EXISTING PAGES"
+msgstr "ІСНУЮЧІ СТОРІНКИ"
+
+#: ../includes/pc-create-contest.php:339
+msgid "Basic Settings or Duplicate Settings"
+msgstr ""
+
+#: ../includes/pc-create-contest.php:339
+msgid "Set basic settings or copy settings from a previous contest"
+msgstr ""
+
+#: ../includes/pc-create-contest.php:344
+#, fuzzy
+#| msgid "Basic Settings"
+msgid "Set basic settings"
+msgstr "Основні налаштування"
+
+#: ../includes/pc-create-contest.php:345
+#, fuzzy
+#| msgid "Basic Settings"
+msgid "Basic settings"
+msgstr "Основні налаштування"
+
+#: ../includes/pc-create-contest.php:348
+msgid "Copy/Duplicate settings from a previous contest"
+msgstr ""
+
+#: ../includes/pc-loginform.php:68 ../includes/pc-loginform.php:104
+#: ../includes/pc-loginform.php:106 ../shortcodes/upload-photo.php:124
+msgid "Log In"
+msgstr "Ввійти"
+
+#: ../includes/pc-loginform.php:72 ../includes/pc-loginform.php:74
+#: ../includes/pc-loginform.php:128 ../includes/pc-loginform.php:130
+#: ../includes/pc-registration.php:126 ../includes/pc-registration.php:131
+msgid "Username:"
+msgstr "Ім'я користувача:"
+
+#: ../includes/pc-loginform.php:80 ../includes/pc-loginform.php:82
+#: ../includes/pc-registration.php:126
+msgid "Password:"
+msgstr "Пароль:"
+
+#: ../includes/pc-loginform.php:91
+msgid "Remember Me"
+msgstr "Запам'ятати мене"
+
+#: ../includes/pc-loginform.php:124 ../includes/pc-loginform.php:160
+#: ../includes/pc-loginform.php:162
+msgid "Register"
+msgstr "Реєстрація"
+
+#: ../includes/pc-loginform.php:136 ../includes/pc-loginform.php:138
+msgid "Email:"
+msgstr "Електронна пошта:"
+
+#: ../includes/pc-loginform.php:146
+msgid "Lost Password"
+msgstr "Втрачений пароль"
+
+#: ../includes/pc-registration.php:70
+msgid "Hello Admin!"
+msgstr "Вітаємо адміністратора!"
+
+#: ../includes/pc-registration.php:71
+#, php-format
+msgid "New user registration on your blog: %s:"
+msgstr "Реєстрація нового користувача у вашому блозі: %s:"
+
+#: ../includes/pc-registration.php:72
+#, php-format
+msgid "Username: %s"
+msgstr "Ім'я користувача: %s"
+
+#: ../includes/pc-registration.php:73
+#, php-format
+msgid "E-mail: %s"
+msgstr "Електронна пошта: %s"
+
+#: ../includes/pc-registration.php:74
+msgid "IP Address:"
+msgstr "IP-адреса:"
+
+#: ../includes/pc-registration.php:76
+#, php-format
+msgid "[%s] New User Registration"
+msgstr "[%s] Реєстрація нового користувача"
+
+#: ../includes/pc-registration.php:99 ../views/admin.php:377
+msgid "Welcome to our Photo Contest!"
+msgstr "Ласкаво просимо на наш фотоконкурс!"
+
+#: ../includes/pc-registration.php:125 ../includes/pc-registration.php:130
+msgid "Your login details:"
+msgstr "Ваші дані для входу:"
+
+#: ../includes/pc-registration.php:132
+#, fuzzy
+#| msgid "To set your password, visit the following address:"
+msgid "To set your password, visit the following link:"
+msgstr "Щоб встановити пароль, перейдіть за такою адресою:"
+
+#: ../includes/pc-registration.php:162
+msgid "Invalid user ID."
+msgstr "Недійсний ідентифікатор користувача."
+
+#: ../includes/pc-registration.php:191
+msgid "Cannot create a user with an empty login name."
+msgstr "Неможливо створити користувача з порожнім ім'ям для входу."
+
+#: ../includes/pc-registration.php:193
+msgid "Username may not be longer than 60 characters."
+msgstr "Ім'я користувача не може перевищувати 60 символів."
+
+#: ../includes/pc-registration.php:197
+msgid "Sorry, that username already exists!"
+msgstr "Вибачте, але це ім'я користувача вже існує!"
+
+#: ../includes/pc-registration.php:210
+msgid "Sorry, that username is not allowed."
+msgstr "Вибачте, але це ім'я користувача не дозволено."
+
+#: ../includes/pc-registration.php:220
+msgid "Nicename may not be longer than 50 characters."
+msgstr "Довжина імені не може перевищувати 50 символів."
+
+#: ../includes/pc-registration.php:271
+msgid "Sorry, that email address is already used!"
+msgstr "Вибачте, але ця електронна пошта вже використовується!"
+
+#: ../includes/pc-upload-functions.php:24
+#: ../includes/pc-upload-functions.php:103
+msgid "None"
+msgstr ""
+
+#: ../includes/pc-upload-functions.php:109
+msgid "Select Country"
+msgstr "Вибрати країну"
+
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:25
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:44
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:63
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:82
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:101
+#: ../includes/templates/pc-modern-gallery-lightbox.php:25
+#: ../includes/templates/pc-modern-gallery-lightbox.php:43
+#: ../includes/templates/pc-modern-gallery-lightbox.php:61
+#: ../includes/templates/pc-modern-gallery-lightbox.php:79
+#: ../includes/templates/pc-modern-gallery-lightbox.php:97
+#: ../includes/templates/pc-modern-gallery.php:25
+#: ../includes/templates/pc-modern-gallery.php:40
+#: ../includes/templates/pc-modern-gallery.php:55
+#: ../includes/templates/pc-modern-gallery.php:70
+#: ../includes/templates/pc-modern-gallery.php:85
+#: ../shortcodes/contest-gallery-detail.php:208
+msgid "Author:"
+msgstr "Автор:"
+
+#: ../includes/votes/pc-jury-rate-code.php:23
+#, fuzzy
+#| msgid "You are member of the jury. You can vote!"
+msgid "You are member of the jury!"
+msgstr "Ви є членом журі. Ви можете голосувати!"
+
+#: ../includes/votes/pc-jury-rate-code.php:65
+#, fuzzy
+#| msgid "You can't vote for your image!"
+msgid "You can't rate your photo!"
+msgstr "Ви не можете голосувати за своє зображення!"
+
+#: ../includes/votes/pc-jury-rate-code.php:84
+#, fuzzy
+#| msgid "You have already uploaded"
+msgid "You have rated this photo already!"
+msgstr "Ви вже завантажили"
+
+#: ../includes/votes/pc-jury-rate-code.php:88
+#: ../includes/votes/pc-rate-code.php:87 ../includes/votes/pc-rate-code.php:92
+#: ../shortcodes/contest-share.php:280 ../shortcodes/contest-share.php:295
+#: ../shortcodes/upload-photo.php:553 ../views/admin.php:1455
+msgid "Thank you!"
+msgstr "Дякуємо!"
+
+#: ../includes/votes/pc-jury-rate-code.php:92
+#: ../includes/votes/pc-jury-vote-code.php:99
+#: ../shortcodes/contest-share.php:347
+msgid "You cannot vote anymore!"
+msgstr "Ви вже не можете голосувати!"
+
+#: ../includes/votes/pc-jury-rate-code.php:124
+#, fuzzy
+#| msgid "Jury member who voted for this image (for admins eyes only)"
+msgid "Jury members who rated this photo already (for admins eyes only)"
+msgstr ""
+"Член журі, який проголосував за це зображення (лише для адміністраторів)"
+
+#: ../includes/votes/pc-jury-rate-code.php:134
+#: ../includes/votes/pc-jury-vote-code.php:140 ../views/jury.php:345
+msgid "Invalid ID"
+msgstr "Невірний ID"
+
+#: ../includes/votes/pc-jury-rate-code.php:144
+#: ../includes/votes/pc-jury-vote-code.php:150
+msgid "List is empty"
+msgstr "Список порожній"
+
+#: ../includes/votes/pc-jury-vote-code.php:24
+#, fuzzy
+#| msgid "Reset the Contest"
+msgid "Remove the vote!"
+msgstr "Скинути конкурс"
+
+#: ../includes/votes/pc-jury-vote-code.php:28
+msgid "You are member of the jury. You can vote!"
+msgstr "Ви є членом журі. Ви можете голосувати!"
+
+#: ../includes/votes/pc-jury-vote-code.php:95
+msgid "You have voted for this image!"
+msgstr "Ви вже проголосували за це зображення!"
+
+#: ../includes/votes/pc-jury-vote-code.php:122
+#, php-format
+msgid "You have %s %s as Jury member. You have already voted %sx."
+msgstr "Ви є %s %s членом журі. Ви вже проголосували %sx."
+
+#: ../includes/votes/pc-jury-vote-code.php:127
+msgid "Jury member who voted for this image (for admins eyes only)"
+msgstr ""
+"Член журі, який проголосував за це зображення (лише для адміністраторів)"
+
+#: ../includes/votes/pc-rate-code.php:62
+#, fuzzy
+#| msgid "You can't vote for your image!"
+msgid "You can't vote for your photo!"
+msgstr "Ви не можете голосувати за своє зображення!"
+
+#: ../includes/votes/pc-rate-code.php:79
+#, fuzzy
+#| msgid "The image has not been approved yet!"
+msgid "The photo has not been approved yet!"
+msgstr "Зображення ще не схвалено!"
+
+#: ../includes/widgets/widget-category.php:18
+msgid "Photo Contest Widget - Category"
+msgstr "Фотоконкурс віджетів - Категорія"
+
+#: ../includes/widgets/widget-category.php:21
+msgid "Widget displays photos from categories."
+msgstr "Віджет відображає фотографії з категорій."
+
+#: ../includes/widgets/widget-category.php:249
+#: ../includes/widgets/widget-classic.php:244
+#: ../includes/widgets/widget-gallery.php:249
+#: ../shortcodes/contest-gallery.php:251 ../views/photos.php:380
+msgid "Newest"
+msgstr "Найновіші"
+
+#: ../includes/widgets/widget-category.php:250
+#: ../includes/widgets/widget-classic.php:245
+#: ../includes/widgets/widget-gallery.php:250
+#: ../shortcodes/contest-gallery.php:258 ../views/photos.php:385
+msgid "Oldest"
+msgstr "Найстарші"
+
+#: ../includes/widgets/widget-category.php:251
+#: ../includes/widgets/widget-classic.php:246
+#: ../includes/widgets/widget-gallery.php:251 ../views/photos.php:391
+msgid "Most Voted"
+msgstr "Найбільш проголосовані"
+
+#: ../includes/widgets/widget-category.php:252
+#: ../includes/widgets/widget-classic.php:247
+#: ../includes/widgets/widget-gallery.php:252 ../views/photos.php:397
+msgid "Least Votes"
+msgstr "Найменш проголосовані"
+
+#: ../includes/widgets/widget-category.php:253
+#: ../includes/widgets/widget-classic.php:248
+#: ../includes/widgets/widget-gallery.php:253
+#: ../shortcodes/contest-gallery.php:243 ../shortcodes/contest-gallery.php:290
+#: ../views/contests.php:919
+msgid "Random"
+msgstr "Випадкові"
+
+#: ../includes/widgets/widget-category.php:259
+#: ../includes/widgets/widget-classic.php:254
+#: ../includes/widgets/widget-gallery.php:259
+#: ../includes/widgets/widget-rank.php:181
+#: ../shortcodes/contest-gallery-detail.php:187
+#: ../shortcodes/contest-profile.php:255 ../shortcodes/upload-photo.php:935
+msgid "Title:"
+msgstr "Заголовок:"
+
+#: ../includes/widgets/widget-category.php:264
+#: ../includes/widgets/widget-classic.php:259
+#: ../includes/widgets/widget-gallery.php:264
+msgid "Sort By:"
+msgstr "Сортувати за:"
+
+#: ../includes/widgets/widget-category.php:274
+#: ../includes/widgets/widget-classic.php:269
+#: ../includes/widgets/widget-gallery.php:274
+msgid "Number of Photos"
+msgstr "Кількість фотографій"
+
+#: ../includes/widgets/widget-category.php:284
+msgid "Select Category"
+msgstr "Вибрати категорію"
+
+#: ../includes/widgets/widget-classic.php:19
+msgid "Photo Contest Widget - Classic"
+msgstr "Фотоконкурс віджет - Класичний"
+
+#: ../includes/widgets/widget-classic.php:22
+#: ../includes/widgets/widget-gallery.php:21
+msgid "Widget displays photos from photo contest."
+msgstr "Віджет відображає фотографії з фотоконкурсу."
+
+#: ../includes/widgets/widget-classic.php:279
+#: ../includes/widgets/widget-gallery.php:284
+#: ../includes/widgets/widget-rank.php:198
+msgid "Select Contest"
+msgstr "Вибрати конкурс"
+
+#: ../includes/widgets/widget-gallery.php:18
+msgid "Photo Contest Widget - Gallery"
+msgstr "Фотоконкурс віджет - Галерея"
+
+#: ../includes/widgets/widget-rank.php:19
+msgid "Photo Contest Widget - Rank"
+msgstr "Фотоконкурс віджет - Рейтинг"
+
+#: ../includes/widgets/widget-rank.php:22
+msgid "Widget displays rank from photo contest."
+msgstr "Віджет відображає рейтинг від фотоконкурсу."
+
+#: ../includes/widgets/widget-rank.php:99
+#: ../includes/widgets/widget-rank.php:100
+#: ../shortcodes/contest-gallery-detail.php:198
+#: ../shortcodes/contest-gallery.php:460 ../shortcodes/contest-profile.php:370
+#: ../shortcodes/contest-top10.php:148
+msgid "Deleted user"
+msgstr "Видалений користувач"
+
+#: ../includes/widgets/widget-rank.php:122
+#: ../shortcodes/contest-gallery-detail.php:222
+#: ../shortcodes/contest-gallery.php:474 ../shortcodes/contest-gallery.php:480
+#: ../shortcodes/contest-profile.php:379 ../shortcodes/contest-profile.php:385
+msgid "Votes:"
+msgstr "Голоси:"
+
+#: ../includes/widgets/widget-rank.php:188
+msgid "Items"
+msgstr "Деталі"
+
+#: ../includes/widgets/widget-rank.php:210
+msgid "Font Color"
+msgstr "Колір шрифту"
+
+#: ../includes/widgets/widget-rank.php:212
+msgid "Black"
+msgstr "Чорний"
+
+#: ../includes/widgets/widget-rank.php:213
+msgid "Grey"
+msgstr "Сірий"
+
+#: ../includes/widgets/widget-rank.php:214
+msgid "White"
+msgstr "Білий"
+
+#: ../shortcodes/contest-gallery-detail.php:132
+msgid "Previous photo"
+msgstr "Попереднє фото"
+
+#: ../shortcodes/contest-gallery-detail.php:139
+msgid "Next photo"
+msgstr "Наступне фото"
+
+#: ../shortcodes/contest-gallery-detail.php:240
+#: ../shortcodes/contest-profile.php:277 ../shortcodes/contest-top10.php:93
+#: ../shortcodes/upload-photo.php:969
+msgid "Category:"
+msgstr "Категорія:"
+
+#: ../shortcodes/contest-gallery-detail.php:250
+#, fuzzy
+#| msgid "Hide Views"
+msgid "Views:"
+msgstr "Приховати Перегляди"
+
+#: ../shortcodes/contest-gallery-detail.php:254
+#: ../shortcodes/upload-photo.php:943
+msgid "Description:"
+msgstr "Опис:"
+
+#: ../shortcodes/contest-gallery-detail.php:283
+msgid "Copy"
+msgstr ""
+
+#: ../shortcodes/contest-gallery-detail.php:306
+#, fuzzy
+#| msgid "Comments"
+msgid "Comments:"
+msgstr "Коментарі"
+
+#: ../shortcodes/contest-gallery-detail.php:335 ../views/categories.php:210
+#: ../views/categories.php:219 ../views/categories.php:233
+#: ../views/categories.php:234 ../views/contests.php:88
+#: ../views/contests.php:102 ../views/contests.php:134
+#: ../views/contests.php:135 ../views/photos.php:906
+msgid "Delete"
+msgstr "Видалити"
+
+#: ../shortcodes/contest-gallery-detail.php:349
+msgid "There are no comments."
+msgstr "Немає коментарів."
+
+#: ../shortcodes/contest-gallery-detail.php:376
+msgid "You are logged in as"
+msgstr "Ви увійшли як"
+
+#: ../shortcodes/contest-gallery-detail.php:383
+msgid "Post Comment"
+msgstr "Додати коментар"
+
+#: ../shortcodes/contest-gallery-detail.php:397
+msgid "You must be logged in to post a comment"
+msgstr "Ви повинні увійти в систему, щоб залишити коментар"
+
+#: ../shortcodes/contest-gallery.php:198
+msgid "No photo has been submitted for the contest. Be the first!"
+msgstr "Жодна фотографія не була подана на конкурс. Будьте першим!"
+
+#: ../shortcodes/contest-gallery.php:262
+msgid "Most voted"
+msgstr "Найбільш проголосовані"
+
+#: ../shortcodes/contest-gallery.php:263
+#, fuzzy
+#| msgid "Least votes"
+msgid "Least voted"
+msgstr "Найменш проголосовані"
+
+#: ../shortcodes/contest-gallery.php:265
+msgid "Top Rated"
+msgstr ""
+
+#: ../shortcodes/contest-gallery.php:266
+msgid "Lowest Rated"
+msgstr ""
+
+#: ../shortcodes/contest-gallery.php:311 ../shortcodes/contest-top10.php:90
+#: ../views/photos.php:480
+msgid "All Categories"
+msgstr "Всі категорії"
+
+#: ../shortcodes/contest-gallery.php:325
+msgid "Search...."
+msgstr "Пошук..."
+
+#: ../shortcodes/contest-gallery.php:340
+msgid "No results found"
+msgstr "Нічого не знайдено"
+
+#: ../shortcodes/contest-gallery.php:530 ../shortcodes/contest-gallery.php:531
+#: ../shortcodes/contest-gallery.php:532 ../shortcodes/contest-gallery.php:533
+#: ../shortcodes/contest-profile.php:284
+msgid "No Category"
+msgstr "Немає категорії"
+
+#: ../shortcodes/contest-gallery.php:645
+msgid "Generate random photos"
+msgstr ""
+
+#: ../shortcodes/contest-gallery.php:666
+msgid "First"
+msgstr "Перша"
+
+#: ../shortcodes/contest-gallery.php:669
+msgid "Previous"
+msgstr "Попередня"
+
+#: ../shortcodes/contest-gallery.php:680
+msgid "Next"
+msgstr "Наступна"
+
+#: ../shortcodes/contest-gallery.php:683
+msgid "Last"
+msgstr "Остання"
+
+#: ../shortcodes/contest-menu.php:39 ../views/admin.php:1887
+msgid "Gallery"
+msgstr "Галерея"
+
+#: ../shortcodes/contest-menu.php:42 ../views/admin.php:1894
+msgid "Upload photo"
+msgstr "Завантажити фотографії"
+
+#: ../shortcodes/contest-menu.php:45 ../views/admin.php:1901
+msgid "Rules & Prizes"
+msgstr "Правила та Призи"
+
+#: ../shortcodes/contest-menu.php:48 ../views/admin.php:1908
+msgid "Your Images"
+msgstr "Ваші зображення"
+
+#: ../shortcodes/contest-menu.php:51 ../views/admin.php:1915
+msgid "Top 10"
+msgstr "Топ 10"
+
+#: ../shortcodes/contest-profile.php:56
+msgid "ReCaptcha was not validated correctly!"
+msgstr "ReCaptcha не була перевірена правильно!"
+
+#: ../shortcodes/contest-profile.php:106
+msgid "Please state Username!"
+msgstr "Будь ласка, вкажіть ім'я користувача!"
+
+#: ../shortcodes/contest-profile.php:111 ../shortcodes/upload-photo.php:113
+msgid "This Name is already taken!"
+msgstr "Ця ім'я вже використовується!"
+
+#: ../shortcodes/contest-profile.php:120 ../shortcodes/contest-share.php:412
+#: ../shortcodes/upload-photo.php:100
+msgid "This email domain is not allowed"
+msgstr "Цей домен електронної пошти заборонений"
+
+#: ../shortcodes/contest-profile.php:124 ../shortcodes/upload-photo.php:119
+msgid "Please enter the Email!"
+msgstr "Будь ласка, введіть свою електронну пошту!"
+
+#: ../shortcodes/contest-profile.php:129
+msgid ""
+"This email is already used! If you have already registered to the contest "
+"please first log in!"
+msgstr ""
+"Ця електронна адреса вже використовується! Якщо ви вже зареєстровані у "
+"конкурсі, будь ласка, спочатку увійдіть!"
+
+#: ../shortcodes/contest-profile.php:143
+msgid "Username or Password was not correct!"
+msgstr "Ім'я користувача чи пароль неправильні!"
+
+#: ../shortcodes/contest-profile.php:236 ../shortcodes/upload-photo.php:237
+msgid "Please enter a Title!"
+msgstr "Будь ласка, введіть заголовок!"
+
+#: ../shortcodes/contest-profile.php:241
+msgid "Please select a category!"
+msgstr "Будь ласка, виберіть категорію!"
+
+#: ../shortcodes/contest-profile.php:245
+msgid "Edit Image"
+msgstr "Редагувати зображення"
+
+#: ../shortcodes/contest-profile.php:262
+msgid "please enter a title!"
+msgstr "будь ласка, додайте заголовок!"
+
+#: ../shortcodes/contest-profile.php:298
+msgid "please select a category!"
+msgstr "будь ласка, виберіть категорію!"
+
+#: ../shortcodes/contest-profile.php:307 ../shortcodes/upload-photo.php:819
+#: ../shortcodes/upload-photo.php:828 ../shortcodes/upload-photo.php:837
+#: ../shortcodes/upload-photo.php:846 ../shortcodes/upload-photo.php:855
+#: ../shortcodes/upload-photo.php:943 ../shortcodes/upload-photo.php:952
+#: ../shortcodes/upload-photo.php:961 ../views/contests.php:355
+#: ../views/contests.php:384 ../views/contests.php:1224
+msgid "(Optional)"
+msgstr "(Додатково)"
+
+#: ../shortcodes/contest-profile.php:317 ../views/contests.php:1286
+msgid "Camera model"
+msgstr "Модель камери"
+
+#: ../shortcodes/contest-profile.php:330 ../shortcodes/upload-photo.php:67
+#: ../views/contests.php:1293 ../views/photos.php:683
+msgid "Custom image field"
+msgstr "Спеціальне поле зображення"
+
+#: ../shortcodes/contest-profile.php:347
+msgid "Are you really sure that you want delete this image?"
+msgstr "Ви дійсно впевнені, що хочете видалити це зображення?"
+
+#: ../shortcodes/contest-profile.php:347
+msgid "Delete Image!"
+msgstr "Видалити зображення!"
+
+#: ../shortcodes/contest-profile.php:347
+msgid ""
+"Warning! After click \"Delete Image!\" will be item permanently deleted!"
+msgstr ""
+"УВАГА! Після натискання кнопки \"Видалити зображення!\" цей елемент буде "
+"видалений назавжди!"
+
+#: ../shortcodes/contest-profile.php:355
+msgid "You must first upload an image!!"
+msgstr "Ви повинні спочатку завантажити зображення !!"
+
+#: ../shortcodes/contest-profile.php:416
+msgid "Active!"
+msgstr "Активний!"
+
+#: ../shortcodes/contest-profile.php:418
+msgid "Waiting for Approval!"
+msgstr "В очікуванні схвалення!"
+
+#: ../shortcodes/contest-profile.php:554
+msgid ""
+"Your registration was successful! Please check your email for a password!"
+msgstr ""
+
+#: ../shortcodes/contest-profile.php:556
+#, fuzzy
+#| msgid ""
+#| "You are not logged in. For login Use the information that they were sent "
+#| "by E-mail after first Image Upload!"
+msgid ""
+"You are not logged in. To log in, use the information emailed after your "
+"first image upload!"
+msgstr ""
+"Ви не авторизовані. Для входу використовуйте інформацію, яку вам надіслали "
+"на електронну пошту після першого завантаження файлів!"
+
+#: ../shortcodes/contest-share.php:254
+msgid "Email validation"
+msgstr "Перевірка електронної пошти"
+
+#: ../shortcodes/contest-share.php:255
+msgid "Thank you for your vote!"
+msgstr "Дякуємо за ваш голос!"
+
+#: ../shortcodes/contest-share.php:256
+msgid "Please follow this link to activate your vote:"
+msgstr "Будь ласка, перейдіть за цим посиланням, щоб активувати свій голос:"
+
+#: ../shortcodes/contest-share.php:258
+msgid "This is an automatically generated email, please do not reply!"
+msgstr ""
+"Це автоматично створений електронний лист, будь ласка, не відповідайте!"
+
+#: ../shortcodes/contest-share.php:277
+msgid "Verify Vote!"
+msgstr "Підтвердіть голос!"
+
+#: ../shortcodes/contest-share.php:293
+msgid "Sorry!"
+msgstr "Вибачте!"
+
+#: ../shortcodes/contest-share.php:300
+msgid "Email confirmation failed!"
+msgstr "Не вдалося підтвердити електронну пошту!"
+
+#: ../shortcodes/contest-share.php:309
+msgid "Vote failed!"
+msgstr ""
+
+#: ../shortcodes/contest-share.php:315
+msgid "Your photo is not activated yet, you must wait for approval!"
+msgstr "Ваша фотографія ще не активована, ви повинні зачекати на схвалення!"
+
+#: ../shortcodes/contest-share.php:316
+msgid "But you can share it already!"
+msgstr "Але ви можете поділитися ним уже зараз!"
+
+#: ../shortcodes/contest-share.php:318
+msgid "Your photo was uploaded successfully and is active!"
+msgstr "Ваше фото успішно завантажене та активне!"
+
+#: ../shortcodes/contest-share.php:319
+msgid "So share it and get some votes!"
+msgstr "Тому діліться ним і отримуйте голоси!"
+
+#: ../shortcodes/contest-share.php:330
+msgid "Vote unique ID did not match"
+msgstr ""
+
+#: ../shortcodes/contest-share.php:336
+msgid "It is not possible to vote this way in jury mode!"
+msgstr ""
+
+#: ../shortcodes/contest-share.php:350
+msgid "Your vote for this photo was successfully counted!"
+msgstr "Ваш голос успішно зараховано!"
+
+#: ../shortcodes/contest-share.php:352 ../shortcodes/contest-share.php:424
+msgid "Please share this photo with your friends!"
+msgstr "Будь ласка, поділіться цим фото з друзями!"
+
+#: ../shortcodes/contest-share.php:358
+msgid "We now need to verify your vote by email!"
+msgstr "Тепер вам потрібно підтвердити свій голос по електронній пошті!"
+
+#: ../shortcodes/contest-share.php:359
+msgid "Your email address will NOT be shared with a third party!"
+msgstr "Вашу адресу електронної пошти НЕ буде передано третій особі!"
+
+#: ../shortcodes/contest-share.php:360
+msgid ""
+"Your email address will NOT be sold or used for purposes other than "
+"confirmation for this vote!"
+msgstr ""
+"Ваша електронна адреса НЕ буде продаватися або використовуватися для інших "
+"цілей, крім підтвердження цього голосування!"
+
+#: ../shortcodes/contest-share.php:364
+msgid "Message with confirmation link was sent!"
+msgstr "Повідомлення з посиланням на підтвердження було відправлено!"
+
+#: ../shortcodes/contest-share.php:365
+msgid "Please check your email!"
+msgstr "Будь ласка, перевірте вашу електронну пошту!"
+
+#: ../shortcodes/contest-share.php:369
+msgid "Check if you copied URL from your email correctly"
+msgstr ""
+"Перевірте, чи правильно ви скопіювали URL-адресу зі свого електронного листа"
+
+#: ../shortcodes/contest-share.php:370
+msgid "And try it again!"
+msgstr "І спробуйте знову!"
+
+#: ../shortcodes/contest-share.php:374
+#, fuzzy, php-format
+#| msgid "Sorry this email %s was already used for this image"
+msgid "Sorry this email %s was already used for vote!"
+msgstr ""
+"На жаль, цей електронна пошта % s вже використовувався для цього зображення"
+
+#: ../shortcodes/contest-share.php:375
+#, fuzzy
+#| msgid "You cannot vote anymore!"
+msgid "You cannot vote twice!"
+msgstr "Ви вже не можете голосувати!"
+
+#: ../shortcodes/contest-share.php:382
+msgid "Please enter your email!"
+msgstr "Будь ласка, додайте свою електронну пошту!"
+
+#: ../shortcodes/contest-share.php:386
+msgid "You are logged in. You cannot confirm vote by email!"
+msgstr ""
+"Ви увійшли в систему. Ви не можете підтвердити голосування по електронній "
+"пошті!"
+
+#: ../shortcodes/contest-share.php:402
+msgid "enter your email"
+msgstr "додайте свою електронну пошту"
+
+#: ../shortcodes/contest-share.php:405
+msgid "verify vote"
+msgstr "перевірити голос"
+
+#: ../shortcodes/contest-share.php:409
+msgid "email field is empty or email is not in valid format"
+msgstr ""
+"поле електронної пошти порожнє або електронна адреса не є правильного формату"
+
+#: ../shortcodes/contest-top10.php:106
+msgid "There are no photos in this category!"
+msgstr "У цій категорії немає фотографій!"
+
+#: ../shortcodes/contest-top10.php:117 ../views/photos.php:571
+#: ../views/photos.php:594
+msgid "Votes"
+msgstr "Голоси"
+
+#: ../shortcodes/contest-top10.php:123 ../shortcodes/contest-top10.php:130
+#, fuzzy
+#| msgid "Voting"
+msgid "Rating"
+msgstr "Голосування"
+
+#: ../shortcodes/upload-photo.php:59 ../shortcodes/upload-photo.php:63
+#: ../views/contests.php:1224 ../views/contests.php:1236
+#: ../views/photos.php:675 ../views/photos.php:679
+msgid "Custom personal field"
+msgstr "Власне особисте поле"
+
+#: ../shortcodes/upload-photo.php:108
+msgid "Please state Your Name!"
+msgstr "Будь ласка, вкажіть своє ім'я!"
+
+#: ../shortcodes/upload-photo.php:116
+msgid "Invalid email format!"
+msgstr "Невірний формат електронної пошти!"
+
+#: ../shortcodes/upload-photo.php:124
+msgid ""
+"This email is already used! If you have already image in the contest please "
+"first"
+msgstr ""
+"Цей електронна пошта вже використовується! Якщо у вас вже є зображення в "
+"конкурсі, будь ласка, спочатку"
+
+#: ../shortcodes/upload-photo.php:164
+msgid "Please enter the Date of Birth!"
+msgstr "Будь ласка, введіть дату народження!"
+
+#: ../shortcodes/upload-photo.php:167
+msgid "Please enter the address!"
+msgstr "Будь ласка, введіть адресу!"
+
+#: ../shortcodes/upload-photo.php:170
+msgid "Please enter the City!"
+msgstr "Будь ласка, введіть місто!"
+
+#: ../shortcodes/upload-photo.php:173
+msgid "Please enter the Zip/Postal code!"
+msgstr "Будь ласка, введіть поштовий індекс!"
+
+#: ../shortcodes/upload-photo.php:176
+msgid "Please select the State!"
+msgstr "Будь ласка, виберіть область!"
+
+#: ../shortcodes/upload-photo.php:179
+msgid "Please select the Country!"
+msgstr "Будь ласка, виберіть країну!"
+
+#: ../shortcodes/upload-photo.php:182
+msgid "Please enter the Phone number!"
+msgstr "Будь ласка, введіть номер телефону!"
+
+#: ../shortcodes/upload-photo.php:185 ../shortcodes/upload-photo.php:188
+msgid "Please select the Gender!"
+msgstr "Будь ласка, виберіть стать!"
+
+#: ../shortcodes/upload-photo.php:191
+#, php-format
+msgid "Please fill the form field: %s"
+msgstr "Будь ласка, заповніть поле форми: %s"
+
+#: ../shortcodes/upload-photo.php:201
+msgid "Facebook profile URL is not valid"
+msgstr "URL-адреса профілю Facebook недійсна"
+
+#: ../shortcodes/upload-photo.php:210
+msgid "Twitter profile URL is not valid"
+msgstr "URL-адреса профілю Twitter недійсна"
+
+#: ../shortcodes/upload-photo.php:219
+msgid "Instagram profile URL is not valid"
+msgstr "URL-адреса профілю Instagram недійсна"
+
+#: ../shortcodes/upload-photo.php:223
+msgid "You did not confirm that you are over age of 13!"
+msgstr "Ви не підтвердили, що ви старше 13 років!"
+
+#: ../shortcodes/upload-photo.php:226
+msgid "You did not confirm that you are over age of 18!"
+msgstr "Ви не підтвердили, що ви старше 18 років!"
+
+#: ../shortcodes/upload-photo.php:229
+msgid "You did not accept contest rules!"
+msgstr "Ви не прийняли правила конкурсу!"
+
+#: ../shortcodes/upload-photo.php:233
+msgid "We need your presonal data processing agreement!"
+msgstr ""
+
+#: ../shortcodes/upload-photo.php:244
+msgid "Please select the image"
+msgstr "Будь ласка, виберіть зображення"
+
+#: ../shortcodes/upload-photo.php:249
+msgid "Image must be jpg, png or gif."
+msgstr "Зображення має бути у форматі jpg, png або gif."
+
+#: ../shortcodes/upload-photo.php:260
+msgid "Minimum image width is 350px."
+msgstr "Мінімальна ширина зображення - 350 пікселів."
+
+#: ../shortcodes/upload-photo.php:262
+msgid "Minimum image height is 350px."
+msgstr "Мінімальна довжина зображення - 350 пікселів."
+
+#: ../shortcodes/upload-photo.php:268
+msgid "File size is above allowed limitations!"
+msgstr "Розмір файлу вище рекомендованих обмежень!"
+
+#: ../shortcodes/upload-photo.php:437 ../shortcodes/upload-photo.php:438
+msgid "New Image in the Photo Contest"
+msgstr "Нове зображення в Фотоконкурсі"
+
+#: ../shortcodes/upload-photo.php:439
+msgid "Uploaded by:"
+msgstr "Завантажено з:"
+
+#: ../shortcodes/upload-photo.php:440
+msgid "Approve image:"
+msgstr "Схвалити зображення:"
+
+#: ../shortcodes/upload-photo.php:451
+#, php-format
+msgid "Failed resize: %s is an invalid image ID."
+msgstr "Не вдалося змінити розмір:% s є неприпустимим зображенням ID."
+
+#: ../shortcodes/upload-photo.php:504
+msgid "The contest has not yet started. It will launch on:"
+msgstr "Конкурс ще не розпочався. Початок:"
+
+#: ../shortcodes/upload-photo.php:507
+msgid "Contest already finished."
+msgstr "Конкурс вже закінчився."
+
+#: ../shortcodes/upload-photo.php:512
+msgid "Ability to enter the contest has expired to date"
+msgstr "Можливість взяти участь у конкурсі минув до дати"
+
+#: ../shortcodes/upload-photo.php:561
+msgid "You can upload max."
+msgstr "Ви можете завантажити максимум."
+
+#: ../shortcodes/upload-photo.php:561 ../shortcodes/upload-photo.php:563
+msgid "photo/photos."
+msgstr "фото."
+
+#: ../shortcodes/upload-photo.php:563
+msgid "You have already uploaded"
+msgstr "Ви вже завантажили"
+
+#: ../shortcodes/upload-photo.php:572
+msgid "You have uploaded the maximum number of photos. Thank you!"
+msgstr "Ви вже завантажили максимальну кількість фотографій. Дякуємо!"
+
+#: ../shortcodes/upload-photo.php:724
+msgid "Personal details:"
+msgstr "Особисті дані:"
+
+#: ../shortcodes/upload-photo.php:737
+msgid "Your Name:"
+msgstr "Ваше ім'я:"
+
+#: ../shortcodes/upload-photo.php:744
+msgid "Your Email:"
+msgstr "Ваша електронна адреса:"
+
+#: ../shortcodes/upload-photo.php:756
+msgid "Date of birth:"
+msgstr "Дата народження:"
+
+#: ../shortcodes/upload-photo.php:765
+msgid "Address:"
+msgstr "Адреса:"
+
+#: ../shortcodes/upload-photo.php:774
+msgid "City:"
+msgstr "Місто:"
+
+#: ../shortcodes/upload-photo.php:783
+msgid "Zip/Postal Code:"
+msgstr "Поштовий індекс:"
+
+#: ../shortcodes/upload-photo.php:791
+msgid "State:"
+msgstr "Область:"
+
+#: ../shortcodes/upload-photo.php:800
+msgid "Country:"
+msgstr "Країна:"
+
+#: ../shortcodes/upload-photo.php:810
+msgid "Phone number:"
+msgstr "Номер телефону:"
+
+#: ../shortcodes/upload-photo.php:819
+msgid "Blog/Gallery/Website:"
+msgstr "Блог / Галерея / Веб-сайт:"
+
+#: ../shortcodes/upload-photo.php:828
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: ../shortcodes/upload-photo.php:837
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: ../shortcodes/upload-photo.php:846
+msgid "Instagram:"
+msgstr "Instagram:"
+
+#: ../shortcodes/upload-photo.php:873 ../shortcodes/upload-photo.php:891
+msgid "Gender:"
+msgstr "Стать:"
+
+#: ../shortcodes/upload-photo.php:931
+msgid "Image details:"
+msgstr "Деталі зображення:"
+
+#: ../shortcodes/upload-photo.php:952
+msgid "Camera model:"
+msgstr "Модель камери:"
+
+#: ../shortcodes/upload-photo.php:981
+msgid "Select image: (max."
+msgstr "Виберіть зображення: (макс."
+
+#: ../shortcodes/upload-photo.php:983 ../shortcodes/upload-photo.php:985
+msgid "select image"
+msgstr "виберіть зображення"
+
+#: ../shortcodes/upload-photo.php:987
+msgid "browse"
+msgstr "переглядати"
+
+#: ../shortcodes/upload-photo.php:1003
+msgid "I confirm that I am over the age of 13"
+msgstr "Я підтверджую, що я старше 13 років"
+
+#: ../shortcodes/upload-photo.php:1010
+msgid "I confirm that I am over the age of 18"
+msgstr "Я підтверджую, що я старше 18 років"
+
+#: ../shortcodes/upload-photo.php:1019
+msgid "I have read and accept Official contest rules"
+msgstr "Я прочитав (ла) та приймаю офіційні правила конкурсу"
+
+#: ../shortcodes/upload-photo.php:1022
+#, php-format
+msgid ""
+"I have read and accept <a href=\"%s\" target=\"_blank\">Official contest "
+"rules</a>"
+msgstr ""
+"Я прочитав (ла) та приймаю <a href=\"%s\" target=\"_blank\">офіційні правила "
+"конкурсу</a>"
+
+#: ../shortcodes/upload-photo.php:1080 ../shortcodes/upload-photo.php:1082
+msgid "Submit Photo"
+msgstr "Надіслати фотографію"
+
+#: ../shortcodes/upload-photo.php:1101
+msgid ""
+"You are not logged in. Only registered users can participate in the contest. "
+"Please log in or sign up to continue!"
+msgstr ""
+
+#: ../views/admin.php:374
+msgid "I agree to the processing of my personal data"
+msgstr ""
+
+#: ../views/admin.php:380
+#, fuzzy
+#| msgid "Thank you for your photo!"
+msgid "Thank you for your registration!"
+msgstr "Дякуємо за ваше фото!"
+
+#: ../views/admin.php:383
+#, fuzzy
+#| msgid "The image has not been approved yet!"
+msgid "Your image was approved!"
+msgstr "Зображення ще не схвалено!"
+
+#: ../views/admin.php:386
+msgid ""
+"Your image \"{PHOTO-NAME}\" in the contest <a href=\"{CONTEST-"
+"URL}\">{CONTEST-NAME}</a> was approved!"
+msgstr ""
+
+#: ../views/admin.php:404 ../views/admin.php:431 ../views/contests.php:293
+#: ../views/jury.php:261
+msgid "Basic Settings"
+msgstr "Основні налаштування"
+
+#: ../views/admin.php:409
+msgid "Voting Settings"
+msgstr "Налаштування голосування"
+
+#: ../views/admin.php:414
+msgid "Emails and Notifications"
+msgstr "Електронні листи та сповіщення"
+
+#: ../views/admin.php:419
+msgid "Menu"
+msgstr "Меню"
+
+#: ../views/admin.php:424
+msgid "Integrations"
+msgstr ""
+
+#: ../views/admin.php:435
+msgid "Image File Size Limit"
+msgstr "Обмеження розміру файлу зображення"
+
+#: ../views/admin.php:435
+msgid "Your server/hosting limit is"
+msgstr "Обмеження вашого серверу / хостингу є"
+
+#: ../views/admin.php:507
+msgid "Max Image Width"
+msgstr "Максимальна ширина зображення"
+
+#: ../views/admin.php:507 ../views/admin.php:618
+msgid "All images above this size will be automatically resized"
+msgstr "Усі зображення вище цього розміру будуть автоматично змінені"
+
+#: ../views/admin.php:512 ../views/admin.php:623 ../views/admin.php:785
+#: ../views/admin.php:901 ../views/admin.php:1637 ../views/admin.php:1807
+msgid "(Recommended)"
+msgstr "(Рекомендовано)"
+
+#: ../views/admin.php:618
+msgid "Max Image Height"
+msgstr "Максимальна довжина зображення"
+
+#: ../views/admin.php:729
+#, fuzzy
+#| msgid "Allow skLib Lightbox"
+msgid "Allow Lightbox"
+msgstr "Дозволити skLib Lightbox"
+
+#: ../views/admin.php:737 ../views/admin.php:783 ../views/admin.php:836
+#: ../views/admin.php:853 ../views/admin.php:1014 ../views/admin.php:1056
+#: ../views/admin.php:1130 ../views/admin.php:1154 ../views/admin.php:1178
+#: ../views/admin.php:1500 ../views/admin.php:1524 ../views/admin.php:1578
+#: ../views/admin.php:1647 ../views/admin.php:1816 ../views/contests.php:476
+#: ../views/contests.php:518 ../views/contests.php:1034
+msgid "No"
+msgstr "Ні"
+
+#: ../views/admin.php:746 ../views/admin.php:757 ../views/admin.php:774
+#: ../views/admin.php:827 ../views/admin.php:1047 ../views/admin.php:1121
+#: ../views/admin.php:1145 ../views/admin.php:1169 ../views/admin.php:1491
+#: ../views/admin.php:1515 ../views/admin.php:1569 ../views/admin.php:1635
+#: ../views/contests.php:529 ../views/contests.php:1025
+msgid "Yes"
+msgstr "Так"
+
+#: ../views/admin.php:748
+msgid "(Lightbox without jquery.min.js file - Try this option first)"
+msgstr "(Lightbox без файлу jquery.min.js - спочатку спробуйте цю опцію)"
+
+#: ../views/admin.php:759
+msgid ""
+"(Lightbox with jquery.min.js - This setup can create conflict with your "
+"theme or other plugins)"
+msgstr ""
+"(Lightbox з jquery.min.js - ця установка може спричинити конфлікти з вашою "
+"темою або іншими плагінами)"
+
+#: ../views/admin.php:766
+msgid "Automatically activate uploaded images"
+msgstr "Автоматично активувати завантажені зображення"
+
+#: ../views/admin.php:793
+msgid "Show Frontend Admin Bar"
+msgstr "Показатм панель адміністрування інтерфейсу"
+
+#: ../views/admin.php:801
+msgid "Show"
+msgstr "Показати"
+
+#: ../views/admin.php:810
+msgid "Hide"
+msgstr "Приховати"
+
+#: ../views/admin.php:812
+msgid "(Excerpt Admin) (Higly Recommended)"
+msgstr "(Крім адміністратора) (дуже рекомендується)"
+
+#: ../views/admin.php:819
+msgid "Allow menu and gallery animation"
+msgstr "Дозволити меню й анімацію галереї"
+
+#: ../views/admin.php:827
+msgid "(It is pure CSS animation)"
+msgstr "(Це чиста CSS анімація)"
+
+#: ../views/admin.php:842
+msgid "Comments"
+msgstr "Коментарі"
+
+#: ../views/admin.php:845
+msgid "Allow Comment Box"
+msgstr "Дозволити коментарі"
+
+#: ../views/admin.php:862
+msgid "Allow Disqus Comments"
+msgstr "Дозволити коментарі до відгуку"
+
+#: ../views/admin.php:867 ../views/admin.php:884
+msgid "(Tutorial)"
+msgstr "(Інструкція)"
+
+#: ../views/admin.php:875
+msgid "Allow WordPress Comments"
+msgstr "Дозволити WordPress коментарі"
+
+#: ../views/admin.php:882
+msgid "Disqus Code"
+msgstr "Disqus код"
+
+#: ../views/admin.php:890
+msgid "Typography"
+msgstr "Типографія"
+
+#: ../views/admin.php:893
+#, fuzzy
+#| msgid "Font Size"
+msgid "Font"
+msgstr "Колір шрифту"
+
+#: ../views/admin.php:901
+msgid "Oswald"
+msgstr ""
+
+#: ../views/admin.php:910
+msgid "Work Sans"
+msgstr ""
+
+#: ../views/admin.php:919
+#, fuzzy
+#| msgid "Photo Contest"
+msgid "Roboto Condensed"
+msgstr "Фотоконкурс"
+
+#: ../views/admin.php:928
+msgid "Noto Sans"
+msgstr ""
+
+#: ../views/admin.php:937
+msgid "Noto Serif"
+msgstr ""
+
+#: ../views/admin.php:946
+msgid "Default"
+msgstr ""
+
+#: ../views/admin.php:946
+msgid "(Default font from your theme will be used)"
+msgstr "(Буде використано шрифт за умовчанням із вашої теми)"
+
+#: ../views/admin.php:953
+msgid "Font Size"
+msgstr "Колір шрифту"
+
+#: ../views/admin.php:961
+msgid "Normal"
+msgstr "Стандартний"
+
+#: ../views/admin.php:970
+msgid "Big"
+msgstr "Великий"
+
+#: ../views/admin.php:979
+msgid "Bigger"
+msgstr "Більший"
+
+#: ../views/admin.php:985
+msgid "Security"
+msgstr "Безпека"
+
+#: ../views/admin.php:988
+msgid "Allow reCaptcha"
+msgstr "Дозволити reCaptcha"
+
+#: ../views/admin.php:996
+msgid "Yes - For Everyone"
+msgstr "Так - Для всіх"
+
+#: ../views/admin.php:1005
+msgid "Yes - But the reCaptcha will be hidden for Admins"
+msgstr "Так - Але reCaptcha буде приховано для адміністраторів"
+
+#: ../views/admin.php:1021
+msgid "reCaptcha Site Key"
+msgstr "Ключ сайта reCaptcha"
+
+#: ../views/admin.php:1028
+msgid "reCaptcha Secret Key"
+msgstr "Секретний ключ reCaptcha"
+
+#: ../views/admin.php:1034
+msgid "GDPR - General Data Protection Regulation"
+msgstr ""
+
+#: ../views/admin.php:1036
+msgid ""
+"The General Data Protection Regulation (GDPR) (EU) 2016/679 is a regulation "
+"in EU law on data protection and privacy for all individuals within the "
+"European Union (EU) and the European Economic Area (EEA). It also addresses "
+"the export of personal data outside the EU and EEA. The GDPR aims primarily "
+"to give control to citizens and residents over their personal data and to "
+"simplify the regulatory environment for international business by unifying "
+"the regulation within the EU."
+msgstr ""
+
+#: ../views/admin.php:1039
+msgid "Allow GDPR confirmation box"
+msgstr ""
+
+#: ../views/admin.php:1063
+msgid "GDPR text (for checkbox)"
+msgstr ""
+
+#: ../views/admin.php:1070
+msgid "GDPR Privacy Notice"
+msgstr ""
+
+#: ../views/admin.php:1071
+msgid ""
+"The area for your privacy notice text or if it is too long add html link to "
+"your privacy notice page with target _blank"
+msgstr ""
+
+#: ../views/admin.php:1080 ../views/admin.php:1475 ../views/admin.php:1824
+#: ../views/admin.php:1921 ../views/admin.php:2011 ../views/contests.php:1314
+msgid "Save Changes"
+msgstr "Зберегти зміни"
+
+#: ../views/admin.php:1086
+msgid "Vote Settings"
+msgstr "Налаштування голосування"
+
+#: ../views/admin.php:1089
+msgid "Who can vote"
+msgstr "Хто може голосувати"
+
+#: ../views/admin.php:1097
+msgid "Registered Users"
+msgstr "Зареєстровані користувачі"
+
+#: ../views/admin.php:1106
+msgid "Everyone"
+msgstr "Всі"
+
+#: ../views/admin.php:1113
+msgid "Confirm votes from guests by email?"
+msgstr "Підтверджувати голоси від гостей електронним листом?"
+
+#: ../views/admin.php:1137
+msgid "Can author vote for own photo?"
+msgstr "Чи може автор голосувати за власне фото?"
+
+#: ../views/admin.php:1161
+msgid "Redirect the user to Share page after vote?"
+msgstr ""
+"Перенаправити користувача на сторінку \"Поділитися\" після голосування?"
+
+#: ../views/admin.php:1185
+msgid "Vote button color"
+msgstr "Колір кнопки голосування"
+
+#: ../views/admin.php:1274
+msgid "Use Icon in Vote Button"
+msgstr "Використовуйте значок для кнопки \"Голосування\""
+
+#: ../views/admin.php:1282
+msgid "No Icon"
+msgstr "Немає значку"
+
+#: ../views/admin.php:1352
+msgid "Vote text"
+msgstr "Текст голосування"
+
+#: ../views/admin.php:1360 ../views/admin.php:1414 ../views/admin.php:1455
+msgid "Standart text"
+msgstr "Стандартний текст"
+
+#: ../views/admin.php:1387
+msgid "No text at all"
+msgstr "Немає тексту взагалі"
+
+#: ../views/admin.php:1398 ../views/admin.php:1432 ../views/admin.php:1464
+msgid "your text"
+msgstr "свій текст"
+
+#: ../views/admin.php:1407
+msgid "Vote text after Vote"
+msgstr "Текст голосу після голосування"
+
+#: ../views/admin.php:1443
+msgid "Settings for a 5-star and 10-star rating mode"
+msgstr ""
+
+#: ../views/admin.php:1448
+msgid "Text after rating"
+msgstr ""
+
+#: ../views/admin.php:1483
+msgid ""
+"Automatically send email nofitication (to admin) when new contest image is "
+"uploaded"
+msgstr ""
+"Автоматично надсилати електронне повідомлення (до адміністратора) про "
+"завантаження нового зображення в конкурс"
+
+#: ../views/admin.php:1507
+msgid ""
+"Automatically send email nofitication (to admin) about new user registration"
+msgstr ""
+"Автоматично надсилати електронне повідомлення (до адміністратора) про "
+"реєстрацію нового користувача"
+
+#: ../views/admin.php:1532
+msgid "Email address for notifications (for admin)"
+msgstr "Електронна адреса для сповіщень (для адміністратора)"
+
+#: ../views/admin.php:1540
+msgid "Standard admin email address"
+msgstr "Стандартна електронна адреса адміністратора"
+
+#: ../views/admin.php:1549
+msgid "alternative@email.tld"
+msgstr "alternative@email.tld"
+
+#: ../views/admin.php:1558
+msgid "Notification email after image approval"
+msgstr "Повідомлення електронної пошти після схвалення зображення"
+
+#: ../views/admin.php:1561
+msgid "Send notification email (to user) after image approval"
+msgstr ""
+"Надсилати електронне сповіщення (користувачеві) після схвалення зображення"
+
+#: ../views/admin.php:1585 ../views/admin.php:1741
+msgid "Subject (Email Title)"
+msgstr "Тема (Назва електронної пошти)"
+
+#: ../views/admin.php:1592 ../views/admin.php:1756
+msgid "Email Body"
+msgstr "Тіло електронного листа"
+
+#: ../views/admin.php:1614 ../views/admin.php:1778
+msgid ""
+"If you add an image to the email it should be secured by SSL (hosted on "
+"https://) otherwise the email can be stopped!"
+msgstr ""
+"Якщо ви додаєте зображення до електронного листа, воно повинне бути "
+"захищеним SSL (розміщеним на https: //), інакше надсилання може бути "
+"зупинено!"
+
+#: ../views/admin.php:1615
+msgid ""
+"{PHOTO-NAME},{CONTEST-URL} and {CONTEST-NAME} will be autoamtically replaced "
+"for real Photo name, Contest URL and Contest name"
+msgstr ""
+"{PHOTO-NAME}, {CONTEST-URL} і {CONTEST-NAME} буде автоматично замінено на "
+"справжню назву фотографії, URL-адресу конкурсу та назву конкурсу."
+
+#: ../views/admin.php:1617 ../views/admin.php:1781
+msgid "Example:"
+msgstr "Приклад:"
+
+#: ../views/admin.php:1624
+msgid "Welcome email"
+msgstr "Привітальний електронний лист"
+
+#: ../views/admin.php:1627
+msgid "Allow custom \"Welcome email\""
+msgstr "Дозволити \"Привітальний електронний лист\""
+
+#: ../views/admin.php:1654
+msgid "Menu background color"
+msgstr "Колір фону меню"
+
+#: ../views/admin.php:1749
+msgid "Headline"
+msgstr "Заголовок"
+
+#: ../views/admin.php:1779
+#, fuzzy
+#| msgid ""
+#| "{PHOTO-NAME},{CONTEST-URL} and {CONTEST-NAME} will be autoamtically "
+#| "replaced for real Photo name, Contest URL and Contest name"
+msgid ""
+"{USER-NAME},{CONTEST-URL} and {CONTEST-NAME} will be autoamtically replaced "
+"for real Username, Contest URL and Contest name"
+msgstr ""
+"{PHOTO-NAME}, {CONTEST-URL} і {CONTEST-NAME} буде автоматично замінено на "
+"справжню назву фотографії, URL-адресу конкурсу та назву конкурсу."
+
+#: ../views/admin.php:1788
+msgid "Send login details with \"Welcome\" email?"
+msgstr "Надіслати інформацію про авторизацію привітальним електронним листом?"
+
+#: ../views/admin.php:1796
+msgid "Yes, send direct password"
+msgstr ""
+
+#: ../views/admin.php:1805
+msgid "Yes, but not password directly only \"generate password\" link."
+msgstr ""
+"Так, ален не пароль безпосередньо, а лише посилання «згенерувати пароль»."
+
+#: ../views/admin.php:1829
+msgid "Menu settings"
+msgstr "Настройки меню"
+
+#: ../views/admin.php:1831
+msgid ""
+"Menu color and style you can set for every contest differently in contest "
+"settings."
+msgstr ""
+"Колір і стиль меню, які можна налаштувати для кожного конкурсу по-різному в "
+"налаштуваннях конкурсу."
+
+#: ../views/admin.php:1835
+#, fuzzy
+#| msgid "Menu Color"
+msgid "Menu layout"
+msgstr "Колір меню"
+
+#: ../views/admin.php:1844
+#, fuzzy
+#| msgid "Menu Color"
+msgid "Menu layout 1"
+msgstr "Колір меню"
+
+#: ../views/admin.php:1852
+#, fuzzy
+#| msgid "Menu Color"
+msgid "Menu layout 2"
+msgstr "Колір меню"
+
+#: ../views/admin.php:1858
+msgid "Mobile Menu"
+msgstr "Мобільне меню"
+
+#: ../views/admin.php:1859
+msgid ""
+"Some WordPress themes have javascripts for animation. This animation block "
+"CSS selector :target so instead of opening menu (on mobile devices) create "
+"slide animation. If you have this issue you have two options. Option one is "
+"disable this animation in your theme and for option two is possible to use "
+"jQuery menu opening script."
+msgstr ""
+"Деякі теми WordPress мають JavaScript для анімації. Цей блок анімації CSS "
+"selector: :target тому замість того, щоб відкрити меню (на мобільних "
+"пристроях), створіть анімацію слайдів. Якщо у вас є ця проблема, у вас є два "
+"варіанти. Перший варіант - вимкнути цю анімацію у вашій темі, а для другого "
+"варіанту можна використовувати скрипт відкриття меню jQuery."
+
+#: ../views/admin.php:1869
+msgid "Open mobile menu using CSS"
+msgstr "Відкрити мобільне меню, використовуючи CSS"
+
+#: ../views/admin.php:1877
+msgid "Open mobile menu using jQuery"
+msgstr "Відкрити мобільне меню, використовуючи jQuery"
+
+#: ../views/admin.php:1885
+msgid "Change text \"Gallery\""
+msgstr "Змінити текст \"Галереї\""
+
+#: ../views/admin.php:1892
+msgid "Change text \"Upload Photo\""
+msgstr "Змінити текст \"Завантажених зображень\""
+
+#: ../views/admin.php:1899
+msgid "Change text \"Rules & Prizes\""
+msgstr "Змінити текст \"Правил і призів\""
+
+#: ../views/admin.php:1906
+msgid "Change text \"Your Images\""
+msgstr "Змінити текст \"Ваших зображень\""
+
+#: ../views/admin.php:1913
+msgid "Change text \"Top 10\""
+msgstr "Змінити текст \"Топ 10\""
+
+#: ../views/admin.php:1926
+#, fuzzy
+#| msgid "Custom registration form fields"
+msgid "Login and registration form"
+msgstr "Поля для заповнення форм реєстрації"
+
+#: ../views/admin.php:1929
+#, fuzzy
+#| msgid "Thank you for your photo!"
+msgid "What to use for login and registration"
+msgstr "Дякуємо за ваше фото!"
+
+#: ../views/admin.php:1937
+msgid "Standard Photo Contest login and registration form"
+msgstr ""
+
+#: ../views/admin.php:1946
+msgid ""
+"3rd party plugin for login and registration. Please add shortcode for that "
+"form!"
+msgstr ""
+
+#: ../views/admin.php:1957
+msgid "Own code injection to the header section"
+msgstr ""
+
+#: ../views/admin.php:1959
+msgid ""
+"Be very careful. If you add code to the header section it must be properly "
+"coded! You must define attributes correctly. And please remember the code "
+"will be added to the header only where the gallery is. So if you need add "
+"code for every single post or page please use a special plugin for that."
+msgstr ""
+
+#: ../views/admin.php:1963
+msgid "Header Code"
+msgstr ""
+
+#: ../views/admin.php:1969
+msgid "BuddyPress integration"
+msgstr "BuddyPress інтеграція"
+
+#: ../views/admin.php:1980
+msgid "Show images after upload in activity stream"
+msgstr "Показати зображення після завантаження в потоці активності"
+
+#: ../views/admin.php:1987
+msgid ""
+"Show new comments in activity stream (works only with Wordpress comments)"
+msgstr ""
+"Показати нові коментарі в потоці активності (працює лише з коментарями "
+"Wordpress)"
+
+#: ../views/admin.php:1994
+msgid "After voting display info about vote in user activity stream"
+msgstr ""
+"Після голосування відображається інформація про голосування в потоці "
+"активності користувачів"
+
+#: ../views/admin.php:2005
+msgid "BuddyPress is NOT active. Activate and set BuddyPress first!"
+msgstr "BuddyPress НЕ активний. Встановіть і активуйте BuddyPress спочатку!"
+
+#: ../views/categories.php:20 ../views/categories.php:35
+#: ../views/categories.php:66 ../views/contests.php:56
+msgid "Error:"
+msgstr "Помилка:"
+
+#: ../views/categories.php:20 ../views/categories.php:149
+msgid "Create!"
+msgstr "Створити!"
+
+#: ../views/categories.php:35 ../views/categories.php:66
+msgid "\"Category name\" is required field!"
+msgstr "\"Назва категорії\" обов'язкове для заповнення!"
+
+#: ../views/categories.php:89
+#, fuzzy
+#| msgid "Images was successfully added to the contest"
+msgid "Category was successfuly deleted"
+msgstr "Зображення було успішно додано до конкурсу"
+
+#: ../views/categories.php:93
+#, fuzzy
+#| msgid "Images was successfully added to the contest"
+msgid "Category was successfuly edited"
+msgstr "Зображення було успішно додано до конкурсу"
+
+#: ../views/categories.php:100
+msgid "Create a new Category"
+msgstr "Створити нову категорію"
+
+#: ../views/categories.php:110 ../views/categories.php:111
+#: ../views/categories.php:170
+msgid "Category name"
+msgstr "Назва категорії"
+
+#: ../views/categories.php:117
+msgid "Category related to the contest"
+msgstr "Категорія, пов'язана з конкурсом"
+
+#: ../views/categories.php:164
+msgid "Edit Category"
+msgstr "Редагувати категорію"
+
+#: ../views/categories.php:182
+msgid "Category related to the contest *"
+msgstr "Категорія, пов'язана з конкурсом *"
+
+#: ../views/categories.php:192
+msgid "Edit!"
+msgstr "Редагувати!"
+
+#: ../views/categories.php:198
+msgid ""
+"* Field \"Category related to the contest\" can not be edited for several "
+"technical reasons. If you did mistake, delete the category and create a new "
+"one."
+msgstr ""
+"* Поле \"Категорія, пов'язана з конкурсом\" не може бути відредагована з "
+"кількох технічних причин. Якщо ви помилилися, видаліть категорію та створіть "
+"нову."
+
+#: ../views/categories.php:201
+msgid "List of Categories"
+msgstr "Список категорій"
+
+#: ../views/categories.php:206 ../views/categories.php:215
+#: ../views/categories.php:229 ../views/contests.php:81
+#: ../views/contests.php:95 ../views/contests.php:127 ../views/photos.php:563
+#: ../views/photos.php:586 ../views/photos.php:695
+msgid "ID"
+msgstr "ID"
+
+#: ../views/categories.php:207 ../views/categories.php:216
+#: ../views/categories.php:230 ../views/contests.php:83
+#: ../views/contests.php:97 ../views/contests.php:129
+msgid "Name"
+msgstr "Ім'я"
+
+#: ../views/categories.php:208 ../views/categories.php:217
+#: ../views/categories.php:231
+msgid "Related to contest"
+msgstr "Пов'язана з конкурсом"
+
+#: ../views/contests.php:53
+msgid "Create a new Contest"
+msgstr "Створити новий конкурс"
+
+#: ../views/contests.php:56
+msgid ""
+"This contest cannot be created because on selected page contest already "
+"exists"
+msgstr ""
+"Цей конкурс неможливо створити, оскільки на вибраній сторінці конкурс вже "
+"існує"
+
+#: ../views/contests.php:63
+msgid ""
+"The contest is created! Please add these contest shortcodes: "
+"<strong>[contest-menu][contest-page]</strong> to the page:"
+msgstr ""
+"Конкурс створено! Будь-ласка, додайте ці короткі коди конкурсу: <strong> "
+"[contest-menu] [contest-page] </ strong> на сторінку:"
+
+#: ../views/contests.php:66
+msgid "The contest is created! Now you can visit the contest:"
+msgstr "Конкурс створено! Тепер ви можете відвідати конкурс:"
+
+#: ../views/contests.php:80 ../views/contests.php:94 ../views/contests.php:122
+#: ../views/contests.php:125 ../views/jury.php:165 ../views/jury.php:175
+#: ../views/jury.php:203 ../views/jury.php:205 ../views/photos.php:572
+#: ../views/photos.php:595 ../views/photos.php:896
+msgid "Active"
+msgstr "Активний"
+
+#: ../views/contests.php:82 ../views/contests.php:96 ../views/contests.php:128
+msgid "Page ID"
+msgstr "ID сторінки"
+
+#: ../views/contests.php:84 ../views/contests.php:98 ../views/contests.php:130
+msgid "Contest Start"
+msgstr "Конкурс почався"
+
+#: ../views/contests.php:85 ../views/contests.php:99 ../views/contests.php:131
+msgid "Contest End"
+msgstr "Конкурс закінчився"
+
+#: ../views/contests.php:87 ../views/contests.php:101 ../views/contests.php:133
+msgid "Visit"
+msgstr "Відвідування"
+
+#: ../views/contests.php:135
+msgid "Do you want delete this contest? Are you sure?"
+msgstr "Ви дійсно впевнені, що хочете видалити цей конкурс?"
+
+#: ../views/contests.php:222 ../views/contests.php:232
+msgid "(This field is not active in this mode!)"
+msgstr "(Це поле не активне в цьому режимі!)"
+
+#: ../views/contests.php:236
+msgid ""
+"(Jury mode for this contest is active! Standard vote options for ordinary "
+"users or visitors are disabled )"
+msgstr ""
+
+#: ../views/contests.php:248
+msgid "Edit Contest"
+msgstr "Редагувати конкурс"
+
+#: ../views/contests.php:250 ../views/contests.php:253
+msgid "Contest mode"
+msgstr "Режим конкурсу"
+
+#: ../views/contests.php:254
+msgid ""
+"The contest can be set to three modes. The first mode is a just classic "
+"contest with all parts, the second mode is set as upload form with the menu "
+"in this mode is also enabled Rules and Prizes section and in the third mode "
+"is allowed only upload form. In the second and third mode is not possible to "
+"share images, it is not possible to vote, it is not possible tho show "
+"gallery, but you can switch between all three modes anytime you want."
+msgstr ""
+"Конкурс може бути встановлений у трьох режимах. Перший режим - це класичний "
+"конкурс з усіма частинами, другий режим встановлюється як форма для "
+"завантаження з меню, в цьому режимі також ввімкнено розділ \"Правила та Призи"
+"\", а в третьому режимі допускається тільки формат завантаження. У другому "
+"та третьому режимах неможливо ділитися зображеннями, неможливо голосувати і "
+"показувати галерею, але ви можете переключатися між усіма трьома режимами в "
+"будь-який час."
+
+#: ../views/contests.php:265
+msgid "Gallery mode"
+msgstr "Режим галереї"
+
+#: ../views/contests.php:265
+msgid "Classic contest with all sections, the menu and with the voting"
+msgstr "Класичний конкурс з усіма розділами, меню та з голосуванням"
+
+#: ../views/contests.php:276 ../views/contests.php:287
+msgid "Upload form mode"
+msgstr "Завантажте режим форми"
+
+#: ../views/contests.php:276
+msgid "With Menu"
+msgstr "З меню"
+
+#: ../views/contests.php:276
+msgid ""
+"In this mode only Upload Form, Menu and Rules & Prizes section will be "
+"visible"
+msgstr ""
+"У цьому режимі буде видно лише розділ \"Завантажити форму\", \"Меню\" та "
+"\"Правила та Призи\""
+
+#: ../views/contests.php:287
+msgid "Without Menu"
+msgstr "Без меню"
+
+#: ../views/contests.php:287
+msgid "In this mode only Upload Form will be visible"
+msgstr "У цьому режимі буде видно тільки Форма завантаження"
+
+#: ../views/contests.php:296 ../views/contests.php:297
+msgid "Name of the contest"
+msgstr "Назва конкурсу"
+
+#: ../views/contests.php:302
+msgid "Start date"
+msgstr "Дата початку"
+
+#: ../views/contests.php:303 ../views/contests.php:309
+#: ../views/contests.php:315 ../views/contests.php:321
+msgid "Select date"
+msgstr "Вибрати дату"
+
+#: ../views/contests.php:308
+msgid "End date"
+msgstr "Дата закінчення"
+
+#: ../views/contests.php:314
+msgid "Registration will end on:"
+msgstr "Реєстрація закінчиться:"
+
+#: ../views/contests.php:320
+msgid "Voting will begin on:"
+msgstr "Голосування розпочнеться о:"
+
+#: ../views/contests.php:326
+msgid "Primary Page"
+msgstr "Основна сторінка"
+
+#: ../views/contests.php:326 ../views/contests.php:1236
+msgid "(Required)"
+msgstr "(Обов'язково)"
+
+#: ../views/contests.php:333
+msgid "Important: Select Page!"
+msgstr "Важливо: виберіть сторінку!"
+
+#: ../views/contests.php:355
+msgid "Secondary page"
+msgstr "Вторинна сторінка"
+
+#: ../views/contests.php:359
+msgid "Select secondary page (optional)"
+msgstr "Виберіть додаткову сторінку (необов'язково)"
+
+#: ../views/contests.php:367
+msgid "==No page needed=="
+msgstr "== Не потрібна сторінка =="
+
+#: ../views/contests.php:384
+msgid "Third page"
+msgstr ""
+
+#: ../views/contests.php:384
+msgid "Use ID of the page"
+msgstr ""
+
+#: ../views/contests.php:393
+msgid "Users Settings"
+msgstr "Налаштування користувачів"
+
+#: ../views/contests.php:396
+msgid "Photos per User"
+msgstr "Фотографій на користувача"
+
+#: ../views/contests.php:449
+msgid "Unlimited"
+msgstr "Необмежений"
+
+#: ../views/contests.php:465
+msgid "Allow users to edit their own image"
+msgstr "Дозволити користувачам редагувати власне зображення"
+
+#: ../views/contests.php:487
+#, fuzzy
+#| msgid "Allow Edit the image"
+msgid "Allow to Edit the image"
+msgstr "Дозволити редагувати зображення"
+
+#: ../views/contests.php:498
+#, fuzzy
+#| msgid "Allow Edit and Delete the image"
+msgid "Allow to Edit and Delete the image"
+msgstr "Дозволити редагувати та видаляти зображення"
+
+#: ../views/contests.php:507
+#, fuzzy
+#| msgid "Custom registration form fields"
+msgid "Reguire registration before image upload"
+msgstr "Поля для заповнення форм реєстрації"
+
+#: ../views/contests.php:518
+msgid "(Default)"
+msgstr ""
+
+#: ../views/contests.php:537
+msgid "Layout"
+msgstr "Макет"
+
+#: ../views/contests.php:540
+msgid "Select Menu Style"
+msgstr "Вибрати стиль меню"
+
+#: ../views/contests.php:551
+#, fuzzy
+#| msgid "Menu Height 75%"
+msgid "Menu Height - Normal"
+msgstr "Висота меню 75%"
+
+#: ../views/contests.php:562
+#, fuzzy
+#| msgid "Menu Height 75%"
+msgid "Menu Height - Thin"
+msgstr "Висота меню 75%"
+
+#: ../views/contests.php:570
+msgid "Menu Color"
+msgstr "Колір меню"
+
+#: ../views/contests.php:660
+msgid "Gallery Grid Layout"
+msgstr "Галерея Сітки макету"
+
+#: ../views/contests.php:671
+msgid "Classic"
+msgstr "Класичний"
+
+#: ../views/contests.php:682 ../views/contests.php:693
+#: ../views/contests.php:704
+msgid "Modern"
+msgstr "Сучасний"
+
+#: ../views/contests.php:693
+msgid "With Lightbox"
+msgstr "З лайтбоксом"
+
+#: ../views/contests.php:704
+#, fuzzy
+#| msgid "With Lightbox"
+msgid "With Lightbox and vote button"
+msgstr "З лайтбоксом"
+
+#: ../views/contests.php:710
+#, fuzzy
+#| msgid "Gallery Grid Layout"
+msgid "Gallery layout color"
+msgstr "Галерея Сітки макету"
+
+#: ../views/contests.php:799
+msgid "Rows in the Gallery"
+msgstr "Рядки в Галереї"
+
+#: ../views/contests.php:862
+msgid "Columns in the Gallery"
+msgstr "Стовпчики в Галереї"
+
+#: ../views/contests.php:875
+msgid "- Recommended"
+msgstr "- Рекомендовано"
+
+#: ../views/contests.php:878
+msgid "- Only for wide pages"
+msgstr "- Тільки для широких сторінок"
+
+#: ../views/contests.php:881
+msgid "- Only for very wide pages"
+msgstr "- Тільки для дуже широких сторінок"
+
+#: ../views/contests.php:897
+#, fuzzy
+#| msgid "Primary Page"
+msgid "Primary gallery order"
+msgstr "Основна сторінка"
+
+#: ../views/contests.php:908
+#, fuzzy
+#| msgid "Contest"
+msgid "Latest"
+msgstr "Конкурс"
+
+#: ../views/contests.php:926
+msgid "Voting"
+msgstr "Голосування"
+
+#: ../views/contests.php:930
+msgid "How often should users vote!"
+msgstr "Як часто можуть голосувати користувачі!"
+
+#: ../views/contests.php:941
+msgid "Only one single vote"
+msgstr ""
+
+#: ../views/contests.php:952
+msgid "A rate mode - 5 stars rating"
+msgstr ""
+
+#: ../views/contests.php:963
+msgid "A rate mode - 10 stars rating"
+msgstr ""
+
+#: ../views/contests.php:974
+msgid ""
+"Once for each Photo (Like the \"Like button\" - Photo with most likes/votes "
+"wins)"
+msgstr ""
+
+#: ../views/contests.php:985
+msgid "Once a Day (Every new day) (for each Photo)"
+msgstr "Один раз на день (кожен новий день) (за кожне фото)"
+
+#: ../views/contests.php:996
+msgid "Twice a Day (Every 12 hours) (for each Photo)"
+msgstr "Двічі в день (кожних 12 годин) (за кожне фото)"
+
+#: ../views/contests.php:1007
+msgid "Once an Hour (for each Photo)"
+msgstr "Один раз в годину (за кожне фото)"
+
+#: ../views/contests.php:1016
+msgid "IP Address Vote Protection"
+msgstr "IP-адреса захисту голосу"
+
+#: ../views/contests.php:1025
+msgid "(Highly recommended!)"
+msgstr "(Дуже рекомендується!)"
+
+#: ../views/contests.php:1034
+msgid ""
+"(Choose this option only if you are in closed or private network (like "
+"company network) and all computers/devices have the same IP address!)"
+msgstr ""
+"(Виберіть цей параметр, лише якщо ви перебуваєте в закритій або приватній "
+"мережі (наприклад, у мережі компанії), а всі комп'ютери / пристрої мають "
+"однакову IP-адресу!)"
+
+#: ../views/contests.php:1042
+msgid "Manage the Content"
+msgstr "Керування контентом"
+
+#: ../views/contests.php:1051
+msgid "Hide Upload Section"
+msgstr "Сховати розділ завантаження"
+
+#: ../views/contests.php:1051 ../views/contests.php:1058
+#: ../views/contests.php:1065 ../views/contests.php:1072
+msgid "(Section will be still visible for Admins)"
+msgstr "(Секція буде як і раніше доступною для адміністраторів)"
+
+#: ../views/contests.php:1058
+msgid "Hide Top 10 Section"
+msgstr "Приховати секцію Toп 10"
+
+#: ../views/contests.php:1065
+msgid "Hide Your Image Section"
+msgstr "Приховати секцію Ваше зображення"
+
+#: ../views/contests.php:1072
+msgid "Hide Rules & Prizes Section"
+msgstr "Приховати секцію Правила та призи"
+
+#: ../views/contests.php:1079
+msgid "Hide Author's Name"
+msgstr "Приховати ім'я автора"
+
+#: ../views/contests.php:1079
+msgid "(Author's name will be still visible for Admins)"
+msgstr "(Ім'я автора все одно буде видимим для адміністраторів)"
+
+#: ../views/contests.php:1086 ../views/jury.php:318
+msgid "Hide Votes"
+msgstr "Приховати Голоси"
+
+#: ../views/contests.php:1086 ../views/jury.php:318
+msgid ""
+"(Votes, Top 10 and order by votes in Gallery will be hidden but still "
+"visible for Admins)"
+msgstr ""
+"(Голоси, Toп 10 і порядок за голосами в Галереї будуть приховані, але як і "
+"раніше відкриті для адміністраторів)"
+
+#: ../views/contests.php:1093
+msgid "Hide Views"
+msgstr "Приховати Перегляди"
+
+#: ../views/contests.php:1093
+msgid "(Views will be still visible for Admins)"
+msgstr "(Перегляди все одно будуть видимими для адміністраторів)"
+
+#: ../views/contests.php:1100
+msgid "Hide Login Button"
+msgstr "Приховати кнопку входу"
+
+#: ../views/contests.php:1107
+#, fuzzy
+#| msgid "Hide Upload Section"
+msgid "Hide Social Icons"
+msgstr "Сховати розділ завантаження"
+
+#: ../views/contests.php:1114
+msgid "Hide Select Bars and Search Bar in the gallery"
+msgstr ""
+
+#: ../views/contests.php:1120
+msgid "Manage Upload Form"
+msgstr "Керування формою завантаження"
+
+#: ../views/contests.php:1124
+msgid "Custom registration form fields"
+msgstr "Поля для заповнення форм реєстрації"
+
+#: ../views/contests.php:1125
+msgid ""
+"(This fields are connected to user so it is visible only during registration "
+"process. Already registered users can not see this fields)"
+msgstr ""
+"(Ці поля пов'язані з користувачем, тому їх видно лише під час реєстрації. "
+"Вже зареєстровані користувачі не можуть бачити ці поля)."
+
+#: ../views/contests.php:1154
+msgid "Zip/Postal code"
+msgstr "Індекс"
+
+#: ../views/contests.php:1161
+msgid "Only US"
+msgstr "Тільки США"
+
+#: ../views/contests.php:1175
+msgid "Gender (Male/Female)"
+msgstr "Стать (Чоловіча/ Жіноча)"
+
+#: ../views/contests.php:1182
+msgid "Gender (Male/Female/Other)"
+msgstr "Стать (Чоловіча/ Жіноча/Інша)"
+
+#: ../views/contests.php:1189
+msgid "Website/Blog/Gallery URL"
+msgstr "URL-адреса веб-сайту / блогу / галереї"
+
+#: ../views/contests.php:1196
+msgid "Phone number"
+msgstr "Номер телефону"
+
+#: ../views/contests.php:1226 ../views/contests.php:1238
+#: ../views/contests.php:1295
+msgid "Name of the field"
+msgstr "Назва поля"
+
+#: ../views/contests.php:1248
+msgid "I am over the age of 13 - checkbox"
+msgstr "Мені більше 13 років - прапорець"
+
+#: ../views/contests.php:1255
+msgid "I am over the age of 18  - checkbox"
+msgstr "Мені більше 18 років - прапорець"
+
+#: ../views/contests.php:1262
+msgid "I have read and accept official contest rules - checkbox"
+msgstr "Я прочитав (ла) і приймаю офіційні правила конкурсу - прапорець"
+
+#: ../views/contests.php:1270
+msgid "Custom image details form fields"
+msgstr "Поля для створення користувальницьких даних зображення"
+
+#: ../views/contests.php:1271
+msgid "(This fields are connected to uploaded image)"
+msgstr "(Ці поля пов'язані з завантаженим зображенням)"
+
+#: ../views/contests.php:1305
+msgid "Rules & Prizes!"
+msgstr "Правила та призи!"
+
+#: ../views/info.php:20
+msgid "Index"
+msgstr "Індекс"
+
+#: ../views/info.php:24
+msgid "Basic Info"
+msgstr "Основна інформація"
+
+#: ../views/info.php:26 ../views/info.php:81
+msgid "Disqus Comments - Video"
+msgstr "Відмовитись від коментарів - Відео"
+
+#: ../views/info.php:27 ../views/info.php:89
+msgid "Disqus Comments - Step by Step"
+msgstr "Відмовитись від коментарів - Крок за кроком"
+
+#: ../views/info.php:28
+msgid "Online documentation & Demo"
+msgstr "Онлайн документація та демонстрація"
+
+#: ../views/info.php:29
+msgid "Official page on Codecanyon"
+msgstr "Офіційна сторінка на Codecanyon"
+
+#: ../views/info.php:30
+msgid "Official Support Form"
+msgstr "Офіційна форма підтримки"
+
+#: ../views/info.php:36
+#, fuzzy
+#| msgid "Basic Info"
+msgid "Basic system info"
+msgstr "Основна інформація"
+
+#: ../views/info.php:38
+msgid "PHP version"
+msgstr ""
+
+#: ../views/info.php:39
+msgid "Plugin version"
+msgstr ""
+
+#: ../views/info.php:40
+#, fuzzy
+#| msgid "BuddyPress integration"
+msgid "WordPress version"
+msgstr "BuddyPress інтеграція"
+
+#: ../views/info.php:47
+#, fuzzy
+#| msgid "Create a Contest - Video"
+msgid "Create a Contest - Step by step"
+msgstr "Створити конкурс - відео"
+
+#: ../views/info.php:49
+msgid "Create a contest in the new WordPress Editor (Gutenberg)"
+msgstr ""
+
+#: ../views/info.php:51 ../views/info.php:60
+#, fuzzy
+#| msgid "Create a new Contest"
+msgid "Create a new page for the contest."
+msgstr "Створити новий конкурс"
+
+#: ../views/info.php:52
+msgid "Hit \"Add block\" (it is the Plus symbol in the Circle)"
+msgstr ""
+
+#: ../views/info.php:53
+msgid "In the field \"Search for a block\" type Photo Contest"
+msgstr ""
+
+#: ../views/info.php:54
+#, fuzzy
+#| msgid "Welcome to our Photo Contest!"
+msgid "Pick the block \"Photo Contest\""
+msgstr "Ласкаво просимо на наш фотоконкурс!"
+
+#: ../views/info.php:55 ../views/info.php:64 ../views/info.php:72
+msgid "Done!"
+msgstr ""
+
+#: ../views/info.php:58
+msgid "Create a contest in the old WordPress editor"
+msgstr ""
+
+#: ../views/info.php:61
+msgid ""
+"Hit button \"Add Photo Contest\" or add these two shortcodes to the text "
+"area <strong><code>[</code><code>contest-menu</code><code>]</code><code>[</"
+"code><code>contest-page</code><code>]</code></strong>."
+msgstr ""
+
+#: ../views/info.php:62
+msgid "Save the page and visit the page."
+msgstr ""
+
+#: ../views/info.php:63
+msgid ""
+"On the page you will find a form for creating a new contest, so fill the "
+"form."
+msgstr ""
+
+#: ../views/info.php:67
+#, fuzzy
+#| msgid "Create a new Contest"
+msgid "Create a contest in the Contests section"
+msgstr "Створити новий конкурс"
+
+#: ../views/info.php:69
+msgid "Go to admin area Photo Contest -> Contests section."
+msgstr ""
+
+#: ../views/info.php:70
+msgid ""
+"Set contest name in the \"Create a new contest\" form and fill the rest of "
+"the form."
+msgstr ""
+
+#: ../views/info.php:71
+#, fuzzy
+#| msgid "Create a Contest"
+msgid "Hit \"Create a contest\" buton."
+msgstr "Створити конкурс"
+
+#: ../views/info.php:92
+msgid "Create account on"
+msgstr "Створити обліковий запис на"
+
+#: ../views/info.php:93
+msgid ""
+"After register and login click Setting icon in top right corner and select "
+"\"Add Disqus To Site\""
+msgstr ""
+"Після реєстрації та входу натисніть кнопку «Налаштування» у верхньому "
+"правому куті та виберіть «Додати відмову до сайту»"
+
+#: ../views/info.php:94
+msgid "Click button \"Install on Your Site\" in top right corner"
+msgstr "Натисніть кнопку \"Встановити на свій сайт\" у верхньому правому куті"
+
+#: ../views/info.php:95
+msgid "Fill the Form and click \"Next\" button"
+msgstr "Заповніть форму та натисніть кнопку \"Далі\""
+
+#: ../views/info.php:96
+msgid ""
+"Pick one option \"My site is part of larger organization\" or \"My site is "
+"just a personal site\""
+msgstr ""
+"Виберіть один варіант \"Мій сайт є частиною більшої організації\" або \"Мій "
+"сайт є лише особистим сайтом\""
+
+#: ../views/info.php:97
+msgid "In this step just click \"Skip\" button"
+msgstr "На цьому кроці натисніть кнопку \"Пропустити\""
+
+#: ../views/info.php:98
+msgid "On page \"Choose your Platform\" select first option Universal Code"
+msgstr ""
+"На сторінці \"Виберіть свою платформу\" виберіть перший варіант "
+"\"Універсальний код\""
+
+#: ../views/info.php:99
+msgid "First select and after copy the code (Select CTRL+A and Copy CTRL+V)"
+msgstr ""
+"Спочатку виберіть,а потім скопіюйте код (виберіть CTRL + A і скопіюйте CTRL "
+"+ V)"
+
+#: ../views/info.php:100
+msgid ""
+"Go to your site to Photo Contest General setting page and put code to "
+"textarea \"Disqus Code\" and click \"Save changes\"</li>"
+msgstr ""
+"Переходьте на свій сайт до \"Загальні налаштування конкурсу фотографій\" та "
+"введіть код в текстову область \"Код відхилення\" та натисніть \"Зберегти "
+"зміни\" </ li>"
+
+#: ../views/jury.php:160 ../views/jury.php:257
+msgid ""
+"If you will allow Jury for the contest, You must understand that some of "
+"previous settings for voting will be ignored."
+msgstr ""
+"Якщо ви дозволите Журі для конкурсу, ви повинні розуміти, що деякі попередні "
+"налаштування голосування будуть проігноровані."
+
+#: ../views/jury.php:166 ../views/jury.php:176 ../views/jury.php:207
+msgid "Jury for"
+msgstr "Журі для"
+
+#: ../views/jury.php:167 ../views/jury.php:177 ../views/jury.php:208
+#: ../views/jury.php:266
+msgid "Allow the Jury"
+msgstr "Дозволити журі"
+
+#: ../views/jury.php:168 ../views/jury.php:178 ../views/jury.php:215
+msgid "Jury members"
+msgstr "Члени журі"
+
+#: ../views/jury.php:254
+msgid "Jury for the contest:"
+msgstr "Журі для конкурсу:"
+
+#: ../views/jury.php:277
+#, fuzzy
+#| msgid "Select the Contest"
+msgid "Select type of judging"
+msgstr "Вибрати конкурс"
+
+#: ../views/jury.php:283
+#, fuzzy
+#| msgid "Vote!"
+msgid "Vote"
+msgstr "Голосувати!"
+
+#: ../views/jury.php:290
+msgid "10 Star rating"
+msgstr ""
+
+#: ../views/jury.php:297
+msgid "Number of votes for each jury member"
+msgstr "Кількість голосів для кожного члена журі"
+
+#: ../views/jury.php:297
+msgid ""
+"(This number give votes to your jury members. Example if you set 3 votes, "
+"each member of the jury can vote 3 times (total) for 3 different images. If "
+"you set 1 vote, users can vote only once. One vote is the minimum.)"
+msgstr ""
+"(Це число дає голоси членам вашого журі. Наприклад, якщо ви встановите 3 "
+"голоси, кожен член журі може голосувати 3 рази (всього) за 3 різних "
+"зображення. Якщо ви встановили 1 голос, користувачі можуть голосувати лише "
+"один раз. Один голос - це мінімум.)"
+
+#: ../views/jury.php:299
+msgid "Numbers of votes (minimum is one)"
+msgstr "Кількість голосів (мінімум один)"
+
+#: ../views/jury.php:304
+msgid "Add new members to Jury"
+msgstr "Додати нового члена журі"
+
+#: ../views/jury.php:304
+msgid "(Add ID of the users separated by comma. Example 1,29,33,55)"
+msgstr "(Додати ID користувачів, розділених комами. Приклад 1,29,33,55)"
+
+#: ../views/jury.php:304
+msgid "Show users with their ID´s"
+msgstr "Показати користувачів з їхніми ID"
+
+#: ../views/jury.php:312
+msgid "Hide votes"
+msgstr "Приховати голоси"
+
+#: ../views/jury.php:335
+msgid "Members of the Jury"
+msgstr "Члени журі"
+
+#: ../views/jury.php:354
+msgid "There are no members yet"
+msgstr "Ще немає членів"
+
+#: ../views/photos.php:303
+msgid "Contest Photos"
+msgstr "Конкурсні фото"
+
+#: ../views/photos.php:306 ../views/votes.php:129
+msgid "Filters"
+msgstr "Фільтри"
+
+#: ../views/photos.php:313 ../views/votes.php:136
+msgid "Maximum Items per page"
+msgstr "Максимальна кількість елементів на сторінці"
+
+#: ../views/photos.php:402 ../views/photos.php:430
+msgid "Activated"
+msgstr "Активовано"
+
+#: ../views/photos.php:407
+msgid "Top Rated - 5 Stars"
+msgstr ""
+
+#: ../views/photos.php:413
+msgid "Worst Rated - 5 Stars"
+msgstr ""
+
+#: ../views/photos.php:419
+msgid "Top Rated - 10 Stars"
+msgstr ""
+
+#: ../views/photos.php:425
+msgid "Worst Rated - 10 Stars"
+msgstr ""
+
+#: ../views/photos.php:435
+msgid "Not Activated"
+msgstr "Не активовано"
+
+#: ../views/photos.php:452
+msgid "All Contests"
+msgstr "Усі конкурси"
+
+#: ../views/photos.php:515
+msgid "Export this to CSV!"
+msgstr "Експортуйте це в CSV!"
+
+#: ../views/photos.php:526
+msgid "Export Users data!"
+msgstr "Експортувати дані користувачів!"
+
+#: ../views/photos.php:540 ../views/votes.php:352
+msgid "Result(s)"
+msgstr "Результати"
+
+#: ../views/photos.php:547 ../views/votes.php:361
+msgid "There are no records yet!"
+msgstr "Записів поки немає!"
+
+#: ../views/photos.php:564 ../views/photos.php:587 ../views/photos.php:696
+msgid "Image"
+msgstr "Зображення"
+
+#: ../views/photos.php:565 ../views/photos.php:588 ../views/photos.php:697
+#: ../views/votes.php:584
+msgid "Info"
+msgstr "Інформація"
+
+#: ../views/photos.php:566 ../views/photos.php:589 ../views/photos.php:721
+#: ../views/photos.php:756 ../views/photos.php:760
+msgid "Author"
+msgstr "Автор"
+
+#: ../views/photos.php:567 ../views/photos.php:590 ../views/photos.php:765
+#: ../views/votes.php:381 ../views/votes.php:404 ../views/votes.php:532
+msgid "Contest"
+msgstr "Конкурс"
+
+#: ../views/photos.php:723
+#, fuzzy
+#| msgid "Edit Category"
+msgid "Edit user"
+msgstr "Редагувати категорію"
+
+#: ../views/photos.php:733
+msgid "Profile"
+msgstr "Профіль"
+
+#: ../views/photos.php:760
+msgid "This autor was deleted"
+msgstr "Цей автор був видалений"
+
+#: ../views/photos.php:785
+msgid "Uncatergorized"
+msgstr "Без категорії"
+
+#: ../views/photos.php:812
+#, fuzzy
+#| msgid "Voting"
+msgid "Votes/rating"
+msgstr "Голосування"
+
+#: ../views/photos.php:903
+msgid "Download"
+msgstr "Завантажити"
+
+#: ../views/photos.php:904
+msgid "Show in contest"
+msgstr "Показати в конкурсі"
+
+#: ../views/photos.php:905
+msgid "Who voted?"
+msgstr "Хто проголосував?"
+
+#: ../views/photos.php:906
+msgid "Do you want delete this image? Are you sure?"
+msgstr "Ви впевнені, що хочете видалити це зображення?"
+
+#: ../views/photos.php:929
+msgid "Activate selected photos"
+msgstr "Активувати вибрані фотографії"
+
+#: ../views/photos.php:930
+msgid "Deactivate selected photos"
+msgstr "Деактивувати вибрані фотографії"
+
+#: ../views/photos.php:931
+msgid "Do you want to delete selected photos? Are you sure!!?"
+msgstr "Ви впевнені, що хочете видалити це зображення!!?"
+
+#: ../views/photos.php:931
+msgid "Delete selected photos"
+msgstr "Видалити вибрані фотографії"
+
+#: ../views/votes.php:186
+msgid "Select a Country"
+msgstr "Вибрати країну"
+
+#: ../views/votes.php:203
+msgid "Search by email"
+msgstr "Пошук по електронній пошті"
+
+#: ../views/votes.php:206
+msgid "Example: info@domain.com"
+msgstr "Приклад: info@domain.com"
+
+#: ../views/votes.php:220 ../views/votes.php:226
+msgid "Select a Contest"
+msgstr "Вибрати конкурс"
+
+#: ../views/votes.php:286
+msgid "Search by IP address"
+msgstr "Пошук за IP-адресою"
+
+#: ../views/votes.php:289
+msgid "Example: 176.192.159.215"
+msgstr "Приклад: 176.192.159.215"
+
+#: ../views/votes.php:300
+msgid "Search by photo ID"
+msgstr "Пошук по фото ID"
+
+#: ../views/votes.php:303
+msgid "Example: 314"
+msgstr "Приклад:314"
+
+#: ../views/votes.php:322
+msgid "Reset Filters"
+msgstr "Скинути фільтри"
+
+#: ../views/votes.php:325
+msgid "Export Results to CSV"
+msgstr "Експортувати результати до CSV"
+
+#: ../views/votes.php:328
+#, php-format
+msgid "Too much results for export: %s!"
+msgstr "Забагато результатів для експорту: %s!"
+
+#: ../views/votes.php:343
+msgid "Do you want to cleare whole log? Are you sure!!?"
+msgstr "Ви впевнені, що хочете очистити весь журнал?"
+
+#: ../views/votes.php:343
+msgid "Delete the whole Log"
+msgstr "Видалити весь журнал"
+
+#: ../views/votes.php:376 ../views/votes.php:399 ../views/votes.php:524
+msgid "Vote ID"
+msgstr "ID голосування"
+
+#: ../views/votes.php:377 ../views/votes.php:400 ../views/votes.php:525
+msgid "Photo ID"
+msgstr "ID фотографії"
+
+#: ../views/votes.php:378 ../views/votes.php:401 ../views/votes.php:526
+msgid "Item"
+msgstr "Пункт"
+
+#: ../views/votes.php:379 ../views/votes.php:402 ../views/votes.php:527
+msgid "Vote/Rate value"
+msgstr ""
+
+#: ../views/votes.php:380 ../views/votes.php:403 ../views/votes.php:531
+msgid "Voter"
+msgstr "Виборець"
+
+#: ../views/votes.php:383 ../views/votes.php:406 ../views/votes.php:534
+msgid "IP Address"
+msgstr "IP адреса"
+
+#: ../views/votes.php:385 ../views/votes.php:408 ../views/votes.php:536
+msgid "Date"
+msgstr "Дата"
+
+#: ../views/votes.php:386 ../views/votes.php:409 ../views/votes.php:537
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: ../views/votes.php:508
+#, fuzzy
+#| msgid "Reset the Contest"
+msgid "Remove this vote/rate"
+msgstr "Скинути конкурс"
+
+#: ../views/votes.php:510
+#, fuzzy
+#| msgid "This autor was deleted"
+msgid "This vote/rate was removed"
+msgstr "Цей автор був видалений"
+
+#: ../views/votes.php:573
+msgid "Delete selected records from the log"
+msgstr "Видалити вибрані записи з журналу"
+
+#: ../views/votes.php:586
+#, php-format
+msgid ""
+"Delete the whole Log: If you press the button \"Delete the whole Log\" you "
+"will delete all log records. However, it will be deleted only the log, not "
+"votes. If you want to reset (clear) votes just use <a href=\"%s\">the "
+"special tool for that</a>."
+msgstr ""
+"Видалити весь журнал: якщо натиснути кнопку \"Видалити весь журнал\", ви "
+"видалите всі записи журналу. Проте, буде видалено лише журнал, а не "
+"голосування. Якщо ви хочете скинути (очистити) голоси, просто використовуйте "
+"<a href=\"%s\">спеціальний інструмент для цього</a>."
+
+#: ../views/votes.php:587
+msgid ""
+"Delete selected records from the log: It will delete only records from the "
+"log not votes itself"
+msgstr ""
+"Видалити вибрані записи з журналу: видаляються лише записи з журналу, а не "
+"самі голоси"
+
+#: ../views/votes.php:588
+msgid ""
+"Too much results for export: The max. recommended limit for an export is 1000"
+msgstr ""
+"Забагато результатів для експорту: максимально рекомендований ліміт для "
+"експорту становить 1000"
+
+#, fuzzy
+#~| msgid "Select secondary page (optional)"
+#~ msgid "Select third page (optional)"
+#~ msgstr "Виберіть додаткову сторінку (необов'язково)"
+
+#~ msgid "To reset your password, visit the following address:"
+#~ msgstr "Щоб відновити свій пароль, перейдіть за такою адресою:"
+
+#~ msgid "Image type must be jpg, png or gif."
+#~ msgstr "Тип зображення повинен бути jpg, png або gif."
+
+#~ msgid "BuddyPress"
+#~ msgstr "BuddyPress"
+
+#~ msgid "Set BuddyPress integration."
+#~ msgstr "Встановити інтеграцію BuddyPress."
+
+#~ msgid ""
+#~ "If you will allow the Jury for the contest, You must understand that some "
+#~ "of previous settings for voting will be ignored."
+#~ msgstr ""
+#~ "Якщо ви дозволите Журі для конкурсу, ви повинні розуміти, що деякі "
+#~ "попередні налаштування голосування будуть проігноровані."
+
+#~ msgid "Send notification email to admin about new user registration"
+#~ msgstr "Надсилати сповіщення адміністратору про нову реєстрацію користувача"
+
+#~ msgid "New user registration on your site %s:"
+#~ msgstr "Реєстрація нового користувача на вашому сайті %s:"
+
+#~ msgid "Email: %s"
+#~ msgstr "Електронна пошта: %s"
+
+#~ msgid "You can check out the image on link below"
+#~ msgstr "Ви можете переглянути зображення за посиланням внизу"
+
+#~ msgid "[%s] - Photo Contest"
+#~ msgstr "[%s] - Фотоконкурс"
+
+#~ msgid "URL of your photo"
+#~ msgstr "URL-адреса вашого фото"
+
+#~ msgid "Allow IP Protection"
+#~ msgstr "Дозволити захист IP"
+
+#~ msgid ""
+#~ "(It is a good idea disable this protection if jury members are on the "
+#~ "same network as you are! So NO is recommended. )"
+#~ msgstr ""
+#~ "(Це гарна ідея - відключити цей захист, якщо члени журі знаходяться в тій "
+#~ "же мережі, що і ви! Так що ми рекомендуємо обрати НІ.)"
+
+#~ msgid "You cannot vote for this image twice!"
+#~ msgstr "Ви не можете проголосувати за це зображення двічі!"
+
+#~ msgid "by"
+#~ msgstr "по"
+
+#~ msgid "Photo URL"
+#~ msgstr "URL-адреса малюнка"
+
+#~ msgid "Font - Use recommended font OSWALD"
+#~ msgstr "Шрифт - використовуйте рекомендований шрифт OSWALD"
+
+#~ msgid "Menu Height 100%"
+#~ msgstr "Висота меню 100%"
+
+#~ msgid "Beta! NOT FULLY SUPPORTED do the test on your theme first!"
+#~ msgstr "Бета! НЕ підтримується повністю. Зробіть спершу тест на вашій темі!"
+
+#~ msgid "Only once (for each Photo)"
+#~ msgstr "Лише раз (за кожне фото)"
+
+#~ msgid "There are no contest at this time!"
+#~ msgstr "На даний час немає конкурсів!"
+
+#~ msgid "Create the contest first!"
+#~ msgstr "Створіть спочатку конкурс!"

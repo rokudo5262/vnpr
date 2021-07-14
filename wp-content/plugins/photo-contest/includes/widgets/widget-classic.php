@@ -1,0 +1,295 @@
+<?php
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+// Widget class
+class mm_wp_photocontest_widget extends WP_Widget {
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Widget Construct
+/*-----------------------------------------------------------------------------------*/
+
+function __construct() {
+parent::__construct(
+// Base ID of your widget
+'mm_wp_photocontest_widget', 
+
+// Widget name will appear in UI
+__('Photo Contest Widget - Classic', 'photo-contest'), 
+
+// Widget description
+array( 'description' => __( 'Widget displays photos from photo contest.', 'photo-contest' ), ) 
+);
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Display Widget
+/*-----------------------------------------------------------------------------------*/
+	
+public function widget( $args, $instance ) {
+	extract( $args );
+	// Our variables from the widget settings
+	$title = apply_filters('widget_title', $instance['title'] );
+	$order = $instance['order'];
+    $contest_id = $instance['contest_id'];
+    $post_per_page = $instance['per_page'];
+  
+	// Before widget (defined by theme functions file)
+	echo $before_widget;
+  
+
+	// Display the widget title if one was input
+  if ( $title )
+		echo $before_title . $title . $after_title;
+
+// Display widget
+  
+
+if(empty($order)){
+  
+  $args = array( 
+        'post_type'      => 'attachment', 
+        'posts_per_page' => $post_per_page, 
+        'post_status'    => 'any', 
+        'post_parent'    => null,
+        'orderby'        => 'post_date',
+	    'order'          => 'DESC',
+		'meta_query' => array(
+		    array(
+			'key' => 'contest-active',
+			'value' => '1'
+			),
+			array(
+			'key' => 'photo-related-to-contest',
+			'value' => $contest_id,
+			) 
+		)
+        );
+  
+  }else{
+  if($order=='date-down'){
+  $args = array( 
+        'post_type'      => 'attachment', 
+        'posts_per_page' => $post_per_page, 
+        'post_status'    => 'any', 
+        'post_parent'    => null,
+        'orderby'        => 'post_date',
+	    'order'          => 'DESC',
+		'meta_query' => array(
+		    array(
+			'key' => 'contest-active',
+
+			'value' => '1'
+			),
+			array(
+			'key' => 'photo-related-to-contest',
+			'value' => $contest_id,
+			) 
+		)
+        );
+  }elseif($order=='date-up'){
+  $args = array( 
+        'post_type'      => 'attachment', 
+        'posts_per_page' => $post_per_page, 
+        'post_status'    => 'any', 
+        'post_parent'    => null,
+        'orderby'        => 'post_date',
+	    'order'          => 'ASC',
+		'meta_query' => array(
+		    array(
+			'key' => 'contest-active',
+			'value' => '1'
+			),
+			array(
+			'key' => 'photo-related-to-contest',
+			'value' => $contest_id,
+			) 
+		)
+        );
+  }elseif($order=='points-down'){
+  $args = array( 
+        'post_type'      => 'attachment', 
+        'posts_per_page' => $post_per_page, 
+        'post_status'    => 'any', 
+        'post_parent'    => null,
+        'meta_query' => array(
+			array(
+			'key' => 'contest-active',
+			'value' => '1'
+			),
+			array(
+			'key' => 'photo-related-to-contest',
+			'value' => $contest_id,
+			) 
+		),
+        'meta_key'       => 'contest-photo-points',
+        'orderby'        => 'meta_value_num',
+	    'order'          => 'DESC'
+        );  
+  }elseif($order=='points-up'){
+  $args = array( 
+        'post_type'      => 'attachment', 
+        'posts_per_page' => $post_per_page, 
+        'post_status'    => 'any', 
+        'post_parent'    => null,
+        'meta_query' => array(
+			array(
+			'key' => 'contest-active',
+			'value' => '1'
+			),
+			array(
+			'key' => 'photo-related-to-contest',
+			'value' => $contest_id,
+			) 
+		),
+        'meta_key'       => 'contest-photo-points',
+        'orderby'        => 'meta_value_num',
+	    'order'          => 'ASC',
+        );
+	 }elseif($order=='rand'){
+ $args = array( 
+        'post_type'      => 'attachment', 
+        'posts_per_page' => $post_per_page, 
+        'post_status'    => 'any', 
+        'post_parent'    => null,
+        'meta_query' => array(
+			array(
+			'key' => 'contest-active',
+			'value' => '1'
+			),
+			array(
+			'key' => 'photo-related-to-contest',
+			'value' => $contest_id,
+			) 
+		),
+        'meta_key'       => 'contest-photo-points',
+        'orderby'        => 'rand',
+	    'order'          => 'ASC',
+        );
+  }
+}
+?>
+    <div id="photo-wrap" class="photo-wrap">
+<?php 
+
+$attachments = get_posts( $args );
+if ( $attachments ) {
+	foreach ( $attachments as $post ) {
+		
+        
+        $photo_active = get_post_meta($post->ID,'contest-active',true);
+        $photo_points = get_post_meta($post->ID,'contest-photo-points',true);
+        $blogurl = home_url('url');
+        
+   if($photo_active!=0){
+   $image_attributes = wp_get_attachment_image_src( $post->ID, 'gallery-middle-widget' );
+   global $wpdb;
+   $related_contest = $wpdb->get_row( "SELECT * FROM ".$wpdb->prefix."photo_contest_list WHERE id = ".$contest_id);
+   $link = get_permalink($related_contest->page_id);
+   $new_query = add_query_arg( array('contest' => 'photo-detail' , 'photo_id' => $post->ID), $link );
+   ?>
+   <div class="widget-contest-classic-div pop"><a data-test="full" class="photo-thumb" href="<?php echo $new_query; ?>"><img style="width:100%;" src="<?php echo $image_attributes[0]; ?>" /></a></div>
+   <?php
+    }
+  }
+}
+
+?>    
+    
+    
+    </div>      
+    <div class="clear"></div>
+<?php    	
+  //Display define after widget
+	echo $after_widget;
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Update Widget
+/*-----------------------------------------------------------------------------------*/
+	
+	public function update( $new_instance, $old_instance ) {
+  
+		$instance = $old_instance;
+    $instance['title']    = strip_tags( $new_instance['title'] );
+    $instance['order']    = $new_instance['order'];
+    $instance['contest_id']  = $new_instance['contest_id'];
+    $instance['per_page'] = $new_instance['per_page'];
+  	return $instance;
+	}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	Widget Settings (Displays the widget settings controls on the widget panel)
+/*-----------------------------------------------------------------------------------*/
+
+	public function form( $instance ) {
+	$title = isset($instance['title']) ? esc_attr($instance['title']) : 'Photo contest';
+	if (empty($instance['order'])) {
+       $order = "";
+     }else{
+       $order = $instance['order'];
+    }
+	if (empty($instance['contest_id'])) {
+       $contest_id = "";
+     }else{
+       $contest_id = $instance['contest_id'];
+     }
+  $per_page = isset($instance['per_page']) ? absint($instance['per_page']) : '5';  
+
+  $order_array = array(
+      'date-down'   => __('Newest', 'photo-contest'),
+      'date-up'     => __('Oldest', 'photo-contest'),
+      'points-down' => __('Most Voted', 'photo-contest'),
+      'points-up'   => __('Least Votes', 'photo-contest'),
+	  'rand'   => __('Random', 'photo-contest')
+  );
+  $per_page_array = array(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+  
+    ?>
+    <p>
+	  <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e('Title:', 'photo-contest') ?></label>
+      <input class="widefat" type="text" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo $title; ?>">
+    </p>
+    
+    <p>	
+      <label for="<?php echo $this->get_field_id( 'order' ); ?>"><?php _e('Sort By:', 'photo-contest') ?></label>
+      <select class="widefat" id="<?php echo $this->get_field_id( 'order' ); ?>" name="<?php echo $this->get_field_name( 'order' ); ?>">
+         <?php
+         foreach( $order_array as $key => $item ){ ?>
+			   <option <?php if($order == $key){ echo 'selected="selected"'; } ?> value="<?php echo $key; ?>"><?php echo $item; ?></option>
+        <?php } ?>
+      </select>
+	</p>
+    
+    <p>
+	  <label for="<?php echo $this->get_field_id( 'per_page' ); ?>"><?php _e('Number of Photos', 'photo-contest') ?></label>
+      <select class="widefat" id="<?php echo $this->get_field_id( 'per_page' ); ?>" name="<?php echo $this->get_field_name( 'per_page' ); ?>">
+         <?php
+         foreach( $per_page_array as $item ){ ?>
+			   <option <?php if($item == $per_page){ echo 'selected="selected"'; } ?> value="<?php echo $item; ?>"><?php echo $item; ?></option>
+        <?php } ?>
+      </select>
+	</p>
+    
+    <p>
+	  <label for="<?php echo $this->get_field_id( 'contest_id' ); ?>"><?php _e('Select Contest', 'photo-contest') ?></label>
+      <select class="widefat" id="<?php echo $this->get_field_id( 'contest_id' ); ?>" name="<?php echo $this->get_field_name( 'contest_id' ); ?>">
+         <?php
+		 global $wpdb;
+		 $sql= $wpdb->get_results("SELECT * FROM ".$wpdb->prefix."photo_contest_list ORDER BY id ASC");
+         foreach( $sql as $item ){ ?>
+			   <option <?php if($item->id == $contest_id){ echo 'selected="selected"'; } ?> value="<?php echo $item->id; ?>"><?php echo $item->contest_name; ?></option>
+        <?php } ?>
+      </select>
+		</p>
+    
+	<?php
+	}
+
+
+	 
+}//End class

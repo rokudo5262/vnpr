@@ -1,0 +1,11 @@
+@media (max-width: 840px) {
+	ul.pcmenu:target li{
+		display: block;
+	}
+	ul.pcmenu:target #toggle{
+		display: none;
+	}
+	ul.pcmenu:target #hide{
+		display: block;
+	}
+}

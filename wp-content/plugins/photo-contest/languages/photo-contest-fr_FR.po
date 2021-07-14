@@ -1,0 +1,3442 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-30 07:05+0100\n"
+"PO-Revision-Date: 2020-11-30 07:05+0100\n"
+"Last-Translator: Patrick PERRONO <instinct-photo.fr>\n"
+"Language-Team: Simple <info@themes4all.com>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-photo-contest-admin.php:160 ../class-photo-contest-admin.php:167
+#: ../views/admin.php:1480
+msgid "General Settings"
+msgstr "Réglages Généraux"
+
+#: ../class-photo-contest-admin.php:161 ../includes/pc-seo.php:33
+msgid "Photo Contest"
+msgstr "Concours Photo"
+
+#: ../class-photo-contest-admin.php:170 ../class-photo-contest-admin.php:171
+#: ../views/contests.php:75
+msgid "Contests"
+msgstr "Concours"
+
+#: ../class-photo-contest-admin.php:178 ../class-photo-contest-admin.php:179
+#: ../views/photos.php:540 ../views/photos.php:543
+msgid "Photos"
+msgstr "Photos"
+
+#: ../class-photo-contest-admin.php:186 ../class-photo-contest-admin.php:187
+msgid "Vote Log"
+msgstr "Journal de vote"
+
+#: ../class-photo-contest-admin.php:194 ../class-photo-contest-admin.php:195
+#: ../views/categories.php:17 ../views/categories.php:85
+msgid "Categories"
+msgstr "Catégories"
+
+#: ../class-photo-contest-admin.php:202 ../class-photo-contest-admin.php:203
+msgid "Juries"
+msgstr "Jurys"
+
+#: ../class-photo-contest-admin.php:210 ../class-photo-contest-admin.php:211
+#: ../includes/admin/pc-tools.php:102 ../views/photos.php:573
+#: ../views/photos.php:596 ../views/photos.php:901 ../views/votes.php:313
+msgid "Tools"
+msgstr "Outils"
+
+#: ../class-photo-contest-admin.php:218 ../class-photo-contest-admin.php:219
+#: ../views/info.php:16
+msgid "Info & Help"
+msgstr "Info & aide"
+
+#: ../class-photo-contest-admin.php:325 ../views/jury.php:169
+#: ../views/jury.php:179 ../views/jury.php:216 ../views/jury.php:217
+msgid "Settings"
+msgstr "Réglages"
+
+#: ../includes/admin/pc-add-images.php:122
+msgid "Bulk image upload"
+msgstr "Téléversement d'images en nombre"
+
+#: ../includes/admin/pc-add-images.php:124
+msgid ""
+"Titles of images are taken from the WordPress Media Library. You can change "
+"them or not"
+msgstr ""
+"Le titre des images est issu de la médiathèque WordPress. Vous pouvez les "
+"changer ou pas"
+
+#: ../includes/admin/pc-add-images.php:126
+msgid "Selected item(s) will be added to the contest:"
+msgstr "Le(s) élément(s) sélectionné(s) sera(ont) ajouté(s) au concours :"
+
+#: ../includes/admin/pc-add-images.php:152
+#: ../includes/admin/pc-add-images.php:154
+#: ../shortcodes/contest-profile.php:253
+msgid "Title"
+msgstr "Titre"
+
+#: ../includes/admin/pc-add-images.php:160
+#: ../includes/admin/pc-add-images.php:209 ../views/photos.php:569
+#: ../views/photos.php:592 ../views/photos.php:774 ../views/votes.php:382
+#: ../views/votes.php:405 ../views/votes.php:533
+msgid "Category"
+msgstr "Catégorie"
+
+#: ../includes/admin/pc-add-images.php:160
+#: ../includes/admin/pc-add-images.php:181
+#: ../includes/admin/pc-add-images.php:209
+#: ../includes/admin/pc-add-images.php:229
+msgid "Optional"
+msgstr "Facultatif"
+
+#: ../includes/admin/pc-add-images.php:164 ../views/votes.php:253
+#: ../views/votes.php:259
+msgid "Select a Category"
+msgstr "Sélectionner une catégorie"
+
+#: ../includes/admin/pc-add-images.php:181
+#: ../includes/admin/pc-add-images.php:229
+#: ../shortcodes/contest-profile.php:307 ../views/contests.php:1279
+msgid "Description"
+msgstr "Description"
+
+#: ../includes/admin/pc-add-images.php:189
+msgid "Min width or height for the contest is 350px!"
+msgstr "La hauteur ou largeur minimum pour le concours est 350 px !"
+
+#: ../includes/admin/pc-add-images.php:191
+msgid "This image already is in the some contest"
+msgstr "Cette image est déjà dans le concours"
+
+#: ../includes/admin/pc-add-images.php:229
+msgid "This image will be not added to the contest!"
+msgstr "Cette image ne sera pas ajoutée au concours !"
+
+#: ../includes/admin/pc-add-images.php:241
+msgid "Submit all photos to the contest!"
+msgstr "Soumettre toutes les photos au concours !"
+
+#: ../includes/admin/pc-admin-functions.php:99
+#: ../includes/admin/pc-admin-functions.php:103
+msgid "Add Photo Contest Shorcode"
+msgstr "Ajouter le code court de Concours Photo"
+
+#: ../includes/admin/pc-admin-functions.php:99
+#: ../includes/admin/pc-admin-functions.php:103
+msgid "Add Photo Contest"
+msgstr "Ajouter Concours Photo"
+
+#: ../includes/admin/pc-edit-user.php:34 ../views/contests.php:1133
+msgid "Date of birth"
+msgstr "Date de naissance"
+
+#: ../includes/admin/pc-edit-user.php:34 ../views/contests.php:302
+#: ../views/contests.php:308 ../views/contests.php:314
+#: ../views/contests.php:320
+msgid "(Format: MM/DD/YYYY)"
+msgstr "(Format : MM/JJ/AAAA)"
+
+#: ../includes/admin/pc-edit-user.php:38
+msgid "Blog/Gallery/Website"
+msgstr "Blog/Galerie/Site Web"
+
+#: ../includes/admin/pc-edit-user.php:42 ../views/contests.php:1140
+msgid "Address"
+msgstr "Adresse"
+
+#: ../includes/admin/pc-edit-user.php:46 ../views/contests.php:1147
+msgid "City"
+msgstr "Ville"
+
+#: ../includes/admin/pc-edit-user.php:50 ../views/contests.php:1161
+msgid "State"
+msgstr "Etat"
+
+#: ../includes/admin/pc-edit-user.php:58 ../views/contests.php:1168
+#: ../views/votes.php:384 ../views/votes.php:407 ../views/votes.php:535
+msgid "Country"
+msgstr "Pays"
+
+#: ../includes/admin/pc-edit-user.php:66
+msgid "Zip"
+msgstr "CP"
+
+#: ../includes/admin/pc-edit-user.php:70
+msgid "Phone"
+msgstr "Téléphone"
+
+#: ../includes/admin/pc-edit-user.php:75 ../includes/admin/pc-edit-user.php:93
+msgid "Gender"
+msgstr "Genre"
+
+#: ../includes/admin/pc-edit-user.php:75
+msgid "(two options)"
+msgstr "(deux options)"
+
+#: ../includes/admin/pc-edit-user.php:93
+msgid "(three options)"
+msgstr "(trois options)"
+
+#: ../includes/admin/pc-edit-user.php:115 ../views/contests.php:1203
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../includes/admin/pc-edit-user.php:119 ../views/contests.php:1210
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../includes/admin/pc-edit-user.php:123 ../views/contests.php:1217
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../includes/admin/pc-edit-user.php:134
+msgid "User agreed with GDPR on date:"
+msgstr "L'utilisateur a approuvé les conditions RGPD le :"
+
+#: ../includes/admin/pc-edit-user.php:134
+msgid "at the time:"
+msgstr "à cette heure :"
+
+#: ../includes/admin/pc-edit-user.php:136
+msgid "User did not agreed with GDPR conditions yet!"
+msgstr "L'utilisateur n'a pas encore approuvé les conditions RGPD !"
+
+#: ../includes/admin/pc-edit-user.php:180
+msgid "Custom optional form field"
+msgstr "Champ de formulaire facultatif personnalisé"
+
+#: ../includes/admin/pc-edit-user.php:183
+msgid "Custom required form field"
+msgstr "Champ de formulaire obligatoire personnalisé"
+
+#: ../includes/admin/pc-edit-user.php:211
+msgid "Total submitted photos in the contest"
+msgstr "Total des photos soumises au concours"
+
+#: ../includes/admin/pc-export-data.php:59
+msgid "No Data"
+msgstr "Aucune donnée"
+
+#: ../includes/admin/pc-export-data.php:77
+#: ../includes/admin/pc-export-data.php:262 ../views/photos.php:486
+#: ../views/votes.php:499
+msgid "Uncategorized"
+msgstr "Sans catégorie"
+
+#: ../includes/admin/pc-export-data.php:148
+#: ../includes/admin/pc-export-data.php:152 ../views/photos.php:643
+#: ../views/photos.php:645
+msgid "Male"
+msgstr "Homme"
+
+#: ../includes/admin/pc-export-data.php:149
+#: ../includes/admin/pc-export-data.php:153 ../views/photos.php:644
+#: ../views/photos.php:646
+msgid "Female"
+msgstr "Femme"
+
+#: ../includes/admin/pc-export-data.php:154 ../views/photos.php:647
+msgid "Other"
+msgstr "Autre"
+
+#: ../includes/admin/pc-export-data.php:242 ../views/votes.php:439
+msgid "Guest"
+msgstr "Invité"
+
+#: ../includes/admin/pc-export-data.php:253 ../views/votes.php:491
+msgid "Contest was deleted"
+msgstr "Le concours a été supprimé"
+
+#: ../includes/admin/pc-export-data.php:268
+#: ../includes/admin/pc-export-data.php:272
+#: ../includes/admin/pc-export-data.php:283 ../views/votes.php:474
+#: ../views/votes.php:483
+msgid "No data"
+msgstr "Aucune donnée"
+
+#: ../includes/admin/pc-tools.php:9
+msgid "There are no contests at this time!"
+msgstr "Il n'y pas pas encore de concours !"
+
+#: ../includes/admin/pc-tools.php:10 ../views/categories.php:20
+msgid "Create contest first!"
+msgstr "Créez d'abord un concours !"
+
+#: ../includes/admin/pc-tools.php:20 ../includes/admin/pc-tools.php:107
+msgid "Edit User"
+msgstr "Editer l'utilisateur"
+
+#: ../includes/admin/pc-tools.php:24 ../views/categories.php:89
+#: ../views/categories.php:93 ../views/contests.php:63 ../views/contests.php:66
+msgid "Success:"
+msgstr "Succès :"
+
+#: ../includes/admin/pc-tools.php:24
+msgid "User data was saved!"
+msgstr "Les informations utilisateur ont été sauvegardées !"
+
+#: ../includes/admin/pc-tools.php:28
+msgid "WordPress data"
+msgstr "Donnée WordPress"
+
+#: ../includes/admin/pc-tools.php:30
+msgid ""
+"Every contest user is a WordPress user. If you wanna change basic data like "
+"Nickname, email or password you must use basic WordPress user editor. Edit:"
+msgstr ""
+"Chaque utilisateur du concours est un utilisateur de WordPress. Si vous "
+"voulez changer des données de base comme le pseudo, l'e-mail ou le mot de "
+"passe, vous devez utiliser l'éditeur d'utilisateur WordPress de base. "
+"Editer :"
+
+#: ../includes/admin/pc-tools.php:37
+msgid "Contest Personal data"
+msgstr "Données personnelles du concours"
+
+#: ../includes/admin/pc-tools.php:40 ../includes/admin/pc-tools.php:89
+#: ../includes/menu/pc-menu-v1.php:116 ../includes/menu/pc-menu-v2.php:115
+#: ../shortcodes/contest-gallery-detail.php:334
+#: ../shortcodes/contest-profile.php:341 ../shortcodes/contest-profile.php:434
+#: ../views/categories.php:209 ../views/categories.php:218
+#: ../views/categories.php:232 ../views/contests.php:86
+#: ../views/contests.php:100 ../views/contests.php:132 ../views/photos.php:902
+msgid "Edit"
+msgstr "Editer"
+
+#: ../includes/admin/pc-tools.php:47
+msgid "Contest data"
+msgstr "Donnée du concours"
+
+#: ../includes/admin/pc-tools.php:52 ../includes/admin/pc-tools.php:131
+#: ../includes/admin/pc-tools.php:135 ../includes/admin/pc-tools.php:162
+#: ../includes/admin/pc-tools.php:251
+msgid "Select the Contest"
+msgstr "Sélectionner le concours"
+
+#: ../includes/admin/pc-tools.php:69 ../views/photos.php:688
+#: ../views/votes.php:517
+msgid "Select"
+msgstr "Sélectionner"
+
+#: ../includes/admin/pc-tools.php:83
+msgid "Edit user contest data"
+msgstr "Editer les données utilisateur du concours"
+
+#: ../includes/admin/pc-tools.php:110 ../includes/admin/pc-tools.php:228
+#: ../views/admin.php:1612 ../views/admin.php:1776 ../views/jury.php:160
+#: ../views/jury.php:257 ../views/photos.php:547 ../views/votes.php:361
+msgid "Notice:"
+msgstr "Remarque :"
+
+#: ../includes/admin/pc-tools.php:110
+msgid "User was not found!"
+msgstr "Utilisateur non trouvé !"
+
+#: ../includes/admin/pc-tools.php:116
+msgid "This tool will help you find and edit user by ID, Username or Email"
+msgstr ""
+"Cet outil vous aidera à trouver et à éditer l'utilisateur par ID, nom "
+"d'utilisateur ou e-mail"
+
+#: ../includes/admin/pc-tools.php:117
+msgid "State user ID, Username or Email"
+msgstr "Indiquez l'ID utilisateur, le nom d'utilisateur ou l'e-mail"
+
+#: ../includes/admin/pc-tools.php:120 ../views/photos.php:498
+msgid "Search"
+msgstr "Chercher"
+
+#: ../includes/admin/pc-tools.php:125
+msgid "Add images to the contest (Bulk upload)"
+msgstr "Ajouter des images au concours (téléversement en nombre)"
+
+#: ../includes/admin/pc-tools.php:148
+msgid "Select images to upload"
+msgstr "Sélectionner les images à téléverser"
+
+#: ../includes/admin/pc-tools.php:150
+msgid "For choosing more images at once hold CTRL or Shift key"
+msgstr ""
+"Pour choisir plus d'images à la fois, maintenez la touche CTRL ou Maj "
+"enfoncée"
+
+#: ../includes/admin/pc-tools.php:151
+msgid "Recommended maximum for bulk upload is 20 images at once"
+msgstr ""
+"Le maximum recommandé pour le téléversement en nombre est de 20 images à la "
+"fois"
+
+#: ../includes/admin/pc-tools.php:161
+msgid "Export Users Data"
+msgstr "Exporter les données des utilisateurs"
+
+#: ../includes/admin/pc-tools.php:182
+msgid "Export"
+msgstr "Exporter"
+
+#: ../includes/admin/pc-tools.php:200
+msgid "Email filter"
+msgstr "Filtre d'e-mail"
+
+#: ../includes/admin/pc-tools.php:204
+msgid "Allow email filter"
+msgstr "Autoriser le filtre d'e-mail"
+
+#: ../includes/admin/pc-tools.php:211
+msgid ""
+"This filter allows you to control registration in your contest and protect "
+"vote confirmation against disposable email services. The filter contains "
+"several thousands domains and it is developed by the community on Github. "
+"Full list of domains you can find here:"
+msgstr ""
+"Ce filtre vous permet de contrôler les inscriptions au concours et de "
+"protéger la confirmation de vote contre les services d'e-mail jetables. Le "
+"filtre contient plusieurs milliers de domaines et il est développé par la "
+"communauté sur Github. Vous pouvez trouver ici la liste complète des "
+"domaines :"
+
+#: ../includes/admin/pc-tools.php:219 ../views/jury.php:326
+msgid "Save"
+msgstr "Enregister"
+
+#: ../includes/admin/pc-tools.php:226
+msgid "Reset the Contest"
+msgstr "Réinitialiser le concours"
+
+#: ../includes/admin/pc-tools.php:228
+msgid ""
+"After you select the option \"Reset the Contest\" the action cannot be taken "
+"back."
+msgstr ""
+"Après avoir sélectionné l'option \"Réinitialiser le concours\", l'action ne "
+"peut plus être annulée."
+
+#: ../includes/admin/pc-tools.php:231
+msgid "Set reset mode"
+msgstr "Paramétrer le mode de réinitialisation"
+
+#: ../includes/admin/pc-tools.php:237
+msgid "Only votes and views count"
+msgstr "Seuls les votes et nombre de vues seront comptés"
+
+#: ../includes/admin/pc-tools.php:244
+msgid "Everything (Images, data, votes, views count)"
+msgstr "Tout (Images, données, votes, nombre de vues)"
+
+#: ../includes/admin/pc-tools.php:273
+msgid "Are you sure that you want to reset those data?!!!!"
+msgstr "Êtes-vous sûr de vouloir réinitialiser ces données !?"
+
+#: ../includes/admin/pc-tools.php:273
+msgid "Reset"
+msgstr "Réinitialiser"
+
+#: ../includes/menu/pc-menu-v1.php:125 ../includes/menu/pc-menu-v2.php:124
+msgid "Log in"
+msgstr "Se connecter"
+
+#: ../includes/menu/pc-menu-v1.php:127 ../includes/menu/pc-menu-v2.php:126
+#: ../shortcodes/contest-gallery-detail.php:376
+msgid "Log out"
+msgstr "Se déconnecter"
+
+#: ../includes/pc-BuddyPress.php:27
+#, php-format
+msgid ""
+"added a new <a href=\"%s\">comment</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"ajout d'un nouveau <a href=\"%s\">commentaire</a> dans <a href=\"%s"
+"\">Concours Photo</a>"
+
+#: ../includes/pc-BuddyPress.php:54
+#, php-format
+msgid ""
+"added a new <a href=\"%s\">photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"ajout d'une nouvelle <a href=\"%s\">photo</a> dans <a href=\"%s\">Concours "
+"Photo</a>"
+
+#: ../includes/pc-BuddyPress.php:79
+#, php-format
+msgid "rated <a href=\"%s\">a photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"Evaluer pour <a href=\"%s\"> une photo</a> dans <a href=\"%s\">Concours "
+"Photo</a>"
+
+#: ../includes/pc-BuddyPress.php:104
+#, php-format
+msgid "voted for <a href=\"%s\">photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"voté pour <a href=\"%s\">photo</a> dans <a href=\"%s\">Concours Photo</a>"
+
+#: ../includes/pc-basic-functions.php:117
+#: ../includes/pc-basic-functions.php:131
+#: ../includes/votes/pc-rate-function.php:327
+#: ../includes/votes/pc-rate-function.php:329
+#: ../shortcodes/contest-gallery.php:486 ../shortcodes/contest-gallery.php:494
+#: ../shortcodes/contest-profile.php:391 ../shortcodes/contest-profile.php:398
+msgid "Rating:"
+msgstr "Vote :"
+
+#: ../includes/pc-basic-functions.php:117
+#: ../includes/votes/pc-rate-function.php:327
+msgid "Not rated yet!"
+msgstr "Pas encore évalué !"
+
+#: ../includes/pc-basic-functions.php:161
+#: ../includes/votes/pc-rate-function.php:359
+msgid "rated"
+msgstr "évalué"
+
+#: ../includes/pc-basic-vote.php:30 ../includes/votes/pc-basic-vote-code.php:30
+#: ../includes/votes/pc-jury-rate-code.php:40
+#: ../includes/votes/pc-jury-vote-code.php:46
+#: ../includes/votes/pc-rate-code.php:31 ../shortcodes/contest-share.php:348
+msgid "Contest is finished!"
+msgstr "Le concours est terminé !"
+
+#: ../includes/pc-basic-vote.php:40 ../includes/votes/pc-basic-vote-code.php:40
+#: ../includes/votes/pc-jury-rate-code.php:51
+#: ../includes/votes/pc-jury-vote-code.php:58
+#: ../includes/votes/pc-rate-code.php:41
+msgid "day"
+msgstr "jour"
+
+#: ../includes/pc-basic-vote.php:42 ../includes/votes/pc-basic-vote-code.php:42
+#: ../includes/votes/pc-jury-rate-code.php:53
+#: ../includes/votes/pc-jury-vote-code.php:60
+#: ../includes/votes/pc-rate-code.php:43
+msgid "days"
+msgstr "jours"
+
+#: ../includes/pc-basic-vote.php:45 ../includes/votes/pc-basic-vote-code.php:45
+#: ../includes/votes/pc-jury-rate-code.php:56
+#: ../includes/votes/pc-jury-vote-code.php:63
+#: ../includes/votes/pc-rate-code.php:46
+msgid "hour"
+msgstr "heure"
+
+#: ../includes/pc-basic-vote.php:47 ../includes/votes/pc-basic-vote-code.php:47
+#: ../includes/votes/pc-jury-rate-code.php:58
+#: ../includes/votes/pc-jury-vote-code.php:65
+#: ../includes/votes/pc-rate-code.php:48
+msgid "hours"
+msgstr "heures"
+
+#: ../includes/pc-basic-vote.php:52 ../includes/pc-gallery-functions.php:34
+#: ../includes/votes/pc-basic-vote-code.php:52
+#: ../includes/votes/pc-rate-code.php:53
+msgid "You must be logged in to vote!"
+msgstr "Vous devez être connecté pour voter !"
+
+#: ../includes/pc-basic-vote.php:57 ../includes/votes/pc-basic-vote-code.php:57
+#: ../includes/votes/pc-jury-rate-code.php:61
+#: ../includes/votes/pc-jury-vote-code.php:68
+#: ../includes/votes/pc-rate-code.php:58
+msgid "Voting starts in:"
+msgstr "Le vote commence dans :"
+
+#: ../includes/pc-basic-vote.php:61 ../includes/votes/pc-basic-vote-code.php:61
+#: ../includes/votes/pc-jury-vote-code.php:73
+msgid "You can't vote for your image!"
+msgstr "Vous ne pouvez pas voter pour votre image !"
+
+#: ../includes/pc-basic-vote.php:83 ../includes/votes/pc-basic-vote-code.php:83
+msgid "The image has not been approved yet!"
+msgstr "Cette image n'a pas encore été approuvée !"
+
+#: ../includes/pc-basic-vote.php:110
+#: ../includes/votes/pc-basic-vote-code.php:110
+#: ../shortcodes/contest-gallery.php:383 ../views/admin.php:1361
+msgid "Vote for this photo!"
+msgstr "Votez pour cette photo !"
+
+#: ../includes/pc-basic-vote.php:112
+#: ../includes/votes/pc-basic-vote-code.php:112
+#: ../includes/votes/pc-jury-vote-code.php:103
+#: ../shortcodes/contest-gallery.php:385 ../views/admin.php:1369
+msgid "Vote!"
+msgstr "Votez !"
+
+#: ../includes/pc-basic-vote.php:114
+#: ../includes/votes/pc-basic-vote-code.php:114
+#: ../shortcodes/contest-gallery.php:387 ../views/admin.php:1378
+msgid "Vote Now!"
+msgstr "Votez maintenant !"
+
+#: ../includes/pc-basic-vote.php:120
+#: ../includes/votes/pc-basic-vote-code.php:120
+#: ../shortcodes/contest-gallery.php:393 ../views/admin.php:1414
+msgid "Thank you for vote!"
+msgstr "Merci d'avoir voté !"
+
+#: ../includes/pc-basic-vote.php:122
+#: ../includes/votes/pc-basic-vote-code.php:122
+#: ../shortcodes/contest-gallery.php:395 ../views/admin.php:1422
+msgid "Thank You!"
+msgstr "Merci !"
+
+#: ../includes/pc-basic-vote.php:172
+#: ../includes/votes/pc-basic-vote-code.php:172
+#: ../includes/votes/pc-rate-code.php:151 ../shortcodes/contest-share.php:324
+msgid "You have voted already"
+msgstr "Vous avez déjà voté"
+
+#: ../includes/pc-basic-vote.php:176
+#: ../includes/votes/pc-basic-vote-code.php:176
+#: ../includes/votes/pc-rate-code.php:155 ../shortcodes/contest-share.php:327
+msgid "Someone has already voted out of this IP address:"
+msgstr "Quelqu'un a déjà voté à partir de cette adresse IP :"
+
+#: ../includes/pc-basic-vote.php:180
+#: ../includes/votes/pc-basic-vote-code.php:180
+#: ../includes/votes/pc-rate-code.php:159 ../shortcodes/contest-share.php:333
+msgid "Someone voted out on this computer already!"
+msgstr "Quelqu'un a déjà voté sur cet ordinateur !"
+
+#: ../includes/pc-basic-vote.php:184
+#: ../includes/votes/pc-basic-vote-code.php:184
+msgid "You can vote only once!"
+msgstr "Vous ne pouvez voter qu'une seule fois !"
+
+#: ../includes/pc-create-contest.php:188 ../includes/pc-create-contest.php:240
+#: ../includes/pc-create-contest.php:365 ../views/info.php:25
+msgid "Create a Contest"
+msgstr "Créer un concours"
+
+#: ../includes/pc-create-contest.php:199 ../includes/pc-create-contest.php:201
+#: ../includes/pc-create-contest.php:270 ../includes/pc-create-contest.php:272
+msgid "Contest Name:"
+msgstr "Nom du concours :"
+
+#: ../includes/pc-create-contest.php:207 ../includes/pc-create-contest.php:306
+msgid "Contest Start:"
+msgstr "Début du concours :"
+
+#: ../includes/pc-create-contest.php:209 ../includes/pc-create-contest.php:217
+#: ../includes/pc-create-contest.php:225 ../includes/pc-create-contest.php:233
+#: ../includes/pc-create-contest.php:308 ../includes/pc-create-contest.php:316
+#: ../includes/pc-create-contest.php:324 ../includes/pc-create-contest.php:332
+msgid "MM/DD/YYYY"
+msgstr "MM/JJ/AAAA"
+
+#: ../includes/pc-create-contest.php:215 ../includes/pc-create-contest.php:314
+msgid "Contest End:"
+msgstr "Fin du concours :"
+
+#: ../includes/pc-create-contest.php:223 ../includes/pc-create-contest.php:322
+msgid "Vote begins:"
+msgstr "Début du vote :"
+
+#: ../includes/pc-create-contest.php:223 ../includes/pc-create-contest.php:322
+msgid ""
+"From this day can users vote. The date must be between \"Contest Start\" and "
+"\"Contest End\"."
+msgstr ""
+"A partir de cette date, les utilisateurs peuvent voter. La date doit se "
+"situer entre \"Début du concours\" et \"Fin du concours\"."
+
+#: ../includes/pc-create-contest.php:231 ../includes/pc-create-contest.php:330
+msgid "End of registration to the contest:"
+msgstr "Fin de l'inscription au concours :"
+
+#: ../includes/pc-create-contest.php:231 ../includes/pc-create-contest.php:330
+msgid "After this day users can not upload photos to the contest."
+msgstr ""
+"Après cette date, les utilisateurs ne peuvent plus téléverser de photos pour "
+"le concours."
+
+#: ../includes/pc-create-contest.php:252 ../includes/pc-create-contest.php:253
+#: ../includes/pc-create-contest.php:372
+msgid "Notice"
+msgstr "Remarque"
+
+#: ../includes/pc-create-contest.php:253 ../includes/pc-create-contest.php:372
+#, php-format
+msgid ""
+"Contest is not set up correctly. Please do visit <a href=\"%s\">General "
+"Settings</a> and set and save settings first. Thank You!"
+msgstr ""
+"Le concours n'est pas correctement configuré. Consultez <a href=\"%s"
+"\">Paramères Généraux</a> puis réglez et enregistrez les réglages au "
+"préalable. Merci !"
+
+#: ../includes/pc-create-contest.php:279 ../views/contests.php:326
+#: ../views/contests.php:355 ../views/contests.php:384
+msgid "Contest page"
+msgstr "Page du concours"
+
+#: ../includes/pc-create-contest.php:279
+msgid "Select a page where where will be the contest"
+msgstr "Sélectionnez une page où se déroulera le concours"
+
+#: ../includes/pc-create-contest.php:288
+msgid "NEW PAGE"
+msgstr "NOUVELLE PAGE"
+
+#: ../includes/pc-create-contest.php:289
+msgid "Create a new page"
+msgstr "Crér une nouvelle page"
+
+#: ../includes/pc-create-contest.php:292
+msgid "EXISTING PAGES"
+msgstr "PAGES EXISTANTES"
+
+#: ../includes/pc-create-contest.php:339
+msgid "Basic Settings or Duplicate Settings"
+msgstr "Réglages de base ou réglages dupliqués"
+
+#: ../includes/pc-create-contest.php:339
+msgid "Set basic settings or copy settings from a previous contest"
+msgstr ""
+"Définir les réglages de base ou copier les réglages d'un concours précédent"
+
+#: ../includes/pc-create-contest.php:344
+msgid "Set basic settings"
+msgstr "Définir les paramétres de base"
+
+#: ../includes/pc-create-contest.php:345
+msgid "Basic settings"
+msgstr "Réglages de base"
+
+#: ../includes/pc-create-contest.php:348
+msgid "Copy/Duplicate settings from a previous contest"
+msgstr "Copier/dupliquer les réglages d'un concours précédent"
+
+#: ../includes/pc-loginform.php:68 ../includes/pc-loginform.php:104
+#: ../includes/pc-loginform.php:106 ../shortcodes/upload-photo.php:124
+msgid "Log In"
+msgstr "Se connecter"
+
+#: ../includes/pc-loginform.php:72 ../includes/pc-loginform.php:74
+#: ../includes/pc-loginform.php:128 ../includes/pc-loginform.php:130
+#: ../includes/pc-registration.php:126 ../includes/pc-registration.php:131
+msgid "Username:"
+msgstr "Nom d'utilisateur :"
+
+#: ../includes/pc-loginform.php:80 ../includes/pc-loginform.php:82
+#: ../includes/pc-registration.php:126
+msgid "Password:"
+msgstr "Mot de passe :"
+
+#: ../includes/pc-loginform.php:91
+msgid "Remember Me"
+msgstr "Se rappeler de moi"
+
+#: ../includes/pc-loginform.php:124 ../includes/pc-loginform.php:160
+#: ../includes/pc-loginform.php:162
+msgid "Register"
+msgstr "S'inscrire"
+
+#: ../includes/pc-loginform.php:136 ../includes/pc-loginform.php:138
+msgid "Email:"
+msgstr "E-mail :"
+
+#: ../includes/pc-loginform.php:146
+msgid "Lost Password"
+msgstr "Mot de passe perdu"
+
+#: ../includes/pc-registration.php:70
+msgid "Hello Admin!"
+msgstr "Salut Admin !"
+
+#: ../includes/pc-registration.php:71
+#, php-format
+msgid "New user registration on your blog: %s:"
+msgstr "Enregistrement d'un nouvel utilisateur sur votre blog : %s :"
+
+#: ../includes/pc-registration.php:72
+#, php-format
+msgid "Username: %s"
+msgstr "Nom d'utilisateur : %s"
+
+#: ../includes/pc-registration.php:73
+#, php-format
+msgid "E-mail: %s"
+msgstr "E-mail : %s"
+
+#: ../includes/pc-registration.php:74
+msgid "IP Address:"
+msgstr "Adresse IP :"
+
+#: ../includes/pc-registration.php:76
+#, php-format
+msgid "[%s] New User Registration"
+msgstr "[%s] Enregistrement d'un nouvel utilisateur"
+
+#: ../includes/pc-registration.php:99 ../views/admin.php:377
+msgid "Welcome to our Photo Contest!"
+msgstr "Bienvenue dans notre concours photo !"
+
+#: ../includes/pc-registration.php:125 ../includes/pc-registration.php:130
+msgid "Your login details:"
+msgstr "Vos données de connexion :"
+
+#: ../includes/pc-registration.php:132
+msgid "To set your password, visit the following link:"
+msgstr "Pour définir votre mot de passe, consultez l'adresse suivante :"
+
+#: ../includes/pc-registration.php:162
+msgid "Invalid user ID."
+msgstr "ID utilisateur invalide."
+
+#: ../includes/pc-registration.php:191
+msgid "Cannot create a user with an empty login name."
+msgstr "Impossible de créer un utilisateur avec un nom d'utilisateur vide."
+
+#: ../includes/pc-registration.php:193
+msgid "Username may not be longer than 60 characters."
+msgstr "Le nom d'utilisateur ne doit pas dépasser 60 caractères."
+
+#: ../includes/pc-registration.php:197
+msgid "Sorry, that username already exists!"
+msgstr "Désolé, ce nom d'utilisateur existe déjà !"
+
+#: ../includes/pc-registration.php:210
+msgid "Sorry, that username is not allowed."
+msgstr "Désolé, ce nom d'utilisateur n'est pas autorisé."
+
+#: ../includes/pc-registration.php:220
+msgid "Nicename may not be longer than 50 characters."
+msgstr "Un nom ne devrait pas dépasser 50 caractères."
+
+#: ../includes/pc-registration.php:271
+msgid "Sorry, that email address is already used!"
+msgstr "Désolé, cette adresse e-mail est déjà utilisée !"
+
+#: ../includes/pc-upload-functions.php:24
+#: ../includes/pc-upload-functions.php:103
+msgid "None"
+msgstr "Aucun"
+
+#: ../includes/pc-upload-functions.php:109
+msgid "Select Country"
+msgstr "Sélectionner un pays"
+
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:25
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:44
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:63
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:82
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:101
+#: ../includes/templates/pc-modern-gallery-lightbox.php:25
+#: ../includes/templates/pc-modern-gallery-lightbox.php:43
+#: ../includes/templates/pc-modern-gallery-lightbox.php:61
+#: ../includes/templates/pc-modern-gallery-lightbox.php:79
+#: ../includes/templates/pc-modern-gallery-lightbox.php:97
+#: ../includes/templates/pc-modern-gallery.php:25
+#: ../includes/templates/pc-modern-gallery.php:40
+#: ../includes/templates/pc-modern-gallery.php:55
+#: ../includes/templates/pc-modern-gallery.php:70
+#: ../includes/templates/pc-modern-gallery.php:85
+#: ../shortcodes/contest-gallery-detail.php:208
+msgid "Author:"
+msgstr "Auteur :"
+
+#: ../includes/votes/pc-jury-rate-code.php:23
+msgid "You are member of the jury!"
+msgstr "Vous êtes membre du jury !"
+
+#: ../includes/votes/pc-jury-rate-code.php:65
+msgid "You can't rate your photo!"
+msgstr "Vous ne pouvez pas noter votre photo !"
+
+#: ../includes/votes/pc-jury-rate-code.php:84
+msgid "You have rated this photo already!"
+msgstr "Vous avez déjà noté cette photo !"
+
+#: ../includes/votes/pc-jury-rate-code.php:88
+#: ../includes/votes/pc-rate-code.php:87 ../includes/votes/pc-rate-code.php:92
+#: ../shortcodes/contest-share.php:280 ../shortcodes/contest-share.php:295
+#: ../shortcodes/upload-photo.php:553 ../views/admin.php:1455
+msgid "Thank you!"
+msgstr "Merci !"
+
+#: ../includes/votes/pc-jury-rate-code.php:92
+#: ../includes/votes/pc-jury-vote-code.php:99
+#: ../shortcodes/contest-share.php:347
+msgid "You cannot vote anymore!"
+msgstr "Vous ne pouvez plus votez !"
+
+#: ../includes/votes/pc-jury-rate-code.php:124
+msgid "Jury members who rated this photo already (for admins eyes only)"
+msgstr ""
+"Membres du jury ayant déjà votés pour cette photo (visible seulement des "
+"administrateurs)"
+
+#: ../includes/votes/pc-jury-rate-code.php:134
+#: ../includes/votes/pc-jury-vote-code.php:140 ../views/jury.php:345
+msgid "Invalid ID"
+msgstr "ID Invalide"
+
+#: ../includes/votes/pc-jury-rate-code.php:144
+#: ../includes/votes/pc-jury-vote-code.php:150
+msgid "List is empty"
+msgstr "La liste est vide"
+
+#: ../includes/votes/pc-jury-vote-code.php:24
+msgid "Remove the vote!"
+msgstr "Supprimer le vote !"
+
+#: ../includes/votes/pc-jury-vote-code.php:28
+msgid "You are member of the jury. You can vote!"
+msgstr "Vous êtes membre du jury. Vous pouvez voter !"
+
+#: ../includes/votes/pc-jury-vote-code.php:95
+msgid "You have voted for this image!"
+msgstr "Vous avez voté pour cette image !"
+
+#: ../includes/votes/pc-jury-vote-code.php:122
+#, php-format
+msgid "You have %s %s as Jury member. You have already voted %sx."
+msgstr ""
+"Vous avez des %s %s en tant que membre du jury. Vous avez déjà voté %sx."
+
+#: ../includes/votes/pc-jury-vote-code.php:127
+msgid "Jury member who voted for this image (for admins eyes only)"
+msgstr ""
+"Membre du jury ayant voté pour cette image (visible seulement des "
+"administrateurs)"
+
+#: ../includes/votes/pc-rate-code.php:62
+msgid "You can't vote for your photo!"
+msgstr "Vous ne pouvez pas voter pour votre photo !"
+
+#: ../includes/votes/pc-rate-code.php:79
+msgid "The photo has not been approved yet!"
+msgstr "Cette photo n'a pas encore été approuvée !"
+
+#: ../includes/widgets/widget-category.php:18
+msgid "Photo Contest Widget - Category"
+msgstr "Widget Concours Photo - Catégorie"
+
+#: ../includes/widgets/widget-category.php:21
+msgid "Widget displays photos from categories."
+msgstr "Le Widget affiche les photos des catégories."
+
+#: ../includes/widgets/widget-category.php:249
+#: ../includes/widgets/widget-classic.php:244
+#: ../includes/widgets/widget-gallery.php:249
+#: ../shortcodes/contest-gallery.php:251 ../views/photos.php:380
+msgid "Newest"
+msgstr "Le plus récent"
+
+#: ../includes/widgets/widget-category.php:250
+#: ../includes/widgets/widget-classic.php:245
+#: ../includes/widgets/widget-gallery.php:250
+#: ../shortcodes/contest-gallery.php:258 ../views/photos.php:385
+msgid "Oldest"
+msgstr "Le plus ancien"
+
+#: ../includes/widgets/widget-category.php:251
+#: ../includes/widgets/widget-classic.php:246
+#: ../includes/widgets/widget-gallery.php:251 ../views/photos.php:391
+msgid "Most Voted"
+msgstr "Le plus de votes"
+
+#: ../includes/widgets/widget-category.php:252
+#: ../includes/widgets/widget-classic.php:247
+#: ../includes/widgets/widget-gallery.php:252 ../views/photos.php:397
+msgid "Least Votes"
+msgstr "Le moins de votes"
+
+#: ../includes/widgets/widget-category.php:253
+#: ../includes/widgets/widget-classic.php:248
+#: ../includes/widgets/widget-gallery.php:253
+#: ../shortcodes/contest-gallery.php:243 ../shortcodes/contest-gallery.php:290
+#: ../views/contests.php:919
+msgid "Random"
+msgstr "Aléatoire"
+
+#: ../includes/widgets/widget-category.php:259
+#: ../includes/widgets/widget-classic.php:254
+#: ../includes/widgets/widget-gallery.php:259
+#: ../includes/widgets/widget-rank.php:181
+#: ../shortcodes/contest-gallery-detail.php:187
+#: ../shortcodes/contest-profile.php:255 ../shortcodes/upload-photo.php:935
+msgid "Title:"
+msgstr "Titre :"
+
+#: ../includes/widgets/widget-category.php:264
+#: ../includes/widgets/widget-classic.php:259
+#: ../includes/widgets/widget-gallery.php:264
+msgid "Sort By:"
+msgstr "Classer par :"
+
+#: ../includes/widgets/widget-category.php:274
+#: ../includes/widgets/widget-classic.php:269
+#: ../includes/widgets/widget-gallery.php:274
+msgid "Number of Photos"
+msgstr "Nombre de photos"
+
+#: ../includes/widgets/widget-category.php:284
+msgid "Select Category"
+msgstr "Sélectionner la catégorie"
+
+#: ../includes/widgets/widget-classic.php:19
+msgid "Photo Contest Widget - Classic"
+msgstr "Widget Concours Photo - Classique"
+
+#: ../includes/widgets/widget-classic.php:22
+#: ../includes/widgets/widget-gallery.php:21
+msgid "Widget displays photos from photo contest."
+msgstr "Le Widget affiche les photos du concours."
+
+#: ../includes/widgets/widget-classic.php:279
+#: ../includes/widgets/widget-gallery.php:284
+#: ../includes/widgets/widget-rank.php:198
+msgid "Select Contest"
+msgstr "Sélectionner le concours"
+
+#: ../includes/widgets/widget-gallery.php:18
+msgid "Photo Contest Widget - Gallery"
+msgstr "Widget Concours Photo - Galerie"
+
+#: ../includes/widgets/widget-rank.php:19
+msgid "Photo Contest Widget - Rank"
+msgstr "Widget Concours Photo - Classement"
+
+#: ../includes/widgets/widget-rank.php:22
+msgid "Widget displays rank from photo contest."
+msgstr "Le Widget affiche le classement dans le concours."
+
+#: ../includes/widgets/widget-rank.php:99
+#: ../includes/widgets/widget-rank.php:100
+#: ../shortcodes/contest-gallery-detail.php:198
+#: ../shortcodes/contest-gallery.php:460 ../shortcodes/contest-profile.php:370
+#: ../shortcodes/contest-top10.php:148
+msgid "Deleted user"
+msgstr "Utilisateur supprimé"
+
+#: ../includes/widgets/widget-rank.php:122
+#: ../shortcodes/contest-gallery-detail.php:222
+#: ../shortcodes/contest-gallery.php:474 ../shortcodes/contest-gallery.php:480
+#: ../shortcodes/contest-profile.php:379 ../shortcodes/contest-profile.php:385
+msgid "Votes:"
+msgstr "Votes :"
+
+#: ../includes/widgets/widget-rank.php:188
+msgid "Items"
+msgstr "Eléments"
+
+#: ../includes/widgets/widget-rank.php:210
+msgid "Font Color"
+msgstr "Couleur de police"
+
+#: ../includes/widgets/widget-rank.php:212
+msgid "Black"
+msgstr "Noir"
+
+#: ../includes/widgets/widget-rank.php:213
+msgid "Grey"
+msgstr "Gris"
+
+#: ../includes/widgets/widget-rank.php:214
+msgid "White"
+msgstr "Blanc"
+
+#: ../shortcodes/contest-gallery-detail.php:132
+msgid "Previous photo"
+msgstr "Photo précédente"
+
+#: ../shortcodes/contest-gallery-detail.php:139
+msgid "Next photo"
+msgstr "Photo suivante"
+
+#: ../shortcodes/contest-gallery-detail.php:240
+#: ../shortcodes/contest-profile.php:277 ../shortcodes/contest-top10.php:93
+#: ../shortcodes/upload-photo.php:969
+msgid "Category:"
+msgstr "Catégorie :"
+
+#: ../shortcodes/contest-gallery-detail.php:250
+msgid "Views:"
+msgstr "Vues :"
+
+#: ../shortcodes/contest-gallery-detail.php:254
+#: ../shortcodes/upload-photo.php:943
+msgid "Description:"
+msgstr "Description :"
+
+#: ../shortcodes/contest-gallery-detail.php:283
+msgid "Copy"
+msgstr "Copier"
+
+#: ../shortcodes/contest-gallery-detail.php:306
+msgid "Comments:"
+msgstr "Commentaires :"
+
+#: ../shortcodes/contest-gallery-detail.php:335 ../views/categories.php:210
+#: ../views/categories.php:219 ../views/categories.php:233
+#: ../views/categories.php:234 ../views/contests.php:88
+#: ../views/contests.php:102 ../views/contests.php:134
+#: ../views/contests.php:135 ../views/photos.php:906
+msgid "Delete"
+msgstr "Supprimer"
+
+#: ../shortcodes/contest-gallery-detail.php:349
+msgid "There are no comments."
+msgstr "Il n'y a aucun commentaire."
+
+#: ../shortcodes/contest-gallery-detail.php:376
+msgid "You are logged in as"
+msgstr "Vous êtes connecté comme"
+
+#: ../shortcodes/contest-gallery-detail.php:383
+msgid "Post Comment"
+msgstr "Poster un commentaire"
+
+#: ../shortcodes/contest-gallery-detail.php:397
+msgid "You must be logged in to post a comment"
+msgstr "Vous devez être connecté pour poster un commentaire"
+
+#: ../shortcodes/contest-gallery.php:198
+msgid "No photo has been submitted for the contest. Be the first!"
+msgstr ""
+"Aucune photo n'a encore été proposée pour le concours. Soyez le premier !"
+
+#: ../shortcodes/contest-gallery.php:262
+msgid "Most voted"
+msgstr "Plus voté"
+
+#: ../shortcodes/contest-gallery.php:263
+msgid "Least voted"
+msgstr "Moins voté"
+
+#: ../shortcodes/contest-gallery.php:265
+msgid "Top Rated"
+msgstr "Les mieux notés"
+
+#: ../shortcodes/contest-gallery.php:266
+msgid "Lowest Rated"
+msgstr "Les moins bien notés"
+
+#: ../shortcodes/contest-gallery.php:311 ../shortcodes/contest-top10.php:90
+#: ../views/photos.php:480
+msgid "All Categories"
+msgstr "Toutes les catégories"
+
+#: ../shortcodes/contest-gallery.php:325
+msgid "Search...."
+msgstr "Cherche..."
+
+#: ../shortcodes/contest-gallery.php:340
+msgid "No results found"
+msgstr "Aucun résultat trouvé"
+
+#: ../shortcodes/contest-gallery.php:530 ../shortcodes/contest-gallery.php:531
+#: ../shortcodes/contest-gallery.php:532 ../shortcodes/contest-gallery.php:533
+#: ../shortcodes/contest-profile.php:284
+msgid "No Category"
+msgstr "Aucune catégorie"
+
+#: ../shortcodes/contest-gallery.php:645
+msgid "Generate random photos"
+msgstr "Générer des photos aléatoires"
+
+#: ../shortcodes/contest-gallery.php:666
+msgid "First"
+msgstr "Premier"
+
+#: ../shortcodes/contest-gallery.php:669
+msgid "Previous"
+msgstr "Précédent"
+
+#: ../shortcodes/contest-gallery.php:680
+msgid "Next"
+msgstr "Suivant"
+
+#: ../shortcodes/contest-gallery.php:683
+msgid "Last"
+msgstr "Dernier"
+
+#: ../shortcodes/contest-menu.php:39 ../views/admin.php:1887
+msgid "Gallery"
+msgstr "Galerie"
+
+#: ../shortcodes/contest-menu.php:42 ../views/admin.php:1894
+msgid "Upload photo"
+msgstr "Charger une photo"
+
+#: ../shortcodes/contest-menu.php:45 ../views/admin.php:1901
+msgid "Rules & Prizes"
+msgstr "Règlement & Prix"
+
+#: ../shortcodes/contest-menu.php:48 ../views/admin.php:1908
+msgid "Your Images"
+msgstr "Vos images"
+
+#: ../shortcodes/contest-menu.php:51 ../views/admin.php:1915
+msgid "Top 10"
+msgstr "Top 10"
+
+#: ../shortcodes/contest-profile.php:56
+msgid "ReCaptcha was not validated correctly!"
+msgstr "ReCAPTCHA n'a pas été validé correctement !"
+
+#: ../shortcodes/contest-profile.php:106
+msgid "Please state Username!"
+msgstr "Veuillez indiquer votre nom d'utilisateur !"
+
+#: ../shortcodes/contest-profile.php:111 ../shortcodes/upload-photo.php:113
+msgid "This Name is already taken!"
+msgstr "Ce nom est déjà pris !"
+
+#: ../shortcodes/contest-profile.php:120 ../shortcodes/contest-share.php:412
+#: ../shortcodes/upload-photo.php:100
+msgid "This email domain is not allowed"
+msgstr "Ce domaine e-mail n'est pas autorisé"
+
+#: ../shortcodes/contest-profile.php:124 ../shortcodes/upload-photo.php:119
+msgid "Please enter the Email!"
+msgstr "Veuillez entrer l'adresse e-mail !"
+
+#: ../shortcodes/contest-profile.php:129
+msgid ""
+"This email is already used! If you have already registered to the contest "
+"please first log in!"
+msgstr ""
+"Cet e-mail est déjà utilisé ! Si vous êtes déjà inscrit au concours, "
+"veuillez d'abord vous connecter !"
+
+#: ../shortcodes/contest-profile.php:143
+msgid "Username or Password was not correct!"
+msgstr "Nom d'utilisateur ou mot de passe incorrect !"
+
+#: ../shortcodes/contest-profile.php:236 ../shortcodes/upload-photo.php:237
+msgid "Please enter a Title!"
+msgstr "Veuillez entrer un titre !"
+
+#: ../shortcodes/contest-profile.php:241
+msgid "Please select a category!"
+msgstr "Veuillez sélectionner une catégorie !"
+
+#: ../shortcodes/contest-profile.php:245
+msgid "Edit Image"
+msgstr "Modifier l'image"
+
+#: ../shortcodes/contest-profile.php:262
+msgid "please enter a title!"
+msgstr "veuillez entrer un titre !"
+
+#: ../shortcodes/contest-profile.php:298
+msgid "please select a category!"
+msgstr "veuillez sélectionner une catégorie !"
+
+#: ../shortcodes/contest-profile.php:307 ../shortcodes/upload-photo.php:819
+#: ../shortcodes/upload-photo.php:828 ../shortcodes/upload-photo.php:837
+#: ../shortcodes/upload-photo.php:846 ../shortcodes/upload-photo.php:855
+#: ../shortcodes/upload-photo.php:943 ../shortcodes/upload-photo.php:952
+#: ../shortcodes/upload-photo.php:961 ../views/contests.php:355
+#: ../views/contests.php:384 ../views/contests.php:1224
+msgid "(Optional)"
+msgstr "(Facultatif)"
+
+#: ../shortcodes/contest-profile.php:317 ../views/contests.php:1286
+msgid "Camera model"
+msgstr "Modèle d'appareil photo"
+
+#: ../shortcodes/contest-profile.php:330 ../shortcodes/upload-photo.php:67
+#: ../views/contests.php:1293 ../views/photos.php:683
+msgid "Custom image field"
+msgstr "Champ d'image personnalisé"
+
+#: ../shortcodes/contest-profile.php:347
+msgid "Are you really sure that you want delete this image?"
+msgstr "Êtes-vous vraiment sûr de vouloir supprimer cette image ?"
+
+#: ../shortcodes/contest-profile.php:347
+msgid "Delete Image!"
+msgstr "Supprimer l'image !"
+
+#: ../shortcodes/contest-profile.php:347
+msgid ""
+"Warning! After click \"Delete Image!\" will be item permanently deleted!"
+msgstr ""
+"Attention ! Après avoir cliqué sur \"Supprimer l'image\", l'élément sera "
+"définitivement supprimé !"
+
+#: ../shortcodes/contest-profile.php:355
+msgid "You must first upload an image!!"
+msgstr "Vous devez d'abord téléverser une image !"
+
+#: ../shortcodes/contest-profile.php:416
+msgid "Active!"
+msgstr "Actif !"
+
+#: ../shortcodes/contest-profile.php:418
+msgid "Waiting for Approval!"
+msgstr "En attente d'approbation !"
+
+#: ../shortcodes/contest-profile.php:554
+msgid ""
+"Your registration was successful! Please check your email for a password!"
+msgstr ""
+"Votre inscription a réussi ! Veuillez consulter votre e-mail pour un mot de "
+"passe !"
+
+#: ../shortcodes/contest-profile.php:556
+msgid ""
+"You are not logged in. To log in, use the information emailed after your "
+"first image upload!"
+msgstr ""
+"Vous n'êtes pas connecté. Pour vous connecter, utilisez les informations "
+"envoyées par e-mail après votre premier téléversement d'image !"
+
+#: ../shortcodes/contest-share.php:254
+msgid "Email validation"
+msgstr "Validation par e-mail"
+
+#: ../shortcodes/contest-share.php:255
+msgid "Thank you for your vote!"
+msgstr "Merci de votre vote !"
+
+#: ../shortcodes/contest-share.php:256
+msgid "Please follow this link to activate your vote:"
+msgstr "Veuillez suivre ce lien pour activer votre vote :"
+
+#: ../shortcodes/contest-share.php:258
+msgid "This is an automatically generated email, please do not reply!"
+msgstr "Ceci est un e-mail généré automatiquement. Merci de ne pas répondre !"
+
+#: ../shortcodes/contest-share.php:277
+msgid "Verify Vote!"
+msgstr "Vérifiez le vote !"
+
+#: ../shortcodes/contest-share.php:293
+msgid "Sorry!"
+msgstr "Désolé !"
+
+#: ../shortcodes/contest-share.php:300
+msgid "Email confirmation failed!"
+msgstr "La confirmation par e-mail a échoué !"
+
+#: ../shortcodes/contest-share.php:309
+msgid "Vote failed!"
+msgstr "Le vote a échoué !"
+
+#: ../shortcodes/contest-share.php:315
+msgid "Your photo is not activated yet, you must wait for approval!"
+msgstr ""
+"Votre photo n'est pas encore activée, vous devez attendre son approbation !"
+
+#: ../shortcodes/contest-share.php:316
+msgid "But you can share it already!"
+msgstr "Mais vous pouvez déjà le partager !"
+
+#: ../shortcodes/contest-share.php:318
+msgid "Your photo was uploaded successfully and is active!"
+msgstr "Votre photo a été téléversée avec succès et est active !"
+
+#: ../shortcodes/contest-share.php:319
+msgid "So share it and get some votes!"
+msgstr "Alors partagez-là et obtenez des votes !"
+
+#: ../shortcodes/contest-share.php:330
+msgid "Vote unique ID did not match"
+msgstr "L'ID unique du vote ne correspondait pas"
+
+#: ../shortcodes/contest-share.php:336
+msgid "It is not possible to vote this way in jury mode!"
+msgstr "Il n'est pas possible de voter de cette façon en mode jury !"
+
+#: ../shortcodes/contest-share.php:350
+msgid "Your vote for this photo was successfully counted!"
+msgstr "Votre vote pour cette photo a été comptabilisé avec succès !"
+
+#: ../shortcodes/contest-share.php:352 ../shortcodes/contest-share.php:424
+msgid "Please share this photo with your friends!"
+msgstr "Merci de partager cette photo avec vos amis !"
+
+#: ../shortcodes/contest-share.php:358
+msgid "We now need to verify your vote by email!"
+msgstr "A présent nous devons vérifier votre vote par e-mail !"
+
+#: ../shortcodes/contest-share.php:359
+msgid "Your email address will NOT be shared with a third party!"
+msgstr "Votre adresse e-mail NE SERA PAS partagée avec un tiers !"
+
+#: ../shortcodes/contest-share.php:360
+msgid ""
+"Your email address will NOT be sold or used for purposes other than "
+"confirmation for this vote!"
+msgstr ""
+"Votre adresse e-mail NE SERA PAS vendue ou utilisée à d'autres fins que la "
+"confirmation de ce vote !"
+
+#: ../shortcodes/contest-share.php:364
+msgid "Message with confirmation link was sent!"
+msgstr "Message de confirmation envoyé !"
+
+#: ../shortcodes/contest-share.php:365
+msgid "Please check your email!"
+msgstr "Veuillez vérifier votre e-mail !"
+
+#: ../shortcodes/contest-share.php:369
+msgid "Check if you copied URL from your email correctly"
+msgstr "Vérifiez si vous avez copié correctement l'URL de votre e-mail"
+
+#: ../shortcodes/contest-share.php:370
+msgid "And try it again!"
+msgstr "Et essayez de nouveau !"
+
+#: ../shortcodes/contest-share.php:374
+#, php-format
+msgid "Sorry this email %s was already used for vote!"
+msgstr "Désolé cet e-mail %s a déjà été utilisé pour voter !"
+
+#: ../shortcodes/contest-share.php:375
+msgid "You cannot vote twice!"
+msgstr "Vous ne pouvez pas voter 2 fois !"
+
+#: ../shortcodes/contest-share.php:382
+msgid "Please enter your email!"
+msgstr "Veuillez indiquer votre e-mail !"
+
+#: ../shortcodes/contest-share.php:386
+msgid "You are logged in. You cannot confirm vote by email!"
+msgstr ""
+"Vous êtes connecté. Vous ne pouvez pas confirmer votre vote par e-mail !"
+
+#: ../shortcodes/contest-share.php:402
+msgid "enter your email"
+msgstr "indiquez votre e-mail"
+
+#: ../shortcodes/contest-share.php:405
+msgid "verify vote"
+msgstr "vérifier le vote"
+
+#: ../shortcodes/contest-share.php:409
+msgid "email field is empty or email is not in valid format"
+msgstr "le champ e-mail est vide ou l'e-mail n'est pas dans un format valide"
+
+#: ../shortcodes/contest-top10.php:106
+msgid "There are no photos in this category!"
+msgstr "Il n'y a pas de photo dans cette catégorie !"
+
+#: ../shortcodes/contest-top10.php:117 ../views/photos.php:571
+#: ../views/photos.php:594
+msgid "Votes"
+msgstr "Votes"
+
+#: ../shortcodes/contest-top10.php:123 ../shortcodes/contest-top10.php:130
+msgid "Rating"
+msgstr "Notation"
+
+#: ../shortcodes/upload-photo.php:59 ../shortcodes/upload-photo.php:63
+#: ../views/contests.php:1224 ../views/contests.php:1236
+#: ../views/photos.php:675 ../views/photos.php:679
+msgid "Custom personal field"
+msgstr "Champ personnalisé"
+
+#: ../shortcodes/upload-photo.php:108
+msgid "Please state Your Name!"
+msgstr "Veuillez indiquer votre nom !"
+
+#: ../shortcodes/upload-photo.php:116
+msgid "Invalid email format!"
+msgstr "Format e-mail invalide !"
+
+#: ../shortcodes/upload-photo.php:124
+msgid ""
+"This email is already used! If you have already image in the contest please "
+"first"
+msgstr ""
+"Cet e-mail est déjà utilisé ! Si vous avez déjà une image dans le concours "
+"veuillez d'abord"
+
+#: ../shortcodes/upload-photo.php:164
+msgid "Please enter the Date of Birth!"
+msgstr "Veuillez indiquer la date de naissance !"
+
+#: ../shortcodes/upload-photo.php:167
+msgid "Please enter the address!"
+msgstr "Veuillez indiquer l'adresse !"
+
+#: ../shortcodes/upload-photo.php:170
+msgid "Please enter the City!"
+msgstr "Veuillez indiquer la ville !"
+
+#: ../shortcodes/upload-photo.php:173
+msgid "Please enter the Zip/Postal code!"
+msgstr "Veuillez indiquer le code postal !"
+
+#: ../shortcodes/upload-photo.php:176
+msgid "Please select the State!"
+msgstr "Veuillez sélectionner l'état/la région !"
+
+#: ../shortcodes/upload-photo.php:179
+msgid "Please select the Country!"
+msgstr "Veuillez sélectionner le pays !"
+
+#: ../shortcodes/upload-photo.php:182
+msgid "Please enter the Phone number!"
+msgstr "Veuillez indiquer le numléro de téléphone !"
+
+#: ../shortcodes/upload-photo.php:185 ../shortcodes/upload-photo.php:188
+msgid "Please select the Gender!"
+msgstr "Veuillez sélectionner le sexe !"
+
+#: ../shortcodes/upload-photo.php:191
+#, php-format
+msgid "Please fill the form field: %s"
+msgstr "Veuillez remplir le champ du formulaire : %s"
+
+#: ../shortcodes/upload-photo.php:201
+msgid "Facebook profile URL is not valid"
+msgstr "L'URL du profil Facebook n'est pas valide"
+
+#: ../shortcodes/upload-photo.php:210
+msgid "Twitter profile URL is not valid"
+msgstr "L'URL du profil Twitter n'est pas valide"
+
+#: ../shortcodes/upload-photo.php:219
+msgid "Instagram profile URL is not valid"
+msgstr "L'URL du profil Instagram n'est pas valide"
+
+#: ../shortcodes/upload-photo.php:223
+msgid "You did not confirm that you are over age of 13!"
+msgstr "Vous n'avez pas confirmé que vous avez plus de 13 ans !"
+
+#: ../shortcodes/upload-photo.php:226
+msgid "You did not confirm that you are over age of 18!"
+msgstr "Vous n'avez pas confirmé que vous avez plus de 18 ans !"
+
+#: ../shortcodes/upload-photo.php:229
+msgid "You did not accept contest rules!"
+msgstr "Vous n'avez pas accepté le règlement du concours !"
+
+#: ../shortcodes/upload-photo.php:233
+msgid "We need your presonal data processing agreement!"
+msgstr ""
+"Nous avons besoin de votre accord sur le traitement de vos données "
+"personnelles !"
+
+#: ../shortcodes/upload-photo.php:244
+msgid "Please select the image"
+msgstr "Veuillez sélectionner une image"
+
+#: ../shortcodes/upload-photo.php:249
+msgid "Image must be jpg, png or gif."
+msgstr "L'image doit être en  jpg, png ou gif."
+
+#: ../shortcodes/upload-photo.php:260
+msgid "Minimum image width is 350px."
+msgstr "La largeur minimale de l'image est de 350px."
+
+#: ../shortcodes/upload-photo.php:262
+msgid "Minimum image height is 350px."
+msgstr "La hauteur minimale de l'image est de 350px."
+
+#: ../shortcodes/upload-photo.php:268
+msgid "File size is above allowed limitations!"
+msgstr "La taille du fichier est au-dessus des limites autorisées !"
+
+#: ../shortcodes/upload-photo.php:437 ../shortcodes/upload-photo.php:438
+msgid "New Image in the Photo Contest"
+msgstr "Nouvelle image dans le concours photo"
+
+#: ../shortcodes/upload-photo.php:439
+msgid "Uploaded by:"
+msgstr "Téléversée par :"
+
+#: ../shortcodes/upload-photo.php:440
+msgid "Approve image:"
+msgstr "Approuver l'mage :"
+
+#: ../shortcodes/upload-photo.php:451
+#, php-format
+msgid "Failed resize: %s is an invalid image ID."
+msgstr "Echec de redimentionnement : %s n'est pas un ID d'image valide."
+
+#: ../shortcodes/upload-photo.php:504
+msgid "The contest has not yet started. It will launch on:"
+msgstr "Le concours n'est pas encore lancé. Il débutera le :"
+
+#: ../shortcodes/upload-photo.php:507
+msgid "Contest already finished."
+msgstr "Le concours est terminé."
+
+#: ../shortcodes/upload-photo.php:512
+msgid "Ability to enter the contest has expired to date"
+msgstr "La date limite de participation au concours est expirée"
+
+#: ../shortcodes/upload-photo.php:561
+msgid "You can upload max."
+msgstr "Vous pouvez téléverser au maximum"
+
+#: ../shortcodes/upload-photo.php:561 ../shortcodes/upload-photo.php:563
+msgid "photo/photos."
+msgstr "photo(s)."
+
+#: ../shortcodes/upload-photo.php:563
+msgid "You have already uploaded"
+msgstr "Vous avez déjà téléversé"
+
+#: ../shortcodes/upload-photo.php:572
+msgid "You have uploaded the maximum number of photos. Thank you!"
+msgstr "Vous avez téléversé le nombre maximum de photos. Merci !"
+
+#: ../shortcodes/upload-photo.php:724
+msgid "Personal details:"
+msgstr "Données personnelles :"
+
+#: ../shortcodes/upload-photo.php:737
+msgid "Your Name:"
+msgstr "Votre nom :"
+
+#: ../shortcodes/upload-photo.php:744
+msgid "Your Email:"
+msgstr "Votre e-mail :"
+
+#: ../shortcodes/upload-photo.php:756
+msgid "Date of birth:"
+msgstr "Date de naissance :"
+
+#: ../shortcodes/upload-photo.php:765
+msgid "Address:"
+msgstr "Adresse :"
+
+#: ../shortcodes/upload-photo.php:774
+msgid "City:"
+msgstr "Ville :"
+
+#: ../shortcodes/upload-photo.php:783
+msgid "Zip/Postal Code:"
+msgstr "Code postal :"
+
+#: ../shortcodes/upload-photo.php:791
+msgid "State:"
+msgstr "Etat / Région :"
+
+#: ../shortcodes/upload-photo.php:800
+msgid "Country:"
+msgstr "Pays :"
+
+#: ../shortcodes/upload-photo.php:810
+msgid "Phone number:"
+msgstr "Numéro de téléphone :"
+
+#: ../shortcodes/upload-photo.php:819
+msgid "Blog/Gallery/Website:"
+msgstr "Blog / Galerie / Site web :"
+
+#: ../shortcodes/upload-photo.php:828
+msgid "Facebook:"
+msgstr "Facebook :"
+
+#: ../shortcodes/upload-photo.php:837
+msgid "Twitter:"
+msgstr "Twitter :"
+
+#: ../shortcodes/upload-photo.php:846
+msgid "Instagram:"
+msgstr "Instagram :"
+
+#: ../shortcodes/upload-photo.php:873 ../shortcodes/upload-photo.php:891
+msgid "Gender:"
+msgstr "Sexe :"
+
+#: ../shortcodes/upload-photo.php:931
+msgid "Image details:"
+msgstr "Données de l'image :"
+
+#: ../shortcodes/upload-photo.php:952
+msgid "Camera model:"
+msgstr "Modèle d'appareil :"
+
+#: ../shortcodes/upload-photo.php:981
+msgid "Select image: (max."
+msgstr "Sélectionner l'image : (max."
+
+#: ../shortcodes/upload-photo.php:983 ../shortcodes/upload-photo.php:985
+msgid "select image"
+msgstr "sélectionner une image"
+
+#: ../shortcodes/upload-photo.php:987
+msgid "browse"
+msgstr "parcourir"
+
+#: ../shortcodes/upload-photo.php:1003
+msgid "I confirm that I am over the age of 13"
+msgstr "Je confirme que j'ai plus de 13 ans"
+
+#: ../shortcodes/upload-photo.php:1010
+msgid "I confirm that I am over the age of 18"
+msgstr "Je confirme que j'ai plus de 18 ans"
+
+#: ../shortcodes/upload-photo.php:1019
+msgid "I have read and accept Official contest rules"
+msgstr "J'ai lu et j'accepte le règlement officiel du concours"
+
+#: ../shortcodes/upload-photo.php:1022
+#, php-format
+msgid ""
+"I have read and accept <a href=\"%s\" target=\"_blank\">Official contest "
+"rules</a>"
+msgstr ""
+"J'ai lu et j'accepte <a href=\"%s\" target=\"_blank\">le règlement officiel "
+"du concours </a>"
+
+#: ../shortcodes/upload-photo.php:1080 ../shortcodes/upload-photo.php:1082
+msgid "Submit Photo"
+msgstr "Soumettre la photo"
+
+#: ../shortcodes/upload-photo.php:1101
+msgid ""
+"You are not logged in. Only registered users can participate in the contest. "
+"Please log in or sign up to continue!"
+msgstr ""
+"Vous n'êtes pas connecté. Seuls les utilisateurs enregistrés peuvent "
+"participer au concours. Veuillez vous connecter ou vous inscrire pour "
+"continuer !"
+
+#: ../views/admin.php:374
+msgid "I agree to the processing of my personal data"
+msgstr "J'accepte le traitement de mes données personnelles"
+
+#: ../views/admin.php:380
+msgid "Thank you for your registration!"
+msgstr "Merci pour votre inscription !"
+
+#: ../views/admin.php:383
+msgid "Your image was approved!"
+msgstr "Cette image a été approuvée !"
+
+#: ../views/admin.php:386
+msgid ""
+"Your image \"{PHOTO-NAME}\" in the contest <a href=\"{CONTEST-"
+"URL}\">{CONTEST-NAME}</a> was approved!"
+msgstr ""
+"Votre image \"{PHOTO-NAME}\" dans le concours <a href=\"{CONTEST-"
+"URL}\">{CONTEST-NAME}</a> a été approuvée !"
+
+#: ../views/admin.php:404 ../views/admin.php:431 ../views/contests.php:293
+#: ../views/jury.php:261
+msgid "Basic Settings"
+msgstr "Réglages de base"
+
+#: ../views/admin.php:409
+msgid "Voting Settings"
+msgstr "Réglages du vote"
+
+#: ../views/admin.php:414
+msgid "Emails and Notifications"
+msgstr "E-mails et notifications"
+
+#: ../views/admin.php:419
+msgid "Menu"
+msgstr "Menu"
+
+#: ../views/admin.php:424
+msgid "Integrations"
+msgstr "Intégrations"
+
+#: ../views/admin.php:435
+msgid "Image File Size Limit"
+msgstr "Limite de taille du fichier image"
+
+#: ../views/admin.php:435
+msgid "Your server/hosting limit is"
+msgstr "La limite de votre serveur/hébergement est"
+
+#: ../views/admin.php:507
+msgid "Max Image Width"
+msgstr "Largeur maximale de l'image"
+
+#: ../views/admin.php:507 ../views/admin.php:618
+msgid "All images above this size will be automatically resized"
+msgstr ""
+"Toutes les images au-dessus de cette taille seront automatiquement "
+"redimensionnées"
+
+#: ../views/admin.php:512 ../views/admin.php:623 ../views/admin.php:785
+#: ../views/admin.php:901 ../views/admin.php:1637 ../views/admin.php:1807
+msgid "(Recommended)"
+msgstr "(Recommandé)"
+
+#: ../views/admin.php:618
+msgid "Max Image Height"
+msgstr "Hauteur maximale de l'image"
+
+#: ../views/admin.php:729
+msgid "Allow Lightbox"
+msgstr "Autoriser la visionneuse"
+
+#: ../views/admin.php:737 ../views/admin.php:783 ../views/admin.php:836
+#: ../views/admin.php:853 ../views/admin.php:1014 ../views/admin.php:1056
+#: ../views/admin.php:1130 ../views/admin.php:1154 ../views/admin.php:1178
+#: ../views/admin.php:1500 ../views/admin.php:1524 ../views/admin.php:1578
+#: ../views/admin.php:1647 ../views/admin.php:1816 ../views/contests.php:476
+#: ../views/contests.php:518 ../views/contests.php:1034
+msgid "No"
+msgstr "Non"
+
+#: ../views/admin.php:746 ../views/admin.php:757 ../views/admin.php:774
+#: ../views/admin.php:827 ../views/admin.php:1047 ../views/admin.php:1121
+#: ../views/admin.php:1145 ../views/admin.php:1169 ../views/admin.php:1491
+#: ../views/admin.php:1515 ../views/admin.php:1569 ../views/admin.php:1635
+#: ../views/contests.php:529 ../views/contests.php:1025
+msgid "Yes"
+msgstr "Oui"
+
+#: ../views/admin.php:748
+msgid "(Lightbox without jquery.min.js file - Try this option first)"
+msgstr ""
+"(Visionneuse sans fichier jquery.min.js - Essayez d'abord cette option)"
+
+#: ../views/admin.php:759
+msgid ""
+"(Lightbox with jquery.min.js - This setup can create conflict with your "
+"theme or other plugins)"
+msgstr ""
+"(Visionneuse avec jquery.min.js - Ce réglage peut créer un conflit avec "
+"votre thème ou d'autres plugins)"
+
+#: ../views/admin.php:766
+msgid "Automatically activate uploaded images"
+msgstr "Activer automatiquement les images téléversées"
+
+#: ../views/admin.php:793
+msgid "Show Frontend Admin Bar"
+msgstr "Afficher la barre d'administration"
+
+#: ../views/admin.php:801
+msgid "Show"
+msgstr "Afficher"
+
+#: ../views/admin.php:810
+msgid "Hide"
+msgstr "Cacher"
+
+#: ../views/admin.php:812
+msgid "(Excerpt Admin) (Higly Recommended)"
+msgstr "(Excepté Admin) (Fortement recommandé)"
+
+#: ../views/admin.php:819
+msgid "Allow menu and gallery animation"
+msgstr "Autoriser l'animation des menus et galeries"
+
+#: ../views/admin.php:827
+msgid "(It is pure CSS animation)"
+msgstr "(Animation en CSS uniquement)"
+
+#: ../views/admin.php:842
+msgid "Comments"
+msgstr "Commentaires"
+
+#: ../views/admin.php:845
+msgid "Allow Comment Box"
+msgstr "Autoriser les commentaires"
+
+#: ../views/admin.php:862
+msgid "Allow Disqus Comments"
+msgstr "Autoriser les commentaires Disqus"
+
+#: ../views/admin.php:867 ../views/admin.php:884
+msgid "(Tutorial)"
+msgstr "(Tutoriel)"
+
+#: ../views/admin.php:875
+msgid "Allow WordPress Comments"
+msgstr "Autoriser les commentaires WordPress"
+
+#: ../views/admin.php:882
+msgid "Disqus Code"
+msgstr "Code Disqus"
+
+#: ../views/admin.php:890
+msgid "Typography"
+msgstr "Typographie"
+
+#: ../views/admin.php:893
+msgid "Font"
+msgstr "Police"
+
+#: ../views/admin.php:901
+msgid "Oswald"
+msgstr "Oswald"
+
+#: ../views/admin.php:910
+msgid "Work Sans"
+msgstr "Work Sans"
+
+#: ../views/admin.php:919
+msgid "Roboto Condensed"
+msgstr "Roboto Condensed"
+
+#: ../views/admin.php:928
+msgid "Noto Sans"
+msgstr "Noto Sans"
+
+#: ../views/admin.php:937
+msgid "Noto Serif"
+msgstr "Noto Serif"
+
+#: ../views/admin.php:946
+msgid "Default"
+msgstr "Défaut"
+
+#: ../views/admin.php:946
+msgid "(Default font from your theme will be used)"
+msgstr "(La police par défaut de votre thème sera utilisée)"
+
+#: ../views/admin.php:953
+msgid "Font Size"
+msgstr "Taille de police"
+
+#: ../views/admin.php:961
+msgid "Normal"
+msgstr "Normal"
+
+#: ../views/admin.php:970
+msgid "Big"
+msgstr "Grand"
+
+#: ../views/admin.php:979
+msgid "Bigger"
+msgstr "Plus grand"
+
+#: ../views/admin.php:985
+msgid "Security"
+msgstr "Sécurité"
+
+#: ../views/admin.php:988
+msgid "Allow reCaptcha"
+msgstr "Autoriser reCAPTCHA"
+
+#: ../views/admin.php:996
+msgid "Yes - For Everyone"
+msgstr "Oui - Pour tous"
+
+#: ../views/admin.php:1005
+msgid "Yes - But the reCaptcha will be hidden for Admins"
+msgstr "Oui - Mais reCAPTCHA sera caché pour les administrateurs"
+
+#: ../views/admin.php:1021
+msgid "reCaptcha Site Key"
+msgstr "clé reCAPTCHA du site"
+
+#: ../views/admin.php:1028
+msgid "reCaptcha Secret Key"
+msgstr "clé secrète reCAPTCHA"
+
+#: ../views/admin.php:1034
+msgid "GDPR - General Data Protection Regulation"
+msgstr "RGPD - Règlement Général pour la Protection des Données"
+
+#: ../views/admin.php:1036
+msgid ""
+"The General Data Protection Regulation (GDPR) (EU) 2016/679 is a regulation "
+"in EU law on data protection and privacy for all individuals within the "
+"European Union (EU) and the European Economic Area (EEA). It also addresses "
+"the export of personal data outside the EU and EEA. The GDPR aims primarily "
+"to give control to citizens and residents over their personal data and to "
+"simplify the regulatory environment for international business by unifying "
+"the regulation within the EU."
+msgstr ""
+"Le Règlement Général pour la Protection des Données (RGPD) (UE) 2016/679 est "
+"un règlement européen sur la protection des données et de la vie privée pour "
+"tous les citoyens de l'Union Européenne (UE) et de la Communauté Economique "
+"Européenne (CEE). Il traite également de l'exportation de données à "
+"caractère personnel en dehors de l'UE et de l'EEE. Le RGPD vise "
+"principalement à donner aux citoyens et aux résidents le contrôle de leurs "
+"données personnelles et à simplifier le cadre réglementaire pour les "
+"entreprises internationales en unifiant la réglementation au sein de l'UE."
+
+#: ../views/admin.php:1039
+msgid "Allow GDPR confirmation box"
+msgstr "Afficher la fenêtre de confirmation RGPD"
+
+#: ../views/admin.php:1063
+msgid "GDPR text (for checkbox)"
+msgstr "Texte RGPD (pour la fenêtre de confirmation)"
+
+#: ../views/admin.php:1070
+msgid "GDPR Privacy Notice"
+msgstr "Avis de confidentialité RGPD"
+
+#: ../views/admin.php:1071
+msgid ""
+"The area for your privacy notice text or if it is too long add html link to "
+"your privacy notice page with target _blank"
+msgstr ""
+"La zone de texte de votre notice de confidentialité. Si elle est trop "
+"longue, ajoutez un lien html vers la page de votre notice de confidentialité "
+"avec target _blank"
+
+#: ../views/admin.php:1080 ../views/admin.php:1475 ../views/admin.php:1824
+#: ../views/admin.php:1921 ../views/admin.php:2011 ../views/contests.php:1314
+msgid "Save Changes"
+msgstr "Sauvegarder les modifications"
+
+#: ../views/admin.php:1086
+msgid "Vote Settings"
+msgstr "Réglages du vote"
+
+#: ../views/admin.php:1089
+msgid "Who can vote"
+msgstr "Qui peut voter ?"
+
+#: ../views/admin.php:1097
+msgid "Registered Users"
+msgstr "Utilisateurs enregistrés"
+
+#: ../views/admin.php:1106
+msgid "Everyone"
+msgstr "Tout le monde"
+
+#: ../views/admin.php:1113
+msgid "Confirm votes from guests by email?"
+msgstr "Confirmer les votes des invités par e-mail ?"
+
+#: ../views/admin.php:1137
+msgid "Can author vote for own photo?"
+msgstr "L'auteur peut-il voter pour sa propre photo ?"
+
+#: ../views/admin.php:1161
+msgid "Redirect the user to Share page after vote?"
+msgstr "Rediriger l'utilisateur vers la page \"Partager\" après le vote ?"
+
+#: ../views/admin.php:1185
+msgid "Vote button color"
+msgstr "Couleur du bouton de vote"
+
+#: ../views/admin.php:1274
+msgid "Use Icon in Vote Button"
+msgstr "Utiliser une icône dans le bouton de vote"
+
+#: ../views/admin.php:1282
+msgid "No Icon"
+msgstr "Pas d'icône"
+
+#: ../views/admin.php:1352
+msgid "Vote text"
+msgstr "Texte de vote"
+
+#: ../views/admin.php:1360 ../views/admin.php:1414 ../views/admin.php:1455
+msgid "Standart text"
+msgstr "Texte standard"
+
+#: ../views/admin.php:1387
+msgid "No text at all"
+msgstr "Aucun texte"
+
+#: ../views/admin.php:1398 ../views/admin.php:1432 ../views/admin.php:1464
+msgid "your text"
+msgstr "votre texte"
+
+#: ../views/admin.php:1407
+msgid "Vote text after Vote"
+msgstr "Texte affiché après le vote"
+
+#: ../views/admin.php:1443
+msgid "Settings for a 5-star and 10-star rating mode"
+msgstr "Réglages pour un mode d'évaluation 5 étoiles et 10 étoiles"
+
+#: ../views/admin.php:1448
+msgid "Text after rating"
+msgstr "Texte affiché après le vote"
+
+#: ../views/admin.php:1483
+msgid ""
+"Automatically send email nofitication (to admin) when new contest image is "
+"uploaded"
+msgstr ""
+"Envoyer automatiquement une notification par e-mail (à l'Admin) lorsqu'une "
+"nouvelle image est téléchargée"
+
+#: ../views/admin.php:1507
+msgid ""
+"Automatically send email nofitication (to admin) about new user registration"
+msgstr ""
+"Envoyer automatiquement un e-mail de notification (à l'Admin) lors de "
+"l'enregistrement d'un nouvel utilisateur"
+
+#: ../views/admin.php:1532
+msgid "Email address for notifications (for admin)"
+msgstr "Adresse e-mail pour les notifications (pour l'Admin)"
+
+#: ../views/admin.php:1540
+msgid "Standard admin email address"
+msgstr "Adresse e-mail standard de l'Admin"
+
+#: ../views/admin.php:1549
+msgid "alternative@email.tld"
+msgstr "alternative@email.tld"
+
+#: ../views/admin.php:1558
+msgid "Notification email after image approval"
+msgstr "E-mail de notification après approbation de l'image"
+
+#: ../views/admin.php:1561
+msgid "Send notification email (to user) after image approval"
+msgstr ""
+"Envoyer un e-mail de notification (à l'utilisateur) après approbation de "
+"l'image"
+
+#: ../views/admin.php:1585 ../views/admin.php:1741
+msgid "Subject (Email Title)"
+msgstr "Sujet (Titre de l'e-mail)"
+
+#: ../views/admin.php:1592 ../views/admin.php:1756
+msgid "Email Body"
+msgstr "Corps de l'e-mail"
+
+#: ../views/admin.php:1614 ../views/admin.php:1778
+msgid ""
+"If you add an image to the email it should be secured by SSL (hosted on "
+"https://) otherwise the email can be stopped!"
+msgstr ""
+"Si vous ajoutez une image à l'e-mail, elle doit être sécurisée par SSL "
+"(hébergé sur https://) sinon l'e-mail peut être bloqué !"
+
+#: ../views/admin.php:1615
+msgid ""
+"{PHOTO-NAME},{CONTEST-URL} and {CONTEST-NAME} will be autoamtically replaced "
+"for real Photo name, Contest URL and Contest name"
+msgstr ""
+"{PHOTO-NAME},{CONTEST-URL} et {CONTEST-NAME} seront automatiquement "
+"remplacés pour le nom de la photo, l'URL du concours et son nom"
+
+#: ../views/admin.php:1617 ../views/admin.php:1781
+msgid "Example:"
+msgstr "Exemple :"
+
+#: ../views/admin.php:1624
+msgid "Welcome email"
+msgstr "E-mail de bienvenue"
+
+#: ../views/admin.php:1627
+msgid "Allow custom \"Welcome email\""
+msgstr "Autoriser l'e-mail de \"Bienvenue\" personnalisé"
+
+#: ../views/admin.php:1654
+msgid "Menu background color"
+msgstr "Couleur d'arrière-plan du menu"
+
+#: ../views/admin.php:1749
+msgid "Headline"
+msgstr "La Une"
+
+#: ../views/admin.php:1779
+msgid ""
+"{USER-NAME},{CONTEST-URL} and {CONTEST-NAME} will be autoamtically replaced "
+"for real Username, Contest URL and Contest name"
+msgstr ""
+"{USER-NAME},{CONTEST-URL} et {CONTEST-NAME} seront automatiquement remplacés "
+"par le nom d'utilisateur, l'URL du concours et son nom"
+
+#: ../views/admin.php:1788
+msgid "Send login details with \"Welcome\" email?"
+msgstr "Envoyer les informations de connexion avec l'e-mail \"Bienvenue\" ?"
+
+#: ../views/admin.php:1796
+msgid "Yes, send direct password"
+msgstr "Oui, envoyer directement le mot de passe"
+
+#: ../views/admin.php:1805
+msgid "Yes, but not password directly only \"generate password\" link."
+msgstr ""
+"Oui, mais pas directement le mot de passe, seulement le lien \"Générer un "
+"mot de passe\"."
+
+#: ../views/admin.php:1829
+msgid "Menu settings"
+msgstr "Réglages du menu"
+
+#: ../views/admin.php:1831
+msgid ""
+"Menu color and style you can set for every contest differently in contest "
+"settings."
+msgstr ""
+"Couleur et style du menu : vous pouvez les définir différemment pour chaque "
+"concours dans les réglages du concours."
+
+#: ../views/admin.php:1835
+msgid "Menu layout"
+msgstr "Présentation du menu"
+
+#: ../views/admin.php:1844
+msgid "Menu layout 1"
+msgstr "Présentation du menu 1"
+
+#: ../views/admin.php:1852
+msgid "Menu layout 2"
+msgstr "Présentation du menu 2"
+
+#: ../views/admin.php:1858
+msgid "Mobile Menu"
+msgstr "Menu pour mobile"
+
+#: ../views/admin.php:1859
+msgid ""
+"Some WordPress themes have javascripts for animation. This animation block "
+"CSS selector :target so instead of opening menu (on mobile devices) create "
+"slide animation. If you have this issue you have two options. Option one is "
+"disable this animation in your theme and for option two is possible to use "
+"jQuery menu opening script."
+msgstr ""
+"Certains thèmes WordPress utilisent javascript pour l'animation. Cette "
+"animation bloque le sélecteur CSS :target ainsi au lieu d'ouvrir le menu "
+"(sur les appareils mobiles) elle crée une animation en diapositives. Si vous "
+"rencontrez ce problème, vous avez deux options : La première est de "
+"désactiver cette animation dans votre thème, la deuxième option est "
+"d'utiliser le script d'ouverture de menu jQuery."
+
+#: ../views/admin.php:1869
+msgid "Open mobile menu using CSS"
+msgstr "Ouvrir le menu mobile en utilisant CSS"
+
+#: ../views/admin.php:1877
+msgid "Open mobile menu using jQuery"
+msgstr "Ouvrir le menu mobile en utilisant jQuery"
+
+#: ../views/admin.php:1885
+msgid "Change text \"Gallery\""
+msgstr "Modifier le texte \"Galerie\"."
+
+#: ../views/admin.php:1892
+msgid "Change text \"Upload Photo\""
+msgstr "Modifier le texte \"Téléverser la photo\"."
+
+#: ../views/admin.php:1899
+msgid "Change text \"Rules & Prizes\""
+msgstr "Modifier le texte \"Règlement & Prix\"."
+
+#: ../views/admin.php:1906
+msgid "Change text \"Your Images\""
+msgstr "Modifier le texte \"Vos images\"."
+
+#: ../views/admin.php:1913
+msgid "Change text \"Top 10\""
+msgstr "Modifier le texte \"Top 10\""
+
+#: ../views/admin.php:1926
+msgid "Login and registration form"
+msgstr "Formulaire d'inscription et de connexion"
+
+#: ../views/admin.php:1929
+msgid "What to use for login and registration"
+msgstr "Quoi utiliser pour se connecter et s'inscrire"
+
+#: ../views/admin.php:1937
+msgid "Standard Photo Contest login and registration form"
+msgstr "Formulaire standard de connexion et d'inscription au concours photo"
+
+#: ../views/admin.php:1946
+msgid ""
+"3rd party plugin for login and registration. Please add shortcode for that "
+"form!"
+msgstr ""
+"Plugin tiers de connexion et d'enregistrement. Veuillez ajouter un code "
+"court pour ce formulaire !"
+
+#: ../views/admin.php:1957
+msgid "Own code injection to the header section"
+msgstr "Injection de code dans la section d'en-tête"
+
+#: ../views/admin.php:1959
+msgid ""
+"Be very careful. If you add code to the header section it must be properly "
+"coded! You must define attributes correctly. And please remember the code "
+"will be added to the header only where the gallery is. So if you need add "
+"code for every single post or page please use a special plugin for that."
+msgstr ""
+"Soyez très prudent. Si vous ajoutez du code dans l'en-tête, il doit être "
+"correctement codé ! Vous devez définir les attributs correctement. Et "
+"n'oubliez pas que le code ne sera ajouté à l'en-tête que là où se trouve la "
+"galerie. Ainsi si vous avez besoin d'ajouter du code pour chaque message ou "
+"chaque page, veuillez utiliser un plugin spécial pour cela."
+
+#: ../views/admin.php:1963
+msgid "Header Code"
+msgstr "Code d'en-tête"
+
+#: ../views/admin.php:1969
+msgid "BuddyPress integration"
+msgstr "Intégration BuddyPress"
+
+#: ../views/admin.php:1980
+msgid "Show images after upload in activity stream"
+msgstr "Afficher les images après leur téléversement dans le flux d'activité"
+
+#: ../views/admin.php:1987
+msgid ""
+"Show new comments in activity stream (works only with Wordpress comments)"
+msgstr ""
+"Afficher les nouveaux commentaires dans le flux d'activité (fonctionne "
+"uniquement avec les commentaires Wordpress)"
+
+#: ../views/admin.php:1994
+msgid "After voting display info about vote in user activity stream"
+msgstr ""
+"Après le vote, afficher les informations sur le vote dans le flux d'activité "
+"de l'utilisateur"
+
+#: ../views/admin.php:2005
+msgid "BuddyPress is NOT active. Activate and set BuddyPress first!"
+msgstr "BuddyPress n'est PAS actif. Activez et réglez d'abord BuddyPress !"
+
+#: ../views/categories.php:20 ../views/categories.php:35
+#: ../views/categories.php:66 ../views/contests.php:56
+msgid "Error:"
+msgstr "Erreur :"
+
+#: ../views/categories.php:20 ../views/categories.php:149
+msgid "Create!"
+msgstr "Créer !"
+
+#: ../views/categories.php:35 ../views/categories.php:66
+msgid "\"Category name\" is required field!"
+msgstr "Le champ \"Nom de la catégorie\" est obligatoire !"
+
+#: ../views/categories.php:89
+msgid "Category was successfuly deleted"
+msgstr "La catégorie a été supprimée avec succès"
+
+#: ../views/categories.php:93
+msgid "Category was successfuly edited"
+msgstr "La catégorie a été éditée avec succès"
+
+#: ../views/categories.php:100
+msgid "Create a new Category"
+msgstr "Créer une nouvelle catégorie"
+
+#: ../views/categories.php:110 ../views/categories.php:111
+#: ../views/categories.php:170
+msgid "Category name"
+msgstr "Nom de la catégorie"
+
+#: ../views/categories.php:117
+msgid "Category related to the contest"
+msgstr "Catégorie liée au concours"
+
+#: ../views/categories.php:164
+msgid "Edit Category"
+msgstr "Modifier la catégorie"
+
+#: ../views/categories.php:182
+msgid "Category related to the contest *"
+msgstr "Catégorie liée au concours *"
+
+#: ../views/categories.php:192
+msgid "Edit!"
+msgstr "Éditer !"
+
+#: ../views/categories.php:198
+msgid ""
+"* Field \"Category related to the contest\" can not be edited for several "
+"technical reasons. If you did mistake, delete the category and create a new "
+"one."
+msgstr ""
+"* Le champ \"Catégorie relative au concours\" ne peut être modifié pour "
+"plusieurs raisons techniques. Si vous avez fait une erreur, supprimez la "
+"catégorie et créez-en une nouvelle."
+
+#: ../views/categories.php:201
+msgid "List of Categories"
+msgstr "Liste des catégories"
+
+#: ../views/categories.php:206 ../views/categories.php:215
+#: ../views/categories.php:229 ../views/contests.php:81
+#: ../views/contests.php:95 ../views/contests.php:127 ../views/photos.php:563
+#: ../views/photos.php:586 ../views/photos.php:695
+msgid "ID"
+msgstr "ID"
+
+#: ../views/categories.php:207 ../views/categories.php:216
+#: ../views/categories.php:230 ../views/contests.php:83
+#: ../views/contests.php:97 ../views/contests.php:129
+msgid "Name"
+msgstr "Nom"
+
+#: ../views/categories.php:208 ../views/categories.php:217
+#: ../views/categories.php:231
+msgid "Related to contest"
+msgstr "Relatif au concours"
+
+#: ../views/contests.php:53
+msgid "Create a new Contest"
+msgstr "Créer un nouveau concours"
+
+#: ../views/contests.php:56
+msgid ""
+"This contest cannot be created because on selected page contest already "
+"exists"
+msgstr ""
+"Ce concours ne peut pas être créé parce qu'il existe déjà un concours sur la "
+"page sélectionnée"
+
+#: ../views/contests.php:63
+msgid ""
+"The contest is created! Please add these contest shortcodes: "
+"<strong>[contest-menu][contest-page]</strong> to the page:"
+msgstr ""
+"Le concours est créé ! Veuillez ajouter ces codes courts de concours : "
+"<strong>[Contest-menu][Contest-page]</strong> à la page :"
+
+#: ../views/contests.php:66
+msgid "The contest is created! Now you can visit the contest:"
+msgstr "Le concours est créé ! A présent, vous pouvez consulter le concours :"
+
+#: ../views/contests.php:80 ../views/contests.php:94 ../views/contests.php:122
+#: ../views/contests.php:125 ../views/jury.php:165 ../views/jury.php:175
+#: ../views/jury.php:203 ../views/jury.php:205 ../views/photos.php:572
+#: ../views/photos.php:595 ../views/photos.php:896
+msgid "Active"
+msgstr "Actif"
+
+#: ../views/contests.php:82 ../views/contests.php:96 ../views/contests.php:128
+msgid "Page ID"
+msgstr "Page ID"
+
+#: ../views/contests.php:84 ../views/contests.php:98 ../views/contests.php:130
+msgid "Contest Start"
+msgstr "Début du concours"
+
+#: ../views/contests.php:85 ../views/contests.php:99 ../views/contests.php:131
+msgid "Contest End"
+msgstr "Fin du concours"
+
+#: ../views/contests.php:87 ../views/contests.php:101 ../views/contests.php:133
+msgid "Visit"
+msgstr "Visite"
+
+#: ../views/contests.php:135
+msgid "Do you want delete this contest? Are you sure?"
+msgstr "Voulez-vous supprimer ce concours ? Êtes-vous sûr !?"
+
+#: ../views/contests.php:222 ../views/contests.php:232
+msgid "(This field is not active in this mode!)"
+msgstr "(Ce champ n'est pas actif dans ce mode !)"
+
+#: ../views/contests.php:236
+msgid ""
+"(Jury mode for this contest is active! Standard vote options for ordinary "
+"users or visitors are disabled )"
+msgstr ""
+"(Le mode Jury de ce concours est actif ! Les options de vote standards pour "
+"les utilisateurs ordinaires ou les visiteurs sont désactivées.)"
+
+#: ../views/contests.php:248
+msgid "Edit Contest"
+msgstr "Modifier le concours"
+
+#: ../views/contests.php:250 ../views/contests.php:253
+msgid "Contest mode"
+msgstr "Mode Concours"
+
+#: ../views/contests.php:254
+msgid ""
+"The contest can be set to three modes. The first mode is a just classic "
+"contest with all parts, the second mode is set as upload form with the menu "
+"in this mode is also enabled Rules and Prizes section and in the third mode "
+"is allowed only upload form. In the second and third mode is not possible to "
+"share images, it is not possible to vote, it is not possible tho show "
+"gallery, but you can switch between all three modes anytime you want."
+msgstr ""
+"Le concours peut être paramétré en trois modes. Le premier mode est un "
+"concours classique avec toutes ses compostantes. Le second est sous forme "
+"d'un formulaire de téléversement, le menu et la section \"Règlement et Prix"
+"\" sont également affichés. Dans le troisième mode, seul le formulaire de "
+"téléversement est affiché. Dans le deuxième et le troisième mode, il n'est "
+"pas possible de partager des images, de voter ou d'afficher la galerie, mais "
+"vous pouvez basculer entre les trois modes quand vous le souhaitez."
+
+#: ../views/contests.php:265
+msgid "Gallery mode"
+msgstr "Mode Galerie"
+
+#: ../views/contests.php:265
+msgid "Classic contest with all sections, the menu and with the voting"
+msgstr "Concours classique avec toutes les sections, le menu et le vote"
+
+#: ../views/contests.php:276 ../views/contests.php:287
+msgid "Upload form mode"
+msgstr "Mode formulaire de téléversement"
+
+#: ../views/contests.php:276
+msgid "With Menu"
+msgstr "Avec Menu"
+
+#: ../views/contests.php:276
+msgid ""
+"In this mode only Upload Form, Menu and Rules & Prizes section will be "
+"visible"
+msgstr ""
+"Dans ce mode, seules les sections Formulaire de téléversement, Menu et "
+"Règlement & Prix seront visibles"
+
+#: ../views/contests.php:287
+msgid "Without Menu"
+msgstr "Sans Menu"
+
+#: ../views/contests.php:287
+msgid "In this mode only Upload Form will be visible"
+msgstr "Dans ce mode, seul le formulaire de téléversement sera visible"
+
+#: ../views/contests.php:296 ../views/contests.php:297
+msgid "Name of the contest"
+msgstr "Nom du concours"
+
+#: ../views/contests.php:302
+msgid "Start date"
+msgstr "Date de début"
+
+#: ../views/contests.php:303 ../views/contests.php:309
+#: ../views/contests.php:315 ../views/contests.php:321
+msgid "Select date"
+msgstr "Sélectionner la date"
+
+#: ../views/contests.php:308
+msgid "End date"
+msgstr "Date de fin"
+
+#: ../views/contests.php:314
+msgid "Registration will end on:"
+msgstr "L'inscription se terminera le :"
+
+#: ../views/contests.php:320
+msgid "Voting will begin on:"
+msgstr "Le vote commencera le :"
+
+#: ../views/contests.php:326
+msgid "Primary Page"
+msgstr "Page principale"
+
+#: ../views/contests.php:326 ../views/contests.php:1236
+msgid "(Required)"
+msgstr "(Requis)"
+
+#: ../views/contests.php:333
+msgid "Important: Select Page!"
+msgstr "Important : Sélectionnez la page !"
+
+#: ../views/contests.php:355
+msgid "Secondary page"
+msgstr "Deuxième page"
+
+#: ../views/contests.php:359
+msgid "Select secondary page (optional)"
+msgstr "Sélectionner la deuxième page (facultatif)"
+
+#: ../views/contests.php:367
+msgid "==No page needed=="
+msgstr "== Pas besoin de page =="
+
+#: ../views/contests.php:384
+msgid "Third page"
+msgstr "Troisième page"
+
+#: ../views/contests.php:384
+msgid "Use ID of the page"
+msgstr ""
+
+#: ../views/contests.php:393
+msgid "Users Settings"
+msgstr "Réglages Utilisateurs"
+
+#: ../views/contests.php:396
+msgid "Photos per User"
+msgstr "Photo(s) par utilisateur"
+
+#: ../views/contests.php:449
+msgid "Unlimited"
+msgstr "Illimité"
+
+#: ../views/contests.php:465
+msgid "Allow users to edit their own image"
+msgstr "Autoriser les utilisateurs à modifier leur propre image"
+
+#: ../views/contests.php:487
+msgid "Allow to Edit the image"
+msgstr "Autoriser l'édition d'image"
+
+#: ../views/contests.php:498
+msgid "Allow to Edit and Delete the image"
+msgstr "Autoriser l'édition et la suppression d'image"
+
+#: ../views/contests.php:507
+msgid "Reguire registration before image upload"
+msgstr "Enregistrement requis avant le téléversement de l'image"
+
+#: ../views/contests.php:518
+msgid "(Default)"
+msgstr "(Défaut)"
+
+#: ../views/contests.php:537
+msgid "Layout"
+msgstr "Mise en page"
+
+#: ../views/contests.php:540
+msgid "Select Menu Style"
+msgstr "Sélectionner le style du menu"
+
+#: ../views/contests.php:551
+msgid "Menu Height - Normal"
+msgstr "Hauteur du menu - Normale"
+
+#: ../views/contests.php:562
+msgid "Menu Height - Thin"
+msgstr "Hauteur du menu - Fine"
+
+#: ../views/contests.php:570
+msgid "Menu Color"
+msgstr "Couleur du menu"
+
+#: ../views/contests.php:660
+msgid "Gallery Grid Layout"
+msgstr "Présentation en galerie"
+
+#: ../views/contests.php:671
+msgid "Classic"
+msgstr "Classique"
+
+#: ../views/contests.php:682 ../views/contests.php:693
+#: ../views/contests.php:704
+msgid "Modern"
+msgstr "Moderne"
+
+#: ../views/contests.php:693
+msgid "With Lightbox"
+msgstr "avec visionneuse"
+
+#: ../views/contests.php:704
+msgid "With Lightbox and vote button"
+msgstr "avec visionneuse et bouton de vote"
+
+#: ../views/contests.php:710
+msgid "Gallery layout color"
+msgstr "Couleur de la galerie"
+
+#: ../views/contests.php:799
+msgid "Rows in the Gallery"
+msgstr "Lignes dans la galerie"
+
+#: ../views/contests.php:862
+msgid "Columns in the Gallery"
+msgstr "Colonnes dans la galerie"
+
+#: ../views/contests.php:875
+msgid "- Recommended"
+msgstr "- Recommandé"
+
+#: ../views/contests.php:878
+msgid "- Only for wide pages"
+msgstr "- Uniquement pour les pages larges"
+
+#: ../views/contests.php:881
+msgid "- Only for very wide pages"
+msgstr "- Uniquement pour les pages très larges"
+
+#: ../views/contests.php:897
+msgid "Primary gallery order"
+msgstr "Ordre initial de la galerie"
+
+#: ../views/contests.php:908
+msgid "Latest"
+msgstr "Dernier"
+
+#: ../views/contests.php:926
+msgid "Voting"
+msgstr "Vote"
+
+#: ../views/contests.php:930
+msgid "How often should users vote!"
+msgstr "À quelle fréquence les utilisateurs peuvent-ils voter ?"
+
+#: ../views/contests.php:941
+msgid "Only one single vote"
+msgstr "Un seul vote"
+
+#: ../views/contests.php:952
+msgid "A rate mode - 5 stars rating"
+msgstr "Un mode de notation - 5 étoiles"
+
+#: ../views/contests.php:963
+msgid "A rate mode - 10 stars rating"
+msgstr "Un mode de notation - 10 étoiles"
+
+#: ../views/contests.php:974
+msgid ""
+"Once for each Photo (Like the \"Like button\" - Photo with most likes/votes "
+"wins)"
+msgstr ""
+"Une fois pour chaque photo (la photo avec le plus grand nombre de Likes/"
+"votes gagne)"
+
+#: ../views/contests.php:985
+msgid "Once a Day (Every new day) (for each Photo)"
+msgstr "Une fois par jour (chaque jour, pour chaque photo)"
+
+#: ../views/contests.php:996
+msgid "Twice a Day (Every 12 hours) (for each Photo)"
+msgstr "Deux fois par jour (toutes les 12 heures, pour chaque photo)"
+
+#: ../views/contests.php:1007
+msgid "Once an Hour (for each Photo)"
+msgstr "Une fois par heure (pour chaque photo)"
+
+#: ../views/contests.php:1016
+msgid "IP Address Vote Protection"
+msgstr "Protection du vote par adresse IP"
+
+#: ../views/contests.php:1025
+msgid "(Highly recommended!)"
+msgstr "(fortement recommandé !)"
+
+#: ../views/contests.php:1034
+msgid ""
+"(Choose this option only if you are in closed or private network (like "
+"company network) and all computers/devices have the same IP address!)"
+msgstr ""
+"(choisissez cette option uniquement si vous êtes sur un réseau fermé ou "
+"privé _ comme un réseau d'entreprise _ et que tous les ordinateurs/"
+"dispositifs ont la même adresse IP !)"
+
+#: ../views/contests.php:1042
+msgid "Manage the Content"
+msgstr "Gérer le contenu"
+
+#: ../views/contests.php:1051
+msgid "Hide Upload Section"
+msgstr "Masquer la section de téléchargement"
+
+#: ../views/contests.php:1051 ../views/contests.php:1058
+#: ../views/contests.php:1065 ../views/contests.php:1072
+msgid "(Section will be still visible for Admins)"
+msgstr "(la section sera toujours visible pour les administrateurs)"
+
+#: ../views/contests.php:1058
+msgid "Hide Top 10 Section"
+msgstr "Masquer la section Top 10"
+
+#: ../views/contests.php:1065
+msgid "Hide Your Image Section"
+msgstr "Masquer la section Votre image"
+
+#: ../views/contests.php:1072
+msgid "Hide Rules & Prizes Section"
+msgstr "Masquer la section Règlement & Prix"
+
+#: ../views/contests.php:1079
+msgid "Hide Author's Name"
+msgstr "Masquer le nom de l'auteur"
+
+#: ../views/contests.php:1079
+msgid "(Author's name will be still visible for Admins)"
+msgstr "(le nom de l'auteur sera toujours visible pour les administrateurs)"
+
+#: ../views/contests.php:1086 ../views/jury.php:318
+msgid "Hide Votes"
+msgstr "Masquer les votes"
+
+#: ../views/contests.php:1086 ../views/jury.php:318
+msgid ""
+"(Votes, Top 10 and order by votes in Gallery will be hidden but still "
+"visible for Admins)"
+msgstr ""
+"(Les votes, le Top 10 et le classement par votes dans la Galerie seront "
+"cachés mais toujours visibles pour les administrateurs)"
+
+#: ../views/contests.php:1093
+msgid "Hide Views"
+msgstr "Masquer le nombre de vues"
+
+#: ../views/contests.php:1093
+msgid "(Views will be still visible for Admins)"
+msgstr "(le nombre de vues sera toujours visible pour les administrateurs)"
+
+#: ../views/contests.php:1100
+msgid "Hide Login Button"
+msgstr "Masquer le bouton de connexion"
+
+#: ../views/contests.php:1107
+msgid "Hide Social Icons"
+msgstr "Masquer les icônes sociaux"
+
+#: ../views/contests.php:1114
+msgid "Hide Select Bars and Search Bar in the gallery"
+msgstr "Cacher les barres de sélection et de recherche dans la galerie"
+
+#: ../views/contests.php:1120
+msgid "Manage Upload Form"
+msgstr "Gérer le formulaire de téléchargement"
+
+#: ../views/contests.php:1124
+msgid "Custom registration form fields"
+msgstr "Champs personnalisés du formulaire d'inscription"
+
+#: ../views/contests.php:1125
+msgid ""
+"(This fields are connected to user so it is visible only during registration "
+"process. Already registered users can not see this fields)"
+msgstr ""
+"(ces champs sont liés à l'utilisateur de sorte qu'ils ne sont visibles que "
+"pendant le processus d'enregistrement. Les utilisateurs déjà enregistrés ne "
+"peuvent pas voir ces champs)"
+
+#: ../views/contests.php:1154
+msgid "Zip/Postal code"
+msgstr "Code Postal"
+
+#: ../views/contests.php:1161
+msgid "Only US"
+msgstr "Uniquement USA"
+
+#: ../views/contests.php:1175
+msgid "Gender (Male/Female)"
+msgstr "Genre (Homme/Femme)"
+
+#: ../views/contests.php:1182
+msgid "Gender (Male/Female/Other)"
+msgstr "Genre (Homme/Femme/Autre)"
+
+#: ../views/contests.php:1189
+msgid "Website/Blog/Gallery URL"
+msgstr "URL du Site web/Blog/Galerie"
+
+#: ../views/contests.php:1196
+msgid "Phone number"
+msgstr "Numéro de téléphone"
+
+#: ../views/contests.php:1226 ../views/contests.php:1238
+#: ../views/contests.php:1295
+msgid "Name of the field"
+msgstr "Nom du champ"
+
+#: ../views/contests.php:1248
+msgid "I am over the age of 13 - checkbox"
+msgstr "J'ai plus de 13 ans - case à cocher"
+
+#: ../views/contests.php:1255
+msgid "I am over the age of 18  - checkbox"
+msgstr "J'ai plus de 18 ans - case à cocher"
+
+#: ../views/contests.php:1262
+msgid "I have read and accept official contest rules - checkbox"
+msgstr "J'ai lu et j'accepte le règlement officiel du concours - case à cocher"
+
+#: ../views/contests.php:1270
+msgid "Custom image details form fields"
+msgstr "Champs de formulaire personnalisés d'information sur l'image "
+
+#: ../views/contests.php:1271
+msgid "(This fields are connected to uploaded image)"
+msgstr "(Ces champs sont liés à l'image téléversée)"
+
+#: ../views/contests.php:1305
+msgid "Rules & Prizes!"
+msgstr "Règlement & Prix !"
+
+#: ../views/info.php:20
+msgid "Index"
+msgstr "Index"
+
+#: ../views/info.php:24
+msgid "Basic Info"
+msgstr "Information de bae"
+
+#: ../views/info.php:26 ../views/info.php:81
+msgid "Disqus Comments - Video"
+msgstr "Commentaires Disqus - Vidéo"
+
+#: ../views/info.php:27 ../views/info.php:89
+msgid "Disqus Comments - Step by Step"
+msgstr "Commentaires Disqus - Pas à Pas"
+
+#: ../views/info.php:28
+msgid "Online documentation & Demo"
+msgstr "Documentation et démo en ligne"
+
+#: ../views/info.php:29
+msgid "Official page on Codecanyon"
+msgstr "Page officielle sur Codecanyon"
+
+#: ../views/info.php:30
+msgid "Official Support Form"
+msgstr "Formulaire officiel d'assistance"
+
+#: ../views/info.php:36
+msgid "Basic system info"
+msgstr "Information de base"
+
+#: ../views/info.php:38
+msgid "PHP version"
+msgstr "Version de PHP"
+
+#: ../views/info.php:39
+msgid "Plugin version"
+msgstr "Version du plugin"
+
+#: ../views/info.php:40
+msgid "WordPress version"
+msgstr "Version WordPress"
+
+#: ../views/info.php:47
+msgid "Create a Contest - Step by step"
+msgstr "Créer un concours - Etape par étape"
+
+#: ../views/info.php:49
+msgid "Create a contest in the new WordPress Editor (Gutenberg)"
+msgstr "Créer un concours dans le nouvel éditeur WordPress (Gutenberg)"
+
+#: ../views/info.php:51 ../views/info.php:60
+msgid "Create a new page for the contest."
+msgstr "Créer une nouvelle page pour le concours."
+
+#: ../views/info.php:52
+msgid "Hit \"Add block\" (it is the Plus symbol in the Circle)"
+msgstr ""
+"Cliquer sur \"Ajouter un block\" (c'est le symbole Plus dans le cercle)"
+
+#: ../views/info.php:53
+msgid "In the field \"Search for a block\" type Photo Contest"
+msgstr "Dans le champ \"Rechercher un bloc\" tapez Concours Photo"
+
+#: ../views/info.php:54
+msgid "Pick the block \"Photo Contest\""
+msgstr "Choisissez le bloc \"Concours photo\""
+
+#: ../views/info.php:55 ../views/info.php:64 ../views/info.php:72
+msgid "Done!"
+msgstr "Terminé !"
+
+#: ../views/info.php:58
+msgid "Create a contest in the old WordPress editor"
+msgstr "Créer un concours dans l'ancien éditeur WordPress"
+
+#: ../views/info.php:61
+msgid ""
+"Hit button \"Add Photo Contest\" or add these two shortcodes to the text "
+"area <strong><code>[</code><code>contest-menu</code><code>]</code><code>[</"
+"code><code>contest-page</code><code>]</code></strong>."
+msgstr ""
+"Cliquez sur le bouton \"Ajouter un concours photo\" ou ajoutez ces deux "
+"shortcodes dans la zone de texte <strong><code>[</code><code>concours-menu</"
+"code><code>]</code><code>[</code><code>concours-page</code><code>]</code></"
+"strong>."
+
+#: ../views/info.php:62
+msgid "Save the page and visit the page."
+msgstr "Sauvegarder et visiter la page."
+
+#: ../views/info.php:63
+msgid ""
+"On the page you will find a form for creating a new contest, so fill the "
+"form."
+msgstr ""
+"Sur la page vous trouverez un formulaire pour créer un nouveau concours, "
+"alors remplissez le formulaire."
+
+#: ../views/info.php:67
+msgid "Create a contest in the Contests section"
+msgstr "Créer un concours dans la section Concours"
+
+#: ../views/info.php:69
+msgid "Go to admin area Photo Contest -> Contests section."
+msgstr "Allez dans la zone admin Concours photo -> section Concours."
+
+#: ../views/info.php:70
+msgid ""
+"Set contest name in the \"Create a new contest\" form and fill the rest of "
+"the form."
+msgstr ""
+"Définissez le nom du concours dans le formulaire \"Créer un nouveau concours"
+"\" et remplissez le reste du formulaire."
+
+#: ../views/info.php:71
+msgid "Hit \"Create a contest\" buton."
+msgstr "Cliquez sur le bouton \"Créer un concours\"."
+
+#: ../views/info.php:92
+msgid "Create account on"
+msgstr "Créer un compte sur"
+
+#: ../views/info.php:93
+msgid ""
+"After register and login click Setting icon in top right corner and select "
+"\"Add Disqus To Site\""
+msgstr ""
+"Après l'enregistrement et la connexion, cliquez sur l'icône Réglages dans le "
+"coin supérieur droit et sélectionnez \"Add Disqus To Your Site\""
+
+#: ../views/info.php:94
+msgid "Click button \"Install on Your Site\" in top right corner"
+msgstr "Cliquez sur le bouton \"Install on Your Site\" en haut à droite"
+
+#: ../views/info.php:95
+msgid "Fill the Form and click \"Next\" button"
+msgstr "Remplissez le formulaire et cliquez sur le bouton \"Next\""
+
+#: ../views/info.php:96
+msgid ""
+"Pick one option \"My site is part of larger organization\" or \"My site is "
+"just a personal site\""
+msgstr ""
+"Choisissez une option \"My site is part of larger organization\" ou \"My "
+"site is just a personal site\""
+
+#: ../views/info.php:97
+msgid "In this step just click \"Skip\" button"
+msgstr "A cette étape, cliquez simplement sur le bouton \"Skip\""
+
+#: ../views/info.php:98
+msgid "On page \"Choose your Platform\" select first option Universal Code"
+msgstr ""
+"Sur la page \"Choose your Platform\" sélectionnez la première option "
+"\"Universal Code\""
+
+#: ../views/info.php:99
+msgid "First select and after copy the code (Select CTRL+A and Copy CTRL+V)"
+msgstr ""
+"Commencez par sélectionner le code puis copiez le (Sélectionner CTRL+A et "
+"Copier CTRL+C)"
+
+#: ../views/info.php:100
+msgid ""
+"Go to your site to Photo Contest General setting page and put code to "
+"textarea \"Disqus Code\" and click \"Save changes\"</li>"
+msgstr ""
+"Allez sur votre site, à la page \"Réglages Généraux\" de Concours Photo et "
+"collez le code dans la zone de texte \"Disqus Code\" puis cliquez sur \"Save "
+"changes\"</li>"
+
+#: ../views/jury.php:160 ../views/jury.php:257
+msgid ""
+"If you will allow Jury for the contest, You must understand that some of "
+"previous settings for voting will be ignored."
+msgstr ""
+"Si vous autorisez le Jury à participer au concours, certains réglages de "
+"vote antérieurs ne seront pas pris en compte."
+
+#: ../views/jury.php:166 ../views/jury.php:176 ../views/jury.php:207
+msgid "Jury for"
+msgstr "Jury pour"
+
+#: ../views/jury.php:167 ../views/jury.php:177 ../views/jury.php:208
+#: ../views/jury.php:266
+msgid "Allow the Jury"
+msgstr "Prévoir le jury"
+
+#: ../views/jury.php:168 ../views/jury.php:178 ../views/jury.php:215
+msgid "Jury members"
+msgstr "Membres du jury"
+
+#: ../views/jury.php:254
+msgid "Jury for the contest:"
+msgstr "Jury du concours :"
+
+#: ../views/jury.php:277
+msgid "Select type of judging"
+msgstr "Choisir le type de notation"
+
+#: ../views/jury.php:283
+msgid "Vote"
+msgstr "Votez"
+
+#: ../views/jury.php:290
+msgid "10 Star rating"
+msgstr "Top 10"
+
+#: ../views/jury.php:297
+msgid "Number of votes for each jury member"
+msgstr "Nombre de voix pour chaque membre du jury"
+
+#: ../views/jury.php:297
+msgid ""
+"(This number give votes to your jury members. Example if you set 3 votes, "
+"each member of the jury can vote 3 times (total) for 3 different images. If "
+"you set 1 vote, users can vote only once. One vote is the minimum.)"
+msgstr ""
+"(Ce nombre donne droit de vote aux membres de votre jury. Exemple : si vous "
+"réglez 3 votes, chaque membre du jury peut voter 3 fois (au total) pour 3 "
+"images différentes. Si vous réglez 1 vote, les utilisateurs ne peuvent voter "
+"qu'une seule fois. Un vote est le minimum.)"
+
+#: ../views/jury.php:299
+msgid "Numbers of votes (minimum is one)"
+msgstr "Nombre de votes (minimum un)"
+
+#: ../views/jury.php:304
+msgid "Add new members to Jury"
+msgstr "Ajouter de nouveaux membres au jury"
+
+#: ../views/jury.php:304
+msgid "(Add ID of the users separated by comma. Example 1,29,33,55)"
+msgstr ""
+"(Ajouter l'ID des utilisateurs séparés par une virgule. Exemple 1,29,33,55)"
+
+#: ../views/jury.php:304
+msgid "Show users with their ID´s"
+msgstr "Montrer les utilisateurs avec leurs IDs"
+
+#: ../views/jury.php:312
+msgid "Hide votes"
+msgstr "Masquer les votes"
+
+#: ../views/jury.php:335
+msgid "Members of the Jury"
+msgstr "Membres du jury"
+
+#: ../views/jury.php:354
+msgid "There are no members yet"
+msgstr "Il n'y a pas encore de membres"
+
+#: ../views/photos.php:303
+msgid "Contest Photos"
+msgstr "Photos du concours"
+
+#: ../views/photos.php:306 ../views/votes.php:129
+msgid "Filters"
+msgstr "Filtres"
+
+#: ../views/photos.php:313 ../views/votes.php:136
+msgid "Maximum Items per page"
+msgstr "Nombre maximum d'éléments par page"
+
+#: ../views/photos.php:402 ../views/photos.php:430
+msgid "Activated"
+msgstr "Activé"
+
+#: ../views/photos.php:407
+msgid "Top Rated - 5 Stars"
+msgstr "Les mieux notés - 5 étoiles"
+
+#: ../views/photos.php:413
+msgid "Worst Rated - 5 Stars"
+msgstr "Les moins biens notés - 5 étoiles"
+
+#: ../views/photos.php:419
+msgid "Top Rated - 10 Stars"
+msgstr "Les mieux notés - 10 étoiles"
+
+#: ../views/photos.php:425
+msgid "Worst Rated - 10 Stars"
+msgstr "Les moins biens notés - 10 étoiles"
+
+#: ../views/photos.php:435
+msgid "Not Activated"
+msgstr "Non activé"
+
+#: ../views/photos.php:452
+msgid "All Contests"
+msgstr "Tous les concours"
+
+#: ../views/photos.php:515
+msgid "Export this to CSV!"
+msgstr "Exporter ceci en CSV !"
+
+#: ../views/photos.php:526
+msgid "Export Users data!"
+msgstr "Exporter les données Utilisateurs !"
+
+#: ../views/photos.php:540 ../views/votes.php:352
+msgid "Result(s)"
+msgstr "Résultat(s)"
+
+#: ../views/photos.php:547 ../views/votes.php:361
+msgid "There are no records yet!"
+msgstr "Il n'y a pas encore d'enregistrements !"
+
+#: ../views/photos.php:564 ../views/photos.php:587 ../views/photos.php:696
+msgid "Image"
+msgstr "Image"
+
+#: ../views/photos.php:565 ../views/photos.php:588 ../views/photos.php:697
+#: ../views/votes.php:584
+msgid "Info"
+msgstr "Information"
+
+#: ../views/photos.php:566 ../views/photos.php:589 ../views/photos.php:721
+#: ../views/photos.php:756 ../views/photos.php:760
+msgid "Author"
+msgstr "Auteur"
+
+#: ../views/photos.php:567 ../views/photos.php:590 ../views/photos.php:765
+#: ../views/votes.php:381 ../views/votes.php:404 ../views/votes.php:532
+msgid "Contest"
+msgstr "Concours"
+
+#: ../views/photos.php:723
+msgid "Edit user"
+msgstr "Editer l'utilisateur"
+
+#: ../views/photos.php:733
+msgid "Profile"
+msgstr "Profil"
+
+#: ../views/photos.php:760
+msgid "This autor was deleted"
+msgstr "Cet auteur a été supprimé"
+
+#: ../views/photos.php:785
+msgid "Uncatergorized"
+msgstr "Non classé en catégorie"
+
+#: ../views/photos.php:812
+msgid "Votes/rating"
+msgstr "Votes/notation"
+
+#: ../views/photos.php:903
+msgid "Download"
+msgstr "Télécharger"
+
+#: ../views/photos.php:904
+msgid "Show in contest"
+msgstr "Afficher dans le concours"
+
+#: ../views/photos.php:905
+msgid "Who voted?"
+msgstr "Qui a voté ?"
+
+#: ../views/photos.php:906
+msgid "Do you want delete this image? Are you sure?"
+msgstr "Voulez-vous supprimer cette image ? Êtes-vous sûr !?"
+
+#: ../views/photos.php:929
+msgid "Activate selected photos"
+msgstr "Activer les photos sélectionnées"
+
+#: ../views/photos.php:930
+msgid "Deactivate selected photos"
+msgstr "Désactiver les photos sélectionnées"
+
+#: ../views/photos.php:931
+msgid "Do you want to delete selected photos? Are you sure!!?"
+msgstr "Voulez-vous supprimer les photos sélectionnées ? Êtes-vous sûr !?"
+
+#: ../views/photos.php:931
+msgid "Delete selected photos"
+msgstr "Supprimer les photos sélectionnées"
+
+#: ../views/votes.php:186
+msgid "Select a Country"
+msgstr "Sélectionner un pays"
+
+#: ../views/votes.php:203
+msgid "Search by email"
+msgstr "Recherche par e-mail"
+
+#: ../views/votes.php:206
+msgid "Example: info@domain.com"
+msgstr "Exemple : info@domain.com"
+
+#: ../views/votes.php:220 ../views/votes.php:226
+msgid "Select a Contest"
+msgstr "Sélectionner un concours"
+
+#: ../views/votes.php:286
+msgid "Search by IP address"
+msgstr "Recherche par adresse IP"
+
+#: ../views/votes.php:289
+msgid "Example: 176.192.159.215"
+msgstr "Exemple : 176.192.159.215"
+
+#: ../views/votes.php:300
+msgid "Search by photo ID"
+msgstr "Recherche par Photo ID"
+
+#: ../views/votes.php:303
+msgid "Example: 314"
+msgstr "Exemple : 314"
+
+#: ../views/votes.php:322
+msgid "Reset Filters"
+msgstr "Réinitialiser les filtres"
+
+#: ../views/votes.php:325
+msgid "Export Results to CSV"
+msgstr "Exporter les résultats en CSV"
+
+#: ../views/votes.php:328
+#, php-format
+msgid "Too much results for export: %s!"
+msgstr "Trop de résultats pour l'export : %s !"
+
+#: ../views/votes.php:343
+msgid "Do you want to cleare whole log? Are you sure!!?"
+msgstr "Voulez-vous effacer tout le journal ? Êtes-vous sûr !?"
+
+#: ../views/votes.php:343
+msgid "Delete the whole Log"
+msgstr "Supprimer tout le journal"
+
+#: ../views/votes.php:376 ../views/votes.php:399 ../views/votes.php:524
+msgid "Vote ID"
+msgstr "Vote ID"
+
+#: ../views/votes.php:377 ../views/votes.php:400 ../views/votes.php:525
+msgid "Photo ID"
+msgstr "Photo ID"
+
+#: ../views/votes.php:378 ../views/votes.php:401 ../views/votes.php:526
+msgid "Item"
+msgstr "Elément"
+
+#: ../views/votes.php:379 ../views/votes.php:402 ../views/votes.php:527
+msgid "Vote/Rate value"
+msgstr "Valeur du vote ou de la note "
+
+#: ../views/votes.php:380 ../views/votes.php:403 ../views/votes.php:531
+msgid "Voter"
+msgstr "Votant"
+
+#: ../views/votes.php:383 ../views/votes.php:406 ../views/votes.php:534
+msgid "IP Address"
+msgstr "Addresse IP"
+
+#: ../views/votes.php:385 ../views/votes.php:408 ../views/votes.php:536
+msgid "Date"
+msgstr "Date"
+
+#: ../views/votes.php:386 ../views/votes.php:409 ../views/votes.php:537
+msgid "Email"
+msgstr "E-mail"
+
+#: ../views/votes.php:508
+msgid "Remove this vote/rate"
+msgstr "Supprimer ce vote / cette note"
+
+#: ../views/votes.php:510
+msgid "This vote/rate was removed"
+msgstr "C e vote a été supprimé"
+
+#: ../views/votes.php:573
+msgid "Delete selected records from the log"
+msgstr "Supprimer les enregistrements sélectionnés du journal"
+
+#: ../views/votes.php:586
+#, php-format
+msgid ""
+"Delete the whole Log: If you press the button \"Delete the whole Log\" you "
+"will delete all log records. However, it will be deleted only the log, not "
+"votes. If you want to reset (clear) votes just use <a href=\"%s\">the "
+"special tool for that</a>."
+msgstr ""
+"Supprimer tout le journal : Si vous appuyez sur le bouton \"Supprimer tout "
+"le journal\", vous effacerez tous les enregistrements du journal. Cependant, "
+"seul le journal sera supprimé, pas les votes. Si vous voulez réinitialiser "
+"(effacer) les votes, utilisez <a href=\"%s\">l'outil prévu à cet effet</a>."
+
+#: ../views/votes.php:587
+msgid ""
+"Delete selected records from the log: It will delete only records from the "
+"log not votes itself"
+msgstr ""
+"Supprimer les enregistrements sélectionnés du journal : cela ne supprimera "
+"que les enregistrements du journal, pas les votes eux-mêmes"
+
+#: ../views/votes.php:588
+msgid ""
+"Too much results for export: The max. recommended limit for an export is 1000"
+msgstr ""
+"Trop de résultats pour l'export : La limite maximale recommandée pour un "
+"export est de 1 000"
+
+#~ msgid "Select third page (optional)"
+#~ msgstr "Sélectionner la troisième page (facultatif)"
+
+#~ msgid "Image type must be jpg, png or gif."
+#~ msgstr "Le type d'image doit être jpg, png ou gif."
+
+#~ msgid "BuddyPress"
+#~ msgstr "BuddyPress"
+
+#~ msgid "Set BuddyPress integration."
+#~ msgstr "Définir l'intégration de BuddyPress."
+
+#~ msgid ""
+#~ "If you will allow the Jury for the contest, You must understand that some "
+#~ "of previous settings for voting will be ignored."
+#~ msgstr ""
+#~ "Si vous prévoyez un jury pour le concours, certains réglages de vote "
+#~ "antérieurs ne seront pas pris en compte."
+
+#, fuzzy
+#~ msgid "URL of your photo"
+#~ msgstr "URL de votre photo."
+
+#~ msgid "Entries"
+#~ msgstr "Participations"
+
+#, fuzzy
+#~| msgid "Log In"
+#~ msgid " Log In"
+#~ msgstr "Se connecter"
+
+#~ msgid "Thank you for upload."
+#~ msgstr "Merci pour votre téléversement."
+
+#~ msgid "Thank you for your photos."
+#~ msgstr "Merci pour vos photos."
+
+#~ msgid "Photo Contest Widget"
+#~ msgstr "Widget Concours Photo"
+
+#~ msgid "Error image upload."
+#~ msgstr "Erreur pendant le téléversement"
+
+#~ msgid "Caption"
+#~ msgstr "Légende"
+
+#, fuzzy
+#~ msgid "Thanky for your vote!"
+#~ msgstr "Merci pour votre vote!"
+
+#, fuzzy
+#~ msgid "Please enter the Adress!"
+#~ msgstr "Veuillez entrer l'adresse!"
+
+#~ msgid "Caption:"
+#~ msgstr "Légende :"
+
+#~ msgid "Add Photo"
+#~ msgstr "Ajouter une photo"
+
+#~ msgid "Inactive"
+#~ msgstr "Inactif"
+
+#~ msgid "Activate"
+#~ msgstr "Activez"
+
+#~ msgid "Deactivate"
+#~ msgstr "Désactivez"
+
+#~ msgid "Photo Contest - Settings"
+#~ msgstr "Concours Photo - Réglages"
+
+#, fuzzy
+#~ msgid "Photo Contest - Categories"
+#~ msgstr "Concours Photo - Catégories"
+
+#~ msgid "Photo Contest - Info & Help"
+#~ msgstr "Concours Photo - Info & Aide"
+
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+#, fuzzy
+#~ msgid "Username"
+#~ msgstr "Nom d'utilisateur :"
+
+#~ msgid "You must be logged for upload photo."
+#~ msgstr "Vous devez être connecté pour téléverser une photo."
+
+#~ msgid "Users"
+#~ msgstr "Utilisateurs"
+
+#~ msgid "Share:"
+#~ msgstr "Partager :"

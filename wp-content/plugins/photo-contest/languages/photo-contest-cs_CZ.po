@@ -1,0 +1,3634 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Zbyněk Hovorka\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-30 07:03+0100\n"
+"PO-Revision-Date: 2020-11-30 07:03+0100\n"
+"Last-Translator: Zbyněk Hovorka <info@proeshopy.cz>\n"
+"Language-Team: Zbyněk Hovorka\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-photo-contest-admin.php:160 ../class-photo-contest-admin.php:167
+#: ../views/admin.php:1480
+msgid "General Settings"
+msgstr "Hlavní nastavení"
+
+#: ../class-photo-contest-admin.php:161 ../includes/pc-seo.php:33
+msgid "Photo Contest"
+msgstr "Fotosoutěž"
+
+#: ../class-photo-contest-admin.php:170 ../class-photo-contest-admin.php:171
+#: ../views/contests.php:75
+msgid "Contests"
+msgstr "Fotosoutěže"
+
+#: ../class-photo-contest-admin.php:178 ../class-photo-contest-admin.php:179
+#: ../views/photos.php:540 ../views/photos.php:543
+msgid "Photos"
+msgstr "Fotografie"
+
+#: ../class-photo-contest-admin.php:186 ../class-photo-contest-admin.php:187
+msgid "Vote Log"
+msgstr "Záznam hlasování"
+
+#: ../class-photo-contest-admin.php:194 ../class-photo-contest-admin.php:195
+#: ../views/categories.php:17 ../views/categories.php:85
+msgid "Categories"
+msgstr "Kategorie"
+
+#: ../class-photo-contest-admin.php:202 ../class-photo-contest-admin.php:203
+msgid "Juries"
+msgstr "Poroty"
+
+#: ../class-photo-contest-admin.php:210 ../class-photo-contest-admin.php:211
+#: ../includes/admin/pc-tools.php:102 ../views/photos.php:573
+#: ../views/photos.php:596 ../views/photos.php:901 ../views/votes.php:313
+msgid "Tools"
+msgstr "Nástroje"
+
+#: ../class-photo-contest-admin.php:218 ../class-photo-contest-admin.php:219
+#: ../views/info.php:16
+msgid "Info & Help"
+msgstr "Info a pomoc"
+
+#: ../class-photo-contest-admin.php:325 ../views/jury.php:169
+#: ../views/jury.php:179 ../views/jury.php:216 ../views/jury.php:217
+msgid "Settings"
+msgstr "Nastavení"
+
+#: ../includes/admin/pc-add-images.php:122
+msgid "Bulk image upload"
+msgstr "Vícenásobné nahrávání obrázků"
+
+#: ../includes/admin/pc-add-images.php:124
+msgid ""
+"Titles of images are taken from the WordPress Media Library. You can change "
+"them or not"
+msgstr ""
+"Titulky obrázků jsou brány z názvu z WordPress knihovny. Můžeš je změnit, "
+"nebo ne"
+
+#: ../includes/admin/pc-add-images.php:126
+msgid "Selected item(s) will be added to the contest:"
+msgstr "Zvolené položky budou přidány do soutěže:"
+
+#: ../includes/admin/pc-add-images.php:152
+#: ../includes/admin/pc-add-images.php:154
+#: ../shortcodes/contest-profile.php:253
+msgid "Title"
+msgstr "Titulek"
+
+#: ../includes/admin/pc-add-images.php:160
+#: ../includes/admin/pc-add-images.php:209 ../views/photos.php:569
+#: ../views/photos.php:592 ../views/photos.php:774 ../views/votes.php:382
+#: ../views/votes.php:405 ../views/votes.php:533
+msgid "Category"
+msgstr "Kategorie"
+
+#: ../includes/admin/pc-add-images.php:160
+#: ../includes/admin/pc-add-images.php:181
+#: ../includes/admin/pc-add-images.php:209
+#: ../includes/admin/pc-add-images.php:229
+msgid "Optional"
+msgstr "Volitelné"
+
+#: ../includes/admin/pc-add-images.php:164 ../views/votes.php:253
+#: ../views/votes.php:259
+msgid "Select a Category"
+msgstr "Zvol kategorii"
+
+#: ../includes/admin/pc-add-images.php:181
+#: ../includes/admin/pc-add-images.php:229
+#: ../shortcodes/contest-profile.php:307 ../views/contests.php:1279
+msgid "Description"
+msgstr "Popis"
+
+#: ../includes/admin/pc-add-images.php:189
+msgid "Min width or height for the contest is 350px!"
+msgstr "Minimální šířka a výška soutěže je 350px!"
+
+#: ../includes/admin/pc-add-images.php:191
+msgid "This image already is in the some contest"
+msgstr "Tento obrázek už byl přidán do soutěže"
+
+#: ../includes/admin/pc-add-images.php:229
+msgid "This image will be not added to the contest!"
+msgstr "Tento obrázek nebude přidán do soutěže!"
+
+#: ../includes/admin/pc-add-images.php:241
+msgid "Submit all photos to the contest!"
+msgstr "Přidat všechny obrázky do soutěže!"
+
+#: ../includes/admin/pc-admin-functions.php:99
+#: ../includes/admin/pc-admin-functions.php:103
+msgid "Add Photo Contest Shorcode"
+msgstr "Vložit Fotosoutěž Shorcode"
+
+#: ../includes/admin/pc-admin-functions.php:99
+#: ../includes/admin/pc-admin-functions.php:103
+msgid "Add Photo Contest"
+msgstr "Vložit Fotosoutěž"
+
+#: ../includes/admin/pc-edit-user.php:34 ../views/contests.php:1133
+msgid "Date of birth"
+msgstr "Datum narození"
+
+#: ../includes/admin/pc-edit-user.php:34 ../views/contests.php:302
+#: ../views/contests.php:308 ../views/contests.php:314
+#: ../views/contests.php:320
+msgid "(Format: MM/DD/YYYY)"
+msgstr "(Formát: MM/DD/YYYY)"
+
+#: ../includes/admin/pc-edit-user.php:38
+msgid "Blog/Gallery/Website"
+msgstr "Blog/Galerie/Web"
+
+#: ../includes/admin/pc-edit-user.php:42 ../views/contests.php:1140
+msgid "Address"
+msgstr "Adresa"
+
+#: ../includes/admin/pc-edit-user.php:46 ../views/contests.php:1147
+msgid "City"
+msgstr "Město"
+
+#: ../includes/admin/pc-edit-user.php:50 ../views/contests.php:1161
+msgid "State"
+msgstr "Stát"
+
+#: ../includes/admin/pc-edit-user.php:58 ../views/contests.php:1168
+#: ../views/votes.php:384 ../views/votes.php:407 ../views/votes.php:535
+msgid "Country"
+msgstr "Země"
+
+#: ../includes/admin/pc-edit-user.php:66
+msgid "Zip"
+msgstr "PSČ"
+
+#: ../includes/admin/pc-edit-user.php:70
+msgid "Phone"
+msgstr "Telefon"
+
+#: ../includes/admin/pc-edit-user.php:75 ../includes/admin/pc-edit-user.php:93
+msgid "Gender"
+msgstr "Pohlaví"
+
+#: ../includes/admin/pc-edit-user.php:75
+msgid "(two options)"
+msgstr "(dvě možnosti)"
+
+#: ../includes/admin/pc-edit-user.php:93
+msgid "(three options)"
+msgstr "(tři možnosti)"
+
+#: ../includes/admin/pc-edit-user.php:115 ../views/contests.php:1203
+msgid "Facebook"
+msgstr "Facebook"
+
+#: ../includes/admin/pc-edit-user.php:119 ../views/contests.php:1210
+msgid "Twitter"
+msgstr "Twitter"
+
+#: ../includes/admin/pc-edit-user.php:123 ../views/contests.php:1217
+msgid "Instagram"
+msgstr "Instagram"
+
+#: ../includes/admin/pc-edit-user.php:134
+msgid "User agreed with GDPR on date:"
+msgstr "Uživatel schválil GDPR k datu:"
+
+#: ../includes/admin/pc-edit-user.php:134
+msgid "at the time:"
+msgstr "v čase:"
+
+#: ../includes/admin/pc-edit-user.php:136
+msgid "User did not agreed with GDPR conditions yet!"
+msgstr "Uživatel ještě neschválil GDPR podmínky ještě!"
+
+#: ../includes/admin/pc-edit-user.php:180
+msgid "Custom optional form field"
+msgstr "Doplňkové volitelné pole k registraci"
+
+#: ../includes/admin/pc-edit-user.php:183
+msgid "Custom required form field"
+msgstr "Doplňkové vyžadované pole k registraci"
+
+#: ../includes/admin/pc-edit-user.php:211
+msgid "Total submitted photos in the contest"
+msgstr "Celkový počet obrázků v soutěži"
+
+#: ../includes/admin/pc-export-data.php:59
+msgid "No Data"
+msgstr "Žádná data"
+
+#: ../includes/admin/pc-export-data.php:77
+#: ../includes/admin/pc-export-data.php:262 ../views/photos.php:486
+#: ../views/votes.php:499
+msgid "Uncategorized"
+msgstr "Bez kategorie"
+
+#: ../includes/admin/pc-export-data.php:148
+#: ../includes/admin/pc-export-data.php:152 ../views/photos.php:643
+#: ../views/photos.php:645
+msgid "Male"
+msgstr "Muž"
+
+#: ../includes/admin/pc-export-data.php:149
+#: ../includes/admin/pc-export-data.php:153 ../views/photos.php:644
+#: ../views/photos.php:646
+msgid "Female"
+msgstr "Žena"
+
+#: ../includes/admin/pc-export-data.php:154 ../views/photos.php:647
+msgid "Other"
+msgstr "JIné"
+
+#: ../includes/admin/pc-export-data.php:242 ../views/votes.php:439
+msgid "Guest"
+msgstr "Host"
+
+#: ../includes/admin/pc-export-data.php:253 ../views/votes.php:491
+msgid "Contest was deleted"
+msgstr "Soutěž byla smazána"
+
+#: ../includes/admin/pc-export-data.php:268
+#: ../includes/admin/pc-export-data.php:272
+#: ../includes/admin/pc-export-data.php:283 ../views/votes.php:474
+#: ../views/votes.php:483
+msgid "No data"
+msgstr "Žádná data"
+
+#: ../includes/admin/pc-tools.php:9
+msgid "There are no contests at this time!"
+msgstr "Není zde žádná soutěž v tuto chvíli!"
+
+#: ../includes/admin/pc-tools.php:10 ../views/categories.php:20
+msgid "Create contest first!"
+msgstr "Vytvoř nejdříve soutěž!"
+
+#: ../includes/admin/pc-tools.php:20 ../includes/admin/pc-tools.php:107
+msgid "Edit User"
+msgstr "Edituj uživatele"
+
+#: ../includes/admin/pc-tools.php:24 ../views/categories.php:89
+#: ../views/categories.php:93 ../views/contests.php:63 ../views/contests.php:66
+msgid "Success:"
+msgstr "Úspěch:"
+
+#: ../includes/admin/pc-tools.php:24
+msgid "User data was saved!"
+msgstr "Data uživatele byla uložena!"
+
+#: ../includes/admin/pc-tools.php:28
+msgid "WordPress data"
+msgstr "WordPress data"
+
+#: ../includes/admin/pc-tools.php:30
+msgid ""
+"Every contest user is a WordPress user. If you wanna change basic data like "
+"Nickname, email or password you must use basic WordPress user editor. Edit:"
+msgstr ""
+"Každý uživatel soutěže je zároveň uživatelem soutěže. To znamená jestli "
+"chceš měnit data jako jméno uživatele, email nebo heslo musíš použít "
+"standartní WordPress editor. Edituj:"
+
+#: ../includes/admin/pc-tools.php:37
+msgid "Contest Personal data"
+msgstr "Osobní data v soutěži"
+
+#: ../includes/admin/pc-tools.php:40 ../includes/admin/pc-tools.php:89
+#: ../includes/menu/pc-menu-v1.php:116 ../includes/menu/pc-menu-v2.php:115
+#: ../shortcodes/contest-gallery-detail.php:334
+#: ../shortcodes/contest-profile.php:341 ../shortcodes/contest-profile.php:434
+#: ../views/categories.php:209 ../views/categories.php:218
+#: ../views/categories.php:232 ../views/contests.php:86
+#: ../views/contests.php:100 ../views/contests.php:132 ../views/photos.php:902
+msgid "Edit"
+msgstr "Editovat"
+
+#: ../includes/admin/pc-tools.php:47
+msgid "Contest data"
+msgstr "Data ze soutěže"
+
+#: ../includes/admin/pc-tools.php:52 ../includes/admin/pc-tools.php:131
+#: ../includes/admin/pc-tools.php:135 ../includes/admin/pc-tools.php:162
+#: ../includes/admin/pc-tools.php:251
+msgid "Select the Contest"
+msgstr "Zvol fotosoutěž"
+
+#: ../includes/admin/pc-tools.php:69 ../views/photos.php:688
+#: ../views/votes.php:517
+msgid "Select"
+msgstr "Zvolit"
+
+#: ../includes/admin/pc-tools.php:83
+msgid "Edit user contest data"
+msgstr "Edituj data uživatele ze soutěže"
+
+#: ../includes/admin/pc-tools.php:110 ../includes/admin/pc-tools.php:228
+#: ../views/admin.php:1612 ../views/admin.php:1776 ../views/jury.php:160
+#: ../views/jury.php:257 ../views/photos.php:547 ../views/votes.php:361
+msgid "Notice:"
+msgstr "Upozornění:"
+
+#: ../includes/admin/pc-tools.php:110
+msgid "User was not found!"
+msgstr "Uživatel nebyl nalezen!"
+
+#: ../includes/admin/pc-tools.php:116
+msgid "This tool will help you find and edit user by ID, Username or Email"
+msgstr ""
+"Tento nástroj ti pomůže najít a editovat uživatele skrze ID, uživatelského "
+"jména nebo emailu"
+
+#: ../includes/admin/pc-tools.php:117
+msgid "State user ID, Username or Email"
+msgstr "Udej ID uživatele, jeho uživ. jméno nebo email"
+
+#: ../includes/admin/pc-tools.php:120 ../views/photos.php:498
+msgid "Search"
+msgstr "Hledat"
+
+#: ../includes/admin/pc-tools.php:125
+msgid "Add images to the contest (Bulk upload)"
+msgstr "Přidat obrázky do soutěže (Mnohonásobné přidání)"
+
+#: ../includes/admin/pc-tools.php:148
+msgid "Select images to upload"
+msgstr "Zvolit obrázky k nahrání"
+
+#: ../includes/admin/pc-tools.php:150
+msgid "For choosing more images at once hold CTRL or Shift key"
+msgstr "Pro volbu více obrázků stikněte a držte klávesy CTRL nebo Shift"
+
+#: ../includes/admin/pc-tools.php:151
+msgid "Recommended maximum for bulk upload is 20 images at once"
+msgstr "Doporučené maximum pro přidání vícero obrázků je 20 obrázků najednou"
+
+#: ../includes/admin/pc-tools.php:161
+msgid "Export Users Data"
+msgstr "Exportuj data soutěžících"
+
+#: ../includes/admin/pc-tools.php:182
+msgid "Export"
+msgstr "Exportovat"
+
+#: ../includes/admin/pc-tools.php:200
+msgid "Email filter"
+msgstr "Email filter"
+
+#: ../includes/admin/pc-tools.php:204
+msgid "Allow email filter"
+msgstr "Povolit email filter"
+
+#: ../includes/admin/pc-tools.php:211
+msgid ""
+"This filter allows you to control registration in your contest and protect "
+"vote confirmation against disposable email services. The filter contains "
+"several thousands domains and it is developed by the community on Github. "
+"Full list of domains you can find here:"
+msgstr ""
+"Tento filter ti dovolí kontrolovat registraci ve tvé soutěži a ochránit tak "
+"potvrzení emailem v jednorázových emailových službách. Tento filter obsahuje "
+"několik tisíc jednorázových domén a je vyvíjen komunitou na Githubu. Celý "
+"seznam domén nalezneš zde:"
+
+#: ../includes/admin/pc-tools.php:219 ../views/jury.php:326
+msgid "Save"
+msgstr "Uložit"
+
+#: ../includes/admin/pc-tools.php:226
+msgid "Reset the Contest"
+msgstr "Resetovat soutěž"
+
+#: ../includes/admin/pc-tools.php:228
+msgid ""
+"After you select the option \"Reset the Contest\" the action cannot be taken "
+"back."
+msgstr "Po zvolení možnosti \"Resetovat soutěž\" není možné akci vzít zpátky."
+
+#: ../includes/admin/pc-tools.php:231
+msgid "Set reset mode"
+msgstr "Nastav reset mód"
+
+#: ../includes/admin/pc-tools.php:237
+msgid "Only votes and views count"
+msgstr "Jen hlasy a počty zobrazení budou vymazány"
+
+#: ../includes/admin/pc-tools.php:244
+msgid "Everything (Images, data, votes, views count)"
+msgstr "Vše (Obrázky, data, hlasy, počty zobrazení)"
+
+#: ../includes/admin/pc-tools.php:273
+msgid "Are you sure that you want to reset those data?!!!!"
+msgstr "Jsi si jistý, že chceš resetovat tato data?!!!!"
+
+#: ../includes/admin/pc-tools.php:273
+msgid "Reset"
+msgstr "Resetovat"
+
+#: ../includes/menu/pc-menu-v1.php:125 ../includes/menu/pc-menu-v2.php:124
+msgid "Log in"
+msgstr "Přihlaš"
+
+#: ../includes/menu/pc-menu-v1.php:127 ../includes/menu/pc-menu-v2.php:126
+#: ../shortcodes/contest-gallery-detail.php:376
+msgid "Log out"
+msgstr "Odhlášení"
+
+#: ../includes/pc-BuddyPress.php:27
+#, php-format
+msgid ""
+"added a new <a href=\"%s\">comment</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"vložil nový <a href=\"%s\">komentář</a> ve <a href=\"%s\">Fotosoutěži</a>"
+
+#: ../includes/pc-BuddyPress.php:54
+#, php-format
+msgid ""
+"added a new <a href=\"%s\">photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"vložil novou<a href=\"%s\">fotografii</a> do <a href=\"%s\">Fotosoutěže</a>"
+
+#: ../includes/pc-BuddyPress.php:79
+#, php-format
+msgid "rated <a href=\"%s\">a photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"ohodnotil <a href=\"%s\">fotografii</a> ve <a href=\"%s\">Fotosoutěži</a>"
+
+#: ../includes/pc-BuddyPress.php:104
+#, php-format
+msgid "voted for <a href=\"%s\">photo</a> in <a href=\"%s\">Photo Contest</a>"
+msgstr ""
+"hlasoval pro<a href=\"%s\">fotografii</a> ve <a href=\"%s\">Fotosoutěži</a>"
+
+#: ../includes/pc-basic-functions.php:117
+#: ../includes/pc-basic-functions.php:131
+#: ../includes/votes/pc-rate-function.php:327
+#: ../includes/votes/pc-rate-function.php:329
+#: ../shortcodes/contest-gallery.php:486 ../shortcodes/contest-gallery.php:494
+#: ../shortcodes/contest-profile.php:391 ../shortcodes/contest-profile.php:398
+msgid "Rating:"
+msgstr "Hodnocení:"
+
+#: ../includes/pc-basic-functions.php:117
+#: ../includes/votes/pc-rate-function.php:327
+msgid "Not rated yet!"
+msgstr "Ještě nebylo hodnoceno!"
+
+#: ../includes/pc-basic-functions.php:161
+#: ../includes/votes/pc-rate-function.php:359
+msgid "rated"
+msgstr "hlasováno"
+
+#: ../includes/pc-basic-vote.php:30 ../includes/votes/pc-basic-vote-code.php:30
+#: ../includes/votes/pc-jury-rate-code.php:40
+#: ../includes/votes/pc-jury-vote-code.php:46
+#: ../includes/votes/pc-rate-code.php:31 ../shortcodes/contest-share.php:348
+msgid "Contest is finished!"
+msgstr "Soutěž již skončila!"
+
+#: ../includes/pc-basic-vote.php:40 ../includes/votes/pc-basic-vote-code.php:40
+#: ../includes/votes/pc-jury-rate-code.php:51
+#: ../includes/votes/pc-jury-vote-code.php:58
+#: ../includes/votes/pc-rate-code.php:41
+msgid "day"
+msgstr "den"
+
+#: ../includes/pc-basic-vote.php:42 ../includes/votes/pc-basic-vote-code.php:42
+#: ../includes/votes/pc-jury-rate-code.php:53
+#: ../includes/votes/pc-jury-vote-code.php:60
+#: ../includes/votes/pc-rate-code.php:43
+msgid "days"
+msgstr "dnů"
+
+#: ../includes/pc-basic-vote.php:45 ../includes/votes/pc-basic-vote-code.php:45
+#: ../includes/votes/pc-jury-rate-code.php:56
+#: ../includes/votes/pc-jury-vote-code.php:63
+#: ../includes/votes/pc-rate-code.php:46
+msgid "hour"
+msgstr "hodinu"
+
+#: ../includes/pc-basic-vote.php:47 ../includes/votes/pc-basic-vote-code.php:47
+#: ../includes/votes/pc-jury-rate-code.php:58
+#: ../includes/votes/pc-jury-vote-code.php:65
+#: ../includes/votes/pc-rate-code.php:48
+msgid "hours"
+msgstr "hodin"
+
+#: ../includes/pc-basic-vote.php:52 ../includes/pc-gallery-functions.php:34
+#: ../includes/votes/pc-basic-vote-code.php:52
+#: ../includes/votes/pc-rate-code.php:53
+msgid "You must be logged in to vote!"
+msgstr "Pro hlasování musíš být přihlášen!"
+
+#: ../includes/pc-basic-vote.php:57 ../includes/votes/pc-basic-vote-code.php:57
+#: ../includes/votes/pc-jury-rate-code.php:61
+#: ../includes/votes/pc-jury-vote-code.php:68
+#: ../includes/votes/pc-rate-code.php:58
+msgid "Voting starts in:"
+msgstr "Hlasování započne za:"
+
+#: ../includes/pc-basic-vote.php:61 ../includes/votes/pc-basic-vote-code.php:61
+#: ../includes/votes/pc-jury-vote-code.php:73
+msgid "You can't vote for your image!"
+msgstr "Nemůžeš hlasvoat pro svůj obrázek!"
+
+#: ../includes/pc-basic-vote.php:83 ../includes/votes/pc-basic-vote-code.php:83
+msgid "The image has not been approved yet!"
+msgstr "Tento obrázek nebyl ještě schválen!"
+
+#: ../includes/pc-basic-vote.php:110
+#: ../includes/votes/pc-basic-vote-code.php:110
+#: ../shortcodes/contest-gallery.php:383 ../views/admin.php:1361
+msgid "Vote for this photo!"
+msgstr "Hlasuj pro tuto fotografii!"
+
+#: ../includes/pc-basic-vote.php:112
+#: ../includes/votes/pc-basic-vote-code.php:112
+#: ../includes/votes/pc-jury-vote-code.php:103
+#: ../shortcodes/contest-gallery.php:385 ../views/admin.php:1369
+msgid "Vote!"
+msgstr "Hlasuj!"
+
+#: ../includes/pc-basic-vote.php:114
+#: ../includes/votes/pc-basic-vote-code.php:114
+#: ../shortcodes/contest-gallery.php:387 ../views/admin.php:1378
+msgid "Vote Now!"
+msgstr "Hlasovat teď!"
+
+#: ../includes/pc-basic-vote.php:120
+#: ../includes/votes/pc-basic-vote-code.php:120
+#: ../shortcodes/contest-gallery.php:393 ../views/admin.php:1414
+msgid "Thank you for vote!"
+msgstr "Díky za tvůj hlas!"
+
+#: ../includes/pc-basic-vote.php:122
+#: ../includes/votes/pc-basic-vote-code.php:122
+#: ../shortcodes/contest-gallery.php:395 ../views/admin.php:1422
+msgid "Thank You!"
+msgstr "Díky!"
+
+#: ../includes/pc-basic-vote.php:172
+#: ../includes/votes/pc-basic-vote-code.php:172
+#: ../includes/votes/pc-rate-code.php:151 ../shortcodes/contest-share.php:324
+msgid "You have voted already"
+msgstr "Již jsi hlasoval"
+
+#: ../includes/pc-basic-vote.php:176
+#: ../includes/votes/pc-basic-vote-code.php:176
+#: ../includes/votes/pc-rate-code.php:155 ../shortcodes/contest-share.php:327
+msgid "Someone has already voted out of this IP address:"
+msgstr "Někdo již hlasoval z této IP adresy:"
+
+#: ../includes/pc-basic-vote.php:180
+#: ../includes/votes/pc-basic-vote-code.php:180
+#: ../includes/votes/pc-rate-code.php:159 ../shortcodes/contest-share.php:333
+msgid "Someone voted out on this computer already!"
+msgstr "Někdo již hlasoval z tohoto počítače!"
+
+#: ../includes/pc-basic-vote.php:184
+#: ../includes/votes/pc-basic-vote-code.php:184
+msgid "You can vote only once!"
+msgstr "Můžeš hlasovat jen jednou!"
+
+#: ../includes/pc-create-contest.php:188 ../includes/pc-create-contest.php:240
+#: ../includes/pc-create-contest.php:365 ../views/info.php:25
+msgid "Create a Contest"
+msgstr "Vytvořit soutěž"
+
+#: ../includes/pc-create-contest.php:199 ../includes/pc-create-contest.php:201
+#: ../includes/pc-create-contest.php:270 ../includes/pc-create-contest.php:272
+msgid "Contest Name:"
+msgstr "Název soutěže:"
+
+#: ../includes/pc-create-contest.php:207 ../includes/pc-create-contest.php:306
+msgid "Contest Start:"
+msgstr "Začátek soutěže:"
+
+#: ../includes/pc-create-contest.php:209 ../includes/pc-create-contest.php:217
+#: ../includes/pc-create-contest.php:225 ../includes/pc-create-contest.php:233
+#: ../includes/pc-create-contest.php:308 ../includes/pc-create-contest.php:316
+#: ../includes/pc-create-contest.php:324 ../includes/pc-create-contest.php:332
+msgid "MM/DD/YYYY"
+msgstr "MM/DD/RRRR"
+
+#: ../includes/pc-create-contest.php:215 ../includes/pc-create-contest.php:314
+msgid "Contest End:"
+msgstr "Konec soutěže:"
+
+#: ../includes/pc-create-contest.php:223 ../includes/pc-create-contest.php:322
+msgid "Vote begins:"
+msgstr "Hlasování započne k datu:"
+
+#: ../includes/pc-create-contest.php:223 ../includes/pc-create-contest.php:322
+msgid ""
+"From this day can users vote. The date must be between \"Contest Start\" and "
+"\"Contest End\"."
+msgstr ""
+"Od tohoto dne mohou uživatelé hlasovat. Toto datum musí být mezi začátkem a "
+"koncem soutěže."
+
+#: ../includes/pc-create-contest.php:231 ../includes/pc-create-contest.php:330
+msgid "End of registration to the contest:"
+msgstr "Konec registrace do soutěže:"
+
+#: ../includes/pc-create-contest.php:231 ../includes/pc-create-contest.php:330
+msgid "After this day users can not upload photos to the contest."
+msgstr "Po tomto dni uživatelé nemohou nahrát žádné fotografie do soutěže."
+
+#: ../includes/pc-create-contest.php:252 ../includes/pc-create-contest.php:253
+#: ../includes/pc-create-contest.php:372
+msgid "Notice"
+msgstr "Upozornění"
+
+#: ../includes/pc-create-contest.php:253 ../includes/pc-create-contest.php:372
+#, php-format
+msgid ""
+"Contest is not set up correctly. Please do visit <a href=\"%s\">General "
+"Settings</a> and set and save settings first. Thank You!"
+msgstr ""
+"Soutěž není nastavená správně. Prosím navštivte <a href=\"%s\">Hlavní "
+"nastavení</a> a nejdříve nastavte soutěž. Děkujeme!"
+
+#: ../includes/pc-create-contest.php:279 ../views/contests.php:326
+#: ../views/contests.php:355 ../views/contests.php:384
+msgid "Contest page"
+msgstr "Stránka soutěže"
+
+#: ../includes/pc-create-contest.php:279
+msgid "Select a page where where will be the contest"
+msgstr "Zvol stránku pro soutěž"
+
+#: ../includes/pc-create-contest.php:288
+msgid "NEW PAGE"
+msgstr "NOVÁ STRÁNKA"
+
+#: ../includes/pc-create-contest.php:289
+msgid "Create a new page"
+msgstr "Vytvoř novou stránku"
+
+#: ../includes/pc-create-contest.php:292
+msgid "EXISTING PAGES"
+msgstr "EXISTUJÍCÍ STRÁNKY"
+
+#: ../includes/pc-create-contest.php:339
+msgid "Basic Settings or Duplicate Settings"
+msgstr "Standartní nastavení nebo duplikovat nastavení"
+
+#: ../includes/pc-create-contest.php:339
+msgid "Set basic settings or copy settings from a previous contest"
+msgstr ""
+"Nastavit základní nastavení nebo kopírovat nastavení z předešlé soutěže"
+
+#: ../includes/pc-create-contest.php:344
+msgid "Set basic settings"
+msgstr "Nastav základní nastavení"
+
+#: ../includes/pc-create-contest.php:345
+msgid "Basic settings"
+msgstr "Základní nastavení"
+
+#: ../includes/pc-create-contest.php:348
+msgid "Copy/Duplicate settings from a previous contest"
+msgstr "Kopíruj/Duplikuj nastavení z minulé soutěže"
+
+#: ../includes/pc-loginform.php:68 ../includes/pc-loginform.php:104
+#: ../includes/pc-loginform.php:106 ../shortcodes/upload-photo.php:124
+msgid "Log In"
+msgstr "Přihlášení"
+
+#: ../includes/pc-loginform.php:72 ../includes/pc-loginform.php:74
+#: ../includes/pc-loginform.php:128 ../includes/pc-loginform.php:130
+#: ../includes/pc-registration.php:126 ../includes/pc-registration.php:131
+msgid "Username:"
+msgstr "Přihlašovací jméno:"
+
+#: ../includes/pc-loginform.php:80 ../includes/pc-loginform.php:82
+#: ../includes/pc-registration.php:126
+msgid "Password:"
+msgstr "Heslo:"
+
+#: ../includes/pc-loginform.php:91
+msgid "Remember Me"
+msgstr "Pamatuj si mě"
+
+#: ../includes/pc-loginform.php:124 ../includes/pc-loginform.php:160
+#: ../includes/pc-loginform.php:162
+msgid "Register"
+msgstr "Registruj se"
+
+#: ../includes/pc-loginform.php:136 ../includes/pc-loginform.php:138
+msgid "Email:"
+msgstr "Email:"
+
+#: ../includes/pc-loginform.php:146
+msgid "Lost Password"
+msgstr "Ztracené heslo"
+
+#: ../includes/pc-registration.php:70
+msgid "Hello Admin!"
+msgstr "Ahoj Admine!"
+
+#: ../includes/pc-registration.php:71
+#, php-format
+msgid "New user registration on your blog: %s:"
+msgstr "Registrace nového uživatele na tvém blogu: %s:"
+
+#: ../includes/pc-registration.php:72
+#, php-format
+msgid "Username: %s"
+msgstr "Přihlašovací jméno: %s"
+
+#: ../includes/pc-registration.php:73
+#, php-format
+msgid "E-mail: %s"
+msgstr "E-mail: %s"
+
+#: ../includes/pc-registration.php:74
+msgid "IP Address:"
+msgstr "IP adresa:"
+
+#: ../includes/pc-registration.php:76
+#, php-format
+msgid "[%s] New User Registration"
+msgstr "[%s] Registrace nového uživatele"
+
+#: ../includes/pc-registration.php:99 ../views/admin.php:377
+msgid "Welcome to our Photo Contest!"
+msgstr "Vítejte v naší fotosoutěži!"
+
+#: ../includes/pc-registration.php:125 ../includes/pc-registration.php:130
+msgid "Your login details:"
+msgstr "Tvé přihlašovací údaje:"
+
+#: ../includes/pc-registration.php:132
+msgid "To set your password, visit the following link:"
+msgstr "Pro nastavení hesla prosím navštiv následující adresu:"
+
+#: ../includes/pc-registration.php:162
+msgid "Invalid user ID."
+msgstr "Neplatné ID uživatele."
+
+#: ../includes/pc-registration.php:191
+msgid "Cannot create a user with an empty login name."
+msgstr "Není možné vytvořit uživatele s prázdným jménem."
+
+#: ../includes/pc-registration.php:193
+msgid "Username may not be longer than 60 characters."
+msgstr "Uživatelské jméno nemůže být delší než 60 znaků."
+
+#: ../includes/pc-registration.php:197
+msgid "Sorry, that username already exists!"
+msgstr "Omlouváme se, ale toto uživatelské jméno již existuje!"
+
+#: ../includes/pc-registration.php:210
+msgid "Sorry, that username is not allowed."
+msgstr "Omlouváme se, ale toto uživatelské jméno není povoleno."
+
+#: ../includes/pc-registration.php:220
+msgid "Nicename may not be longer than 50 characters."
+msgstr "Přezdívka nemůže být delší než 50 znaků."
+
+#: ../includes/pc-registration.php:271
+msgid "Sorry, that email address is already used!"
+msgstr "Omlouváme se, ale tento email byl již použit!"
+
+#: ../includes/pc-upload-functions.php:24
+#: ../includes/pc-upload-functions.php:103
+msgid "None"
+msgstr "Žádný"
+
+#: ../includes/pc-upload-functions.php:109
+msgid "Select Country"
+msgstr "Zvol zemi"
+
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:25
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:44
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:63
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:82
+#: ../includes/templates/pc-modern-gallery-lightbox-vote.php:101
+#: ../includes/templates/pc-modern-gallery-lightbox.php:25
+#: ../includes/templates/pc-modern-gallery-lightbox.php:43
+#: ../includes/templates/pc-modern-gallery-lightbox.php:61
+#: ../includes/templates/pc-modern-gallery-lightbox.php:79
+#: ../includes/templates/pc-modern-gallery-lightbox.php:97
+#: ../includes/templates/pc-modern-gallery.php:25
+#: ../includes/templates/pc-modern-gallery.php:40
+#: ../includes/templates/pc-modern-gallery.php:55
+#: ../includes/templates/pc-modern-gallery.php:70
+#: ../includes/templates/pc-modern-gallery.php:85
+#: ../shortcodes/contest-gallery-detail.php:208
+msgid "Author:"
+msgstr "Autor:"
+
+#: ../includes/votes/pc-jury-rate-code.php:23
+msgid "You are member of the jury!"
+msgstr "Jsi členem poroty, můžeš hlasovat!"
+
+#: ../includes/votes/pc-jury-rate-code.php:65
+msgid "You can't rate your photo!"
+msgstr "Nemůžeš hodnotit svůj obrázek!"
+
+#: ../includes/votes/pc-jury-rate-code.php:84
+msgid "You have rated this photo already!"
+msgstr "Již jsi tuto fotografii hodnotil!"
+
+#: ../includes/votes/pc-jury-rate-code.php:88
+#: ../includes/votes/pc-rate-code.php:87 ../includes/votes/pc-rate-code.php:92
+#: ../shortcodes/contest-share.php:280 ../shortcodes/contest-share.php:295
+#: ../shortcodes/upload-photo.php:553 ../views/admin.php:1455
+msgid "Thank you!"
+msgstr "Díky!"
+
+#: ../includes/votes/pc-jury-rate-code.php:92
+#: ../includes/votes/pc-jury-vote-code.php:99
+#: ../shortcodes/contest-share.php:347
+msgid "You cannot vote anymore!"
+msgstr "Již nemůže hlasovat více!"
+
+#: ../includes/votes/pc-jury-rate-code.php:124
+msgid "Jury members who rated this photo already (for admins eyes only)"
+msgstr "Porotci, kteří hodnotili tento obrázek (může vidět jen admin)"
+
+#: ../includes/votes/pc-jury-rate-code.php:134
+#: ../includes/votes/pc-jury-vote-code.php:140 ../views/jury.php:345
+msgid "Invalid ID"
+msgstr "Neplatné ID"
+
+#: ../includes/votes/pc-jury-rate-code.php:144
+#: ../includes/votes/pc-jury-vote-code.php:150
+msgid "List is empty"
+msgstr "Seznam je prázdný"
+
+#: ../includes/votes/pc-jury-vote-code.php:24
+msgid "Remove the vote!"
+msgstr "Odebrat hlas!"
+
+#: ../includes/votes/pc-jury-vote-code.php:28
+msgid "You are member of the jury. You can vote!"
+msgstr "Jsi členem poroty, můžeš hlasovat!"
+
+#: ../includes/votes/pc-jury-vote-code.php:95
+msgid "You have voted for this image!"
+msgstr "Již jsi hlasoval pro tento obrázek!"
+
+#: ../includes/votes/pc-jury-vote-code.php:122
+#, php-format
+msgid "You have %s %s as Jury member. You have already voted %sx."
+msgstr "Máš %s %s jako člen poroty. Již jsi hlasoval %sx."
+
+#: ../includes/votes/pc-jury-vote-code.php:127
+msgid "Jury member who voted for this image (for admins eyes only)"
+msgstr "Porotci, kteří hlasovali pro tento obrázek (může vidět jen admin)"
+
+#: ../includes/votes/pc-rate-code.php:62
+msgid "You can't vote for your photo!"
+msgstr "Nemůžeš hlasovat pro svůj obrázek!"
+
+#: ../includes/votes/pc-rate-code.php:79
+msgid "The photo has not been approved yet!"
+msgstr "Tento obrázek nebyl ještě schválen!"
+
+#: ../includes/widgets/widget-category.php:18
+msgid "Photo Contest Widget - Category"
+msgstr "Fotosoutěž Widget - Galerie"
+
+#: ../includes/widgets/widget-category.php:21
+msgid "Widget displays photos from categories."
+msgstr "Widget zobrazující fotografie ze soutěže."
+
+#: ../includes/widgets/widget-category.php:249
+#: ../includes/widgets/widget-classic.php:244
+#: ../includes/widgets/widget-gallery.php:249
+#: ../shortcodes/contest-gallery.php:251 ../views/photos.php:380
+msgid "Newest"
+msgstr "Nejnovější"
+
+#: ../includes/widgets/widget-category.php:250
+#: ../includes/widgets/widget-classic.php:245
+#: ../includes/widgets/widget-gallery.php:250
+#: ../shortcodes/contest-gallery.php:258 ../views/photos.php:385
+msgid "Oldest"
+msgstr "Nejstarší"
+
+#: ../includes/widgets/widget-category.php:251
+#: ../includes/widgets/widget-classic.php:246
+#: ../includes/widgets/widget-gallery.php:251 ../views/photos.php:391
+msgid "Most Voted"
+msgstr "Nejvíce hlasů"
+
+#: ../includes/widgets/widget-category.php:252
+#: ../includes/widgets/widget-classic.php:247
+#: ../includes/widgets/widget-gallery.php:252 ../views/photos.php:397
+msgid "Least Votes"
+msgstr "Nejméně hlasů"
+
+#: ../includes/widgets/widget-category.php:253
+#: ../includes/widgets/widget-classic.php:248
+#: ../includes/widgets/widget-gallery.php:253
+#: ../shortcodes/contest-gallery.php:243 ../shortcodes/contest-gallery.php:290
+#: ../views/contests.php:919
+msgid "Random"
+msgstr "Náhodně"
+
+#: ../includes/widgets/widget-category.php:259
+#: ../includes/widgets/widget-classic.php:254
+#: ../includes/widgets/widget-gallery.php:259
+#: ../includes/widgets/widget-rank.php:181
+#: ../shortcodes/contest-gallery-detail.php:187
+#: ../shortcodes/contest-profile.php:255 ../shortcodes/upload-photo.php:935
+msgid "Title:"
+msgstr "Titulek:"
+
+#: ../includes/widgets/widget-category.php:264
+#: ../includes/widgets/widget-classic.php:259
+#: ../includes/widgets/widget-gallery.php:264
+msgid "Sort By:"
+msgstr "Řazení:"
+
+#: ../includes/widgets/widget-category.php:274
+#: ../includes/widgets/widget-classic.php:269
+#: ../includes/widgets/widget-gallery.php:274
+msgid "Number of Photos"
+msgstr "Počet fotografií"
+
+#: ../includes/widgets/widget-category.php:284
+msgid "Select Category"
+msgstr "Zvolte datum"
+
+#: ../includes/widgets/widget-classic.php:19
+msgid "Photo Contest Widget - Classic"
+msgstr "Widget pro Fotosoutěž - Pořadí"
+
+#: ../includes/widgets/widget-classic.php:22
+#: ../includes/widgets/widget-gallery.php:21
+msgid "Widget displays photos from photo contest."
+msgstr "Widget zobrazující fotografie ze soutěže."
+
+#: ../includes/widgets/widget-classic.php:279
+#: ../includes/widgets/widget-gallery.php:284
+#: ../includes/widgets/widget-rank.php:198
+msgid "Select Contest"
+msgstr "Zvolte fotosoutěž"
+
+#: ../includes/widgets/widget-gallery.php:18
+msgid "Photo Contest Widget - Gallery"
+msgstr "Fotosoutěž Widget - Galerie"
+
+#: ../includes/widgets/widget-rank.php:19
+msgid "Photo Contest Widget - Rank"
+msgstr "Widget pro Fotosoutěž - Pořadí"
+
+#: ../includes/widgets/widget-rank.php:22
+msgid "Widget displays rank from photo contest."
+msgstr "Widget zobrazující fotografie ze soutěže."
+
+#: ../includes/widgets/widget-rank.php:99
+#: ../includes/widgets/widget-rank.php:100
+#: ../shortcodes/contest-gallery-detail.php:198
+#: ../shortcodes/contest-gallery.php:460 ../shortcodes/contest-profile.php:370
+#: ../shortcodes/contest-top10.php:148
+msgid "Deleted user"
+msgstr "Smazaný uživatel"
+
+#: ../includes/widgets/widget-rank.php:122
+#: ../shortcodes/contest-gallery-detail.php:222
+#: ../shortcodes/contest-gallery.php:474 ../shortcodes/contest-gallery.php:480
+#: ../shortcodes/contest-profile.php:379 ../shortcodes/contest-profile.php:385
+msgid "Votes:"
+msgstr "Hlasy:"
+
+#: ../includes/widgets/widget-rank.php:188
+msgid "Items"
+msgstr "Položek"
+
+#: ../includes/widgets/widget-rank.php:210
+msgid "Font Color"
+msgstr "Barva písma"
+
+#: ../includes/widgets/widget-rank.php:212
+msgid "Black"
+msgstr "Černý"
+
+#: ../includes/widgets/widget-rank.php:213
+msgid "Grey"
+msgstr "Šedá"
+
+#: ../includes/widgets/widget-rank.php:214
+msgid "White"
+msgstr "Bílá"
+
+#: ../shortcodes/contest-gallery-detail.php:132
+msgid "Previous photo"
+msgstr "Předchozí fotografie"
+
+#: ../shortcodes/contest-gallery-detail.php:139
+msgid "Next photo"
+msgstr "Další fotografie"
+
+#: ../shortcodes/contest-gallery-detail.php:240
+#: ../shortcodes/contest-profile.php:277 ../shortcodes/contest-top10.php:93
+#: ../shortcodes/upload-photo.php:969
+msgid "Category:"
+msgstr "Kategorie:"
+
+#: ../shortcodes/contest-gallery-detail.php:250
+msgid "Views:"
+msgstr "Zobarezní:"
+
+#: ../shortcodes/contest-gallery-detail.php:254
+#: ../shortcodes/upload-photo.php:943
+msgid "Description:"
+msgstr "Popis:"
+
+#: ../shortcodes/contest-gallery-detail.php:283
+msgid "Copy"
+msgstr "Kopíruj"
+
+#: ../shortcodes/contest-gallery-detail.php:306
+msgid "Comments:"
+msgstr "Komentáře:"
+
+#: ../shortcodes/contest-gallery-detail.php:335 ../views/categories.php:210
+#: ../views/categories.php:219 ../views/categories.php:233
+#: ../views/categories.php:234 ../views/contests.php:88
+#: ../views/contests.php:102 ../views/contests.php:134
+#: ../views/contests.php:135 ../views/photos.php:906
+msgid "Delete"
+msgstr "Smazat"
+
+#: ../shortcodes/contest-gallery-detail.php:349
+msgid "There are no comments."
+msgstr "Nejsou zde žádné komentáře."
+
+#: ../shortcodes/contest-gallery-detail.php:376
+msgid "You are logged in as"
+msgstr "Jsi přihlášen jako"
+
+#: ../shortcodes/contest-gallery-detail.php:383
+msgid "Post Comment"
+msgstr "Vlož komentář"
+
+#: ../shortcodes/contest-gallery-detail.php:397
+msgid "You must be logged in to post a comment"
+msgstr "Pro přidání komentáře musíš být přihlášen"
+
+#: ../shortcodes/contest-gallery.php:198
+msgid "No photo has been submitted for the contest. Be the first!"
+msgstr "Ještě nebyla vložena žádná fotografie. Buď první!"
+
+#: ../shortcodes/contest-gallery.php:262
+msgid "Most voted"
+msgstr "Nejvíce hlasů"
+
+#: ../shortcodes/contest-gallery.php:263
+msgid "Least voted"
+msgstr "Nejméně hlasů"
+
+#: ../shortcodes/contest-gallery.php:265
+msgid "Top Rated"
+msgstr "Nejlépe hodnocené"
+
+#: ../shortcodes/contest-gallery.php:266
+msgid "Lowest Rated"
+msgstr "Nejhůře hodnocené"
+
+#: ../shortcodes/contest-gallery.php:311 ../shortcodes/contest-top10.php:90
+#: ../views/photos.php:480
+msgid "All Categories"
+msgstr "Všechny kategorie"
+
+#: ../shortcodes/contest-gallery.php:325
+msgid "Search...."
+msgstr "Hledat..."
+
+#: ../shortcodes/contest-gallery.php:340
+msgid "No results found"
+msgstr "Nebyl nalezen žádný výsledek"
+
+#: ../shortcodes/contest-gallery.php:530 ../shortcodes/contest-gallery.php:531
+#: ../shortcodes/contest-gallery.php:532 ../shortcodes/contest-gallery.php:533
+#: ../shortcodes/contest-profile.php:284
+msgid "No Category"
+msgstr "Žádná kategorie"
+
+#: ../shortcodes/contest-gallery.php:645
+msgid "Generate random photos"
+msgstr "Generuj náhodné fotografie"
+
+#: ../shortcodes/contest-gallery.php:666
+msgid "First"
+msgstr "První"
+
+#: ../shortcodes/contest-gallery.php:669
+msgid "Previous"
+msgstr "Předchozí"
+
+#: ../shortcodes/contest-gallery.php:680
+msgid "Next"
+msgstr "Další"
+
+#: ../shortcodes/contest-gallery.php:683
+msgid "Last"
+msgstr "Poslední"
+
+#: ../shortcodes/contest-menu.php:39 ../views/admin.php:1887
+msgid "Gallery"
+msgstr "Galerie"
+
+#: ../shortcodes/contest-menu.php:42 ../views/admin.php:1894
+msgid "Upload photo"
+msgstr "Nahrát fotografii"
+
+#: ../shortcodes/contest-menu.php:45 ../views/admin.php:1901
+msgid "Rules & Prizes"
+msgstr "Pravidla a ceny"
+
+#: ../shortcodes/contest-menu.php:48 ../views/admin.php:1908
+msgid "Your Images"
+msgstr "Tvé Obrázky"
+
+#: ../shortcodes/contest-menu.php:51 ../views/admin.php:1915
+msgid "Top 10"
+msgstr "Top 10"
+
+#: ../shortcodes/contest-profile.php:56
+msgid "ReCaptcha was not validated correctly!"
+msgstr "ReCaptcha nebyla zpracována správně!"
+
+#: ../shortcodes/contest-profile.php:106
+msgid "Please state Username!"
+msgstr "Prosím zvol Přihlašovací jméno!"
+
+#: ../shortcodes/contest-profile.php:111 ../shortcodes/upload-photo.php:113
+msgid "This Name is already taken!"
+msgstr "Toto jméno je již obsazené!"
+
+#: ../shortcodes/contest-profile.php:120 ../shortcodes/contest-share.php:412
+#: ../shortcodes/upload-photo.php:100
+msgid "This email domain is not allowed"
+msgstr "Tato emailová doména není povolena"
+
+#: ../shortcodes/contest-profile.php:124 ../shortcodes/upload-photo.php:119
+msgid "Please enter the Email!"
+msgstr "Prosím vložte E-mail!"
+
+#: ../shortcodes/contest-profile.php:129
+msgid ""
+"This email is already used! If you have already registered to the contest "
+"please first log in!"
+msgstr ""
+"Tento email je již užíván! Jestli jsi již registrován/a do soutěže tak se "
+"prosím nejdříve přihlaš!"
+
+#: ../shortcodes/contest-profile.php:143
+msgid "Username or Password was not correct!"
+msgstr "Uživatelské jméno nebo heslo není v pořádku!"
+
+#: ../shortcodes/contest-profile.php:236 ../shortcodes/upload-photo.php:237
+msgid "Please enter a Title!"
+msgstr "Prosím vlož titulek!"
+
+#: ../shortcodes/contest-profile.php:241
+msgid "Please select a category!"
+msgstr "Prosím zvol kategorii!"
+
+#: ../shortcodes/contest-profile.php:245
+msgid "Edit Image"
+msgstr "Edituj obrázek"
+
+#: ../shortcodes/contest-profile.php:262
+msgid "please enter a title!"
+msgstr "prosím udej název obrázku!"
+
+#: ../shortcodes/contest-profile.php:298
+msgid "please select a category!"
+msgstr "prosím zvol kategorii!"
+
+#: ../shortcodes/contest-profile.php:307 ../shortcodes/upload-photo.php:819
+#: ../shortcodes/upload-photo.php:828 ../shortcodes/upload-photo.php:837
+#: ../shortcodes/upload-photo.php:846 ../shortcodes/upload-photo.php:855
+#: ../shortcodes/upload-photo.php:943 ../shortcodes/upload-photo.php:952
+#: ../shortcodes/upload-photo.php:961 ../views/contests.php:355
+#: ../views/contests.php:384 ../views/contests.php:1224
+msgid "(Optional)"
+msgstr "(Volitelné)"
+
+#: ../shortcodes/contest-profile.php:317 ../views/contests.php:1286
+msgid "Camera model"
+msgstr "Fotoaparát"
+
+#: ../shortcodes/contest-profile.php:330 ../shortcodes/upload-photo.php:67
+#: ../views/contests.php:1293 ../views/photos.php:683
+msgid "Custom image field"
+msgstr "Doplňkové pole pro obrázek"
+
+#: ../shortcodes/contest-profile.php:347
+msgid "Are you really sure that you want delete this image?"
+msgstr "Jsi si jistý, že chceš smazat tento obrázek?"
+
+#: ../shortcodes/contest-profile.php:347
+msgid "Delete Image!"
+msgstr "Smazat obrázek!"
+
+#: ../shortcodes/contest-profile.php:347
+msgid ""
+"Warning! After click \"Delete Image!\" will be item permanently deleted!"
+msgstr ""
+"Varování! Po odkliknutí \"Smazat obrázek\" bude soubor nenávratně smazán!"
+
+#: ../shortcodes/contest-profile.php:355
+msgid "You must first upload an image!!"
+msgstr "Nejdříve musíš nahrát nějaký obrázek!"
+
+#: ../shortcodes/contest-profile.php:416
+msgid "Active!"
+msgstr "Aktivní!"
+
+#: ../shortcodes/contest-profile.php:418
+msgid "Waiting for Approval!"
+msgstr "Čeká na schválení!"
+
+#: ../shortcodes/contest-profile.php:554
+msgid ""
+"Your registration was successful! Please check your email for a password!"
+msgstr "Registrace je ukončena! Prosím zkontroluj svůj e-mail!"
+
+#: ../shortcodes/contest-profile.php:556
+msgid ""
+"You are not logged in. To log in, use the information emailed after your "
+"first image upload!"
+msgstr ""
+"Nejsi přihlášen. Pro přihlášení použij informace, které Ti byli zaslány "
+"Emailem po nahrání obrázku!"
+
+#: ../shortcodes/contest-share.php:254
+msgid "Email validation"
+msgstr "Ověření Emailu"
+
+#: ../shortcodes/contest-share.php:255
+msgid "Thank you for your vote!"
+msgstr "Děkujeme za tvůj hlas!"
+
+#: ../shortcodes/contest-share.php:256
+msgid "Please follow this link to activate your vote:"
+msgstr "Prosím klini na následující odkaz a aktivuj tvou volbu v hlasování:"
+
+#: ../shortcodes/contest-share.php:258
+msgid "This is an automatically generated email, please do not reply!"
+msgstr "Toto je automaticky generovaný email, prosím neodpovídejte na něj!"
+
+#: ../shortcodes/contest-share.php:277
+msgid "Verify Vote!"
+msgstr "Ověř hlas!"
+
+#: ../shortcodes/contest-share.php:293
+msgid "Sorry!"
+msgstr "Omlouváme se!"
+
+#: ../shortcodes/contest-share.php:300
+msgid "Email confirmation failed!"
+msgstr "Potvrzení emailu selhalo!"
+
+#: ../shortcodes/contest-share.php:309
+msgid "Vote failed!"
+msgstr "Hlasování selhalo!"
+
+#: ../shortcodes/contest-share.php:315
+msgid "Your photo is not activated yet, you must wait for approval!"
+msgstr "Tvůj obrázek ještě není aktivní, musíš počkat na schválení!"
+
+#: ../shortcodes/contest-share.php:316
+msgid "But you can share it already!"
+msgstr "Ale již ho můžeš sdílet!"
+
+#: ../shortcodes/contest-share.php:318
+msgid "Your photo was uploaded successfully and is active!"
+msgstr "Tvůj obrázek by úspěšn přidán do soutěže a je aktivní!"
+
+#: ../shortcodes/contest-share.php:319
+msgid "So share it and get some votes!"
+msgstr "Tak obrázek sdílej a získej nějaké hlasy!"
+
+#: ../shortcodes/contest-share.php:330
+msgid "Vote unique ID did not match"
+msgstr "Nesouhlasí unikátní ID"
+
+#: ../shortcodes/contest-share.php:336
+msgid "It is not possible to vote this way in jury mode!"
+msgstr "Hlasování je umožněno pouze členům poroty!"
+
+#: ../shortcodes/contest-share.php:350
+msgid "Your vote for this photo was successfully counted!"
+msgstr "Tvé hlasování pro tento obrázek bylo úspěšné!"
+
+#: ../shortcodes/contest-share.php:352 ../shortcodes/contest-share.php:424
+msgid "Please share this photo with your friends!"
+msgstr "Prosím sdílej tento obrázek se svými přáteli!"
+
+#: ../shortcodes/contest-share.php:358
+msgid "We now need to verify your vote by email!"
+msgstr "Nyní musíme ověřit tvůj hlas emailem!"
+
+#: ../shortcodes/contest-share.php:359
+msgid "Your email address will NOT be shared with a third party!"
+msgstr "Tvá emailová adresa nebude sdílena s žádnou třetí stranou!"
+
+#: ../shortcodes/contest-share.php:360
+msgid ""
+"Your email address will NOT be sold or used for purposes other than "
+"confirmation for this vote!"
+msgstr ""
+"Tvá emailová adresa nebude zneužita, prodána ani poskytnuta třetím stranám. "
+"Bude sloužit pouze k ověření hlasování!"
+
+#: ../shortcodes/contest-share.php:364
+msgid "Message with confirmation link was sent!"
+msgstr "Zpráva s potvrzovacím odkazem byla odeslána!"
+
+#: ../shortcodes/contest-share.php:365
+msgid "Please check your email!"
+msgstr "Prosím zkontroluj svůj email!"
+
+#: ../shortcodes/contest-share.php:369
+msgid "Check if you copied URL from your email correctly"
+msgstr "Zkontroluj zda jsi zkopíroval/a URL adresu z emailu správně"
+
+#: ../shortcodes/contest-share.php:370
+msgid "And try it again!"
+msgstr "Zkus to znova!"
+
+#: ../shortcodes/contest-share.php:374
+#, php-format
+msgid "Sorry this email %s was already used for vote!"
+msgstr "Omlouváme se, ale tento email %s byl již použit pro hlasování!"
+
+#: ../shortcodes/contest-share.php:375
+msgid "You cannot vote twice!"
+msgstr "Již nemůže hlasovat více!"
+
+#: ../shortcodes/contest-share.php:382
+msgid "Please enter your email!"
+msgstr "Prosím udej svůj email!"
+
+#: ../shortcodes/contest-share.php:386
+msgid "You are logged in. You cannot confirm vote by email!"
+msgstr "Jsi přihlášen. Nemůžeš potvrdit hlas emailem!"
+
+#: ../shortcodes/contest-share.php:402
+msgid "enter your email"
+msgstr "vlož svůj email"
+
+#: ../shortcodes/contest-share.php:405
+msgid "verify vote"
+msgstr "ověř hlas"
+
+#: ../shortcodes/contest-share.php:409
+msgid "email field is empty or email is not in valid format"
+msgstr "pole Email je prázdné nebo není email ve správném formátu"
+
+#: ../shortcodes/contest-top10.php:106
+msgid "There are no photos in this category!"
+msgstr "V této kategorii zatím nejsou žádné obrázky!"
+
+#: ../shortcodes/contest-top10.php:117 ../views/photos.php:571
+#: ../views/photos.php:594
+msgid "Votes"
+msgstr "Hlasy"
+
+#: ../shortcodes/contest-top10.php:123 ../shortcodes/contest-top10.php:130
+msgid "Rating"
+msgstr "Hodnocení"
+
+#: ../shortcodes/upload-photo.php:59 ../shortcodes/upload-photo.php:63
+#: ../views/contests.php:1224 ../views/contests.php:1236
+#: ../views/photos.php:675 ../views/photos.php:679
+msgid "Custom personal field"
+msgstr "Doplňkové pole pro uživatele"
+
+#: ../shortcodes/upload-photo.php:108
+msgid "Please state Your Name!"
+msgstr "Prosím udej své jméno!"
+
+#: ../shortcodes/upload-photo.php:116
+msgid "Invalid email format!"
+msgstr "Neplatný formát emailu!"
+
+#: ../shortcodes/upload-photo.php:124
+msgid ""
+"This email is already used! If you have already image in the contest please "
+"first"
+msgstr ""
+"Tento email je již užíván! Jestli jsi již odeslal obrázek do soutěže tak se "
+"prosím nejdříve"
+
+#: ../shortcodes/upload-photo.php:164
+msgid "Please enter the Date of Birth!"
+msgstr "Prosím udej Datum narození!"
+
+#: ../shortcodes/upload-photo.php:167
+msgid "Please enter the address!"
+msgstr "Prosím udej adresu!"
+
+#: ../shortcodes/upload-photo.php:170
+msgid "Please enter the City!"
+msgstr "Prosím udej Město!"
+
+#: ../shortcodes/upload-photo.php:173
+msgid "Please enter the Zip/Postal code!"
+msgstr "Prosím udej PSČ!"
+
+#: ../shortcodes/upload-photo.php:176
+msgid "Please select the State!"
+msgstr "Prosím vyber svůj stát!"
+
+#: ../shortcodes/upload-photo.php:179
+msgid "Please select the Country!"
+msgstr "Prosím udej svou zem!"
+
+#: ../shortcodes/upload-photo.php:182
+msgid "Please enter the Phone number!"
+msgstr "Prosím vlož Telefoní číslo!"
+
+#: ../shortcodes/upload-photo.php:185 ../shortcodes/upload-photo.php:188
+msgid "Please select the Gender!"
+msgstr "Prosím zvol své pohlaví!"
+
+#: ../shortcodes/upload-photo.php:191
+#, php-format
+msgid "Please fill the form field: %s"
+msgstr "Prosím vyplň pole: %s"
+
+#: ../shortcodes/upload-photo.php:201
+msgid "Facebook profile URL is not valid"
+msgstr "URL adresa vašeho profilu na Facebooku není validní"
+
+#: ../shortcodes/upload-photo.php:210
+msgid "Twitter profile URL is not valid"
+msgstr "URL adresa v poli Twitter není validní"
+
+#: ../shortcodes/upload-photo.php:219
+msgid "Instagram profile URL is not valid"
+msgstr "URL adresa v poli Instagram není validní"
+
+#: ../shortcodes/upload-photo.php:223
+msgid "You did not confirm that you are over age of 13!"
+msgstr "Nepotvrdil/a jsi, že jsi starší 13 let!"
+
+#: ../shortcodes/upload-photo.php:226
+msgid "You did not confirm that you are over age of 18!"
+msgstr "Nepotvrdil/a jsi, že jsi starší 18 let!"
+
+#: ../shortcodes/upload-photo.php:229
+msgid "You did not accept contest rules!"
+msgstr "Musíš akceptovat pravidla soutěže!"
+
+#: ../shortcodes/upload-photo.php:233
+msgid "We need your presonal data processing agreement!"
+msgstr "Je potřeba souhlas se zpracováním údajů!"
+
+#: ../shortcodes/upload-photo.php:244
+msgid "Please select the image"
+msgstr "Prosím vyberte obrázek"
+
+#: ../shortcodes/upload-photo.php:249
+msgid "Image must be jpg, png or gif."
+msgstr "Obrázek musí mít příponu jpg, jpeg, png nebo gif."
+
+#: ../shortcodes/upload-photo.php:260
+msgid "Minimum image width is 350px."
+msgstr "Minimální šířka obrázku je 350px."
+
+#: ../shortcodes/upload-photo.php:262
+msgid "Minimum image height is 350px."
+msgstr "Minimální výška obrázku je 350px."
+
+#: ../shortcodes/upload-photo.php:268
+msgid "File size is above allowed limitations!"
+msgstr "Velikost souboru překračuje stanovený limit!"
+
+#: ../shortcodes/upload-photo.php:437 ../shortcodes/upload-photo.php:438
+msgid "New Image in the Photo Contest"
+msgstr "Nový obrázek ve fotosoutěži"
+
+#: ../shortcodes/upload-photo.php:439
+msgid "Uploaded by:"
+msgstr "Nahráno autorem:"
+
+#: ../shortcodes/upload-photo.php:440
+msgid "Approve image:"
+msgstr "Schválit obrázek:"
+
+#: ../shortcodes/upload-photo.php:451
+#, php-format
+msgid "Failed resize: %s is an invalid image ID."
+msgstr "Změna velikosti selhala: %s není platné ID obrázku."
+
+#: ../shortcodes/upload-photo.php:504
+msgid "The contest has not yet started. It will launch on:"
+msgstr "Soutěž ještě nezačala. Bude spuštěna k datu:"
+
+#: ../shortcodes/upload-photo.php:507
+msgid "Contest already finished."
+msgstr "Soutěž již skončila."
+
+#: ../shortcodes/upload-photo.php:512
+msgid "Ability to enter the contest has expired to date"
+msgstr "Možnost vstoupit do soutěže skončila k datu"
+
+#: ../shortcodes/upload-photo.php:561
+msgid "You can upload max."
+msgstr "Můžeš nahrát max."
+
+#: ../shortcodes/upload-photo.php:561 ../shortcodes/upload-photo.php:563
+msgid "photo/photos."
+msgstr "fotografii/fotografií."
+
+#: ../shortcodes/upload-photo.php:563
+msgid "You have already uploaded"
+msgstr "Již jsi nahrál"
+
+#: ../shortcodes/upload-photo.php:572
+msgid "You have uploaded the maximum number of photos. Thank you!"
+msgstr "Již jsi nahrál/a maximální počet fotografií!. Děkujeme!"
+
+#: ../shortcodes/upload-photo.php:724
+msgid "Personal details:"
+msgstr "Osobní údaje:"
+
+#: ../shortcodes/upload-photo.php:737
+msgid "Your Name:"
+msgstr "Tvé Jméno:"
+
+#: ../shortcodes/upload-photo.php:744
+msgid "Your Email:"
+msgstr "Tvůj Email:"
+
+#: ../shortcodes/upload-photo.php:756
+msgid "Date of birth:"
+msgstr "Datum narození:"
+
+#: ../shortcodes/upload-photo.php:765
+msgid "Address:"
+msgstr "Adresa:"
+
+#: ../shortcodes/upload-photo.php:774
+msgid "City:"
+msgstr "Město:"
+
+#: ../shortcodes/upload-photo.php:783
+msgid "Zip/Postal Code:"
+msgstr "PSČ:"
+
+#: ../shortcodes/upload-photo.php:791
+msgid "State:"
+msgstr "Stát:"
+
+#: ../shortcodes/upload-photo.php:800
+msgid "Country:"
+msgstr "Země:"
+
+#: ../shortcodes/upload-photo.php:810
+msgid "Phone number:"
+msgstr "Telefon:"
+
+#: ../shortcodes/upload-photo.php:819
+msgid "Blog/Gallery/Website:"
+msgstr "Blog/Galerie/Web:"
+
+#: ../shortcodes/upload-photo.php:828
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: ../shortcodes/upload-photo.php:837
+msgid "Twitter:"
+msgstr "Twitter:"
+
+#: ../shortcodes/upload-photo.php:846
+msgid "Instagram:"
+msgstr "Instagram:"
+
+#: ../shortcodes/upload-photo.php:873 ../shortcodes/upload-photo.php:891
+msgid "Gender:"
+msgstr "Pohlaví:"
+
+#: ../shortcodes/upload-photo.php:931
+msgid "Image details:"
+msgstr "Detaily obrázku:"
+
+#: ../shortcodes/upload-photo.php:952
+msgid "Camera model:"
+msgstr "Fotoaparát:"
+
+#: ../shortcodes/upload-photo.php:981
+msgid "Select image: (max."
+msgstr "Vyber obrázek: (max."
+
+#: ../shortcodes/upload-photo.php:983 ../shortcodes/upload-photo.php:985
+msgid "select image"
+msgstr "vyber obrázek"
+
+#: ../shortcodes/upload-photo.php:987
+msgid "browse"
+msgstr "procházet"
+
+#: ../shortcodes/upload-photo.php:1003
+msgid "I confirm that I am over the age of 13"
+msgstr "Potvrzuji, že je mi více než 13 let"
+
+#: ../shortcodes/upload-photo.php:1010
+msgid "I confirm that I am over the age of 18"
+msgstr "Potvrzuji, že je mi více než 18 let"
+
+#: ../shortcodes/upload-photo.php:1019
+msgid "I have read and accept Official contest rules"
+msgstr "Četl jsem a souhlasím s oficiálními podmínkami soutěže"
+
+#: ../shortcodes/upload-photo.php:1022
+#, php-format
+msgid ""
+"I have read and accept <a href=\"%s\" target=\"_blank\">Official contest "
+"rules</a>"
+msgstr ""
+"Četl jsem a souhlasím s <a href=\"%s\" target=\"_blank\">oficiálními "
+"podmínkami soutěže</a>"
+
+#: ../shortcodes/upload-photo.php:1080 ../shortcodes/upload-photo.php:1082
+msgid "Submit Photo"
+msgstr "Vložit fotografii"
+
+#: ../shortcodes/upload-photo.php:1101
+msgid ""
+"You are not logged in. Only registered users can participate in the contest. "
+"Please log in or sign up to continue!"
+msgstr ""
+"Nejsi přihlášen. Jen registrovaní uživatelé se mohou zúčastnit soutěže. "
+"Prosím přihlas se nebo zaregistruj, abys mohl pokračovat!"
+
+#: ../views/admin.php:374
+msgid "I agree to the processing of my personal data"
+msgstr "Souhlasím se zpracováním osobních údajů"
+
+#: ../views/admin.php:380
+msgid "Thank you for your registration!"
+msgstr "Děkujeme za tvou registraci!"
+
+#: ../views/admin.php:383
+msgid "Your image was approved!"
+msgstr "Tvůj obrázek byl schválen!"
+
+#: ../views/admin.php:386
+msgid ""
+"Your image \"{PHOTO-NAME}\" in the contest <a href=\"{CONTEST-"
+"URL}\">{CONTEST-NAME}</a> was approved!"
+msgstr ""
+"Tvůj obrázek \"{PHOTO-NAME}\" v soutěži <a href=\"{CONTEST-URL}\">{CONTEST-"
+"NAME}</a> byl schválen!"
+
+#: ../views/admin.php:404 ../views/admin.php:431 ../views/contests.php:293
+#: ../views/jury.php:261
+msgid "Basic Settings"
+msgstr "Základní nastavení"
+
+#: ../views/admin.php:409
+msgid "Voting Settings"
+msgstr "Nastavení hlasování"
+
+#: ../views/admin.php:414
+msgid "Emails and Notifications"
+msgstr "Emaily a upozornění"
+
+#: ../views/admin.php:419
+msgid "Menu"
+msgstr "Menu"
+
+#: ../views/admin.php:424
+msgid "Integrations"
+msgstr "Integrace"
+
+#: ../views/admin.php:435
+msgid "Image File Size Limit"
+msgstr "Limit velikosti obrázku"
+
+#: ../views/admin.php:435
+msgid "Your server/hosting limit is"
+msgstr "Limit tvého hostingu je"
+
+#: ../views/admin.php:507
+msgid "Max Image Width"
+msgstr "Maximální šířka obrázku"
+
+#: ../views/admin.php:507 ../views/admin.php:618
+msgid "All images above this size will be automatically resized"
+msgstr "Všechny obrázky přesahující tento rozměr budou automaticky zmenšeny"
+
+#: ../views/admin.php:512 ../views/admin.php:623 ../views/admin.php:785
+#: ../views/admin.php:901 ../views/admin.php:1637 ../views/admin.php:1807
+msgid "(Recommended)"
+msgstr "(Doporučeno)"
+
+#: ../views/admin.php:618
+msgid "Max Image Height"
+msgstr "Maximální výška obrázku"
+
+#: ../views/admin.php:729
+msgid "Allow Lightbox"
+msgstr "Povolit Lightbox"
+
+#: ../views/admin.php:737 ../views/admin.php:783 ../views/admin.php:836
+#: ../views/admin.php:853 ../views/admin.php:1014 ../views/admin.php:1056
+#: ../views/admin.php:1130 ../views/admin.php:1154 ../views/admin.php:1178
+#: ../views/admin.php:1500 ../views/admin.php:1524 ../views/admin.php:1578
+#: ../views/admin.php:1647 ../views/admin.php:1816 ../views/contests.php:476
+#: ../views/contests.php:518 ../views/contests.php:1034
+msgid "No"
+msgstr "Ne"
+
+#: ../views/admin.php:746 ../views/admin.php:757 ../views/admin.php:774
+#: ../views/admin.php:827 ../views/admin.php:1047 ../views/admin.php:1121
+#: ../views/admin.php:1145 ../views/admin.php:1169 ../views/admin.php:1491
+#: ../views/admin.php:1515 ../views/admin.php:1569 ../views/admin.php:1635
+#: ../views/contests.php:529 ../views/contests.php:1025
+msgid "Yes"
+msgstr "Ano"
+
+#: ../views/admin.php:748
+msgid "(Lightbox without jquery.min.js file - Try this option first)"
+msgstr "(Lightbox bez jquery.min.js file - Tuto možnost vyzkoušej jako první)"
+
+#: ../views/admin.php:759
+msgid ""
+"(Lightbox with jquery.min.js - This setup can create conflict with your "
+"theme or other plugins)"
+msgstr ""
+"(Lightbox s jquery.min.js - Toto nastavení může působit konflikty se "
+"vzhledem nebo jinými pluginy)"
+
+#: ../views/admin.php:766
+msgid "Automatically activate uploaded images"
+msgstr "Automaticky aktivovat nahrané obrázky"
+
+#: ../views/admin.php:793
+msgid "Show Frontend Admin Bar"
+msgstr "Zobrazit horní admin panel"
+
+#: ../views/admin.php:801
+msgid "Show"
+msgstr "Zobrazit"
+
+#: ../views/admin.php:810
+msgid "Hide"
+msgstr "Zkrýt"
+
+#: ../views/admin.php:812
+msgid "(Excerpt Admin) (Higly Recommended)"
+msgstr "(Mimo Admina) (Velmi výrazně doporučeno)"
+
+#: ../views/admin.php:819
+msgid "Allow menu and gallery animation"
+msgstr "Zobrazit animaci vykreslování"
+
+#: ../views/admin.php:827
+msgid "(It is pure CSS animation)"
+msgstr "(Tato animace je čistá CSS animace)"
+
+#: ../views/admin.php:842
+msgid "Comments"
+msgstr "Komentáře"
+
+#: ../views/admin.php:845
+msgid "Allow Comment Box"
+msgstr "Povolit Komentáře"
+
+#: ../views/admin.php:862
+msgid "Allow Disqus Comments"
+msgstr "Povolist Disqus komentáře"
+
+#: ../views/admin.php:867 ../views/admin.php:884
+msgid "(Tutorial)"
+msgstr "(Tutoriál)"
+
+#: ../views/admin.php:875
+msgid "Allow WordPress Comments"
+msgstr "Povolit WordPress komentáře"
+
+#: ../views/admin.php:882
+msgid "Disqus Code"
+msgstr "Disqus Kód"
+
+#: ../views/admin.php:890
+msgid "Typography"
+msgstr "Písmo"
+
+#: ../views/admin.php:893
+msgid "Font"
+msgstr "Font"
+
+#: ../views/admin.php:901
+msgid "Oswald"
+msgstr "Oswald"
+
+#: ../views/admin.php:910
+msgid "Work Sans"
+msgstr "Work Sans"
+
+#: ../views/admin.php:919
+msgid "Roboto Condensed"
+msgstr "Roboto Condensed"
+
+#: ../views/admin.php:928
+msgid "Noto Sans"
+msgstr "Noto Sans"
+
+#: ../views/admin.php:937
+msgid "Noto Serif"
+msgstr "Noto Serif"
+
+#: ../views/admin.php:946
+msgid "Default"
+msgstr "Základní"
+
+#: ../views/admin.php:946
+msgid "(Default font from your theme will be used)"
+msgstr "(Bude použit standartní font)"
+
+#: ../views/admin.php:953
+msgid "Font Size"
+msgstr "Velilkost písma"
+
+#: ../views/admin.php:961
+msgid "Normal"
+msgstr "Normální"
+
+#: ../views/admin.php:970
+msgid "Big"
+msgstr "Velký"
+
+#: ../views/admin.php:979
+msgid "Bigger"
+msgstr "Větší"
+
+#: ../views/admin.php:985
+msgid "Security"
+msgstr "Zabezpečení"
+
+#: ../views/admin.php:988
+msgid "Allow reCaptcha"
+msgstr "Povolite reCaptcha"
+
+#: ../views/admin.php:996
+msgid "Yes - For Everyone"
+msgstr "Ano - pro kohokoliv"
+
+#: ../views/admin.php:1005
+msgid "Yes - But the reCaptcha will be hidden for Admins"
+msgstr "Ano - Ale reCaptcha bude skrytá pro admina"
+
+#: ../views/admin.php:1021
+msgid "reCaptcha Site Key"
+msgstr "reCaptcha Site Key"
+
+#: ../views/admin.php:1028
+msgid "reCaptcha Secret Key"
+msgstr "reCaptcha Secret Key"
+
+#: ../views/admin.php:1034
+msgid "GDPR - General Data Protection Regulation"
+msgstr "GDPR - General Data Protection Regulation"
+
+#: ../views/admin.php:1036
+msgid ""
+"The General Data Protection Regulation (GDPR) (EU) 2016/679 is a regulation "
+"in EU law on data protection and privacy for all individuals within the "
+"European Union (EU) and the European Economic Area (EEA). It also addresses "
+"the export of personal data outside the EU and EEA. The GDPR aims primarily "
+"to give control to citizens and residents over their personal data and to "
+"simplify the regulatory environment for international business by unifying "
+"the regulation within the EU."
+msgstr ""
+"Obecné nařízení o ochraně osobních údajů (anglicky General Data Protection "
+"Regulation), zkráceně ONOOÚ (GDPR), plným názvem Nařízení Evropského "
+"parlamentu a Rady (EU) č. 2016/679 ze dne 27. dubna 2016 o ochraně fyzických "
+"osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto "
+"údajů a o zrušení směrnice 95/46/ES, je nařízení Evropské unie, jehož cílem "
+"je výrazné zvýšení ochrany osobních dat občanů. V Úředním věstníku Evropské "
+"unie bylo vyhlášeno dne 27. dubna 2016."
+
+#: ../views/admin.php:1039
+msgid "Allow GDPR confirmation box"
+msgstr "Povolit GDPR potvrzovací box"
+
+#: ../views/admin.php:1063
+msgid "GDPR text (for checkbox)"
+msgstr "GDPR text (pro checkbox)"
+
+#: ../views/admin.php:1070
+msgid "GDPR Privacy Notice"
+msgstr "GDPR doprovodný text"
+
+#: ../views/admin.php:1071
+msgid ""
+"The area for your privacy notice text or if it is too long add html link to "
+"your privacy notice page with target _blank"
+msgstr ""
+"Toto je místo pro tvůj doprovodný text ke schválení GDPR pokud je příliš "
+"dlouhý je lepší použít HTML odkaz na stránku, kde je umístěn celý"
+
+#: ../views/admin.php:1080 ../views/admin.php:1475 ../views/admin.php:1824
+#: ../views/admin.php:1921 ../views/admin.php:2011 ../views/contests.php:1314
+msgid "Save Changes"
+msgstr "Uložit Změny"
+
+#: ../views/admin.php:1086
+msgid "Vote Settings"
+msgstr "Nastavení hlasování"
+
+#: ../views/admin.php:1089
+msgid "Who can vote"
+msgstr "Kdo může hlasovat"
+
+#: ../views/admin.php:1097
+msgid "Registered Users"
+msgstr "Registrovaní uživatelé"
+
+#: ../views/admin.php:1106
+msgid "Everyone"
+msgstr "Kdokoliv"
+
+#: ../views/admin.php:1113
+msgid "Confirm votes from guests by email?"
+msgstr "Ověřit hlasy návštěvníků pomocí emailu?"
+
+#: ../views/admin.php:1137
+msgid "Can author vote for own photo?"
+msgstr "Může autor hlasovat pro vlastní foto?"
+
+#: ../views/admin.php:1161
+msgid "Redirect the user to Share page after vote?"
+msgstr "Přesměrovat uživatele po hlasování na stránku se sdílením?"
+
+#: ../views/admin.php:1185
+msgid "Vote button color"
+msgstr "Barva hlasovacího tlačítka"
+
+#: ../views/admin.php:1274
+msgid "Use Icon in Vote Button"
+msgstr "Užit ikonu v hlasovacím tlačítku"
+
+#: ../views/admin.php:1282
+msgid "No Icon"
+msgstr "Žádná ikona"
+
+#: ../views/admin.php:1352
+msgid "Vote text"
+msgstr "Text hlasování"
+
+#: ../views/admin.php:1360 ../views/admin.php:1414 ../views/admin.php:1455
+msgid "Standart text"
+msgstr "Standartní text"
+
+#: ../views/admin.php:1387
+msgid "No text at all"
+msgstr "Vůbec žádný text"
+
+#: ../views/admin.php:1398 ../views/admin.php:1432 ../views/admin.php:1464
+msgid "your text"
+msgstr "tvůj text"
+
+#: ../views/admin.php:1407
+msgid "Vote text after Vote"
+msgstr "Text po hlasování"
+
+#: ../views/admin.php:1443
+msgid "Settings for a 5-star and 10-star rating mode"
+msgstr "Nastavení pro 5 a 10 bodové hlasování"
+
+#: ../views/admin.php:1448
+msgid "Text after rating"
+msgstr "Text po hodnocení"
+
+#: ../views/admin.php:1483
+msgid ""
+"Automatically send email nofitication (to admin) when new contest image is "
+"uploaded"
+msgstr "Automaticky odeslat upozornění adminovi (email) o novém obrázku"
+
+#: ../views/admin.php:1507
+msgid ""
+"Automatically send email nofitication (to admin) about new user registration"
+msgstr "Automaticky přeposlat informaci adminovi o registraci nového uživatele"
+
+#: ../views/admin.php:1532
+msgid "Email address for notifications (for admin)"
+msgstr "Emailová adresa pro upozornění (pro admina)"
+
+#: ../views/admin.php:1540
+msgid "Standard admin email address"
+msgstr "Standartní emailová adresa admina"
+
+#: ../views/admin.php:1549
+msgid "alternative@email.tld"
+msgstr "alternative@email.tld"
+
+#: ../views/admin.php:1558
+msgid "Notification email after image approval"
+msgstr "Email zaslaný po schválení obrázku"
+
+#: ../views/admin.php:1561
+msgid "Send notification email (to user) after image approval"
+msgstr "Odeslat upozornění uživateli po schválení obrázku"
+
+#: ../views/admin.php:1585 ../views/admin.php:1741
+msgid "Subject (Email Title)"
+msgstr "Předmět (emailu)"
+
+#: ../views/admin.php:1592 ../views/admin.php:1756
+msgid "Email Body"
+msgstr "Text Emailu"
+
+#: ../views/admin.php:1614 ../views/admin.php:1778
+msgid ""
+"If you add an image to the email it should be secured by SSL (hosted on "
+"https://) otherwise the email can be stopped!"
+msgstr ""
+"Pokud vložíte obrázek do emailu měl by být zabezpečen SSL šifrováním (na "
+"adrese https://) jinak by mohlo dojít k neodeslání emailu!"
+
+#: ../views/admin.php:1615
+msgid ""
+"{PHOTO-NAME},{CONTEST-URL} and {CONTEST-NAME} will be autoamtically replaced "
+"for real Photo name, Contest URL and Contest name"
+msgstr ""
+"{PHOTO-NAME},{CONTEST-URL} a {CONTEST-NAME} budou automaticky změněny na "
+"skutečný název obrázku, URL adresu soutěže a jméno soutěže"
+
+#: ../views/admin.php:1617 ../views/admin.php:1781
+msgid "Example:"
+msgstr "Příklad:"
+
+#: ../views/admin.php:1624
+msgid "Welcome email"
+msgstr "Uvítací email"
+
+#: ../views/admin.php:1627
+msgid "Allow custom \"Welcome email\""
+msgstr "Povolit vlastní \"Uvítací email\""
+
+#: ../views/admin.php:1654
+msgid "Menu background color"
+msgstr "Barva pozadí menu"
+
+#: ../views/admin.php:1749
+msgid "Headline"
+msgstr "Titulek"
+
+#: ../views/admin.php:1779
+msgid ""
+"{USER-NAME},{CONTEST-URL} and {CONTEST-NAME} will be autoamtically replaced "
+"for real Username, Contest URL and Contest name"
+msgstr ""
+"{USER-NAME},{CONTEST-URL} a {CONTEST-NAME} budou automaticky změněny na "
+"jméno uživatele, URL adresu soutěže a jméno soutěže"
+
+#: ../views/admin.php:1788
+msgid "Send login details with \"Welcome\" email?"
+msgstr "Odeslat přihlašovací údaje v \"Uvítacím emailu\"?"
+
+#: ../views/admin.php:1796
+msgid "Yes, send direct password"
+msgstr "Ano, pošli přímo heslo"
+
+#: ../views/admin.php:1805
+msgid "Yes, but not password directly only \"generate password\" link."
+msgstr "Ano, ale jen odesla odkaz na generování hesla."
+
+#: ../views/admin.php:1829
+msgid "Menu settings"
+msgstr "Nastavení Menu"
+
+#: ../views/admin.php:1831
+msgid ""
+"Menu color and style you can set for every contest differently in contest "
+"settings."
+msgstr ""
+"Barvu menu a jeho styl můžeš nastavit pro každou soutěž zvlášť v nastavení "
+"soutěže."
+
+#: ../views/admin.php:1835
+msgid "Menu layout"
+msgstr "Vzhled menu"
+
+#: ../views/admin.php:1844
+msgid "Menu layout 1"
+msgstr "Vzhled 1"
+
+#: ../views/admin.php:1852
+msgid "Menu layout 2"
+msgstr "Vzhled 2"
+
+#: ../views/admin.php:1858
+msgid "Mobile Menu"
+msgstr "Mobilní Menu"
+
+#: ../views/admin.php:1859
+msgid ""
+"Some WordPress themes have javascripts for animation. This animation block "
+"CSS selector :target so instead of opening menu (on mobile devices) create "
+"slide animation. If you have this issue you have two options. Option one is "
+"disable this animation in your theme and for option two is possible to use "
+"jQuery menu opening script."
+msgstr ""
+"Některé WordPress šablony užívají javascriptovou animaci. Tato animace "
+"blokuje CSS selektor :target  takže místo otevření menu (v mobilních "
+"zařízeních) udělá animaci. V takovém případě máte dvě možnosti. První "
+"možnost vypnout animaci v nastavení vzhledu. Nebo použít pro otevření jQuery "
+"script."
+
+#: ../views/admin.php:1869
+msgid "Open mobile menu using CSS"
+msgstr "Otevřít menu pomocí CSS"
+
+#: ../views/admin.php:1877
+msgid "Open mobile menu using jQuery"
+msgstr "Otevřít menu pomocí jQuery"
+
+#: ../views/admin.php:1885
+msgid "Change text \"Gallery\""
+msgstr "Změň text \"Galerie\""
+
+#: ../views/admin.php:1892
+msgid "Change text \"Upload Photo\""
+msgstr "Změň text \"Nahrát fotografii\""
+
+#: ../views/admin.php:1899
+msgid "Change text \"Rules & Prizes\""
+msgstr "Změn text \"Pravidla a ceny\""
+
+#: ../views/admin.php:1906
+msgid "Change text \"Your Images\""
+msgstr "Změn text \"Tvé Obrázky\""
+
+#: ../views/admin.php:1913
+msgid "Change text \"Top 10\""
+msgstr "Změň text  \"Top 10\""
+
+#: ../views/admin.php:1926
+msgid "Login and registration form"
+msgstr "Přihlašovací a registrační formulář"
+
+#: ../views/admin.php:1929
+msgid "What to use for login and registration"
+msgstr "Co použít k přihlášení a registraci"
+
+#: ../views/admin.php:1937
+msgid "Standard Photo Contest login and registration form"
+msgstr "Standartní formulář fotosoutěže pro přihlášení a registraci"
+
+#: ../views/admin.php:1946
+msgid ""
+"3rd party plugin for login and registration. Please add shortcode for that "
+"form!"
+msgstr ""
+"Plugin třetích stran pro přihlášení a registraci. Prosím vložte shortcode "
+"pro tento formulář!"
+
+#: ../views/admin.php:1957
+msgid "Own code injection to the header section"
+msgstr "Vlastní kód do hlavičky"
+
+#: ../views/admin.php:1959
+msgid ""
+"Be very careful. If you add code to the header section it must be properly "
+"coded! You must define attributes correctly. And please remember the code "
+"will be added to the header only where the gallery is. So if you need add "
+"code for every single post or page please use a special plugin for that."
+msgstr ""
+"Buď velmi opatrný. Pokud vložíš kód do hlavičky webu musí být správně "
+"kódován! Musíš definovat atributy správně. A prosím pamatuj, že kód se bude "
+"zobrazovat jen tam, kde je galerie. Pokud tedy potřebuješ kód na každou "
+"stránku prosím užij raději nějaký plugin pro to určený."
+
+#: ../views/admin.php:1963
+msgid "Header Code"
+msgstr "Kód hlavičky"
+
+#: ../views/admin.php:1969
+msgid "BuddyPress integration"
+msgstr "BuddyPress integrace"
+
+#: ../views/admin.php:1980
+msgid "Show images after upload in activity stream"
+msgstr "Zobraz nahrané obrázky v aktivitách uživatele"
+
+#: ../views/admin.php:1987
+msgid ""
+"Show new comments in activity stream (works only with Wordpress comments)"
+msgstr ""
+"Zobraz nový komentář v aktivitách uživatele (toto funguje pouze s WordPress "
+"komentáři)"
+
+#: ../views/admin.php:1994
+msgid "After voting display info about vote in user activity stream"
+msgstr "Po odhlasování zobraz informace o hlasu ve výčtu aktivit"
+
+#: ../views/admin.php:2005
+msgid "BuddyPress is NOT active. Activate and set BuddyPress first!"
+msgstr "BuddyPress není aktivní. Nejdříve aktivuj BuddyPress!"
+
+#: ../views/categories.php:20 ../views/categories.php:35
+#: ../views/categories.php:66 ../views/contests.php:56
+msgid "Error:"
+msgstr "Chyba:"
+
+#: ../views/categories.php:20 ../views/categories.php:149
+msgid "Create!"
+msgstr "Vytvořit!"
+
+#: ../views/categories.php:35 ../views/categories.php:66
+msgid "\"Category name\" is required field!"
+msgstr "\"Jméno kategorie\" je vyžadované pole!"
+
+#: ../views/categories.php:89
+msgid "Category was successfuly deleted"
+msgstr "Kategorie byla úspěšně smazána"
+
+#: ../views/categories.php:93
+msgid "Category was successfuly edited"
+msgstr "Kategorie byla úspěšně editována"
+
+#: ../views/categories.php:100
+msgid "Create a new Category"
+msgstr "Vytvoř novou kategorii"
+
+#: ../views/categories.php:110 ../views/categories.php:111
+#: ../views/categories.php:170
+msgid "Category name"
+msgstr "Název kategorie"
+
+#: ../views/categories.php:117
+msgid "Category related to the contest"
+msgstr "Kategorie patří k soutěži"
+
+#: ../views/categories.php:164
+msgid "Edit Category"
+msgstr "Edituj Kategorii"
+
+#: ../views/categories.php:182
+msgid "Category related to the contest *"
+msgstr "Kategorie patří k soutěži *"
+
+#: ../views/categories.php:192
+msgid "Edit!"
+msgstr "Editovat!"
+
+#: ../views/categories.php:198
+msgid ""
+"* Field \"Category related to the contest\" can not be edited for several "
+"technical reasons. If you did mistake, delete the category and create a new "
+"one."
+msgstr ""
+"* Pole \"Kategorie patří k soutěži\" nemůže být editováno z několika "
+"technických důvodů. Pokud jsi udělal/a chybu, kategorii smaž a vytvoř jí "
+"znovu."
+
+#: ../views/categories.php:201
+msgid "List of Categories"
+msgstr "Seznam kategorií"
+
+#: ../views/categories.php:206 ../views/categories.php:215
+#: ../views/categories.php:229 ../views/contests.php:81
+#: ../views/contests.php:95 ../views/contests.php:127 ../views/photos.php:563
+#: ../views/photos.php:586 ../views/photos.php:695
+msgid "ID"
+msgstr "ID"
+
+#: ../views/categories.php:207 ../views/categories.php:216
+#: ../views/categories.php:230 ../views/contests.php:83
+#: ../views/contests.php:97 ../views/contests.php:129
+msgid "Name"
+msgstr "Jméno"
+
+#: ../views/categories.php:208 ../views/categories.php:217
+#: ../views/categories.php:231
+msgid "Related to contest"
+msgstr "Patřící k soutěži"
+
+#: ../views/contests.php:53
+msgid "Create a new Contest"
+msgstr "Vytvořit novou soutěž"
+
+#: ../views/contests.php:56
+msgid ""
+"This contest cannot be created because on selected page contest already "
+"exists"
+msgstr ""
+"Tato soutěž nemůže být vytvořena neboť na zmíněné stránce již soutěž existuje"
+
+#: ../views/contests.php:63
+msgid ""
+"The contest is created! Please add these contest shortcodes: "
+"<strong>[contest-menu][contest-page]</strong> to the page:"
+msgstr ""
+"Soutěž byla vytvořena! Prosím přidejte tyto zkratky (shortcodes) "
+"<strong>[contest-menu][contest-page]</strong> do stránky:"
+
+#: ../views/contests.php:66
+msgid "The contest is created! Now you can visit the contest:"
+msgstr "Soutěž byla vytvořena! Nyní můžete navštívit soutěž!:"
+
+#: ../views/contests.php:80 ../views/contests.php:94 ../views/contests.php:122
+#: ../views/contests.php:125 ../views/jury.php:165 ../views/jury.php:175
+#: ../views/jury.php:203 ../views/jury.php:205 ../views/photos.php:572
+#: ../views/photos.php:595 ../views/photos.php:896
+msgid "Active"
+msgstr "Aktivní"
+
+#: ../views/contests.php:82 ../views/contests.php:96 ../views/contests.php:128
+msgid "Page ID"
+msgstr "ID stránky"
+
+#: ../views/contests.php:84 ../views/contests.php:98 ../views/contests.php:130
+msgid "Contest Start"
+msgstr "Začátek soutěže"
+
+#: ../views/contests.php:85 ../views/contests.php:99 ../views/contests.php:131
+msgid "Contest End"
+msgstr "Konec soutěže"
+
+#: ../views/contests.php:87 ../views/contests.php:101 ../views/contests.php:133
+msgid "Visit"
+msgstr "Navštívit"
+
+#: ../views/contests.php:135
+msgid "Do you want delete this contest? Are you sure?"
+msgstr "Opravdu chceš smazat tuto soutěž? Jsi si jistý?"
+
+#: ../views/contests.php:222 ../views/contests.php:232
+msgid "(This field is not active in this mode!)"
+msgstr "(Neaktivní pole v tomto módu!)"
+
+#: ../views/contests.php:236
+msgid ""
+"(Jury mode for this contest is active! Standard vote options for ordinary "
+"users or visitors are disabled )"
+msgstr ""
+"(Mód poroty pro tuto soutěž je aktivní! Standartní možnosti pro běžné "
+"uživatele jsou vypnuté)"
+
+#: ../views/contests.php:248
+msgid "Edit Contest"
+msgstr "Editovat soutěž"
+
+#: ../views/contests.php:250 ../views/contests.php:253
+msgid "Contest mode"
+msgstr "Mód soutěže"
+
+#: ../views/contests.php:254
+msgid ""
+"The contest can be set to three modes. The first mode is a just classic "
+"contest with all parts, the second mode is set as upload form with the menu "
+"in this mode is also enabled Rules and Prizes section and in the third mode "
+"is allowed only upload form. In the second and third mode is not possible to "
+"share images, it is not possible to vote, it is not possible tho show "
+"gallery, but you can switch between all three modes anytime you want."
+msgstr ""
+"Tato soutěž může být ve třech módech, Galerie, Nahrávací formulář s menu "
+"nebo jen Nahrávací formulář. První možnost je normální fotosoutěž ty ostatní "
+"dvě dovolují pouze nahrávat obrázky. Není možné volit, ani vidět galerii."
+
+#: ../views/contests.php:265
+msgid "Gallery mode"
+msgstr "Mód Galerie"
+
+#: ../views/contests.php:265
+msgid "Classic contest with all sections, the menu and with the voting"
+msgstr "Klasická soutěž se všemi sekcemi, s menu a s hlasováním"
+
+#: ../views/contests.php:276 ../views/contests.php:287
+msgid "Upload form mode"
+msgstr "Mód Nahrávací formulář"
+
+#: ../views/contests.php:276
+msgid "With Menu"
+msgstr "S menu"
+
+#: ../views/contests.php:276
+msgid ""
+"In this mode only Upload Form, Menu and Rules & Prizes section will be "
+"visible"
+msgstr ""
+"V tomto módu je viditelná jen sekce Nahrávací formulář, menu a sekce "
+"Pravidla a Ceny"
+
+#: ../views/contests.php:287
+msgid "Without Menu"
+msgstr "Bez Menu"
+
+#: ../views/contests.php:287
+msgid "In this mode only Upload Form will be visible"
+msgstr "V tomto módu je viditelný jen nahrávací formulář"
+
+#: ../views/contests.php:296 ../views/contests.php:297
+msgid "Name of the contest"
+msgstr "Název soutěže"
+
+#: ../views/contests.php:302
+msgid "Start date"
+msgstr "Začátek soutěže"
+
+#: ../views/contests.php:303 ../views/contests.php:309
+#: ../views/contests.php:315 ../views/contests.php:321
+msgid "Select date"
+msgstr "Zvolte datum"
+
+#: ../views/contests.php:308
+msgid "End date"
+msgstr "Konec soutěže"
+
+#: ../views/contests.php:314
+msgid "Registration will end on:"
+msgstr "Registrace do soutěže končí ke dni:"
+
+#: ../views/contests.php:320
+msgid "Voting will begin on:"
+msgstr "Hlasování započne k datu:"
+
+#: ../views/contests.php:326
+msgid "Primary Page"
+msgstr "Primární stránka"
+
+#: ../views/contests.php:326 ../views/contests.php:1236
+msgid "(Required)"
+msgstr "(Vyžadováno)"
+
+#: ../views/contests.php:333
+msgid "Important: Select Page!"
+msgstr "Důležité: Zvol stránku!"
+
+#: ../views/contests.php:355
+msgid "Secondary page"
+msgstr "Sekundární stránka"
+
+#: ../views/contests.php:359
+msgid "Select secondary page (optional)"
+msgstr "Zvol sekundární stránku (volitelné)"
+
+#: ../views/contests.php:367
+msgid "==No page needed=="
+msgstr "==Stránka není potřeba=="
+
+#: ../views/contests.php:384
+msgid "Third page"
+msgstr "Třetí stránka"
+
+#: ../views/contests.php:384
+msgid "Use ID of the page"
+msgstr "Použij ID stránky"
+
+#: ../views/contests.php:393
+msgid "Users Settings"
+msgstr "Nastavení uživatelů"
+
+#: ../views/contests.php:396
+msgid "Photos per User"
+msgstr "Obrázků na uživatele"
+
+#: ../views/contests.php:449
+msgid "Unlimited"
+msgstr "Neomezeně"
+
+#: ../views/contests.php:465
+msgid "Allow users to edit their own image"
+msgstr "Povol uživatelům editovat vlastní obrázek"
+
+#: ../views/contests.php:487
+msgid "Allow to Edit the image"
+msgstr "Povolit editovat obrázek"
+
+#: ../views/contests.php:498
+msgid "Allow to Edit and Delete the image"
+msgstr "Povolit editovat a smazat obrázek"
+
+#: ../views/contests.php:507
+msgid "Reguire registration before image upload"
+msgstr "Vyžadovat registraci před nahráním obrázku"
+
+#: ../views/contests.php:518
+msgid "(Default)"
+msgstr "(Výchozí)"
+
+#: ../views/contests.php:537
+msgid "Layout"
+msgstr "Vzhled"
+
+#: ../views/contests.php:540
+msgid "Select Menu Style"
+msgstr "Zvol styl menu"
+
+#: ../views/contests.php:551
+msgid "Menu Height - Normal"
+msgstr "Výška menu - Normální"
+
+#: ../views/contests.php:562
+msgid "Menu Height - Thin"
+msgstr "Výška menu - Úzké"
+
+#: ../views/contests.php:570
+msgid "Menu Color"
+msgstr "Barva Menu"
+
+#: ../views/contests.php:660
+msgid "Gallery Grid Layout"
+msgstr "Vzhled galerie"
+
+#: ../views/contests.php:671
+msgid "Classic"
+msgstr "Klasická"
+
+#: ../views/contests.php:682 ../views/contests.php:693
+#: ../views/contests.php:704
+msgid "Modern"
+msgstr "Moderní"
+
+#: ../views/contests.php:693
+msgid "With Lightbox"
+msgstr "S lightboxem"
+
+#: ../views/contests.php:704
+msgid "With Lightbox and vote button"
+msgstr "S lightboxem a hlasovacím tlačítkem"
+
+#: ../views/contests.php:710
+msgid "Gallery layout color"
+msgstr "Barva vzhledu galerie"
+
+#: ../views/contests.php:799
+msgid "Rows in the Gallery"
+msgstr "Řádky v galerii"
+
+#: ../views/contests.php:862
+msgid "Columns in the Gallery"
+msgstr "Sloupce v galerii"
+
+#: ../views/contests.php:875
+msgid "- Recommended"
+msgstr "- Doporučeno"
+
+#: ../views/contests.php:878
+msgid "- Only for wide pages"
+msgstr "- Jen pro široké stránky"
+
+#: ../views/contests.php:881
+msgid "- Only for very wide pages"
+msgstr "- Jen pro velmi široké stránky"
+
+#: ../views/contests.php:897
+msgid "Primary gallery order"
+msgstr "Primární řazení galerie"
+
+#: ../views/contests.php:908
+msgid "Latest"
+msgstr "Poslední"
+
+#: ../views/contests.php:926
+msgid "Voting"
+msgstr "Hlasování"
+
+#: ../views/contests.php:930
+msgid "How often should users vote!"
+msgstr "Jak často mohou uživatelé hlasovat!"
+
+#: ../views/contests.php:941
+msgid "Only one single vote"
+msgstr "Jen jeden hlas celkově"
+
+#: ../views/contests.php:952
+msgid "A rate mode - 5 stars rating"
+msgstr "Mód hodnocení - 5 hvězdiček"
+
+#: ../views/contests.php:963
+msgid "A rate mode - 10 stars rating"
+msgstr "Mód hodnocení - 10 hvězdiček"
+
+#: ../views/contests.php:974
+msgid ""
+"Once for each Photo (Like the \"Like button\" - Photo with most likes/votes "
+"wins)"
+msgstr ""
+"Jednou pro každou fotografii (Systém jako lajkování. Obrázek s největším "
+"počtem hlasů/lajků vyhraje)"
+
+#: ../views/contests.php:985
+msgid "Once a Day (Every new day) (for each Photo)"
+msgstr "Jednou denně (Každý nový den) (pro každou fotografii)"
+
+#: ../views/contests.php:996
+msgid "Twice a Day (Every 12 hours) (for each Photo)"
+msgstr "Dvakrát denně (každých 12 hodin) (pro každou fotografii)"
+
+#: ../views/contests.php:1007
+msgid "Once an Hour (for each Photo)"
+msgstr "Jednou za hodinu (pro každou fotografii)"
+
+#: ../views/contests.php:1016
+msgid "IP Address Vote Protection"
+msgstr "Ochrana IP adresou"
+
+#: ../views/contests.php:1025
+msgid "(Highly recommended!)"
+msgstr "(Výrazně Doporučeno)"
+
+#: ../views/contests.php:1034
+msgid ""
+"(Choose this option only if you are in closed or private network (like "
+"company network) and all computers/devices have the same IP address!)"
+msgstr ""
+"(Zvolte tuto možnost pouze pokud jste na uzavřené síti (jako třeba podniková "
+"síť), kde mají všechny počítače stejnou IP adresu!)"
+
+#: ../views/contests.php:1042
+msgid "Manage the Content"
+msgstr "Nastavit soutěž"
+
+#: ../views/contests.php:1051
+msgid "Hide Upload Section"
+msgstr "Skryj nahrávací sekci"
+
+#: ../views/contests.php:1051 ../views/contests.php:1058
+#: ../views/contests.php:1065 ../views/contests.php:1072
+msgid "(Section will be still visible for Admins)"
+msgstr "(Sekce bude stále viditelná pro Adminy)"
+
+#: ../views/contests.php:1058
+msgid "Hide Top 10 Section"
+msgstr "Skryj Top 10 Sekci"
+
+#: ../views/contests.php:1065
+msgid "Hide Your Image Section"
+msgstr "Skryj sekci s Tvými obrázky"
+
+#: ../views/contests.php:1072
+msgid "Hide Rules & Prizes Section"
+msgstr "Skrýt sekci Pravidla a ceny"
+
+#: ../views/contests.php:1079
+msgid "Hide Author's Name"
+msgstr "Skryj autorovo jméno"
+
+#: ../views/contests.php:1079
+msgid "(Author's name will be still visible for Admins)"
+msgstr "(Jméno autora bude stále viditelné pro Adminy)"
+
+#: ../views/contests.php:1086 ../views/jury.php:318
+msgid "Hide Votes"
+msgstr "Skrýt hlasy"
+
+#: ../views/contests.php:1086 ../views/jury.php:318
+msgid ""
+"(Votes, Top 10 and order by votes in Gallery will be hidden but still "
+"visible for Admins)"
+msgstr ""
+"(Hlasy, Top 10 a řazení podle hlasů bude v galerii vypnuté, ale bude stále "
+"viditelné pro Adminy)"
+
+#: ../views/contests.php:1093
+msgid "Hide Views"
+msgstr "Skryj zobrazení"
+
+#: ../views/contests.php:1093
+msgid "(Views will be still visible for Admins)"
+msgstr "(Počet zobrazení bude stále viditelný pro Adminy)"
+
+#: ../views/contests.php:1100
+msgid "Hide Login Button"
+msgstr "Skrýt přihlašovací tlačítko v menu"
+
+#: ../views/contests.php:1107
+msgid "Hide Social Icons"
+msgstr "Skryj ikony ze sociálních sítí"
+
+#: ../views/contests.php:1114
+msgid "Hide Select Bars and Search Bar in the gallery"
+msgstr "Schovej výběrová pole a pole pro vyhledávání v galerii"
+
+#: ../views/contests.php:1120
+msgid "Manage Upload Form"
+msgstr "Upravit vstupní formulář"
+
+#: ../views/contests.php:1124
+msgid "Custom registration form fields"
+msgstr "Doplňkové pole k registraci"
+
+#: ../views/contests.php:1125
+msgid ""
+"(This fields are connected to user so it is visible only during registration "
+"process. Already registered users can not see this fields)"
+msgstr ""
+"(Toto pole je spojeno s uživatelem a je viditelné jen při průběhu "
+"registrace. Registrovaní uživatelé toto pole neuvidí)"
+
+#: ../views/contests.php:1154
+msgid "Zip/Postal code"
+msgstr "PSČ"
+
+#: ../views/contests.php:1161
+msgid "Only US"
+msgstr "Jen Spojené státy"
+
+#: ../views/contests.php:1175
+msgid "Gender (Male/Female)"
+msgstr "Pohlaví (Muž/Žena)"
+
+#: ../views/contests.php:1182
+msgid "Gender (Male/Female/Other)"
+msgstr "Pohlaví (Muž/Žena/Jiné)"
+
+#: ../views/contests.php:1189
+msgid "Website/Blog/Gallery URL"
+msgstr "Web/Blog/Galerie URL"
+
+#: ../views/contests.php:1196
+msgid "Phone number"
+msgstr "Telefon"
+
+#: ../views/contests.php:1226 ../views/contests.php:1238
+#: ../views/contests.php:1295
+msgid "Name of the field"
+msgstr "Jméno pole"
+
+#: ../views/contests.php:1248
+msgid "I am over the age of 13 - checkbox"
+msgstr "Je mi více než 13 let - zaškrtávací pole"
+
+#: ../views/contests.php:1255
+msgid "I am over the age of 18  - checkbox"
+msgstr "Je mi více než 18 let - zaškrtávací pole"
+
+#: ../views/contests.php:1262
+msgid "I have read and accept official contest rules - checkbox"
+msgstr ""
+"Četl jsem a souhlasím s oficiálními podmínkami soutěže - zaškrtávací pole"
+
+#: ../views/contests.php:1270
+msgid "Custom image details form fields"
+msgstr "Doplňková pole formuláře pro obrázky"
+
+#: ../views/contests.php:1271
+msgid "(This fields are connected to uploaded image)"
+msgstr "(Toto pole je spojeno s nahrávaným obrázkem)"
+
+#: ../views/contests.php:1305
+msgid "Rules & Prizes!"
+msgstr "Pravidla a ceny!"
+
+#: ../views/info.php:20
+msgid "Index"
+msgstr "Index"
+
+#: ../views/info.php:24
+msgid "Basic Info"
+msgstr "Základní informace"
+
+#: ../views/info.php:26 ../views/info.php:81
+msgid "Disqus Comments - Video"
+msgstr "Disqus komentáře - Video"
+
+#: ../views/info.php:27 ../views/info.php:89
+msgid "Disqus Comments - Step by Step"
+msgstr "Disqus komentáře - Krok za krokem"
+
+#: ../views/info.php:28
+msgid "Online documentation & Demo"
+msgstr "Online dokumentace a demo"
+
+#: ../views/info.php:29
+msgid "Official page on Codecanyon"
+msgstr "Oficiální stránka na Codecanyon"
+
+#: ../views/info.php:30
+msgid "Official Support Form"
+msgstr "Oficiální podpora"
+
+#: ../views/info.php:36
+msgid "Basic system info"
+msgstr "Základní systémové informace"
+
+#: ../views/info.php:38
+msgid "PHP version"
+msgstr "PHP verze"
+
+#: ../views/info.php:39
+msgid "Plugin version"
+msgstr "Verze pluginu"
+
+#: ../views/info.php:40
+msgid "WordPress version"
+msgstr "WordPress verze"
+
+#: ../views/info.php:47
+msgid "Create a Contest - Step by step"
+msgstr "Vytvořit soutěž - Krok za krokem"
+
+#: ../views/info.php:49
+msgid "Create a contest in the new WordPress Editor (Gutenberg)"
+msgstr "Vytvořit soutěž v novém WordPress editoru (Gutenberg)"
+
+#: ../views/info.php:51 ../views/info.php:60
+msgid "Create a new page for the contest."
+msgstr "Vytvořit novou stránku pro soutěž."
+
+#: ../views/info.php:52
+msgid "Hit \"Add block\" (it is the Plus symbol in the Circle)"
+msgstr "Klikni na \"Přidat blok\" (je to symbol Plus ve kruhu)"
+
+#: ../views/info.php:53
+msgid "In the field \"Search for a block\" type Photo Contest"
+msgstr "Ve vyhledávacím poli zadej Photo Contest"
+
+#: ../views/info.php:54
+msgid "Pick the block \"Photo Contest\""
+msgstr "Zvol blok \"Photo Contest\""
+
+#: ../views/info.php:55 ../views/info.php:64 ../views/info.php:72
+msgid "Done!"
+msgstr "Hotovo!"
+
+#: ../views/info.php:58
+msgid "Create a contest in the old WordPress editor"
+msgstr "Vytvořit soutěž ve starém WordPress editoru"
+
+#: ../views/info.php:61
+msgid ""
+"Hit button \"Add Photo Contest\" or add these two shortcodes to the text "
+"area <strong><code>[</code><code>contest-menu</code><code>]</code><code>[</"
+"code><code>contest-page</code><code>]</code></strong>."
+msgstr ""
+"Klikni na \"Vložit fotosoutěž\" nebo vlož do textového editoru tyto dva "
+"shortcody <strong><code>[</code><code>contest-menu</code><code>]</"
+"code><code>[</code><code>contest-page</code><code>]</code></strong>."
+
+#: ../views/info.php:62
+msgid "Save the page and visit the page."
+msgstr "Publikuj nebo aktualizuj stránku a navštiv stránku."
+
+#: ../views/info.php:63
+msgid ""
+"On the page you will find a form for creating a new contest, so fill the "
+"form."
+msgstr "Na stránce najdeš formulář k vytvoření nové soutěže, tak ho vyplň."
+
+#: ../views/info.php:67
+msgid "Create a contest in the Contests section"
+msgstr "Vytvořit novou soutěž v sekci Soutěže"
+
+#: ../views/info.php:69
+msgid "Go to admin area Photo Contest -> Contests section."
+msgstr "Jdi do administrace a do sekce Fotosoutěž-> Soutěže."
+
+#: ../views/info.php:70
+msgid ""
+"Set contest name in the \"Create a new contest\" form and fill the rest of "
+"the form."
+msgstr "Vyplň název ve formuláři a vyplň zbytek formuláře."
+
+#: ../views/info.php:71
+msgid "Hit \"Create a contest\" buton."
+msgstr "Klikni na tlačítko \"Vytvořit soutěž\"."
+
+#: ../views/info.php:92
+msgid "Create account on"
+msgstr "Vytvoř účet na"
+
+#: ../views/info.php:93
+msgid ""
+"After register and login click Setting icon in top right corner and select "
+"\"Add Disqus To Site\""
+msgstr ""
+"Po registraci a přihlášení klikněte na ikonu nastavení a zvolte  \"Add "
+"Disqus To Site\""
+
+#: ../views/info.php:94
+msgid "Click button \"Install on Your Site\" in top right corner"
+msgstr "Klikni na tlačítko  \"Install on Your Site\" v pravém horním rohu"
+
+#: ../views/info.php:95
+msgid "Fill the Form and click \"Next\" button"
+msgstr "Vyplň formulář a klikni na tlačítko \"Next\""
+
+#: ../views/info.php:96
+msgid ""
+"Pick one option \"My site is part of larger organization\" or \"My site is "
+"just a personal site\""
+msgstr ""
+"Zvol jednu z možností \"My site is part of larger organization\" nebo \"My "
+"site is just a personal site\""
+
+#: ../views/info.php:97
+msgid "In this step just click \"Skip\" button"
+msgstr "V tomto kroku jen klikni na \"Skip\" tlačítko"
+
+#: ../views/info.php:98
+msgid "On page \"Choose your Platform\" select first option Universal Code"
+msgstr "Na stránce \"Choose your Platform\" zvol první možnost Universal Code"
+
+#: ../views/info.php:99
+msgid "First select and after copy the code (Select CTRL+A and Copy CTRL+V)"
+msgstr "Označ a následně skopíruj kód (zvol CTRL+A a pak kopíruj CTRL+V)"
+
+#: ../views/info.php:100
+msgid ""
+"Go to your site to Photo Contest General setting page and put code to "
+"textarea \"Disqus Code\" and click \"Save changes\"</li>"
+msgstr ""
+"Jdi na instalaci WordPressu do sekce Fotosoutěž - Hlavní nastavení  a vlož "
+"kód do pole \"Disqus kód\" a klikni na \"Uložit nastavení\"</li>"
+
+#: ../views/jury.php:160 ../views/jury.php:257
+msgid ""
+"If you will allow Jury for the contest, You must understand that some of "
+"previous settings for voting will be ignored."
+msgstr ""
+"Pokud povolíš porotu musíš vědět, že všechna předešlá nastavení budou "
+"ignorována."
+
+#: ../views/jury.php:166 ../views/jury.php:176 ../views/jury.php:207
+msgid "Jury for"
+msgstr "Porota pro"
+
+#: ../views/jury.php:167 ../views/jury.php:177 ../views/jury.php:208
+#: ../views/jury.php:266
+msgid "Allow the Jury"
+msgstr "Povolit porotu"
+
+#: ../views/jury.php:168 ../views/jury.php:178 ../views/jury.php:215
+msgid "Jury members"
+msgstr "Členové poroty"
+
+#: ../views/jury.php:254
+msgid "Jury for the contest:"
+msgstr "Porota pro soutěž:"
+
+#: ../views/jury.php:277
+msgid "Select type of judging"
+msgstr "Zvol typ soudcování"
+
+#: ../views/jury.php:283
+msgid "Vote"
+msgstr "Hlasování"
+
+#: ../views/jury.php:290
+msgid "10 Star rating"
+msgstr "10 hvězdiček"
+
+#: ../views/jury.php:297
+msgid "Number of votes for each jury member"
+msgstr "Počet hlasů pro každého člena poroty"
+
+#: ../views/jury.php:297
+msgid ""
+"(This number give votes to your jury members. Example if you set 3 votes, "
+"each member of the jury can vote 3 times (total) for 3 different images. If "
+"you set 1 vote, users can vote only once. One vote is the minimum.)"
+msgstr ""
+"(Tento počet dá hlasy porotě. Příklad, když zvolíš 3 hlasy, každý člen "
+"poroty bude moci hlasovat 3x pro 3 různé obrázky. Pokud nastavíš 1 hlas "
+"budou moci porotci hlasovat pouze jednou. 1 hlas je naprosté minimum.)"
+
+#: ../views/jury.php:299
+msgid "Numbers of votes (minimum is one)"
+msgstr "Počet hlasů (minimum je jedna)"
+
+#: ../views/jury.php:304
+msgid "Add new members to Jury"
+msgstr "Přidej členy do poroty"
+
+#: ../views/jury.php:304
+msgid "(Add ID of the users separated by comma. Example 1,29,33,55)"
+msgstr "(Přidej uživatele podle jejich ID. Například 1,29,33,55)"
+
+#: ../views/jury.php:304
+msgid "Show users with their ID´s"
+msgstr "Zobraz uživatele a jejich ID"
+
+#: ../views/jury.php:312
+msgid "Hide votes"
+msgstr "Skrýt hlasy"
+
+#: ../views/jury.php:335
+msgid "Members of the Jury"
+msgstr "Členové poroty"
+
+#: ../views/jury.php:354
+msgid "There are no members yet"
+msgstr "Ještě zde nejsou žádní uživatelé"
+
+#: ../views/photos.php:303
+msgid "Contest Photos"
+msgstr "Soutěžní obrázky"
+
+#: ../views/photos.php:306 ../views/votes.php:129
+msgid "Filters"
+msgstr "Filtry"
+
+#: ../views/photos.php:313 ../views/votes.php:136
+msgid "Maximum Items per page"
+msgstr "Maximum položek na stránku"
+
+#: ../views/photos.php:402 ../views/photos.php:430
+msgid "Activated"
+msgstr "Aktivní"
+
+#: ../views/photos.php:407
+msgid "Top Rated - 5 Stars"
+msgstr "Nejlepší hodnocené - 5 hvězdiček"
+
+#: ../views/photos.php:413
+msgid "Worst Rated - 5 Stars"
+msgstr "Nejhůře hodnocené - 5 hvězdiček"
+
+#: ../views/photos.php:419
+msgid "Top Rated - 10 Stars"
+msgstr "Nejlépe hodnocené - 10 hvězdiček"
+
+#: ../views/photos.php:425
+msgid "Worst Rated - 10 Stars"
+msgstr "Nejhůře hodnocené - 10 hvězdiček"
+
+#: ../views/photos.php:435
+msgid "Not Activated"
+msgstr "Neaktivní"
+
+#: ../views/photos.php:452
+msgid "All Contests"
+msgstr "Všechny fotosoutěže"
+
+#: ../views/photos.php:515
+msgid "Export this to CSV!"
+msgstr "Exportuj toto do CSV!"
+
+#: ../views/photos.php:526
+msgid "Export Users data!"
+msgstr "Exportuj data soutěžících!"
+
+#: ../views/photos.php:540 ../views/votes.php:352
+msgid "Result(s)"
+msgstr "Výsledek(y)"
+
+#: ../views/photos.php:547 ../views/votes.php:361
+msgid "There are no records yet!"
+msgstr "Zatím tu není žádný záznam!"
+
+#: ../views/photos.php:564 ../views/photos.php:587 ../views/photos.php:696
+msgid "Image"
+msgstr "Obrázek"
+
+#: ../views/photos.php:565 ../views/photos.php:588 ../views/photos.php:697
+#: ../views/votes.php:584
+msgid "Info"
+msgstr "Informace"
+
+#: ../views/photos.php:566 ../views/photos.php:589 ../views/photos.php:721
+#: ../views/photos.php:756 ../views/photos.php:760
+msgid "Author"
+msgstr "Autor"
+
+#: ../views/photos.php:567 ../views/photos.php:590 ../views/photos.php:765
+#: ../views/votes.php:381 ../views/votes.php:404 ../views/votes.php:532
+msgid "Contest"
+msgstr "Fotosoutěž"
+
+#: ../views/photos.php:723
+msgid "Edit user"
+msgstr "Edituj uživatele"
+
+#: ../views/photos.php:733
+msgid "Profile"
+msgstr "Profil"
+
+#: ../views/photos.php:760
+msgid "This autor was deleted"
+msgstr "Tento autor byl smazán"
+
+#: ../views/photos.php:785
+msgid "Uncatergorized"
+msgstr "Bez kategorie"
+
+#: ../views/photos.php:812
+msgid "Votes/rating"
+msgstr "Hlasování/Hodnocení"
+
+#: ../views/photos.php:903
+msgid "Download"
+msgstr "Stáhnout"
+
+#: ../views/photos.php:904
+msgid "Show in contest"
+msgstr "Zobrazit v soutěži"
+
+#: ../views/photos.php:905
+msgid "Who voted?"
+msgstr "Kdo hlasoval?"
+
+#: ../views/photos.php:906
+msgid "Do you want delete this image? Are you sure?"
+msgstr "Opravdu chceš smazat tento obrázek? Jsi si jistý?"
+
+#: ../views/photos.php:929
+msgid "Activate selected photos"
+msgstr "Aktivovat zvolené obrázky"
+
+#: ../views/photos.php:930
+msgid "Deactivate selected photos"
+msgstr "Deaktivovat zvolené obrázky"
+
+#: ../views/photos.php:931
+msgid "Do you want to delete selected photos? Are you sure!!?"
+msgstr "Opravdu chceš smazat zvolené obrázky? Jsi si jistý?"
+
+#: ../views/photos.php:931
+msgid "Delete selected photos"
+msgstr "Smazat zvolené obrázky"
+
+#: ../views/votes.php:186
+msgid "Select a Country"
+msgstr "Zvolit zemi"
+
+#: ../views/votes.php:203
+msgid "Search by email"
+msgstr "Hledat dle emailu"
+
+#: ../views/votes.php:206
+msgid "Example: info@domain.com"
+msgstr "Příklad: info@domain.com"
+
+#: ../views/votes.php:220 ../views/votes.php:226
+msgid "Select a Contest"
+msgstr "Zvolit soutěž"
+
+#: ../views/votes.php:286
+msgid "Search by IP address"
+msgstr "Hledat dle IP adresy"
+
+#: ../views/votes.php:289
+msgid "Example: 176.192.159.215"
+msgstr "Příklad: 176.192.159.215"
+
+#: ../views/votes.php:300
+msgid "Search by photo ID"
+msgstr "Hledat dle ID obrázku"
+
+#: ../views/votes.php:303
+msgid "Example: 314"
+msgstr "Příklad: 314"
+
+#: ../views/votes.php:322
+msgid "Reset Filters"
+msgstr "Resetovat filtry"
+
+#: ../views/votes.php:325
+msgid "Export Results to CSV"
+msgstr "Exportovat výsledky do CSV"
+
+#: ../views/votes.php:328
+#, php-format
+msgid "Too much results for export: %s!"
+msgstr "Příliš mnoho výsledků pro export: %s!"
+
+#: ../views/votes.php:343
+msgid "Do you want to cleare whole log? Are you sure!!?"
+msgstr "Opravdu chceš smazat všechny záznamy? Jsi si jistý?"
+
+#: ../views/votes.php:343
+msgid "Delete the whole Log"
+msgstr "Smazat všechny záznamy"
+
+#: ../views/votes.php:376 ../views/votes.php:399 ../views/votes.php:524
+msgid "Vote ID"
+msgstr "ID hlasu"
+
+#: ../views/votes.php:377 ../views/votes.php:400 ../views/votes.php:525
+msgid "Photo ID"
+msgstr "ID obrázku"
+
+#: ../views/votes.php:378 ../views/votes.php:401 ../views/votes.php:526
+msgid "Item"
+msgstr "Položka"
+
+#: ../views/votes.php:379 ../views/votes.php:402 ../views/votes.php:527
+msgid "Vote/Rate value"
+msgstr "Hlas/Hodnota hodnocení"
+
+#: ../views/votes.php:380 ../views/votes.php:403 ../views/votes.php:531
+msgid "Voter"
+msgstr "Hlasující"
+
+#: ../views/votes.php:383 ../views/votes.php:406 ../views/votes.php:534
+msgid "IP Address"
+msgstr "IP adresa"
+
+#: ../views/votes.php:385 ../views/votes.php:408 ../views/votes.php:536
+msgid "Date"
+msgstr "Datum"
+
+#: ../views/votes.php:386 ../views/votes.php:409 ../views/votes.php:537
+msgid "Email"
+msgstr "Email"
+
+#: ../views/votes.php:508
+msgid "Remove this vote/rate"
+msgstr "Odebrat tento hlas/hodnocení"
+
+#: ../views/votes.php:510
+msgid "This vote/rate was removed"
+msgstr "Tento hlas/hodnocení byl odebrán"
+
+#: ../views/votes.php:573
+msgid "Delete selected records from the log"
+msgstr "Smazat zvolené záznamy z databáze"
+
+#: ../views/votes.php:586
+#, php-format
+msgid ""
+"Delete the whole Log: If you press the button \"Delete the whole Log\" you "
+"will delete all log records. However, it will be deleted only the log, not "
+"votes. If you want to reset (clear) votes just use <a href=\"%s\">the "
+"special tool for that</a>."
+msgstr ""
+"Smazat všechny záznamy: Pokud klikneš na tlačítko \"Smazat všechny záznamy\" "
+"budou všechny záznamy smazány. Nicméně bude smazán jen záznam o hlasu ne "
+"hlas samotný. Pokud chceš vymazat všechny hlasy musíš na to použít <a href="
+"\"%s\">speciální nástroj</a>."
+
+#: ../views/votes.php:587
+msgid ""
+"Delete selected records from the log: It will delete only records from the "
+"log not votes itself"
+msgstr ""
+"Smazat zvolené záznamy z databáze: Smaže pouze záznamy, ne hlasy samotné"
+
+#: ../views/votes.php:588
+msgid ""
+"Too much results for export: The max. recommended limit for an export is 1000"
+msgstr ""
+"Příliš mnoho výsledků pro export: Maximální doporučený limit pro export je "
+"1000"
+
+#~ msgid "Select third page (optional)"
+#~ msgstr "Zvol terciální stránku (volitelné)"
+
+#~ msgid "To reset your password, visit the following address:"
+#~ msgstr "Pro resetování tvého hesla použij následující adresu:"
+
+#~ msgid "Image type must be jpg, png or gif."
+#~ msgstr "Obrázek musí mít příponu jpg, jpeg, png nebo gif."
+
+#~ msgid "BuddyPress"
+#~ msgstr "BuddyPress"
+
+#~ msgid "Set BuddyPress integration."
+#~ msgstr "Nastav BuddyPress integraci."
+
+#~ msgid "Create a Contest - Video"
+#~ msgstr "Vytvořit soutěž - Video"
+
+#~ msgid ""
+#~ "If you will allow the Jury for the contest, You must understand that some "
+#~ "of previous settings for voting will be ignored."
+#~ msgstr ""
+#~ "Pokud povolíš porotu musíš vědět, že všechna předešlá nastavení budou "
+#~ "ignorována."
+
+#, fuzzy
+#~| msgid ""
+#~| "voted for <a href=\"%s\">photo</a> in <a href=\"%s\">Photo Contest</a>"
+#~ msgid ""
+#~ "voted for <a href=\"%s\">a recipe</a> in <a href=\"%s\">Recipe Contest</a>"
+#~ msgstr ""
+#~ "hlasoval pro<a href=\"%s\">fotografii</a> ve <a href=\"%s\">Fotosoutěži</"
+#~ "a>"
+
+#, fuzzy
+#~| msgid ""
+#~| "voted for <a href=\"%s\">photo</a> in <a href=\"%s\">Photo Contest</a>"
+#~ msgid ""
+#~ "rated <a href=\"%s\">a recipe</a> in <a href=\"%s\">Recipe Contest</a>"
+#~ msgstr ""
+#~ "hlasoval pro<a href=\"%s\">fotografii</a> ve <a href=\"%s\">Fotosoutěži</"
+#~ "a>"
+
+#~ msgid "Send notification email to admin about new user registration"
+#~ msgstr "Pošli upozorňující email adminovi o nové registraci uživatele"
+
+#~ msgid "New user registration on your site %s:"
+#~ msgstr "Je nová registrace na tvé stránce %s:"
+
+#~ msgid "Email: %s"
+#~ msgstr "Email: %s"
+
+#~ msgid "You can check out the image on link below"
+#~ msgstr "Můžete zkontrolovat obrázek na odkazu níže"
+
+#~ msgid "[%s] - Photo Contest"
+#~ msgstr "[%s] - Fotosoutěž"
+
+#~ msgid "URL of your photo"
+#~ msgstr "URL tvého obrázku"
+
+#~ msgid "Allow IP Protection"
+#~ msgstr "Povolit IP ochranu"
+
+#~ msgid ""
+#~ "(It is a good idea disable this protection if jury members are on the "
+#~ "same network as you are! So NO is recommended. )"
+#~ msgstr ""
+#~ "(Je dobrý nápad vypnout tuto ochranu pokud jsou členové tvé poroty ve "
+#~ "stejné síti jako jsi ty. Takže NE je doporučeno)"
+
+#~ msgid "You cannot vote for this image twice!"
+#~ msgstr "Nemůžeš hlasovat pro tento obrázek dvakrát!"
+
+#~ msgid "Create the contest first!"
+#~ msgstr "Vytvoř nejdříve soutěž!"
+
+#~ msgid "by"
+#~ msgstr "od"
+
+#~ msgid "Photo URL"
+#~ msgstr "URL obrzáku"
+
+#~ msgid "Font - Use recommended font OSWALD"
+#~ msgstr "Font - Použij doporučený font Oswald"
+
+#~ msgid "Menu Height 100%"
+#~ msgstr "Výška menu 100%"
+
+#~ msgid "Beta! NOT FULLY SUPPORTED do the test on your theme first!"
+#~ msgstr ""
+#~ "Beta! Není ještě plně podporováno prosím zkuste nejdříve ve vašem vzhledu!"
+
+#~ msgid "Only once (for each Photo)"
+#~ msgstr "Jen jednou (pro každou fotografii)"
+
+#~ msgid "Email address for notifications"
+#~ msgstr "Emailová adresa pro upozonění"
+
+#~ msgid ""
+#~ "Create new page or visit existing page where you want place the contest."
+#~ msgstr ""
+#~ "Vytvoř novou stránku nebo navštiv existující stránku, kam chceš vložit "
+#~ "soutěž."
+
+#~ msgid ""
+#~ "Add shortcodes [contest-menu][contest-page] or click to button \"Add "
+#~ "Photo Contest\"."
+#~ msgstr ""
+#~ "Vlož Shortcode [contest-menu][contest-page] nebo klikni na tlačítko "
+#~ "\"Vlož fotosoutěž\"."
+
+#~ msgid "It should look like this"
+#~ msgstr "Mělo by to vypadat takto"
+
+#~ msgid "Fill the Form on page and click \"Create a Contest\" button."
+#~ msgstr "Vyplň formulář na stránce a klikni na tlačítko \"Vytvoř soutěž\"."
+
+#~ msgid "Done! If you want you can edit Contest by click on the Pencil Icon"
+#~ msgstr ""
+#~ "Hotovo! Jestli chceš dál upravovat fotosoutěž klikni na symbol tužky v "
+#~ "menu"
+
+#~ msgid "Selected item(s) will be added to the cotnest:"
+#~ msgstr "Zvolené položky budou přidané do soutěže"
+
+#~ msgid "Entries"
+#~ msgstr "Gallerie"
+
+#~ msgid "Redirect to Share page after vote?"
+#~ msgstr "Přesměrovat na stránku ke sdílení po hlasování?"
+
+#~ msgid "List of registered users who voted for this image"
+#~ msgstr "Seznam registrovaných uživatelů, kteří hlasovali pro tento obrázek"
+
+#~ msgid "There are no users yet"
+#~ msgstr "Ještě zde nejsou žádní uživatelé"
+
+#~ msgid "Create Contest"
+#~ msgstr "Vytvořit soutěž"
+
+#~ msgid " Log In"
+#~ msgstr "Přihlášení"
+
+#~ msgid " Log Out"
+#~ msgstr "Odhlášení"
+
+#~ msgid "\"Contest Name\" is required field!"
+#~ msgstr "\"Název soutěže\" je vyžadované pole!"
+
+#~ msgid "\"Contest Start\" is required field!"
+#~ msgstr "\"Začátek soutěže\" je vyžadované pole!"
+
+#~ msgid "\"Contest End\" is required field!"
+#~ msgstr "\"Konec soutěže\" je vyžadované pole!"
+
+#~ msgid "\"End of registration to the contest\" is required field!"
+#~ msgstr "\"Konec registrace do soutěže\" je vyžadované pole!"
+
+#~ msgid "\"Vote begins\" is required field!"
+#~ msgstr "\"Hlasování započne k datu:\" je vyžadované pole!"
+
+#~ msgid "Thank you for upload."
+#~ msgstr "Díky za tvou fotografii."
+
+#~ msgid "Thank you for your photos."
+#~ msgstr "Díky za tvé fotografie."
+
+#~ msgid "Mobile menu permanently open"
+#~ msgstr "Mobilní menu permanentně otevřené"
+
+#~ msgid "Watch the video how to create a photo contest"
+#~ msgstr "Sleduj video tutoriál jak vytvořit fotosoutěž"
+
+#~ msgid "Export User Data"
+#~ msgstr "Exportuj data soutěžících"
+
+#~ msgid ""
+#~ "If you select the option \"Reset the Contest\" all images and all "
+#~ "information about images (like votes) will be deleted! You cannot later "
+#~ "restore those data!. Only the contest and categories remain!"
+#~ msgstr ""
+#~ "Jestliže zvolíš možnost \"Resetovat soutěž\" budou trvale smazány všechny "
+#~ "obrázky a všechny informace (jako hlasy). Není možné později obnovit tato "
+#~ "data! Jen soutěž a kategorie nebudou při této akci smazány!"
+
+#~ msgid "Photo Contest Widget"
+#~ msgstr "Widget pro Fotosoutěž"
+
+#~ msgid "You cannot vote anymore"
+#~ msgstr "Již nemůžeš hlasovat"
+
+#~ msgid "Category related to contest"
+#~ msgstr "Kategorie patří k soutěži"
+
+#~ msgid "Allow Jury"
+#~ msgstr "Povolit porotu"
+
+#~ msgid "Export user data"
+#~ msgstr "Exportuj data soutěžících"
+
+#~ msgid "This category is currently empty"
+#~ msgstr "Tato kategorie je právě prázdná"
+
+#~ msgid "Error image upload."
+#~ msgstr "Chyba při nahrávání obrázku!"
+
+#~ msgid "Email and Notifications Settings"
+#~ msgstr "Nastavení emailu a upozornění"
+
+#~ msgid "Email Body (Welcome email)"
+#~ msgstr "Tělo zprávy (Uvítací zpráva)"
+
+#~ msgid "Relative to page"
+#~ msgstr "Vstahující se ke stránce"
+
+#~ msgid "(Mandatory)"
+#~ msgstr "(Vyžadováno)"
+
+#~ msgid "(Beta)"
+#~ msgstr "(Beta)"
+
+#~ msgid "Hide (NO is recommended)"
+#~ msgstr "Skrýt (NE je Doporučeno)"
+
+#~ msgid "Caption"
+#~ msgstr "Titulek"
+
+#~ msgid "Thanky for your vote!"
+#~ msgstr "Díky za tvůj hlas!"
+
+#~ msgid ""
+#~ "Your email adress will NOT be sold or used for purposes other than "
+#~ "confirmation for this vote!"
+#~ msgstr ""
+#~ "Tvá emailová adresa nebude prodána nebo použita k jiným účelům než k "
+#~ "potvrzení tvého hlasu!"
+
+#~ msgid "Please enter the Adress!"
+#~ msgstr "Prosím udej Adresu!"
+
+#~ msgid "Adress:"
+#~ msgstr "Adresa:"
+
+#~ msgid "Email adress for notifications"
+#~ msgstr "Emailová adresa pro upozornění"
+
+#~ msgid "Standard admin email adress"
+#~ msgstr "Standartní emailová adresa admina"
+
+#~ msgid "IP Adress Vote Protection"
+#~ msgstr "Ochrana IP adresou"
+
+#~ msgid ""
+#~ "(Choose this option only if you are in closed or private network (like "
+#~ "company network) and all computers/devices have the same IP adress!)"
+#~ msgstr ""
+#~ "(Tuto možnost zvol jen poku jsi na uzavřené privátní síti (jako podniková "
+#~ "síť) kde všechny počítače mají stejnou IP adresu!)"
+
+#~ msgid "Adress"
+#~ msgstr "Adresa"
+
+#~ msgid "Can author vote own video?"
+#~ msgstr "Může autor hlasovat pro vlastní video?"
+
+#~ msgid "Contest without a Name"
+#~ msgstr "Soutěž beze jména"
+
+#~ msgid "Caption:"
+#~ msgstr "Titulek:"
+
+#~ msgid "Add Photo"
+#~ msgstr "Přidat fotografii"
+
+#~ msgid "Inactive"
+#~ msgstr "Neaktivní"
+
+#~ msgid "Activate"
+#~ msgstr "Aktivovat"
+
+#~ msgid "Deactivate"
+#~ msgstr "Deaktivovat"
+
+#~ msgid "Once an Hour"
+#~ msgstr "Jednou za hodinu"
+
+#~ msgid "Photo Contest - Settings"
+#~ msgstr "Fotosoutěž - Nastavení"
+
+#~ msgid "Photo Contest - Categories"
+#~ msgstr "Photo Soutěž - Kategorie"
+
+#~ msgid "Photo Contest - Info & Help"
+#~ msgstr "Fotosoutěž - Info a pomoc"
+
+#~ msgid "URL:"
+#~ msgstr "URL:"
+
+#~ msgid "m/d/Y - Month/Day/Year"
+#~ msgstr "m/d/Y - Měsíc/Den/Rok"
+
+#~ msgid "m-d-Y - Month-Day-Year"
+#~ msgstr "m-d-Y - Měsíc-Den-Rok"
+
+#~ msgid "d/m/Y - Day/Month/Year"
+#~ msgstr "d/m/Y - Den/Měsíc/Rok"
+
+#~ msgid "d-m-Y - Day-Month-Year"
+#~ msgstr "d-m-Y - Den-Měsíc-Rok"
+
+#~ msgid "Y-m-d - Year-Month-Day"
+#~ msgstr "Y-m-d - Rok-Měsíc-Den"
+
+#~ msgid "Y/m/d - Year/Month/Day"
+#~ msgstr "Y/m/d - Rok/Měsíc/Den"
+
+#~ msgid "Allow Voting once in 24hours?"
+#~ msgstr "Povolit hlasování jednou za 24 hodin"
+
+#, fuzzy
+#~ msgid "Username"
+#~ msgstr "Přihlašovací jméno:"
+
+#~ msgid "A password will be e-mailed to you."
+#~ msgstr "Heslo ti bude zasláno emailem!"
+
+#~ msgid "You are not logged in. Please log in and try again."
+#~ msgstr "Nejsi přihlášen/a. Prosím přihlaš se a zkus to znova."
+
+#~ msgid "You must be logged for upload photo."
+#~ msgstr "Musíš být přihlášen pro nahrání fotografie."
+
+#~ msgid "Users"
+#~ msgstr "Registrovaní uživatelé"
+
+#~ msgid ""
+#~ "(Turn on Lightbox can create issues when you have activated other plugin "
+#~ "with Lightbox!)"
+#~ msgstr ""
+#~ "(Zapnutí Lightboxu může způsobovat problémy pokud již máte aktivovaný "
+#~ "jiný plugin, který také obsahuje Lightbox!)"
+
+#~ msgid "Share:"
+#~ msgstr "Sdílej:"
+
+#~ msgid "Please enter a Description!"
+#~ msgstr "Prosím vložte popis!"
+
+#~ msgid "Reset setting"
+#~ msgstr "Resetovat nastavení"

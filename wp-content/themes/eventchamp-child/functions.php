@@ -493,3 +493,84 @@ jQuery(function($) {
   }
 }
 add_action('admin_footer', 'Hide_index');
+
+function Hide_index_point() {
+  $user = wp_get_current_user();
+  if(!in_array( 'administrator', (array) $user->roles )){
+  ?>
+<script type="text/javascript">
+jQuery(function($) {
+    $(document).ready(function() {
+        $("h2:contains('Multilingual Content Setup')").parent().next('.inside').remove();
+        $("h2:contains('Multilingual Content Setup')").parent().remove();
+        $("h2:contains('Language')").next('.handle-actions.hide-if-no-js').remove();
+        $("h2:contains('Language')").remove();
+        $('#icl_document_language_dropdown').parent().css('display', 'none');
+        $("h2:contains('Attach a BuddyForm')").parent().next('.inside').remove();
+        $("h2:contains('Attach a BuddyForm')").parent().remove();
+        $('label .title:contains("Template")').next('select[name=page_template]').remove();
+        $('label .title:contains("Template")').remove();
+        $('#wpseo_meta .postbox-header h2.hndle.ui-sortable-handle').text('SEO');
+
+        //Translate MyCred-Hook
+        $('div#widget-mycred-hook_registration .widget-title h3').text('Điểm đăng ký');
+        $('div#widget-mycred-hook_registration .widget-description').text('Điểm thưởng cho người dùng tham gia trang web của bạn.');
+        $('div#widget-mycred-hook_registration .widget-inside.mycred-metabox form label[for="mycred-pref-hooks-registration-creds"]').text('Điểm');
+        $('div#widget-mycred-hook_registration .widget-inside.mycred-metabox form label[for="mycred-pref-hooks-registration-log"]').text('Mẫu');
+
+        $('div#widget-mycred-hook_anniversary .widget-title h3').text('Điểm cho ngày kỷ niệm');
+        $('div#widget-mycred-hook_anniversary .widget-description').text('Điểm thưởng cho mỗi năm người dùng đã là thành viên.');
+        $('div#widget-mycred-hook_anniversary .widget-inside.mycred-metabox form label[for="mycred-pref-hooks-anniversary-creds"]').text('Điểm');
+        $('div#widget-mycred-hook_anniversary .widget-inside.mycred-metabox form label[for="mycred-pref-hooks-anniversary-log"]').text('Mẫu');
+
+        $('div#widget-mycred-hook_site_visit .widget-title h3').text('Điểm cho lượt truy cập hàng ngày');
+        $('div#widget-mycred-hook_site_visit .widget-description').text('Điểm thưởng khi đăng nhập.');
+        $('div#widget-mycred-hook_site_visit .widget-inside.mycred-metabox form label[for="mycred-pref-hooks-site-visit-creds"]').text('Điểm');
+        $('div#widget-mycred-hook_site_visit .widget-inside.mycred-metabox form label[for="mycred-pref-hooks-site-visit-log"]').text('Mẫu');
+        
+        $('div#widget-mycred-hook_view_contents .widget-title h3').text('Điểm khi xem nội dung');
+        $('div#widget-mycred-hook_view_contents .widget-description').text('Điểm thưởng khi xem nội dung.');
+
+        $('div#widget-mycred-hook_logging_in .widget-title h3').text('Điểm cho lần đăng nhập');
+        $('div#widget-mycred-hook_logging_in .widget-description').text('Điểm thưởng khi đăng nhập.');
+
+        $('div#widget-mycred-hook_publishing_content .widget-title h3').text('Điểm khi xuất bản nội dung');
+        $('div#widget-mycred-hook_publishing_content .widget-description').text('Điểm thưởng cho nội dung xuất bản.');
+
+        $('div#widget-mycred-hook_deleted_content .widget-title h3').text('Điểm cho nội dung đã chuyển vào thùng rác');
+        $('div#widget-mycred-hook_deleted_content .widget-description').text('Thưởng hoặc trừ điểm khi nội dung được chuyển vào thùng rác.');
+
+        $('div#widget-mycred-hook_comments .widget-title h3').text('Điểm cho nhận xét');
+        $('div#widget-mycred-hook_comments .widget-description').text('Thưởng điểm cho nhận xét.');
+
+        $('div#widget-mycred-hook_link_click .widget-title h3').text('Điểm khi nhấp vào liên kết');
+        $('div#widget-mycred-hook_link_click .widget-description').text('Điểm thưởng cho các nhấp chuột vào các liên kết được tạo bởi mã ngắn');
+
+        $('div#widget-mycred-hook_video_view .widget-title h3').text('Điểm khi xem Video');
+        $('div#widget-mycred-hook_video_view .widget-description').text('Điểm thưởng cho các video xem được nhúng bằng mã ngắn');
+
+        $('div#widget-mycred-hook_affiliate .widget-title h3').text('Điểm cho người giới thiệu');
+        $('div#widget-mycred-hook_affiliate .widget-description').text('Điểm thưởng cho lượt đăng ký hoặc lượt giới thiệu của khách.');
+
+        $('div#widget-mycred-hook_hook_bbpress .widget-title h3').text('Diễn đàn');
+        $('div#widget-mycred-hook_hook_bbpress .widget-description').text('Điểm thưởng cho các hành động của Diễn đàn.');
+        
+        $('div#widget-mycred-hook_hook_bp_profile .widget-title h3').text('Hồ sơ Thành viên');
+        $('div#widget-mycred-hook_hook_bp_profile .widget-description').text('Điểm thưởng cho các hành động liên quan đến hồ sơ.');
+
+        $('div#widget-mycred-hook_hook_bp_groups .widget-title h3').text('Hội nhóm');
+        $('div#widget-mycred-hook_hook_bp_groups .widget-description').text('Điểm thưởng cho các hành động liên quan đến hội nhóm. Sử dụng dấu trừ để trừ điểm hoặc số không để vô hiệu hóa một móc cụ thể.');
+
+        $('div#widget-mycred-hook_contact_form7 .widget-title h3').text('Gửi biểu mẫu');
+        $('div#widget-mycred-hook_contact_form7 .widget-description').text('Điểm thưởng cho các lần gửi biểu mẫu thành công (bởi người dùng đã đăng nhập).');
+
+         $('div#widget-mycred-hook_wooreview .widget-title h3').text('Đánh giá sản phẩm');
+        $('div#widget-mycred-hook_wooreview .widget-description').text('Điểm thưởng cho người dùng để lại đánh giá về các sản phẩm của bạn.');
+    });
+});
+</script>
+<?php
+  }
+}
+add_action('admin_footer', 'Hide_index_point');
+
