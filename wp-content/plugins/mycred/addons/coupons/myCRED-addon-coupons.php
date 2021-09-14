@@ -33,19 +33,10 @@ if ( ! class_exists( 'myCRED_Coupons_Module' ) ) :
 
 			parent::__construct( 'myCRED_Coupons_Module', array(
 				'module_name' => 'coupons',
-				'defaults'    => array(
-					'log'         => 'Coupon redemption',
-					'invalid'     => 'This is not a valid coupon',
-					'expired'     => 'This coupon has expired',
-					'user_limit'  => 'You have already used this coupon',
-					'min'         => 'A minimum of %amount% is required to use this coupon',
-					'max'         => 'A maximum of %amount% is required to use this coupon',
-					'excluded'    => 'You can not use coupons.',
-					'success'     => '%amount% successfully deposited into your account'
-				),
+				'defaults'    => mycred_get_addon_defaults( 'coupons' ),
 				'register'    => false,
 				'add_to_core' => true,
-				'menu_pos'    => 80
+				'menu_pos'    => 90
 			) );
 
 			add_filter( 'mycred_parse_log_entry_coupon', array( $this, 'parse_log_entry' ), 10, 2 );
@@ -172,8 +163,7 @@ if ( ! class_exists( 'myCRED_Coupons_Module' ) ) :
 			// site in the network, bail.
 			if ( mycred_override_settings() && ! mycred_is_main_site() ) return;
 
-			add_submenu_page(
-				MYCRED_SLUG,
+			mycred_add_main_submenu(
 				__( 'Coupons', 'mycred' ),
 				__( 'Coupons', 'mycred' ),
 				$this->core->get_point_editor_capability(),
@@ -192,10 +182,10 @@ if ( ! class_exists( 'myCRED_Coupons_Module' ) ) :
 			global $pagenow;
 
 			if ( isset( $_GET['post'] ) && mycred_get_post_type( $_GET['post'] ) == MYCRED_COUPON_KEY && isset( $_GET['action'] ) && $_GET['action'] == 'edit' )
-				return MYCRED_SLUG;
+				return MYCRED_MAIN_SLUG;
 
 			if ( $pagenow == 'post-new.php' && isset( $_GET['post_type'] ) && $_GET['post_type'] == MYCRED_COUPON_KEY )
-				return MYCRED_SLUG;
+				return MYCRED_MAIN_SLUG;
 
 			return $parent;
 
