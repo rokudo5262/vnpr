@@ -17,8 +17,8 @@ if( !defined( 'ABSPATH' ) ) exit;
 function gamipress_register_points_shortcode() {
 
     gamipress_register_shortcode( 'gamipress_points', array(
-        'name'              => __( 'User Points Balance', 'gamipress' ),
-        'description'       => __( 'Output a user points balance.', 'gamipress' ),
+        'name'              => __( 'Points (Old)', 'gamipress' ),
+        'description'       => __( 'Output a user or site points balance.', 'gamipress' ),
         'icon' 	            => 'star-filled',
         'group' 	        => 'gamipress',
         'output_callback'   => 'gamipress_points_shortcode',
@@ -105,16 +105,19 @@ function gamipress_register_points_shortcode() {
                 'name'          => __( 'Layout', 'gamipress' ),
                 'description'   => __( 'Layout to show the points.', 'gamipress' ),
                 'type' 		    => 'radio',
-                'options' 	    => array(
-                    'left' 		=> '<img src="' . GAMIPRESS_URL . 'assets/img/layout-left.svg">' . __( 'Left', 'gamipress' ),
-                    'top' 		=> '<img src="' . GAMIPRESS_URL . 'assets/img/layout-top.svg">' . __( 'Top', 'gamipress' ),
-                    'right' 	=> '<img src="' . GAMIPRESS_URL . 'assets/img/layout-right.svg">' . __( 'Right', 'gamipress' ),
-                    'bottom' 	=> '<img src="' . GAMIPRESS_URL . 'assets/img/layout-bottom.svg">' . __( 'Bottom', 'gamipress' ),
-                    'none' 		=> '<img src="' . GAMIPRESS_URL . 'assets/img/layout-none.svg">' . __( 'None', 'gamipress' ),
-                ),
+                'options' 	    => gamipress_get_layout_options(),
                 'default' 	    => 'left',
                 'inline' 	    => true,
                 'classes' 	    => 'gamipress-image-options'
+            ),
+            'align' => array(
+                'name'        => __( 'Alignment', 'gamipress' ),
+                'description' => __( 'Alignment to show the points.', 'gamipress' ),
+                'type' 		  => 'radio',
+                'options' 	  => gamipress_get_alignment_options(),
+                'default' 	  => 'none',
+                'inline' 	  => true,
+                'classes' 	  => 'gamipress-image-options'
             ),
             'wpms' => array(
                 'name'          => __( 'Include Multisite Points', 'gamipress' ),
@@ -160,6 +163,7 @@ function gamipress_points_shortcode( $atts = array(), $content = '' ) {
         'inline'        => 'no',
         'columns'       => '1',
         'layout'        => 'left',
+        'align'	  		=> 'none',
         'wpms'          => 'no',
     ), $atts, $shortcode );
 
@@ -277,7 +281,6 @@ function gamipress_points_shortcode( $atts = array(), $content = '' ) {
             }
 
             $gamipress_template_args['points'][$points_type] += $points;
-
 
         }
 

@@ -1,6 +1,6 @@
 <?php
 /**
- * User Points Widget
+ * Points Widget
  *
  * @package     GamiPress\Widgets\Widget\Points
  * @author      GamiPress <contact@gamipress.com>, Ruben Garcia <rubengcdev@gmail.com>
@@ -22,8 +22,8 @@ class GamiPress_Points_Widget extends GamiPress_Widget {
 
         parent::__construct(
             $this->shortcode . '_widget',
-            __( 'GamiPress: User Points', 'gamipress' ),
-            __( 'Display current or specific user points balance.', 'gamipress' )
+            __( 'GamiPress: Points (Old)', 'gamipress' ),
+            __( 'Display current or specific user or site points balance.', 'gamipress' )
         );
 
     }
