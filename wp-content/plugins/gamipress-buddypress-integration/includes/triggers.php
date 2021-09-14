@@ -53,8 +53,8 @@ function gamipress_bp_activity_triggers( $triggers ) {
     // BuddyPress Activity
     if ( gamipress_bp_is_active( 'activity' ) ) {
         $triggers[__( 'BuddyPress Activity', 'gamipress-buddypress-integration' )] = array(
-            'gamipress_bp_publish_activity'                 => __( 'Write an activity stream message', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_delete_activity'                  => __( 'Remove an activity stream message', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_publish_activity'                 => __( 'Publish an activity post', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_delete_activity'                  => __( 'Remove an activity post', 'gamipress-buddypress-integration' ),
             'gamipress_bp_new_activity_comment'             => __( 'Reply to an item in an activity stream', 'gamipress-buddypress-integration' ),
             'gamipress_bp_favorite_activity'                => __( 'Favorite an activity stream item', 'gamipress-buddypress-integration' ),
             'gamipress_bp_remove_favorite_activity'         => __( 'Remove a favorite on an activity stream item', 'gamipress-buddypress-integration' ),
@@ -66,18 +66,25 @@ function gamipress_bp_activity_triggers( $triggers ) {
     // BuddyPress Groups
     if ( gamipress_bp_is_active( 'groups' ) ) {
         $triggers[__( 'BuddyPress Groups', 'gamipress-buddypress-integration' )] = array(
-            'gamipress_bp_group_publish_activity'       => __( 'Write a group activity stream message', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_group_delete_activity'        => __( 'Remove a group activity stream message', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_new_group'                    => __( 'Create a group', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_join_group'                   => __( 'Join a group', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_join_specific_group'          => __( 'Join a specific group', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_leave_group'                  => __( 'Leave a group', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_leave_specific_group'         => __( 'Leave a specific group', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_join_private_group'           => __( 'Get accepted on a private group', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_join_specific_private_group'  => __( 'Get accepted on a specific private group', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_invite_user'                  => __( 'Invite someone to join a group', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_promote_member'               => __( 'Promoted to group moderator/administrator', 'gamipress-buddypress-integration' ),
-            'gamipress_bp_promoted_member'              => __( 'Promote another group member to moderator/administrator', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_group_publish_activity'           => __( 'Publish an activity post in a group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_specific_group_publish_activity'  => __( 'Publish an activity post in a specific group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_group_delete_activity'            => __( 'Remove an activity post from a group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_specific_group_delete_activity'   => __( 'Remove an activity post from a specific group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_new_group'                        => __( 'Create a group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_join_group'                       => __( 'Join a group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_join_specific_group'              => __( 'Join a specific group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_leave_group'                      => __( 'Leave a group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_leave_specific_group'             => __( 'Leave a specific group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_request_join_private_group'               => __( 'Request to join a private group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_request_join_specific_private_group'      => __( 'Request to join a specific private group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_join_private_group'               => __( 'Get accepted on a private group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_join_specific_private_group'      => __( 'Get accepted on a specific private group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_invite_user'                      => __( 'Invite someone to join a group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_invite_user_specific_group'       => __( 'Invite someone to join a specific group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_promote_member'                   => __( 'Get promoted as moderator/administrator of a group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_promote_member_specific_group'    => __( 'Get promoted as moderator/administrator of a specific group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_promoted_member'                  => __( 'Promote another member to moderator/administrator of a group', 'gamipress-buddypress-integration' ),
+            'gamipress_bp_promoted_member_specific_group'   => __( 'Promote another member to moderator/administrator of a specific group', 'gamipress-buddypress-integration' ),
         );
     }
 
@@ -132,9 +139,15 @@ add_filter( 'gamipress_activity_trigger_label', 'gamipress_bp_activity_trigger_l
  */
 function gamipress_bp_specific_activity_triggers( $specific_activity_triggers ) {
 
+    $specific_activity_triggers['gamipress_bp_specific_group_publish_activity'] = array( 'bp_groups' );
+    $specific_activity_triggers['gamipress_bp_specific_group_delete_activity'] = array( 'bp_groups' );
     $specific_activity_triggers['gamipress_bp_join_specific_group'] = array( 'bp_groups' );
     $specific_activity_triggers['gamipress_bp_leave_specific_group'] = array( 'bp_groups' );
+    $specific_activity_triggers['gamipress_bp_request_join_specific_private_group'] = array( 'bp_groups' );
     $specific_activity_triggers['gamipress_bp_join_specific_private_group'] = array( 'bp_groups' );
+    $specific_activity_triggers['gamipress_bp_invite_user_specific_group'] = array( 'bp_groups' );
+    $specific_activity_triggers['gamipress_bp_promote_member_specific_group'] = array( 'bp_groups' );
+    $specific_activity_triggers['gamipress_bp_promoted_member_specific_group'] = array( 'bp_groups' );
 
     return $specific_activity_triggers;
 }
@@ -150,9 +163,15 @@ add_filter( 'gamipress_specific_activity_triggers', 'gamipress_bp_specific_activ
  */
 function gamipress_bp_specific_activity_trigger_label( $specific_activity_trigger_labels ) {
 
+    $specific_activity_trigger_labels['gamipress_bp_specific_group_publish_activity'] = __( 'Publish an activity post on %s group', 'gamipress-buddypress-integration' );
+    $specific_activity_trigger_labels['gamipress_bp_specific_group_delete_activity'] = __( 'Remove an activity post from %s group', 'gamipress-buddypress-integration' );
     $specific_activity_trigger_labels['gamipress_bp_join_specific_group'] = __( 'Join %s group', 'gamipress-buddypress-integration' );
     $specific_activity_trigger_labels['gamipress_bp_leave_specific_group'] = __( 'Leave %s group', 'gamipress-buddypress-integration' );
+    $specific_activity_trigger_labels['gamipress_bp_request_join_specific_private_group'] = __( 'Request to join %s group', 'gamipress-buddypress-integration' );
     $specific_activity_trigger_labels['gamipress_bp_join_specific_private_group'] = __( 'Get accepted on %s group', 'gamipress-buddypress-integration' );
+    $specific_activity_trigger_labels['gamipress_bp_invite_user_specific_group'] = __( 'Invite someone to join %s group', 'gamipress-buddypress-integration' );
+    $specific_activity_trigger_labels['gamipress_bp_promote_member_specific_group'] = __( 'Get promoted as moderator/administrator of %s group', 'gamipress-buddypress-integration' );
+    $specific_activity_trigger_labels['gamipress_bp_promoted_member_specific_group'] = __( 'Promote another member to moderator/administrator of %s group', 'gamipress-buddypress-integration' );
 
     return $specific_activity_trigger_labels;
 }
@@ -172,9 +191,15 @@ add_filter( 'gamipress_specific_activity_trigger_label', 'gamipress_bp_specific_
 function gamipress_bp_specific_activity_trigger_post_title( $post_title, $specific_id, $trigger_type, $site_id ) {
 
     switch( $trigger_type ) {
+        case 'gamipress_bp_specific_group_publish_activity':
+        case 'gamipress_bp_specific_group_delete_activity':
         case 'gamipress_bp_join_specific_group':
         case 'gamipress_bp_leave_specific_group':
+        case 'gamipress_bp_request_join_specific_private_group':
         case 'gamipress_bp_join_specific_private_group':
+        case 'gamipress_bp_invite_user_specific_group':
+        case 'gamipress_bp_promote_member_specific_group':
+        case 'gamipress_bp_promoted_member_specific_group':
             if( absint( $specific_id ) !== 0 && class_exists( 'BuddyPress' ) ) {
 
                 $group = groups_get_group( $specific_id );
@@ -205,9 +230,15 @@ add_filter( 'gamipress_specific_activity_trigger_post_title', 'gamipress_bp_spec
 function gamipress_bp_specific_activity_trigger_permalink( $permalink, $specific_id, $trigger_type, $site_id ) {
 
     switch( $trigger_type ) {
+        case 'gamipress_bp_specific_group_publish_activity':
+        case 'gamipress_bp_specific_group_delete_activity':
         case 'gamipress_bp_join_specific_group':
         case 'gamipress_bp_leave_specific_group':
+        case 'gamipress_bp_request_join_specific_private_group':
         case 'gamipress_bp_join_specific_private_group':
+        case 'gamipress_bp_invite_user_specific_group':
+        case 'gamipress_bp_promote_member_specific_group':
+        case 'gamipress_bp_promoted_member_specific_group':
 
             // Init permalink to blank to override GamiPress workflow
             $permalink = '';
@@ -268,16 +299,23 @@ function gamipress_bp_trigger_get_user_id( $user_id, $trigger, $args ) {
         case 'gamipress_bp_user_remove_favorite_activity':
         // BuddyPress Groups
         case 'gamipress_bp_group_publish_activity':
+        case 'gamipress_bp_specific_group_publish_activity':
         case 'gamipress_bp_group_delete_activity':
+        case 'gamipress_bp_specific_group_delete_activity':
         case 'gamipress_bp_join_group':
         case 'gamipress_bp_join_specific_group':
         case 'gamipress_bp_leave_group':
         case 'gamipress_bp_leave_specific_group':
+        case 'gamipress_bp_request_join_private_group':
+        case 'gamipress_bp_request_join_specific_private_group':
         case 'gamipress_bp_join_private_group':
         case 'gamipress_bp_join_specific_private_group':
         case 'gamipress_bp_invite_user':
+        case 'gamipress_bp_invite_user_specific_group':
         case 'gamipress_bp_promote_member':
+        case 'gamipress_bp_promote_member_specific_group':
         case 'gamipress_bp_promoted_member':
+        case 'gamipress_bp_promoted_member_specific_group':
             $user_id = $args[1];
             break;
     }
@@ -302,9 +340,17 @@ add_filter( 'gamipress_trigger_get_user_id', 'gamipress_bp_trigger_get_user_id',
 function gamipress_bp_specific_trigger_get_id( $specific_id, $trigger = '', $args = array() ) {
 
     switch ( $trigger ) {
+        case 'gamipress_bp_specific_group_publish_activity':
+        case 'gamipress_bp_specific_group_delete_activity':
+            $specific_id = $args[2];
+            break;
         case 'gamipress_bp_join_specific_group':
         case 'gamipress_bp_leave_specific_group':
+        case 'gamipress_bp_request_join_specific_private_group':
         case 'gamipress_bp_join_specific_private_group':
+        case 'gamipress_bp_invite_user_specific_group':
+        case 'gamipress_bp_promote_member_specific_group':
+        case 'gamipress_bp_promoted_member_specific_group':
             $specific_id = $args[0];
             break;
     }
@@ -359,7 +405,9 @@ function gamipress_bp_log_event_trigger_meta_data( $log_meta, $user_id, $trigger
             $log_meta['comment_id'] = $args[0];
             break;
         case 'gamipress_bp_group_publish_activity':
+        case 'gamipress_bp_specific_group_publish_activity':
         case 'gamipress_bp_group_delete_activity':
+        case 'gamipress_bp_specific_group_delete_activity':
             // Add the activity and group IDs
             $log_meta['activity_id'] = $args[0];
             $log_meta['group_id'] = $args[2];
@@ -370,8 +418,13 @@ function gamipress_bp_log_event_trigger_meta_data( $log_meta, $user_id, $trigger
         case 'gamipress_bp_leave_group':
         case 'gamipress_bp_leave_specific_group':
         case 'gamipress_bp_invite_user':
+        case 'gamipress_bp_invite_user_specific_group':
         case 'gamipress_bp_promote_member':
+        case 'gamipress_bp_promote_member_specific_group':
         case 'gamipress_bp_promoted_member':
+        case 'gamipress_bp_promoted_member_specific_group':
+        case 'gamipress_bp_request_join_private_group':
+        case 'gamipress_bp_request_join_specific_private_group':
             // Add the group ID
             $log_meta['group_id'] = $args[0];
             break;
@@ -427,7 +480,9 @@ function gamipress_bp_trigger_duplicity_check( $return, $user_id, $trigger, $sit
             $return = (bool) ( gamipress_get_user_last_log( $user_id, $log_meta ) === false );
             break;
         case 'gamipress_bp_group_publish_activity':
+        case 'gamipress_bp_specific_group_publish_activity':
         case 'gamipress_bp_group_delete_activity':
+        case 'gamipress_bp_specific_group_delete_activity':
             // User can not create same activity in a group more times, so check it
             $log_meta['activity_id'] = $args[0];
             $log_meta['group_id'] = $args[2];

@@ -3,13 +3,13 @@
  * Plugin Name:           GamiPress - BuddyPress integration
  * Plugin URI:            https://wordpress.org/plugins/gamipress-buddypress-integration/
  * Description:           Connect GamiPress with BuddyPress.
- * Version:               1.4.1
+ * Version:               1.5.1
  * Author:                GamiPress
  * Author URI:            https://gamipress.com/
  * Text Domain:           gamipress-buddypress-integration
  * Domain Path:           /languages/
  * Requires at least:     4.4
- * Tested up to:          5.6
+ * Tested up to:          5.8
  * License:               GNU AGPL v3.0 (http://www.gnu.org/licenses/agpl.txt)
  *
  * @package               GamiPress\BuddyPress
@@ -54,7 +54,7 @@ final class GamiPress_BuddyPress {
      */
     private function constants() {
         // Plugin version
-        define( 'GAMIPRESS_BP_VER', '1.4.1' );
+        define( 'GAMIPRESS_BP_VER', '1.5.1' );
 
         // Plugin file
         define( 'GAMIPRESS_BP_FILE', __FILE__ );
@@ -138,11 +138,14 @@ final class GamiPress_BuddyPress {
         // Get stored version
         $stored_version = get_option( 'gamipress_buddypress_integration_version', '1.0.0' );
 
+        if( gamipress_is_network_wide_active() ) {
+            $gamipress_settings = get_site_option( 'gamipress_settings', array() );
+        } else {
+            $gamipress_settings = get_option( 'gamipress_settings', array() );
+        }
+
         // GamiPress BuddyPress 1.0.5 upgrade
         if ( version_compare( $stored_version, '1.0.5', '<' ) ) {
-
-            // Setup default GamiPress options
-            $gamipress_settings = ( $exists = get_option( 'gamipress_settings' ) ) ? $exists : array();
 
             // Setup new setting
             $gamipress_settings['bp_members_achievements_types'] = array();
@@ -157,14 +160,10 @@ final class GamiPress_BuddyPress {
                 }
             }
 
-            update_option( 'gamipress_settings', $gamipress_settings );
         }
 
         // GamiPress BuddyPress 1.1.8 upgrade
         if ( version_compare( $stored_version, '1.1.8', '<' ) ) {
-
-            // Setup default GamiPress options
-            $gamipress_settings = ( $exists = get_option( 'gamipress_settings' ) ) ? $exists : array();
 
             // Initialize default settings to keep backward compatibility
 
@@ -179,8 +178,6 @@ final class GamiPress_BuddyPress {
             // Title on ranks
             $gamipress_settings['bp_members_ranks_top_title'] = 'on';
 
-            update_option( 'gamipress_settings', $gamipress_settings );
-
         }
 
         // GamiPress BuddyPress 1.2.6 upgrade
@@ -193,6 +190,67 @@ final class GamiPress_BuddyPress {
                     '_gamipress_bp_create_bp_activity'
             ) );
 
+        }
+
+        // GamiPress BuddyPress 1.4.2 upgrade
+        if ( version_compare( $stored_version, '1.4.2', '<' ) ) {
+
+            // Points tab setting
+            $points_placement = ( isset( $gamipress_settings['bp_points_placement'] ) ? $gamipress_settings['bp_points_placement'] : '' );
+
+            if( in_array( $points_placement, array( 'tab', 'both' ) ) && ! isset( $gamipress_settings['bp_points_tab'] ) ) {
+                $gamipress_settings['bp_points_tab'] = 'on';
+            }
+
+            // Achievements tab setting
+            $achievements_placement = ( isset( $gamipress_settings['bp_achievements_placement'] ) ? $gamipress_settings['bp_achievements_placement'] : '' );
+
+            if( in_array( $achievements_placement, array( 'tab', 'both' ) ) && ! isset( $gamipress_settings['bp_achievements_tab'] ) ) {
+                $gamipress_settings['bp_achievements_tab'] = 'on';
+            }
+
+
+            // Ranks tab setting
+            $ranks_placement = ( isset( $gamipress_settings['bp_ranks_placement'] ) ? $gamipress_settings['bp_ranks_placement'] : '' );
+
+            if( in_array( $ranks_placement, array( 'tab', 'both' ) ) && ! isset( $gamipress_settings['bp_ranks_tab'] ) ) {
+                $gamipress_settings['bp_ranks_tab'] = 'on';
+            }
+
+            // Clone types and order settings
+            foreach( array( 'points', 'achievements', 'ranks' ) as $key ) {
+                if( ! isset( $gamipress_settings["bp_tab_{$key}_types"] ) ) {
+                    $gamipress_settings["bp_tab_{$key}_types"] = $gamipress_settings["bp_members_{$key}_types"];
+                    $gamipress_settings["bp_tab_{$key}_types_order"] = $gamipress_settings["bp_members_{$key}_types_order"];
+                }
+            }
+
+            // Finally, update placement to the new options
+            if( ! is_array( $gamipress_settings['bp_points_placement'] ) && in_array( $gamipress_settings['bp_points_placement'], array( 'top', 'both' ) ) ) {
+                $gamipress_settings['bp_points_placement'] = array( 'top' );
+            } else {
+                $gamipress_settings['bp_points_placement'] = array();
+            }
+
+            if( ! is_array( $gamipress_settings['bp_achievements_placement'] ) && in_array( $gamipress_settings['bp_achievements_placement'], array( 'top', 'both' ) ) ) {
+                $gamipress_settings['bp_achievements_placement'] = array( 'top' );
+            } else {
+                $gamipress_settings['bp_achievements_placement'] = array();
+            }
+
+            if( ! is_array( $gamipress_settings['bp_ranks_placement'] ) && in_array( $gamipress_settings['bp_ranks_placement'], array( 'top', 'both' ) ) ) {
+                $gamipress_settings['bp_ranks_placement'] = array( 'top' );
+            } else {
+                $gamipress_settings['bp_ranks_placement'] = array();
+            }
+
+        }
+
+        // Update GamiPress options
+        if( gamipress_is_network_wide_active() ) {
+            update_site_option( 'gamipress_settings', $gamipress_settings );
+        } else {
+            update_option( 'gamipress_settings', $gamipress_settings );
         }
 
         // Updated stored version
@@ -243,8 +301,9 @@ final class GamiPress_BuddyPress {
      */
     private function meets_requirements() {
 
-        if ( ! class_exists( 'GamiPress' ) )
+        if ( ! class_exists( 'GamiPress' ) ) {
             return false;
+        }
 
         // Requirements on multisite install
         if( is_multisite() && gamipress_is_network_wide_active() && is_main_site() ) {
@@ -253,8 +312,9 @@ final class GamiPress_BuddyPress {
                 return true;
         }
 
-        if ( ! class_exists( 'BuddyPress' ) )
+        if ( ! class_exists( 'BuddyPress' ) ) {
             return false;
+        }
 
         return true;
 
