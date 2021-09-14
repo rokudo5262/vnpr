@@ -2,8 +2,8 @@
 Contributors: svenl77, konrads, themekraft, buddyforms, shabushabu, christianwach, projectkarol, phuck22, gfirem, jnfdev
 Tags:  content, content generation, user submitted, user-generated, user-submit, generated content, create content, frontend create content, form builder, contact forms, post forms, user-generated content, user submitted posts, contact form, form, forms, frontend post, frontend publisher, frontend post, submit, submissions, custom form, custom forms, form, form administration, form creation, form creator, form manager, forms, forms builder, forms creation, forms creator, forms manager, community, crowdsourced content, frontend generated content, images, Post, posts, public, publish, Share, submission, submissions, submit, submitted, upload,
 Requires at least: 4.0
-Tested up to: 5.6
-Stable tag: 2.5.29
+Tested up to: 5.8
+Stable tag: 2.5.31
 Requires PHP: 5.3
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -397,6 +397,45 @@ If you still get stuck somewhere, our support gets you back on the right track. 
 
 
 == Changelog ==
+= 2.5.31 - 10 Jul 2021 =
+* Tested up to WordPress 5.8
+* Fixed issue with Beta Program, now betas should be showing if the user enable the Beta Program.
+* Upated Freemius SDK.
+* Added hook to filter permalink on both the_loop and the_table templates.
+* Added redirect URL fallback if any URL is provided.
+* Added filter (hook) to customize the "Save as draft" button text.
+* Fixed issue with "Allow multiple file upload" option on the File field.
+* Added new filter (hook) to customize buddyforms login form settings.
+* Remove passive feedback.
+* Fixed CSS glitch on the Form Builder.
+* Added method to dequeue conflictive assets from third-party plugins.
+* Added paged attribute on the shortcode buddyforms_the_loop to allow set current page on the pagination.
+* Added two new filters (hooks) to the links pagination on post list.
+* Fixed compatibility issue on the Uplaod field with mp3, zip, and rar file types.
+* Fixed conflict with WPBakery on the Post Edit View at Admin.
+* Added getValues method on the Form class to get element's values more easily.
+* Improvements on the Price field to allow price without thousands separator.
+* Added feature to allow users send notification via shortcode attribute.
+* Improvements on the Price field to allow price without prefix.
+* Added new hook "buddyforms_create_edit_form_add_element" to add or edit form fields on the Frontend.
+* Added JavaScript Hook before and after the garlic init.
+
+= 2.5.30 - 17 May 2021 =
+* Fixed/improvement the UI on Checkbox & Radios inputs on the Front-end view of forms.
+* Fixed misleading error message shown on the Category Field in the Form Builder.
+* Fixed issue related with placeholder on select2 fields for Safari 13.x (<=).
+* Improved function to output HTML for Upload and File fields, this improvement its used by BF Hook Fields.
+* Fixed jQuery Validation on select2 fields to avoid trigger other fields validation.
+* Fixed compatibilty issue witn WP 5.7 related with Gutenberg Blocks.
+* Added Time & Date Format to the schedule option of the post_status field.
+* Removed the “Add this field to Metabox” option for  the user fields.
+* Fixed to validate mime type when upload image from url is checked.
+* Added the notification feature to the registration forms.
+* Improvements to show login errors on login forms.
+* Remove unused Composer dependencies.
+* improvement on the UI for standard form fields at Front-end.
+* Fixed conflict with ACF metabox on the Form Builder.
+
 = 2.5.29 - 19 Feb 2021 =
 * Fixed issue related with wrong server-side validation messages.
 * Fixed issue related to Content columns on submission list table (Submission Page). Some Content columns with HTML inside were breaking the layout of the table.

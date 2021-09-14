@@ -250,7 +250,7 @@ function buddyforms_get_wp_login_form(
     $hide = false
 )
 {
-    global  $buddyforms ;
+    global  $buddyforms, $wp ;
     if ( is_admin() ) {
         return false;
     }
@@ -279,7 +279,26 @@ function buddyforms_get_wp_login_form(
     }
     
     $wp_login_form .= '<h3>' . $title . '</h3>';
-    $wp_login_form .= wp_login_form( array(
+    
+    if ( isset( $_GET['bf_login_error_redirect'] ) ) {
+        // Remove query strings form URL.
+        $wp_login_form .= '<script>window.history.replaceState(null, null, window.location.pathname);</script>';
+        $wp_login_form .= '<div class="bf-login-error">';
+        foreach ( $_GET as $key => $value ) {
+            
+            if ( strpos( $key, 'error_msg_' ) !== false ) {
+                $error = str_replace( 'Error: ', '<strong>Error: </strong>', $value );
+                $wp_login_form .= $error . '<br />';
+            }
+        
+        }
+        $wp_login_form .= '</div>';
+    }
+    
+    if ( empty($redirect_url) ) {
+        $redirect_url = home_url();
+    }
+    $login_settings = apply_filters( 'buddyforms_loggin_settings', array(
         'echo'           => false,
         'form_id'        => 'bf_loginform',
         'redirect'       => $redirect_url,
@@ -290,10 +309,14 @@ function buddyforms_get_wp_login_form(
         'label_remember' => $label_remember,
         'label_log_in'   => $label_log_in,
     ) );
+    $wp_login_form .= wp_login_form( $login_settings );
     if ( $form_slug !== 'none' ) {
         $wp_login_form = str_replace( '</form>', '<input type="hidden" name="form_slug" value="' . esc_attr( $form_slug ) . '"></form>', $wp_login_form );
     }
     $wp_login_form = str_replace( '</form>', '<input type="hidden" name="caller" value="' . esc_attr( $caller ) . '"></form>', $wp_login_form );
+    if ( isset( $wp->request ) ) {
+        $wp_login_form = str_replace( '</form>', '<input type="hidden" name="login_error_redirect" value="' . $wp->request . '"></form>', $wp_login_form );
+    }
     if ( $form_slug != 'none' ) {
         
         if ( $buddyforms[$form_slug]['public_submit'] == 'registration_form' && $buddyforms[$form_slug]['logged_in_only_reg_form'] != 'none' ) {
@@ -308,6 +331,39 @@ function buddyforms_get_wp_login_form(
     return $wp_login_form;
 }
 
+function buddyforms_wp_login_errors_redirect( $errors )
+{
+    global  $pagenow ;
+    if ( empty($_POST['login_error_redirect']) ) {
+        return $errors;
+    }
+    if ( isset( $_GET['action'] ) && $_GET['action'] === 'logout' ) {
+        return $errors;
+    }
+    if ( isset( $_GET['action'] ) && $_GET['action'] === 'switch_to_user' ) {
+        return $errors;
+    }
+    if ( isset( $_GET['action'] ) && $_GET['action'] === 'switch_to_olduser' ) {
+        return $errors;
+    }
+    if ( $pagenow !== "wp-login.php" || $_SERVER['REQUEST_METHOD'] !== 'POST' ) {
+        return $errors;
+    }
+    $login_page = $_POST['login_error_redirect'];
+    $new_login_page_url = home_url( $login_page ) . '?bf_login_error_redirect=1&';
+    $errors = $errors->get_error_messages();
+    for ( $i = 0 ;  $i < count( $errors ) ;  $i++ ) {
+        $new_login_page_url .= 'error_msg_' . $i . '=' . wp_strip_all_tags( $errors[$i] );
+        // Isn't last iteration?
+        if ( $i !== count( $errors ) - 1 ) {
+            $new_login_page_url .= '&';
+        }
+    }
+    wp_redirect( esc_url_raw( $new_login_page_url ) );
+    exit;
+}
+
+add_filter( 'wp_login_errors', 'buddyforms_wp_login_errors_redirect' );
 /**
  * since 2.5.13
  * author @gfirem
@@ -1467,6 +1523,7 @@ function buddyforms_upload_image_from_url()
 {
     $url = ( isset( $_REQUEST['url'] ) ? $_REQUEST['url'] : '' );
     $file_id = ( isset( $_REQUEST['id'] ) ? $_REQUEST['id'] : '' );
+    $accepted_files = ( isset( $_REQUEST['accepted_files'] ) ? explode( ',', $_REQUEST['accepted_files'] ) : array( 'jpeg' ) );
     
     if ( !empty($url) && !empty($file_id) ) {
         $upload_dir = wp_upload_dir();
@@ -1474,6 +1531,16 @@ function buddyforms_upload_image_from_url()
         $image_data = file_get_contents( $image_url );
         // Get image data
         $image_data_information = getimagesize( $image_url );
+        $image_mime_information = $image_data_information['mime'];
+        
+        if ( !in_array( $image_mime_information, $accepted_files ) ) {
+            echo  wp_json_encode( array(
+                'status'   => 'FAILED',
+                'response' => __( 'File type ' . $image_mime_information . ' is not allowed.', 'budduforms' ),
+            ) ) ;
+            die;
+        }
+        
         
         if ( $image_data && $image_data_information ) {
             $file_name = $file_id . ".png";
@@ -1924,7 +1991,7 @@ function buddyforms_form_action_buttons(
     if ( $is_draft_enabled && $include_form_draft_button ) {
         
         if ( !$exist_field_status && $form_type === 'post' && is_user_logged_in() ) {
-            $bf_draft_button_text = ( !empty($bfdesign['draft_text']) ? $bfdesign['draft_text'] : __( 'Save as draft', 'buddyforms' ) );
+            $bf_draft_button_text = ( !empty($bfdesign['draft_text']) ? $bfdesign['draft_text'] : apply_filters( 'buddyforms_draft_button_text', __( 'Save as draft', 'buddyforms' ), $form_slug ) );
             $bf_draft_button_classes = 'bf-draft ' . $button_class;
             $bf_draft_button = new Element_Button( $bf_draft_button_text, 'submit', array(
                 'id'             => $form_slug . '-draft',
@@ -2179,4 +2246,31 @@ function buddyforms_add_bf_thickbox()
 {
     wp_enqueue_script( 'buddyforms-thickbox' );
     wp_enqueue_style( 'buddyforms-thickbox' );
+}
+
+add_filter(
+    'buddyforms_mail_to_before_send_notification',
+    'buddyforms_process_shortcode_notificate_to_attr',
+    10,
+    2
+);
+function buddyforms_process_shortcode_notificate_to_attr( $mail_to, $notification )
+{
+    
+    if ( isset( $_POST['notificate_to'] ) && !empty($_POST['notificate_to']) ) {
+        $notificate_to = sanitize_text_field( $_POST['notificate_to'] );
+        $notificate_to = trim( preg_replace( '/\\s+/', '', $notificate_to ) );
+        $notificate_to = explode( ',', $notificate_to );
+        foreach ( $notificate_to as $value ) {
+            $_notificate_to = explode( '-', $value );
+            $mail_trigger_id = $_notificate_to[0];
+            $user_email = sanitize_email( $_notificate_to[1] );
+            // Check if mail_trigger_id match with current notification.
+            if ( $notification['mail_trigger_id'] === $mail_trigger_id && is_email( $user_email ) ) {
+                array_push( $mail_to, $user_email );
+            }
+        }
+    }
+    
+    return $mail_to;
 }

@@ -261,6 +261,10 @@ function buddyforms_form_html( $args ) {
 	$form->addElement( new Element_Hidden( "form_type", isset( $buddyforms[ $form_slug ]['form_type'] ) ? $buddyforms[ $form_slug ]['form_type'] : '' ) );
 	$form->addElement( new Element_Hidden( "form_action", $form_action ) );
 
+	if ( ! empty( $args['notificate_to'] ) ) {
+		$form->addElement( new Element_Hidden( "notificate_to", $args['notificate_to'] ) );
+	}
+
 	if ( isset( $buddyforms[ $form_slug ]['bf_ajax'] ) ) {
 		$form->addElement( new Element_Hidden( "ajax", 'off' ) );
 	}
