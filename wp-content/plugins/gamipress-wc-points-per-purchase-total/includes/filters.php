@@ -37,7 +37,7 @@ function gamipress_wc_points_per_purchase_total_payment_complete( $order_id ) {
         return;
     }
 
-    $user_id = $order->user_id;
+    $user_id = $order->get_user_id();
 
     foreach( gamipress_get_points_types() as $points_type => $data ) {
 
@@ -105,9 +105,7 @@ function gamipress_wc_points_per_purchase_total_payment_complete( $order_id ) {
     update_post_meta( $order_id, $prefix . 'points_awarded', '1' );
 
 }
-add_action( 'woocommerce_payment_complete', 'gamipress_wc_points_per_purchase_total_payment_complete' );
 add_action( 'woocommerce_order_status_completed', 'gamipress_wc_points_per_purchase_total_payment_complete');
-add_action( 'woocommerce_thankyou', 'gamipress_wc_points_per_purchase_total_payment_complete' );
 
 /**
  * Revoke points to the user if order gets marked as refunded
@@ -135,7 +133,7 @@ function gamipress_wc_points_per_purchase_total_payment_refunded( $order_id ) {
         return;
     }
 
-    $user_id = $order->user_id;
+    $user_id = $order->get_user_id();
 
     foreach( gamipress_get_points_types() as $points_type => $data ) {
 

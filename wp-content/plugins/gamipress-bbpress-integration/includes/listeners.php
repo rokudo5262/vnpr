@@ -42,6 +42,19 @@ function gamipress_bbp_new_reply( $reply_id, $topic_id, $forum_id, $anonymous_da
     // Reply on any topic of a specific forum
     do_action( 'gamipress_bbp_specific_forum_reply', $reply_id, $reply_author, $topic_id, $forum_id );
 
+    $topic_author_id = absint( get_post_field( 'post_author', $topic_id ) );
+
+    if( $topic_author_id !== 0 ) {
+        // New reply
+        do_action( 'gamipress_bbp_get_new_reply', $reply_id, $topic_author_id, $topic_id, $forum_id );
+
+        // Reply on a specific topic
+        do_action( 'gamipress_bbp_get_specific_new_reply', $reply_id, $topic_author_id, $topic_id, $forum_id );
+
+        // Reply on any topic of a specific forum
+        do_action( 'gamipress_bbp_get_specific_forum_reply', $reply_id, $topic_author_id, $topic_id, $forum_id );
+    }
+
 }
 add_action( 'bbp_new_reply', 'gamipress_bbp_new_reply', 10, 5 );
 
@@ -71,10 +84,36 @@ function gamipress_bbp_favorite_topic( $user_id, $topic_id ) {
 }
 add_action( 'bbp_add_user_favorite', 'gamipress_bbp_favorite_topic', 10, 2 );
 
+// Unfavorite a topic
+function gamipress_bbp_unfavorite_topic( $user_id, $topic_id ) {
+
+    $forum_id = bbp_get_topic_forum_id( $topic_id );
+
+    $topic_author = get_post_field( 'post_author', $topic_id );
+
+    if( absint( $user_id ) === absint( $topic_author ) ) {
+        return;
+    }
+
+    // Favorite a topic
+    do_action( 'gamipress_bbp_unfavorite_topic', $topic_id, $user_id, $forum_id );
+
+    // Favorite a specific topic
+    do_action( 'gamipress_bbp_specific_unfavorite_topic', $topic_id, $user_id, $forum_id );
+
+    // Favorite any topic on a specific forum
+    do_action( 'gamipress_bbp_specific_forum_unfavorite_topic', $topic_id, $user_id, $forum_id );
+
+    // Topic author get a new unfavorite on a topic
+    do_action( 'gamipress_bbp_get_unfavorite_topic', $topic_id, $topic_author, $forum_id );
+
+}
+add_action( 'bbp_remove_user_favorite', 'gamipress_bbp_unfavorite_topic', 10, 2 );
+
 // Delete forum
 function gamipress_bbp_delete_forum( $forum_id ) {
 
-    $user_id = get_current_user_id();
+    $user_id = absint( get_post_field( 'post_author', $forum_id ) );
 
     // Delete a forum
     do_action( 'gamipress_bbp_delete_forum', $forum_id, $user_id );
@@ -85,7 +124,7 @@ add_action( 'bbp_delete_forum', 'gamipress_bbp_delete_forum' );
 // Delete topic
 function gamipress_bbp_delete_topic( $topic_id ) {
 
-    $user_id = get_current_user_id();
+    $user_id = absint( get_post_field( 'post_author', $topic_id ) );
 
     $forum_id = bbp_get_topic_forum_id( $topic_id );
 
@@ -98,7 +137,7 @@ add_action( 'bbp_delete_topic', 'gamipress_bbp_delete_topic' );
 // Delete reply
 function gamipress_bbp_delete_reply( $reply_id ) {
 
-    $user_id = get_current_user_id();
+    $user_id = absint( get_post_field( 'post_author', $reply_id ) );
 
     // Delete a reply
     do_action( 'gamipress_bbp_delete_reply', $reply_id, $user_id );

@@ -85,6 +85,7 @@ function gamipress_bbp_author_details( $user_id ) {
                     continue;
 
                 $points_type = $points_types[$points_type_to_show];
+                $label_position = gamipress_get_points_type_label_position( $points_type_to_show );
                 $user_points = gamipress_get_user_points( $user_id, $points_type_to_show ); ?>
 
                 <div class="gamipress-bbpress-points-type gamipress-bbpress-<?php echo $points_type_to_show; ?>">
@@ -101,13 +102,22 @@ function gamipress_bbp_author_details( $user_id ) {
 
                     <?php endif; ?>
 
+                    <?php // The points label (before) ?>
+                    <?php if( $points_types_label && $label_position === 'before' ) : ?>
+
+                        <span class="gamipress-bbpress-points-label gamipress-bbpress-<?php echo $points_type_to_show; ?>-label">
+                            <?php echo _n( $points_type['singular_name'], $points_type['plural_name'], $user_points, 'gamipress-bbp' ); ?>
+                        </span>
+
+                    <?php endif; ?>
+
                     <?php // The user points amount ?>
                     <span class="gamipress-bbpress-user-points gamipress-bbpress-user-<?php echo $points_type_to_show; ?>">
                         <?php echo gamipress_format_amount( $user_points, $points_type_to_show ); ?>
                     </span>
 
-                    <?php // The points label ?>
-                    <?php if( $points_types_label ) : ?>
+                    <?php // The points label (after) ?>
+                    <?php if( $points_types_label && $label_position !== 'before' ) : ?>
 
                         <span class="gamipress-bbpress-points-label gamipress-bbpress-<?php echo $points_type_to_show; ?>-label">
                             <?php echo _n( $points_type['singular_name'], $points_type['plural_name'], $user_points, 'gamipress-bbp' ); ?>
