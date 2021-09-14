@@ -10,8 +10,8 @@ $isPRO = apply_filters('nsl-pro', false);
 ?>
 <div class="nsl-admin-sub-content">
     <script type="text/javascript">
-        (function ($) {
 
+        document.addEventListener("DOMContentLoaded", function () {
             window.resetButtonToDefault = function (id) {
                 var defaultButtonValues = {
                     '#login_label': <?php echo wp_json_encode($settings->get('login_label', 'default')); ?>,
@@ -22,41 +22,47 @@ $isPRO = apply_filters('nsl-pro', false);
                     '#custom_icon_button': <?php echo wp_json_encode($provider->getRawIconButton()); ?>
                 };
 
-                var $CodeMirror = jQuery(id).val(defaultButtonValues[id]).siblings('.CodeMirror').get(0);
-                if ($CodeMirror && typeof $CodeMirror.CodeMirror !== 'undefined') {
-                    $CodeMirror.CodeMirror.setValue(defaultButtonValues[id]);
+                var inputField = document.querySelector(id),
+                    codeMirror = inputField.parentNode.querySelector('.CodeMirror');
+
+                inputField.value = defaultButtonValues[id];
+                if (codeMirror) {
+                    codeMirror.CodeMirror.setValue(defaultButtonValues[id]);
                 }
                 return false;
             };
 
-            $(document).ready(function () {
-                $('#custom_default_button_enabled').on('change', function () {
-                    if ($(this).is(':checked')) {
-                        $('#custom_default_button_textarea_container').css('display', '');
+            var defaultButton = document.getElementById('custom_default_button_enabled');
+            defaultButton.addEventListener('change', function () {
+                if (this.checked) {
+                    document.getElementById('custom_default_button_textarea_container').style.removeProperty('display');
 
-                        var $CodeMirror = jQuery('#custom_default_button').siblings('.CodeMirror').get(0);
-                        if ($CodeMirror && typeof $CodeMirror.CodeMirror !== 'undefined') {
-                            $CodeMirror.CodeMirror.refresh();
-                        }
-                    } else {
-                        $('#custom_default_button_textarea_container').css('display', 'none');
+                    var inputField = document.getElementById('custom_default_button'),
+                        codeMirror = inputField.parentNode.querySelector('.CodeMirror');
+                    if (codeMirror) {
+                        codeMirror.CodeMirror.refresh();
                     }
-                });
-
-                $('#custom_icon_button_enabled').on('change', function () {
-                    if ($(this).is(':checked')) {
-                        $('#custom_icon_button_textarea_container').css('display', '');
-
-                        var $CodeMirror = jQuery('#custom_icon_button').siblings('.CodeMirror').get(0);
-                        if ($CodeMirror && typeof $CodeMirror.CodeMirror !== 'undefined') {
-                            $CodeMirror.CodeMirror.refresh();
-                        }
-                    } else {
-                        $('#custom_icon_button_textarea_container').css('display', 'none');
-                    }
-                });
+                } else {
+                    document.getElementById('custom_default_button_textarea_container').style.display = 'none';
+                }
             });
-        })(jQuery);
+
+            var defaultIcon = document.getElementById('custom_icon_button_enabled');
+            defaultIcon.addEventListener('change', function () {
+                if (this.checked) {
+                    document.getElementById('custom_icon_button_textarea_container').style.removeProperty('display');
+
+                    var inputField = document.getElementById('custom_icon_button');
+                    var codeMirror = inputField.parentNode.querySelector('.CodeMirror');
+                    if (codeMirror) {
+                        codeMirror.CodeMirror.refresh();
+                    }
+                } else {
+                    document.getElementById('custom_icon_button_textarea_container').style.display = 'none';
+                }
+            });
+        });
+
     </script>
 
     <form method="post" action="<?php echo admin_url('admin-post.php'); ?>" novalidate="novalidate">

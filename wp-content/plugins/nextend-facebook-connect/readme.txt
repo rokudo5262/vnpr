@@ -3,8 +3,8 @@ Contributors: nextendweb
 Tags: social login, facebook, google, twitter, linkedin, register, login, social, nextend facebook connect, social sign in
 Donate link: https://www.facebook.com/nextendweb
 Requires at least: 4.9
-Tested up to: 5.6
-Stable tag: 3.0.27
+Tested up to: 5.7.2
+Stable tag: 3.1.0
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -115,8 +115,58 @@ Using the Pro Addon you can set where the login buttons should appear on the Reg
 
 1. Nextend Social Login and Register on the main WP login page
 2. Nextend Social Login and Register in the profile page for account linking
+3. The Providers page with the available providers and their states.
+4. The Settings page of the Facebook provider.
 
 == Changelog ==
+
+= 3.1.0 =
+* Fix: Display error message for logged out users, when they try to login with a social media account that's email address matches with a WordPress account email address, that has a linked provider from the same kind.
+* Fix: WooRewards will be able to generate points on registration with Nextend Social Login
+* Improvement: nsl_already_linked_error_message filter added to modify the error message when a WordPress account with the same email address has another social media account already linked
+* Improvement: Separate autologin from registerComplete function
+* Improvement: nsl_autologin_priority filter added to control the priority of the autologin after the registration with Nextend Social Login
+* Improvement: [Facebook Getting Started](https://nextendweb.com/nextend-social-login-docs/provider-facebook/#configuration) Update
+* Improvement: [WPML](https://nextendweb.com/nextend-social-login-docs/how-to-make-nextend-social-login-compatible-with-wpml/) compatibility
+
+* PRO: New provider: [Microsoft](https://nextendweb.com/nextend-social-login-docs/provider-microsoft/)
+* PRO: New provider: [Line](https://nextendweb.com/nextend-social-login-docs/provider-line/)
+* PRO: Improvement: Optimized Light and Dark SVG for Apple
+* PRO: Improvement: [Apple Getting Started](https://nextendweb.com/nextend-social-login-docs/provider-apple/#configuration) Update
+* PRO: Improvement: [PayPal Getting Started](https://nextendweb.com/nextend-social-login-docs/provider-paypal/#configuration) Update
+* PRO: Improvement: New [Facebook Sync data](https://nextendweb.com/nextend-social-login-docs/provider-facebook/#sync_data) field: Quote ( requires user_likes permission )
+* PRO: Feature: [BuddyPress](https://nextendweb.com/nextend-social-login-docs/global-settings-buddypress/) Layout options added for registration form
+
+
+= 3.0.29 =
+* Fix: We added clear: both; on .nsl-container to make floated elements before the buttons not to mess up the layout.
+* Fix: Jetpack removed the "Register" button in our register flow when the registration was handled over the WordPress default login page.
+* Improvement: The social buttons with the Default style will try to go as wide as the longest button, if there is enough space in the social button container element.
+* Feature: Fullwidth style for the social buttons.
+* Summer Sale offer
+
+
+= 3.0.28 =
+* Fix: We didn't display the disabled registration notification when the "OAuth redirect uri proxy page" feature was used.
+* Fix: Google provider - Social button didn't appear in Opera Mini and iOS Opera Touch.
+* Fix: WordPress couldn't download the avatars coming from the social media when the avatar URL was too long.
+* Fix: Our styles were missing from pages with AMP mode of "AMP for WP".
+* Fix: There was an AMP validation error as earlier we didn't load our styles into the unique style tag with the "amp-custom" attribute.
+* Fix: Database - There was a database error on MySQL 8.0.17 and above, as the display width attribute has been deprecated for integer data types.
+* Fix: Database - Default values of register_date, login_date and link_date have been changed from "0000-00-00 00:00:00" to NULL, since the old value could cause a database error when we tried to make database structure modifications in databases when NO_ZERO_DATE, NO_ZERO_IN_DATE values are set in sql_mode.
+* Improvement: Developers can now pass false value for the [nsl_disabled_register_error_message](https://nextendweb.com/nextend-social-login-docs/backend-developer/#disabled-reg-message-override) filter for turning off our registration disabled notification.
+* Improvement: Google provider - The Google button will no longer be hidden in Line App WebView, as Google allows the authentication over the WebView of this App.
+* Improvement: Developers can now use the [nsl_unlink_user](https://nextendweb.com/nextend-social-login-docs/backend-developer/#unlink-user) action to run custom function when a user unlinks the social media account from the WordPress account.
+* Improvement: [Twitter Getting Started](https://nextendweb.com/nextend-social-login-docs/provider-twitter/#configuration) Update
+* Improvement: [Google Getting Started](https://nextendweb.com/nextend-social-login-docs/provider-google/#configuration) Update
+* Improvement: [Facebook Getting Started](https://nextendweb.com/nextend-social-login-docs/provider-facebook/#configuration) Update
+* Improvement: The context "Register form submit button label" has been added to the Register button appearing in our register flow. So it can now be translated with language files separately.
+* Improvement: On the frontend we will use native JavaScript instead of jQuery.
+
+* PRO: Fix: [Linkedin](https://nextendweb.com/nextend-social-login-docs/provider-linkedin/) provider didn't store the first name and last name, if the account didn't have profile with English as either primary language or secondary language.
+* PRO: Fix: Our integration for "Checkout for WooCommerce" didn't work with their most recent versions.
+* PRO: Improvement: [Apple Getting Started](https://nextendweb.com/nextend-social-login-docs/provider-apple/#configuration) Update
+
 
 = 3.0.27 =
 * Fix: Ultimate Member prevents our registration when we need to ask extra information before the registration.
