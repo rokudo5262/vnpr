@@ -3,13 +3,13 @@
  * Plugin Name:           GamiPress - bbPress integration
  * Plugin URI:            https://wordpress.org/plugins/gamipress-bbpress-integration/
  * Description:           Connect GamiPress with bbPress.
- * Version:               1.2.2
+ * Version:               1.2.6
  * Author:                GamiPress
  * Author URI:            https://gamipress.com/
  * Text Domain:           gamipress-bbpress-integration
  * Domain Path:           /languages/
  * Requires at least:     4.4
- * Tested up to:          5.5
+ * Tested up to:          5.8
  * License:               GNU AGPL v3.0 (http://www.gnu.org/licenses/agpl.txt)
  *
  * @package               GamiPress\bbPress
@@ -53,7 +53,7 @@ final class GamiPress_bbPress {
      */
     private function constants() {
         // Plugin version
-        define( 'GAMIPRESS_BBP_VER', '1.2.2' );
+        define( 'GAMIPRESS_BBP_VER', '1.2.6' );
 
         // Plugin path
         define( 'GAMIPRESS_BBP_DIR', plugin_dir_path( __FILE__ ) );
