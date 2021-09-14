@@ -228,6 +228,17 @@ function buddyforms_load_select2(element) {
         });
 }
 
+function setStatusDateFormat(arg){
+    if(arg.checked){
+        jQuery('.status-date-format').show();
+        jQuery('.status-time-format').show();
+    }else{
+        jQuery('.status-date-format').hide();
+        jQuery('.status-time-format').hide();
+    }
+
+}
+
 //
 // Helper Function to lode form element templates depend on the form type
 //
@@ -367,7 +378,7 @@ function buddyforms_process_errors(errors) {
                     case 'number':
                     case 'subject':
                     case 'message': {
-                        jQuery("a[href='#validation-" + type + "-" + current_error.field_id + "']").click();
+                        jQuery("a[href='#validation-" + type + "-" + current_error.field_id + "']").trigger("click");
                         var sortableBuddyformsElements = jQuery("#sortable_buddyforms_elements");
                         sortableBuddyformsElements.accordion({
                             active: false
@@ -385,7 +396,7 @@ function buddyforms_process_errors(errors) {
                     }
                     case 'accordion': {
                         var general_tab_id = jQuery(current_error.element).closest('div').parent().attr("id");
-                        jQuery("a[href='#" + general_tab_id + "']").click();
+                        jQuery("a[href='#" + general_tab_id + "']").trigger("click");
 
                         //close all
                         var sortableBuddyformsElements = jQuery("#sortable_buddyforms_elements");
@@ -406,7 +417,7 @@ function buddyforms_process_errors(errors) {
                     case 'settings': {
                         if (!jQuery(current_error.element).is(':visible')) {
                             var currentId = jQuery(current_error.element).closest('div.tab-pane.ui-widget-content.ui-corner-bottom').attr('id');
-                            jQuery('.buddyform-nav-tabs li[aria-controls="' + currentId + '"]>a').click()
+                            jQuery('.buddyform-nav-tabs li[aria-controls="' + currentId + '"]>a').trigger("click");
                         }
                         break;
                     }
@@ -551,8 +562,8 @@ jQuery(document).ready(function (jQuery) {
 
                 jQuery(window).scrollTop(0);
 
-                // Hide all post box metaboxes except the buddyforms meta boxes
-                jQuery('div .postbox').not('.buddyforms-metabox').hide();
+                // Remove all post box metaboxes except the buddyforms meta boxes
+                jQuery('div .postbox').not('.buddyforms-metabox, #submitdiv').remove();
 
                 // Show the submit metabox
                 jQuery('#submitdiv').show();
@@ -641,7 +652,7 @@ jQuery(document).ready(function (jQuery) {
     });
 
     // Validate the form before publish
-    jQuery('#publish').click(function () {
+    jQuery('#publish').on('click', function () {
 
         var post_title = jQuery('[name="post_title"]');
 
@@ -969,6 +980,7 @@ jQuery(document).ready(function (jQuery) {
             jQuery.ajax({
                 type: 'POST',
                 url: buddyformsGlobal.admin_url,
+                dataType: "json",
                 data: {
                     "action": "buddyforms_new_post_status_mail_notification",
                     'form_slug': jQuery(this).attr('data-form-slug'),
@@ -981,10 +993,10 @@ jQuery(document).ready(function (jQuery) {
                         return false;
                     }
                     jQuery('#no-trigger-post-status-mail-container').hide();
-                    jQuery('#post-status-mail-container').append(data);
+                    jQuery('#post-status-mail-container').append(data['html']);
 
-                    tinymce.execCommand('mceRemoveEditor', false, 'bf_mail_body');
-                    tinymce.execCommand('mceAddEditor', false, 'bf_mail_body');
+                    tinymce.execCommand('mceRemoveEditor', false, 'bf_mail_body' + data['trigger_id']);
+                    tinymce.execCommand('mceAddEditor', false, 'bf_mail_body' + data['trigger_id']);
 
                     bf_update_list_item_number_mail();
 
@@ -1044,7 +1056,10 @@ jQuery(document).ready(function (jQuery) {
     //
 
     // Remove all Visual Composer elements form BuddyForms View
-    jQuery('*[class^="vc_"]').remove();
+    // Only apply this action on BuddyForms Views
+    if ( window.location.search.indexOf( 'post_type=buddyforms' ) !== -1 ) {
+        jQuery('*[class^="vc_"]').remove();
+    }
 
     //
     // Layout Meta-box related functions
@@ -1161,5 +1176,7 @@ jQuery(document).ready(function (jQuery) {
         }
         return false;
     });
+
+
 
 });
