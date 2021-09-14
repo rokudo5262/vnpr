@@ -203,4 +203,12 @@ class Notices {
         Persistent::delete('notices');
         self::$notices = array();
     }
+
+    public static function hasErrors() {
+        if (isset(self::$notices['error'])) {
+            return true;
+        }
+
+        return false;
+    }
 }
