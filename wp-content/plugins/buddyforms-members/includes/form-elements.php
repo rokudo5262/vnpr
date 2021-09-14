@@ -815,31 +815,29 @@ function buddyforms_members_process_submission_end( $args ) {
 						case 'datebox':
 							$date = isset( $_POST[ $field['slug'] ] ) ? date( 'Y-m-d H:i:s', strtotime( $_POST[ $field['slug'] ] ) ) : '';
 							if ( ! empty( $date ) ) {
-								$field_data = xprofile_set_field_data( $field['mapped_xprofile_field'], $user_id, $date );
+								xprofile_set_field_data( $field['mapped_xprofile_field'], $user_id, $date );
 							}
 							break;
 
 						case 'multiselectbox':
 							if ( $field['type'] != 'member_taxonomy' ) {
 								$options    = isset( $_POST[ $field['slug'] ] ) ? $_POST[ $field['slug'] ] : '';
-								$field_data = xprofile_set_field_data( $field['mapped_xprofile_field'], $user_id, $options );
+								xprofile_set_field_data( $field['mapped_xprofile_field'], $user_id, $options );
 							}
 							break;
 
-						case 'radio':
 						case 'checkbox':
-						case 'selectbox':
 							$options = isset( $_POST[ $field['slug'] ] ) ? $_POST[ $field['slug'] ] : '';
 
 							if ( ! is_array( $options ) ) {
 								$options = array( $options );
 							}
-							$field_data = xprofile_set_field_data( $field['mapped_xprofile_field'], $user_id, $options );
+							xprofile_set_field_data( $field['mapped_xprofile_field'], $user_id, $options );
 							break;
 
 						default:
-							$text       = isset( $_POST[ $field['slug'] ] ) ? $_POST[ $field['slug'] ] : '';
-							$field_data = xprofile_set_field_data( $field['mapped_xprofile_field'], $user_id, $text );
+							$value       = isset( $_POST[ $field['slug'] ] ) ? $_POST[ $field['slug'] ] : '';
+							xprofile_set_field_data( $field['mapped_xprofile_field'], $user_id, $value );
 							break;
 					}
 				}
@@ -1018,12 +1016,7 @@ function buddyforms_members_formbuilder_fields_options( $form_fields, $field_typ
 
 
 function buddyforms_memberstemplate_filter_init() {
-	if(bp_is_current_action('edit')){
-
-		if ( ! bp_get_member_types() ){
-			return;
-		}
-
+	if ( bp_is_current_action('edit') ) {
 		add_action( 'bp_template_content', 'buddyforms_membersfilter_template_content' );
 		add_filter( 'bp_get_template_part', 'buddyforms_memberstemplate_part_filter', 10, 3 );
 	}
@@ -1033,11 +1026,7 @@ add_action( 'bp_init', 'buddyforms_memberstemplate_filter_init' );
 
 function buddyforms_memberstemplate_part_filter( $templates, $slug, $name ) {
 
-	if ( 'members/single/profile/edit.php' == $templates[0] ) {
-
-		if ( ! bp_get_member_types() ){
-			return;
-		}
+	if ( 'members/single/profile/edit.php' === $templates[0] ) {
 
 		$member_type         = bp_get_member_type( get_current_user_id() );
 		$buddypress_settings = get_option( 'buddyforms_buddypress_settings' );
@@ -1049,7 +1038,6 @@ function buddyforms_memberstemplate_part_filter( $templates, $slug, $name ) {
 		        && $buddypress_settings[ $member_type ] != 'none' ) {
 
 			$templates = bp_get_template_part( 'members/single/plugins' );
-
 		}
 	}
 
