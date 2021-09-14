@@ -56,6 +56,7 @@ function vsz_cf7_before_send_email($contact_form){
 		//Get not inserted fields value list
 		$cf7d_no_save_fields = vsz_cf7_no_save_fields();
 		foreach ($contact_form->posted_data as $k => $v) {
+			
 			//Check not inserted fields name in array or not
 			if(in_array($k, $cf7d_no_save_fields)) {
 				continue;
@@ -120,6 +121,7 @@ if (!function_exists('vsz_cf7_modify_form_before_insert_in_cf7_vdata_entry')) {
     function vsz_cf7_modify_form_before_insert_in_cf7_vdata_entry($cf7){
         //if it has at lest 1 file uploaded
         if (count($cf7->uploaded_files) > 0) {
+
             //Get upload dir URL
 			$upload_dir = wp_upload_dir();
             //Create custom upload folder
@@ -128,17 +130,26 @@ if (!function_exists('vsz_cf7_modify_form_before_insert_in_cf7_vdata_entry')) {
             wp_mkdir_p($dir_upload);
             //Get all uploaded files information
 			foreach ($cf7->uploaded_files as $k => $v) {
-                //Get file name
-				$file_name = basename($v);
-                //Create unique file name
+
+                
+				//to check if CF7 version due to changes $cf7->uploaded_files return value
+				if(defined('WPCF7_VERSION') && WPCF7_VERSION > '5.3.2'){
+					$val=$v[0];
+				}else{
+					$val=$v;
+				}
+				//Get file name
+				$file_name = basename($val);
+				//Create unique file name
 				$file_name = wp_unique_filename($dir_upload, $file_name);
-                //Setup filoe path
+				//Setup filoe path
 				$dst_file = $dir_upload . '/' . $file_name;
-                //Copy file information in destination variable
-				if (@copy($v, $dst_file)){
+				//Copy file information in destination variable
+				if (@copy($val, $dst_file)){
 					//Setup customize file information in array
-                    $cf7->posted_data[$k] = $upload_dir['baseurl'] . '/' . $cf7d_upload_folder . '/' . $file_name;
-                }
+					$cf7->posted_data[$k] = $upload_dir['baseurl'] . '/' . $cf7d_upload_folder . '/' . $file_name;
+				}
+				
             }//Close foreach
         }//Close if
         return $cf7;
