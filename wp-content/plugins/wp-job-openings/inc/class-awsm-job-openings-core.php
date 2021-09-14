@@ -12,12 +12,18 @@ class AWSM_Job_Openings_Core {
 
 		// hide uploaded files.
 		if ( get_option( 'awsm_hide_uploaded_files' ) === 'hide_files' ) {
-			add_action( 'pre_get_posts', array( $this, 'list_attachments' ) );
-			add_filter( 'ajax_query_attachments_args', array( $this, 'grid_attachments' ) );
+			add_action( 'pre_get_posts', array( $this, 'list_attachments' ), 100 );
+			add_filter( 'ajax_query_attachments_args', array( $this, 'grid_attachments' ), 100 );
 		}
 
 		add_filter( 'post_updated_messages', array( $this, 'job_updated_messages' ) );
 		add_filter( 'bulk_post_updated_messages', array( $this, 'jobs_bulk_updated_messages' ), 10, 2 );
+		// Login redirect for HR user.
+		add_filter( 'login_redirect', array( $this, 'login_redirect' ), 10, 3 );
+
+		// WooCommerce - Allow the backend access for users with HR Role.
+		add_filter( 'woocommerce_disable_admin_bar', array( $this, 'woocommerce_disable_backend_access' ) );
+		add_filter( 'woocommerce_prevent_admin_access', array( $this, 'woocommerce_disable_backend_access' ) );
 	}
 
 	public static function init() {
@@ -251,33 +257,35 @@ class AWSM_Job_Openings_Core {
 		}
 	}
 
+	public static function get_attachments_meta_query( $meta_query ) {
+		$query = array(
+			'key'     => '_wp_attached_file',
+			'compare' => 'NOT LIKE',
+			'value'   => AWSM_JOBS_UPLOAD_DIR_NAME,
+		);
+
+		if ( is_array( $meta_query ) && ! empty( $meta_query ) ) {
+			$meta_query[] = $query;
+		} else {
+			$meta_query = array( $query );
+		}
+		return $meta_query;
+	}
+
 	public function list_attachments( $query ) {
 		if ( is_admin() && $query->is_main_query() ) {
 			$screen = get_current_screen();
 			if ( ! empty( $screen ) && $screen->id === 'upload' && $screen->post_type === 'attachment' ) {
-				$query->set(
-					'meta_query',
-					array(
-						array(
-							'key'     => '_wp_attached_file',
-							'compare' => 'NOT LIKE',
-							'value'   => 'awsm-job-openings',
-						),
-					)
-				);
+				$meta_query = $query->get( 'meta_query' );
+				$query->set( 'meta_query', self::get_attachments_meta_query( $meta_query ) );
 			}
 		}
 	}
 
 	public function grid_attachments( $query ) {
 		if ( is_admin() ) {
-			$query['meta_query'] = array(
-				array(
-					'key'     => '_wp_attached_file',
-					'compare' => 'NOT LIKE',
-					'value'   => 'awsm-job-openings',
-				),
-			);
+			$meta_query          = isset( $query['meta_query'] ) ? $query['meta_query'] : array();
+			$query['meta_query'] = self::get_attachments_meta_query( $meta_query );
 		}
 		return $query;
 	}
@@ -370,5 +378,41 @@ class AWSM_Job_Openings_Core {
 			'untrashed' => _n( '%s application restored from the Trash.', '%s applications restored from the Trash.', $bulk_counts['untrashed'], 'wp-job-openings' ),
 		);
 		return $bulk_messages;
+	}
+
+	/**
+	 * Redirect users with HR Role to job page instead of profile page after login.
+	 *
+	 * @param string $redirect_to The redirect destination URL.
+	 * @param string $requested_redirect_to The requested redirect destination URL.
+	 * @param WP_User|WP_Error $user WP_User object if login was successful, WP_Error object otherwise.
+	 *
+	 * @return string
+	 */
+	public function login_redirect( $redirect_to, $requested_redirect_to, $user ) {
+		if ( ! is_wp_error( $user ) && ( empty( $redirect_to ) || 'wp-admin/' === $redirect_to || admin_url() === $redirect_to ) ) {
+			if ( isset( $user->roles ) && is_array( $user->roles ) && in_array( 'hr', $user->roles ) && ! $user->has_cap( 'edit_posts' ) && $user->has_cap( 'edit_jobs' ) ) {
+				/**
+				 * Filters login redirection URL for the HR user.
+				 *
+				 * @since 2.1.1
+				 *
+				 * @param string $redirect_url The redirect destination URL.
+				 * @param WP_User|WP_Error $user WP_User object if login was successful, WP_Error object otherwise.
+				 */
+				$redirect_url = apply_filters( 'awsm_jobs_login_redirect', admin_url( 'edit.php?post_type=awsm_job_openings' ), $user );
+				if ( ! empty( $redirect_url ) ) {
+					$redirect_to = $redirect_url;
+				}
+			}
+		}
+		return $redirect_to;
+	}
+
+	public function woocommerce_disable_backend_access( $disable ) {
+		if ( current_user_can( 'edit_jobs' ) ) {
+			$disable = false;
+		}
+		return $disable;
 	}
 }
