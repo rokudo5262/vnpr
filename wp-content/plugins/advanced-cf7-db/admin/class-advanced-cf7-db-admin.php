@@ -1268,6 +1268,7 @@ function vsz_cf7_export_to_excel($fid, $ids_export){
 		//create excel class object
 		$xls = new PHPExcel();
 
+
 		//First we will set header in excel file
 		$col = 0;
 		$row = 1;
@@ -1278,6 +1279,7 @@ function vsz_cf7_export_to_excel($fid, $ids_export){
 			$col++;
 		}
 
+		
 		$row = 2;
 		foreach ($data_sorted as $k => $v){
 			//Define column index here
@@ -1286,11 +1288,15 @@ function vsz_cf7_export_to_excel($fid, $ids_export){
 			//Get column order wise value here
 			foreach ($fields as $k2 => $v2){
 				$colVal = (isset($v[$k2]) ? html_entity_decode($v[$k2]) : '');
-				// $cell = $xls->getCellNo($row, $col);
-				// $xls->setActiveSheetIndex(0)->setCellValue($cell,$colVal);
-				$xls->getActiveSheet()->setCellValueByColumnAndRow($col, $row, $colVal);
+				$cell = $xls->getCellNo($row, $col);
+				$xls->setActiveSheetIndex(0)->setCellValue($cell,$colVal);
+				//$xls->getActiveSheet()->setCellValueByColumnAndRow($col, $row, $colVal);
 				$col++;
+				
 			}
+			/* echo '<pre>';
+			var_dump($data_sorted);
+			exit; */
 			//Consider new row for each entry here
 			$row++;
 		}
