@@ -3,7 +3,7 @@ Contributors: arunbasillal
 Donate link: http://millionclues.com/donate/
 Tags: admin css, mu plugin, custom admin css, admin, admin interface, multisite, must use
 Requires at least: 3.0
-Tested up to: 5.4.1
+Tested up to: 5.8
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -42,10 +42,6 @@ body, h1, p {
 	color: #f1f1f1 !important;
 }`
 
-= I need more features. Can I hire you? =
-
-Yes. Please [get in touch via my contact form](http://millionclues.com/contact/) with a brief description of your requirement and budget for the project. I will be in touch shortly.
-
 = I found this plugin very useful, how can I show my appreciation? =
 
 I am glad to hear that! You can either [make a donation](http://millionclues.com/donate/) or leave a [rating](https://wordpress.org/support/plugin/admin-css-mu/reviews/?rate=5#new-post) to motivate me to keep working on the plugin. 
@@ -55,6 +51,13 @@ I am glad to hear that! You can either [make a donation](http://millionclues.com
 1. Admin Interface in Appearance > Admin CSS MU
 
 == Changelog ==
+
+= 2.6 =
+* Date: 17.May.2021
+* Tested on WordPress 5.7.2
+* Updated CSSTidy to 1.7.3
+* Added support for CSS properties grid-gap and grid-template-columns.
+* Fix PHP warning: PHP Warning: “continue” targeting switch is equivalent to “break” in class.csstidy.php on line 859.
 
 = 2.5 =
 * Date: 18.January.2018
@@ -102,6 +105,9 @@ I am glad to hear that! You can either [make a donation](http://millionclues.com
 * First release of the plugin.
 
 == Upgrade Notice ==
+
+= 2.6 =
+* Please upgrade with caution as the CSS validation and sanitization library (CSSTidy) was updated. Take a backup of your existing custom CSS and cross-check after the update to confirm everything works as before. 
 
 = 2.5 =
 * Date: 18.January.2018
