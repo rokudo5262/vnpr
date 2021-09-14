@@ -27,10 +27,19 @@ function gamipress_bbp_activity_triggers( $triggers ) {
         'gamipress_bbp_specific_new_reply'      => __( 'Reply to a specific topic', 'gamipress-bbpress-integration' ),
         'gamipress_bbp_specific_forum_reply'    => __( 'Reply to any topic of a specific forum', 'gamipress-bbpress-integration' ),
 
+        'gamipress_bbp_get_new_reply'               => __( 'Get a reply in a topic', 'gamipress-bbpress-integration' ),
+        'gamipress_bbp_get_specific_new_reply'      => __( 'Get a reply in a specific topic', 'gamipress-bbpress-integration' ),
+        'gamipress_bbp_get_specific_forum_reply'    => __( 'Get a reply in any topic of a specific forum', 'gamipress-bbpress-integration' ),
+
         'gamipress_bbp_favorite_topic'          => __( 'Favorite a topic', 'gamipress-bbpress-integration' ),
         'gamipress_bbp_specific_favorite_topic' => __( 'Favorite a specific topic', 'gamipress-bbpress-integration' ),
         'gamipress_bbp_specific_forum_favorite_topic' => __( 'Favorite any topic on a specific forum', 'gamipress-bbpress-integration' ),
         'gamipress_bbp_get_favorite_topic'      => __( 'Get a new favorite on a topic', 'gamipress-bbpress-integration' ),
+
+        'gamipress_bbp_unfavorite_topic'          => __( 'Unfavorite a topic', 'gamipress-bbpress-integration' ),
+        'gamipress_bbp_specific_unfavorite_topic' => __( 'Unfavorite a specific topic', 'gamipress-bbpress-integration' ),
+        'gamipress_bbp_specific_forum_unfavorite_topic' => __( 'Unfavorite any topic on a specific forum', 'gamipress-bbpress-integration' ),
+        'gamipress_bbp_get_unfavorite_topic'      => __( 'Lost a new favorite on a topic', 'gamipress-bbpress-integration' ),
 
         'gamipress_bbp_delete_forum'            => __( 'Delete a forum', 'gamipress-bbpress-integration' ),
         'gamipress_bbp_delete_topic'            => __( 'Delete a topic', 'gamipress-bbpress-integration' ),
@@ -59,8 +68,12 @@ function gamipress_bbp_specific_activity_triggers( $specific_activity_triggers )
     $specific_activity_triggers['gamipress_bbp_specific_new_topic'] = array( $forum );
     $specific_activity_triggers['gamipress_bbp_specific_new_reply'] = array( $topic );
     $specific_activity_triggers['gamipress_bbp_specific_forum_reply'] = array( $forum );
+    $specific_activity_triggers['gamipress_bbp_get_specific_new_reply'] = array( $topic );
+    $specific_activity_triggers['gamipress_bbp_get_specific_forum_reply'] = array( $forum );
     $specific_activity_triggers['gamipress_bbp_specific_favorite_topic'] = array( $topic );
     $specific_activity_triggers['gamipress_bbp_specific_forum_favorite_topic'] = array( $forum );
+    $specific_activity_triggers['gamipress_bbp_specific_unfavorite_topic'] = array( $topic );
+    $specific_activity_triggers['gamipress_bbp_specific_forum_unfavorite_topic'] = array( $forum );
 
     return $specific_activity_triggers;
 }
@@ -77,10 +90,14 @@ add_filter( 'gamipress_specific_activity_triggers', 'gamipress_bbp_specific_acti
 function gamipress_bbp_specific_activity_trigger_label( $specific_activity_trigger_labels ) {
 
     $specific_activity_trigger_labels['gamipress_bbp_specific_new_topic'] = __( 'Create a topic on %s forum', 'gamipress-bbpress-integration' );
-    $specific_activity_trigger_labels['gamipress_bbp_specific_new_reply'] = __( 'Reply on %s', 'gamipress-bbpress-integration' );
-    $specific_activity_trigger_labels['gamipress_bbp_specific_forum_reply'] = __( 'Reply any topic on %s forum', 'gamipress-bbpress-integration' );
+    $specific_activity_trigger_labels['gamipress_bbp_specific_new_reply'] = __( 'Reply to %s topic', 'gamipress-bbpress-integration' );
+    $specific_activity_trigger_labels['gamipress_bbp_specific_forum_reply'] = __( 'Reply to any topic on %s forum', 'gamipress-bbpress-integration' );
+    $specific_activity_trigger_labels['gamipress_bbp_get_specific_new_reply'] = __( 'Get a reply in %s', 'gamipress-bbpress-integration' );
+    $specific_activity_trigger_labels['gamipress_bbp_get_specific_forum_reply'] = __( 'Get a reply in any topic on %s forum', 'gamipress-bbpress-integration' );
     $specific_activity_trigger_labels['gamipress_bbp_specific_favorite_topic'] = __( 'Favorite %s', 'gamipress-bbpress-integration' );
     $specific_activity_trigger_labels['gamipress_bbp_specific_forum_favorite_topic'] = __( 'Favorite any topic on %s forum', 'gamipress-bbpress-integration' );
+    $specific_activity_trigger_labels['gamipress_bbp_specific_unfavorite_topic'] = __( 'Unfavorite %s', 'gamipress-bbpress-integration' );
+    $specific_activity_trigger_labels['gamipress_bbp_specific_forum_unfavorite_topic'] = __( 'Unfavorite any topic on %s forum', 'gamipress-bbpress-integration' );
 
     return $specific_activity_trigger_labels;
 }
@@ -105,10 +122,17 @@ function gamipress_bbp_trigger_get_user_id( $user_id, $trigger, $args ) {
         case 'gamipress_bbp_new_reply':
         case 'gamipress_bbp_specific_new_reply':
         case 'gamipress_bbp_specific_forum_reply':
+        case 'gamipress_bbp_get_new_reply':
+        case 'gamipress_bbp_get_specific_new_reply':
+        case 'gamipress_bbp_get_specific_forum_reply':
         case 'gamipress_bbp_favorite_topic':
         case 'gamipress_bbp_specific_favorite_topic':
         case 'gamipress_bbp_specific_forum_favorite_topic':
         case 'gamipress_bbp_get_favorite_topic':
+        case 'gamipress_bbp_unfavorite_topic':
+        case 'gamipress_bbp_specific_unfavorite_topic':
+        case 'gamipress_bbp_specific_forum_unfavorite_topic':
+        case 'gamipress_bbp_get_unfavorite_topic':
         case 'gamipress_bbp_delete_forum':
         case 'gamipress_bbp_delete_topic':
         case 'gamipress_bbp_delete_reply':
@@ -138,13 +162,17 @@ function gamipress_bbp_specific_trigger_get_id( $specific_id, $trigger = '', $ar
     switch ( $trigger ) {
         case 'gamipress_bbp_specific_new_topic':
         case 'gamipress_bbp_specific_new_reply':
+        case 'gamipress_bbp_get_specific_new_reply':
+        case 'gamipress_bbp_get_specific_forum_reply':
         case 'gamipress_bbp_specific_forum_favorite_topic':
+        case 'gamipress_bbp_specific_forum_unfavorite_topic':
             $specific_id = $args[2];
             break;
         case 'gamipress_bbp_specific_forum_reply':
             $specific_id = $args[3];
             break;
         case 'gamipress_bbp_specific_favorite_topic':
+        case 'gamipress_bbp_specific_unfavorite_topic':
             $specific_id = $args[0];
             break;
     }
@@ -183,6 +211,9 @@ function gamipress_bbp_log_event_trigger_meta_data( $log_meta, $user_id, $trigge
         case 'gamipress_bbp_new_reply':
         case 'gamipress_bbp_specific_new_reply':
         case 'gamipress_bbp_specific_forum_reply':
+        case 'gamipress_bbp_get_new_reply':
+        case 'gamipress_bbp_get_specific_new_reply':
+        case 'gamipress_bbp_get_specific_forum_reply':
             // Add the reply, topic and forum IDs
             $log_meta['reply_id'] = $args[0];
             $log_meta['topic_id'] = $args[2];
@@ -192,6 +223,10 @@ function gamipress_bbp_log_event_trigger_meta_data( $log_meta, $user_id, $trigge
         case 'gamipress_bbp_specific_favorite_topic':
         case 'gamipress_bbp_specific_forum_favorite_topic':
         case 'gamipress_bbp_get_favorite_topic':
+        case 'gamipress_bbp_unfavorite_topic':
+        case 'gamipress_bbp_specific_unfavorite_topic':
+        case 'gamipress_bbp_specific_forum_unfavorite_topic':
+        case 'gamipress_bbp_get_unfavorite_topic':
         case 'gamipress_bbp_delete_topic':
             // Add the topic and forum IDs
             $log_meta['topic_id'] = $args[0];
@@ -246,6 +281,9 @@ function gamipress_bbp_trigger_duplicity_check( $return, $user_id, $trigger, $si
         case 'gamipress_bbp_new_reply':
         case 'gamipress_bbp_specific_new_reply':
         case 'gamipress_bbp_specific_forum_reply':
+        case 'gamipress_bbp_get_new_reply':
+        case 'gamipress_bbp_get_specific_new_reply':
+        case 'gamipress_bbp_get_specific_forum_reply':
             // User can not create same reply more times, so check it
             $log_meta['reply_id'] = $args[0];
             $return = (bool) ( gamipress_get_user_log_count( $user_id, $log_meta ) === 0 );
