@@ -5,7 +5,7 @@ Plugin URI: http://millionclues.com
 Description: A plugin to load a CSS file to style the admin side. Works with Multisite.
 Author: Arun Basil Lal
 Author URI: http://millionclues.com
-Version: 2.5
+Version: 2.6
 Text Domain: admin-css-mu
 Domain Path: /languages
 License: GPL v2 - http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
@@ -85,7 +85,7 @@ add_action( 'admin_init', 'admincssmu_register_settings' );
  * @refer		https://codex.wordpress.org/Creating_Tables_with_Plugins#Adding_an_Upgrade_Function
  */
 if (!defined('ADMINCSSMU_VERSION_NUM'))
-    define('ADMINCSSMU_VERSION_NUM', '2.4');
+    define('ADMINCSSMU_VERSION_NUM', '2.6');
 // update_option('abl_admincssmu_version', ADMINCSSMU_VERSION_NUM);	// Disabled to set default values for Load Admin CSS checkbox
 
 /**
