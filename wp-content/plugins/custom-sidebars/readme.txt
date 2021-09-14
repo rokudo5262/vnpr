@@ -2,8 +2,8 @@
 Contributors: WebFactory
 Tags: sidebar, widget, custom sidebar, dynamic widgets, manage sidebars, flexible layout, replace widgets, custom widget area, footer
 Requires at least: 4.6
-Tested up to: 5.7
-Stable tag: 3.31
+Tested up to: 5.8
+Stable tag: 3.32
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -15,6 +15,10 @@ Flexible sidebars for custom widget configurations on any page or post. Create c
 **Manage and replace sidebars and other widget areas on your site with Custom Sidebars, a flexible widget area manager.**
 
 Make custom sidebar configurations and be able to choose what widgets display on each page or post of your site.
+
+> Need to make a **widget sticky** or fixed? Try our free <a href="https://wordpress.org/plugins/sticky-menu-or-anything-on-scroll/">WP Sticky Anything</a> plugin.
+
+Custom Sidebars works ONLY with the classic widgets screen that was used in WordPress before version 5.8. If you want to use it with version 5.8 (and above) you have to install the official <a href="https://wordpress.org/plugins/classic-widgets/">Classic Widgets</a> plugin, or enable the classic widgets interface yourself. Once activated the plugin will work the same as before.
 
 = Display Different Sidebars on Pages and Posts =
 
@@ -97,6 +101,10 @@ Any user that can switch themes, can create sidebars. Switch_themes is the capab
 Custom Sidebars has the same license as WordPress, so you can use it wherever you want for free. Yay!
 
 == Changelog ==
+
+= 3.32 =
+* 2021-07-18
+* Added notice for WP 5.8
 
 = 3.31 =
 * 2021-01-30
