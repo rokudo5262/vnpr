@@ -3,13 +3,13 @@
  * Plugin Name:             GamiPress - WooCommerce Points Per Purchase Total
  * Plugin URI:              https://wordpress.org/plugins/gamipress-wc-points-per-purchase-total
  * Description:             Award points based on WooCommerce purchase's total.
- * Version:                 1.0.3
+ * Version:                 1.0.5
  * Author:                  GamiPress
  * Author URI:              https://gamipress.com/
  * Text Domain:             gamipress-wc-points-per-purchase-total
  * Domain Path:             /languages/
  * Requires at least:       4.4
- * Tested up to:            5.1
+ * Tested up to:            5.7
  * License:                 GNU AGPL v3.0 (http://www.gnu.org/licenses/agpl.txt)
  *
  * @package                 GamiPress\WooCommerce\Points_Per_Purchase_Total
@@ -57,7 +57,7 @@ final class GamiPress_WC_Points_Per_Purchase_Total {
     private function constants() {
 
         // Plugin version
-        define( 'GAMIPRESS_WC_POINTS_PER_PURCHASE_TOTAL_VER', '1.0.3' );
+        define( 'GAMIPRESS_WC_POINTS_PER_PURCHASE_TOTAL_VER', '1.0.5' );
 
         // Plugin file
         define( 'GAMIPRESS_WC_POINTS_PER_PURCHASE_TOTAL_FILE', __FILE__ );
