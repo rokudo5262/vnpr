@@ -22,8 +22,8 @@ if ( ! defined( 'MYCRED_RANK_WIDTH' ) )
 if ( ! defined( 'MYCRED_RANK_HEIGHT' ) )
 	define( 'MYCRED_RANK_HEIGHT', 250 );
 
-require_once myCRED_RANKS_DIR . 'includes/mycred-rank-functions.php';
 require_once myCRED_RANKS_DIR . 'includes/mycred-rank-object.php';
+require_once myCRED_RANKS_DIR . 'includes/mycred-rank-functions.php';
 require_once myCRED_RANKS_DIR . 'includes/mycred-rank-shortcodes.php';
 
 /**
@@ -44,24 +44,7 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 
 			parent::__construct( 'myCRED_Ranks_Module', array(
 				'module_name' => 'rank',
-				'defaults'    => array(
-					'manual'      => 0,
-					'public'      => 0,
-					'base'        => 'current',
-					'slug'        => MYCRED_RANK_KEY,
-					'bb_location' => 'top',
-					'bb_template' => 'Rank: %rank_title%',
-					'bp_location' => '',
-					'bb_template' => 'Rank: %rank_title%',
-					'order'       => 'ASC',
-					'support'     => array(
-						'content'         => 0,
-						'excerpt'         => 0,
-						'comments'        => 0,
-						'page-attributes' => 0,
-						'custom-fields'   => 0
-					)
-				),
+				'defaults'    => mycred_get_addon_defaults( 'rank' ),
 				'register'    => false,
 				'add_to_core' => false,
 				'menu_pos'    => 100
@@ -98,7 +81,7 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 		/**
 		 * Hook into Init
 		 * @since 1.4.4
-		 * @version 1.0.1
+		 * @version 1.0.2
 		 */
 		public function module_pre_init() {
 
@@ -107,6 +90,7 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 			add_filter( 'mycred_post_type_excludes', array( $this, 'exclude_ranks' ) );
 			add_filter( 'mycred_add_finished',       array( $this, 'balance_adjustment' ), 20, 3 );
 			add_action( 'mycred_zero_balances',      array( $this, 'zero_balance_action' ) );
+			add_action( 'mycred_finish_without_log_entry', array( $this, 'balance_adjustment_without_log' ) );
 
 		}
 
@@ -157,7 +141,7 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 		/**
 		 * Hook into Admin Init
 		 * @since 1.1
-		 * @version 1.2
+		 * @version 1.3
 		 */
 		public function module_admin_init() {
 
@@ -182,7 +166,7 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 			add_filter( 'manage_' . MYCRED_RANK_KEY . '_posts_columns',       array( $this, 'adjust_column_headers' ), 50 );
 			add_action( 'manage_' . MYCRED_RANK_KEY . '_posts_custom_column', array( $this, 'adjust_column_content' ), 10, 2 );
 			add_action( 'save_post_' . MYCRED_RANK_KEY,                       array( $this, 'save_rank' ), 10, 2 );
-
+			add_filter( 'views_edit-mycred_rank', array( $this, 'modify_ranks_views_links' ) );
 		}
 
 		/**
@@ -217,7 +201,7 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 		public function add_multiple_point_types_support() {
 
 			add_action( 'mycred_management_prefs', array( $this, 'rank_management' ) );
-			add_action( 'mycred_after_core_prefs', array( $this, 'after_general_settings' ) );
+			add_action( 'mycred_type_prefs', array( $this, 'after_general_settings' ) );
 			add_filter( 'mycred_save_core_prefs',  array( $this, 'sanitize_extra_settings' ), 90, 3 );
 
 			add_action( 'mycred_add_menu',         array( $this, 'add_menus' ), $this->menu_pos );
@@ -229,7 +213,7 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 
 					add_action( 'mycred_management_prefs' . $type_id, array( $this, 'rank_management' ), $priority );
 
-					add_action( 'mycred_after_core_prefs' . $type_id, array( $this, 'after_general_settings' ), $priority );
+					add_action( 'mycred_type_prefs' . $type_id, array( $this, 'after_general_settings' ), $priority );
 					add_filter( 'mycred_save_core_prefs' . $type_id,  array( $this, 'sanitize_extra_settings' ), $priority, 3 );
 
 					$priority += 10;
@@ -642,6 +626,26 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 
 		}
 
+        /**
+         * Manual Balance Adjustment
+         * Checks if User's rank should be change.
+         * @param $result
+         * @since 2.1
+         * @version 1.0
+         */
+        public function balance_adjustment_without_log( $result )
+        {
+            extract( $result );
+
+           if( mycred_rank_based_on_current( $type ) )
+           {
+               $rank = mycred_find_users_rank( $user_id, $type );
+
+               if ( isset( $rank->rank_id ) && $rank->rank_id !== $rank->current_id )
+                   mycred_save_users_rank( $user_id, $rank->rank_id, $type );
+           }
+        }
+
 		/**
 		 * User Related Template Tags
 		 * Adds support for ranks of custom point types.
@@ -895,7 +899,7 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 		/**
 		 * Insert Rank In bbPress Profile
 		 * @since 1.6
-		 * @version 1.0.1
+		 * @version 1.0.2
 		 */
 		public function insert_rank_bb_profile() {
 
@@ -903,7 +907,7 @@ if ( ! class_exists( 'myCRED_Ranks_Module' ) ) :
 			$user_id      = bbp_get_displayed_user_id();
 			$mycred_types = mycred_get_usable_types( $user_id );
 
-			foreach ( $mycred_types as $type_id => $label ) {
+			foreach ( $mycred_types as $key => $type_id ) {
 
 				// Load type
 				$mycred     = mycred( $type_id );
@@ -1977,6 +1981,45 @@ jQuery(function($){
 			$adjustments = mycred_assign_ranks( $point_type );
 			wp_send_json( array( 'status' => 'OK', 'rows' => $adjustments ) );
 
+		}
+
+		/**
+		 * Actives current view link
+		 * @since 2.2
+		 * @version 1.0
+		 */
+		public function active_current_view( $view )
+		{
+			$post_status = isset( $_GET['post_status'] ) ? $_GET['post_status'] : '';
+
+			if( $post_status == $view ) 
+				return 'class="current" aria-current="page"';
+		}
+		
+		/**
+		 * Assign Ranks
+		 * @since 2.2
+		 * @version 1.0
+		 */
+		public function modify_ranks_views_links( $view )
+		{
+			$post_status = isset( $_GET['post_status'] ) ? $_GET['post_status'] : '';
+			
+			$current = 'class="current" aria-current="page"';
+
+			$current_point_type = isset( $_GET['ctype'] ) ? $_GET['ctype'] : MYCRED_DEFAULT_TYPE_KEY;
+
+			$view['all'] = '<a href="edit.php?post_type=mycred_rank&ctype='.$current_point_type.'" '.$this->active_current_view( '' ).'>All</a>';
+
+			$view['publish'] = '<a href="edit.php?post_status=publish&#038;post_type=mycred_rank&ctype='.$current_point_type.'" '.$this->active_current_view( 'publish' ).'>Published</a>';
+
+			if( array_key_exists( 'trash', $view ) )
+				$view['trash'] = '<a href="edit.php?post_status=trash&amp;post_type=mycred_rank&ctype='.$current_point_type.'" '.$this->active_current_view( 'trash' ).'>Trash</a>';
+
+				if( array_key_exists( 'trash', $view ) )
+				$view['draft'] = '<a href="edit.php?post_status=draft&amp;post_type=mycred_rank&ctype='.$current_point_type.'" '.$this->active_current_view( 'draft' ).'>Drafts</a>';
+
+			return $view;
 		}
 
 	}
