@@ -4715,3 +4715,8 @@ form#bf_loginform {
         left: 18px !important;
     }
 }
+/* smaller text */
+.yz-media-filter .yz-filter-item .yz-filter-content span {
+    font-size: 10px !important;
+    font-weight: 500 !important;
+}
