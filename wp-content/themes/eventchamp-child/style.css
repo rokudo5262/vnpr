@@ -624,7 +624,7 @@ form#bf_loginform {
         float: right;
         right: -20px;
         top: -200px;
-	}	
+	}
 }
 /*end Carousel */
 
@@ -4719,4 +4719,10 @@ form#bf_loginform {
 .yz-media-filter .yz-filter-item .yz-filter-content span {
     font-size: 10px !important;
     font-weight: 500 !important;
+}
+
+@media only screen and (max-width:1060px) and (min-width:768px) {
+    .gt-heading .gt-title {
+        font-size:2rem !important;
+    }
 }
