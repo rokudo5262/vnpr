@@ -20,6 +20,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 		$args['show_option_none'] = esc_html__( 'Select a page', 'wp-job-openings' );
 	}
 
+	$prefix = '';
+	if ( ! got_url_rewrite() ) {
+		$prefix = '/index.php';
+	}
+	$show_permalink_setting = false;
+	$permalink_structure    = get_option( 'permalink_structure' );
+	$structures             = array(
+		0 => '',
+		1 => $prefix . '/%year%/%monthnum%/%day%/%postname%/',
+		2 => $prefix . '/%year%/%monthnum%/%postname%/',
+		3 => $prefix . '/' . _x( 'archives', 'sample permalink base', 'default' ) . '/%post_id%',
+		4 => $prefix . '/%postname%/',
+	);
+
+	if ( ! in_array( $permalink_structure, $structures, true ) ) {
+		$show_permalink_setting = true;
+	}
+
+	$timezone      = get_option( 'awsm_jobs_timezone' );
+	$selected_zone = 'UTC+0';
+	if ( is_array( $timezone ) && isset( $timezone['original_val'] ) ) {
+		$selected_zone = $timezone['original_val'];
+	}
+
 	/**
 	 * Filters the general settings fields.
 	 *
@@ -55,10 +79,28 @@ if ( ! defined( 'ABSPATH' ) ) {
 					'description' => __( 'Email for HR notifications', 'wp-job-openings' ),
 				),
 				array(
+					'name'  => 'awsm_jobs_timezone',
+					'label' => __( 'Timezone ', 'wp-job-openings' ),
+					'type'  => 'raw',
+					'value' => '<select name="awsm_jobs_timezone[original_val]" class="awsm-select-control regular-text">' . wp_timezone_choice( $selected_zone, get_user_locale() ) . '</select>',
+				),
+				array(
 					'name'        => 'awsm_permalink_slug',
 					'label'       => __( 'URL slug', 'wp-job-openings' ),
 					'required'    => true,
 					'description' => __( 'URL slug for job posts', 'wp-job-openings' ),
+				),
+				array(
+					'visible' => $show_permalink_setting,
+					'name'    => 'awsm_jobs_remove_permalink_front_base',
+					'label'   => __( 'Permalink Structure', 'wp-job-openings' ),
+					'type'    => 'checkbox',
+					'choices' => array(
+						array(
+							'value' => 'remove',
+							'text'  => __( 'Remove front base from custom permalink', 'wp-job-openings' ),
+						),
+					),
 				),
 				array(
 					'name'        => 'awsm_default_msg',

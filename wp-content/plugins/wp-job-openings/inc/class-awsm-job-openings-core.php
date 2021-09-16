@@ -75,6 +75,7 @@ class AWSM_Job_Openings_Core {
 		);
 
 		$has_archive            = get_option( 'awsm_jobs_disable_archive_page' ) !== 'disable' ? true : false;
+		$with_front             = get_option( 'awsm_jobs_remove_permalink_front_base' ) !== 'remove' ? true : false;
 		$supports               = array( 'title', 'editor', 'excerpt', 'author', 'custom-fields', 'publicize' );
 		$featured_image_support = get_option( 'awsm_jobs_enable_featured_image' );
 		if ( $featured_image_support === 'enable' ) {
@@ -100,7 +101,10 @@ class AWSM_Job_Openings_Core {
 				'show_ui'         => true,
 				'show_in_rest'    => true,
 				'show_in_menu'    => true,
-				'rewrite'         => array( 'slug' => get_option( 'awsm_permalink_slug', 'jobs' ) ),
+				'rewrite'         => array(
+					'slug'       => get_option( 'awsm_permalink_slug', 'jobs' ),
+					'with_front' => $with_front,
+				),
 				'capability_type' => 'job',
 				'menu_icon'       => esc_url( AWSM_JOBS_PLUGIN_URL . '/assets/img/nav-icon.svg' ),
 				'supports'        => $supports,
