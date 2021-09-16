@@ -111,18 +111,28 @@ jQuery(document).ready(function($) {
 		}
 	};
 
-	$applicationForm.validate({
-		errorElement: 'div',
-		errorClass: 'awsm-job-form-error',
-		errorPlacement: function(error, element) {
-			error.appendTo(element.parents('.awsm-job-form-group'));
-		}
-	});
+	var enableValidation = 'jquery_validation' in awsmJobsPublic.vendors && awsmJobsPublic.vendors.jquery_validation;
 
-	$applicationForm.submit(function(event) {
+	if (enableValidation) {
+		$applicationForm.each(function() {
+			var $form = $(this);
+			$form.validate({
+				errorElement: 'div',
+				errorClass: 'awsm-job-form-error',
+				errorPlacement: function(error, element) {
+					error.appendTo(element.parents('.awsm-job-form-group'));
+				}
+			});
+		});
+	}
+
+	$applicationForm.on('submit', function(event) {
 		event.preventDefault();
 		var $form = $(this);
-		var proceed = $form.valid();
+		var proceed = true;
+		if (enableValidation) {
+			proceed = $form.valid();
+		}
 		if (proceed) {
 			awsmJobs.submitApplication($form);
 		}
