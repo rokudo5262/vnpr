@@ -104,3 +104,42 @@ function gamipress_bp_user_has_access_to_achievement( $return = false, $user_id 
     return gamipress_bp_check_if_meets_requirements( $requirement_id, $trigger, $args );
 }
 add_filter( 'user_has_access_to_achievement', 'gamipress_bp_user_has_access_to_achievement', 10, 6 );
+
+/**
+ * Check if user is deserved to get awarded
+ *
+ * @since 1.0.0
+ *
+ * @param bool      $return
+ * @param int       $user_id
+ * @param string    $trigger
+ * @param int       $site_id
+ * @param array     $args
+ *
+ * @return bool
+ */
+function gamipress_bp_block_users_user_deserves_trigger( $return, $user_id, $trigger, $site_id, $args ) {
+
+    $blocked_member_types = gamipress_bp_get_option( 'blocked_member_types' );
+
+    if( ! function_exists( 'bp_get_member_type' ) ) {
+        return $return;
+    }
+
+    // Check if user member type has been manually blocked
+    if( is_array( $blocked_member_types ) ) {
+
+        $user_member_type = bp_get_member_type( $user_id );
+
+        foreach( $blocked_member_types as $blocked_member_type ) {
+            // Bail if user member type is blocked
+            if( $user_member_type === $blocked_member_type ) {
+                return false;
+            }
+        }
+
+    }
+
+    return $return;
+}
+add_filter( 'gamipress_user_deserves_trigger', 'gamipress_bp_block_users_user_deserves_trigger', 10, 5 );

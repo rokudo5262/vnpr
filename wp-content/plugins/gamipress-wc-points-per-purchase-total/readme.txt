@@ -2,8 +2,8 @@
 Contributors: gamipress, tsunoa, rubengc, eneribs
 Tags: woocommerce, order, gamipress, credits, badges, points, gamification, achievements, awards, rewards, credits, engagement, store, ecommerce, wc, product
 Requires at least: 4.4
-Tested up to: 5.6
-Stable tag: 1.0.3
+Tested up to: 5.8
+Stable tag: 1.0.5
 License: GNU AGPLv3
 License URI:  http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -56,6 +56,16 @@ There are more add-ons that improves your experience with GamiPress and WooComme
 After install this plugin a box titled "Points per purchase total" will appear on each points type letting you activate this feature per points type and configure the percent conversion for this points type.
 
 == Changelog ==
+
+= 1.0.5 =
+
+* **Improvements**
+* Improved the way to detect when a purchase gets completed to correctly award the points.
+
+= 1.0.4 =
+
+* **Improvements**
+* Updated deprecated WooCommerce functions.
 
 = 1.0.3 =
 

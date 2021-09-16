@@ -32,7 +32,8 @@ if ( ! class_exists( 'myCRED_cashCRED_Module' ) ) :
 				'screen_id'   => MYCRED_SLUG . '-cashcreds',
 				'accordion'   => true,
 				'add_to_core' => true,
-				'menu_pos'    => 90
+				'menu_pos'    => 80,
+				'main_menu'   => true
 			), $type );
 
 			$this->mycred_type = MYCRED_DEFAULT_TYPE_KEY;
@@ -138,7 +139,6 @@ if ( ! class_exists( 'myCRED_cashCRED_Module' ) ) :
 		}
 		
 		public function cashcred_pay_now( $post_id = false, $auto = false ) {
-			 
 			global $cashcred_instance;
 
 			$payment_response = array();
@@ -271,7 +271,7 @@ if ( ! class_exists( 'myCRED_cashCRED_Module' ) ) :
 			$cashcred_total 		= $amount + $cashcred_total;
 
 			update_user_meta( $user_id, 'cashcred_total', $cashcred_total );
-			update_post_meta( $post_id, 'status', 'Approved' );
+			mycred_cashcred_update_status( $post_id, 'status', 'Approved' );
 			 
 			$log_data = array(
 				'post_id' => $post_id ,
@@ -411,11 +411,13 @@ if ( ! class_exists( 'myCRED_cashCRED_Module' ) ) :
 				
 			}
 			
+			$user_id = get_current_user_id();
+			
 			$post_id = wp_insert_post( array(
 				'post_title'     => '',
 				'post_type'      => 'cashcred_withdrawal',
 				'post_status'    => 'publish',
-				'post_author'    =>  get_current_user_id(),
+				'post_author'    =>  $user_id,
 				'ping_status'    => 'closed',
 				'comment_status' => 'open'
 			) );
@@ -432,18 +434,24 @@ if ( ! class_exists( 'myCRED_cashCRED_Module' ) ) :
 				check_site_add_post_meta( $post_id, 'currency',     $currency, true );
 				check_site_add_post_meta( $post_id, 'from',         get_current_user_id(), true );
 				check_site_add_post_meta( $post_id, 'user_ip',      $_SERVER['REMOTE_ADDR'], true );
-				check_site_add_post_meta( $post_id, 'status',       'Pending', true );
 				check_site_add_post_meta( $post_id, 'manual',       'Manual', true );
 				
-				if( isset( $mycred_pref_cashcreds['gateway_prefs'][ $cashcred_pay_method ]["allow_auto_withdrawal"] ) &&  
+				if( isset( $mycred_pref_cashcreds['gateway_prefs'][ $cashcred_pay_method ]["allow_auto_withdrawal"] ) && 
 					$mycred_pref_cashcreds['gateway_prefs'][ $cashcred_pay_method ]["allow_auto_withdrawal"] == "yes" ) {
-				
+					
 					$cashcred_auto_payment = $this->cashcred_pay_now( $post_id, true );
-
+                    
+                    if(isset( $cashcred_auto_payment['status'] ) && ! $cashcred_auto_payment['status'] ) {
+                        mycred_cashcred_update_status( $post_id, 'status', 'Pending' );
+                    }
+					
 					$this->notification_message( $cashcred_auto_payment['message'], $requested_url );
 
 				}
-
+				else {
+					mycred_cashcred_update_status( $post_id, 'status', 'Pending' );
+				}
+					    
 				$this->notification_message( '', $requested_url );
 
 			}
@@ -649,7 +657,7 @@ if ( ! class_exists( 'myCRED_cashCRED_Module' ) ) :
 
 ?>
 <div class="wrap mycred-metabox" id="myCRED-wrap">
-	<h1><?php _e( 'cashCreds', 'mycred' ); ?></h1>
+	<h1><?php _e( 'cashCred Payment Gateways', 'mycred' ); ?></h1>
 <?php
 
 			// Updated settings

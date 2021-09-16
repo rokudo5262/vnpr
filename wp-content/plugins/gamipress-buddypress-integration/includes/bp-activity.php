@@ -243,7 +243,7 @@ function gamipress_bp_achievement_activity_details( $activity, $user_id, $post_i
     // Setup our entry content
     $content = '<div id="gamipress-achievement-' . $post_id . '" class="gamipress-achievement user-has-earned">';
     $content .= '<div class="gamipress-achievement-image"><a href="'. get_permalink( $post_id ) . '">' . gamipress_get_achievement_post_thumbnail( $post_id ) . '</a></div>';
-    $content .= '<div class="gamipress-achievement-description">' . wpautop( $post->post_excerpt ) . '</div>';
+    $content .= '<div class="gamipress-achievement-description">' . gamipress_bp_activity_get_post_excerpt( $post_id ) . '</div>';
     $content .= '</div>';
 
     // Bypass checking our activity items from moderation, as we know we are legit.
@@ -303,7 +303,7 @@ function gamipress_bp_step_activity_details( $activity, $user_id, $post_id, $tri
     // Setup our entry content
     $content = '<div id="gamipress-achievement-' . $achievement->ID . '" class="gamipress-achievement user-has-earned">';
     $content .= '<div class="gamipress-achievement-image"><a href="'. get_permalink( $achievement->ID ) . '">' . gamipress_get_achievement_post_thumbnail( $achievement->ID ) . '</a></div>';
-    $content .= '<div class="gamipress-achievement-description">' . wpautop( $achievement->post_excerpt ) . '</div>';
+    $content .= '<div class="gamipress-achievement-description">' . gamipress_bp_activity_get_post_excerpt( $achievement->ID ) . '</div>';
     $content .= '</div>';
 
     // Bypass checking our activity items from moderation, as we know we are legit.
@@ -361,7 +361,7 @@ function gamipress_bp_rank_activity_details( $activity, $user_id, $post_id, $tri
     // Setup our entry content
     $content = '<div id="gamipress-rank-' . $post_id . '" class="gamipress-rank user-has-earned">';
     $content .= '<div class="gamipress-rank-image"><a href="'. get_permalink( $post_id ) . '">' . gamipress_get_rank_post_thumbnail( $post_id ) . '</a></div>';
-    $content .= '<div class="gamipress-rank-description">' . wpautop( $post->post_excerpt ) . '</div>';
+    $content .= '<div class="gamipress-rank-description">' . gamipress_bp_activity_get_post_excerpt( $post_id ) . '</div>';
     $content .= '</div>';
 
     // Bypass checking our activity items from moderation, as we know we are legit.
@@ -421,7 +421,7 @@ function gamipress_bp_rank_requirement_activity_details( $activity, $user_id, $p
     // Setup our entry content
     $content = '<div id="gamipress-rank-' . $rank->ID . '" class="gamipress-rank user-has-earned">';
     $content .= '<div class="gamipress-rank-image"><a href="'. get_permalink( $rank->ID ) . '">' . gamipress_get_rank_post_thumbnail( $rank->ID ) . '</a></div>';
-    $content .= '<div class="gamipress-rank-description">' . wpautop( $rank->post_excerpt ) . '</div>';
+    $content .= '<div class="gamipress-rank-description">' . gamipress_bp_activity_get_post_excerpt( $rank->ID ) . '</div>';
     $content .= '</div>';
 
     // Bypass checking our activity items from moderation, as we know we are legit.
@@ -462,3 +462,20 @@ function gamipress_bp_activity_allowed_tags( $activity_allowed_tags ) {
 
 }
 add_filter( 'bp_activity_allowed_tags', 'gamipress_bp_activity_allowed_tags' );
+
+/**
+ * Helper function to get a post excerpt
+ *
+ * @since 1.0.1
+ *
+ * @param int $post_id
+ *
+ * @return string
+ */
+function gamipress_bp_activity_get_post_excerpt( $post_id ) {
+
+    $excerpt = has_excerpt( $post_id ) ? gamipress_get_post_field( 'post_excerpt', $post_id ) : gamipress_get_post_field( 'post_content', $post_id );
+
+    return wpautop( do_blocks( apply_filters( 'get_the_excerpt', $excerpt, get_post( $post_id ) ) ) );
+
+}

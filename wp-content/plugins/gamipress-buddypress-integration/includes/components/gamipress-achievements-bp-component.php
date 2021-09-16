@@ -55,13 +55,11 @@ if( ! class_exists( 'GamiPress_Achievements_BP_Component' ) ) {
             if ( ! is_user_logged_in() && ! bp_displayed_user_id() )
                 return;
 
-            $placement = gamipress_bp_get_option( 'achievements_placement', '' );
-
-            if( ! in_array( $placement, array( 'tab', 'both' ) ) ) {
+            if( ! (bool) gamipress_bp_get_option( 'achievements_tab', false ) ) {
                 return;
             }
 
-            $achievements_types_to_show = gamipress_bp_members_get_achievements_types();
+            $achievements_types_to_show = gamipress_bp_tab_get_achievements_types();
 
             if( empty( $achievements_types_to_show ) ) {
                 return;
@@ -93,7 +91,7 @@ if( ! class_exists( 'GamiPress_Achievements_BP_Component' ) ) {
                         'name'                => $tab_title,
                         'slug'                => $this->slug,
                         'position'            => 100,
-                        'screen_function'     => 'gamipress_bp_member_achievements',
+                        'screen_function'     => 'gamipress_bp_achievements_tab',
                         'default_subnav_slug' => $achievement_type_slug
                     );
 
@@ -105,7 +103,7 @@ if( ! class_exists( 'GamiPress_Achievements_BP_Component' ) ) {
                     'slug'            => $achievement_type_slug,
                     'parent_url'      => $parent_url,
                     'parent_slug'     => $this->slug,
-                    'screen_function' => 'gamipress_bp_member_achievements',
+                    'screen_function' => 'gamipress_bp_achievements_tab',
                     'position'        => 10,
                 );
 

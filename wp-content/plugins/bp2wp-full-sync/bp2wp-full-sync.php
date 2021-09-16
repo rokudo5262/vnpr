@@ -5,7 +5,7 @@ Plugin Name: BuddyPress to WordPress Full Sync
 Plugin URI: http://wordpress.org/plugins/bp2wp-full-sync/
 Description: BuddyPress to WordPress Full Sync lets BuddyPress users to synchronize various users fields with WordPress user fields and vice versa.
 Author: Envire Web Solutions
-Version: 0.3.6
+Version: 0.3.7
 Author URI: https://www.envire.it/
 Text Domain: bp2wp-full-sync
 Domain Path: /languages/
@@ -28,7 +28,7 @@ class BP2WP_Full_Sync_Loader {
 	 * @since 0.1
 	 * @var string
 	 */
-	const VERSION = '0.3.5';
+	const VERSION = '0.3.7';
 	
 	/**
 	 * List of WordPress User Fields that can be synchronized with BuddyPress.

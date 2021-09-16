@@ -1,4 +1,11 @@
 <?php
+/*
+ * PublishPress Capabilities [Free]
+ * 
+ * Process update operations from the Capabilities screen
+ * 
+ */
+
 class CapsmanHandler
 {
 	var $cm;
@@ -26,7 +33,7 @@ class CapsmanHandler
 		if ( ! empty($post['CreateRole']) ) {
 			if ( $newrole = $this->createRole($post['create-name']) ) {
 				ak_admin_notify(__('New role created.', 'capsman-enhanced'));
-				$this->cm->current = $newrole;
+				$this->cm->set_current_role($newrole);
 			} else {
 				if ( empty($post['create-name']) && in_array(get_locale(), ['en_EN', 'en_US']) )
 					ak_admin_error( 'Error: No role name specified.', 'capsman-enhanced' );
@@ -45,14 +52,14 @@ class CapsmanHandler
 				update_option($wp_roles->role_key, $wp_roles->roles);
 
 				ak_admin_notify(sprintf(__('Role "%s" (id %s) renamed to "%s"', 'capsman-enhanced'), $old_title, strtolower($current->name), $new_title));
-				$this->cm->current = $current->name;
+				$this->cm->set_current_role($current->name);
 			}
 		// Copy current role to a new one.
 		} elseif ( ! empty($post['CopyRole']) ) {
 			$current = get_role($post['current']);
 			if ( $newrole = $this->createRole($post['copy-name'], $current->capabilities) ) {
 				ak_admin_notify(__('New role created.', 'capsman-enhanced'));
-				$this->cm->current = $newrole;
+				$this->cm->set_current_role($newrole);
 			} else {
 				if ( empty($post['copy-name']) && in_array(get_locale(), ['en_EN', 'en_US']) )
 					ak_admin_error( 'Error: No role name specified.', 'capsman-enhanced' );
@@ -295,49 +302,80 @@ class CapsmanHandler
 				update_site_option( 'cme_autocreate_roles', $autocreate_roles );
 			}
 			
-			if ( ! empty($_REQUEST['cme_net_sync_role']) ) {
+			$do_role_sync = !empty($_REQUEST['cme_net_sync_role']);
+			$do_option_sync = !empty($_REQUEST['cme_net_sync_options']);
+
+			if ($do_role_sync || $do_option_sync) {
 				// loop through all sites on network, creating or updating role def
 		
 				global $wpdb, $wp_roles, $blog_id;
 				$blog_ids = $wpdb->get_col( "SELECT blog_id FROM $wpdb->blogs ORDER BY blog_id" );
 				$orig_blog_id = $blog_id;	
 		
-				$role_caption = $wp_roles->role_names[$role_name];
-				
-				$new_caps = ( is_array($caps) ) ? array_map('boolval', $caps) : array();
-				$new_caps = array_merge($new_caps, ak_level2caps($level) );
-				
-				$admin_role = $wp_roles->get_role('administrator');
-				$main_admin_caps = array_merge( $admin_role->capabilities, ak_level2caps(10) );
+				if ($do_role_sync) {
+					$role_caption = $wp_roles->role_names[$role_name];
+					
+					$new_caps = ( is_array($caps) ) ? array_map('boolval', $caps) : array();
+					$new_caps = array_merge($new_caps, ak_level2caps($level) );
+					
+					$admin_role = $wp_roles->get_role('administrator');
+					$main_admin_caps = array_merge( $admin_role->capabilities, ak_level2caps(10) );
+				}
+
+				$sync_options = [];
+
+				if ($do_option_sync) {
+					// capability-related options
+					$pp_prefix = (defined('PPC_VERSION') && !defined('PRESSPERMIT_VERSION')) ? 'pp' : 'presspermit';
+
+					foreach(['define_create_posts_cap', 'enabled_post_types', 'enabled_taxonomies'] as $option_name) {
+						$sync_options["{$pp_prefix}_$option_name"] = get_option("{$pp_prefix}_$option_name");
+					}
+
+					$sync_options['cme_detailed_taxonomies'] = get_option('cme_detailed_taxonomies');
+					$sync_options['cme_enabled_post_types'] = get_option('cme_enabled_post_types');
+					$sync_options['presspermit_supplemental_role_defs'] = get_option('presspermit_supplemental_role_defs');
+				}
 
 				foreach ( $blog_ids as $id ) {				
-					if ( 1 == $id )
+					if ( is_main_site($id) )
 						continue;
 					
 					switch_to_blog( $id );
-					( method_exists( $wp_roles, 'for_site' ) ) ? $wp_roles->for_site() : $wp_roles->reinit();
-					
-					if ( $blog_role = $wp_roles->get_role( $role_name ) ) {
-						$stored_role_caps = ( ! empty($blog_role->capabilities) && is_array($blog_role->capabilities) ) ? array_intersect( $blog_role->capabilities, array(true, 1) ) : array();
-						
-						$old_caps = array_intersect_key( $stored_role_caps, $this->cm->capabilities);
 
-						// Find caps to add and remove
-						$add_caps = array_diff_key($new_caps, $old_caps);
-						$del_caps = array_intersect_key( array_diff_key($old_caps, $new_caps), $main_admin_caps );	// don't mess with caps that are totally unused on main site
+					if ($do_role_sync) {
+						( method_exists( $wp_roles, 'for_site' ) ) ? $wp_roles->for_site() : $wp_roles->reinit();
 						
-						// Add new capabilities to role
-						foreach ( $add_caps as $cap => $grant ) {
-							$blog_role->add_cap( $cap, $grant );
-						}
+						if ( $blog_role = $wp_roles->get_role( $role_name ) ) {
+							$stored_role_caps = ( ! empty($blog_role->capabilities) && is_array($blog_role->capabilities) ) ? array_intersect( $blog_role->capabilities, array(true, 1) ) : array();
+							
+							$old_caps = array_intersect_key( $stored_role_caps, $this->cm->capabilities);
 
-						// Remove capabilities from role
-						foreach ( $del_caps as $cap => $grant) {
-							$blog_role->remove_cap($cap);
+							// Find caps to add and remove
+							$add_caps = array_diff_key($new_caps, $old_caps);
+							$del_caps = array_intersect_key( array_diff_key($old_caps, $new_caps), $main_admin_caps );	// don't mess with caps that are totally unused on main site
+							
+							// Add new capabilities to role
+							foreach ( $add_caps as $cap => $grant ) {
+								$wp_roles->roles[$role_name]['capabilities'][$cap] = $grant;
+
+							}
+
+							// Remove capabilities from role
+							foreach ( $del_caps as $cap => $grant) {
+								unset($wp_roles->roles[$role_name]['capabilities'][$cap]);
+							}
+
+							if ($wp_roles->use_db) {
+								update_option($wp_roles->role_key, $wp_roles->roles);
+							}
+						} else {
+							$wp_roles->add_role( $role_name, $role_caption, $new_caps );
 						}
-						
-					} else {
-						$wp_roles->add_role( $role_name, $role_caption, $new_caps );
+					}
+
+					foreach($sync_options as $option_name => $option_val) {
+						update_option($option_name, $option_val);
 					}
 					
 					restore_current_blog();

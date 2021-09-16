@@ -19,7 +19,8 @@ $earned = gamipress_has_user_earned_achievement( get_the_ID(), $user_id );
 $classes = array(
     'gamipress-achievement',
     ( $earned ? 'user-has-earned' : 'user-has-not-earned' ),
-    'gamipress-layout-' . $a['layout']
+    'gamipress-layout-' . $a['layout'],
+    'gamipress-align-' . $a['align']
 );
 
 /**
@@ -127,7 +128,7 @@ $classes = apply_filters( 'gamipress_achievement_classes', $classes, get_the_ID(
             <div class="gamipress-achievement-excerpt">
                 <?php
                 $excerpt = has_excerpt() ? gamipress_get_post_field( 'post_excerpt', get_the_ID() ) : gamipress_get_post_field( 'post_content', get_the_ID() );
-                echo wpautop( do_blocks( apply_filters( 'get_the_excerpt', $excerpt ) ) );
+                echo wpautop( do_blocks( apply_filters( 'get_the_excerpt', $excerpt, get_post() ) ) );
                 ?>
             </div><!-- .gamipress-achievement-excerpt -->
 
@@ -158,6 +159,24 @@ $classes = apply_filters( 'gamipress_achievement_classes', $classes, get_the_ID(
              * @param array   $template_args    Template received arguments
              */
             do_action( 'gamipress_after_achievement_times_earned', get_the_ID(), $a ); ?>
+
+        <?php endif; ?>
+
+        <?php // Global Times Earned
+        if( $a['global_times_earned'] === 'yes' ) : ?>
+
+            <?php echo gamipress_achievement_global_times_earned_markup( get_the_ID(), $a ); ?>
+
+            <?php
+            /**
+             * After achievement times earned by all users
+             *
+             * @since 2.0.0
+             *
+             * @param integer $achievement_id   The Achievement ID
+             * @param array   $template_args    Template received arguments
+             */
+            do_action( 'gamipress_after_achievement_global_times_earned', get_the_ID(), $a ); ?>
 
         <?php endif; ?>
 

@@ -122,7 +122,7 @@ class BuddyForms_Members_Extention extends BP_Component {
 						$profile_visibility = bp_is_my_profile();
 						if ( isset( $member_form['profile_visibility'] ) ) {
 							if ( $member_form['profile_visibility'] == 'private' && ! bp_is_my_profile() ) {
-								return;
+								continue;
 							}
 							if ( $member_form['profile_visibility'] == 'any' ) {
 								$profile_visibility = true;
@@ -131,7 +131,7 @@ class BuddyForms_Members_Extention extends BP_Component {
 								if ( is_user_logged_in() ) {
 									$profile_visibility = true;
 								} else {
-									return;
+									continue;
 								}
 							}
 						}
@@ -237,6 +237,10 @@ class BuddyForms_Members_Extention extends BP_Component {
 					}
 
 					$buddyforms_members_parent_setup_nav  = apply_filters( 'buddyforms_members_parent_setup_nav', true, $key  );
+
+					if ( apply_filters( 'buddyforms_members_skip_setup_nav', false, $main_nav, $sub_nav, $member_form ) ) {
+						continue;
+					}
 
 					if($buddyforms_members_parent_setup_nav){
 						parent::setup_nav( $main_nav, $sub_nav );
