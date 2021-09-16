@@ -19,9 +19,9 @@ require_once(NSL_PATH . '/compat.php');
 
 class NextendSocialLogin {
 
-    public static $version = '3.1.0';
+    public static $version = '3.1.1';
 
-    public static $nslPROMinVersion = '3.1.0';
+    public static $nslPROMinVersion = '3.1.1';
 
     public static $proxyPage = false;
 
@@ -216,13 +216,12 @@ class NextendSocialLogin {
 
             'userpro_show_login_form'            => 'show',
             'userpro_show_register_form'         => 'show',
-            'userpro_form_button_align'          => 'left',
             'userpro_login_form_button_style'    => 'default',
-            'userpro_register_form_button_style' => 'default',
             'userpro_login_form_layout'          => 'below',
+            'userpro_register_form_button_style' => 'default',
             'userpro_register_form_layout'       => 'below',
+            'userpro_form_button_align'          => 'left',
 
-            'ultimatemember_form_button_align'          => 'left',
             'ultimatemember_login'                      => 'after',
             'ultimatemember_login_form_button_style'    => 'default',
             'ultimatemember_login_form_layout'          => 'below-separator',
@@ -230,6 +229,15 @@ class NextendSocialLogin {
             'ultimatemember_register_form_button_style' => 'default',
             'ultimatemember_register_form_layout'       => 'below-separator',
             'ultimatemember_account_details'            => 'after',
+            'ultimatemember_form_button_align'          => 'left',
+
+            'edd_login'                      => 'after',
+            'edd_login_form_button_style'    => 'default',
+            'edd_login_form_layout'          => 'default',
+            'edd_register'                   => 'after',
+            'edd_register_form_button_style' => 'default',
+            'edd_register_form_layout'       => 'default',
+            'edd_form_button_align'          => 'left',
 
             'admin_bar_roles' => array(),
         ));
