@@ -1,23 +1,22 @@
 <?php
 /**
+ * Plugin Name: WP Job Openings
+ * Plugin URI: https://wpjobopenings.com/
+ * Description: Super simple Job Listing plugin to manage Job Openings and Applicants on your WordPress site.
+ * Author: AWSM Innovations
+ * Author URI: https://awsm.in/
+ * Version: 2.3.0
+ * License: GPLv2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * Text domain: wp-job-openings
+ * Domain Path: /languages
+ */
+/**
  * WP Job Openings Plugin
  *
  * Super simple Job Listing plugin to manage Job Openings and Applicants on your WordPress site.
  *
  * @package wp-job-openings
- */
-
-/**
- * Plugin Name: WP Job Openings
- * Plugin URI: https://wordpress.org/plugins/wp-job-openings/
- * Description: Super simple Job Listing plugin to manage Job Openings and Applicants on your WordPress site.
- * Author: AWSM Innovations
- * Author URI: https://awsm.in/
- * Version: 2.1.0
- * License: GPLv2
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text domain: wp-job-openings
- * Domain Path: /languages
  */
 
 // Exit if accessed directly
@@ -36,7 +35,7 @@ if ( ! defined( 'AWSM_JOBS_PLUGIN_URL' ) ) {
 	define( 'AWSM_JOBS_PLUGIN_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
 }
 if ( ! defined( 'AWSM_JOBS_PLUGIN_VERSION' ) ) {
-	define( 'AWSM_JOBS_PLUGIN_VERSION', '2.1.0' );
+	define( 'AWSM_JOBS_PLUGIN_VERSION', '2.3.0' );
 }
 if ( ! defined( 'AWSM_JOBS_UPLOAD_DIR_NAME' ) ) {
 	define( 'AWSM_JOBS_UPLOAD_DIR_NAME', 'awsm-job-openings' );
@@ -51,11 +50,14 @@ class AWSM_Job_Openings {
 	private static $rating_notice_active = false;
 
 	public function __construct() {
-		// Require Classes
+		// Require Classes.
 		self::load_classes();
-		// Initialize Classes
+
+		// Initialize Classes.
 		$this->awsm_core = AWSM_Job_Openings_Core::init();
+		AWSM_Job_Openings_UI_Builder::init();
 		$this->awsm_form = AWSM_Job_Openings_Form::init();
+		AWSM_Job_Openings_Mail_Customizer::init();
 		AWSM_Job_Openings_Filters::init();
 		if ( is_admin() ) {
 			AWSM_Job_Openings_Meta::init();
@@ -97,7 +99,7 @@ class AWSM_Job_Openings {
 
 	public static function load_classes() {
 		$prefix  = 'class-awsm-job-openings';
-		$classes = array( 'core', 'filters', 'form' );
+		$classes = array( 'core', 'ui-builder', 'filters', 'mail-customizer', 'form' );
 		foreach ( $classes as $class ) {
 			require_once AWSM_JOBS_PLUGIN_DIR . "/inc/{$prefix}-{$class}.php";
 		}
@@ -494,7 +496,18 @@ class AWSM_Job_Openings {
 	}
 
 	public function check_date_and_change_status() {
-		$args  = array(
+		$current_date  = gmdate( 'Y-m-d' );
+		$selected_zone = get_option( 'awsm_jobs_timezone' );
+		if ( is_array( $selected_zone ) && isset( $selected_zone['gmt_offset'] ) && isset( $selected_zone['timezone_string'] ) ) {
+			$timezone = self::get_timezone_string( $selected_zone );
+			if ( $timezone !== 'UTC' ) {
+				$date_timezone = new DateTimeZone( $timezone );
+				$datetime      = new DateTime( 'now', $date_timezone );
+				$current_date  = $datetime->format( 'Y-m-d' );
+			}
+		}
+
+		$args = array(
 			'post_type'      => 'awsm_job_openings',
 			'post_status'    => array( 'publish', 'private' ),
 			'posts_per_page' => -1,
@@ -505,30 +518,52 @@ class AWSM_Job_Openings {
 				),
 				array(
 					'key'     => 'awsm_job_expiry',
-					'value'   => gmdate( 'Y-m-d' ),
+					'value'   => $current_date,
 					'type'    => 'DATE',
 					'compare' => '<',
 				),
 			),
 		);
+		/**
+		 * Filters the arguments for the jobs query for automatic expiration.
+		 *
+		 * @since 2.3.0
+		 *
+		 * @param array $args arguments.
+		 */
+		$args = apply_filters( 'awsm_check_for_expired_jobs_query_args', $args );
+
 		$query = new WP_Query( $args );
 		if ( $query->have_posts() ) {
 			while ( $query->have_posts() ) {
 				$query->the_post();
 				// still doing some usual checking even if meta query is used!
-				$expiry_on_list  = get_post_meta( get_the_ID(), 'awsm_set_exp_list', true );
-				$expiration_date = get_post_meta( get_the_ID(), 'awsm_job_expiry', true );
-				if ( $expiry_on_list === 'set_listing' && ! empty( $expiration_date ) ) {
-					$expiration_date_time = strtotime( $expiration_date );
-					if ( $expiration_date_time < ( time() - ( 24 * 60 * 60 ) ) ) {
-						$jobs                = array();
-						$jobs['ID']          = get_the_ID();
-						$jobs['post_status'] = 'expired';
-						wp_update_post( $jobs );
-					}
+				$expiry_on_list = get_post_meta( get_the_ID(), 'awsm_set_exp_list', true );
+				if ( $expiry_on_list === 'set_listing' ) {
+					$jobs                = array();
+					$jobs['ID']          = get_the_ID();
+					$jobs['post_status'] = 'expired';
+					wp_update_post( $jobs );
 				}
 			}
 		}
+	}
+
+	public static function get_timezone_string( $selected_zone ) {
+		$timezone_string = 'UTC';
+		if ( ! empty( $selected_zone['timezone_string'] ) ) {
+			$timezone_string = $selected_zone['timezone_string'];
+		} elseif ( ! empty( $selected_zone['gmt_offset'] ) && $selected_zone['gmt_offset'] !== 0 ) {
+			$offset          = (float) $selected_zone['gmt_offset'];
+			$hours           = (int) $offset;
+			$minutes         = ( $offset - $hours );
+			$sign            = ( $offset < 0 ) ? '-' : '+';
+			$abs_hour        = abs( $hours );
+			$abs_mins        = abs( $minutes * 60 );
+			$timezone_string = sprintf( '%s%02d:%02d', $sign, $abs_hour, $abs_mins );
+		}
+
+		return $timezone_string;
 	}
 
 	public function send_email_digest() {
@@ -765,13 +800,8 @@ class AWSM_Job_Openings {
 	}
 
 	public function plugin_rating_notice_handler() {
-		$rating_url = 'https://wordpress.org/support/plugin/wp-job-openings/reviews/?filter=5';
-		$rating_env = 'WordPress';
-		if ( class_exists( 'AWSM_Job_Openings_Pro_Pack' ) ) {
-			$rating_env = 'CodeCanyon';
-			$rating_url = 'https://codecanyon.net/item/wp-job-openings-pro/reviews/23889418';
-		}
-		$rating_url = apply_filters( 'awsm_jobs_plugin_rating_url', $rating_url );
+		$rating_env = apply_filters( 'awsm_jobs_plugin_rating_env', 'WordPress' );
+		$rating_url = apply_filters( 'awsm_jobs_plugin_rating_url', 'https://wordpress.org/support/plugin/wp-job-openings/reviews/?filter=5' );
 
 		$rated = intval( get_option( 'awsm_jobs_plugin_rating' ) );
 		if ( $rated !== 1 ) {
@@ -871,41 +901,66 @@ class AWSM_Job_Openings {
 
 		$enable_search = get_option( 'awsm_enable_job_search' ) === 'enable' && isset( $_GET['jq'] );
 		global $post;
-		wp_localize_script(
-			'awsm-job-scripts',
-			'awsmJobsPublic',
-			array(
-				'ajaxurl'            => admin_url( 'admin-ajax.php' ),
-				'is_tax_archive'     => is_tax(),
-				'is_search'          => $enable_search ? sanitize_text_field( $_GET['jq'] ) : '',
-				'job_id'             => is_singular( 'awsm_job_openings' ) ? $post->ID : 0,
-				'wp_max_upload_size' => ( wp_max_upload_size() ) ? ( wp_max_upload_size() ) : 0,
-				'i18n'               => array(
-					'loading_text'   => esc_html__( 'Loading...', 'wp-job-openings' ),
-					'form_error_msg' => array(
-						'general'         => esc_html__( 'Error in submitting your application. Please try again later!', 'wp-job-openings' ),
-						'file_validation' => esc_html__( 'The file you have selected is too large.', 'wp-job-openings' ),
-					),
+
+		$localized_script_data = array(
+			'ajaxurl'            => admin_url( 'admin-ajax.php' ),
+			'is_tax_archive'     => is_tax(),
+			'is_search'          => $enable_search ? sanitize_text_field( $_GET['jq'] ) : '',
+			'job_id'             => is_singular( 'awsm_job_openings' ) ? $post->ID : 0,
+			'wp_max_upload_size' => ( wp_max_upload_size() ) ? ( wp_max_upload_size() ) : 0,
+			'deep_linking'       => array(
+				'search' => true,
+				'spec'   => true,
+			),
+			'i18n'               => array(
+				'loading_text'   => esc_html__( 'Loading...', 'wp-job-openings' ),
+				'form_error_msg' => array(
+					'general'         => esc_html__( 'Error in submitting your application. Please try again later!', 'wp-job-openings' ),
+					'file_validation' => esc_html__( 'The file you have selected is too large.', 'wp-job-openings' ),
 				),
-			)
+			),
+			'vendors'            => array(
+				'selectric'         => true,
+				'jquery_validation' => true,
+			),
 		);
+		/**
+		 * Filters the public script localized data.
+		 *
+		 * @since 2.3.0
+		 *
+		 * @param array $localized_script_data Localized data array.
+		 */
+		$localized_script_data = apply_filters( 'awsm_jobs_localized_script_data', $localized_script_data );
+		wp_localize_script( 'awsm-job-scripts', 'awsmJobsPublic', $localized_script_data );
 	}
 
 	public function awsm_admin_enqueue_scripts() {
-		$screen = get_current_screen();
-		wp_register_style( 'awsm-job-admin-global', AWSM_JOBS_PLUGIN_URL . '/assets/css/admin-global.min.css', array(), AWSM_JOBS_PLUGIN_VERSION, 'all' );
-		wp_register_style( 'awsm-job-admin', AWSM_JOBS_PLUGIN_URL . '/assets/css/admin.min.css', array( 'awsm-jobs-general', 'awsm-job-admin-global' ), AWSM_JOBS_PLUGIN_VERSION, 'all' );
-
-		wp_register_script( 'awsm-job-admin', AWSM_JOBS_PLUGIN_URL . '/assets/js/admin.min.js', array( 'jquery', 'jquery-ui-datepicker', 'jquery-ui-sortable', 'wp-util' ), AWSM_JOBS_PLUGIN_VERSION, true );
-
-		wp_enqueue_style( 'awsm-job-admin-global' );
+		$is_job_page = false;
+		$screen      = get_current_screen();
+		$script_deps = array( 'jquery', 'jquery-ui-datepicker', 'jquery-ui-sortable', 'wp-color-picker', 'wp-util' );
 		if ( ! empty( $screen ) ) {
 			$post_type = $screen->post_type;
 			if ( ( $post_type === 'awsm_job_openings' ) || ( $post_type === 'awsm_job_application' ) ) {
-				wp_enqueue_style( 'awsm-jobs-general' );
-				wp_enqueue_style( 'awsm-job-admin' );
-				wp_enqueue_script( 'awsm-job-admin' );
+				$is_job_page = true;
+
+				if ( $screen->id === 'awsm_job_openings_page_awsm-jobs-settings' ) {
+					wp_enqueue_media();
+					$script_deps[] = 'media-models';
+				}
 			}
+		}
+
+		wp_register_style( 'awsm-job-admin-global', AWSM_JOBS_PLUGIN_URL . '/assets/css/admin-global.min.css', array(), AWSM_JOBS_PLUGIN_VERSION, 'all' );
+		wp_register_style( 'awsm-job-admin', AWSM_JOBS_PLUGIN_URL . '/assets/css/admin.min.css', array( 'wp-color-picker', 'awsm-jobs-general', 'awsm-job-admin-global' ), AWSM_JOBS_PLUGIN_VERSION, 'all' );
+
+		wp_register_script( 'awsm-job-admin', AWSM_JOBS_PLUGIN_URL . '/assets/js/admin.min.js', $script_deps, AWSM_JOBS_PLUGIN_VERSION, true );
+
+		wp_enqueue_style( 'awsm-job-admin-global' );
+		if ( $is_job_page ) {
+			wp_enqueue_style( 'awsm-jobs-general' );
+			wp_enqueue_style( 'awsm-job-admin' );
+			wp_enqueue_script( 'awsm-job-admin' );
 		}
 
 		wp_localize_script(
@@ -917,6 +972,13 @@ class AWSM_Job_Openings {
 				'nonce'      => wp_create_nonce( 'awsm-admin-nonce' ),
 				'i18n'       => array(
 					'select2_no_page' => esc_html__( 'Select a page', 'wp-job-openings' ),
+					'image_upload'    => array(
+						'select'   => esc_html__( 'Select Image', 'wp-job-openings' ),
+						'change'   => esc_html__( 'Change Image', 'wp-job-openings' ),
+						'no_image' => esc_html__( 'No Image selected', 'wp-job-openings' ),
+						'title'    => esc_html__( 'Select or Upload an Image', 'wp-job-openings' ),
+						'btn_text' => esc_html__( 'Choose', 'wp-job-openings' ),
+					),
 				),
 			)
 		);
@@ -935,7 +997,16 @@ class AWSM_Job_Openings {
 		} else {
 			$path = AWSM_JOBS_PLUGIN_DIR . '/inc/templates' . $rel_path;
 		}
-		return $path;
+		/**
+		 * Filters the template path.
+		 *
+		 * @since 2.3.0
+		 *
+		 * @param string $path Template path.
+		 * @param string $template_name Template name.
+		 * @param string $sub_dir_name Subdirectory name.
+		 */
+		return apply_filters( 'awsm_jobs_template_path', $path, $template_name, $sub_dir_name );
 	}
 
 	public function body_classes( $classes ) {
@@ -1024,6 +1095,15 @@ class AWSM_Job_Openings {
 							'query_var'    => true,
 							'rewrite'      => array( 'slug' => $taxonomy ),
 						);
+						/**
+						 * Filters the arguments for registering the job specification or taxonomy.
+						 *
+						 * @since 2.2.0
+						 *
+						 * @param array $args arguments.
+						 * @param string $taxonomy The taxonomy key.
+						 */
+						$args = apply_filters( 'awsm_jobs_tax_args', $args, $taxonomy );
 						register_taxonomy( $taxonomy, array( 'awsm_job_openings' ), $args );
 					}
 					if ( isset( $awsm_filter['tags'] ) ) {
@@ -1094,7 +1174,7 @@ class AWSM_Job_Openings {
 								} else {
 									$term = $this->sanitize_term( $spec_term );
 									if ( strlen( $term ) > 0 ) {
-										if ( strpos( $spec_term, 'awsm-term-id-' ) !== false ) {
+										if ( is_string( $spec_term ) && strpos( $spec_term, 'awsm-term-id-' ) !== false ) {
 											$term = str_replace( 'awsm-term-id-', '', $spec_term );
 										}
 										$terms[] = $term;
@@ -1251,7 +1331,7 @@ class AWSM_Job_Openings {
 				if ( ! empty( $term_id ) ) {
 					$spec                = array(
 						'taxonomy' => $taxonomy,
-						'field'    => 'id',
+						'field'    => 'term_id',
 						'terms'    => $term_id,
 					);
 					$args['tax_query'][] = $spec;
@@ -1419,7 +1499,18 @@ class AWSM_Job_Openings {
 								$spec_terms .= sprintf( '<a href="%2$s" class="awsm-job-specification-term">%1$s</a> ', esc_html( $term->name ), esc_url( $term_link ) );
 							}
 						}
-						$spec_content .= sprintf( '<div class="awsm-job-specification-item awsm-job-specification-%2$s">%1$s</div>', $spec_icon . $spec_label . $spec_terms, esc_attr( $taxonomy ) );
+						$spec_item_content = sprintf( '<div class="awsm-job-specification-item awsm-job-specification-%2$s">%1$s</div>', $spec_icon . $spec_label . $spec_terms, esc_attr( $taxonomy ) );
+						/**
+						 * Filters the job specification item content.
+						 *
+						 * @since 2.3.0
+						 *
+						 * @param string $spec_item_content The HTML content.
+						 * @param int $post_id The Post ID.
+						 * @param string $taxonomy Taxonomy name.
+						 */
+						$spec_item_content = apply_filters( 'awsm_job_spec_item_content', $spec_item_content, $post_id, $taxonomy );
+						$spec_content     .= $spec_item_content;
 					}
 				}
 			}
@@ -1427,7 +1518,17 @@ class AWSM_Job_Openings {
 		if ( ! empty( $spec_content ) ) {
 			$spec_content = sprintf( '<div class="awsm-job-specification-wrapper">%1$s</div>', $spec_content );
 		}
-		return apply_filters( 'awsm_specification_content', $spec_content, $post_id );
+
+		$spec_content = apply_filters_deprecated( 'awsm_specification_content', array( $spec_content, $post_id ), '2.3.0', 'awsm_job_specs_content' );
+		/**
+		 * Filters the job specifications content.
+		 *
+		 * @since 2.3.0
+		 *
+		 * @param string $spec_content The HTML content.
+		 * @param int $post_id The Post ID.
+		 */
+		return apply_filters( 'awsm_job_specs_content', $spec_content, $post_id );
 	}
 
 	public static function display_specifications_content( $post_id, $pos, $echo = true ) {

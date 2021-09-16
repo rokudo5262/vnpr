@@ -93,6 +93,7 @@ function gamipress_get_requirement_object( $requirement_id = 0 ) {
         'limit_type'                => gamipress_get_post_meta( $requirement_id, '_gamipress_limit_type' ),
         'trigger_type'              => gamipress_get_post_meta( $requirement_id, '_gamipress_trigger_type' ),
         // Points vars
+        'points_condition'          => gamipress_get_post_meta( $requirement_id, '_gamipress_points_condition' ),
         'points_required'           => absint( gamipress_get_post_meta( $requirement_id, '_gamipress_points_required' ) ),
         'points_type_required'      => gamipress_get_post_meta( $requirement_id, '_gamipress_points_type_required' ),
         // Rank vars
@@ -107,6 +108,11 @@ function gamipress_get_requirement_object( $requirement_id = 0 ) {
         'achievement_post'          => absint( gamipress_get_post_meta( $requirement_id, '_gamipress_achievement_post' ) ),
         'achievement_post_site_id'  => get_current_blog_id(),
     );
+
+    // Initialize points condition for backward compatibility
+    if( empty( $requirement['points_condition'] ) ) {
+        $requirement['points_condition'] = 'greater_or_equal';
+    }
 
     // Specific points award/deduct data
     if( $requirement_type === 'points-award' || $requirement_type === 'points-deduct' ) {
@@ -316,13 +322,13 @@ function gamipress_can_user_earn_requirement( $requirement_id = 0, $user_id = 0 
             if( $since > 0 ) {
 
                 // Activity count limit over time
-                $limit = absint( gamipress_get_post_meta( $requirement_id, '_gamipress_limit' ) );
+                $count = absint( gamipress_get_post_meta( $requirement_id, '_gamipress_count' ) );
 
                 // Activity count limited to a timestamp
-                $activity_count = absint( gamipress_get_achievement_activity_count( $user_id, $requirement_id, $since ) );
+                $activity_count = absint( gamipress_get_achievement_activity_count_limited( $user_id, $requirement_id, $since ) );
 
                 // Force bail if user exceeds the limit over time
-                if( $activity_count >= $limit ) {
+                if( $activity_count >= $count ) {
                     $can_earn = false;
                 }
 

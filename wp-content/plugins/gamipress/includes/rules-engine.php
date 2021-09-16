@@ -457,6 +457,13 @@ function gamipress_user_meets_post_type_requirement( $return = false, $user_id =
         return $return;
     }
 
+    $post_type = gamipress_get_post_type( $achievement_id );
+
+    // Bail if not is a requirement
+    if( ! in_array( $post_type, gamipress_get_requirement_types_slugs() ) ) {
+        return $return;
+    }
+
     if( empty( $trigger ) ) {
         $trigger = gamipress_get_post_meta( $achievement_id, '_gamipress_trigger_type' );
     }
@@ -512,6 +519,13 @@ function gamipress_user_meets_role_requirement( $return = false, $user_id = 0, $
 
     // Bail if access is not already granted
     if( ! $return ) {
+        return $return;
+    }
+
+    $post_type = gamipress_get_post_type( $achievement_id );
+
+    // Bail if not is a requirement
+    if( ! in_array( $post_type, gamipress_get_requirement_types_slugs() ) ) {
         return $return;
     }
 
@@ -678,13 +692,18 @@ function gamipress_user_meets_points_requirement( $return = false, $user_id = 0,
 	} else if( 'points-balance' === $trigger_type ) {
 
         // Grab our user's points and see if they at least as many as required
+        $points_condition       = gamipress_get_post_meta( $achievement_id, '_gamipress_points_condition' );
         $points_required        = absint( gamipress_get_post_meta( $achievement_id, '_gamipress_points_required' ) );
         $points_type_required   = gamipress_get_post_meta( $achievement_id, '_gamipress_points_type_required' );
 
         // Get user points balance
-        $points_balance    		= gamipress_get_user_points( $user_id, $points_type_required );
+        $points_balance    		= absint( gamipress_get_user_points( $user_id, $points_type_required ) );
 
-        if( $points_balance >= $points_required ) {
+        if( empty( $points_condition ) ) {
+            $points_condition = 'greater_or_equal';
+        }
+
+        if( gamipress_number_condition_matches( $points_balance, $points_required, $points_condition ) ) {
 
             // If the user just earned the achievement, though, don't let them earn it again
             // This prevents an infinite loop if the achievement has no maximum earnings limit
@@ -869,7 +888,7 @@ function gamipress_get_achievement_activity_count( $user_id = 0, $achievement_id
 	$site_id = get_current_blog_id();
 
 	// Assume the user has no relevant activities
-	$activities = 0;
+	$activity_count = 0;
 
 	$post_type = gamipress_get_post_type( $achievement_id );
 
@@ -895,19 +914,19 @@ function gamipress_get_achievement_activity_count( $user_id = 0, $achievement_id
 				}
 
 				// Get our achievement activity
-                $activities = gamipress_get_earnings_count( array(
+                $activity_count = gamipress_get_earnings_count( array(
 					'user_id'   => absint( $user_id ),
 					'post_id'   => absint( $requirement['achievement_post'] ),
 					'since'     => $since
 				) );
 				break;
-			case 'any-achievement' :
+			case 'any-achievement':
 				$trigger = 'gamipress_unlock_' . $requirement['achievement_type'];
 				break;
-			case 'all-achievements' :
+			case 'all-achievements':
 				$trigger = 'gamipress_unlock_all_' . $requirement['achievement_type'];
 				break;
-			default :
+			default:
 				$trigger = $requirement['trigger_type'];
 				break;
 		}
@@ -941,14 +960,189 @@ function gamipress_get_achievement_activity_count( $user_id = 0, $achievement_id
 
 			}
 
-            $activities = gamipress_get_user_trigger_count( $user_id, $trigger, $since, $site_id, $requirement );
+            $activity_count = gamipress_get_user_trigger_count( $user_id, $trigger, $since, $site_id, $requirement );
 
 		}
 
 	}
 
-	// Available filter for overriding user activity
-	return absint( apply_filters( "gamipress_{$post_type}_activity", $activities, $user_id, $achievement_id ) );
+    /**
+     * Available filter for overriding user activity count
+     *
+     * @since  1.0.0
+     *
+     * @param  int $activity_count  The achievement's activity count
+     * @param  int $user_id 		The given user's ID
+     * @param  int $achievement_id 	The given achievement's ID
+     * @param  int $since 			Timestamp since retrieve the count
+     *
+     * @return int          		The total activity count
+     */
+	return absint( apply_filters( "gamipress_{$post_type}_activity_count", $activity_count, $user_id, $achievement_id, $since ) );
+}
+
+/**
+ * Count the user's relevant actions for a given achievement applying the requirement limits
+ *
+ * @since  2.0.2
+ *
+ * @param  int $user_id 		The given user's ID
+ * @param  int $achievement_id 	The given achievement's ID
+ * @param  int $since 			Timestamp since retrieve the count
+ *
+ * @return int          		The total activity count
+ */
+function gamipress_get_achievement_activity_count_limited( $user_id = 0, $achievement_id = 0, $since = 0 ) {
+
+    // Assume the user has no relevant activities
+    $activity_count = 0;
+
+    $post_type = gamipress_get_post_type( $achievement_id );
+
+    if ( in_array( $post_type, gamipress_get_requirement_types_slugs() ) ) {
+
+        $limit_type = gamipress_get_post_meta( $achievement_id, '_gamipress_limit_type' );
+
+        if( empty( $limit_type ) ) {
+            $limit_type = 'unlimited';
+        }
+
+        if( $limit_type === 'unlimited' ) {
+            // Times activity has triggered
+            $activity_count = absint( gamipress_get_achievement_activity_count( $user_id, $achievement_id, $since ) );
+        } else {
+
+            // Grab the requirement object
+            $requirement = gamipress_get_requirement_object( $achievement_id );
+
+            $where = array(
+                'type'          => 'event_trigger',
+            );
+
+            // Determine which type of trigger we're using and return the corresponding activities
+            switch( $requirement['trigger_type'] ) {
+                case 'specific-achievement':
+                    $trigger = 'gamipress_unlock_' . $requirement['achievement_type'];
+                    $where['post_id'] = absint( $requirement['achievement_post'] );
+                    break;
+                case 'any-achievement':
+                    $trigger = 'gamipress_unlock_' . $requirement['achievement_type'];
+                    break;
+                case 'all-achievements':
+                    $trigger = 'gamipress_unlock_all_' . $requirement['achievement_type'];
+                    break;
+                default:
+                    $trigger = $requirement['trigger_type'];
+                    break;
+            }
+
+            $where['trigger_type'] = $trigger;
+            $group_by = '';
+
+            // Grab the requirement object
+            $requirement = gamipress_get_requirement_object( $achievement_id );
+            $site_id = get_current_blog_id();
+
+            /**
+             * Filter required to get the same where conditions as in the gamipress_get_user_trigger_count() function
+             *
+             * @see gamipress_get_user_trigger_count()
+             */
+            $where = apply_filters( 'gamipress_get_user_trigger_count_log_meta', $where, $user_id, $trigger, $since, $site_id, $requirement );
+
+            /**
+             * Filter to override the where data to filter the logs count applying the requirement limits
+             *
+             * @since   2.0.4
+             *
+             * @param  array    $log_meta       The meta data to filter the logs count
+             * @param  int      $user_id        The given user's ID
+             * @param  string   $trigger        The given trigger we're checking
+             * @param  int      $since 	        The since timestamp where retrieve the logs
+             * @param  int      $site_id        The desired Site ID to check
+             * @param  array    $args           The triggered args or requirement object
+             *
+             * @return array                    The where data to filter the logs count
+             */
+            $where = apply_filters( 'gamipress_get_achievement_activity_count_limited_where', $where, $user_id, $trigger, $since, $site_id, $requirement );
+
+            // If since is not defined check it from new ways
+            if( $since === 0 ) {
+
+                if( $post_type === 'rank-requirement' ) {
+                    // If is a rank requirement, we need to get the last time user earned the latest rank of type
+                    $rank = gamipress_get_rank_requirement_rank( $achievement_id );
+
+                    $since = gamipress_get_rank_earned_time( $user_id, $rank->post_type );
+                } else {
+
+                    // Get activity count from last time earned
+                    $since = gamipress_achievement_last_user_activity( $achievement_id, $user_id );
+
+                    // If user hasn't earned this yet, then get activity count from publish date
+                    if( $since === 0 ) {
+                        $since = strtotime( gamipress_get_post_date( $achievement_id ) ) - 1;
+                    }
+
+                }
+
+            }
+
+            // Setup the group by clause based on the requirement limit type
+            switch( $limit_type ) {
+                case 'minutely':
+                    $group_by = 'YEAR(l.date), MONTH(l.date), DAY(l.date), HOUR(l.date), MINUTE(l.date)';
+                    break;
+                case 'hourly':
+                    $group_by = 'YEAR(l.date), MONTH(l.date), DAY(l.date), HOUR(l.date)';
+                    break;
+                case 'daily':
+                    $group_by = 'YEAR(l.date), MONTH(l.date), DAY(l.date)';
+                    break;
+                case 'weekly':
+                    $group_by = "YEAR(l.date), DATE_FORMAT( l.date, '%u' )";
+                    break;
+                case 'monthly':
+                    $group_by = 'YEAR(l.date), MONTH(l.date)';
+                    break;
+                case 'yearly':
+                    $group_by = 'YEAR(l.date)';
+                    break;
+            }
+
+            // Get the user activity counts grouped by date
+            $results = gamipress_query_logs( array(
+                'select'    => 'LEAST(COUNT(*), ' . $requirement['limit'] . ') AS count', // Least() returns the lowest value (like PHP min() function)
+                'user_id'   => $user_id,
+                'where'     => $where,
+                'since'     => $since,
+                'group_by'  => $group_by,
+            ) );
+
+            if( is_array( $results ) ) {
+                foreach( $results as $result ) {
+                    $activity_count += absint( $result->count );
+                }
+            }
+
+        }
+
+    }
+
+    /**
+     * Available filter for overriding user activity count applying the requirement limits
+     *
+     * @since  1.0.0
+     *
+     * @param  int $activity_count  The achievement's activity count
+     * @param  int $user_id 		The given user's ID
+     * @param  int $achievement_id 	The given achievement's ID
+     * @param  int $since 			Timestamp since retrieve the count
+     *
+     * @return int          		The total activity count
+     */
+    return absint( apply_filters( "gamipress_{$post_type}_activity_count_limited", $activity_count, $user_id, $achievement_id, $since ) );
+
 }
 
 /**
@@ -1397,9 +1591,11 @@ function gamipress_revoke_achievement_to_user( $achievement_id = 0, $user_id = 0
         // Setup vars
         $post_type = gamipress_get_post_type( $achievement_id );
         $points_types = gamipress_get_points_types();
+        $is_achievement = in_array( $post_type, gamipress_get_achievement_types_slugs() );
+        $is_rank = in_array( $post_type, gamipress_get_rank_types_slugs() );
 
         // If is achievement or rank, revoke also all its requirements
-        if ( in_array( $post_type, gamipress_get_achievement_types_slugs() ) || in_array( $post_type, gamipress_get_rank_types_slugs() ) ) {
+        if ( $is_achievement || $is_rank ) {
 
             /**
              * Available filter to determine if should revoke requirements when parent element is revoked too
@@ -1417,16 +1613,50 @@ function gamipress_revoke_achievement_to_user( $achievement_id = 0, $user_id = 0
 
                 $requirements = array();
 
-                if ( in_array( $post_type, gamipress_get_achievement_types_slugs() ) ) {
+                if ( $is_achievement ) {
                     // Get the achievement steps
                     $requirements = gamipress_get_achievement_steps( $achievement_id );
-                } else if ( in_array( $post_type, gamipress_get_rank_types_slugs() ) ) {
+                } else if ( $is_rank ) {
                     // Get the rank requirements
                     $requirements = gamipress_get_rank_requirements( $achievement_id );
                 }
 
                 foreach( $requirements as $requirement ) {
                     gamipress_revoke_achievement_to_user( $requirement->ID, $user_id );
+                }
+
+            }
+
+        }
+
+        // If is revoking the current user rank, update user rank with the previous one
+        if( $is_rank ) {
+
+            $user_rank_id = gamipress_get_user_rank_id( $user_id, $post_type );
+
+            if( $achievement_id === $user_rank_id ) {
+
+                $prev_rank_id = gamipress_get_prev_rank_id( $user_rank_id );
+
+                $prev_rank_query = new CT_Query( array(
+                    'user_id' => $user_id,
+                    'post_id' => $prev_rank_id,
+                    'items_per_page' => 1
+                ) );
+
+                $prev_rank_earnings = $prev_rank_query->get_results();
+
+                // If previous rank is registered in user earnings, remove the action to register it in user earnings
+                if( count( $prev_rank_earnings ) > 0 ) {
+                    remove_action( 'gamipress_update_user_rank', 'gamipress_register_user_rank_earning', 10 );
+                }
+
+                // Update the user rank with the previous one
+                gamipress_update_user_rank( $user_id, $prev_rank_id );
+
+                // Restore the removed action
+                if( count( $prev_rank_earnings ) > 0 ) {
+                    add_action( 'gamipress_update_user_rank', 'gamipress_register_user_rank_earning', 10, 5 );
                 }
 
             }

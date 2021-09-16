@@ -34,7 +34,7 @@ class AWSM_Job_Openings_Form {
 		return self::$instance;
 	}
 
-	public function dynamic_form_fields() {
+	public function dynamic_form_fields( $form_attrs ) {
 		$allowed_file_types   = get_option( 'awsm_jobs_admin_upload_file_ext' );
 		$allowed_file_content = '';
 		if ( is_array( $allowed_file_types ) && ! empty( $allowed_file_types ) ) {
@@ -98,15 +98,33 @@ class AWSM_Job_Openings_Form {
 				'content'    => $allowed_file_content,
 			),
 		);
-		$form_fields = apply_filters( 'awsm_application_form_fields', $default_form_fields );
+		/**
+		 * Filters the job application form fields.
+		 *
+		 * @since 1.0.0
+		 * @since 2.2.1 The `$form_attrs` parameter was added.
+		 *
+		 * @param array $form_fields Form fields array.
+		 * @param array $form_attrs Attributes array for the form.
+		 */
+		$form_fields = apply_filters( 'awsm_application_form_fields', $default_form_fields, $form_attrs );
 		return $form_fields;
 	}
 
-	public function display_dynamic_fields() {
-		$dynamic_form_fields = $this->dynamic_form_fields();
+	public function display_dynamic_fields( $form_attrs ) {
+		$dynamic_form_fields = $this->dynamic_form_fields( $form_attrs );
 		if ( ! empty( $dynamic_form_fields ) ) {
 			$ordered_form_fields = array();
-			$form_fields_order   = apply_filters( 'awsm_application_form_fields_order', $this->form_fields_order );
+			/**
+			 * Filters the job application form fields order.
+			 *
+			 * @since 1.2.0
+			 * @since 2.2.1 The `$form_attrs` parameter was added.
+			 *
+			 * @param array $form_fields_order Form fields array.
+			 * @param array $form_attrs Attributes array for the form.
+			 */
+			$form_fields_order = apply_filters( 'awsm_application_form_fields_order', $this->form_fields_order, $form_attrs );
 			foreach ( $form_fields_order as $form_field_order ) {
 				$ordered_form_fields[ $form_field_order ] = $dynamic_form_fields[ $form_field_order ];
 			}
@@ -187,33 +205,39 @@ class AWSM_Job_Openings_Form {
 					 * Filters the field content of a specific field type of the job application form.
 					 *
 					 * @since 2.0.0
+					 * @since 2.2.1 The `$form_attrs` parameter was added.
 					 *
 					 * @param string $field_content The content.
 					 * @param array $field_args Form field options.
+					 * @param array $form_attrs Attributes array for the form.
 					 */
-					$field_content = apply_filters( "awsm_application_dynamic_form_{$field_type}_field_content", $field_content, $field_args );
+					$field_content = apply_filters( "awsm_application_dynamic_form_{$field_type}_field_content", $field_content, $field_args, $form_attrs );
 					$field_output  = sprintf( '<div class="%2$s">%1$s</div>', $field_content . wp_kses( $extra_content, $allowed_html ), esc_attr( $form_group_class ) );
 					/**
 					 * Filters the form field content of the job application form.
 					 *
 					 * @since 2.0.0
+					 * @since 2.2.1 The `$form_attrs` parameter was added.
 					 *
 					 * @param string $field_output The content.
 					 * @param string $field_type The field type.
 					 * @param array $field_args Form field options.
+					 * @param array $form_attrs Attributes array for the form.
 					 */
-					$form_output .= apply_filters( 'awsm_application_dynamic_form_field_content', $field_output, $field_type, $field_args );
+					$form_output .= apply_filters( 'awsm_application_dynamic_form_field_content', $field_output, $field_type, $field_args, $form_attrs );
 				}
 			}
 			/**
 			 * Filters the dynamic form fields content of the job application form.
 			 *
-			 * @since 1.3
+			 * @since 1.3.0
+			 * @since 2.2.1 The `$form_attrs` parameter was added.
 			 *
 			 * @param string $form_output The content.
 			 * @param array $dynamic_form_fields Dynamic form fields.
+			 * @param array $form_attrs Attributes array for the form.
 			 */
-			echo apply_filters( 'awsm_application_dynamic_form_fields_content', $form_output, $dynamic_form_fields ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+			echo apply_filters( 'awsm_application_dynamic_form_fields_content', $form_output, $dynamic_form_fields, $form_attrs ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 		}
 	}
 
@@ -227,47 +251,65 @@ class AWSM_Job_Openings_Form {
 		return $content;
 	}
 
-	public function display_gdpr_field() {
+	public function display_gdpr_field( $form_attrs ) {
 		$label = $this->get_gdpr_field_label();
 		if ( ! empty( $label ) ) :
+			$field_id = $form_attrs['single_form'] ? 'awsm_form_privacy_policy' : esc_attr( 'awsm_form_privacy_policy-' . $form_attrs['job_id'] );
 			?>
 			<div class="awsm-job-form-group awsm-job-inline-group">
-				<input name="awsm_form_privacy_policy" class="awsm-job-form-field" id="awsm_form_privacy_policy" required="" data-msg-required="<?php echo esc_attr__( 'This field is required.', 'wp-job-openings' ); ?>" value="yes" aria-required="true" type="checkbox"><label for="awsm_form_privacy_policy"><?php echo wp_kses( $label, self::$allowed_html ); ?> <span class="awsm-job-form-error">*</span></label>
+				<input name="awsm_form_privacy_policy" class="awsm-job-form-field" id="<?php echo esc_attr( $field_id ); ?>" required="" data-msg-required="<?php echo esc_attr__( 'This field is required.', 'wp-job-openings' ); ?>" value="yes" aria-required="true" type="checkbox"><label for="<?php echo esc_attr( $field_id ); ?>"><?php echo wp_kses( $label, self::$allowed_html ); ?> <span class="awsm-job-form-error">*</span></label>
 			</div>
 			<?php
 		endif;
 	}
 
-	public function display_recaptcha_field() {
+	public function display_recaptcha_field( $form_attrs ) {
 		if ( $this->is_recaptcha_set() ) :
-			$site_key     = get_option( 'awsm_jobs_recaptcha_site_key' );
-			$fallback_url = add_query_arg( 'k', $site_key, 'https://www.google.com/recaptcha/api/fallback' );
-			?>
-			<div class="awsm-job-form-group awsm-job-g-recaptcha-group">
-				<div class="g-recaptcha" data-sitekey="<?php echo esc_attr( $site_key ); ?>"></div>
-				<noscript>
-					<div style="width: 302px; height: 422px; position: relative;">
-						<div style="width: 302px; height: 422px; position: absolute;">
-							<iframe src="<?php echo esc_url( $fallback_url ); ?>" frameborder="0" scrolling="no" style="width: 302px; height:422px; border-style: none;"></iframe>
+			/**
+			 * Filters the reCAPTCHA visibility in the application form.
+			 *
+			 * @since 2.2.0
+			 * @since 2.2.1 The `$form_attrs` parameter was added.
+			 *
+			 * @param bool $is_visible Whether the reCAPTCHA is visible or not in the form.
+			 * @param array $form_attrs Attributes array for the form.
+			 */
+			$is_visible = apply_filters( 'awsm_application_form_is_recaptcha_visible', true, $form_attrs );
+
+			if ( $is_visible ) :
+				$site_key     = get_option( 'awsm_jobs_recaptcha_site_key' );
+				$fallback_url = add_query_arg( 'k', $site_key, 'https://www.google.com/recaptcha/api/fallback' );
+				?>
+				<div class="awsm-job-form-group awsm-job-g-recaptcha-group">
+					<div class="g-recaptcha" data-sitekey="<?php echo esc_attr( $site_key ); ?>"></div>
+					<noscript>
+						<div style="width: 302px; height: 422px; position: relative;">
+							<div style="width: 302px; height: 422px; position: absolute;">
+								<iframe src="<?php echo esc_url( $fallback_url ); ?>" frameborder="0" scrolling="no" style="width: 302px; height:422px; border-style: none;"></iframe>
+							</div>
+							<div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+								<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" ></textarea>
+							</div>
 						</div>
-						<div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-							<textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" ></textarea>
-						</div>
-					</div>
-				</noscript>
-			</div>
-			<?php
+					</noscript>
+				</div>
+				<?php
+			endif;
 		endif;
 	}
 
 	public function application_form() {
+		$form_attrs = array(
+			'single_form' => true,
+			'job_id'      => get_the_ID(),
+		);
 		include AWSM_Job_Openings::get_template_path( 'form.php', 'single-job' );
 	}
 
-	public function form_field_init() {
-		$this->display_dynamic_fields();
-		$this->display_gdpr_field();
-		$this->display_recaptcha_field();
+	public function form_field_init( $form_attrs ) {
+		$this->display_dynamic_fields( $form_attrs );
+		$this->display_gdpr_field( $form_attrs );
+		$this->display_recaptcha_field( $form_attrs );
 	}
 
 	public function upload_dir( $param ) {
@@ -304,11 +346,11 @@ class AWSM_Job_Openings_Form {
 
 		if ( $_SERVER['REQUEST_METHOD'] === 'POST' && ! empty( $_POST['action'] ) && $_POST['action'] === 'awsm_applicant_form_submission' ) {
 			$job_id               = intval( $_POST['awsm_job_id'] );
-			$applicant_name       = sanitize_text_field( $_POST['awsm_applicant_name'] );
-			$applicant_email      = sanitize_email( $_POST['awsm_applicant_email'] );
-			$applicant_phone      = sanitize_text_field( $_POST['awsm_applicant_phone'] );
-			$applicant_letter     = awsm_jobs_sanitize_textarea( $_POST['awsm_applicant_letter'] );
-			$attachment           = $_FILES['awsm_file'];
+			$applicant_name       = sanitize_text_field( wp_unslash( $_POST['awsm_applicant_name'] ) );
+			$applicant_email      = sanitize_email( wp_unslash( $_POST['awsm_applicant_email'] ) );
+			$applicant_phone      = sanitize_text_field( wp_unslash( $_POST['awsm_applicant_phone'] ) );
+			$applicant_letter     = awsm_jobs_sanitize_textarea( wp_unslash( $_POST['awsm_applicant_letter'] ) );
+			$attachment           = isset( $_FILES['awsm_file'] ) ? $_FILES['awsm_file'] : '';
 			$agree_privacy_policy = false;
 			$generic_err_msg      = esc_html__( 'Error in submitting your application. Please refresh the page and retry.', 'wp-job-openings' );
 			if ( $this->is_recaptcha_set() ) {
@@ -353,7 +395,7 @@ class AWSM_Job_Openings_Form {
 			if ( empty( $applicant_letter ) ) {
 				$awsm_response['error'][] = esc_html__( 'Cover Letter cannot be empty.', 'wp-job-openings' );
 			}
-			if ( $attachment['error'] > 0 ) {
+			if ( empty( $attachment ) || ! isset( $attachment['error'] ) || $attachment['error'] > 0 ) {
 				$awsm_response['error'][] = esc_html__( 'Please select your cv/resume.', 'wp-job-openings' );
 			}
 
@@ -474,29 +516,36 @@ class AWSM_Job_Openings_Form {
 		return $is_set;
 	}
 
-	public function validate_captcha_field( $token ) {
-		$is_valid   = false;
-		$verify_url = 'https://www.google.com/recaptcha/api/siteverify';
-		if ( ! empty( $token ) ) {
-			$secret_key = get_option( 'awsm_jobs_recaptcha_secret_key' );
-			$response   = wp_safe_remote_post(
-				$verify_url,
-				array(
-					'body' => array(
-						'secret'   => $secret_key,
-						'response' => $token,
-						'remoteip' => $_SERVER['REMOTE_ADDR'],
-					),
-				)
-			);
-			if ( ! is_wp_error( $response ) ) {
-				$response_body = wp_remote_retrieve_body( $response );
-				if ( '' !== $response_body ) {
-					if ( wp_remote_retrieve_response_code( $response ) === 200 ) {
-						$response = json_decode( $response_body, true );
-						$is_valid = isset( $response['success'] ) && $response['success'] === true;
-					}
+	public function get_recaptcha_response( $token ) {
+		$result     = array();
+		$secret_key = get_option( 'awsm_jobs_recaptcha_secret_key' );
+		$response   = wp_safe_remote_post(
+			'https://www.google.com/recaptcha/api/siteverify',
+			array(
+				'body' => array(
+					'secret'   => $secret_key,
+					'response' => $token,
+					'remoteip' => $_SERVER['REMOTE_ADDR'],
+				),
+			)
+		);
+		if ( ! is_wp_error( $response ) ) {
+			$response_body = wp_remote_retrieve_body( $response );
+			if ( '' !== $response_body ) {
+				if ( wp_remote_retrieve_response_code( $response ) === 200 ) {
+					$result = json_decode( $response_body, true );
 				}
+			}
+		}
+		return $result;
+	}
+
+	public function validate_captcha_field( $token ) {
+		$is_valid = false;
+		if ( ! empty( $token ) ) {
+			$result = $this->get_recaptcha_response( $token );
+			if ( ! empty( $result ) ) {
+				$is_valid = isset( $result['success'] ) && $result['success'] === true;
 			}
 		}
 		return $is_valid;
@@ -543,7 +592,7 @@ class AWSM_Job_Openings_Form {
 			'{job-id}'           => $applicant_details['awsm_job_id'],
 			'{job-expiry}'       => $job_expiry,
 			'{job-title}'        => $applicant_details['awsm_apply_for'],
-			'{applicant-cover}'  => isset( $applicant_details['awsm_applicant_letter'] ) ? $applicant_details['awsm_applicant_letter'] : '',
+			'{applicant-cover}'  => isset( $applicant_details['awsm_applicant_letter'] ) ? nl2br( $applicant_details['awsm_applicant_letter'] ) : '',
 			'{applicant-resume}' => ( ! empty( $attachment_url ) ) ? esc_url( $attachment_url ) : '',
 		);
 
@@ -623,7 +672,8 @@ class AWSM_Job_Openings_Form {
 				 *
 				 * @since 1.4
 				 *
-				 * @param array $headers Additional headers
+				 * @param array $headers Additional headers.
+				 * @param array $applicant_details Applicant details.
 				 */
 				$headers = apply_filters(
 					'awsm_jobs_applicant_notification_mail_headers',
@@ -632,7 +682,8 @@ class AWSM_Job_Openings_Form {
 						'from'         => sprintf( 'From: %1$s <%2$s>', $from, $from_email ),
 						'reply_to'     => 'Reply-To: ' . $reply_to,
 						'cc'           => 'Cc: ' . $applicant_cc,
-					)
+					),
+					$applicant_details
 				);
 
 				$reply_to = trim( str_replace( 'Reply-To:', '', $headers['reply_to'] ) );

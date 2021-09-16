@@ -19,6 +19,7 @@ class AWSM_Job_Openings_Settings {
 
 		add_action( 'update_option_awsm_select_page_listing', array( $this, 'update_awsm_page_listing' ), 10, 2 );
 		add_action( 'update_option_awsm_permalink_slug', array( $this, 'update_awsm_permalink_slug' ), 10, 2 );
+		add_action( 'update_option_awsm_jobs_remove_permalink_front_base', array( $this, 'update_permalink_front_base' ), 10, 2 );
 		add_action( 'update_option_awsm_jobs_disable_archive_page', array( $this, 'update_jobs_archive_page' ) );
 		add_action( 'update_option_awsm_hide_uploaded_files', array( $this, 'update_awsm_hide_uploaded_files' ), 10, 2 );
 		add_action( 'update_option_awsm_jobs_remove_filters', array( $this, 'update_awsm_jobs_remove_filters' ), 10, 2 );
@@ -85,6 +86,17 @@ class AWSM_Job_Openings_Settings {
 					),
 				);
 				break;
+			case 'notification':
+				$subtabs = array(
+					'general'   => array(
+						'target' => 'awsm-job-notification-options-container',
+						'label'  => esc_html__( 'General', 'wp-job-openings' ),
+					),
+					'customize' => array(
+						'label' => esc_html__( 'Customize', 'wp-job-openings' ),
+					),
+				);
+				break;
 		}
 		/**
 		 * Filters the Settings Subtabs.
@@ -94,7 +106,14 @@ class AWSM_Job_Openings_Settings {
 		 * @param array $subtabs Subtabs data.
 		 * @param string $section Current settings section.
 		 */
-		return apply_filters( 'awsm_jobs_settings_subtabs', $subtabs, $section );
+		$filtered_subtabs = apply_filters( 'awsm_jobs_settings_subtabs', $subtabs, $section );
+
+		// Compatibility fix for Pro version.
+		if ( defined( 'AWSM_JOBS_PRO_PLUGIN_VERSION' ) && version_compare( AWSM_JOBS_PRO_PLUGIN_VERSION, '2.0.1', '<=' ) ) {
+			$filtered_subtabs = wp_parse_args( $filtered_subtabs, $subtabs );
+		}
+
+		return $filtered_subtabs;
 	}
 
 	private function settings() {
@@ -115,8 +134,17 @@ class AWSM_Job_Openings_Settings {
 					'callback'    => 'sanitize_email',
 				),
 				array(
+					/** @since 2.3.0 */
+					'option_name' => 'awsm_jobs_timezone',
+					'callback'    => array( $this, 'timezone_handler' ),
+				),
+				array(
 					'option_name' => 'awsm_permalink_slug',
 					'callback'    => array( $this, 'sanitize_permalink_slug' ),
+				),
+				array(
+					/** @since 2.3.0 */
+					'option_name' => 'awsm_jobs_remove_permalink_front_base',
 				),
 				array(
 					'option_name' => 'awsm_default_msg',
@@ -295,7 +323,7 @@ class AWSM_Job_Openings_Settings {
 				array(
 					/** @since 1.6.0 */
 					'option_name' => 'awsm_jobs_admin_from_email_notification',
-					'callback'    => array( $this, 'sanitize_admin_from_email_id' ),
+					'callback'    => array( $this, 'sanitize_from_email_id' ),
 				),
 				array(
 					/** @since 1.6.0 */
@@ -318,8 +346,22 @@ class AWSM_Job_Openings_Settings {
 					/** @since 2.0.0 */
 					'option_name' => 'awsm_jobs_notification_admin_mail_template',
 				),
+				array(
+					/** @since 2.2.0 */
+					'option_name' => 'awsm_jobs_notification_customizer',
+					'callback'    => array( $this, 'notification_customizer_handler' ),
+				),
 			),
 		);
+		/**
+		 * Filters the settings before registration.
+		 *
+		 * @since 2.2.0
+		 *
+		 * @param array $settings Settings array.
+		 */
+		$settings = apply_filters( 'awsm_jobs_settings', $settings );
+
 		return $settings;
 	}
 
@@ -393,7 +435,6 @@ class AWSM_Job_Openings_Settings {
 		foreach ( $settings as $group => $settings_args ) {
 			add_filter( 'option_page_capability_awsm-jobs-' . $group . '-settings', array( $this, 'settings_page_capability' ), 11 );
 		}
-
 	}
 
 	public function file_upload_extensions() {
@@ -464,8 +505,11 @@ class AWSM_Job_Openings_Settings {
 		return $match;
 	}
 
-	public function validate_from_email_id( $email, $option_name ) {
-		$admin_email = get_option( 'admin_email' );
+	public function validate_from_email_id( $email, $option_name = '' ) {
+		if ( ! empty( $option_name ) ) {
+			_deprecated_argument( __METHOD__, '2.2.0' );
+		}
+
 		$site_domain = strtolower( $_SERVER['SERVER_NAME'] );
 		if ( $this->is_localhost() ) {
 			return $email;
@@ -486,19 +530,22 @@ class AWSM_Job_Openings_Settings {
 			if ( $current_domain !== $site_domain && $this->is_email_in_domain( $email, $current_domain ) ) {
 				return $email;
 			} else {
-				add_settings_error( $option_name, str_replace( '_', '-', $option_name ), esc_html__( "The provided 'From' email address does not belong to this site domain and may lead to issues in email delivery.", 'wp-job-openings' ), 'awsm-jobs-warning' );
-				return $email;
+				return false;
 			}
 		}
-		return $admin_email;
+		return false;
 	}
 
 	public function sanitize_from_email_id( $email ) {
-		$email = sanitize_email( $email );
-		return $this->validate_from_email_id( $email, 'awsm_jobs_from_email_notification' );
+		if ( empty( $email ) ) {
+			$email = get_option( 'admin_email' );
+		}
+		return sanitize_email( $email );
 	}
 
 	public function sanitize_admin_from_email_id( $email ) {
+		_deprecated_function( __METHOD__, '2.2.0', 'AWSM_Job_Openings_Settings::sanitize_from_email_id' );
+
 		$email = sanitize_email( $email );
 		return $this->validate_from_email_id( $email, 'awsm_jobs_admin_from_email_notification' );
 	}
@@ -637,6 +684,32 @@ class AWSM_Job_Openings_Settings {
 		return htmlentities( $input, ENT_QUOTES );
 	}
 
+	public function notification_customizer_handler( $input ) {
+		$customizer_settings = AWSM_Job_Openings_Mail_Customizer::get_settings();
+		if ( empty( $input ) || ! is_array( $input ) ) {
+			$input = $customizer_settings;
+		}
+		$input['logo']        = sanitize_text_field( $input['logo'] );
+		$input['base_color']  = sanitize_text_field( $input['base_color'] );
+		$input['footer_text'] = AWSM_Job_Openings_Mail_Customizer::sanitize_content( $input['footer_text'] );
+		return $input;
+	}
+
+	public function timezone_handler( $timezone ) {
+		$options = array(
+			'timezone_string' => '',
+			'gmt_offset'      => '',
+		);
+		if ( ! empty( $timezone ) && isset( $timezone['original_val'] ) ) {
+			if ( preg_match( '/^UTC[+-]/', $timezone['original_val'] ) ) {
+				$options['gmt_offset'] = preg_replace( '/UTC\+?/', '', $timezone['original_val'] );
+			} else {
+				$options['timezone_string'] = $timezone['original_val'];
+			}
+		}
+		return wp_parse_args( $timezone, $options );
+	}
+
 	public function update_awsm_page_listing( $old_value, $value ) {
 		$page_id = $value;
 		if ( ! empty( $page_id ) ) {
@@ -661,6 +734,10 @@ class AWSM_Job_Openings_Settings {
 			update_option( 'awsm_permalink_slug', 'jobs' );
 		}
 		$this->refresh_permalink( 'awsm_permalink_slug' );
+	}
+
+	public function update_permalink_front_base() {
+		$this->refresh_permalink( 'awsm_jobs_remove_permalink_front_base' );
 	}
 
 	public function update_jobs_archive_page() {
@@ -801,7 +878,18 @@ class AWSM_Job_Openings_Settings {
 				$field_content = '';
 
 				if ( $field_type !== 'title' ) {
-					$class_name  = isset( $field_details['class'] ) ? $field_details['class'] : 'regular-text';
+					$class_name = isset( $field_details['class'] ) ? $field_details['class'] : '';
+					if ( $field_type === 'textarea' ) {
+						$class_name = trim( 'large-text ' . $class_name );
+					} elseif ( $field_type === 'colorpicker' ) {
+						$class_name = trim( 'awsm-jobs-colorpicker-field ' . $class_name );
+					} elseif ( $field_type === 'image' ) {
+						$class_name = trim( 'awsm-settings-image-field-container ' . $class_name );
+					} else {
+						if ( ! isset( $field_details['class'] ) && $field_type !== 'checkbox' && $field_type !== 'radio' ) {
+							$class_name = 'regular-text';
+						}
+					}
 					$class_attr  = ! empty( $class_name ) ? sprintf( ' class="%s"', esc_attr( $class_name ) ) : '';
 					$value       = isset( $field_details['value'] ) ? $field_details['value'] : '';
 					$description = isset( $field_details['description'] ) ? $field_details['description'] : '';
@@ -892,7 +980,31 @@ class AWSM_Job_Openings_Settings {
 								$field_content = sprintf( '<select name="%2$s" id="%3$s"%4$s>%1$s</select>', $field_content, esc_attr( $field_name ), esc_attr( $id ), $extra_attrs );
 							}
 						} else {
-							$field_content = sprintf( '<input type="%1$s" name="%2$s" id="%3$s" value="%4$s"%5$s />', esc_attr( $field_type ), esc_attr( $field_name ), esc_attr( $id ), esc_attr( $value ), $extra_attrs );
+							if ( $field_type === 'textarea' ) {
+								$field_content = sprintf( '<textarea name="%1$s" id="%2$s"%4$s>%3$s</textarea>', esc_attr( $field_name ), esc_attr( $id ), esc_attr( $value ), $extra_attrs );
+							} elseif ( $field_type === 'image' ) {
+								$image_url = '';
+								if ( ! empty( $value ) ) {
+									if ( $value === 'default' ) {
+										$image_url = AWSM_Job_Openings_Mail_Customizer::get_default_logo();
+									} else {
+										$image_url = awsm_jobs_get_original_image_url( $value );
+									}
+								}
+
+								$image_container = '';
+								$image_button    = '';
+								if ( empty( $image_url ) ) {
+									$image_container = sprintf( '<div class="awsm-settings-image awsm-settings-no-image"><span>%s</span></div>', esc_html__( 'No Image selected', 'wp-job-openings' ) );
+									$image_button    = sprintf( '<button type="button" class="button awsm-settings-image-upload-button">%1$s</button><button type="button" class="awsm-hidden-control button awsm-settings-image-remove-button">%2$s</button>', esc_html__( 'Select Image', 'wp-job-openings' ), __( 'Remove', 'wp-job-openings' ) );
+								} else {
+									$image_container = sprintf( '<div class="awsm-settings-image"><img src="%s" /></div>', esc_url( $image_url ) );
+									$image_button    = sprintf( '<button type="button" class="button awsm-settings-image-upload-button">%1$s</button><button type="button" class="button awsm-settings-image-remove-button">%2$s</button>', esc_html__( 'Change Image', 'wp-job-openings' ), __( 'Remove', 'wp-job-openings' ) );
+								}
+								$field_content = sprintf( '<div id="%4$s"%5$s>%3$s<input type="hidden" name="%1$s" class="awsm-settings-image-field" value="%2$s" /></div>', esc_attr( $field_name ), esc_attr( $value ), $image_container . $image_button, esc_attr( $id ), $extra_attrs );
+							} else {
+								$field_content = sprintf( '<input type="%1$s" name="%2$s" id="%3$s" value="%4$s"%5$s />', esc_attr( $field_type ), esc_attr( $field_name ), esc_attr( $id ), esc_attr( $value ), $extra_attrs );
+							}
 						}
 					}
 					if ( ! empty( $help_button ) ) {

@@ -55,9 +55,7 @@ if( ! class_exists( 'GamiPress_Ranks_BP_Component' ) ) {
             if ( ! is_user_logged_in() && ! bp_displayed_user_id() )
                 return;
 
-            $placement = gamipress_bp_get_option( 'ranks_placement', '' );
-
-            if( ! in_array( $placement, array( 'tab', 'both' ) ) ) {
+            if( ! (bool) gamipress_bp_get_option( 'ranks_tab', false ) ) {
                 return;
             }
 
@@ -76,7 +74,7 @@ if( ! class_exists( 'GamiPress_Ranks_BP_Component' ) ) {
                 'name'                => $tab_title,
                 'slug'                => $this->slug,
                 'position'            => 100,
-                'screen_function'     => 'gamipress_bp_member_ranks',
+                'screen_function'     => 'gamipress_bp_ranks_tab',
                 'default_subnav_slug' => $this->slug
             );
 

@@ -59,7 +59,9 @@ function checkWebView() {
         function _detectBrowser(ua) {
             var android = /Android/.test(ua);
 
-            if (/CriOS/.test(ua)) {
+            if (/Opera Mini/.test(ua) || / OPR/.test(ua) || / OPT/.test(ua)) {
+                return "Opera";
+            } else if (/CriOS/.test(ua)) {
                 return "Chrome for iOS";
             } else if (/Edge/.test(ua)) {
                 return "Edge";
@@ -82,7 +84,11 @@ function checkWebView() {
         }
 
         function _detectBrowserVersion(ua, browser) {
-            if (browser === "Chrome for iOS") {
+            if (browser === "Opera") {
+                return /Opera Mini/.test(ua) ? _getVersion(ua, "Opera Mini/") :
+                    / OPR/.test(ua) ? _getVersion(ua, " OPR/") :
+                        _getVersion(ua, " OPT/");
+            } else if (browser === "Chrome for iOS") {
                 return _getVersion(ua, "CriOS/");
             } else if (browser === "Edge") {
                 return _getVersion(ua, "Edge/");
@@ -168,79 +174,87 @@ function checkWebView() {
 function isAllowedWebViewForUserAgent() {
     var nav = window.navigator || {};
     var ua = nav.userAgent || "";
-    if (/Instagram/.test(ua)) {
-        /*Instagram WebView*/
-        return true;
-    } else if (/FBAV/.test(ua) || /FBAN/.test(ua)) {
-        /*Facebook WebView*/
+    if (ua.match(new RegExp([
+        'Instagram',
+        'FBAV',
+        'FBAN',
+        'Line',
+    ].join('|')))) {
         return true;
     }
 
     return false;
 }
 
-window._nsl.push(function ($) {
+window._nslDOMReady(function () {
 
     window.nslRedirect = function (url) {
-        $('<div style="position:fixed;z-index:1000000;left:0;top:0;width:100%;height:100%;"></div>').appendTo('body');
+        var overlay = document.createElement('div');
+        overlay.style.cssText = "position:fixed;z-index:1000000;left:0;top:0;width:100%;height:100%;";
+        document.body.appendChild(overlay);
         window.location = url;
     };
 
     var targetWindow = _targetWindow || 'prefer-popup',
         lastPopup = false;
 
-    $(document.body).on('click', 'a[data-plugin="nsl"][data-action="connect"],a[data-plugin="nsl"][data-action="link"]', function (e) {
-        if (lastPopup && !lastPopup.closed) {
-            e.preventDefault();
-            lastPopup.focus();
-        } else {
 
-            var $target = $(this),
-                href = $target.attr('href'),
-                success = false;
-            if (href.indexOf('?') !== -1) {
-                href += '&';
-            } else {
-                href += '?';
-            }
-            var redirectTo = $target.data('redirect');
-            if (redirectTo === 'current') {
-                href += 'redirect=' + encodeURIComponent(window.location.href) + '&';
-            } else if (redirectTo && redirectTo !== '') {
-                href += 'redirect=' + encodeURIComponent(redirectTo) + '&';
-            }
-
-            if (targetWindow !== 'prefer-same-window' && checkWebView()) {
-                targetWindow = 'prefer-same-window';
-            }
-
-            if (targetWindow === 'prefer-popup') {
-
-                lastPopup = NSLPopup(href + 'display=popup', 'nsl-social-connect', $target.data('popupwidth'), $target.data('popupheight'));
-                if (lastPopup) {
-                    success = true;
-                    e.preventDefault();
-                }
-            } else if (targetWindow === 'prefer-new-tab') {
-                var newTab = window.open(href + 'display=popup', '_blank');
-                if (newTab) {
-                    if (window.focus) {
-                        newTab.focus();
-                    }
-                    success = true;
-                    e.preventDefault();
-                }
-            }
-
-            if (!success) {
-                window.location = href;
+    var buttonLinks = document.querySelectorAll(' a[data-plugin="nsl"][data-action="connect"], a[data-plugin="nsl"][data-action="link"]');
+    buttonLinks.forEach(function (buttonLink) {
+        buttonLink.addEventListener('click', function (e) {
+            if (lastPopup && !lastPopup.closed) {
                 e.preventDefault();
+                lastPopup.focus();
+            } else {
+
+                var href = this.href,
+                    success = false;
+                if (href.indexOf('?') !== -1) {
+                    href += '&';
+                } else {
+                    href += '?';
+                }
+
+                var redirectTo = this.dataset.redirect;
+                if (redirectTo === 'current') {
+                    href += 'redirect=' + encodeURIComponent(window.location.href) + '&';
+                } else if (redirectTo && redirectTo !== '') {
+                    href += 'redirect=' + encodeURIComponent(redirectTo) + '&';
+                }
+
+                if (targetWindow !== 'prefer-same-window' && checkWebView()) {
+                    targetWindow = 'prefer-same-window';
+                }
+
+                if (targetWindow === 'prefer-popup') {
+                    lastPopup = NSLPopup(href + 'display=popup', 'nsl-social-connect', this.dataset.popupwidth, this.dataset.popupheight);
+                    if (lastPopup) {
+                        success = true;
+                        e.preventDefault();
+                    }
+                } else if (targetWindow === 'prefer-new-tab') {
+                    var newTab = window.open(href + 'display=popup', '_blank');
+                    if (newTab) {
+                        if (window.focus) {
+                            newTab.focus();
+                        }
+                        success = true;
+                        e.preventDefault();
+                    }
+                }
+
+                if (!success) {
+                    window.location = href;
+                    e.preventDefault();
+                }
             }
-        }
+        });
     });
 
-    var googleLoginButton = $('a[data-plugin="nsl"][data-provider="google"]');
-    if (googleLoginButton.length && checkWebView() && !isAllowedWebViewForUserAgent()) {
-        googleLoginButton.remove();
+    var googleLoginButtons = document.querySelectorAll(' a[data-plugin="nsl"][data-provider="google"]');
+    if (googleLoginButtons.length && checkWebView() && !isAllowedWebViewForUserAgent()) {
+        googleLoginButtons.forEach(function (googleLoginButton) {
+            googleLoginButton.remove();
+        });
     }
 });

@@ -1234,7 +1234,7 @@ label[for="_gamipress_sequential"] {
 
 .gamipress-image-options .cmb2-radio-list img {
 	display: block;
-	width: 75px;
+	width: 55px;
 	border: 3px solid #efefef;
 	margin-bottom: 2px;
 }
@@ -1245,10 +1245,6 @@ label[for="_gamipress_sequential"] {
 
 .gamipress-widget-form .gamipress-image-options .cmb2-radio-list li {
 	padding-right: 1px;
-}
-
-.gamipress-widget-form .gamipress-image-options .cmb2-radio-list img {
-	width: 70px;
 }
 
 @media only screen and (min-width: 850px) {
@@ -1283,7 +1279,10 @@ label[for="_gamipress_sequential"] {
 	color: #32373c;
 }
 
-/* GamiPress forms on widgets area */
+/* -------------------------------------------
+	Widgets
+   ------------------------------------------- */
+
 .widget[id*="_gamipress_"] .widget-content .cmb-th {
 	float: none;
     padding: 0;
@@ -1317,6 +1316,86 @@ label[for="_gamipress_sequential"] {
 
 .widget-content .cmb-tabs-wrap .cmb-tabs .cmb-tab .cmb-tab-icon {
 	margin-right: 0;
+}
+
+/* -------------------------------------------
+	Widgets Block Legacy
+   ------------------------------------------- */
+
+/* Forms */
+.wp-block-legacy-widget .gamipress-widget-form * {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.wp-block-legacy-widget .gamipress-widget-form .cmb-row {
+	margin: 8px 0;
+}
+
+.wp-block-legacy-widget .gamipress-widget-form .cmb-th,
+.wp-block-legacy-widget .gamipress-widget-form .cmb-td {
+	width: 100%;
+	padding: 0;
+}
+
+.wp-block-legacy-widget .gamipress-widget-form .cmb2-metabox-description {
+	font-size: 12px;
+	font-style: normal;
+	color: #757575;
+	padding-top: 0;
+	margin-bottom: 0 !important;
+}
+
+.wp-block-legacy-widget .gamipress-widget-form ul.cmb2-list {
+	padding: 0;
+	margin: 0;
+}
+
+/* Tabs */
+.wp-block-legacy-widget .cmb-tabs *:not(.dashicons) {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 13px;
+	line-height: 2.1;
+}
+
+.wp-block-legacy-widget .cmb-tabs-wrap {
+	margin: -1px -11px 0px -11px;
+}
+
+.wp-block-legacy-widget .cmb-tabs {
+	border-top: 1px solid #eee;
+}
+
+.wp-block-legacy-widget .cmb-tabs .cmb-tab-icon .dashicons {
+	margin-top: 4px;
+}
+
+/* Select2 */
+.wp-block-legacy-widget .gamipress-widget-form .gamipress-select2 {
+	width: 100% !important;
+}
+
+/* Switch */
+.wp-block-legacy-widget .gamipress-widget-form .gamipress-switch input {
+	width: 44px;
+	height: 24px;
+}
+
+.wp-block-legacy-widget .gamipress-widget-form .gamipress-switch input:before,
+.wp-block-legacy-widget .gamipress-widget-form .gamipress-switch input:checked:after {
+	display: none;
+}
+
+.wp-block-legacy-widget .gamipress-widget-form .gamipress-switch input + label:before {
+	height: 20px;
+}
+
+.wp-block-legacy-widget .gamipress-widget-form .gamipress-switch input + label:after {
+	width: 12px;
+	height: 12px;
+}
+
+.wp-block-legacy-widget .gamipress-widget-form .gamipress-switch input:checked + label:after {
+	margin-left: 24px;
 }
 
 /* -------------------------------------------
@@ -1441,6 +1520,10 @@ label[for="_gamipress_sequential"] {
 	height: 18px;
 	vertical-align: text-top;
 	margin: 0 2px 0 0;
+}
+
+.gamipress-page.cmb2-options-page #poststuff h2.nav-tab-wrapper {
+	margin-bottom: 20px !important;
 }
 
 .gamipress_settings .cmb2-metabox > .cmb-row > .cmb-th,
@@ -1956,79 +2039,79 @@ label[for="_gamipress_sequential"] {
 	margin-left: 40px;
 }
 
-/* Export setup options */
-.cmb2-id-export-setup-options input[value="all-points-types"] + label,
-.cmb2-id-export-setup-options input[value="all-achievement-types"] + label,
-.cmb2-id-export-setup-options input[value="all-rank-types"] + label {
+/* All types multicheck */
+.gamipress-all-types-multicheck input[value="all-points-types"] + label,
+.gamipress-all-types-multicheck input[value="all-achievement-types"] + label,
+.gamipress-all-types-multicheck input[value="all-rank-types"] + label {
 	font-weight: bold;
 }
 
 /* Align inputs */
-.cmb2-id-export-setup-options input[value$="-points-type"],
-.cmb2-id-export-setup-options input[value$="-achievement-type"],
-.cmb2-id-export-setup-options input[value$="-rank-type"] {
+.gamipress-all-types-multicheck input[value$="-points-type"],
+.gamipress-all-types-multicheck input[value$="-achievement-type"],
+.gamipress-all-types-multicheck input[value$="-rank-type"] {
 	margin-left: 20px !important;
 }
 
 /* Align labels */
-.cmb2-id-export-setup-options input[value$="-points-type"] + label,
-.cmb2-id-export-setup-options input[value$="-achievement-type"] + label,
-.cmb2-id-export-setup-options input[value$="-rank-type"] + label {
+.gamipress-all-types-multicheck input[value$="-points-type"] + label,
+.gamipress-all-types-multicheck input[value$="-achievement-type"] + label,
+.gamipress-all-types-multicheck input[value$="-rank-type"] + label {
 	margin-left: 72px;
 }
 
-.cmb2-id-export-setup-options input[value$="-points-type"] + label:before,
-.cmb2-id-export-setup-options input[value$="-points-type"] + label:after,
-.cmb2-id-export-setup-options input[value$="-achievement-type"] + label:before,
-.cmb2-id-export-setup-options input[value$="-achievement-type"] + label:after,
-.cmb2-id-export-setup-options input[value$="-rank-type"] + label:before,
-.cmb2-id-export-setup-options input[value$="-rank-type"] + label:after {
+.gamipress-all-types-multicheck input[value$="-points-type"] + label:before,
+.gamipress-all-types-multicheck input[value$="-points-type"] + label:after,
+.gamipress-all-types-multicheck input[value$="-achievement-type"] + label:before,
+.gamipress-all-types-multicheck input[value$="-achievement-type"] + label:after,
+.gamipress-all-types-multicheck input[value$="-rank-type"] + label:before,
+.gamipress-all-types-multicheck input[value$="-rank-type"] + label:after {
 	left: 20px !important;
 }
 
 /* Align inputs */
-.cmb2-id-export-setup-options input[value$="-points-awards"],
-.cmb2-id-export-setup-options input[value$="-points-deducts"],
-.cmb2-id-export-setup-options input[value$="-achievements"],
-.cmb2-id-export-setup-options input[value$="-ranks"] {
+.gamipress-all-types-multicheck input[value$="-points-awards"],
+.gamipress-all-types-multicheck input[value$="-points-deducts"],
+.gamipress-all-types-multicheck input[value$="-achievements"],
+.gamipress-all-types-multicheck input[value$="-ranks"] {
 	margin-left: 40px !important;
 }
 
 /* Align labels */
-.cmb2-id-export-setup-options input[value$="-points-awards"] + label,
-.cmb2-id-export-setup-options input[value$="-points-deducts"] + label,
-.cmb2-id-export-setup-options input[value$="-achievements"] + label,
-.cmb2-id-export-setup-options input[value$="-ranks"] + label {
+.gamipress-all-types-multicheck input[value$="-points-awards"] + label,
+.gamipress-all-types-multicheck input[value$="-points-deducts"] + label,
+.gamipress-all-types-multicheck input[value$="-achievements"] + label,
+.gamipress-all-types-multicheck input[value$="-ranks"] + label {
 	margin-left: 92px;
 }
 
-.cmb2-id-export-setup-options input[value$="-points-awards"] + label:before,
-.cmb2-id-export-setup-options input[value$="-points-awards"] + label:after,
-.cmb2-id-export-setup-options input[value$="-points-deducts"] + label:before,
-.cmb2-id-export-setup-options input[value$="-points-deducts"] + label:after,
-.cmb2-id-export-setup-options input[value$="-achievements"] + label:before,
-.cmb2-id-export-setup-options input[value$="-achievements"] + label:after,
-.cmb2-id-export-setup-options input[value$="-ranks"] + label:before,
-.cmb2-id-export-setup-options input[value$="-ranks"] + label:after {
+.gamipress-all-types-multicheck input[value$="-points-awards"] + label:before,
+.gamipress-all-types-multicheck input[value$="-points-awards"] + label:after,
+.gamipress-all-types-multicheck input[value$="-points-deducts"] + label:before,
+.gamipress-all-types-multicheck input[value$="-points-deducts"] + label:after,
+.gamipress-all-types-multicheck input[value$="-achievements"] + label:before,
+.gamipress-all-types-multicheck input[value$="-achievements"] + label:after,
+.gamipress-all-types-multicheck input[value$="-ranks"] + label:before,
+.gamipress-all-types-multicheck input[value$="-ranks"] + label:after {
 	left: 40px !important;
 }
 
 /* Align inputs */
-.cmb2-id-export-setup-options input[value$="-steps"],
-.cmb2-id-export-setup-options input[value$="-rank-requirements"] {
+.gamipress-all-types-multicheck input[value$="-steps"],
+.gamipress-all-types-multicheck input[value$="-rank-requirements"] {
 	margin-left: 60px !important;
 }
 
 /* Align labels */
-.cmb2-id-export-setup-options input[value$="-steps"] + label,
-.cmb2-id-export-setup-options input[value$="-rank-requirements"] + label {
+.gamipress-all-types-multicheck input[value$="-steps"] + label,
+.gamipress-all-types-multicheck input[value$="-rank-requirements"] + label {
 	margin-left: 112px;
 }
 
-.cmb2-id-export-setup-options input[value$="-steps"] + label:before,
-.cmb2-id-export-setup-options input[value$="-steps"] + label:after,
-.cmb2-id-export-setup-options input[value$="-rank-requirements"] + label:before,
-.cmb2-id-export-setup-options input[value$="-rank-requirements"] + label:after {
+.gamipress-all-types-multicheck input[value$="-steps"] + label:before,
+.gamipress-all-types-multicheck input[value$="-steps"] + label:after,
+.gamipress-all-types-multicheck input[value$="-rank-requirements"] + label:before,
+.gamipress-all-types-multicheck input[value$="-rank-requirements"] + label:after {
 	left: 60px !important;
 }
 
@@ -2204,4 +2287,22 @@ label[for="_gamipress_sequential"] {
 	border-color: #37863e;
 	box-shadow: inset 0 2px 0 #37863e;
 	vertical-align: top;
+}
+
+/* -------------------------------------------
+    Admin Menu
+   ------------------------------------------- */
+
+.gamipress-admin-menu-badge {
+	display: inline-block;
+	float: right;
+	vertical-align: top;
+	margin: 1px -5px -1px 2px;
+	padding: 0 5px;
+	height: 18px;
+	border-radius: 9px;
+	background-color: #d63638;
+	color: #fff;
+	font-size: 11px;
+	line-height: 1.6;
 }

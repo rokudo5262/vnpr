@@ -3,14 +3,14 @@
  * Plugin Name: Custom Sidebars
  * Plugin URI:  https://wordpress.org/plugins/custom-sidebars/
  * Description: Allows you to create widgetized areas and custom sidebars. Replace whole sidebars or single widgets for specific posts and pages.
- * Version:     3.31
+ * Version:     3.32
  * Author:      WebFactory Ltd
  * Author URI:  https://www.webfactoryltd.com/
  * Textdomain:  custom-sidebars
  */
 
 /*
-Copyright Incsub 2017 - 2020 (http://incsub.com)
+Copyright Incsub 2017 - 2020 (https://incsub.com)
 Copyright WebFactory Ltd 2020 - 2021 (https://www.webfactoryltd.com/)
 
 This program is free software; you can redistribute it and/or modify
@@ -139,3 +139,15 @@ function inc_sidebars_init_translation() {
 	load_plugin_textdomain( 'custom-sidebars', false, basename( dirname( __FILE__ ) ) . '/languages' );
 }
 add_action( 'plugins_loaded', 'inc_sidebars_init_translation' );
+
+// since the notification needs to be global and show everywhere we'll add it outside the plugin's class
+add_action('init', function() {
+  add_action('admin_notices', function() {
+    global $wp_version;
+
+    if (false == is_plugin_active('classic-widgets/classic-widgets.php') && version_compare($wp_version, '5.8', '>=') == true) {
+      echo '<div class="error notice" style="max-width: 700px;"><p><b>🔥 IMPORTANT 🔥</b><br><br>Custom Sidebars plugin is NOT compatible with the new widgets edit screen (powered by Gutenberg).
+      <br>Install the official <a href="' . admin_url('plugin-install.php?s=classic%20widgets&tab=search&type=term') . '">Classic Widgets</a> plugin if you want to continue using it.</p></div>';
+    }
+  });
+});

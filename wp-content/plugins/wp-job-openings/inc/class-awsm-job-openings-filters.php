@@ -27,6 +27,16 @@ class AWSM_Job_Openings_Filters {
 		$enable_job_filters = get_option( 'awsm_enable_job_filter_listing' );
 		$enable_search      = get_option( 'awsm_enable_job_search' );
 
+		/**
+		 * Enable search in the job listing or not.
+		 *
+		 * @since 2.2.0
+		 *
+		 * @param mixed $enable_search Enable the search or not.
+		 * @param array $shortcode_atts The shortcode attributes.
+		 */
+		$enable_search = apply_filters( 'awsm_job_filters_enable_search', $enable_search, $shortcode_atts );
+
 		if ( $enable_job_filters !== 'enabled' && $filters_attr !== 'yes' && $enable_search !== 'enable' ) {
 			return;
 		}
@@ -69,11 +79,24 @@ class AWSM_Job_Openings_Filters {
 			$display_filters = false;
 		}
 
-		$available_filters     = get_option( 'awsm_jobs_listing_available_filters' );
-		$available_filters     = is_array( $available_filters ) ? $available_filters : array();
-		$available_filters_arr = array();
+		$available_filters = get_option( 'awsm_jobs_listing_available_filters' );
+		$available_filters = is_array( $available_filters ) ? $available_filters : array();
+		if ( empty( $available_filters ) ) {
+			$display_filters = false;
+		}
 
-		if ( $display_filters && ! empty( $taxonomies ) && ! empty( $available_filters ) ) {
+		/**
+		 * Modifies the visibility for the filters in the job listing.
+		 *
+		 * @since 2.2.0
+		 *
+		 * @param bool $is_visible Whether the filters is visible or not.
+		 * @param array $shortcode_atts The shortcode attributes.
+		 */
+		$display_filters = apply_filters( 'awsm_is_job_filters_visible', $display_filters, $shortcode_atts );
+
+		$available_filters_arr = array();
+		if ( $display_filters && ! empty( $taxonomies ) ) {
 			$selected_filters = array();
 			foreach ( $available_filters as $available_filter ) {
 				$current_filter_key = str_replace( '-', '__', $available_filter ) . $filter_suffix;
@@ -81,6 +104,15 @@ class AWSM_Job_Openings_Filters {
 					$selected_filters[ $available_filter ] = sanitize_title( $_GET[ $current_filter_key ] );
 				}
 			}
+			/**
+			 * Modifies the available or active filters to be displayed in the job listing.
+			 *
+			 * @since 2.2.0
+			 *
+			 * @param array $available_filters The available filters.
+			 * @param array $shortcode_atts The shortcode attributes.
+			 */
+			$available_filters = apply_filters( 'awsm_active_job_filters', $available_filters, $shortcode_atts );
 			foreach ( $taxonomies as $taxonomy => $tax_details ) {
 				if ( in_array( $taxonomy, $available_filters ) ) {
 					/**
@@ -175,23 +207,24 @@ class AWSM_Job_Openings_Filters {
 
 		$query = new WP_Query( $args );
 
-		if ( $query->have_posts() ) :
+		if ( $query->have_posts() ) {
 			include AWSM_Job_Openings::get_template_path( 'main.php', 'job-openings' );
-		else :
-			if ( $filter_action !== 'loadmore' ) :
-				?>
-				<div class="awsm-jobs-none-container">
-					<p><?php esc_html_e( 'Sorry! No jobs to show.', 'wp-job-openings' ); ?></p>
-				</div>
-				<?php
-			else :
-				?>
-				<div class="awsm-load-more-main awsm-no-more-jobs-container">
-					<p><?php esc_html_e( 'Sorry! No more jobs to show.', 'wp-job-openings' ); ?></p>
-				</div>
-				<?php
-			endif;
-		endif;
+		} else {
+			$no_jobs_content = '';
+			if ( $filter_action !== 'loadmore' ) {
+				$no_jobs_content = sprintf( '<div class="awsm-jobs-none-container"><p>%s</p></div>', esc_html__( 'Sorry! No jobs to show.', 'wp-job-openings' ) );
+			} else {
+				$no_jobs_content = sprintf( '<div class="awsm-load-more-main awsm-no-more-jobs-container"><p>%s</p></div>', esc_html__( 'Sorry! No more jobs to show.', 'wp-job-openings' ) );
+			}
+			/**
+			 * Filters the HTML content for no jobs when filtered.
+			 *
+			 * @since 2.3.0
+			 *
+			 * @param string $no_jobs_content The HTML content.
+			 */
+			echo apply_filters( 'awsm_no_filtered_jobs_content', $no_jobs_content ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+		}
 		wp_die();
 		// phpcs:enable
 	}

@@ -5,8 +5,8 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: buddypress, profile, xprofile, users, fields, user
 Requires at least: 4.0
-Tested up to: 5.5.1
-Stable tag: 0.3.6
+Tested up to: 5.7
+Stable tag: 0.3.7
 
 BuddyPress to WordPress Full Sync lets BuddyPress xProfile fields to synchronize with WordPress user fields
 
@@ -31,6 +31,12 @@ Please let us know how much you care about BuddyPress to WordPress Full Sync Plu
 1. This is the BuddyPress Profile Field edit page, BuddyPress to WordPress Full Sync adds the Sync to WordPress user field menu, that allows to select a WordPress user field.
 
 == Changelog ==
+
+= 0.3.7 =
+Release Date: Jun, 16th, 2021
+
+* Enhancements:
+	* Compatibility check.
 
 = 0.3.6 =
 Release Date: Oct, 19, 2020

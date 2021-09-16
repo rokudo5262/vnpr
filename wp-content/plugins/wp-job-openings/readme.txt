@@ -1,8 +1,8 @@
 === WP Job Openings ===
 Contributors: awsmin, aravindajith, anantajitjg, sarathar, adhun, nithi22
 Tags: jobs, job listing, job openings, job board, careers page, jobs page, wp job opening, jobs plugin
-Requires at least: 4.5
-Tested up to: 5.6
+Requires at least: 4.6
+Tested up to: 5.8
 Requires PHP: 5.6
 Stable tag: trunk
 License: GPLv2 or later
@@ -14,21 +14,21 @@ Donate link: https://www.buymeacoffee.com/awsm
 Super simple Job Listing plugin to manage Job Openings and Applicants on your WordPress site.
 
 == Description ==
-**WP Job Openings plugin is the most simple yet powerful plugin for setting up a job listing page for a website.**
+**WP Job Openings plugin is the most simple yet powerful plugin for setting up a job listing page for your WordPress website.**
 
-The plugin is designed after carefully analysing hundreds of job listing layouts and methods. We just picked the best features out of the all and built a plugin that’s super simple to use and extensible to a high performing recruitment tool.
+WP Job Openings is designed after carefully analysing hundreds of job listing layouts and methods. The plugin is super simple to use and extensible to a high performing recruitment tool.
 
 The plugin comes with two layouts - Grid and List which are designed carefully according to the modern design and User Experience principles. Highlight of the plugin is its totally flexible filter options.
 
 
-**[View Demo](https://demo.awsm.in/wp-job-openings/)**
+**[View Demo](https://demo.wpjobopenings.com/)**
 
 **[Visit website - wpjobopenings.com](https://wpjobopenings.com/)**
 
 
 = Key Features =
 
-* Super Simple and Easy to Set Up and See
+* Super Simple and Easy to Set Up and Use
 * Two Different Modern Layouts
 * Clean and User Friendly Designs
 * Unlimited Job Specifications
@@ -44,13 +44,16 @@ The plugin comes with two layouts - Grid and List which are designed carefully a
 * Job posting structured data for better SEO
 * Recent Jobs Widget
 * WPML Support
-* Detailed documentation
+* Developer Friendly (Lots of hooks!)
+* Detailed Documentation
+* Tested with more than 50 top WordPress themes and Plugins
+
 
 = Add-ons =
 
-* [Docs Viewer](https://wordpress.org/plugins/docs-viewer-add-on-for-wp-job-openings/)
-* [Auto-Delete Applications for GDPR Compliance](https://wordpress.org/plugins/auto-delete-applications-add-on-for-wp-job-openings/)
-* [PRO Pack](https://awsm.in/get/wpjo-pro/)
+* [Docs Viewer](https://wordpress.org/plugins/docs-viewer-add-on-for-wp-job-openings/) (FREE)
+* [Auto-Delete Applications for GDPR Compliance](https://wordpress.org/plugins/auto-delete-applications-add-on-for-wp-job-openings/) (FREE)
+* [PRO Pack](https://wpjobopenings.com/pro-pack/) (PREMIUM)
 
 = WP Job Openings PRO Features =
 
@@ -65,9 +68,9 @@ The plugin comes with two layouts - Grid and List which are designed carefully a
 * Option to Filter and Export Applications
 * Attach uploaded file with email notifications
 * Shortcode generator for generating customised job lists
+* Use third-party forms and custom application URLs
 
-
-**[Get PRO Pack](https://awsm.in/get/wpjo-pro/)**
+**[Get PRO Pack](https://wpjobopenings.com/pro-pack/)**
 
 = Contribute =
 **You can contribute to the community by translating the plugin to your language.** Believe us, it's super-easy. Click on the link below, choose your language and start translating the strings in Development (trunk).
@@ -95,6 +98,37 @@ The plugin comes with two layouts - Grid and List which are designed carefully a
 13. Notifications Template Settings
 
 == Changelog ==
+
+= V 2.3.0 – 2021-09-16 =
+* Added: Timezone setting for job expiration.
+* Added: Setting to remove custom permalink front base.
+* Fixed: Slash issue in the mail with special characters.
+* Improved: Updated jQuery Validation Plugin to version 1.19.3.
+* Dev: Added new filter hooks to control the plugin-generated UI and content.
+* Dev: Improved Form Handling Hooks.
+* Dev: Deprecated 'awsm_specification_content' filter hook in favor of 'awsm_job_specs_content'.
+* Code improvements.
+* Other minor bug fixes.
+
+= V 2.2.0 – 2021-06-09 =
+* Added: Notification Mail Template Customizer (Settings > Notifications > Customize). Template files need to be updated if overridden in the theme.
+* Fixed: Pre validation for file field not working.
+* Fixed: Cover letter formatting issue in the notification mail content.
+* Fixed: Accents don't work in the Specification fields.
+* Improved: Form Handling. Template files need to be updated if overridden in the theme.
+* Improved: Notification HTML Mail Template.
+* Dev: New Hooks for Handling Job Filters.
+* Dev: Improved Form Handling Hooks.
+* Dev: Added JS Events to handle Form Submission, Filters, and Load More.
+* Other minor bug fixes and style improvements.
+
+= V 2.1.1 – 2021-04-21 =
+* Fixed: Issue with WooCommerce Plugin that prevents the users with HR Role from accessing the backend.
+* Fixed: 'Secure uploaded files' option doesn't work in 'Media Library' for some installations.
+* Fixed: Job Filters not working for some installations.
+* Improved: Redirect users with HR Role to job page instead of profile page after login.
+* Improved: WPML compatibility for Settings.
+* Other minor bug fixes and style improvements.
 
 = V 2.1.0 – 2020-12-08 =
 * WordPress 5.6 compatibility fixes.
@@ -124,28 +158,9 @@ The plugin comes with two layouts - Grid and List which are designed carefully a
 * Dev: New hook for customizing the terms display in job specification filters.
 * Other minor fixes and code improvements.
 
-= V 1.6.2 - 2020-01-29 =
-* Bug fixes and improvements.
-
-= V 1.6.1 - 2020-01-14 =
-* Fixed: Job search results showing invalid listings when 'Load more' button is clicked.
-* Fixed: An issue that prevents user from closing the job specification dropdown.
-* Fixed: Job specification based translations not working in WPML.
-* Other minor fixes and improvements.
-
-= V 1.6.0 - 2019-12-31 =
-* Added: Jobs Search
-* Added: Option to hide and restrict files uploaded through application form.
-* Added: Ability to add 'From' mail address for Admin notifications in settings.
-* Added: WPML Support.
-* Improved: Job archive page title.
-* Dev: Added hooks for customizing the meta box content.
-* Dev: Added hooks for customizing shortcode attributes and content.
-* Code improvements and minor bug fixes.
-
 [See changelog of previous versions](https://raw.githubusercontent.com/awsmin/wp-job-openings/master/CHANGELOG.md)
 
 == Upgrade Notice ==
 
-= 2.1.0 =
-Added New Features.
+= 2.3.0 =
+New Features and Bug fixes.

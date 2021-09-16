@@ -2,8 +2,8 @@
 Contributors: gamipress, tsunoa, rubengc, eneribs
 Tags: bbpress, forums, gamipress, gamification, points, achievements, badges, awards, rewards, credits, engagement, topics, reply, bbp
 Requires at least: 4.4
-Tested up to: 5.5
-Stable tag: 1.2.2
+Tested up to: 5.8
+Stable tag: 1.2.6
 License: GNU AGPLv3
 License URI: http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -17,19 +17,26 @@ This plugin automatically connects GamiPress with bbPress adding new activity ev
 
 = New Events =
 
-* New forum: When an user creates a new forum
-* New topic: When an user creates a new topic
-* New topic on a specific forum: When an user creates a new topic on a specific forum
-* New reply: When an user replies on a topic
-* New reply on a specific topic: When an user replies on a specific topic
-* New reply on any topic of a specific forum: When an user replies on a topic of a specific forum
-* Favorite a topic: When an user favorites a topic
-* Favorite a specific topic: When an user favorites a specific topic
-* Favorite any topic on a specific forum: When an user favorites a topic of a specific forum
-* Get favorite on a topic: When a topic author gets a new favorite on a topic
-* Delete a forum: When an user deletes a forum
-* Delete a topic: When an user deletes a topic
-* Delete a reply: When an user deletes a reply
+* New forum: When a user creates a new forum.
+* New topic: When a user creates a new topic.
+* New topic on a specific forum: When a user creates a new topic on a specific forum.
+* Reply to any topic: When a user replies on a topic.
+* Reply to a specific topic: When a user replies on a specific topic.
+* Reply to any topic of a specific forum: When a user replies on a topic of a specific forum.
+* Get a reply in any topic: When a topic author receives a reply in a topic.
+* Get a reply in a specific topic: When a topic author receives a reply in a specific topic.
+* Get a reply in any topic of a specific forum: When a topic author receives a reply in a topic of a specific forum.
+* Favorite a topic: When a user favorites a topic.
+* Favorite a specific topic: When a user favorites a specific topic.
+* Favorite any topic on a specific forum: When a user favorites a topic of a specific forum.
+* Get favorite on a topic: When a topic author gets a new favorite on a topic.
+* Unfavorite a topic: When a user unfavorites a topic.
+* Unfavorite a specific topic: When a user unfavorites a specific topic.
+* Unfavorite any topic on a specific forum: When a user unfavorites a topic of a specific forum.
+* Lose a favorite on a topic: When a topic author loses a favorite on a topic.
+* Delete a forum: When a user deletes a forum.
+* Delete a topic: When a user deletes a topic.
+* Delete a reply: When a user deletes a reply.
 
 = New Features =
 
@@ -67,6 +74,31 @@ Just choose the points types, achievement types and/or rank types to be displaye
 1. Show user points, achievements and ranks on replies
 
 == Changelog ==
+
+= 1.2.6 =
+
+* **Improvements**
+* Display the points label in the position configured from the points type (before or after the points amount).
+
+= 1.2.5 =
+
+* **New Features**
+* New event: Get a reply in any topic.
+* New event: Get a reply in a specific topic.
+* New event: Get a reply in any topic of a specific forum.
+
+= 1.2.4 =
+
+* **Improvements**
+* Correctly apply the award/deduct to the reply, topic or forum author when deleting any of those elements.
+
+= 1.2.3 =
+
+* **New Features**
+* New event: Unfavorite a topic.
+* New event: Unfavorite a specific topic.
+* New event: Unfavorite any topic on a specific forum.
+* New event: Lose a favorite on a topic.
 
 = 1.2.2 =
 

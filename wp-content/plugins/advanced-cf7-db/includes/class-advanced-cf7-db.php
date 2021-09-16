@@ -69,7 +69,7 @@ class Advanced_Cf7_Db {
 	public function __construct() {
 
 		$this->plugin_name = 'advanced-cf7-db';
-		$this->version = '1.6.2';
+		$this->version = '1.8.2';
 
 		$this->load_dependencies();
 		$this->set_locale();
