@@ -4,7 +4,7 @@ Tags: social login, facebook, google, twitter, linkedin, register, login, social
 Donate link: https://www.facebook.com/nextendweb
 Requires at least: 4.9
 Tested up to: 5.7.2
-Stable tag: 3.1.0
+Stable tag: 3.1.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -43,13 +43,18 @@ Providers are the services which the visitors can use to register and log in to 
 #### Additional features in the [Pro addon](https://nextendweb.com/social-login/)
 
 * WooCommerce compatibility
-* Pro providers: LinkedIn, Amazon, VKontakte, WordPress.com, Yahoo, PayPal, Disqus, Apple and more coming soon
+* BuddyPress compatibility
+* UserPro compatibility
+* Ultimate Member compatibility
+* Easy Digital Downloads compatibility
+* Pro providers: LinkedIn, Amazon, VKontakte, WordPress.com, Yahoo, PayPal, Disqus, Apple, GitHub, Microsoft, Line and more coming soon
 * Configure whether email address should be asked on registration at each provider
 * Configure whether username should be asked on registration at each provider
 * Choose from icons or wide buttons
 * Several login layouts
 * Restrict specific user roles from using the social logins. (You can restrict different roles for each provider.)
 * Assign specific user roles to the newly registered users who use any social login provider. (You can set different roles for each provider.)
+* Show the name of the linked providers in the Users table
 
 #### Usage
 
@@ -70,11 +75,11 @@ You can use Nextend Social Login's widget and shortcodes if you need to display 
 = 2. How can I get the email address from the Twitter users? =
 After you set up your APP go to the Settings tab and enter the URL of your Terms of Service and Privacy Policy page. Then hit the Update your settings button. Then go to the Permissions tab and check the "Request email addresses from users" under "Additional Permissions". [There's a documentation](https://nextendweb.com/nextend-social-login-docs/provider-twitter/#get-email) that explains the process with screenshots.
 
-= 3. Why are random email addresses generated for users registering with their FaceBook account? =
-When the user tries to register with their Facebook account Facebook pops up a window where each user can view what kind of access they give for the app. In this modal they can chose not to share their email address. When they're doing so we generate a random email address for them. They can of course change this at their profile.
-If the permission is given to the app, there are still [other factors](https://nextendweb.com/nextend-social-login-docs/provider-facebook/#get-email) which can result Facebook not sending back any email address.
+= 3. Why are random usernames generated? =
+When a user tries to register with a social account, Nextend Social Login will try to generate a username from the name that comes from the provider. If this name contains special characters, then we won't be able to generate a username that is valid for WordPress, as WordPress doesn't allow special characters in usernames either.
+For this reason we will need to generate a unique and random username for the registered account.
 
-In the Pro Addon it's possible to ask an email address if it's not returned by Facebook.
+In the Pro Addon it's possible to ask an username if we can not generate a valid username, so you can avoid random usernames.
 
 = 4. What should I do when I experience any problems? =
 [Contact us](https://nextendweb.com/contact-us/nextend-social-login-support/) via email and explain the issue you have.
@@ -119,6 +124,12 @@ Using the Pro Addon you can set where the login buttons should appear on the Reg
 4. The Settings page of the Facebook provider.
 
 == Changelog ==
+
+= 3.1.1 =
+* Improvement: string paths from the language files have been removed.
+
+* PRO: Improvement: VKontakte provider – we will use the API version 5.131 for the endpoints, as API version 5.74 is deprecated.
+* PRO: Feature: Easy Digital Downloads login and register form support.
 
 = 3.1.0 =
 * Fix: Display error message for logged out users, when they try to login with a social media account that's email address matches with a WordPress account email address, that has a linked provider from the same kind.
