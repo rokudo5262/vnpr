@@ -4723,6 +4723,20 @@ form#bf_loginform {
 
 @media only screen and (max-width:1060px) and (min-width:768px) {
     .gt-heading .gt-title {
-        font-size:2rem !important;
+        font-size: 2rem !important;
     }
+}
+
+.gt-post-style-2 .gt-title
+.gt-post-style-1 .gt-title,
+.gt-post-style-1 .gt-title {
+    text-align: justify !important;
+}
+
+.gt-align-justify .gt-text{
+    text-align: justify !important;
+}
+
+.gt-slider-content .gt-address-date {
+    padding: 50px !important;
 }

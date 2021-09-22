@@ -15458,7 +15458,7 @@ body {
                 <div class="ladi-container">
                     <div id="HEADLINE860" class="ladi-element"></div>
                     <div id="HEADLINE844" class="ladi-element">
-                        <h3 class="ladi-headline">Nhà tài trợ</h3>
+                        <h3 class="ladi-headline">NHÀ TÀI TRỢ</h3>
                     </div>
                     <div id="LINE845" class="ladi-element">
                         <div class="ladi-line">
@@ -15487,7 +15487,7 @@ body {
                 <div class="ladi-container">
                     <div id="HEADLINE860" class="ladi-element"></div>
                     <div id="HEADLINE844" class="ladi-element">
-                        <h3 class="ladi-headline">Nhà tài trợ</h3>
+                        <h3 class="ladi-headline">NHÀ TÀI TRỢ</h3>
                     </div>
                     <div id="LINE845" class="ladi-element">
                         <div class="ladi-line">
@@ -15548,7 +15548,7 @@ body {
             <div class="ladi-container">
                 <div id="HEADLINE860" class="ladi-element"></div>
                 <div id="HEADLINE844" class="ladi-element">
-                    <h3 class="ladi-headline">Thông tin Báo chí</h3>
+                    <h3 class="ladi-headline">THÔNG TIN BÁO CHÍ</h3>
                 </div>
                 <div id="LINE845" class="ladi-element">
                     <div class="ladi-line">
@@ -15620,7 +15620,7 @@ body {
                 <div class="ladi-container">
                     <div id="HEADLINE860" class="ladi-element"></div>
                     <div id="HEADLINE844" class="ladi-element">
-                        <h3 class="ladi-headline">Thông tin Báo chí</h3>
+                        <h3 class="ladi-headline">THÔNG TIN BÁO CHÍ</h3>
                     </div>
                     <div id="LINE845" class="ladi-element">
                         <div class="ladi-line">
@@ -15670,7 +15670,7 @@ body {
             <div id="GROUP314" class="ladi-element">
                 <div class="ladi-group">
                     <div id="HEADLINE315" class="ladi-element">
-                        <h3 class="ladi-headline">Hình ảnh dự thi</h3>
+                        <h3 class="ladi-headline">HÌNH ẢNH DỰ THI</h3>
                     </div>
                     <div id="LINE316" class="ladi-element">
                         <div class="ladi-line">
@@ -17593,7 +17593,7 @@ footer {
     border: none !important;
 }
 
-/* Hình ảnh dự thi*/
+/* HÌNH ẢNH DỰ THI*/
 #Carouselhinhanhduthi .slick-slide img {
     width: 880px;
 }
