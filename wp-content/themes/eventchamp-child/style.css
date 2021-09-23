@@ -5224,3 +5224,7 @@ form#bf_loginform {
 .gt-slider-content .gt-address-date {
     padding: 50px !important;
 }
+
+.gt-details .gt-category {
+    width: 100% !important;
+}
