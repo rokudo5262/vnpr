@@ -49,6 +49,10 @@
   src: url(fonts/SVN-Poppins-SemiBold.otf);
 }
 
+.gt-tags a {
+    pointer-events: none;
+}
+
 #sitewide-notice, #youzer div textarea, .widget.buddypress, .widget_bp_core_members_widget .item-options a, .widget_bp_core_sitewide_messages .bp-site-wide-message button, .widget_bp_groups_widget .item-options a, .youzer a, .youzer a.button, .youzer input, .youzer p, .youzer select, .youzer textarea, .youzer-dialog, .youzer-dialog-desc, .yz-items-list-widget, .yz-modal-actions a, .yz-modal-actions button, .yz-my-account-widget, .yz-tool-btn .yz-tool-name, .yz-tooltip:after, .yz-wp-widget, [data-yztooltip]:after,
 body #youzer input, body .youzer, body .youzer button, body .youzer h3, body .youzer input {
 	font-family: 'Poppins' !important;
@@ -57,18 +61,127 @@ body #youzer input, body .youzer, body .youzer button, body .youzer h3, body .yo
 	font-family: 'Poppins' !important;
 }
 
+.gt-post-style-2 .gt-image>a:before, .gt-post-style-2 .gt-image img,.gt-post-style-1 .gt-image>a:before,.gt-post-style-1 .gt-image img{
+	border-radius: 7px 7px 0 0!important;
+}
 
+img.vc_single_image-img.attachment-full.gt-lazy-load.loaded {
+    border-radius: 5px 5px 0 0;
+}
+
+.title-footer .gt-contact-box, .title-footer ul#menu-footer-1  {
+    font-size: 16px;
+    font-family: 'Poppins';
+    line-height: 1.7;
+}
+
+@media only screen and (min-width: 1024px) {
+	  .title-footer .vc_column-inner {
+		width:75% !important;
+	  }
+	.gt-item.gt-address svg {
+    	width: 44px !important;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.gt-mobile-menu .gt-bottom .gt-user-box{
+		padding:unset !important;
+	}
+	.gt-mobile-menu .gt-bottom .gt-user-box>li{
+		justify-content: space-around;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	  	.gt-item.gt-address svg {
+   		 	width: 37px !important;
+		}
+}
+
+@media screen and (max-width: 760px) {
+	input.submit-button.button {
+       width: unset !important;
+	}
+}
+
+@media only screen and (max-width: 365px) {
+	div.gt-separate{
+		margin-bottom: 35px !important;
+	}
+	
+	img.vc_single_image-img.attachment-full.gt-lazy-load.loaded {
+    	padding: 0 6px;
+	}
+}
+
+input#bbp_search {
+    border: 1px solid #a51d21!important;
+}
+
+a.nav-link, .gt-user-box a {
+    font-family: 'Poppins' !important;
+    font-size: 12px !important;
+}
+
+.gt-post-pagination ul {
+	display:none !important;
+}
+
+.gt-category{
+	pointer-events: none;
+}
+
+
+.gt-countdown-slider.gt-style-1>.gt-slider-content .gt-buttons a, .gt-countdown-slider.gt-style-1>.gt-slider-content .gt-buttons a:visited:hover{
+	background: #a51d21 !important;
+	color: #fff !important;
+}
+
+.gt-post-pagination a{
+	width:147px;
+	text-align:center;
+}
+
+p{
+	font-family: 'Poppins' !important;
+	font-weight: 500 !important;
+	line-height: 1.7!important;
+	font-size: 16px !important;
+}
+
+.gt-title a{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+div#Schedule .gt-title,div#Schedule .gt-text, .gt-excerpt{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
 
 small.nx-branding{
 	color:white!important;
 	display: none!important;
 }
 
-
+ul.gt-user-box a {
+    width: 110px !important;
+    text-align: center;
+}
 
 li.single_cat.cat_18{
 	display:none!important
 }
+
 li.single_cat.cat_20{
 	display:none!important
 }
@@ -82,11 +195,6 @@ div.textwidget{
 	height:70px;
 }
 
-
-/*Giảm margin heading */
-div.gt-text{
-	margin-top:35px!important
-}
 div.gt-separate{
 	margin-top:35px!important
 }
@@ -94,11 +202,54 @@ div.gt-event-search-tool.gt-white.gt-style-1{
 	padding: 35px 0!important;
 }
 
+/* Chú thích ảnh trong chi tiết tin */
+.blocks-gallery-caption, .wp-block-embed figcaption, .wp-block-image figcaption{
+	font-size: 16px !important;
+	font-family: 'Poppins' !important;
+	font-style: oblique;
+}
 
+/* Form Liên hệ */
+.form-lienhe{
+	padding-left: 20px !important;
+}
+
+.form-lienhe .gt-inner input[type=submit]{
+	background-color: #a51d21 !important;
+	color:white!important;
+}
+
+.form-lienhe .gt-inner input[type=submit]:hover{
+	background-color:white !important;
+	border:1px solid #a51d21;
+	color:#a51d21 !important;
+}
+/* Chỉnh padding khoảng cách ở trang sự kiện */
+.mt-sk .vc_column-inner{
+	padding-top: 0px !important;
+}
+
+/* Chỉnh dòng pushlish , bookmark trong trang chi tiết tin */
+.gt-content .sl-wrapper{
+	margin-top:30px !important;
+}
 /*giảm padding footer*/
 div.gt-footer-content{
 	padding-top:35px!important
 }
+
+/* Nút tìm kiếm ở trang sự kiện */
+.search-content .gt-inner button[type=submit]{
+	background-color:#a51d21 !important;
+	color: white !important;
+}
+
+.search-content .gt-inner button[type=submit]:hover{
+	background-color:white !important;
+	color: #a51d21 !important;
+	border: 1px solid #a51d21;
+}
+
 /*font-size content
  */
 
@@ -129,6 +280,7 @@ div.gt-footer-content{
 }
 .gt-heading.gt-size2 .gt-title {
 	font-size:20px;
+	margin-bottom:20px !important;
 }
 .gt-post-style-3 .gt-information{
 	font-size:13px
@@ -199,6 +351,14 @@ div.gt-footer-content{
 	font-size:13px
 }
 
+/* Chỉnh padding button đăng ký / đăng nhập */
+	.gt-header.gt-style-3 .gt-elements .gt-user-box{
+		padding:0px !important;
+		padding-inline-start:0px !important;
+	}
+	.gt-header.gt-style-3 .gt-elements .gt-user-box li{
+		justify-content: space-around;
+	}
 
 /*Thay đổi màu content youzer*/
 .post-edit-link,.vc_inline-link{
@@ -444,6 +604,41 @@ form#bf_loginform {
         top: -185px !important;
         right: -20px;
     }
+		/* Chỉnh banner
+	rs-module{
+		width:1024px !important;
+	}
+	#rev_slider_5_1_wrapper{
+		width:1024px !important;
+	} */
+	/* Chỉnh padding button đăng ký / đăng nhập */
+	.gt-mobile-menu .gt-bottom .gt-user-box{
+		padding:0px !important;
+		padding-inline-start:0px !important;
+	}
+	.gt-bottom li{
+		justify-content: space-around;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	/* Form liên hệ */
+	.form-lienhe{
+		margin-bottom: 30% !important;
+	}
+	
+	/* Trang tin tức */
+	#sidebar-widget {
+    margin-top: 50px !important;
+	}
+	
+	/* Trang chủ */
+	.vc_custom_1620190124919 {
+    margin-bottom: 35px !important;
+	}
+	.page-id-4472 .gt-content .wpb_wrapper > .gt-heading .gt-title span::before{
+		white-space: normal !important;
+	}
 }
 
 @media only screen and (max-width: 768px) and (min-width:429px){
@@ -463,7 +658,24 @@ form#bf_loginform {
     float: right;
     right: -25px;
     top: -90px;
-	}	
+	}
+	/* Chỉnh banner
+	rs-module{
+		width:768px !important;
+	}
+	#rev_slider_5_1_wrapper{
+		width:768px !important;
+	} */
+	/* Trang giới thiệu */
+	.cs-gt .gt-title span{
+		font-size: 35px !important;
+	}
+	
+	.cs-gt .wpb_wrapper p{
+		padding-left: 15px;
+    	padding-right: 15px;
+	}
+	
 }
 
 @media only screen and (max-width: 428px){
@@ -699,6 +911,16 @@ form#bf_loginform {
     .ladi-section .ladi-container {
         width: 1024px !important;
     }
+	.gt-heading.gt-size2 .gt-title{
+		padding-left:10px;
+	}
+	.form-lienhe{
+		margin-top: 9% !important;
+	}
+	.space5{
+		padding-left: 10px;
+        padding-right: 25px;
+	}
 
     #HEADLINE17 {
         width: 1024px !important;
@@ -1111,6 +1333,14 @@ form#bf_loginform {
         left: 0px !important;
         padding-left: 300px !important;
     }
+	.space5 {
+       margin-bottom: 18% !important;
+       padding-right: 15px !important;
+	}
+	/* Chỉnh chữ ở phần Cộng đồng VNPR */
+	.vc_row.wpb_row.vc_inner.vc_row-fluid.congDongHappyLeader_margin .gt-heading .gt-text{
+		margin-top: 0px !important;
+	}
     /*Cách thức tham gia, Chủ đề cuộc thi, Ảnh dự thi hợp lệ, Giải thưởng*/
     .RA-cachthucthamgia {
         text-align: left;
@@ -2207,7 +2437,48 @@ form#bf_loginform {
         transition: transform .5s ease;
         display: none;
     }
-
+	.wpcf7-form .space5{
+		margin-bottom:10px !important;
+	}
+    
+	.form-lienhe {
+    padding-left: 0px !important;
+    }
+	
+	/* Chỉnh padding button đăng ký / đăng nhập */
+	.gt-mobile-menu .gt-bottom .gt-user-box{
+		padding:0px !important;
+		padding-inline-start:0px !important;
+	}
+	
+	/* đoạn text ở cộng đồng VNPR */
+	.vc_custom_1620190124919 {
+    	padding-left: 35px !important;
+	}
+	
+	/* Trang giới thiệu */
+	.cs-gt .gt-title span{
+		    font-size: 20px;
+	}
+	
+	/* Trang tin tức */
+	.gt-page-title-bar h1{
+		text-align:center;
+	}
+	
+	/* Trang diễn đàn */
+	#bbpress-forums div.bbp-search-form{
+		padding: 0px !important;
+		padding-bottom: 20px !important;
+	}
+	
+	/* Trang kiến thức */
+	.gt-page-title-bar h1{
+		font-size: 50px !important;
+	}
+	
+	
+	
     #HEADLINE47 {
         width: 299px;
         top: 40px !important;
@@ -3051,6 +3322,109 @@ form#bf_loginform {
         line-height: 1.4;
         padding: 11% 55% 11% 10% !important;
     }
+	.gt-page-title-bar h1{
+		text-align:center;
+	}
+	.form-lienhe {
+        padding-left: 0px !important;
+    }
+	
+	/* Chỉnh banner
+	rs-module{
+		width:375px !important;
+	}
+	#rev_slider_5_1_wrapper{
+		width:375px !important;
+	} */
+	
+	/* Chỉnh padding button đăng ký / đăng nhập */
+	.gt-mobile-menu .gt-bottom .gt-user-box{
+		padding:0px !important;
+		padding-inline-start:0px !important;
+	}
+	.gt-bottom li{
+		justify-content: space-around;
+	}
+	
+	/* đoạn text ở cộng đồng VNPR */
+	.space2{
+		height:0px !important;
+	}
+	
+	.vc_custom_1620190124919 {
+    	padding-left: 35px !important;
+	}
+	/* Text ở Đăng ký thông tin */
+	.gt-heading .gt-separate+.gt-text, .gt-heading .gt-title+.gt-text{
+		margin-right: 2.5%;
+		font-size: 14px !important;
+	}
+	
+	/* Form đăng ký */
+	.form-ttdk{
+		margin-right: 4%;
+		margin-left: 4%;
+	}
+	
+	.mailster-wrapper.mailster-submit-wrapper.form-submit{
+		width: 35% !important;
+	}
+	
+	/* Footer */
+	.footer-ne .menu-footer-1-container{
+		margin-left: 2.5%;
+	}
+	.footer-ne .logo-footer{
+		margin-left: 2.5%;
+	}
+	.gt-footer .gt-footer-content .wpb_row>.wpb_column{
+		margin-left: 4.5% !important;
+	}
+	
+	.title-footer .gt-address{
+		padding-right: 15px !important;
+	}
+	
+	/* Trang giới thiệu */
+	.cs-gt .gt-title span{
+		font-size: 19px;
+	}
+	
+	.cs-gt .wpb_wrapper p{
+		padding-left: 15px;
+    	padding-right: 15px;
+	}
+	
+	/* Trang sự kiện */
+	div.gt-event-search-tool.gt-white.gt-style-1{
+		padding-left: 15px !important;
+    	padding-right: 15px !important;
+	}
+	
+	/* Trang tin tức */
+	.cl-sk{
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	.gt-page-title-bar h1{
+		font-size: 30px !important;
+	}
+	/* Trang diễn đàn */
+	#bbpress-forums div.bbp-search-form{
+		padding: 0px !important;
+		padding-bottom: 20px !important;
+	}
+	/* Edit thông tin */
+	.youzer .editfield .input-options.datebox-selects .nice-select, .youzer .editfield .input-options.datebox-selects select{
+		width: 100% !important;
+    	margin-bottom: 10px !important;
+	}
+	
+	/* Form liên hệ */
+	.form-lienhe{
+		padding-left: 10px !important;
+    	padding-right: 10px !important;
+	}
     
     #SECTION107 {
         height: 1150px !important;
@@ -3904,7 +4278,117 @@ form#bf_loginform {
         line-height: 1.4;
         padding: 15% 40% 11% 10% !important;
     }
+	.gt-page-title-bar h1{
+		text-align:center;
+	}
+	.gt-heading.gt-size2 .gt-title{
+		text-align:center;
+	}
+	/* Banner
+	rs-module{
+		width:320px !important;
+	}
+	#rev_slider_5_1_wrapper{
+		width:320px !important;
+	} */
+	/* đoạn text ở cộng đồng VNPR */
+	.space2{
+		height:0px !important;
+	}
+	.vc_custom_1620190124919 {
+    	padding-left: 35px !important;
+	}
+	
+	/* Form Lien He */
+	.space5{
+		margin-bottom:25% !important;
+	}
+	.form-lienhe{
+		padding-left: 10px !important;
+    	padding-right: 10px !important;
+	}
+	/* Text ở Đăng ký thông tin */
+	.gt-heading .gt-separate+.gt-text, .gt-heading .gt-title+.gt-text{
+		margin-right: 2.5%;
+		font-size: 12px !important;
+	}
+	
+	/* Form đăng ký */
+	.form-ttdk{
+		margin-right: 4%;
+		margin-left: 4%;
+	}
+	.mailster-wrapper.mailster-submit-wrapper.form-submit{
+		width:30% !important;
+	}
+	
+	/* Trang giới thiệu */
+	.cs-gt .gt-title span{
+		font-size: 16px;
+	} 
+	
+	/* Trang sự kiện */
+	div.gt-event-search-tool.gt-white.gt-style-1{
+		padding-left: 15px !important;
+    	padding-right: 15px !important;
+	}
+	.cl-sk{
+		padding-left: 10px !important;
+		padding-right: 10px !important;
+	}
+	
+	
+	/* Trang diễn đàn */
+	#bbpress-forums div.bbp-breadcrumb .bbp-breadcrumb-current{
+		font-size: 15px !important;
+		margin-bottom: 5px !important;
+	}
+	.widget_display_forums li a{
+		font-size: 11.5px !important;
+	}
+	#bbpress-forums div.bbp-search-form{
+		padding: 0px !important;
+		padding-bottom: 20px !important;
+	}
 
+	
+	/* Trang kiến thức */
+	.gt-content .sl-wrapper{
+		margin-right: 30% !important;
+	}
+	
+	/* Footer */
+	.footer-ne .menu-footer-1-container{
+		margin-left: 2.5%;
+	}
+	.footer-ne .logo-footer{
+		margin-left: 2.5%;
+	}
+	.gt-footer .gt-footer-content .wpb_row>.wpb_column{
+		margin-left: 5% !important;
+	}
+	.footer-social  .wpb_wrapper{
+		margin-left: 2.5%;
+	}
+	.title-footer .gt-contact-box, .title-footer ul#menu-footer-1{
+		width:96% !important;
+	}
+	
+	.footer1 .wpb_single_image .vc_figure{
+		margin-left:5% !important;
+	}
+	.footer1 .menu-footer-1-container{
+		margin-left:5% !important;
+	}
+	.footer2 .gt-heading.gt-size2 .gt-title{
+		margin-right: 37% !important;
+	}
+	.footer2 .gt-heading.gt-size2 .gt-title span{
+		color:white;
+	}
+	.footer2 .gt-social-links-element .gt-style-6{
+		margin-left:5% !important;
+	}
     #HEADLINE51 {
         width: 320px !important;
         top: 0px;
@@ -4715,6 +5199,7 @@ form#bf_loginform {
         left: 18px !important;
     }
 }
+
 /* smaller text */
 .yz-media-filter .yz-filter-item .yz-filter-content span {
     font-size: 10px !important;
@@ -4726,7 +5211,6 @@ form#bf_loginform {
         font-size: 2rem !important;
     }
 }
-
 .gt-post-style-2 .gt-title
 .gt-post-style-1 .gt-title,
 .gt-post-style-1 .gt-title {

@@ -22,13 +22,6 @@ jQuery( function($){
 	});
 });
 
-// Add Search placeholder into bbp search input
-jQuery( function($){
-	$(document).ready(function() {
-        $("#bbp_search").attr("placeholder", "Search");
-
-	});
-});
 // jQuery(function($){
 // 	$(document).ready(function(){
 // 		$('#setting-congdong').css('cssText', 'margin: 30px 5% 0 !important');
